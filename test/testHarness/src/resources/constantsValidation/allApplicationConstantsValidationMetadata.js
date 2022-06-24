@@ -12,7 +12,7 @@
  * @requires module:application.function.constants.validation
  * @requires module:application.message.constants.validation
  * @requires module:application.system.constants.validation
- * @requires {@link https://www.npmjs.com/package/haystacks|haystacks}
+ * @requires {@link https://www.npmjs.com/package/@haystacks/sync|@haystacks/sync}
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Seth Hollingsead
@@ -33,7 +33,7 @@ import * as app_msg_cv from './application.message.constants.validation.js';
 import * as app_sys_cv from './application.system.constants.validation.js';
 
 // External imports
-import haystacks from 'haystacks';
+import haystacks from '@haystacks/sync';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 

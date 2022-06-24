@@ -44,10 +44,18 @@ function parseSystemRootPath(inputData, inputMetaData) {
   // console.log(`inputData is: ${JSON.stringify(inputData)}`);
   // console.log(`inputMetaData is: ${JSON.stringify(inputMetaData)}`);
   let returnData = '';
-  if (inputData) {
-    let applicationName = inputMetaData; // Rename it for readability.
+  if (inputData && inputMetaData) {
+    let applicationName;
+    if (inputMetaData.includes(bas.cForwardSlash)) {
+      let applicationNameArray = inputMetaData.split(bas.cForwardSlash);
+      // Assign the application name to the final name-element of the repo-namespace.
+      applicationName = applicationNameArray[applicationNameArray.length - 1];
+      // The above code handles the case that the framework is: @haystacks/sync
+      // Then the path will pickup to the "sync" and everything up to the point as part of the return path.
+    } else {
+      applicationName = inputMetaData; // Rename it for readability.
+    }
     let pathElements = inputData.split(bas.cBackSlash);
-    loop1:
     for (let i = 0; i < pathElements.length; i++) {
       // console.log(`BEGIN iteration i: ${i}`);
       let pathElement = pathElements[i];
@@ -58,11 +66,12 @@ function parseSystemRootPath(inputData, inputMetaData) {
       } else if (pathElement === applicationName) {
         // console.log(`case: pathElement === ${applicationName}`);
         returnData = returnData + bas.cBackSlash + pathElement + bas.cBackSlash; // `${returnData}\\${pathElement}\\`;
-        break loop1;
+        break;
       } else {
         // console.log('case else');
         returnData = returnData + bas.cBackSlash + pathElement; // `${returnData}\\${pathElement}`;
       }
+      // console.log('returnData is: ' + returnData);
     } // End for-loop: (let i = 0; i < pathElements.length; i++)
   } // End-if (inputData)
   // console.log(`returnData is: ${JSON.stringify(returnData)}`);
