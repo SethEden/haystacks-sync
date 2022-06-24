@@ -45,18 +45,19 @@ const namespacePrefix = wrd.ccontrollers + bas.cDot + baseFileName + bas.cDot;
  * which is: C:/Calculator2/Application/Calculator2/
  * But what we really need for the root path is just C:/Calculator2/
  * @param {string} inputPath The path for the entry point to the framework, ie: main.js
+ * @param {string} actualFrameworkName The name of the framework that the application is expecting to use.
  * @return {string} the true root path of the application.
  * @author Seth Hollingsead
  * @date 2021/10/12
  * @NOTE Cannot use the loggers here, because dependency data will have never been loaded.
  */
-function processRootPath(inputPath) {
+function processRootPath(inputPath, actualFrameworkName) {
   // let functionName = processRootPath.name;
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
   // console.log(`inputPath is: ${inputPath}`);
   ruleBroker.bootStrapBusinessRules();
   chiefCommander.bootStrapCommands();
-  let resolvedPath = ruleBroker.processRules([inputPath, sys.cActualFrameworkName], [biz.cparseSystemRootPath]);
+  let resolvedPath = ruleBroker.processRules([inputPath, actualFrameworkName], [biz.cparseSystemRootPath]);
   dataBroker.setupDataStorage();
   let rootPath = path.resolve(resolvedPath);
   // console.log(`rootPath is: ${rootPath}`);

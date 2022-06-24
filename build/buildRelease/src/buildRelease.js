@@ -13,7 +13,7 @@
  * @requires module:application.function.constants
  * @requires module:application.message.constants
  * @requires module:allApplicationConstantsValidationMetadata
- * @requires {@link https://www.npmjs.com/package/haystacks|haystacks}
+ * @requires {@link https://www.npmjs.com/package/@haystacks/sync|@haystacks/sync}
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/url|url}
  * @requires {@link https://www.npmjs.com/package/dotenv|dotenv}
@@ -32,7 +32,7 @@ import * as apc from './constants/application.constants.js';
 import * as app_msg from './constants/application.message.constants.js';
 import allAppCV from './resources/constantsValidation/allApplicationConstantsValidationMetadata.js';
 // External imports
-import haystacks from 'haystacks';
+import haystacks from '@haystacks/sync';
 import hayConst from '@haystacks/constants';
 import url from 'url';
 import dotenv from 'dotenv';
@@ -66,6 +66,7 @@ function bootStrapApplication() {
   let appConfig = {};
   if (NODE_ENV === wrd.cdevelopment) {
     appConfig = {
+      FrameworkName: apc.cExpectedActualFrameworkDevName,
       clientRootPath: rootPath,
       appConfigResourcesPath: rootPath + apc.cFullDevResourcesPath,
       appConfigReferencePath: rootPath + apc.cFullDevConfigurationPath,
@@ -79,6 +80,7 @@ function bootStrapApplication() {
     };
   } else if (NODE_ENV === wrd.cproduction) {
     appConfig = {
+      FrameworkName: apc.cExpectedActualFrameworkProdName,
       clientRootPath: rootPath,
       appConfigResourcesPath: rootPath + apc.cFullProdResourcesPath,
       appConfigReferencePath: rootPath + apc.cFullProdConfigurationPath,
@@ -94,6 +96,7 @@ function bootStrapApplication() {
     // WARNING: NO .env file found! Going to default to the DEVELOPMENT ENVIRONMENT!
     console.log(msg.cApplicationWarningMessage1a + msg.cApplicationWarningMessage1b);
     appConfig = {
+      FrameworkName: apc.cExpectedActualFrameworkDevName,
       clientRootPath: rootPath,
       appConfigResourcesPath: rootPath + apc.cFullDevResourcesPath,
       appConfigReferencePath: rootPath + apc.cFullDevConfigurationPath,

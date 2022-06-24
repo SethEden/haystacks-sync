@@ -16,7 +16,7 @@
  * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Seth Hollingsead
  * @date 2021/10/14
- * @copyright Copyright © 2021-… by Seth Hollingsead. All rights reserved
+ * @copyright Copyright © 2022-… by Seth Hollingsead. All rights reserved
  */
 
 // Internal imports
@@ -59,7 +59,7 @@ function initFramework(clientConfiguration) {
  let frameworkCodeRootPath = url.fileURLToPath(path.dirname(import.meta.url));
  let frameworkCommandAliasesPath = '';
  let frameworkWorkflowsPath = '';
- frameworkCodeRootPath = warden.processRootPath(frameworkCodeRootPath) + bas.cDoubleForwardSlash;
+ frameworkCodeRootPath = warden.processRootPath(frameworkCodeRootPath, clientConfiguration[sys.cFrameworkName]) + bas.cDoubleForwardSlash;
  let frameworkRootPath = frameworkCodeRootPath;
  if (NODE_ENV === wrd.cdevelopment) {
    frameworkCodeRootPath = frameworkCodeRootPath + sys.cFrameworkDevelopRootPath;

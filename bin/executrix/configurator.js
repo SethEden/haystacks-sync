@@ -8,7 +8,7 @@
  * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Seth Hollingsead
  * @date 2020/10/13
- * @copyright Copyright © 2021-… by Seth Hollingsead. All rights reserved
+ * @copyright Copyright © 2022-… by Seth Hollingsead. All rights reserved
  * @NOTE This file is needed to keep these lower level functions separate from the chiefConfiguration.
  * Because having these functions in the chiefConfiguration can cause a circular dependency.
  */
