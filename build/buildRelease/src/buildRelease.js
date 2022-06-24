@@ -66,6 +66,7 @@ function bootStrapApplication() {
   let appConfig = {};
   if (NODE_ENV === wrd.cdevelopment) {
     appConfig = {
+      FrameworkName: apc.cExpectedActualFrameworkDevName,
       clientRootPath: rootPath,
       appConfigResourcesPath: rootPath + apc.cFullDevResourcesPath,
       appConfigReferencePath: rootPath + apc.cFullDevConfigurationPath,
@@ -79,6 +80,7 @@ function bootStrapApplication() {
     };
   } else if (NODE_ENV === wrd.cproduction) {
     appConfig = {
+      FrameworkName: apc.cExpectedActualFrameworkProdName,
       clientRootPath: rootPath,
       appConfigResourcesPath: rootPath + apc.cFullProdResourcesPath,
       appConfigReferencePath: rootPath + apc.cFullProdConfigurationPath,
@@ -94,6 +96,7 @@ function bootStrapApplication() {
     // WARNING: NO .env file found! Going to default to the DEVELOPMENT ENVIRONMENT!
     console.log(msg.cApplicationWarningMessage1a + msg.cApplicationWarningMessage1b);
     appConfig = {
+      FrameworkName: apc.cExpectedActualFrameworkDevName,
       clientRootPath: rootPath,
       appConfigResourcesPath: rootPath + apc.cFullDevResourcesPath,
       appConfigReferencePath: rootPath + apc.cFullDevConfigurationPath,

@@ -64,7 +64,7 @@ function doesWorkflowExist(workflowName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cworkflowNameIs + workflowName);
   let workflowFound = false;
   let workflowSearchResult = searchWorkflow(D[sys.cCommandWorkflows], workflowName);
-  if (workflowSearchResult != false) {
+  if (workflowSearchResult) {
     workflowFound = true;
   }
   // workflowFound is:
@@ -87,7 +87,7 @@ function doesWorkflowExistInWorkflowData(workflowData, workflowName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cworkflowNameIs + workflowName);
   let workflowFound = false;
   let workflowSearchResult = searchWorkflow(workflowData, workflowName);
-  if (workflowSearchResult != false) {
+  if (workflowSearchResult) {
     workflowFound = true;
   }
   // workflowFound is:
@@ -122,7 +122,7 @@ function searchWorkflow(workflowData, workflowName) {
       loggers.consoleLog(namespacePrefix + functionName, msg.cworkflowIs + JSON.stringify(workflowData[workflowEntity]));
       if (workflowEntity != workflowName || (workflowEntity === workflowName && typeof workflowData[workflowEntity] === wrd.cobject)) {
         let workflowObjectTemp = searchWorkflow(workflowData[workflowEntity], workflowName);
-        if (workflowObjectTemp != false && typeof workflowObjectTemp != wrd.cobject) {
+        if (workflowObjectTemp && typeof workflowObjectTemp != wrd.cobject) {
           workflowObject = workflowObjectTemp;
           break;
         } // End-if (workflowObjectTemp != false && typeof workflowObjectTemp != wrd.cobject)
