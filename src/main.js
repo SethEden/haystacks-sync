@@ -59,7 +59,7 @@ function initFramework(clientConfiguration) {
  let frameworkCodeRootPath = url.fileURLToPath(path.dirname(import.meta.url));
  let frameworkCommandAliasesPath = '';
  let frameworkWorkflowsPath = '';
- frameworkCodeRootPath = warden.processRootPath(frameworkCodeRootPath) + bas.cDoubleForwardSlash;
+ frameworkCodeRootPath = warden.processRootPath(frameworkCodeRootPath, clientConfiguration[sys.cFrameworkName]) + bas.cDoubleForwardSlash;
  let frameworkRootPath = frameworkCodeRootPath;
  if (NODE_ENV === wrd.cdevelopment) {
    frameworkCodeRootPath = frameworkCodeRootPath + sys.cFrameworkDevelopRootPath;

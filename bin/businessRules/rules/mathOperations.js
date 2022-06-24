@@ -8,7 +8,7 @@
  * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Seth Hollingsead
  * @date 2022/01/27
- * @copyright Copyright © 2020-… by Seth Hollingsead. All rights reserved
+ * @copyright Copyright © 2022-… by Seth Hollingsead. All rights reserved
  */
 
 // Internal imports
