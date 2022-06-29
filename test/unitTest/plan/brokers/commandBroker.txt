@@ -206,16 +206,24 @@ output: false
 --------------------------------------------------------------------------------
 testName: executeCommand_validData
 input: commandString: string (commandSequencer name,application,true version about)
-output: true
+output: array<boolean,string|integer|boolean|object|array>
 
 testName: executeCommand_inValidString
 input: string (464gsdsfae8f46)
-output: true
+output: ?
 
 testName: executeCommand_inValidNumber
 input: integer (546)
-output: true
+output: ?
 
 testName: executeCommand_inValidBoolean
 input: boolean (false)
-output: true
+output: ?
+
+testName: executeCommand_inValidUndefined
+input: undefined
+output: ?
+
+testName: executeCommand_inValidNaN
+input: NaN
+output: ?

@@ -1,0 +1,567 @@
+description: Test plan for dataArrayParsing.js
+
+
+--------------------------------------------------------------------------------
+testName: arraysAreEqual_validDataString
+input inputData: array<string|integer|boolean|float|object> (The first array that should be checked for equality)
+input inputMetaData: array<string|integer|boolean|float|object> (The second array that should be checked for equality)
+output: boolean
+
+testName: arraysAreEqual_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<string|integer|boolean|float|object> (The second array that should be checked for equality) (testDataString)
+output: ?
+
+testName: arraysAreEqual_inValidDataInputMetaDataString
+input inputData: array<string|integer|boolean|float|object> (The first array that should be checked for equality) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: arraysAreEqual_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: arraysAreEqual_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: arraysAreEqual_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: arraysAreEqual_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: arraysAreEqual_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<string|integer|boolean|float|object> (The second array that should be checked for equality) (inValidDataToStoreUndefined)
+output: ?
+
+testName: arraysAreEqual_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<string|integer|boolean|float|object> (The second array that should be checked for equality) (inValidDataToStoreNaN)
+output: ?
+
+testName: arraysAreEqual_inValidInputMetaDataUndefined
+input inputData: array<string|integer|boolean|float|object> (The first array that should be checked for equality) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: arraysAreEqual_inValidInputMetaDataNaN
+input inputData: array<string|integer|boolean|float|object> (The first array that should be checked for equality) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: storeData_validDataString
+input inputData: string (The context name that the data should be stored with)
+input inputMetaData: string|integer|boolean|object|array (The data that should be stored)
+
+testName: storeData_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string|integer|boolean|object|array (The data that should be stored) (testDataString)
+output: ?
+
+testName: storeData_inValidDataInputMetaDataString
+input inputData: string (The context name that the data should be stored with) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: storeData_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: storeData_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: storeData_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: storeData_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: storeData_inValidInputMetaDataUndefined
+input inputData: string (The context name that the data should be stored with) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: storeData_inValidInputMetaDataNaN
+input inputData: string (The context name that the data should be stored with) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: getStoredData_validDataString
+input inputData: string (The name of the sub-data hive that should contain the stored data we are looking for)
+input inputMetaData: string (Not used for this business rule)
+output: object (The data that was stored in the sub-data hie under the DataStorage data hive of the D data structure)
+
+testName: getStoredData_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: getStoredData_inValidDataInputMetaDataString
+input inputData: string (The name of the sub-data hive that should contain the stored data we are looking for) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getStoredData_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getStoredData_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getStoredData_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: getStoredData_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: isObjectEmpty_validDataString
+input inputData: object (The object that should be checked for emptiness)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isObjectEmpty_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isObjectEmpty_inValidDataInputMetaDataString
+input inputData: object (The object that should be checked for emptiness) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isObjectEmpty_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isObjectEmpty_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isObjectEmpty_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isObjectEmpty_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: isArrayEmpty_validDataString
+input inputData: array<string|integer|boolean|float|object> (The array that should be checked for emptiness)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isArrayEmpty_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isArrayEmpty_inValidDataInputMetaDataString
+input inputData: array<string|integer|boolean|float|object> (The array that should be checked for emptiness) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isArrayEmpty_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isArrayEmpty_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isArrayEmpty_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isArrayEmpty_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: isArrayEmpty_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: isArrayEmpty_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: isObject_validDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is a JSON object or not)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isObject_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isObject_inValidDataInputMetaDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is a JSON object or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isObject_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isObject_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isObject_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isObject_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: isObject_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: isObject_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: isArray_validDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is an array or not)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isArray_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isArray_inValidDataInputMetaDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is an array or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isArray_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isArray_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isArray_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isArray_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: isArray_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: isArray_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: isArrayOrObject_validDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is either an array or a JSON object or not)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isArrayOrObject_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isArrayOrObject_inValidDataInputMetaDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is either an array or a JSON object or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isArrayOrObject_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isArrayOrObject_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isArrayOrObject_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isArrayOrObject_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: isArrayOrObject_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: isArrayOrObject_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: isNonZeroLengthArray_validDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object/array that should be tested to see if it is an array of length greater than or equal to 1 or not)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isNonZeroLengthArray_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isNonZeroLengthArray_inValidDataInputMetaDataString
+input inputData: object|array<string|integer|boolean|float|object> (The object/array that should be tested to see if it is an array of length greater than or equal to 1 or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isNonZeroLengthArray_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isNonZeroLengthArray_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isNonZeroLengthArray_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isNonZeroLengthArray_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: isNonZeroLengthArray_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: isNonZeroLengthArray_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: arrayDeepClone_validDataString
+input inputData: array<string|integer|boolean|float|object> (The array that should be deeply cloned)
+input inputMetaData: string (Not used for this business rule)
+output: array<string|integer|boolean|float|object> (The new array object after being cloned deeply)
+
+testName: arrayDeepClone_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: arrayDeepClone_inValidDataInputMetaDataString
+input inputData: array<string|integer|boolean|float|object> (The array that should be deeply cloned) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: arrayDeepClone_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: arrayDeepClone_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: arrayDeepClone_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: arrayDeepClone_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: arrayDeepClone_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: arrayDeepClone_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: objectDeepMerge_validDataString
+input inputData: object (The target data to be merged with)
+input inputMetaData: object (The data that should be merged)
+output: object (The merged data after the merge is complete)
+
+testName: objectDeepMerge_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: object (The data that should be merged) (testDataString)
+output: ?
+
+testName: objectDeepMerge_inValidDataInputMetaDataString
+input inputData: object (The target data to be merged with) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: objectDeepMerge_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: objectDeepMerge_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: objectDeepMerge_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: objectDeepMerge_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------
+testName: getNamespacedDataObject_validDataString
+input inputData: array<string> (The path in the data JSON object where the setting should be returned)
+input inputMetaData: boolean (True or False value to indicate if the path elements should be created or not it they are not found)
+output: object|boolean (The object found at the specified namespace address in the data object, or False if nothing was found)
+
+testName: getNamespacedDataObject_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: boolean (True or False value to indicate if the path elements should be created or not it they are not found) (testDataString)
+output: ?
+
+testName: getNamespacedDataObject_inValidDataInputMetaDataString
+input inputData: array<string> (The path in the data JSON object where the setting should be returned) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getNamespacedDataObject_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getNamespacedDataObject_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getNamespacedDataObject_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: getNamespacedDataObject_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: getNamespacedDataObject_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: boolean (True or False value to indicate if the path elements should be created or not it they are not found) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getNamespacedDataObject_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: boolean (True or False value to indicate if the path elements should be created or not it they are not found) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: setNamespacedDataObject_validDataString
+input inputData: array<string> (The path in the data JSON object where the setting should be persisted)
+input inputMetaData: object (The data to be persisted on the D-data structure)
+output: boolean
+
+testName: setNamespacedDataObject_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: object (The data to be persisted on the D-data structure) (testDataString)
+output: ?
+
+testName: setNamespacedDataObject_inValidDataInputMetaDataString
+input inputData: array<string> (The path in the data JSON object where the setting should be persisted) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: setNamespacedDataObject_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: setNamespacedDataObject_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: setNamespacedDataObject_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: setNamespacedDataObject_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: setNamespacedDataObject_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: object (The data to be persisted on the D-data structure) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setNamespacedDataObject_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: object (The data to be persisted on the D-data structure) (inValidDataToStoreNaN)
+output: ?
