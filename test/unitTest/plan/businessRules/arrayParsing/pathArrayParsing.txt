@@ -1,0 +1,83 @@
+description: Test plan for pathArrayParsing.js
+
+
+--------------------------------------------------------------------------------
+testName: doesArrayContainFilename_validDataString
+input inputData: array<string> (The array of file names that should be checked for the input file name we are looking for)
+input inputMetaData: string (The file name we are looking for in the input array)
+output: boolean
+
+testName: doesArrayContainFilename_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The file name we are looking for in the input array) (testDataString)
+output: ?
+
+testName: doesArrayContainFilename_inValidDataInputMetaDataString
+input inputData: array<string> (The array of file names that should be checked for the input file name we are looking for) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: doesArrayContainFilename_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: doesArrayContainFilename_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: doesArrayContainFilename_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: doesArrayContainFilename_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: doesArrayContainFilename_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (The file name we are looking for in the input array) (inValidDataToStoreUndefined)
+output: ?
+
+testName: doesArrayContainFilename_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (The file name we are looking for in the input array) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------getFileAndPathListForPath
+testName: getFileAndPathListForPath_validDataString
+input inputData: string (The path that should be scanned for files and their full paths)
+input inputMetaData: integer (Optional file limit, ignored if the configuration flag is not set to true, if nothing is passed the configuration setting will be used)
+output: array<string> (The array that contains the full path and file name for every file found under the specified path)
+
+testName: getFileAndPathListForPath_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: integer (Optional file limit, ignored if the configuration flag is not set to true, if nothing is passed the configuration setting will be used) (testDataString)
+output: ?
+
+testName: getFileAndPathListForPath_inValidDataInputMetaDataString
+input inputData: string (The path that should be scanned for files and their full paths) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
