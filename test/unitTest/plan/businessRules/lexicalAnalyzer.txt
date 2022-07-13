@@ -1,0 +1,233 @@
+description: Test plan for lexicalAnalyzer.js
+
+
+--------------------------------------------------------------------------------
+testName: parseBusinessRuleArgument_validDataString
+input inputData: string|array<string|integer|boolean|object> (The value of the argument, could be an array or a string)
+input inputMetaData: integer (The index of the argument (1, 2, 3, 4))
+output: string|array<string|integer|boolean|object> (The value of the argument as it should be passed into the business rule call)
+
+testName: parseBusinessRuleArgument_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: integer (The index of the argument (1, 2, 3, 4)) (testDataString)
+output: ?
+
+testName: parseBusinessRuleArgument_inValidDataInputMetaDataString
+input inputData: string|array<string|integer|boolean|object> (The value of the argument, could be an array or a string) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: parseBusinessRuleArgument_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: parseBusinessRuleArgument_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: parseBusinessRuleArgument_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: parseBusinessRuleArgument_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: parseBusinessRuleArgument_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: integer (The index of the argument (1, 2, 3, 4)) (inValidDataToStoreUndefined)
+output: ?
+
+testName: parseBusinessRuleArgument_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: integer (The index of the argument (1, 2, 3, 4)) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: analyzeArgument_validDataString
+input inputData: string (The argument string that needs additional parsing)
+input inputMetaData: string (Not used for this business rule)
+output: string|array<string|integer|boolean|object> (The argument that should be returned and sued by the system after all necessary parsing)
+
+testName: analyzeArgument_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: analyzeArgument_inValidDataInputMetaDataString
+input inputData: string (The argument string that needs additional parsing) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: analyzeArgument_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: analyzeArgument_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: analyzeArgument_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: analyzeArgument_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: analyzeForRegularExpression_validDataString
+input inputData: string (The business rule argument that should be analyzed to determine if it includes a regular expression or not regular expression)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: analyzeForRegularExpression_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: analyzeForRegularExpression_inValidDataInputMetaDataString
+input inputData: string (The business rule argument that should be analyzed to determine if it includes a regular expression or not regular expression) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: analyzeForRegularExpression_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: analyzeForRegularExpression_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: analyzeForRegularExpression_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: analyzeForRegularExpression_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: parseArgumentAsRegularExpression_validDataString
+input inputData: string (The argument string that should be parsed as a RegExp)
+input inputMetaData: string (Not used for this business rule)
+output: object (A RegExp object)
+
+testName: parseArgumentAsRegularExpression_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: parseArgumentAsRegularExpression_inValidDataInputMetaDataString
+input inputData: string (The argument string that should be parsed as a RegExp) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: parseArgumentAsRegularExpression_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: parseArgumentAsRegularExpression_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: parseArgumentAsRegularExpression_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: parseArgumentAsRegularExpression_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: parseArgumentAsArray_validDataString
+input inputData: string (A string that contains an array, we will use the secondary command delimiter to split the string into an array)
+input inputMetaData: string (Not used for this business rule)
+output: array<string> (An array of strings)
+
+testName: parseArgumentAsArray_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: parseArgumentAsArray_inValidDataInputMetaDataString
+input inputData: string (A string that contains an array, we will use the secondary command delimiter to split the string into an array) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: parseArgumentAsArray_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: parseArgumentAsArray_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: parseArgumentAsArray_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: parseArgumentAsArray_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: removeStringLiteralTagsFromArray_validDataString
+input inputData: array<string> (The argument array that should have the string literal tags removed)
+input inputMetaData: string (Not used for this business rule)
+output: array<string> (The same as the input, but just with the string literal tags removed from all array elements)
+
+testName: removeStringLiteralTagsFromArray_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: removeStringLiteralTagsFromArray_inValidDataInputMetaDataString
+input inputData: array<string> (The argument array that should have the string literal tags removed) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: removeStringLiteralTagsFromArray_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: removeStringLiteralTagsFromArray_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: removeStringLiteralTagsFromArray_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: removeStringLiteralTagsFromArray_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: removeStringLiteralTagsFromArray_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: removeStringLiteralTagsFromArray_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
