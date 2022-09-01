@@ -60,6 +60,9 @@ function commandSequencer(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = [true, {}];
   let commandSuccess = true;
+  // Initialize a temporary command queue that can be used to aggregate all of the commands that will be added to the official command queue.
+  // Once all of the commands are aggregated then we will enqueue the new temporary command queue to the front of the official command queue.
+  queue.initQueue(sys.cCommandQueue + wrd.cTemp);
   for (let i = 1; i < inputData.length; i++) {
     let commandString = inputData[i];
     let primaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.cprimaryCommandDelimiter);
@@ -86,7 +89,7 @@ function commandSequencer(inputData, inputMetaData) {
         currentCommand = currentCommand + primaryCommandDelimiter + commandArgs[j];
       } // End-for (let j = 1; j < commandArgs.length; j++)
       loggers.consoleLog(namespacePrefix + functionName, msg.ccommandSequencerCommandToEnqueueIs + currentCommand);
-      queue.enqueue(sys.cCommandQueue, currentCommand);
+      queue.enqueue(sys.cCommandQueue + wrd.cTemp, currentCommand);
     } else { // End-if (currentCommand !== false)
       // WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. <commandString>
       let errorMessage = msg.ccommandSequencerMessage1 + msg.ccommandSequencerMessage2 + bas.cSpace + commandString;
@@ -95,6 +98,9 @@ function commandSequencer(inputData, inputMetaData) {
       commandSuccess = false;
     }
   } // End-for (let i = 1; i < inputData.length; i++)
+  // Now migrate the temporary command queue to the primary command queue,
+  // pushing all command entities to the front of the command queue.
+  queue.enqueueFront(sys.cCommandQueue, queue.queueContents(sys.cCommandQueue + wrd.cTemp));
   if (commandSuccess === true) {
     returnData[1] = commandSuccess;
   }
@@ -128,7 +134,7 @@ function workflow(inputData, inputMetaData) {
   let workflowName = inputData[1];
   let workflowValue = workflowBroker.getWorkflow(workflowName);
   if (workflowValue !== false && typeof workflowValue != wrd.cobject) {
-    queue.enqueue(sys.cCommandQueue, workflowValue);
+    queue.enqueueFront(sys.cCommandQueue, workflowValue);
     returnData[1] = true;
   } else {
     // WARNING: advanced.workflow: The specified workflow:
@@ -346,9 +352,13 @@ function commandGenerator(inputData, inputMetaData) {
     if (isNaN(inputData[legitNumberIndex]) === false) { // Make sure the user passed in a number for the second argument.
       let numberOfCommands = parseInt(inputData[legitNumberIndex]);
       if (numberOfCommands > 0) {
+        queue.initQueue(sys.cCommandQueue + wrd.cTemp);
         for (let i = 0; i < numberOfCommands; i++) {
-          queue.enqueue(sys.cCommandQueue, commandString);
+          queue.enqueue(sys.cCommandQueue + wrd.cTemp, commandString);
         } // End-for (let i = 0; i < numberOfCommands; i++)
+        // Now migrate the temporary command queue to the primary command queue,
+        // pushing all command entities to the front of the command queue.
+        queue.enqueueFront(sys.cCommandQueue, queue.queueContents(sys.cCommandQueue + wrd.cTemp));
         returnData[1] = true;
       } else {
         // WARNING: advanced.commandGenerator: Must enter a number greater than 0, number entered:
