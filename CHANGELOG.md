@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/SethEden/haystacks-sync/compare/v0.1.1...v0.1.2) (2022-09-01)
+
 ### 0.1.1 (2022-06-24)
 
 ### [0.0.17](https://github.com/SethEden/haystacks/compare/v0.0.16...v0.0.17) (2022-06-22)

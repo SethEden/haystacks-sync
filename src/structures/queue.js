@@ -81,6 +81,30 @@ function enqueue(queueNameSpace, value) {
 }
 
 /**
+ * @function enqueueFront
+ * @description Adds the value to the front of the specified namespace queue.
+ * @param {string} queueNameSpace The namespace the queue array should have a value added to. 
+ * @param {strng|array<string>} value Teh value that should be added to the specified queue array,
+ * it could be a string value or an array of string values.
+ * @return {void}
+ * @author Seth Hollingsead
+ * @date 2022/09/01 
+ */
+function enqueueFront(queueNameSpace, value) {
+  let functionName = enqueueFront.name;
+  loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
+  loggers.consoleLog(namespacePrefix + functionName, msg.cqueueNameSpaceIs + queueNameSpace);
+  loggers.consoleLog(namespacePrefix + functionName, msg.cvalueIs + value);
+  if (Array.isArray(value) === true) {
+    // If the value is an array, then decompose the array into variables all passed to the unshift command.
+    D[queueNameSpace].unshift(...value);
+  } else {
+    D[queueNameSpace].unshift(value);
+  }
+  loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+}
+
+/**
  * @function isEmpty
  * @description Determines if the queue is empty or not empty.
  * @param {string} queueNameSpace The namespace the queue array should have a value added to.
@@ -155,6 +179,30 @@ function queueSize(queueNameSpace) {
 }
 
 /**
+ * @function queueContents
+ * @description Returns the contents of the queue as an array.
+ * @param {string} queueNameSpace The namespace of the queue who's contents should be returned as an array.
+ * @return {array<string>} The entire queue and it's contents as an array.
+ * @author Seth Hollingsead
+ * @date 2022/09/01
+ */
+function queueContents(queueNameSpace) {
+  let functionName = queueFront.name;
+  loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
+  loggers.consoleLog(namespacePrefix + functionName, msg.cqueueNameSpaceIs + queueNameSpace);
+  let returnData = 0;
+  if (D[queueNameSpace] !== undefined) {
+    returnData = D[queueNameSpace];
+  } else {
+    // WARNING: Queue:
+    // does not exist!
+  }
+  loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
+  loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  return returnData;
+}
+
+/**
  * @function queuePrint
  * @description Prints out the queue as specified by the namespace input parameter.
  * @param {string} queueNameSpace The namespace that should be used to print out the contents of the queue on the D-data structure.
@@ -166,22 +214,31 @@ function queuePrint(queueNameSpace) {
   let functionName = queuePrint.name;
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   loggers.consoleLog(namespacePrefix + functionName, msg.cqueueNameSpaceIs + queueNameSpace);
+  let returnData = '';
   if (D[queueNameSpace] !== undefined) {
     // Contents of the queue namespace:
-    console.log(msg.cContentsOfTheQueueNamespace + queueNameSpace + sys.cSpaceIsColonSpace + JSON.stringify(D[queueNameSpace]));
+    returnData = JSON.stringify(D[queueNameSpace]);
+    let queueContentsMessage = msg.cContentsOfTheQueueNamespace + queueNameSpace + sys.cSpaceIsColonSpace + returnData;
+    console.log(queueContentsMessage);
   } else {
     // WARNING: Queue:
     // does not exist!
+    returnData = msg.cWarningQueue + queueNameSpace + bas.cSpace + msg.cdoesNotExist;
+    console.log(returnData);
   }
+  loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  return returnData;
 }
 
 export default {
   initQueue,
   dequeue,
   enqueue,
+  enqueueFront,
   isEmpty,
   queueFront,
   queueSize,
+  queueContents,
   queuePrint
 };
