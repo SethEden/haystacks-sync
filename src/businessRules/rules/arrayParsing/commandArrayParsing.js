@@ -53,6 +53,7 @@ function solveLehmerCode(inputData, inputMetaData) {
     let lengthOfInputData = inputData.length;
     let expandedLehmerCodeArray = [];
     let lehmerCodeArray = Array.from(Array(lengthOfInputData), () => 0);
+    let outputArray = [];
     expandedLehmerCodeArray = ruleParsing.processRulesInternal([recursiveArrayExpansion([0, lehmerCodeArray], inputData), ''], [biz.carrayDeepClone]);
     // expandedLehmerCodeArray is:
     loggers.consoleLog(namespacePrefix + functionName, msg.cexpandedLehmerCodeArrayIs + JSON.stringify(expandedLehmerCodeArray));
@@ -60,12 +61,12 @@ function solveLehmerCode(inputData, inputMetaData) {
     // Now we just iterate over each array in expandedLehmerCodeArray and call: getLehmerCodeValue
     for (let i = 0; i < expandedLehmerCodeArray.length - 1; i++) {
       let lehmerCodeStringValue = getLehmerCodeValue(expandedLehmerCodeArray[i], inputMetaData);
-      if (i === 0) {
-        returnData = returnData + lehmerCodeStringValue;
-      } else {
-        returnData = returnData + bas.cComa + lehmerCodeStringValue;
+      // if (ruleParsing.processRulesInternal([[outputArray, lehmerCodeStringValue], ''], [biz.cdoesArrayContainValue]) === false) {
+      if (outputArray.find(x => x === lehmerCodeStringValue) === undefined) {
+        outputArray.push(lehmerCodeStringValue);
       }
     } // End-for (let i = 0; i < expandedLehmerCodeArray.length - 1; i++)
+    returnData = outputArray.join(bas.cComa);
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -117,13 +118,13 @@ function recursiveArrayExpansion(inputData, inputMetaData) {
       // returnData is:
       loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
       lehmerCodeArray1[indexOfExpansion] = i;
-      if (ruleParsing.processRulesInternal([[returnData, lehmerCodeArray1], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === false) {
+      if (ruleParsing.processRulesInternal([[returnData, lehmerCodeArray1], ''], [biz.cdoesArrayContainValue]) === false) {
         // pushing LehmerCodeArray1 to returnData value:
         loggers.consoleLog(namespacePrefix + functionName, msg.cpushingLehmerCodeArray1ToReturnDataValue + JSON.stringify(lehmerCodeArray1));
         returnData.push(lehmerCodeArray1);
         // returnData after push is:
         loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataAfterPushIs + JSON.stringify(returnData));
-      } // End-if (ruleParsing.processRulesInternal([[returnData, lehmerCodeArray1], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === false)
+      } // End-if (ruleParsing.processRulesInternal([[returnData, lehmerCodeArray1], ''], [biz.cdoesArrayContainValue]) === false)
     } // End-for (let i = 0; i <= limitOfExpansion; i++)
     // returnData after level 1 is:
     loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataAfterLevel1Is + JSON.stringify(returnData));
@@ -160,11 +161,11 @@ function recursiveArrayExpansion(inputData, inputMetaData) {
         for (let k = 0; k <= tempReturnData1.length - 1; k++) {
           // BEGIN k-th iteration:
           loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_kthIteration + k);
-          if (ruleParsing.processRulesInternal([[masterTempReturnData, tempReturnData1[k]], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === false) {
+          if (ruleParsing.processRulesInternal([[masterTempReturnData, tempReturnData1[k]], ''], [biz.cdoesArrayContainValue]) === false) {
             // pushing tempReturnData1[k] value:
             loggers.consoleLog(namespacePrefix + functionName, msg.cpushingTempReturnData1Kvalue + JSON.stringify(tempReturnData1[k]));
             masterTempReturnData.push(ruleParsing.processRulesInternal([tempReturnData1[k], ''], [biz.carrayDeepClone]));
-          } // End-if (ruleParsing.processRulesInternal([[masterTempReturnData, tempReturnData1[k]], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === false)
+          } // End-if (ruleParsing.processRulesInternal([[masterTempReturnData, tempReturnData1[k]], ''], [biz.cdoesArrayContainValue]) === false)
           // END k-th iteration:
           loggers.consoleLog(namespacePrefix + functionName, msg.cEND_kthIteration + k);
         } // End-for (let k = 0; k <= tempReturnData1.length - 1; k++)
