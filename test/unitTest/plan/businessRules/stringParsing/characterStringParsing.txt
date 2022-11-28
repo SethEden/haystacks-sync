@@ -493,17 +493,17 @@ input inputMetaData: boolean (false)
 output: ?
 --------------------------------------------------------------------------------
 testName: replaceCharacterAtIndexOfString_validDataString
-input inputData: array<string,integer> (An array that contains the original string and the index of the character that should be replaced)
-input inputMetaData: string (The character or string that should be used to make the replacement, inserted at the specified index)
-output: string (The string after the replacement has been made)
+input inputData: array<string,integer> (["!@#$^&*",4])
+input inputMetaData: string ("~")
+output: string ("!@#$~&*")
 
 testName: replaceCharacterAtIndexOfString_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
-input inputMetaData: string (The character or string that should be used to make the replacement, inserted at the specified index) (testDataString)
+input inputMetaData: string ("~")
 output: ?
 
 testName: replaceCharacterAtIndexOfString_inValidDataInputMetaDataString
-input inputData: array<string,integer> (An array that contains the original string and the index of the character that should be replaced) (testDataString)
+input inputData: array<string,integer> (["!@#$^&*",4])
 input inputMetaData: string (dfxg24346dfg)
 output: ?
 
@@ -529,10 +529,20 @@ output: ?
 
 testName: replaceCharacterAtIndexOfString_inValidInputDataUndefined
 input inputData: undefined
-input inputMetaData: string (The character or string that should be used to make the replacement, inserted at the specified index) (inValidDataToStoreUndefined)
+input inputMetaData: string ("~") (inValidDataToStoreUndefined)
 output: ?
 
 testName: replaceCharacterAtIndexOfString_inValidInputDataNaN
 input inputData: NaN
-input inputMetaData: string (The character or string that should be used to make the replacement, inserted at the specified index) (inValidDataToStoreNaN)
+input inputMetaData: string ("~") (inValidDataToStoreNaN)
+output: ?
+
+testName: replaceCharacterAtIndexOfString_inValidInputMetaDataUndefined
+input inputData: array<string,integer> (["!@#$^&*",4]) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: replaceCharacterAtIndexOfString_inValidInputMetaDataNaN
+input inputData: array<string,integer> (["!@#$^&*",4]) (inValidDataToStoreNaN)
+input inputMetaData: NaN
 output: ?

@@ -135,9 +135,29 @@ testName: getStoredData_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+
+testName: getStoredData_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getStoredData_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: getStoredData_inValidInputMetaDataUndefined
+input inputData: string (The name of the sub-data hive that should contain the stored data we are looking for) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: getStoredData_inValidInputMetaDataNaN
+input inputData: string (The name of the sub-data hive that should contain the stored data we are looking for) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
 --------------------------------------------------------------------------------
 testName: isObjectEmpty_validDataString
-input inputData: object (The object that should be checked for emptiness)
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
@@ -147,32 +167,52 @@ input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 
 testName: isObjectEmpty_inValidDataInputMetaDataString
-input inputData: object (The object that should be checked for emptiness) (testDataString)
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
 
 testName: isObjectEmpty_inValidInputDataInteger
 input inputData: integer (4567)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isObjectEmpty_inValidInputDataBoolean
 input inputData: boolean (false)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isObjectEmpty_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: integer (4567)
 output: ?
 
 testName: isObjectEmpty_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: boolean (false)
+output: ?
+
+testName: isObjectEmpty_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: isObjectEmpty_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: isObjectEmpty_inValidInputMetaDataUndefined
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: isObjectEmpty_inValidInputMetaDataNaN
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}) (inValidDataToStoreNaN)
+input inputMetaData: NaN
 output: ?
 --------------------------------------------------------------------------------
 testName: isArrayEmpty_validDataString
-input inputData: array<string|integer|boolean|float|object> (The array that should be checked for emptiness)
+input inputData: array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"])
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
@@ -182,28 +222,18 @@ input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 
 testName: isArrayEmpty_inValidDataInputMetaDataString
-input inputData: array<string|integer|boolean|float|object> (The array that should be checked for emptiness) (testDataString)
+input inputData: array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"]) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
 
 testName: isArrayEmpty_inValidInputDataInteger
 input inputData: integer (4567)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isArrayEmpty_inValidInputDataBoolean
 input inputData: boolean (false)
-input inputMetaData: array ([1,2,3,4,5])
-output: ?
-
-testName: isArrayEmpty_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: integer (4567)
-output: ?
-
-testName: isArrayEmpty_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: boolean (false)
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isArrayEmpty_inValidInputDataUndefined
@@ -215,20 +245,30 @@ testName: isArrayEmpty_inValidInputDataNaN
 input inputData: NaN
 input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
 output: ?
+
+testName: isArrayEmpty_inValidInputMetaDataUndefined
+input inputData: array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"]) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: isArrayEmpty_inValidInputMetaDataNaN
+input inputData: array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"]) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
 --------------------------------------------------------------------------------
-testName: isObject_validDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is a JSON object or not)
+testName: isObject_validDataObject
+input inputData: object|array<string|integer|boolean|float|object> ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isObject_validDataArray
+input inputData: object|array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"])
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
 testName: isObject_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
-output: ?
-
-testName: isObject_inValidDataInputMetaDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is a JSON object or not) (testDataString)
-input inputMetaData: string (dfxg24346dfg)
 output: ?
 
 testName: isObject_inValidInputDataInteger
@@ -241,16 +281,6 @@ input inputData: boolean (false)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
 
-testName: isObject_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: integer (4567)
-output: ?
-
-testName: isObject_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: boolean (false)
-output: ?
-
 testName: isObject_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
@@ -261,8 +291,13 @@ input inputData: NaN
 input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
 output: ?
 --------------------------------------------------------------------------------
-testName: isArray_validDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is an array or not)
+testName: isArray_validDataObject
+input inputData: object|array<string|integer|boolean|float|object> ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isArray_validDataArray
+input inputData: object|array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"])
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
@@ -271,29 +306,14 @@ input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 
-testName: isArray_inValidDataInputMetaDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is an array or not) (testDataString)
-input inputMetaData: string (dfxg24346dfg)
-output: ?
-
 testName: isArray_inValidInputDataInteger
 input inputData: integer (4567)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isArray_inValidInputDataBoolean
 input inputData: boolean (false)
-input inputMetaData: array ([1,2,3,4,5])
-output: ?
-
-testName: isArray_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: integer (4567)
-output: ?
-
-testName: isArray_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: boolean (false)
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isArray_inValidInputDataUndefined
@@ -307,7 +327,12 @@ input inputMetaData: string (Not used for this business rule) (inValidDataToStor
 output: ?
 --------------------------------------------------------------------------------
 testName: isArrayOrObject_validDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is either an array or a JSON object or not)
+input inputData: object|array<string|integer|boolean|float|object> ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isArrayOrObject_validDataString
+input inputData: object|array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"])
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
@@ -316,29 +341,14 @@ input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 
-testName: isArrayOrObject_inValidDataInputMetaDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object that should be tested to see if it is either an array or a JSON object or not) (testDataString)
-input inputMetaData: string (dfxg24346dfg)
-output: ?
-
 testName: isArrayOrObject_inValidInputDataInteger
 input inputData: integer (4567)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isArrayOrObject_inValidInputDataBoolean
 input inputData: boolean (false)
-input inputMetaData: array ([1,2,3,4,5])
-output: ?
-
-testName: isArrayOrObject_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: integer (4567)
-output: ?
-
-testName: isArrayOrObject_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: boolean (false)
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isArrayOrObject_inValidInputDataUndefined
@@ -352,7 +362,12 @@ input inputMetaData: string (Not used for this business rule) (inValidDataToStor
 output: ?
 --------------------------------------------------------------------------------
 testName: isNonZeroLengthArray_validDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object/array that should be tested to see if it is an array of length greater than or equal to 1 or not)
+input inputData: object|array<string|integer|boolean|float|object> ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isNonZeroLengthArray_validDataString
+input inputData: object|array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"])
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
@@ -361,29 +376,14 @@ input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 
-testName: isNonZeroLengthArray_inValidDataInputMetaDataString
-input inputData: object|array<string|integer|boolean|float|object> (The object/array that should be tested to see if it is an array of length greater than or equal to 1 or not) (testDataString)
-input inputMetaData: string (dfxg24346dfg)
-output: ?
-
 testName: isNonZeroLengthArray_inValidInputDataInteger
 input inputData: integer (4567)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isNonZeroLengthArray_inValidInputDataBoolean
 input inputData: boolean (false)
-input inputMetaData: array ([1,2,3,4,5])
-output: ?
-
-testName: isNonZeroLengthArray_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: integer (4567)
-output: ?
-
-testName: isNonZeroLengthArray_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
-input inputMetaData: boolean (false)
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: isNonZeroLengthArray_inValidInputDataUndefined
@@ -413,21 +413,21 @@ output: ?
 
 testName: arrayDeepClone_inValidInputDataInteger
 input inputData: integer (4567)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: arrayDeepClone_inValidInputDataBoolean
 input inputData: boolean (false)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: string (Not used for this business rule)
 output: ?
 
 testName: arrayDeepClone_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
+input inputData: array<string|integer|boolean|float|object> (The array that should be deeply cloned)
 input inputMetaData: integer (4567)
 output: ?
 
 testName: arrayDeepClone_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
+input inputData: array<string|integer|boolean|float|object> (The array that should be deeply cloned)
 input inputMetaData: boolean (false)
 output: ?
 
@@ -441,39 +441,59 @@ input inputData: NaN
 input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
 output: ?
 --------------------------------------------------------------------------------
-testName: objectDeepMerge_validDataString
-input inputData: object (The target data to be merged with)
-input inputMetaData: object (The data that should be merged)
+testName: objectDeepMerge_validDataObject
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
+input inputMetaData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"})
 output: object (The merged data after the merge is complete)
 
 testName: objectDeepMerge_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
-input inputMetaData: object (The data that should be merged) (testDataString)
+input inputMetaData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"})
 output: ?
 
 testName: objectDeepMerge_inValidDataInputMetaDataString
-input inputData: object (The target data to be merged with) (testDataString)
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: string (dfxg24346dfg)
 output: ?
 
 testName: objectDeepMerge_inValidInputDataInteger
 input inputData: integer (4567)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"})
 output: ?
 
 testName: objectDeepMerge_inValidInputDataBoolean
 input inputData: boolean (false)
-input inputMetaData: array ([1,2,3,4,5])
+input inputMetaData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"})
 output: ?
 
 testName: objectDeepMerge_inValidInputMetaDataInteger
-input inputData: array ([1,2,3,4,5])
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: integer (4567)
 output: ?
 
 testName: objectDeepMerge_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: boolean (false)
+output: ?
+
+testName: objectDeepMerge_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"}) (inValidDataToStoreUndefined)
+output: ?
+
+testName: objectDeepMerge_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"}) (inValidDataToStoreNaN)
+output: ?
+
+testName: objectDeepMerge_inValidInputMetaDataUndefined
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: objectDeepMerge_inValidInputMetaDataNaN
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}) (inValidDataToStoreNaN)
+input inputMetaData: NaN
 output: ?
 --------------------------------------------------------------------
 testName: getNamespacedDataObject_validDataString

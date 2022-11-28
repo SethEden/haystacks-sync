@@ -61,6 +61,7 @@ testName: recursiveArrayExpansion_validDataString
 input inputData: array<integer,array<integer>> (The index of expansion and the array to be expanded as an array object)
 input inputMetaData: array<integer> (The Lehmer Codex that should be used to set the limit of expansion based on the index of expansion)
 output: array<array<integer>> (The final list of arrays after the array expansion has completed successfully)
+NOTE: Execute function using commandAliasGenerator to get valid inputs for this function.
 
 testName: recursiveArrayExpansion_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
@@ -84,12 +85,12 @@ output: ?
 
 testName: recursiveArrayExpansion_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
-input inputMetaData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
 output: ?
 
 testName: recursiveArrayExpansion_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
-input inputMetaData: boolean (false)
+input inputMetaData: array ([false,true,false])
 output: ?
 
 testName: recursiveArrayExpansion_inValidInputDataUndefined
@@ -168,7 +169,7 @@ input inputMetaData: NaN
 output: ?
 --------------------------------------------------------------------------------
 testName: generateCommandAliases_validDataString
-input inputData: object (An object containing all of the meta-data needed for command words and command word abbreviations needed to generate every possible combination of command aliases)
+input inputData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"})
 input inputMetaData: string (Not used for this business rule)
 output: string (A coma-separated list of every possible combination of command aliases)
 
@@ -178,7 +179,7 @@ input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 
 testName: generateCommandAliases_inValidDataInputMetaDataString
-input inputData: object (An object containing all of the meta-data needed for command words and command word abbreviations needed to generate every possible combination of command aliases) (testDataString)
+input inputData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"}) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
 
@@ -198,8 +199,18 @@ input inputMetaData: integer (4567)
 output: ?
 
 testName: generateCommandAliases_inValidInputMetaDataBoolean
-input inputData: array ([1,2,3,4,5])
+input inputData: array<string> (["df","xg","24","34","6d","fg"])
 input inputMetaData: boolean (false)
+output: ?
+
+testName: generateCommandAliases_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<array<string>> (The nested array of arrays with the values we should get and combine then return as a single string) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateCommandAliases_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<array<string>> (The nested array of arrays with the values we should get and combine then return as a single string) (inValidDataToStoreNaN)
 output: ?
 --------------------------------------------------------------------------------
 testName: aggregateCommandArguments_validDataString

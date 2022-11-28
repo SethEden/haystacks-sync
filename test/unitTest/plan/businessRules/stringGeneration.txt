@@ -491,11 +491,20 @@ testName: generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
---------------------------------------------------------------------------------generateValidEmail
+--------------------------------------------------------------------------------
 testName: generateValidEmail_validDataString
 input inputData: string (The string that contains the number of characters to generate)
 input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
-output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters where the length of the string is also defined as one of the input parameters, formatted as an email: a@b.com")
+output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters
+where the length of the string is also defined as one of the input parameters, formatted as an email: a@b.com")
+NOTE: Make a data driven with valid data for inputMetaData.
+
+testName: generateValidEmail_inValidInputMetaDataString
+input inputData: string (The string that contains the number of characters to generate)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
+output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters
+where the length of the string is also defined as one of the input parameters, formatted as an email: a@b.com")
+NOTE: Make a data driven with inValid data for inputMetaData.
 
 testName: generateValidEmail_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
@@ -527,6 +536,16 @@ input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
 
+testName: generateValidEmail_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateValidEmail_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreNaN)
+output: ?
+
 testName: generateValidEmail_inValidInputMetaDataUndefined
 input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreUndefined)
 input inputMetaData: undefined
@@ -536,12 +555,20 @@ testName: generateValidEmail_inValidInputMetaDataNaN
 input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreNaN)
 input inputMetaData: NaN
 output: ?
---------------------------------------------------------------------------------generateInvalidEmail
+--------------------------------------------------------------------------------
 testName: generateInvalidEmail_validDataString
 input inputData: string (The string that contains the number of characters to generate)
 input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
 output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters where the length of the string
- is also defined as one of the input parameters, formatted as an email: "a@b.com")
+is also defined as one of the input parameters, formatted as an email: "a@b.com")
+NOTE: Make a data driven with valid data for inputMetaData.
+
+testName: generateInvalidEmail_inValidInputMetaDataString
+input inputData: string (The string that contains the number of characters to generate)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
+output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters where the length of the string
+is also defined as one of the input parameters, formatted as an email: "a@b.com")
+NOTE: Make a data driven with inValid data for inputMetaData.
 
 testName: generateInvalidEmail_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
@@ -573,6 +600,16 @@ input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
 
+testName: generateInvalidEmail_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateInvalidEmail_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreNaN)
+output: ?
+
 testName: generateInvalidEmail_inValidInputMetaDataUndefined
 input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreUndefined)
 input inputMetaData: undefined
@@ -582,564 +619,213 @@ testName: generateInvalidEmail_inValidInputMetaDataNaN
 input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreNaN)
 input inputMetaData: NaN
 output: ?
---------------------------------------------------------------------------------generateValidEmailWithSpecificSuffixAndDomainName
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_validData
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters where the length of the string is also defined as one of the input
- parameters, formatted as an email: "a@b.com)
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateString
-input numberOfCharactersToGenerate: string (464gsdsfae8f46)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: string (464gsdsfae8f46)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (464gsdsfae8f46)
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (464gsdsfae8f46)
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateNumber
-input numberOfCharactersToGenerate: integer (546)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateBoolean
-input numberOfCharactersToGenerate: boolean (false)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: integer (546)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (false)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: integer (546)
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: boolean (false)
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: undefined
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: NaN
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol in the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: integer (546)
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: boolean (false)
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: undefined
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: NaN
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidAllUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: undefined
-input specifiedSuffixAndDomain: undefined
-output: false?
-
-testName: generateValidEmailWithSpecificSuffixAndDomainNamegenerateValidEmailWithSpecificSuffixAndDomainName_inValidAllNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: NaN
-input specifiedSuffixAndDomain: NaN
-output: false?
---------------------------------------------------------------------------------generateRandomValidEmail
-testName: generateRandomValidEmail_validData
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: string (A string of randomly generated  mixed case alpha numeric characters adn optionally special characters where the length of the string is also defined 
-as one of the input parameters, formatted as an email "a@b.com")
-
-testName: generateRandomValidEmail_inValidnumberOfCharactersToGenerateString
-input numberOfCharactersToGenerate: string (464gsdsfae8f46)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidgenerateSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: string (464gsdsfae8f46)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidallowableSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (464gsdsfae8f46)
-output: false?
-
-testName: generateRandomValidEmail_inValidspecifiedSuffixAndDomainString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (464gsdsfae8f46)
-output: false?
-
-testName: generateRandomValidEmail_inValidnumberOfCharactersToGenerateNumber
-input numberOfCharactersToGenerate: integer (546)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidnumberOfCharactersToGenerateBoolean
-input numberOfCharactersToGenerate: boolean (false)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidnumberOfCharactersToGenerateUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidnumberOfCharactersToGenerateNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidgenerateSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: integer (546)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidgenerateSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (false)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidgenerateSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidgenerateSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only sued if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomValidEmail_inValidallowableSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: integer (546)
-output: false?
-
-testName: generateRandomValidEmail_inValidallowableSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: boolean (false)
-output: false?
-
-testName: generateRandomValidEmail_inValidallowableSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: undefined
-output: false?
-
-testName: generateRandomValidEmail_inValidallowableSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: NaN
-output: false?
-
-testName: generateRandomValidEmail_inValidAllUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: undefined
-output: false?
-
-testName: generateRandomValidEmail_inValidAllNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: NaN
-output: false?
---------------------------------------------------------------------------------generateInvalidEmailWithSpecificSuffixAndDomainName
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_validData
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters where the length of the string is also defined
- as one of the input parameters, formatted as an email "a@b.com")
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateString
-input numberOfCharactersToGenerate: string (464gsdsfae8f46)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: string (464gsdsfae8f46)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (464gsdsfae8f46)
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (464gsdsfae8f46)
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateNumber
-input numberOfCharactersToGenerate: integer (546)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateBoolean
-input numberOfCharactersToGenerate: boolean (false)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidnumberOfCharactersToGenerateNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: integer (546)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (false)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidgenerateSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: integer (546)
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: boolean (false)
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: undefined
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidallowableSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: NaN
-input specifiedSuffixAndDomain: string (The specified suffix and domain to use after the "@" symbol n the email being generated, example: "Yahoo.com")
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: integer (546)
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: boolean (false)
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: undefined
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidspecifiedSuffixAndDomainNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters fro the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input specifiedSuffixAndDomain: NaN
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidAllUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: undefined
-input specifiedSuffixAndDomain: undefined
-output: false?
-
-testName: generateInvalidEmailWithSpecificSuffixAndDomainName_inValidAllNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: NaN
-input specifiedSuffixAndDomain: NaN
-output: false?
---------------------------------------------------------------------------------generateRandomInvalidEmail
-testName: generateRandomInvalidEmail_validData
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: string (data set from numberOfCharactersToGenerate and dataToMerge)
-
-testName: generateRandomInvalidEmail_inValidnumberOfCharactersToGenerateString
-input numberOfCharactersToGenerate: string (464gsdsfae8f46)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidgenerateSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: string (464gsdsfae8f46)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidallowableSpecialCharactersString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (464gsdsfae8f46)
-output: false?
-
-testName: generateRandomInvalidEmail_inValidDataToMergeString
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-input dataToMerge: string (464gsdsfae8f46)
-output: false?
-
-testName: generateRandomInvalidEmail_inValidnumberOfCharactersToGenerateNumber
-input numberOfCharactersToGenerate: integer (546)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidnumberOfCharactersToGenerateBoolean
-input numberOfCharactersToGenerate: boolean (false)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidnumberOfCharactersToGenerateUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidnumberOfCharactersToGenerateNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidgenerateSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: integer (546)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidgenerateSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (false)
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidgenerateSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidgenerateSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: string (The list of allowable special characters as a string, only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE})
-output: false?
-
-testName: generateRandomInvalidEmail_inValidallowableSpecialCharactersNumber
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: integer (546)
-output: false?
-
-testName: generateRandomInvalidEmail_inValidallowableSpecialCharactersBoolean
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: boolean (false)
-output: false?
-
-testName: generateRandomInvalidEmail_inValidallowableSpecialCharactersUndefined
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: undefined
-output: false?
-
-testName: generateRandomInvalidEmail_inValidallowableSpecialCharactersNaN
-input numberOfCharactersToGenerate: integer (The number of characters to generate as an integer)
-input generateSpecialCharacters: boolean (A boolean value to indicate if special characters should be included when randomly generating characters for the output string)
-input allowableSpecialCharacters: NaN
-output: false?
-
-testName: generateRandomInvalidEmail_inValidAllUndefined
-input numberOfCharactersToGenerate: undefined
-input generateSpecialCharacters: undefined
-input allowableSpecialCharacters: undefined
-output: false?
-
-testName: generateRandomInvalidEmail_inValidAllNaN
-input numberOfCharactersToGenerate: NaN
-input generateSpecialCharacters: NaN
-input allowableSpecialCharacters: NaN
-output: false?
---------------------------------------------------------------------------------generateRandomBrightColor
-
---------------------------------------------------------------------------------generateRandomDarkColor
-
---------------------------------------------------------------------------------generateRandomColor
-
+--------------------------------------------------------------------------------
+testName: generateRandomBrightColor_validDataString
+input inputData: string ("!@#$%^&*")
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_validDataInteger
+input inputData: integer (57972)
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_validDataStringInteger
+input inputData: string ("!@#$%^&*")
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_validDataIntegerString
+input inputData: integer (57972)
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_inValidDataInputDataString
+input inputData: string ("dfxg24346dfg")
+input inputMetaData: string|integer (!@#$%^&*) (testDataString)
+output: ?
+
+testName: generateRandomBrightColor_inValidDataInputMetaDataString
+input inputData: string|integer (!@#$%^&*) (testDataString)
+input inputMetaData: string ("dfxg24346dfg")
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataInteger
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataBoolean
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataUndefined
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataNaN
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomDarkColor_validDataString
+input inputData: string (!@#$%^&*)
+input inputMetaData: string (!@#$%^&*)
+output: array<integer,integer,integer> (An array of RGB values in the dark color spectrum range)
+
+testName: generateRandomDarkColor_validDataInteger
+input inputData: integer (57972)
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the dark color spectrum range)
+
+testName: generateRandomDarkColor_validDataStringInteger
+input inputData: string ("!@#$%^&*")
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomDarkColor_validDataIntegerString
+input inputData: integer (57972)
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomDarkColor_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string|integer (!@#$%^&*) (testDataString)
+output: ?
+
+testName: generateRandomDarkColor_inValidDataInputMetaDataString
+input inputData: string|integer (!@#$%^&*) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataInteger
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataBoolean
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataUndefined
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataNaN
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomColor_validDataString
+input inputData: string (!@#$%^&*)
+input inputMetaData: string (!@#$%^&*)
+output: array<integer,integer,integer> (An array of RGB values that will be used for a color value)
+
+testName: generateRandomColor_validDataInteger
+input inputData: integer (57972)
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values that will be used for a color value)
+
+testName: generateRandomColor_validDataStringInteger
+input inputData: string ("!@#$%^&*")
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomColor_validDataIntegerString
+input inputData: integer (57972)
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomColor_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string|integer (!@#$%^&*) (testDataString)
+output: ?
+
+testName: generateRandomColor_inValidDataInputMetaDataString
+input inputData: string|integer (!@#$%^&*) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomColor_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomColor_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataInteger
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataBoolean
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateRandomColor_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateRandomColor_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataUndefined
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataNaN
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?

@@ -48,7 +48,7 @@ input inputMetaData: string (The file name we are looking for in the input array
 output: ?
 --------------------------------------------------------------------------------getFileAndPathListForPath
 testName: getFileAndPathListForPath_validDataString
-input inputData: string (The path that should be scanned for files and their full paths)
+input inputData: string (C:/../.. | NOTE: Get a path with a known number of files and folders.)
 input inputMetaData: integer (Optional file limit, ignored if the configuration flag is not set to true, if nothing is passed the configuration setting will be used)
 output: array<string> (The array that contains the full path and file name for every file found under the specified path)
 
@@ -58,7 +58,7 @@ input inputMetaData: integer (Optional file limit, ignored if the configuration 
 output: ?
 
 testName: getFileAndPathListForPath_inValidDataInputMetaDataString
-input inputData: string (The path that should be scanned for files and their full paths) (testDataString)
+input inputData: string (C:/../.. | NOTE: Get a path with a known number of files and folders.) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
 
@@ -80,4 +80,24 @@ output: ?
 testName: getFileAndPathListForPath_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: integer (Optional file limit, ignored if the configuration flag is not set to true, if nothing is passed the configuration setting will be used) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: integer (Optional file limit, ignored if the configuration flag is not set to true, if nothing is passed the configuration setting will be used) (inValidDataToStoreNaN)
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputMetaDataUndefined
+input inputData: string (C:/../.. | NOTE: Get a path with a known number of files and folders.) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: getFileAndPathListForPath_inValidInputMetaDataNaN
+input inputData: string (C:/../.. | NOTE: Get a path with a known number of files and folders.) (inValidDataToStoreNaN)
+input inputMetaData: NaN
 output: ?

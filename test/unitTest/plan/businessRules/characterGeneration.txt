@@ -387,18 +387,38 @@ input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
 --------------------------------------------------------------------------------
-testName: randomlyGenerateNumberInRange_validDataString
+testName: randomlyGenerateNumberInRange_validDataStringTrueTrue
 input inputData:  string (A string that contains the number with the minimum value)
-input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters)
+input inputMetaData: array<string,boolean,boolean> (["5",true,true])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataStringTrueFalse
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<string,boolean,boolean> (["5",true,false])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataStringFalseTrue
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<string,boolean,boolean> (["5",false,true])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataStringFalseFalse
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<string,boolean,boolean> (["5",false,false])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataInteger
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<integer,boolean,boolean> ([5,true,true])
 output: string (The new random number that was generated according to the input parameters)
 
 testName: randomlyGenerateNumberInRange_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
-input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters) (testDataString)
+input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters)
 output: ?
 
 testName: randomlyGenerateNumberInRange_inValidDataInputMetaDataString
-input inputData: string (A string that contains the number with the minimum value) (testDataString)
+input inputData: string (A string that contains the number with the minimum value)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
 
@@ -420,6 +440,16 @@ output: ?
 testName: randomlyGenerateNumberInRange_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters) (inValidDataToStoreUndefined)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters) (inValidDataToStoreNaN)
 output: ?
 
 testName: randomlyGenerateNumberInRange_inValidInputMetaDataUndefined

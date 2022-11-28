@@ -1,0 +1,10 @@
+description: Test plan for auxilary.js
+
+
+--------------------------------------------------------------------------------
+testName: convertColors_validDataString
+NOTE: Happy path unit test will be tested by integration test using the workflow: converters. 
+(cmdSeq wrkflo,hex2rgbConversion)
+
+clear wrd.ccolors
+clear sys.cColorData

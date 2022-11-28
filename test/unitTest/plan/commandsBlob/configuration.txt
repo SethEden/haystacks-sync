@@ -1,0 +1,71 @@
+description: Test plan for configuration.js
+
+
+--------------------------------------------------------------------------------saveConfiguration
+testName: saveConfiguration_validDataString
+NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+(cmdSeq wrkflo,TestCommandSequence1 wrkflo,TestCommandSequence2  wrkflo,TestCommandSequence3 wrkflo,TestCommandSequence4 wrkflo,TestCommandSequence5)
+
+--------------------------------------------------------------------------------changeConfigurationSetting
+testName: changeConfigurationSetting_validDataString
+NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+(cmdSeq wrkflo,TestCommandSequence1 wrkflo,TestCommandSequence2  wrkflo,TestCommandSequence3 wrkflo,TestCommandSequence4 wrkflo,TestCommandSequence5)
+
+testName: changeConfigurationSetting_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this command) (testDataString)
+output: ?
+
+testName: changeConfigurationSetting_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: changeConfigurationSetting_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: changeConfigurationSetting_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
+output: ?
+
+testName: changeConfigurationSetting_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------listConfigurationThemes
+testName: listConfigurationThemes_validDataString
+NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+(cmdSeq wrkflo,TestCommandSequence1 wrkflo,TestCommandSequence2  wrkflo,TestCommandSequence3 wrkflo,TestCommandSequence4 wrkflo,TestCommandSequence5)
+
+--------------------------------------------------------------------------------changeDebugConfigurationTheme
+testName: changeDebugConfigurationTheme_validDataString
+NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+(cmdSeq wrkflo,TestCommandSequence1 wrkflo,TestCommandSequence2  wrkflo,TestCommandSequence3 wrkflo,TestCommandSequence4 wrkflo,TestCommandSequence5)
+
+testName: changeDebugConfigurationTheme_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this command) (testDataString)
+output: ?
+
+testName: changeDebugConfigurationTheme_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: changeDebugConfigurationTheme_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: changeDebugConfigurationTheme_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
+output: ?
+
+testName: changeDebugConfigurationTheme_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
+output: ?

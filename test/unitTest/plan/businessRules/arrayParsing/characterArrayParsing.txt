@@ -123,28 +123,28 @@ input inputMetaData: array<string|boolean|integer|object> (The array that should
 output: ?
 
 testName: removeCharacterFromArray_validDataInputDataObject
-input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
+input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}) OR array ([1,2,3,4])
 input inputMetaData: array<string|boolean|integer|object> (The array that should be searched for the specified character/value/etc...) (testDataObject)
 output: ?
 
 testName: removeCharacterFromArray_validDataInputDataString
 input inputData: string|boolean|integer|object (The character that should be searched for in the array of elements) (testDataString)
-input inputMetaData: string (dfxg24346dfg)
+input inputMetaData: array<string> (["df","xg","24","34","6d","fg"])
 output: ?
 
 testName: removeCharacterFromArray_validDataInputDataInteger
 input inputData: string|boolean|integer|object (The character that should be searched for in the array of elements) (testDataInteger)
-input inputMetaData: integer (23456)
+input inputMetaData: array<integer> ([2,3,4,5,6])
 output: ?
 
 testName: removeCharacterFromArray_validDataInputDataBoolean
 input inputData: string|boolean|integer|object (The character that should be searched for in the array of elements) (testDataBoolean)
-input inputMetaData: boolean (false)
+input inputMetaData: array<boolean> ([false,true,false])
 output: ?
 
 testName: removeCharacterFromArray_validDataInputDataObject
 input inputData: string|boolean|integer|object (The character that should be searched for in the array of elements) (testDataObject)
-input inputMetaData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
+input inputMetaData: array<object> ([{"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"},{...}])
 output: ?
 
 testName: removeCharacterFromArray_inValidInputDataUndefined

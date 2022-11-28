@@ -1,0 +1,154 @@
+description: Test plan for advanced.js
+
+
+--------------------------------------------------------------------------------
+testName: commandSequencer_validDataString
+NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+(cmdSeq wrkflo,TestCommandSequence1 wrkflo,TestCommandSequence2  wrkflo,TestCommandSequence3 wrkflo,TestCommandSequence4 wrkflo,TestCommandSequence5)
+
+testName: commandSequencer_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this command) (testDataString)
+output: ?
+
+testName: commandSequencer_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: commandSequencer_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: commandSequencer_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
+output: ?
+
+testName: commandSequencer_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: workflow_validDataString
+NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: allSystemWorkflows. 
+(cmdSeq wrkflo,allBusinessRulesWorkflows wrkflo,converters wrkflo,metrics wrkflo,system)
+
+testName: workflow_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this command) (testDataString)
+output: ?
+
+testName: workflow_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: workflow_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: workflow_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
+output: ?
+
+testName: workflow_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: businessRule_validDataString
+NOTE: Happy path unit test will be tested by integration test using the haystacks workflows workflow: allBusinessRulesWorkflows. 
+(cmdSeq wrkflo,allBusinessRulesArrayParsingWorkflows wrkflo,allBusinessRulesStringParsingWorkflows wrkflo,characterGeneration wrkflo,mathOperations wrkflo,stringGeneration wrkflo,stringParsingUtilities)
+
+testName: businessRule_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this command) (testDataString)
+output: ?
+
+testName: businessRule_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: businessRule_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: businessRule_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
+output: ?
+
+testName: businessRule_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: commandGenerator_validDataString
+NOTE: Happy path unit test will be tested by integration test using the haystacks string generation workflow: stringGeneration. 
+(cmdSeq wrkflo,generateRandomMixedCaseTextByLength wrkflo,generateRandomUpperCaseTextByLength wrkflo,generateRandomLowerCaseTextByLength 
+wrkflo,generateRandomMixedCaseTextWithSpecialCharactersByLength wrkflo,generateRandomUpperCaseTextWithSpecialCharactersByLength 
+wrkflo,generateRandomLowerCaseTextWithSpecialCharactersByLength wrkflo,generateRandomMixedCaseAlphaNumericCodeByLength 
+wrkflo,generateRandomUpperCaseAlphaNumericCodeByLength wrkflo,generateRandomLowerCaseAlphaNumericCodeByLength 
+wrkflo,generateRandomNumericCodeByLength wrkflo,generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength 
+wrkflo,generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength wrkflo,generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength 
+wrkflo,generateRandomSpecialCharacterCodeByLength wrkflo,generateValidEmaila wrkflo,generateInvalidEmaila wrkflo,generateValidEmailb wrkflo,generateInvalidEmailb)
+
+testName: commandGenerator_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this command) (testDataString)
+output: ?
+
+testName: commandGenerator_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: commandGenerator_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: commandGenerator_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
+output: ?
+
+testName: commandGenerator_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: 1commandSequencer_validDataString
+NOTE: Happy path unit test will be tested by integration test using the haystacks string workflow: TestCommandSequenceALL. 
+("constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst")
+
+testName: 1commandSequencer_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this command) (testDataString)
+output: ?
+
+testName: 1commandSequencer_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: 1commandSequencer_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: 1commandSequencer_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
+output: ?
+
+testName: 1commandSequencer_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
+output: ?
