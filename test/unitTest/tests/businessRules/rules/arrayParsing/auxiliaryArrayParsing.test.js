@@ -9,7 +9,7 @@
  * @requires {@link https://www.npmjs.com/package/jest|jest}
  * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
- * @date 2020/03/31
+ * @date 2023/04/06
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 
@@ -37,7 +37,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @function parseColorRangeInputs_validDataInteger1
   * @description Tests the business rules function parseColorRangeInputs with a valid integer input.
   * @author Json Howard
-  * @date 2022/01/21
+  * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_validDataInteger1, () => {
     let returnData = [];
@@ -59,7 +59,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
   * @function doesArrayContainValue_validDataString
   * @description Tests the business rules function doesArrayContainValue with a valid string input.
   * @author Json Howard
-  * @date 2022/01/21
+  * @date 2023/04/06
   */
   test(tst_con.cdoesArrayContainValue_validDataString, () => {
     let inputData = [[1, 2, 3, 4, 5], 3]
