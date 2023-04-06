@@ -1,3 +1,4 @@
+'use strict';
 /**
  * @file auxiliaryArrayParsing.test.js
  * @module auxiliaryArrayParsing.test
@@ -11,21 +12,30 @@
  * @copyright Copyright © 2023-… by Seth Hollingsead. All rights reserved
  */
 
+import { createRequire } from 'node:module';
+import { beforeAll, beforeEach, jest } from '@jest/globals';
+
+const require = createRequire(import.meta.url);
+
 // Internal imports
 import auxiliaryArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js";
+// const auxiliaryArrayParsing = require("../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing")
+
+// const auxiliaryArrayParsing = await import('../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js')
 
 // External imports
-import hayConst from '@haystacks/constants';
-import jest from 'jest';
-import path from 'path';
+// import { describe, expect, test } from '@jest/globals'
+// const hayConst = require('@haystacks/constants');
+// const jest = require('jest');
+// const path = requrie('path');
 
-const {bas, msg, sys, wrd} = hayConst;
+// const {bas, msg, sys, wrd} = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
-// // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
+// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
 
 describe('parseColorRangeInputs Tests', () => {
-  test('parseColorRangeInputs_validDataString1', () => {
+  test('parseColorRangeInputs_validDataString1', async () => {
     let returnData = [];
     returnData = auxiliaryArrayParsing.parseColorRangeInputs(1, 10);
     expect(returnData[0]).toBe(1);
