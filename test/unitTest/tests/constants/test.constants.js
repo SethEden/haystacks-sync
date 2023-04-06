@@ -13,16 +13,9 @@ import hayConst from '@haystacks/constants';
 const {bas, num, sys, wrd} = hayConst;
 
 // Describe names
-const cparseColorRangeInputs = wrd.cparse + wrd.cColor + wrd.cRange + wrd.cInputs;
-const cdoesArrayContainValue = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cValue;
+export const cparseColorRangeInputs = wrd.cparse + wrd.cColor + wrd.cRange + wrd.cInputs;
+export const cdoesArrayContainValue = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cValue;
 
 // Test names
-const cparseColorRangeInputs_validDataInteger1 = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger + num.c1;
-const cdoesArrayContainValue_validDataString = cdoesArrayContainValue + wrd.cvalid + wrd.cData + wrd.cString;
-
-export default {
-    cparseColorRangeInputs,
-    cdoesArrayContainValue,
-    cparseColorRangeInputs_validDataInteger1,
-    cdoesArrayContainValue_validDataString
-}
+export const cparseColorRangeInputs_validDataInteger1 = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger + num.c1;
+export const cdoesArrayContainValue_validDataString = cdoesArrayContainValue + wrd.cvalid + wrd.cData + wrd.cString;

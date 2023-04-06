@@ -15,7 +15,7 @@
 
 // Internal imports
 import auxiliaryArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js";
-import tst_con from '../../../constants/test.constants.js';
+import * as tst_con  from '../../../constants/test.constants.js';
 
 // External imports
 // import hayConst from '@haystacks/constants';
