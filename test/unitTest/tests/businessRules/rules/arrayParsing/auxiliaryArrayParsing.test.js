@@ -41,8 +41,13 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_validDataString, () => {
+    // Arrange
     let returnData = [];
+
+    // Act
     returnData = auxiliaryArrayParsing.parseColorRangeInputs('1', '10');
+
+    // Assert
     expect(returnData[0]).toBe(1);
     expect(returnData[1]).toBe(10);
   });
@@ -54,8 +59,13 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_validDataMixedUse1, () => {
+    // Arrange
     let returnData = [];
+
+    // Act
     returnData = auxiliaryArrayParsing.parseColorRangeInputs(1, '10');
+
+    // Assert
     expect(returnData[0]).toBe(1);
     expect(returnData[1]).toBe(10);
   })
@@ -67,8 +77,13 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_validDataMixedUse2, () => {
+    // Arrange
     let returnData = [];
+
+    // Act
     returnData = auxiliaryArrayParsing.parseColorRangeInputs('1', 10);
+
+    // Assert
     expect(returnData[0]).toBe(1);
     expect(returnData[1]).toBe(10);
   })
@@ -80,8 +95,13 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_validDataInteger, () => {
+    // Arrange
     let returnData = [];
+
+    // Act
     returnData = auxiliaryArrayParsing.parseColorRangeInputs(1, 10);
+
+    // Assert
     expect(returnData[0]).toBe(1);
     expect(returnData[1]).toBe(10);
   });
@@ -93,13 +113,18 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_inValidInputDataUndefined, () => {
+    // Arrange
     let returnData = [];
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs(undefined, 10);
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs(undefined, '10');
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
+
+    // Act
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, 10));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, '10'));
+
+    // Assert 
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
   });
 
   /**
@@ -109,13 +134,18 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_inValidInputDataNaN, () => {
+    // Arrange
     let returnData = [];
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs(NaN, 10);
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs(NaN, '10');
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
+
+    // Act
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, 10));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, '10'));
+
+    // Assert
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
   });
 
   /**
@@ -125,13 +155,18 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_inValidInputMetaDataUndefined, () => {
+    // Arrange
     let returnData = [];
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs(0, undefined);
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs('10', undefined);
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
+
+    // Act
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(0, undefined));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs('10', undefined));
+
+    // Assert
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
   });
 
   /**
@@ -141,13 +176,18 @@ describe(tst_con.cparseColorRangeInputs, () => {
   * @date 2023/04/06
   */
   test(tst_con.cparseColorRangeInputs_inValidInputMetaDataNaN, () => {
+    // Arrange
     let returnData = [];
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs(10, NaN);
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs('10', NaN);
-    expect(returnData[0]).toBe(0);
-    expect(returnData[1]).toBe(0);
+
+    // Act
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(10, NaN));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs('10', NaN));
+
+    // Assert
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
   });
 });
 
@@ -165,12 +205,17 @@ describe(tst_con.cdoesArrayContainValue, () => {
   * @date 2023/04/06
   */
   test(tst_con.cdoesArrayContainValue_validDataInputDataString, () => {
+    // Arrange
     let inputData = [["1", "2", "3", "4", "5"], "3"];
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(true);
   });
 
@@ -181,12 +226,17 @@ describe(tst_con.cdoesArrayContainValue, () => {
   * @date 2023/04/06
   */
   test(tst_con.cdoesArrayContainValue_validDataInputDataInteger, () => {
+    // Arrange
     let inputData = [[1, 2, 3, 4, 5], 3];
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(true);
   });
 
@@ -197,12 +247,17 @@ describe(tst_con.cdoesArrayContainValue, () => {
   * @date 2023/04/06
   */
   test(tst_con.cdoesArrayContainValue_validDataInputDataBoolean, () => {
+    // Arrange
     let inputData = [[true, true, false, false, true], true];
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(true);
   });
 
@@ -213,6 +268,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
   * @date 2023/04/06
   */
   test(tst_con.cdoesArrayContainValue_validDataInputDataObject, () => {
+    // Arrange
     let inputData = [
       [
         { "constants": "c,const123", "Generator2": "g,gen,genrtr32", "List": "l,lst12" },
@@ -233,7 +289,11 @@ describe(tst_con.cdoesArrayContainValue, () => {
       return true;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(true);
   });
 
@@ -244,12 +304,17 @@ describe(tst_con.cdoesArrayContainValue, () => {
   * @date 2023/04/06
   */
   test(tst_con.cdoesArrayContainValue_inValidInputDataUndefined, () => {
+    // Arrange
     let inputData = undefined;
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(false);
   })
 
@@ -260,12 +325,17 @@ describe(tst_con.cdoesArrayContainValue, () => {
    * @date 2023/04/06
    */
   test(tst_con.cdoesArrayContainValue_inValidInputDataNaN, () => {
+    // Arrange
     let inputData = NaN;
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(false);
   })
 
@@ -276,12 +346,17 @@ describe(tst_con.cdoesArrayContainValue, () => {
    * @date 2023/04/06
    */
   test(tst_con.cdoesArrayContainValue_inValidDataStorageInputMetaDataInteger, () => {
+    // Arrange
     let inputData = [[1, 2, 3, 4, 5], 4567];
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(false);
   })
   
@@ -292,12 +367,17 @@ describe(tst_con.cdoesArrayContainValue, () => {
    * @date 2023/04/06
    */
    test(tst_con.cdoesArrayContainValue_inValidDataStorageInputMetaDataBoolean, () => {
+    // Arrange
     let inputData = [[1, 2, 3, 4, 5], false];
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
     let returnData;
+
+    // Act
     returnData = auxiliaryArrayParsing.doesArrayContainValue(inputData, inputMetaData);
+
+    // Assert
     expect(returnData).toBe(false);
   })
 });
