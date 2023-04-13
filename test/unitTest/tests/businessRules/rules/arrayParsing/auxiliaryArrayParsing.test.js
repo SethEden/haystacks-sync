@@ -17,12 +17,13 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 // Internal imports
 import auxiliaryArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js";
 import * as tst_con from '../../../constants/test.constants.js';
+import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js';
 
 // External imports
-// import hayConst from '@haystacks/constants';
+import hayConst from '@haystacks/constants';
 import { beforeAll, beforeEach, expect, jest } from '@jest/globals';
 
-// const {bas, msg, sys, wrd} = hayConst;
+const {bas, msg, sys, wrd, num} = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -45,7 +46,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
     let returnData = [];
 
     // Act
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs('1', '10');
+    returnData = auxiliaryArrayParsing.parseColorRangeInputs(num.c1, num.c10);
 
     // Assert
     expect(returnData[0]).toBe(1);
@@ -63,7 +64,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
     let returnData = [];
 
     // Act
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs(1, '10');
+    returnData = auxiliaryArrayParsing.parseColorRangeInputs(1, num.c10);
 
     // Assert
     expect(returnData[0]).toBe(1);
@@ -81,7 +82,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
     let returnData = [];
 
     // Act
-    returnData = auxiliaryArrayParsing.parseColorRangeInputs('1', 10);
+    returnData = auxiliaryArrayParsing.parseColorRangeInputs(num.c1, 10);
 
     // Assert
     expect(returnData[0]).toBe(1);
@@ -118,7 +119,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, 10));
-    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, '10'));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, num.c10));
 
     // Assert 
     expect(returnData[0][0]).toBe(0);
@@ -139,7 +140,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, 10));
-    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, '10'));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, num.c10));
 
     // Assert
     expect(returnData[0][0]).toBe(0);
@@ -160,7 +161,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(0, undefined));
-    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs('10', undefined));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(num.c10, undefined));
 
     // Assert
     expect(returnData[0][0]).toBe(0);
@@ -181,7 +182,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(10, NaN));
-    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs('10', NaN));
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(num.c10, NaN));
 
     // Assert
     expect(returnData[0][0]).toBe(0);
@@ -206,7 +207,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
   */
   test(tst_con.cdoesArrayContainValue_validDataInputDataString, () => {
     // Arrange
-    let inputData = [["1", "2", "3", "4", "5"], "3"];
+    let inputData = [[num.c1, num.c2, num.c3, num.c4, num.c5], num.c3];
     let inputMetaData = (a, b) => {
       return a === b ? true : false;
     };
@@ -269,16 +270,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
   */
   test(tst_con.cdoesArrayContainValue_validDataInputDataObject, () => {
     // Arrange
-    let inputData = [
-      [
-        { "constants": "c,const123", "Generator2": "g,gen,genrtr32", "List": "l,lst12" },
-        { "constants": "c,const12", "Generator32": "g,gen,genrtr12", "List": "l,lst32" },
-        { "constants": "c,const32", "Generator12": "g,gen,genrtr13", "List": "l,lst22" },
-        { "constants": "c,const", "Generator": "g,gen,genrtr", "List": "l,lst" },
-        { "constants": "c,const22", "Generator32": "g,gen,genrtr31", "List": "l,lst44" }
-      ],
-      { "constants": "c,const", "Generator": "g,gen,genrtr", "List": "l,lst" }
-    ];
+    let inputData = obj_con.JsonObjectArrayOfStrings_01;
     let inputMetaData = (object1, object2) => {
       const keys1 = Object.keys(object1);
       const keys2 = Object.keys(object2);

@@ -47,7 +47,7 @@ function solveLehmerCode(inputData, inputMetaData) {
     //
     // {
     // "wonder": "wondr,wundr,wndr",
-    // "Woman": "wman,wmn,womn",
+    // "Woman": "wman,wmn,womn",              
     // "Amazing": "amzing,amzng"
     // }
     let lengthOfInputData = inputData.length;

@@ -17,12 +17,13 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 // Internal imports
 import characterArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js";
 import * as tst_con from '../../../constants/test.constants.js';
+import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/characterArrayParsing.js';
 
 // External imports
-// import hayConst from '@haystacks/constants';
+import hayConst from '@haystacks/constants';
 import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
 
-// const {bas, msg, sys, wrd} = hayConst;
+const {bas, msg, sys, wrd, num} = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -42,14 +43,14 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
     */
     test(tst_con.creplaceCharacterWithCharacter_validDataInputDataString, () => {
         // Arrange
-        let inputData = "HelloWorld";
-        let inputMetaData = ["Hello", "World"];
+        let inputData = wrd.cHello + wrd.cWorld;
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
 
         // Act 
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("WorldWorld");
+        expect(returnData).toBe(wrd.cWorld + wrd.cWorld);
     });
 
     /**
@@ -60,14 +61,14 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
     */
     test(tst_con.creplaceCharacterWithCharacter_validDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "Hello World";
-        let inputMetaData = "Hh";
+        let inputData = wrd.cHello + wrd.cSpace + wrd.cWorld;
+        let inputMetaData = bas.cH + bas.ch;
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
         //Assert
-        expect(returnData).toBe("hello World");
+        expect(returnData).toBe(wrd.chello + wrd.cSpace + wrd.cWorld);
     })
 
     /**
@@ -76,16 +77,16 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
     * @author Json Howard
     * @date 2023/04/09
     */
-    test(tst_con.replaceCharacterWithCharacter_inValidInputMetaDataUndefined, () => {
+    test(tst_con.creplaceCharacterWithCharacter_inValidInputMetaDataUndefined, () => {
         // Arrange
-        let inputData = "HelloWorld";
+        let inputData = wrd.cHello + wrd.cWorld;
         let inputMetaData = [undefined, undefined];
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HelloWorld");
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     })
 
     /**
@@ -94,16 +95,16 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
     * @author Json Howard
     * @date 2023/04/09
     */
-    test(tst_con.replaceCharacterWithCharacter_inValidInputMetaDataUndefined, () => {
+    test(tst_con.creplaceCharacterWithCharacter_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = "HelloWorld";
+        let inputData = wrd.cHello + wrd.cWorld;
         let inputMetaData = [NaN, NaN];
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HelloWorld");
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     })
 });
 
@@ -122,8 +123,8 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
     */
     test(tst_con.cdoesArrayContainCharacter_validDataInputDataString, () => {
         // Arrange
-        let inputData = "Hello";
-        let inputMetaData = ["Hello World", "World"];
+        let inputData = wrd.cHello;
+        let inputMetaData = [wrd.cHello + wrd.cSpace + wrd.cWorld, wrd.cWorld];
 
         // Act
         let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
@@ -141,7 +142,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
     test(tst_con.cdoesArrayContainCharacter_validDataInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = ["Hello 123", "Hello"];
+        let inputMetaData = [wrd.cHello + wrd.cSpace + num.c123, wrd.cHello];
 
         // Act
         let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
@@ -149,6 +150,24 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
         // Assert
         expect(returnData).toBe(true);
     });
+
+    /**
+    * @function doesArrayContainCharacter_validDataInputDataBoolean
+    * @description Tests the business rules function doesArrayContainCharacter with a valid boolean input.
+    * @author Json Howard
+    * @date 2023/04/11
+    */
+    test(tst_con.cdoesArrayContainCharacter_validDataInputDataBoolean, () => {
+        // Arrabge
+        let inputData = false;
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
+
+        // Act
+        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    })    
 
     /**
     * @function doesArrayContainCharacter_validDataInputMetaDataString
@@ -158,32 +177,14 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
     */
     test(tst_con.cdoesArrayContainCharacter_validDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "H"
-        let inputMetaData = "Hello World";
+        let inputData = wrd.cHello;
+        let inputMetaData = wrd.cHello + wrd.cSpace + wrd.cWorld;
 
         // Act
         let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(true);
-    });
-
-    /**
-    * @function doesArrayContainCharacter_validDataInputMetaDataInteger
-    * @description Tests the business rules function doesArrayContainCharacter with a valid integer inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/09
-    */
-    test(tst_con.cdoesArrayContainCharacter_validDataInputMetaDataInteger, () => {
-        // Arrange
-        let inputData = 2;
-        let inputMetaData = "23456";
-
-        // Act
-        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(true);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -195,7 +196,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
     test(tst_con.cdoesArrayContainCharacter_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = ["Hello", "World"];
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
 
         // Act
         let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
@@ -213,7 +214,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
     test(tst_con.cdoesArrayContainCharacter_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = ["Hello", "World"];
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
 
         // Act
         let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
@@ -230,7 +231,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
    */
     test(tst_con.cdoesArrayContainCharacter_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = "Hello";
+        let inputData = wrd.cHello;
         let inputMetaData = undefined;
 
         // Act
@@ -248,7 +249,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
      */
     test(tst_con.cdoesArrayContainCharacter_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = "Hello";
+        let inputData = wrd.cHello;
         let inputMetaData = NaN;
 
         // Act
@@ -274,50 +275,86 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     */
     test(tst_con.cremoveCharacterFromArray_validDataInputDataString, () => {
         // Arrange
-        let inputData = "Hello";
-        let inputMetaData = ["HelloWorld", "World"];
+        let inputData = wrd.cHello;
+        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cWorld];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(["World", "World"]);
+        expect(returnData).toEqual([wrd.cWorld, wrd.cWorld]);
     })
 
+    /**
+    * @function removeCharacterFromArray_validDataInputDataString
+    * @description Tests the business rules function removeCharacterFromArray with a valid string inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/11
+    */
+    test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataString, () => {
+        // Arrange
+        let inputData = wrd.cHello;
+        let inputMetaData = wrd.cHello;
+
+        // Act
+        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(wrd.cHello);
+    })
+    
     /**
     * @function removeCharacterFromArray_validDataInputDataInteger
-    * @description Tests the business rules function removeCharacterFromArray with a valid integer input.
+    * @description Tests the business rules function removeCharacterFromArray with a valid integer inputMetaData.
     * @author Json Howard
-    * @date 2023/04/09
+    * @date 2023/04/11
     */
-    test(tst_con.cremoveCharacterFromArray_validDataInputDataInteger, () => {
+    test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = ["Hello123", "World"];
+        let inputMetaData = 123;
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(["Hello123", "World"]);
+        expect(returnData).toBe(123);
     })
 
     /**
-    * @function removeCharacterFromArray_validDataInputDataBoolean
-    * @description Tests the business rules function removeCharacterFromArray with a valid boolean input.
+    * @function removeCharacterFromArray_validDataInputMetaDataBoolean
+    * @description Tests the business rules function removeCharacterFromArray with a valid boolean inputMetaData.
     * @author Json Howard
-    * @date 2023/04/09
+    * @date 2023/04/11
     */
-    test(tst_con.cremoveCharacterFromArray_validDataInputDataBoolean, () => {
+    test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataBoolean, () => {
         // Arrange
         let inputData = true;
-        let inputMetaData = ["Hello true", "World"];
+        let inputMetaData = true;
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(["Hello true", "World"]);
+        expect(returnData).toBe(true);
+    })
+
+    /**
+    * @function removeCharacterFromArray_validDataInputMetaDataObject
+    * @description Tests the business rules function removeCharacterFromArray with a valid object inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/11
+    */
+    test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataObject, () => {
+        // Arrange
+        let inputData = obj_con.JsonObjectOfStrings_01;
+        let inputMetaData = obj_con.JsonObjectOfStrings_01;
+
+        // Act
+        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toEqual(obj_con.JsonObjectOfStrings_01);
     })
 
     /**
@@ -329,7 +366,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = ["HelloWorld", "Hello"];
+        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
@@ -347,7 +384,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = ["HelloWorld", "Hello"];
+        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
@@ -364,7 +401,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
      */
     test(tst_con.cremoveCharacterFromArray_inValidInputMetaDataUndefined, () => {
         // Arrange
-        let inputData = "hello";
+        let inputData = wrd.chello;
         let inputMetaData = undefined;
 
         // Act
@@ -382,7 +419,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
      */
     test(tst_con.cremoveCharacterFromArray_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = "hello";
+        let inputData = wrd.chello;
         let inputMetaData = NaN;
 
         // Act
@@ -408,14 +445,14 @@ describe(tst_con.creplaceCharacterAtIndex, () => {
     */
     test(tst_con.creplaceCharacterAtIndex_validDataInputDataString, () => {
         // Arrange
-        let inputData = "HelloWorld";
-        let inputMetaData = [2, "Hello"];
+        let inputData = wrd.cHello + wrd.cWorld;
+        let inputMetaData = [2, wrd.cHello];
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterAtIndex(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HeHelloloWorld");
+        expect(returnData).toBe(bas.cH + bas.ce + wrd.cHello + bas.cl + bas.co + wrd.cWorld);
     })
 
     /**
@@ -426,14 +463,14 @@ describe(tst_con.creplaceCharacterAtIndex, () => {
      */
     test(tst_con.creplaceCharacterAtIndex_validDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "HelloWorld";
-        let inputMetaData = "World";
+        let inputData = wrd.cHello + wrd.cWorld;
+        let inputMetaData = wrd.cWorld;
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterAtIndex(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HelloWorld");
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     })
 
     /**
@@ -444,14 +481,14 @@ describe(tst_con.creplaceCharacterAtIndex, () => {
      */
     test(tst_con.creplaceCharacterAtIndex_inValidInputMetaDataUndefined, () => {
         // Arrange
-        let inputData = "HelloWorld";
+        let inputData = wrd.cHello + wrd.cWorld;
         let inputMetaData = undefined;
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterAtIndex(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HelloWorld");
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     })
     
     /**
@@ -462,13 +499,13 @@ describe(tst_con.creplaceCharacterAtIndex, () => {
      */
      test(tst_con.creplaceCharacterAtIndex_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = "HelloWorld";
+        let inputData = wrd.cHello + wrd.cWorld;
         let inputMetaData = NaN;
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterAtIndex(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HelloWorld");
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     })
 })

@@ -4,7 +4,7 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
  * @file commandArrayParsing.test.js
  * @module commandArrayParsing.test
  * @description Unit tests for the commandArrayParsing.js
- * @requires module:characterArrayParsing
+ * @requires module:commandArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -15,14 +15,14 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
  */
 
 // Internal imports
-import commandArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js";
+import commandArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/commandArrayParsing.js";
 import * as tst_con from '../../../constants/test.constants.js';
 
-// External imports
-// import hayConst from '@haystacks/constants';
+// // External imports
+import hayConst from '@haystacks/constants';
 import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
 
-// const {bas, msg, sys, wrd} = hayConst;
+const {bas, msg, sys, wrd, num} = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -34,5 +34,10 @@ import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
  * @date 2023/04/09
  */
 describe(tst_con.csolveLehmerCode, () => {
-    
+  /**
+  * @function solveLehmerCode_validData
+  * @description Tests the business rules function parseColorRangeInputs with a valid string input.
+  * @author Json Howard
+  * @date 2023/04/06
+  */
 });
