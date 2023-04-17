@@ -42,21 +42,27 @@ testName: getValidCommand_inValidString
 input commandString: string (464gsdsfae8f46)
 input commandDelimiter: string (  - space)
 output: false
+warning: WARNING: The specified command: Hello does not exist, please try again! 1
 
 testName: getValidCommand_inValidDelimiterString
 input commandString: string (commandSequencer name,application,true version about)
 input commandDelimiter: string (&)
 output: false?
+warning: WARNING: The specified command: name application version about does not exist, please try again! 1
 
 testName: getValidCommand_inValidNumber
 input commandString: integer (546)
 input commandDelimiter: string (  - space)
 output: false
+status: Failed
+error: TypeError: commandString.includes is not a function
 
 testName: getValidCommand_inValidBoolean
 input commandString: boolean (false)
 input commandDelimiter: string (  - space)
 output: false
+status: Failed
+error: TypeError: commandString.includes is not a function
 --------------------------------------------------------------------------------
 testName: countMatchingCommandAlias_validData
 input commandAliasData: object (The command alias data that searched recursively for the specified command alias)
@@ -87,11 +93,15 @@ testName: countMatchingCommandAlias_inValidCommandAliasNameNumber
 input commandAliasData: object (The command alias data that searched recursively for the specified command alias)
 input commandAliasName: integer (546)
 output: false
+status: Failed
+error: TypeError: commandAliasName.toUpperCase is not a function
 
 testName: countMatchingCommandAlias_inValidCommandAliasNameBoolean
 input commandAliasData: object (The command alias data that searched recursively for the specified command alias)
 input commandAliasName: boolean (false)
 output: false
+status: Failed
+error: TypeError: commandAliasName.toUpperCase is not a function
 --------------------------------------------------------------------------------
 testName: searchCommandAlias_validData
 input commandAliasData: object (The command alias data that searched recursively for the specified command alias)
@@ -122,11 +132,15 @@ testName: searchCommandAlias_inValidCommandAliasNameNumber
 input commandAliasData: object (The command alias data that searched recursively for the specified command alias)
 input commandAliasName: integer (546)
 output: false
+status: Failed
+error: TypeError: commandAliasName.toUpperCase is not a function
 
 testName: searchCommandAlias_inValidCommandAliasNameBoolean
 input commandAliasData: object (The command alias data that searched recursively for the specified command alias)
 input commandAliasName: boolean (false)
 output: false
+status: Failed
+error: TypeError: commandAliasName.toUpperCase is not a function
 --------------------------------------------------------------------------------
 testName: getAllCommandAliasData_validData
 input: commandString: object
@@ -198,11 +212,15 @@ testName: getCommandArgs_inValidNumber
 input commandString: integer (546)
 input commandDelimiter: string (  - space)
 output: false
+status: Failed
+error: TypeError: commandString.includes is not a function
 
 testName: getCommandArgs_inValidBoolean
 input commandString: boolean (false)
 input commandDelimiter: string (  - space)
 output: false
+status: Failed
+error: TypeError: commandString.includes is not a function
 --------------------------------------------------------------------------------
 testName: executeCommand_validData
 input: commandString: string (commandSequencer name,application,true version about)
@@ -215,7 +233,11 @@ output: true
 testName: executeCommand_inValidNumber
 input: integer (546)
 output: true
+status: Failed
+error: TypeError: commandString.includes is not a function
 
 testName: executeCommand_inValidBoolean
 input: boolean (false)
 output: true
+status: Failed
+error: TypeError: commandString.includes is not a function

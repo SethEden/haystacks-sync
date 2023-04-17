@@ -12,10 +12,14 @@ output: empty array
 testName: scanDataPath_inValidNumber
 input: integer (546)
 output: empty array
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
 
 testName: scanDataPath_inValidBoolean
 input: boolean (false)
 output: empty array
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
 --------------------------------------------------------------------------------
 testName: findUniversalDebugConfigSetting_validData
 input appConfigFilesToLoad: array [C:\haystacks\test\unitTest\testData\application.system.json]
@@ -36,27 +40,39 @@ testName: findUniversalDebugConfigSetting_inValidNumber
 input appConfigFilesToLoad: integer (546)
 input frameworkConfigFilesToLoad: string (  - space)
 output: false
+status: Failed
+error: TypeError: fileToLoad.includes is not a function
 
 testName: findUniversalDebugConfigSetting_inValidBoolean
 input appConfigFilesToLoad: boolean (false)
 input frameworkConfigFilesToLoad: string (  - space)
 output: false
+status: Failed
+error: TypeError: fileToLoad.includes is not a function
 --------------------------------------------------------------------------------
 testName: findIndividualDebugConfigSetting_validData
 input filesToLoad: array [C:\haystacks\test\unitTest\testData\config.json]
 output: true
+status: Failed
+error: TypeError: dataBroker.findIndividualDebugConfigSetting is not a function
 
 testName: findIndividualDebugConfigSetting_inValidString
 input filesToLoad: string (464gsdsfae8f46)
 output: false
+status: Failed
+error: TypeError: dataBroker.findIndividualDebugConfigSetting is not a function
 
 testName: findIndividualDebugConfigSetting_inValidNumber
 input filesToLoad: integer (546)
 output: false
+status: Failed
+error: TypeError: dataBroker.findIndividualDebugConfigSetting is not a function
 
 testName: findIndividualDebugConfigSetting_inValidBoolean
 input filesToLoad: boolean (false)
 output: false
+status: Failed
+error: TypeError: dataBroker.findIndividualDebugConfigSetting is not a function
 --------------------------------------------------------------------------------
 testName: loadAllCsvData_validData
 input filesToLoad: array [C:\haystacks\test\unitTest\testData\test.csv]
@@ -77,6 +93,8 @@ testName: loadAllCsvData_inValidNumber
 input filesToLoad: integer (546)
 input contextName: string (  - space)
 output: false
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (123)
 
 testName: loadAllCsvData_inValidBoolean
 input filesToLoad: boolean (false)
@@ -93,7 +111,7 @@ input filesToLoad: string (464gsdsfae8f46)
 input contextName: string (  - space)
 output: false
 
-testName: loadAllCsvData_inValidContextNameString
+testName: loadAllXmlData_inValidContextNameString
 input filesToLoad: array [C:\haystacks\test\unitTest\testData\system.xml]
 input contextName: string (&)
 output: false?
@@ -102,6 +120,8 @@ testName: loadedAllXmlData_inValidNumber
 input filesToLoad: integer (546)
 input contextName: string (  - space)
 output: false
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
 
 testName: loadedAllXmlData_inValidBoolean
 input filesToLoad: boolean (false)
@@ -127,11 +147,15 @@ testName: loadAllJsonData_inValidNumber
 input filesToLoad: integer (546)
 input contextName: string (  - space)
 output: false
+status: Failed
+error: TypeError: fileToLoad.includes is not a function
 
 testName: loadAllJsonData_inValidBoolean
 input filesToLoad: boolean (false)
 input contextName: string (  - space)
 output: false
+status: Failed
+error: TypeError: fileToLoad.includes is not a function
 --------------------------------------------------------------------------------
 testName: processCsvData_validData
 input data: object [C:\haystacks\test\unitTest\testData\test.csv]

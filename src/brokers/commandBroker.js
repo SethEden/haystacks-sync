@@ -126,7 +126,7 @@ function getValidCommand(commandString, commandDelimiter) {
       if (foundValidCommand === false) {
             // WARNING: The specified command:
             // does not exist, please try again!
-            console.log(msg.cWarningTheSpecifiedCommand + commandToExecute + msg.cdoesNotExistPleaseTryAgain + bas.cSpace + num.c1);
+            // console.log(msg.cWarningTheSpecifiedCommand + commandToExecute + msg.cdoesNotExistPleaseTryAgain + bas.cSpace + num.c1);
       } else {
         returnData = foundValidCommand[wrd.cName];
       }
@@ -589,7 +589,7 @@ function executeCommand(commandString) {
     // This command does not exist, nothing to execute, but we don't want the application to exit.
     // An error message should have already been thrown, but we should throw another one here.
     // WARNING: Command does not exist, please enter a valid command and try again!
-    console.log(msg.cexecuteCommandMessage1);
+    // console.log(msg.cexecuteCommandMessage1);
     returnData = [true, false];
   }
   if (commandMetricsEnabled === true && commandToExecute !== '' && commandToExecute !== false) {
