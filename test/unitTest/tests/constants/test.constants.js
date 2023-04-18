@@ -35,7 +35,18 @@ export const cscanDataPath = wrd.cscan + wrd.cData + wrd.cPath;
 export const cfindUniversalDebugConfigSetting = wrd.cfind + wrd.cUniversal + wrd.cDebug + wrd.cConfig + wrd.cSetting;
 export const cloadAllCsvData = wrd.cload + wrd.cAll + "Csv" + wrd.cData;
 export const cloadAllXmlData = wrd.cload + wrd.cAll + "Xml" + wrd.cData;
-export const cloadAllJsonData = wrd.cload + wrd.cAll + "Json" + wrd.cData
+export const cloadAllJsonData = wrd.cload + wrd.cAll + "Json" + wrd.cData;
+export const cprocessCsvData = wrd.cprocess + "Csv" + wrd.cData;
+export const cpreprocessJsonFile = wrd.cpreprocess + "Json" + wrd.cFile;
+export const cwriteJsonDataToFile = wrd.cwrite + "Json" + wrd.cData + wrd.cTo + wrd.cFile;
+export const csetupDataStorage = wrd.csetup + wrd.cData + wrd.cStorage;
+export const cstoreData = wrd.cstore + wrd.cData;
+export const cgetData = wrd.cget + wrd.cData;
+export const cclearData = wrd.cclear + wrd.cData;
+export const cinitializeConstantsValidationData = wrd.cinitialize + wrd.cConstants + wrd.cValidation + wrd.cData;
+export const caddConstantsValidationData = wrd.cAdd + wrd.cConstants + wrd.cValidation + wrd.cData;
+export const caddDeeplyNestedConstantsValidationData = wrd.cAdd + wrd.cDeeply + wrd.cNested + wrd.cConstants + wrd.cValidation + wrd.cData;
+
 
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
@@ -150,3 +161,56 @@ export const cloadedAllXmlData_inValidBoolean = cloadAllXmlData + wrd.cinvalid +
 export const cloadAllJsonData_validData = cloadAllJsonData + wrd.cvalid + wrd.cData;
 export const cloadAllJsonData_inValidString = cloadAllJsonData + wrd.cinvalid + wrd.cString;
 export const cloadAllJsonData_inValidContextNameString = cloadAllJsonData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cString;
+
+export const cprocessCsvData_validData = cprocessCsvData + wrd.cvalid + wrd.cData;
+export const cprocessCsvData_inValidContextNameString = cprocessCsvData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cString;
+
+export const cpreprocessJsonFile_validData = cpreprocessJsonFile + wrd.cvalid + wrd.cData;
+
+export const cwriteJsonDataToFile_validData = cwriteJsonDataToFile + wrd.cvalid + wrd.cData;
+export const cwriteJsonDataToFile_inValidDataToWrite = cwriteJsonDataToFile + wrd.cinvalid + wrd.cData + wrd.cTo + wrd.cWrite;
+
+export const csetupDataStorage_validData = csetupDataStorage + wrd.cvalid + wrd.cData;
+export const csetupDataStorage_inValidString = csetupDataStorage + wrd.cinvalid + wrd.cString;
+export const csetupDataStorage_inValidNumber = csetupDataStorage + wrd.cinvalid + wrd.cNumber;
+export const csetupDataStorage_inValidBoolean = csetupDataStorage + wrd.cinvalid + wrd.cBoolean;
+
+export const cstoreData_validDataString = cstoreData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cstoreData_validDataBoolean = cstoreData + wrd.cvalid + wrd.cData + wrd.cBoolean;
+export const cstoreData_validDataInteger = cstoreData + wrd.cvalid + wrd.cData + wrd.cInteger;
+export const cstoreData_validDataArray = cstoreData + wrd.cvalid + wrd.cData + wrd.cArray;
+export const cstoreData_validDataObject = cstoreData + wrd.cvalid + wrd.cData + wrd.cObject;
+export const cstoreData_inValidDataToStoreUndefined = cstoreData + wrd.cinvalid + wrd.cData + wrd.cTo + wrd.cStore + "Undefined";
+export const cstoreData_inValidDataToStoreNaN = cstoreData + wrd.cinvalid + wrd.cData + wrd.cTo + wrd.cStore + "NaN";
+export const cstoreData_inValidDataStorageDataToStoreNumber = cstoreData + wrd.cinvalid + wrd.cData + wrd.cStorage + wrd.cData + wrd.cTo + wrd.cStore + wrd.cNumber;
+export const cstoreData_inValidDataStorageDataToStoreBoolean = cstoreData + wrd.cinvalid + wrd.cData + wrd.cStorage + wrd.cData + wrd.cTo + wrd.cStore + wrd.cBoolean;
+
+export const cgetData_validData = cgetData + wrd.cvalid + wrd.cData;
+export const cgetData_inValidString = cgetData + wrd.cinvalid + wrd.cString;
+export const cgetData_inValidNumber = cgetData + wrd.cinvalid + wrd.cNumber;
+export const cgetData_inValidBoolean = cgetData + wrd.cinvalid + wrd.cBoolean;
+
+export const cclearData_validData = cclearData + wrd.cvalid + wrd.cData;
+export const cclearData_inValidUndefined = cclearData + wrd.cinvalid + "Undefined";
+export const cclearData_inValidNaN = cclearData + wrd.cinvalid + "NaN";
+export const cclearData_inValidNumber = cclearData + wrd.cinvalid + wrd.cNumber;
+export const cclearData_inValidBoolean = cclearData + wrd.cinvalid + wrd.cBoolean;
+
+export const cinitializeConstantsValidationData_validData = cinitializeConstantsValidationData + wrd.cvalid + wrd.cData;
+export const cinitializeConstantsValidationData_inValidString = cinitializeConstantsValidationData + wrd.cinvalid + wrd.cString;
+export const cinitializeConstantsValidationData_inValidNumber = cinitializeConstantsValidationData + wrd.cinvalid + wrd.cNumber;
+export const cinitializeConstantsValidationData_inValidBoolean = cinitializeConstantsValidationData + wrd.cinvalid + wrd.cBoolean;
+
+export const caddConstantsValidationData_validData = caddConstantsValidationData + wrd.cvalid + wrd.cData;
+export const caddConstantsValidationData_inValidString = caddConstantsValidationData + wrd.cinvalid + wrd.cString;
+export const caddConstantsValidationData_inValidNumber = caddConstantsValidationData + wrd.cinvalid + wrd.cNumber;
+export const caddConstantsValidationData_inValidBoolean = caddConstantsValidationData + wrd.cinvalid + wrd.cBoolean;
+
+export const caddDeeplyNestedConstantsValidationData_validData = caddDeeplyNestedConstantsValidationData + wrd.cvalid + wrd.cData;
+export const caddDeeplyNestedConstantsValidationData_inValidDeeplyNestedDataString = caddDeeplyNestedConstantsValidationData + wrd.cinvalid + wrd.cDeeply + wrd.cNested + wrd.cData + wrd.cString;
+export const caddDeeplyNestedConstantsValidationData_inValidDeeplyNestedDataNumber = caddDeeplyNestedConstantsValidationData + wrd.cinvalid + wrd.cDeeply + wrd.cNested + wrd.cData + wrd.cNumber;
+export const caddDeeplyNestedConstantsValidationData_inValidDeeplyNestedDataBoolean = caddDeeplyNestedConstantsValidationData + wrd.cinvalid + wrd.cDeeply + wrd.cNested + wrd.cData + wrd.cBoolean;
+export const caddDeeplyNestedConstantsValidationData_inValidContextNameUndefined = caddDeeplyNestedConstantsValidationData + wrd.cinvalid + wrd.cContext + wrd.cName + "Undefined";
+export const caddDeeplyNestedConstantsValidationData_inValidContextNameNaN = caddDeeplyNestedConstantsValidationData + wrd.cinvalid + wrd.cContext + wrd.cName + "NaN";
+export const caddDeeplyNestedConstantsValidationData_inValidContextNameNumber = caddDeeplyNestedConstantsValidationData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cNumber;
+export const caddDeeplyNestedConstantsValidationData_inValidContextNameBoolean = caddDeeplyNestedConstantsValidationData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cBoolean;

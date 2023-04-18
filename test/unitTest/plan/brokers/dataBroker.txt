@@ -166,6 +166,9 @@ testName: processCsvData_inValidString
 input data: string (464gsdsfae8f46)
 input contextName: string (pageData)
 output: false
+status: Failed
+error: TypeError: Cannot convert undefined or null to object
+        at Function.keys (<anonymous>)
 
 testName: processCsvData_inValidContextNameString
 input data: object [C:\haystacks\test\unitTest\testData\test.csv]
@@ -176,61 +179,87 @@ testName: processCsvData_inValidNumber
 input data: integer (546)
 input contextName: string (pageData)
 output: false
+status: Failed
+error: TypeError: Cannot convert undefined or null to object
+        at Function.keys (<anonymous>)
 
 testName: processCsvData_inValidBoolean
 input data: boolean (false)
 input contextName: string (pageData)
 output: false
+status: Failed
+error: TypeError: Cannot convert undefined or null to object
+        at Function.keys (<anonymous>)
 --------------------------------------------------------------------------------
 testName: processXmlData_validData
 input data: JSON object
 input contextName: string (configuration)
 output: object (the JSON data from testHarness.json)
+status: Failed
+error: TypeError: dataBroker.processXmlData is not a function
 
 testName: processXmlData_inValidString
 input data: string (464gsdsfae8f46)
 input contextName: string (configuration)
 output: false
+status: Failed
+error: TypeError: dataBroker.processXmlData is not a function
 
 testName: processXmlData_inValidContextNameString
 input data: JSON object
 input contextName: string (&)
 output: false?
+status: Failed
+error: TypeError: dataBroker.processXmlData is not a function
 
 testName: processXmlData_inValidNumber
 input data: integer (546)
 input contextName: string (configuration)
 output: false
+status: Failed
+error: TypeError: dataBroker.processXmlData is not a function
 
 testName: processXmlData_inValidBoolean
 input data: boolean (false)
 input contextName: string (configuration)
 output: false
+status: Failed
+error: TypeError: dataBroker.processXmlData is not a function
 --------------------------------------------------------------------------------
 testName: processXmlLeafNode_validData
 input inputData: JSON object
 input leafNodeName: string (?)
 output: object (the parsed JSON data)
+status: Failed
+error: TypeError: dataBroker.processXmlLeafNode is not a function
 
 testName: processXmlLeafNode_inValidString
 input inputData: string (464gsdsfae8f46)
 input leafNodeName: string (?)
 output: ?
+status: Failed
+error: TypeError: dataBroker.processXmlLeafNode is not a function
 
 testName: processXmlLeafNode_inValidLeafNodeNameString
 input inputData: JSON object
 input leafNodeName: string (&)
 output: ?
+status: Failed
+error: TypeError: dataBroker.processXmlLeafNode is not a function
 
 testName: processXmlLeafNode_inValidNumber
 input inputData: integer (546)
 input leafNodeName: string (?)
 output: ?
+status: Failed
+error: TypeError: dataBroker.processXmlLeafNode is not a function
 
 testName: processXmlLeafNode_inValidBoolean
 input inputData: boolean (false)
 input leafNodeName: string (?)
 output: ?
+status: Failed
+error: TypeError: dataBroker.processXmlLeafNode is not a function
 --------------------------------------------------------------------------------
 testName: preprocessJsonFile_validData
 input: array [C:\haystacks\test\unitTest\testData\config.json]
@@ -239,14 +268,20 @@ output: object (JSON)
 testName: preprocessJsonFile_inValidString
 input: string (464gsdsfae8f46)
 output: false
+status: Failed
+error: ENOENT: no such file or directory, open 'D:\work\WEBGL\Upwork\Haystack\haystacks-sync\test\unitTest\testData1\config.json'
 
 testName: preprocessJsonFile_inValidNumber
 input: integer (546)
 output: false
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
 
 testName: preprocessJsonFile_inValidBoolean
 input: boolean (false)
 output: false
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
 --------------------------------------------------------------------------------
 testName: writeJsonDataToFile_validData
 input fileToSaveTo: string (C:\haystacks\test\unitTest\testData\writeJsonDataToFile_validData.json)
@@ -257,6 +292,9 @@ testName: writeJsonDataToFile_inValidString
 input fileToSaveTo: string (464gsdsfae8f46)
 input dataToWriteOut: object
 output: ?
+status: Failed
+error: console.error
+      undefinedError: ENOENT: no such file or directory, open 'D:\work\WEBGL\Upwork\Haystack\haystacks-sync\test\unitTest1\testData\test.json'
 
 testName: writeJsonDataToFile_inValidDataToWrite
 input fileToSaveTo: string (C:\haystacks\test\unitTest\testData\writeJsonDataToFile_validData.json)
@@ -267,11 +305,15 @@ testName: writeJsonDataToFile_inValidNumber
 input fileToSaveTo: integer (546)
 input dataToWriteOut: object
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (123)
 
 testName: writeJsonDataToFile_inValidBoolean
 input fileToSaveTo: boolean (false)
 input dataToWriteOut: object
 output: ?
+status: Failed
+erorr: TypeError: The "path" argument must be of type string. Received type boolean (false)
 --------------------------------------------------------------------------------
 testName: setupDataStorage_validData
 output: data storage exists on data hive.
@@ -467,94 +509,134 @@ output: ?
 testName: getDataCatagoryFromContextName_validData
 input contextName: string (example of this will be something like Application_xxxx)
 output: string (Application)
+status: Failed
+error: TypeError: dataBroker.getDataCategoryFromContextName is not a function
 
 testName: getDataCatagoryFromContextName_inValidString
 input contextName: string (Application5xxxx)
 output: ?
+status: Failed
+error: TypeError: dataBroker.getDataCategoryFromContextName is not a function
 
 testName: getDataCatagoryFromContextName_inValidNumber
 input contextName: integer (546)
 output: ?
+status: Failed
+error: TypeError: dataBroker.getDataCategoryFromContextName is not a function
 
 testName: getDataCatagoryFromContextName_inValidBoolean
 input contextName: boolean (false)
 output: ?
+status: Failed
+error: TypeError: dataBroker.getDataCategoryFromContextName is not a function
 --------------------------------------------------------------------------------
 testName: getDataCatagoryDetailNameFromContextName_validData
 input contextName: string (Command_ApiPost)
 output: string (ApiPost)
+status: Failed
+error: TypeError: dataBroker.getDataCategoryDetailNameFromContextName is not a function
 
 testName: getDataCatagoryDetailNameFromContextName_inValidString
 input contextName: string (Command5ApiPost)
 output: ?
+status: Failed
+error: TypeError: dataBroker.getDataCategoryDetailNameFromContextName is not a function
 
 testName: getDataCatagoryDetailNameFromContextName_inValidNumber
 input contextName: integer (546)
 output: ?
+status: Failed
+error: TypeError: dataBroker.getDataCategoryDetailNameFromContextName is not a function
 
 testName: getDataCatagoryDetailNameFromContextName_inValidBoolean
 input contextName: boolean (false)
 output: ?
+status: Failed
+error: TypeError: dataBroker.getDataCategoryDetailNameFromContextName is not a function
 --------------------------------------------------------------------------------
 testName: extractDataFromPapaParseObject_validData
 input data: object (to get data out)
 input contextName: string (name of the context either Command or Macro)
 output: object (parsed data)
+status: Failed
+error: TypeError: dataBroker.extractDataFromPapaParseObject is not a function
 
 testName: extractDataFromPapaParseObject_inValidDataString
 input data: string (464gsdsfae8f46)
 input contextName: string (  - space)
 output: false
+status: Failed
+error: TypeError: dataBroker.extractDataFromPapaParseObject is not a function
 
 testName: extractDataFromPapaParseObject_inValidContextNameString
 input data: object (to get data out)
 input contextName: string (&)
 output: false?
+status: Failed
+error: TypeError: dataBroker.extractDataFromPapaParseObject is not a function
 
 testName: extractDataFromPapaParseObject_inValidNumber
 input data: integer (546)
 input contextName: string (  - space)
 output: false
+status: Failed
+error: TypeError: dataBroker.extractDataFromPapaParseObject is not a function
 
 testName: extractDataFromPapaParseObject_inValidBoolean
 input data: boolean (false)
 input contextName: string (  - space)
 output: false
+status: Failed
+error: TypeError: dataBroker.extractDataFromPapaParseObject is not a function
 --------------------------------------------------------------------------------
 testName: determineMergeTarget_validData
 input targetData: object (the target data should be merged with simulated merge)
 input dataToMerge: object (the data should be merged with simulated merge scenario)
 output: string (namespace where the dataToMerge should be merged with the target data)
+status: Failed
+error: TypeError: dataBroker.determineMergeTarget is not a function
 
 testName: determineMergeTarget_inValidTargetDataString
 input targetData: string (464gsdsfae8f46)
 input dataToMerge: string (  - space)
 output: false
+status: Failed
+error: TypeError: dataBroker.determineMergeTarget is not a function
 
 testName: determineMergeTarget_inValidDataToMergeString
 input targetData: object (the target data should be merged with simulated merge)
 input dataToMerge: string (&)
 output: false?
+status: Failed
+error: TypeError: dataBroker.determineMergeTarget is not a function
 
 testName: determineMergeTarget_inValidTargetDataNumber
 input targetData: integer (546)
 input dataToMerge: object (the data should be merged with simulated merge scenario)
 output: false?
+status: Failed
+error: TypeError: dataBroker.determineMergeTarget is not a function
 
 testName: determineMergeTarget_inValidTargetDataBoolean
 input targetData: boolean (false)
 input dataToMerge: object (the data should be merged with simulated merge scenario)
 output: false?
+status: Failed
+error: TypeError: dataBroker.determineMergeTarget is not a function
 
 testName: determineMergeTarget_inValidDataToMergeNumber
 input targetData:  object (the target data should be merged with simulated merge)
 input dataToMerge: integer (546)
 output: false?
+status: Failed
+error: TypeError: dataBroker.determineMergeTarget is not a function
 
 testName: determineMergeTarget_inValidDataToMergeBoolean
 input targetData:  object (the target data should be merged with simulated merge)
 input dataToMerge: boolean (false)
 output: false?
+status: Failed
+error: TypeError: dataBroker.determineMergeTarget is not a function
 --------------------------------------------------------------------------------mergeData
 testName: mergeData_validData
 input targetData: object (data to be merged with dataToMerge)
@@ -562,6 +644,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: object (data set from targetData and dataToMerge)
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidTargetDataString
 input targetData: string (464gsdsfae8f46)
@@ -569,6 +653,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataCatagoryString
 input targetData: object (data to be merged with dataToMerge)
@@ -576,6 +662,8 @@ input dataCatagory: string (464gsdsfae8f46)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidPageNameString
 input targetData: object (data to be merged with dataToMerge)
@@ -583,6 +671,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (464gsdsfae8f46)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataToMergeString
 input targetData: object (data to be merged with dataToMerge)
@@ -590,6 +680,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: string (464gsdsfae8f46)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidTargetDataNumber
 input targetData: integer (546)
@@ -597,6 +689,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidTargetDataBoolean
 input targetData: boolean (false)
@@ -604,6 +698,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidTargetDataUndefined
 input targetData: undefined
@@ -611,6 +707,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidTargetDataNaN
 input targetData: NaN
@@ -618,6 +716,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataCatagoryNumber
 input targetData: object (data to be merged with dataToMerge)
@@ -625,6 +725,8 @@ input dataCatagory: integer (546)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataCatagoryBoolean
 input targetData: object (data to be merged with dataToMerge)
@@ -632,6 +734,8 @@ input dataCatagory: boolean (false)
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataCatagoryUndefined
 input targetData: object (data to be merged with dataToMerge)
@@ -639,6 +743,8 @@ input dataCatagory: undefined
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataCatagoryNaN
 input targetData: object (data to be merged with dataToMerge)
@@ -646,6 +752,8 @@ input dataCatagory: NaN
 input pageName: string (valid string?)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidPageNameNumber
 input targetData: object (data to be merged with dataToMerge)
@@ -653,6 +761,8 @@ input dataCatagory: string (valid string?)
 input pageName: integer (546)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidPageNameBoolean
 input targetData: object (data to be merged with dataToMerge)
@@ -660,6 +770,8 @@ input dataCatagory: string (valid string?)
 input pageName: boolean (false)
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidPageNameUndefined
 input targetData: object (data to be merged with dataToMerge)
@@ -667,6 +779,8 @@ input dataCatagory: string (valid string?)
 input pageName: undefined
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidPageNameNaN
 input targetData: object (data to be merged with dataToMerge)
@@ -674,6 +788,8 @@ input dataCatagory: string (valid string?)
 input pageName: NaN
 input dataToMerge: object (data to be merged)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataToMergeNumber
 input targetData: object (data to be merged with dataToMerge)
@@ -681,6 +797,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: integer (546)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataToMergeBoolean
 input targetData: object (data to be merged with dataToMerge)
@@ -688,6 +806,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: boolean (false)
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataToMergeUndefined
 input targetData: object (data to be merged with dataToMerge)
@@ -695,6 +815,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: undefined
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidDataToMergeNaN
 input targetData: object (data to be merged with dataToMerge)
@@ -702,6 +824,8 @@ input dataCatagory: string (valid string?)
 input pageName: string (valid string?)
 input dataToMerge: NaN
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidAllUndefined
 input targetData: undefined
@@ -709,6 +833,8 @@ input dataCatagory: undefined
 input pageName: undefined
 input dataToMerge: undefined
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 
 testName: mergeData_inValidAllNaN
 input targetData: NaN
@@ -716,114 +842,152 @@ input dataCatagory: NaN
 input pageName: NaN
 input dataToMerge: NaN
 output: false?
+status: Failed
+error: TypeError: dataBroker.mergeData is not a function
 --------------------------------------------------------------------------------
 testName: getDataElement_validData
 input dataObject: object (the data object with all data.)
 input pageName: string (valid string?)
 input elementName: string (valid string?)
 output: string (data element with all carriage return characters removed from it)
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidDataObjectString
 input dataObject: string (464gsdsfae8f46)
 input pageName: string (valid string?)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidPageNameString
 input dataObject: object (the data object with all data.)
 input pageName: string (464gsdsfae8f46)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidElementNameString
 input dataObject: object (the data object with all data.)
 input pageName: string (valid string?)
 input elementName: string (464gsdsfae8f46)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidDataObjectNumber
 input dataObject: integer (546)
 input pageName: string (valid string?)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidDataObjectBoolean
 input dataObject: boolean (false)
 input pageName: string (valid string?)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidDataObjectUndefined
 input dataObject: undefined
 input pageName: string (valid string?)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidDataObjectNaN
 input dataObject: NaN
 input pageName: string (valid string?)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidPageNameNumber
 input dataObject: object (the data object with all data.)
 input pageName: integer (546)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidPageNameBoolean
 input dataObject: object (the data object with all data.)
 input pageName: boolean (false)
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidPageNameUndefined
 input dataObject: object (the data object with all data.)
 input pageName: undefined
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidPageNameNaN
 input dataObject: object (the data object with all data.)
 input pageName: NaN
 input elementName: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidElementNameNumber
 input dataObject: object (the data object with all data.)
 input pageName: string (valid string?)
 input elementName: integer (546)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidElementNameBoolean
 input dataObject: object (the data object with all data.)
 input pageName: string (valid string?)
 input elementName: boolean (false)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidElementNameUndefined
 input dataObject: object (the data object with all data.)
 input pageName: string (valid string?)
 input elementName: undefined
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidElementNameNaN
 input dataObject: object (the data object with all data.)
 input pageName: string (valid string?)
 input elementName: NaN
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidAllUndefined
 input dataObject: undefined
 input pageName: undefined
 input elementName: undefined
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 
 testName: getDataElement_inValidAllNaN
 input dataObject: NaN
 input pageName: NaN
 input elementName: NaN
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElement is not a function
 --------------------------------------------------------------------------------
 testName: getDataElementCount_validData
 input dataObject: object (the data map with all data.)
@@ -831,105 +995,141 @@ input pageName: string (valid string?)
 input elementNamePattern: string (valid string?)
 output: integer (the number of data elements in the object collection or a count
 for the number of data elements that match a pattern)
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidDataObjectString
 input dataObject: string (464gsdsfae8f46)
 input pageName: string (valid string?)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidPageNameString
 input dataObject: object (the data map with all data.)
 input pageName: string (464gsdsfae8f46)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidElementNamePatternString
 input dataObject: object (the data map with all data.)
 input pageName: string (valid string?)
 input elementNamePattern: string (464gsdsfae8f46)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidDataObjectNumber
 input dataObject: integer (546)
 input pageName: string (valid string?)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidDataObjectBoolean
 input dataObject: boolean (false)
 input pageName: string (valid string?)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidDataObjectUndefined
 input dataObject: undefined
 input pageName: string (valid string?)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidDataObjectNaN
 input dataObject: NaN
 input pageName: string (valid string?)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidPageNameNumber
 input dataObject: object (the data map with all data.)
 input pageName: integer (546)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidPageNameBoolean
 input dataObject: object (the data map with all data.)
 input pageName: boolean (false)
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidPageNameUndefined
 input dataObject: object (the data map with all data.)
 input pageName: undefined
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidPageNameNaN
 input dataObject: object (the data map with all data.)
 input pageName: NaN
 input elementNamePattern: string (valid string?)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidElementNamePatternNumber
 input dataObject: object (the data map with all data.)
 input pageName: string (valid string?)
 input elementNamePattern: integer (546)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidElementNamePatternBoolean
 input dataObject: object (the data map with all data.)
 input pageName: string (valid string?)
 input elementNamePattern: boolean (false)
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidElementNamePatternUndefined
 input dataObject: object (the data map with all data.)
 input pageName: string (valid string?)
 input elementNamePattern: undefined
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidElementNamePatternNaN
 input dataObject: object (the data map with all data.)
 input pageName: string (valid string?)
 input elementNamePattern: NaN
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidAllUndefined
 input dataObject: undefined
 input pageName: undefined
 input elementNamePattern: undefined
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
 
 testName: getDataElementCount_inValidAllNaN
 input dataObject: NaN
 input pageName: NaN
 input elementNamePattern: NaN
 output: false?
+status: Failed
+error: TypeError: dataBroker.getDataElementCount is not a function
