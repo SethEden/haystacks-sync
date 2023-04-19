@@ -232,17 +232,6 @@ output: ?
 
 testName: executeCommand_inValidNumber
 input: integer (546)
-<<<<<<< HEAD
-output: true
-status: Failed
-error: TypeError: commandString.includes is not a function
-
-testName: executeCommand_inValidBoolean
-input: boolean (false)
-output: true
-status: Failed
-error: TypeError: commandString.includes is not a function
-=======
 output: ?
 
 testName: executeCommand_inValidBoolean
@@ -256,4 +245,3 @@ output: ?
 testName: executeCommand_inValidNaN
 input: NaN
 output: ?
->>>>>>> unitTestPlan
