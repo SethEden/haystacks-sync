@@ -3,7 +3,7 @@ description: Test plan for themeBroker.js
 
 --------------------------------------------------------------------------------
 testName: getNamedThemes_validData
-output: list of names for the themes that are currently installed.
+output: list of names for the themes that are currently installed. 
 
 testName: getNamedThemes_inValidString
 input: string (464gsdsfae8f46)
@@ -28,10 +28,14 @@ output: false
 testName: getNamedThemePath_inValidNumber
 input: integer (546)
 output: false
+status: Failed
+error: TypeError: themeName.toUpperCase is not a function
 
 testName: getNamedThemePath_inValidBoolean
 input: boolean (false)
 output: false
+status: Failed
+error: TypeError: themeName.toUpperCase is not a function
 --------------------------------------------------------------------------------
 testName: loadTheme_validData
 input: string (The fully qualified path to the theme debug configuration settings)
@@ -40,14 +44,20 @@ output: object (All of the debug configuration data for a specified theme path)
 testName: loadTheme_inValidString
 input: string (464gsdsfae8f46)
 output: false
+status: Failed
+error:  ENOENT: no such file or directory, mkdir 'D:\work\WEBGL\Upwork\Haystack\haystacks-sync\test\unitTest\testData1\Themes1'
 
 testName: loadTheme_inValidNumber
 input: integer (546)
 output: false
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (123)
 
 testName: loadTheme_inValidBoolean
 input: boolean (false)
 output: false
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
 --------------------------------------------------------------------------------
 testName: applyTheme_validData
 input: object (All the theme debug configuration settings data that control the debug log theme colors)
@@ -56,11 +66,17 @@ output: true
 testName: applyTheme_inValidString
 input: string (464gsdsfae8f46)
 output: false
+status: Failed
+error: ERROR: ENOENT: no such file or directory, scandir 'D:\work\WEBGL\Upwork\Haystack\haystacks-sync\test\unitTest\testData\Themes\debugSettings1\brokers'
 
 testName: applyTheme_inValidNumber
 input: integer (546)
 output: false
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (123)
 
 testName: applyTheme_inValidBoolean
 input: boolean (false)
 output: false
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
