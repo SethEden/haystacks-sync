@@ -232,7 +232,7 @@ function replaceSpacesWithPlus(inputData, inputMetaData) {
  * @description Replaces all colons in the input string with underscore symbols.
  * @param {string} inputData A string that contains colons that should be converted to underscore symbols.
  * @param {string} inputMetaData Not used for this business rule.
- * @return {string} The same as teh input String but with colon characters converted to underscore symbols.
+ * @return {string} The same as the input String but with colon characters converted to underscore symbols.
  * @author Seth Hollingsead
  * @date 2022/01/23
  */
@@ -256,7 +256,7 @@ function replaceColonWithUnderscore(inputData, inputMetaData) {
  * @description Cleans carriage return characters from the input data and trims off any leading or training spaces.
  * @param {string} inputData The string that should be scrubbed for carriage returns.
  * @param {string} inputMetaData Not used for this business rule.
- * @return {string} The same as teh input string, but with all carriage return characters removed.
+ * @return {string} The same as the input string, but with all carriage return characters removed.
  * @author Seth Hollingsead
  * @date 2022/01/23
  */

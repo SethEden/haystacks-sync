@@ -1,0 +1,528 @@
+description: Test plan for constantStringParsing.js
+
+
+--------------------------------------------------------------------------------
+testName: validateConstantsDataValidation_validDataString
+input inputData:  string (The path of the constants file that should be validated)
+input inputMetaData: string (The name of the data hive that contains the appropriate matching constants validation data)
+output: boolean
+
+testName: validateConstantsDataValidation_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The name of the data hive that contains the appropriate matching constants validation data) (testDataString)
+output: ?
+
+testName: validateConstantsDataValidation_inValidDataInputMetaDataString
+input inputData: string (The path of the constants file that should be validated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: validateConstantsDataValidation_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: validateConstantsDataValidation_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: validateConstantsDataValidation_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: validateConstantsDataValidation_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: determineConstantsContextQualifiedPrefix_validDataString
+input inputData:  string (The filename of the constants file or the full path and file name of the constants file)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string code that represents the method to reference a constants file in the code )
+
+testName: determineConstantsContextQualifiedPrefix_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: determineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString
+input inputData: string (The filename of the constants file or the full path and file name of the constants file) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: determineConstantsContextQualifiedPrefix_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: determineConstantsContextQualifiedPrefix_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: determineConstantsContextQualifiedPrefix_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: determineConstantsContextQualifiedPrefix_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: determineSuggestedConstantsValidationLineOfCode_validDataString
+input inputData:  string (The name of the constant file that is missing and should have a line of code generated for it)
+input inputMetaData: string (The prefix used to reference the constants file in the code)
+output: string (The suggested line of code that should be added to the appropriate constants validation code file)
+
+testName: determineSuggestedConstantsValidationLineOfCode_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The prefix used to reference the constants file in the code) (testDataString)
+output: ?
+
+testName: determineSuggestedConstantsValidationLineOfCode_inValidDataInputMetaDataString
+input inputData: string (The name of the constant file that is missing and should have a line of code generated for it) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: determineSuggestedConstantsValidationLineOfCode_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: determineSuggestedConstantsValidationLineOfCode_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: validateConstantsDataValidationLineItemName_validDataString
+input inputData:  string (The constant definition that should be searched for)
+input inputMetaData: string (The name of the data hive that contains the appropriate matching constants validation data)
+output: boolean
+
+testName: validateConstantsDataValidationLineItemName_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The name of the data hive that contains the appropriate matching constants validation data) (testDataString)
+output: ?
+
+testName: validateConstantsDataValidationLineItemName_inValidDataInputMetaDataString
+input inputData: string (The constant definition that should be searched for) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: validateConstantsDataValidationLineItemName_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: validateConstantsDataValidationLineItemName_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: validateConstantsDataValidationLineItemName_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: validateConstantsDataValidationLineItemName_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: doesConstantExist_validDataString
+input inputData:  string (The value that should be looked for in all the constants files)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: doesConstantExist_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: doesConstantExist_inValidDataInputMetaDataString
+input inputData: string (The value that should be looked for in all the constants files) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: doesConstantExist_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: doesConstantExist_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: doesConstantExist_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: doesConstantExist_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: getConstantType_validDataString
+input inputData:  string (The string value that should be searched in all of the constants libraries)
+input inputMetaData: boolean (True or False to indicate if the function should exit on first discovery or continue to discover all possible matches)
+output: string (A list of constants libraries where the constant was found to be defined in)
+
+testName: getConstantType_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: boolean (True or False to indicate if the function should exit on first discovery or continue to discover all possible matches) (testDataString)
+output: ?
+
+testName: getConstantType_inValidDataInputMetaDataString
+input inputData: string (The string value that should be searched in all of the constants libraries) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getConstantType_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getConstantType_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getConstantType_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: getConstantType_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: getConstantActualValue_validDataString
+input inputData:  string (The name of the constant we are looking for to get the actual value of the constant)
+input inputMetaData: string (The type or library where the constant should be found)
+output: string (The actual value of the string)
+
+testName: getConstantActualValue_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The type or library where the constant should be found) (testDataString)
+output: ?
+
+testName: getConstantActualValue_inValidDataInputMetaDataString
+input inputData: string (The name of the constant we are looking for to get the actual value of the constant) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getConstantActualValue_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getConstantActualValue_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getConstantActualValue_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: getConstantActualValue_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: getConstantName_validDataString
+input inputData:  string (The constant string value that should be used when getting the constant name)
+input inputMetaData: string (Not used for this business rule)
+output: string (The name of the constant: eg: cSystem)
+
+testName: getConstantName_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: getConstantName_inValidDataInputMetaDataString
+input inputData: string (The constant string value that should be used when getting the constant name) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getConstantName_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getConstantName_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getConstantName_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: getConstantName_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: findConstantName_validDataString
+input inputData:  string (The string that should be searched for a constant name)
+input inputMetaData: string (Not used for this business rule)
+output: string (The name of the constant that was found)
+
+testName: findConstantName_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: findConstantName_inValidDataInputMetaDataString
+input inputData: string (The string that should be searched for a constant name) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: findConstantName_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: findConstantName_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: findConstantName_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: findConstantName_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: isConstantTypeValid_validDataString
+input inputData:  string (The string that should be validated if it is a valid constant type or not)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isConstantTypeValid_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isConstantTypeValid_inValidDataInputMetaDataString
+input inputData: string (The string that should be validated if it is a valid constant type or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isConstantTypeValid_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isConstantTypeValid_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isConstantTypeValid_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isConstantTypeValid_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: convertConstantTypeToConstantPrefix_validDataString
+input inputData:  string (The constant type that should be used when converting to a constant prefix)
+input inputMetaData: string (Not used for this business rule)
+output: string (The appropriate constant prefix)
+
+testName: convertConstantTypeToConstantPrefix_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: convertConstantTypeToConstantPrefix_inValidDataInputMetaDataString
+input inputData: string (The constant type that should be used when converting to a constant prefix) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: convertConstantTypeToConstantPrefix_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: convertConstantTypeToConstantPrefix_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: convertConstantTypeToConstantPrefix_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: convertConstantTypeToConstantPrefix_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: constantsOptimizedFulfillmentSystem_validDataString
+input inputData: string (The string that should be determined or find a constant to fulfill part of the string)
+input inputMetaData: string (Not used for this business rule)
+output: string (A constant that represents part of the input string)
+
+testName: constantsOptimizedFulfillmentSystem_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: constantsOptimizedFulfillmentSystem_inValidDataInputMetaDataString
+input inputData: string (The string that should be determined or find a constant to fulfill part of the string) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: constantsOptimizedFulfillmentSystem_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: constantsOptimizedFulfillmentSystem_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: constantsOptimizedFulfillmentSystem_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: constantsOptimizedFulfillmentSystem_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: constantsFulfillmentSystem_validDataString
+input inputData:  string (The constant to be defined/fulfilled)
+input inputMetaData: string (The original user-defined constant to be fulfilled, so the recursive algorithm can continue processing the rest of the string, after a first match is found)
+output: string (The fully optimized definition for the new constant)
+
+testName: constantsFulfillmentSystem_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The original user-defined constant to be fulfilled, so the recursive algorithm can continue processing the rest of the string, after a first match is found) (testDataString)
+output: ?
+
+testName: constantsFulfillmentSystem_inValidDataInputMetaDataString
+input inputData: string (The constant to be defined/fulfilled) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: constantsFulfillmentSystem_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: constantsFulfillmentSystem_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: constantsFulfillmentSystem_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: constantsFulfillmentSystem_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: validateConstantsDataValues_validDataString
+input inputData:  string (The name of the data-hive that should contain all of the validation data that should be used to execute the validation procedures)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: validateConstantsDataValues_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: validateConstantsDataValues_inValidDataInputMetaDataString
+input inputData: string (The name of the data-hive that should contain all of the validation data that should be used to execute the validation procedures) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: validateConstantsDataValues_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: validateConstantsDataValues_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: validateConstantsDataValues_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: validateConstantsDataValues_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: isConstantValid_validDataString
+input inputData: string (The value of the constant as a string)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isConstantValid_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isConstantValid_inValidDataInputMetaDataString
+input inputData: string (The value of the constant as a string) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isConstantValid_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isConstantValid_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isConstantValid_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isConstantValid_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?

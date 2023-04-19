@@ -1,0 +1,673 @@
+description: Test plan for characterGeneration.js
+
+
+--------------------------------------------------------------------------------
+testName: randomlyGenerateMixedCaseLetterOrSpecialCharacter_validDataString
+input inputData:  string (The list of allowable special characters that should be used to randomly select from)
+input inputMetaData: string (Not used for this business rule)
+output: string (Randomly returns a random mixed case letter of the english alphabet, or a random special character from the list of allowable special characters)
+
+testName: randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString
+input inputData: string (The list of allowable special characters that should be used to randomly select from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateUpperCaseLetterOrSpecialCharacter_validDataString
+input inputData:  string (The list of allowable special characters that should be used to randomly select from)
+input inputMetaData: string (Not used for this business rule)
+output: string (Randomly returns a random lower case letter of the english alphabet, or a random special character from the list of allowable special characters)
+
+testName: randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString
+input inputData: string (The list of allowable special characters that should be used to randomly select from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateLowerCaseLetterOrSpecialCharacter_validDataString
+input inputData:  string (The list of allowable special characters that should be used to randomly select from)
+input inputMetaData: string (Not used for this business rule)
+output: string (Randomly returns a random lower case letter of the english alphabet, or a random special character from the list of allowable special characters)
+
+testName: randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString
+input inputData: string (The list of allowable special characters that should be used to randomly select from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_validDataString
+input inputData:  string (The list of allowable special characters that should be used to randomly select from)
+input inputMetaData: string (Not used for this business rule)
+output: string (Randomly returns a random number, a random mixed case letter of the english alphabet, or a random special character from the ist of allowable special characters)
+
+testName: randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString
+input inputData: string (The list of allowable special characters that should be used to randomly select from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString
+input inputData:  string (The list of allowable special characters that should be used to randomly select from)
+input inputMetaData: string (Not used for this business rule)
+output: string (Randomly returns a random number, a random upper case letter of the english alphabet, or a random special character from the list of allowable special characters)
+
+testName: randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString
+input inputData: string (The list of allowable special characters that should be used to randomly select from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString
+input inputData:  string (The list of allowable special characters that should be used to randomly select from)
+input inputMetaData: string (Not used for this business rule)
+output: string (Randomly returns a random number, a random lower case letter of the english alphabet, or a random special character from the list of allowable special characters)
+
+testName: randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString
+input inputData: string (The list of allowable special characters that should be used to randomly select from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateMixedCaseAlphaNumericCharacter_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (Either a random letter (could be upper case or lower case, which is also random) or a random number)
+
+testName: randomlyGenerateMixedCaseAlphaNumericCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphaNumericCharacter_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateUpperCaseAlphaNumericCharacter_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (Either a random upper case letter or a random number)
+
+testName: randomlyGenerateUpperCaseAlphaNumericCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateUpperCaseAlphaNumericCharacter_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateLowerCaseAlphaNumericCharacter_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (Either a random lower case letter or a random number)
+
+testName: randomlyGenerateLowerCaseAlphaNumericCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateLowerCaseAlphaNumericCharacter_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateNumericCharacter_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (A single randomly generated string character in the range of 0-9)
+
+testName: randomlyGenerateNumericCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateNumericCharacter_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateNumericCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateNumericCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateNumericCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateNumericCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateSpecialCharacter_validDataString
+input inputData:  string (The list of allowable special characters that should be used to randomly select from)
+input inputMetaData: string (Not used for this business rule)
+output: string (A character randomly selected from the input list of allowable characters)
+
+testName: randomlyGenerateSpecialCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateSpecialCharacter_inValidDataInputMetaDataString
+input inputData: string (The list of allowable special characters that should be used to randomly select from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateSpecialCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateSpecialCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateSpecialCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateSpecialCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateNumberInRange_validDataStringTrueTrue
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<string,boolean,boolean> (["5",true,true])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataStringTrueFalse
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<string,boolean,boolean> (["5",true,false])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataStringFalseTrue
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<string,boolean,boolean> (["5",false,true])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataStringFalseFalse
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<string,boolean,boolean> (["5",false,false])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_validDataInteger
+input inputData:  string (A string that contains the number with the minimum value)
+input inputMetaData: array<integer,boolean,boolean> ([5,true,true])
+output: string (The new random number that was generated according to the input parameters)
+
+testName: randomlyGenerateNumberInRange_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidDataInputMetaDataString
+input inputData: string (A string that contains the number with the minimum value)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters) (inValidDataToStoreUndefined)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<string|integer,boolean,boolean> (An array with multiple input parameters) (inValidDataToStoreNaN)
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputMetaDataUndefined
+input inputData: string (A string that contains the number with the minimum value) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: randomlyGenerateNumberInRange_inValidInputMetaDataNaN
+input inputData: string (A string that contains the number with the minimum value) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateBooleanValue_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: boolean (A boolean value that is either {@code TRUE} or {@code FALSE} as a random 50-50 chance of one or the other)
+
+testName: randomlyGenerateBooleanValue_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateBooleanValue_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateBooleanValue_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateBooleanValue_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateBooleanValue_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateBooleanValue_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateMixedCaseAlphabeticCharacter_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (A randomly generated english alphabetic letter from a-z or A-Z)
+
+testName: randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateLowerCaseLetter_validDataString
+input inputData: string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (A randomly generated english alphabetic letter from a-z)
+
+testName: randomlyGenerateLowerCaseLetter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateLowerCaseLetter_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateLowerCaseLetter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateLowerCaseLetter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateLowerCaseLetter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateLowerCaseLetter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: randomlyGenerateUpperCaseLetter_validDataString
+input inputData: string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (A randomly generated alphabetic letter from A-Z)
+
+testName: randomlyGenerateUpperCaseLetter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: randomlyGenerateUpperCaseLetter_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: randomlyGenerateUpperCaseLetter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateUpperCaseLetter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: randomlyGenerateUpperCaseLetter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: randomlyGenerateUpperCaseLetter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: convertNumberToUpperCaseLetter_validDataString
+input inputData: string (A string that contains a number in the range of 1-26 that should be converted to an upper case letter of the english alphabet)
+input inputMetaData: string (Not used for this business rule)
+output: string (A letter of the alphabet where 1-26 is converted in a letter A-Z)
+
+testName: convertNumberToUpperCaseLetter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: convertNumberToUpperCaseLetter_inValidDataInputMetaDataString
+input inputData: string (A string that contains a number in the range of 1-26 that should be converted to an upper case letter of the english alphabet) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: convertNumberToUpperCaseLetter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: convertNumberToUpperCaseLetter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: convertNumberToUpperCaseLetter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: convertNumberToUpperCaseLetter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: convertNumberToLowerCaseLetter_validDataString
+input inputData: string (A string that contains a number in the range of 1-26 that should be converted in a lower case letter of the english alphabet)
+input inputMetaData: string (Not used for this business rule)
+output: string (A letter of the alphabet where 1-26 is converted to a letter a-z)
+
+testName: convertNumberToLowerCaseLetter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: convertNumberToLowerCaseLetter_inValidDataInputMetaDataString
+input inputData: string (A string that contains a number in the range of 1-26 that should be converted in a lower case letter of the english alphabet) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: convertNumberToLowerCaseLetter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: convertNumberToLowerCaseLetter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: convertNumberToLowerCaseLetter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: convertNumberToLowerCaseLetter_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?

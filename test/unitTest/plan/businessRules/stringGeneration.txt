@@ -1,0 +1,831 @@
+description: Test plan for stringGeneration.js
+
+
+--------------------------------------------------------------------------------
+testName: generateRandomMixedCaseTextByLength_validDataString
+input inputData: string (The string that contains a number or how many randomly generated mixed case alphabetic characters should be generated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string of randomly generated mixed case letters where the length of the string is defined by the input parameter.)
+
+testName: generateRandomMixedCaseTextByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: generateRandomMixedCaseTextByLength_inValidDataInputMetaDataString
+input inputData: string (The string that contains a number or how many randomly generated mixed case alphabetic characters should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomMixedCaseTextByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseTextByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseTextByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomMixedCaseTextByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomUpperCaseTextByLength_validDataString
+input inputData: string (The string that contains a number for how many randomly generated upper case english alphabetic characters should be generated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string of randomly generated upper case letters where the length of the string is defined by the input parameter)
+
+testName: generateRandomUpperCaseTextByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: generateRandomUpperCaseTextByLength_inValidDataInputMetaDataString
+input inputData: string (The string that contains a number for how many randomly generated upper case english alphabetic characters should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomUpperCaseTextByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseTextByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseTextByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomUpperCaseTextByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomLowerCaseTextByLength_validDataString
+input inputData: string (The string that contains a number for how many randomly generated lower case english alphabetic characters that should be generated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string of randomly generated lower case letters where the length of the string is defined by the input parameter)
+
+testName: generateRandomLowerCaseTextByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: generateRandomLowerCaseTextByLength_inValidDataInputMetaDataString
+input inputData: string (The string that contains a number for how many randomly generated lower case english alphabetic characters that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomLowerCaseTextByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseTextByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseTextByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomLowerCaseTextByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomMixedCaseTextWithSpecialCharactersByLength_validDataString
+input inputData: string (The number of randomly generated mixed case letters and/or special characters to generate the output string)
+input inputMetaData: string (The ist of special characters that should be used during the generation process)
+output: string (A string of randomly generated mixed case letters and special characters where the length of the string is defined by the input parameter)
+
+testName: generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The ist of special characters that should be used during the generation process) (testDataString)
+output: ?
+
+testName: generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated mixed case letters and/or special characters to generate the output string) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomUpperCaseTextWithSpecialCharactersByLength_validDataString
+input inputData: string (The number of randomly generated upper case english letters and/or special characters to generate)
+input inputMetaData: string (The list of special characters that should be used during the generate process)
+output: string (A string of randomly generated upper case english letters and special characters where the length of the string is defined by the input parameter)
+
+testName: generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The list of special characters that should be used during the generate process) (testDataString)
+output: ?
+
+testName: generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated upper case english letters and/or special characters to generate) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomLowerCaseTextWithSpecialCharactersByLength_validDataString
+input inputData: string (The number of randomly generated lower case letters and/or special characters to generate)
+input inputMetaData: string (The list of special characters that should be used during the generation process)
+output: string (A string of randomly generated lower case english letters and special characters where the length of the string is defined by the input parameter)
+
+testName: generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The list of special characters that should be used during the generation process) (testDataString)
+output: ?
+
+testName: generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated lower case letters and/or special characters to generate) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomMixedCaseAlphaNumericCodeByLength_validDataString
+input inputData: string (The number of randomly generated mixed case letters and/or numbers that should be generated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string of randomly generated mixed case english letters and numbers where the length of the string is defined by the input parameter)
+
+testName: generateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated mixed case letters and/or numbers that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomUpperCaseAlphaNumericCodeByLength_validDataString
+input inputData: string (The string that contains a number for how many randomly generated upper case english letters and/or numbers that should be generated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string of randomly generated upper case english letters and numbers where the length of the string is defined by the input parameter)
+
+testName: generateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
+input inputData: string (The string that contains a number for how many randomly generated upper case english letters and/or numbers that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomLowerCaseAlphaNumericCodeByLength_validDataString
+input inputData: string (The number of randomly generated lower case letters and/or numbers that should be generated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string of randomly generated lower case english letters and numbers where the length of the string is defined by the input parameter)
+
+testName: generateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated lower case letters and/or numbers that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomNumericCodeByLength_validDataString
+input inputData: string (The number of randomly generated numeric characters that should be generated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string of randomly generated numeric characters where the length of the string is defined by the input parameter)
+
+testName: generateRandomNumericCodeByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: generateRandomNumericCodeByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated numeric characters that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomNumericCodeByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomNumericCodeByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomNumericCodeByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomNumericCodeByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
+input inputData: string (The number of randomly generated english letters, numeric characters and special characters that should  be generated)
+input inputMetaData: string (The list of special characters that should be used during the generation process)
+output: string (A string of randomly generated mixed case alpha numeric characters, and special characters where the length of the string is defined by the input parameter)
+
+testName: generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The list of special characters that should be used during the generation process) (testDataString)
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated english letters, numeric characters and special characters that should  be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
+input inputData: string (The number of randomly generated upper case english letters, numeric characters and special characters that should be generated)
+input inputMetaData: string (The list of special characters that should be used during the generation process)
+output: string (A string of randomly generated upper case alpha numeric characters, and special characters where the length of the string is defined as one of the input parameters)
+
+testName: generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The list of special characters that should be used during the generation process) (testDataString)
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated upper case english letters, numeric characters and special characters that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
+input inputData: string (The number of randomly generated lower case english letters, numeric characters adn special characters that should be generated)
+input inputMetaData: string (The list of special characters that should be used during the generation process)
+output: string (A string of randomly generated lower case alpha numeric characters, and special characters where the length of the string is defined as one of the input parameters)
+
+testName: generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The list of special characters that should be used during the generation process) (testDataString)
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated lower case english letters, numeric characters adn special characters that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomSpecialCharacterCodeByLength_validDataString
+input inputData: string (The number of randomly generated special characters that should be generated)
+input inputMetaData: string (The list of special characters that should be used during the generation process)
+output: string (A string of randomly generated characters from the list of allowable special characters that are passed in where the length of the string is defined as one of the input parameters)
+
+testName: generateRandomSpecialCharacterCodeByLength_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The list of special characters that should be used during the generation process) (testDataString)
+output: ?
+
+testName: generateRandomSpecialCharacterCodeByLength_inValidDataInputMetaDataString
+input inputData: string (The number of randomly generated special characters that should be generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomSpecialCharacterCodeByLength_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: generateValidEmail_validDataString
+input inputData: string (The string that contains the number of characters to generate)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
+output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters
+where the length of the string is also defined as one of the input parameters, formatted as an email: a@b.com")
+NOTE: Make a data driven with valid data for inputMetaData.
+
+testName: generateValidEmail_inValidInputMetaDataString
+input inputData: string (The string that contains the number of characters to generate)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
+output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters
+where the length of the string is also defined as one of the input parameters, formatted as an email: a@b.com")
+NOTE: Make a data driven with inValid data for inputMetaData.
+
+testName: generateValidEmail_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (testDataString)
+output: ?
+
+testName: generateValidEmail_inValidDataInputMetaDataString
+input inputData: string (The string that contains the number of characters to generate) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateValidEmail_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateValidEmail_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateValidEmail_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateValidEmail_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateValidEmail_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateValidEmail_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateValidEmail_inValidInputMetaDataUndefined
+input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateValidEmail_inValidInputMetaDataNaN
+input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: generateInvalidEmail_validDataString
+input inputData: string (The string that contains the number of characters to generate)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
+output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters where the length of the string
+is also defined as one of the input parameters, formatted as an email: "a@b.com")
+NOTE: Make a data driven with valid data for inputMetaData.
+
+testName: generateInvalidEmail_inValidInputMetaDataString
+input inputData: string (The string that contains the number of characters to generate)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters)
+output: string (A string of randomly generated mixed case alpha numeric characters and optionally special characters where the length of the string
+is also defined as one of the input parameters, formatted as an email: "a@b.com")
+NOTE: Make a data driven with inValid data for inputMetaData.
+
+testName: generateInvalidEmail_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (testDataString)
+output: ?
+
+testName: generateInvalidEmail_inValidDataInputMetaDataString
+input inputData: string (The string that contains the number of characters to generate) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateInvalidEmail_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateInvalidEmail_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: generateInvalidEmail_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateInvalidEmail_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateInvalidEmail_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateInvalidEmail_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<boolean,string,string> (An array map with multiple input parameters) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateInvalidEmail_inValidInputMetaDataUndefined
+input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateInvalidEmail_inValidInputMetaDataNaN
+input inputData: string (The string that contains the number of characters to generate) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomBrightColor_validDataString
+input inputData: string ("!@#$%^&*")
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_validDataInteger
+input inputData: integer (57972)
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_validDataStringInteger
+input inputData: string ("!@#$%^&*")
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_validDataIntegerString
+input inputData: integer (57972)
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomBrightColor_inValidDataInputDataString
+input inputData: string ("dfxg24346dfg")
+input inputMetaData: string|integer (!@#$%^&*) (testDataString)
+output: ?
+
+testName: generateRandomBrightColor_inValidDataInputMetaDataString
+input inputData: string|integer (!@#$%^&*) (testDataString)
+input inputMetaData: string ("dfxg24346dfg")
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataInteger
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataBoolean
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataUndefined
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateRandomBrightColor_inValidInputMetaDataNaN
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomDarkColor_validDataString
+input inputData: string (!@#$%^&*)
+input inputMetaData: string (!@#$%^&*)
+output: array<integer,integer,integer> (An array of RGB values in the dark color spectrum range)
+
+testName: generateRandomDarkColor_validDataInteger
+input inputData: integer (57972)
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the dark color spectrum range)
+
+testName: generateRandomDarkColor_validDataStringInteger
+input inputData: string ("!@#$%^&*")
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomDarkColor_validDataIntegerString
+input inputData: integer (57972)
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomDarkColor_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string|integer (!@#$%^&*) (testDataString)
+output: ?
+
+testName: generateRandomDarkColor_inValidDataInputMetaDataString
+input inputData: string|integer (!@#$%^&*) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataInteger
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataBoolean
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataUndefined
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateRandomDarkColor_inValidInputMetaDataNaN
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: generateRandomColor_validDataString
+input inputData: string (!@#$%^&*)
+input inputMetaData: string (!@#$%^&*)
+output: array<integer,integer,integer> (An array of RGB values that will be used for a color value)
+
+testName: generateRandomColor_validDataInteger
+input inputData: integer (57972)
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values that will be used for a color value)
+
+testName: generateRandomColor_validDataStringInteger
+input inputData: string ("!@#$%^&*")
+input inputMetaData: integer (57972)
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomColor_validDataIntegerString
+input inputData: integer (57972)
+input inputMetaData: string ("!@#$%^&*")
+output: array<integer,integer,integer> (An array of RGB values in the bright color spectrum range)
+
+testName: generateRandomColor_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string|integer (!@#$%^&*) (testDataString)
+output: ?
+
+testName: generateRandomColor_inValidDataInputMetaDataString
+input inputData: string|integer (!@#$%^&*) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: generateRandomColor_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomColor_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: string|integer (!@#$%^&*)
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataInteger
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: integer (4567)
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataBoolean
+input inputData: string|integer (!@#$%^&*)
+input inputMetaData: boolean (false)
+output: ?
+
+testName: generateRandomColor_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+output: ?
+
+testName: generateRandomColor_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataUndefined
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: generateRandomColor_inValidInputMetaDataNaN
+input inputData: string|integer (!@#$%^&*) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?

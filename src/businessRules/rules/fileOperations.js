@@ -500,7 +500,7 @@ function createZipArchive(inputData, inputMetaData) {
  * or top-level folder path for the application.
  * @param {string} inputData Not used for this business rule.
  * @param {string} inputMetaData Not used for this business rule.
- * @return {string} The real rot path or top-level path for the application.
+ * @return {string} The real root path or top-level path for the application.
  * @NOTE
  */
 function cleanRootPath(inputData, inputMetaData) {

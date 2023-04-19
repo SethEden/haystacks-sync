@@ -1,0 +1,333 @@
+description: Test plan for wordStringParsing.js
+
+
+--------------------------------------------------------------------------------
+testName: isStringCamelCase_validDataString
+input inputData:  string (The string that should be checked for the camel case qualifications)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isStringCamelCase_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isStringCamelCase_inValidDataInputMetaDataString
+input inputData: string (The string that should be checked for the camel case qualifications) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isStringCamelCase_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isStringCamelCase_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isStringCamelCase_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: mapWordToCamelCaseWord_validDataString
+input inputData:  string (The string key/value that should be converted to a camel case word)
+input inputMetaData: string (The string index for the map to the value that should be used)
+output: string (A string where the word has been converted into a camel case word)
+
+testName: mapWordToCamelCaseWord_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The string index for the map to the value that should be used) (testDataString)
+output: ?
+
+testName: mapWordToCamelCaseWord_inValidDataInputMetaDataString
+input inputData: string (The string key/value that should be converted to a camel case word) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: mapWordToCamelCaseWord_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: mapWordToCamelCaseWord_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: mapWordToCamelCaseWord_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: simplifyAndConsolidateString_validDataString
+input inputData:  string (The string that should be simplified and consolidated)
+input inputMetaData: string (Not used for this business rule)
+output: string (A string that has been simplified and consolidated by converting to lower case, removing all digits, symbols and white space)
+
+testName: simplifyAndConsolidateString_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: simplifyAndConsolidateString_inValidDataInputMetaDataString
+input inputData: string (The string that should be simplified and consolidated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: simplifyAndConsolidateString_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: simplifyAndConsolidateString_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: simplifyAndConsolidateString_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: compareSimplifiedAndConsolidatedStrings_validDataString
+input inputData:  string (The first string to be compared)
+input inputMetaData: string (The second string to be compared)
+output: boolean
+
+testName: compareSimplifiedAndConsolidatedStrings_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The second string to be compared) (testDataString)
+output: ?
+
+testName: compareSimplifiedAndConsolidatedStrings_inValidDataInputMetaDataString
+input inputData: string (The first string to be compared) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: compareSimplifiedAndConsolidatedStrings_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: compareSimplifiedAndConsolidatedStrings_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: compareSimplifiedAndConsolidatedStrings_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: countCamelCaseWords_validDataString
+input inputData:  string (String to count words from)
+input inputMetaData: string (Not used for this business rule)
+output: integer (The number of camel case words found in the string)
+
+testName: countCamelCaseWords_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: countCamelCaseWords_inValidDataInputMetaDataString
+input inputData: string (String to count words from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: countCamelCaseWords_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: countCamelCaseWords_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: countCamelCaseWords_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: doesStringContainAcronym_validDataString
+input inputData:  string (The string that should be scanned to determine if it contains an acronym or not)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: doesStringContainAcronym_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: doesStringContainAcronym_inValidDataInputMetaDataString
+input inputData: string (The string that should be scanned to determine if it contains an acronym or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: doesStringContainAcronym_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: doesStringContainAcronym_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: doesStringContainAcronym_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: determineWordDelimiter_validDataString
+input inputData:  string (The string that should be examined to determine what delimiter should be used to break it up into words)
+input inputMetaData: string (Not used for this business rule)
+output: string (The delimiter that should be used, or if camelCase then the function will return the string "CamelCase")
+
+testName: determineWordDelimiter_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: determineWordDelimiter_inValidDataInputMetaDataString
+input inputData: string (The string that should be examined to determine what delimiter should be used to break it up into words) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: determineWordDelimiter_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: determineWordDelimiter_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: determineWordDelimiter_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: countDelimiterInString_validDataString
+input inputData:  string (String to count delimiters from)
+input inputMetaData: string (The delimiter that should be used when counting from the input string)
+output: string (The number of delimiters found in the string)
+
+testName: countDelimiterInString_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The delimiter that should be used when counting from the input string) (testDataString)
+output: ?
+
+testName: countDelimiterInString_inValidDataInputMetaDataString
+input inputData: string (String to count delimiters from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: countDelimiterInString_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: countDelimiterInString_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: countDelimiterInString_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: getWordCountInString_validDataString
+input inputData:  string (The string that words should be counted from)
+input inputMetaData: string (Not used for this business rule)
+output: string (The number of words that were found in the string)
+
+testName: getWordCountInString_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: getWordCountInString_inValidDataInputMetaDataString
+input inputData: string (The string that words should be counted from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getWordCountInString_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getWordCountInString_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getWordCountInString_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: isStringList_validDataString
+input inputData:  string (The string that should be checked if it is a list or not)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isStringList_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isStringList_inValidDataInputMetaDataString
+input inputData: string (The string that should be checked if it is a list or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: isStringList_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isStringList_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isStringList_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+--------------------------------------------------------------------------------
+testName: aggregateNumericalDifferenceBetweenTwoStrings_validDataString
+input inputData:  string (String 1 to compare)
+input inputMetaData: string (String 2 to compare)
+output: string (The delta difference between the two strings, expressed as a number)
+
+testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (String 2 to compare) (testDataString)
+output: ?
+
+testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidDataInputMetaDataString
+input inputData: string (String 1 to compare) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
