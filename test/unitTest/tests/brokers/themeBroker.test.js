@@ -47,7 +47,7 @@ describe(tst_con.cgetNamedThemes, () => {
     test(tst_con.cgetNamedThemes_validData, () => {
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemes();
 
@@ -67,7 +67,7 @@ describe(tst_con.cgetNamedThemes, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemes(input);
 
@@ -87,7 +87,7 @@ describe(tst_con.cgetNamedThemes, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemes(input);
 
@@ -107,7 +107,7 @@ describe(tst_con.cgetNamedThemes, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemes(input);
 
@@ -135,7 +135,7 @@ describe(tst_con.cgetNamedThemePath, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemePath(themeName);
 
@@ -155,7 +155,7 @@ describe(tst_con.cgetNamedThemePath, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemePath(themeName);
 
@@ -179,7 +179,7 @@ describe(tst_con.cloadTheme, () => {
     */
     test(tst_con.cloadTheme_validData, () => {
         // Arrange
-        let themePath = "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings/brokers";
+        let themePath = obj_con.themePath() + bas.cForwardSlash + wrd.cbrokers;
 
         // Act
         rulesLibrary.initRulesLibrary();
@@ -208,7 +208,7 @@ describe(tst_con.capplyTheme, () => {
     */
     test(tst_con.capplyTheme_validData, () => {
         // Arrange
-        let themePath = "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Themes/debugSettings/brokers";
+        let themePath = obj_con.themePath() + bas.cForwardSlash + wrd.cbrokers;
 
         // Act
         rulesLibrary.initRulesLibrary();

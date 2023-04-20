@@ -19,6 +19,7 @@ import loggers from '../../../executrix/loggers.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import path from 'path';
+import { cpluginThemesPath } from '@haystacks/constants/src/constants/configuration.constants.js';
 
 const {bas, biz, cfg, msg, sys, wrd} = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
@@ -304,7 +305,7 @@ function generateCommandAliases(inputData, inputMetaData) {
     // https://en.wikipedia.org/wiki/Lehmer_code
     returnData = solveLehmerCode(masterArrayIndex, masterCommandWordAliasesArray);
     // Command Aliases are:
-    console.log(msg.cCommandAliasesAre + returnData);
+    // console.log(msg.cCommandAliasesAre + returnData);
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);

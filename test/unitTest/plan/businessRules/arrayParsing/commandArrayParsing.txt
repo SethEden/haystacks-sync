@@ -31,11 +31,15 @@ testName: solveLehmerCode_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 
 testName: solveLehmerCode_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 
 testName: solveLehmerCode_inValidInputDataUndefined
 input inputData: undefined
@@ -51,11 +55,15 @@ testName: solveLehmerCode_inValidInputMetaDataUndefined
 input inputData: array<integer> (The Lehmer code addressable index array we will use to permutate over all possible combinations) (inValidDataToStoreUndefined)
 input inputMetaData: undefined
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 
 testName: solveLehmerCode_inValidInputMetaDataNaN
 input inputData: array<integer> (The Lehmer code addressable index array we will use to permutate over all possible combinations) (inValidDataToStoreNaN)
 input inputMetaData: NaN
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 --------------------------------------------------------------------------------
 testName: recursiveArrayExpansion_validDataString
 input inputData: array<integer,array<integer>> (The index of expansion and the array to be expanded as an array object)
@@ -122,6 +130,8 @@ testName: getLehmerCodeValue_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: array<array<string>> (The nested array of arrays with the values we should get and combine then return as a single string) (testDataString)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'l')
 
 testName: getLehmerCodeValue_inValidDataInputMetaDataString
 input inputData: array<integer> (The Lehmer code array with indices for values we should get & return) (testDataString)
@@ -142,11 +152,15 @@ testName: getLehmerCodeValue_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 
 testName: getLehmerCodeValue_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 
 testName: getLehmerCodeValue_inValidInputDataUndefined
 input inputData: undefined
@@ -162,11 +176,15 @@ testName: getLehmerCodeValue_inValidInputMetaDataUndefined
 input inputData: array<integer> (The Lehmer code array with indices for values we should get & return) (inValidDataToStoreUndefined)
 input inputMetaData: undefined
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 
 testName: getLehmerCodeValue_inValidInputMetaDataNaN
 input inputData: array<integer> (The Lehmer code array with indices for values we should get & return) (inValidDataToStoreNaN)
 input inputMetaData: NaN
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '3')
 --------------------------------------------------------------------------------
 testName: generateCommandAliases_validDataString
 input inputData: object ({"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"})
@@ -242,11 +260,15 @@ testName: aggregateCommandArguments_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
 
 testName: aggregateCommandArguments_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
 
 testName: aggregateCommandArguments_inValidInputDataUndefined
 input inputData: undefined

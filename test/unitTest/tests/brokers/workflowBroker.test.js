@@ -25,10 +25,11 @@ import * as obj_con from '../../testData/brokers/workflowBroker.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
+import path from 'path';
 import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
 
 const { bas, msg, sys, wrd, num, biz, cfg } = hayConst;
-// const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
+const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
 
@@ -51,7 +52,7 @@ describe(tst_con.cgetWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflow(workflowName);
 
@@ -71,7 +72,7 @@ describe(tst_con.cgetWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflow(workflowName);
 
@@ -91,7 +92,7 @@ describe(tst_con.cgetWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflow(workflowName);
 
@@ -111,7 +112,7 @@ describe(tst_con.cgetWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflow(workflowName);
 
@@ -139,7 +140,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
@@ -159,7 +160,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
@@ -179,7 +180,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
@@ -199,7 +200,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
@@ -227,7 +228,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
@@ -247,7 +248,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData({}, workflowName);
 
@@ -267,7 +268,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
@@ -287,7 +288,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
@@ -307,7 +308,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
@@ -335,7 +336,7 @@ describe(tst_con.csearchWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.searchWorkflow(D[sys.cCommandWorkflows], workflowName);
 
@@ -355,7 +356,7 @@ describe(tst_con.csearchWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.searchWorkflow("", workflowName);
 
@@ -375,7 +376,7 @@ describe(tst_con.csearchWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.searchWorkflow(D[sys.cCommandWorkflows], workflowName);
 
@@ -395,7 +396,7 @@ describe(tst_con.csearchWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.searchWorkflow(123, workflowName);
 
@@ -415,7 +416,7 @@ describe(tst_con.csearchWorkflow, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.searchWorkflow(false, workflowName);
 
@@ -440,7 +441,7 @@ describe(tst_con.cgetAllWorkflows, () => {
     test(tst_con.cgetAllWorkflows_validData, () => {
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getAllWorkflows(D[sys.cCommandWorkflows]);
 
@@ -457,7 +458,7 @@ describe(tst_con.cgetAllWorkflows, () => {
     test(tst_con.cgetAllWorkflows_inValidString, () => {
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getAllWorkflows("");
 
@@ -474,7 +475,7 @@ describe(tst_con.cgetAllWorkflows, () => {
     test(tst_con.cgetAllWorkflows_inValidNumber, () => {
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getAllWorkflows(123);
 
@@ -491,7 +492,7 @@ describe(tst_con.cgetAllWorkflows, () => {
     test(tst_con.cgetAllWorkflows_inValidBoolean, () => {
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getAllWorkflows(false);
 
@@ -519,7 +520,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(D[sys.cCommandWorkflows], namespaceToFind);
 
@@ -539,7 +540,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflowNamespaceDataObject("", namespaceToFind);
 
@@ -559,7 +560,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(D[sys.cCommandWorkflows], namespaceToFind);
 
@@ -579,7 +580,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(123, namespaceToFind);
 
@@ -599,7 +600,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
         // Act
         rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/Workflows/arrayParsing");
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(false, namespaceToFind);
 
