@@ -326,12 +326,12 @@ input inputData: NaN
 input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
 output: ?
 --------------------------------------------------------------------------------
-testName: isArrayOrObject_validDataString
+testName: isArrayOrObject_validDataObject
 input inputData: object|array<string|integer|boolean|float|object> ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
-testName: isArrayOrObject_validDataString
+testName: isArrayOrObject_validDataArray
 input inputData: object|array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"])
 input inputMetaData: string (Not used for this business rule)
 output: boolean

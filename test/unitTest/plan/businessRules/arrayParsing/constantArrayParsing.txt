@@ -11,6 +11,8 @@ testName: getLengthOfLongestStringInArray_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
+status: Failed
+error:  TypeError: inputData.map is not a function
 
 testName: getLengthOfLongestStringInArray_inValidDataInputMetaDataString
 input inputData: array<string> (The array for which we should find the longest length string in) (testDataString)
@@ -21,6 +23,8 @@ testName: getLengthOfLongestStringInArray_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.map is not a function
 
 testName: getLengthOfLongestStringInArray_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -31,11 +35,15 @@ testName: getLengthOfLongestStringInArray_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: Cannot calculate max of an empty array
 
 testName: getLengthOfLongestStringInArray_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: Cannot calculate max of an empty array
 
 testName: getLengthOfLongestStringInArray_inValidInputDataUndefined
 input inputData: undefined
@@ -56,6 +64,8 @@ testName: searchForPatternsInStringArray_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
+status: Failed
+error: TypeError: inputData.map is not a function
 
 testName: searchForPatternsInStringArray_inValidDataInputMetaDataString
 input inputData: array<string> (The array of strings that should be searched for matching patterns) (testDataString)
@@ -76,11 +86,15 @@ testName: searchForPatternsInStringArray_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: Cannot calculate max of an empty array
 
 testName: searchForPatternsInStringArray_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: Cannot calculate max of an empty array
 
 testName: searchForPatternsInStringArray_inValidInputDataUndefined
 input inputData: undefined
@@ -111,6 +125,8 @@ testName: validatePatternsThatNeedImplementation_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData is not iterable
 
 testName: validatePatternsThatNeedImplementation_inValidInputDataBoolean
 input inputData: boolean (false)
