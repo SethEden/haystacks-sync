@@ -22,7 +22,7 @@ import D from '../../../structures/data.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, cfg, msg, sys, wrd} = hayConst;
+const {bas, cfg, msg, sys, wrd, biz} = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.dataArrayParsing.
 const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -478,10 +478,12 @@ function setNamespacedDataObject(inputData, inputMetaData) {
   if (inputData && inputData.length > 0) {
     for (let i = 0; i < inputData.length - 1; i++) {
       namespaceDataObject = namespaceDataObject[inputData[i]];
+
       if (i === inputData.length - 2) {
         // namespaceDataObject is:
         loggers.consoleLog(namespacePrefix + functionName, msg.cnamespaceDataObjectIs + JSON.stringify(namespaceDataObject));
         let fullyQualifiedKey = namespaceDataObject.join(bas.cDot);
+        console.log(fullyQualifiedKey)
         if (ruleParsing.processRulesInternal([[namespaceDataObject, cfg.cdebugSetting], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === true) {
           namespaceDataObject[fullyQualifiedKey] = inputMetaData;
         } else {

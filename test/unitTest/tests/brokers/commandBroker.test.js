@@ -23,7 +23,6 @@ import * as obj_con from '../../testData/brokers/commandBroker.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
-import { wordConstantsValidation } from "@haystacks/constants/src/constantsValidation/word.constants.validation.js";
 
 const { bas, msg, sys, wrd, num } = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));

@@ -24,7 +24,6 @@ import * as obj_con from '../../testData/brokers/dataBroker.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
-import { wordConstantsValidation } from "@haystacks/constants/src/constantsValidation/word.constants.validation.js";
 
 const { bas, msg, sys, wrd, num } = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
@@ -46,7 +45,7 @@ describe(tst_con.cscanDataPath, () => {
     */
     test(tst_con.cscanDataPath_validData, () => {
         // Arrange
-        let dataPath = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/';
+        let dataPath = tst_con.basePath();
 
         // Act
         rulesLibrary.initRulesLibrary();
@@ -64,7 +63,7 @@ describe(tst_con.cscanDataPath, () => {
     */
     test(tst_con.cscanDataPath_inValidString, () => {
         // Arrange
-        let dataPath = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest1';
+        let dataPath = tst_con.basePath() + num.c123;
 
         // Act
         rulesLibrary.initRulesLibrary();
@@ -90,8 +89,8 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
     */
     test(tst_con.cfindUniversalDebugConfigSetting_validData, () => {
         // Arrange
-        let appConfigFilesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/application.system.json'];
-        let frameworkConfigFilesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/framework.system.json'];
+        let appConfigFilesToLoad = [obj_con.applicationPath()];
+        let frameworkConfigFilesToLoad = [obj_con.frameworkPath()];
 
         // Act
         rulesLibrary.initRulesLibrary();
@@ -128,7 +127,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
     */
     test(tst_con.cfindUniversalDebugConfigSetting_inValidFrameworkConfigFilesToLoadString, () => {
         // Arrange
-        let appConfigFilesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/application.system.json'];
+        let appConfigFilesToLoad = [obj_con.applicationPath()];
         let frameworkConfigFilesToLoad = wrd.cSpace;
 
         // Act
@@ -155,7 +154,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_validData, () => {
         // Arrange
-        let filesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/test.csv'];
+        let filesToLoad = [obj_con.csvPath()];
         let contextName = wrd.cSpace;
 
         // Act
@@ -174,7 +173,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_inValidString, () => {
         // Arrange
-        let filesToLoad = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest1/testData/test.csv';
+        let filesToLoad = obj_con.csvPath();
         let contextName = wrd.cSpace;
 
         // Act
@@ -193,7 +192,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_inValidContextNameString, () => {
         // Arrange
-        let filesToLoad = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest1/testData/test.csv';
+        let filesToLoad = obj_con.csvPath();
         let contextName = wrd.cComa;
 
         // Act
@@ -239,7 +238,7 @@ describe(tst_con.cloadAllXmlData, () => {
     */
     test(tst_con.cloadedAllXmlData_validData, () => {
         // Arrange
-        let filesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/system.xml'];
+        let filesToLoad = [obj_con.xmlPath()];
         let contextName = wrd.cSpace;
 
         // Act
@@ -258,7 +257,7 @@ describe(tst_con.cloadAllXmlData, () => {
     */
     test(tst_con.cloadedAllXmlData_inValidString, () => {
         // Arrange
-        let filesToLoad = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/system.xml';
+        let filesToLoad = obj_con.xmlPath();
         let contextName = wrd.cSpace;
 
         // Act
@@ -277,7 +276,7 @@ describe(tst_con.cloadAllXmlData, () => {
     */
     test(tst_con.cloadAllXmlData_inValidContextNameString, () => {
         // Arrange
-        let filesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/system.xml'];
+        let filesToLoad = [obj_con.xmlPath()];
         let contextName = wrd.cComa;
 
         // Act
@@ -323,7 +322,7 @@ describe(tst_con.cloadAllJsonData, () => {
     */
     test(tst_con.cloadAllJsonData_validData, () => {
         // Arrange
-        let filesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/config.json'];
+        let filesToLoad = [obj_con.jsonPath()];
         let contextName = wrd.cSpace;
 
         // Act
@@ -342,7 +341,7 @@ describe(tst_con.cloadAllJsonData, () => {
     */
     test(tst_con.cloadAllJsonData_inValidString, () => {
         // Arrange
-        let filesToLoad = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/config.json';
+        let filesToLoad = obj_con.jsonPath();
         let contextName = wrd.cSpace;
 
         // Act
@@ -361,7 +360,7 @@ describe(tst_con.cloadAllJsonData, () => {
     */
     test(tst_con.cloadAllJsonData_inValidContextNameString, () => {
         // Arrange
-        let filesToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/config.json'];
+        let filesToLoad = [obj_con.jsonPath()];
         let contextName = wrd.cComa;
 
         // Act
@@ -434,7 +433,7 @@ describe(tst_con.cpreprocessJsonFile, () => {
     */
     test(tst_con.cpreprocessJsonFile_validData, () => {
         // Arrange
-        let fileToLoad = ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/config.json'];
+        let fileToLoad = [obj_con.jsonPath()];
 
         // Act
         let returnData = dataBroker.preprocessJsonFile(fileToLoad);
@@ -459,7 +458,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     */
     test(tst_con.cwriteJsonDataToFile_validData, () => {
         // Arrange
-        let fileToSaveTo = 'D:/work/WEBGL/Upwork/Haystack/test.json';
+        let fileToSaveTo = obj_con.writeJsonDatapath();
         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
 
         // Act
@@ -477,7 +476,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     */
     test(tst_con.cwriteJsonDataToFile_inValidDataToWrite, () => {
         // Arrange
-        let fileToSaveTo = 'D:/work/WEBGL/Upwork/Haystack/test.json';
+        let fileToSaveTo = obj_con.writeJsonDatapath();
         let dataToWriteOut = wrd.cComa;
 
         // Act

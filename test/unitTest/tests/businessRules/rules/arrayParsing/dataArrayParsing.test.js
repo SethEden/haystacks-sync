@@ -17,6 +17,7 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 // Internal imports
 import dataArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/dataArrayParsing.js";
 import D from "../../../../../../src/structures/data.js";
+import commandsLibrary from "../../../../../../src/commandsBlob/commandsLibrary.js";
 
 import * as tst_con from '../../../constants/test.constants.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/dataArrayParsing.js';
@@ -25,8 +26,9 @@ import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/
 import hayConst from '@haystacks/constants';
 import path from 'path';
 import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
 
-const { bas, msg, sys, wrd, num, biz, cfg } = hayConst;
+const { bas, msg, sys, wrd, num, biz, cfg, cmd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -1934,13 +1936,23 @@ describe(tst_con.cgetNamespacedDataObject, () => {
     */
     test(tst_con.cgetNamespacedDataObject_validDataString, () => {
         // Arrange
-        let inputData = obj_con.StringsArray_01;
-        let inputMetaData = obj_con.StringsObject_01;
+        let inputData = obj_con.StringsArray_02;
+        let inputMetaData = false;
 
         // Act
-        let returnData = dataArrayParsing.setNamespacedDataObject(inputData, inputMetaData);
+        let temp_D = D;
+        for(let i = 0; i < obj_con.StringsArray_02.length - 1; i ++) {
+            if(i < obj_con.StringsArray_02.length - 2)
+                temp_D[obj_con.StringsArray_02[i]] = {};
+            else 
+                temp_D[obj_con.StringsArray_02[i]] = obj_con.StringsArray_02[obj_con.StringsArray_02.length-1];
+            temp_D = temp_D[obj_con.StringsArray_02[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
+        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toBe();
+        expect(returnData).toBeTruthy();
     });
 });

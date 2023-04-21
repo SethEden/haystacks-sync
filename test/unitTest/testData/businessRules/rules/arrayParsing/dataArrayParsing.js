@@ -16,3 +16,5 @@ const { bas, num, sys, wrd } = hayConst;
 export const StringsObject_01 = {"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"};
 export const StringsObject_02 = {"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"};
 export const StringsArray_01 = ["df","xg","24","34","6d","fg"];
+export const StringsArray_02 =  ["configuration", "debugSetting", "brokers", ["configuration", "debugSetting", "brokers"]];
+export const StringsArray_03 = ["configuration", "debugSetting", "brokers"];
