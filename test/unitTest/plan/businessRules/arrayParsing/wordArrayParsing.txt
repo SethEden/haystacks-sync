@@ -31,11 +31,15 @@ testName: convertCamelCaseStringToArray_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 
 testName: convertCamelCaseStringToArray_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 --------------------------------------------------------------------------------
 testName: getWordsArrayFromString_validDataString
 input inputData: string (The string that should be broken down into words and returned as an array)
@@ -56,6 +60,8 @@ testName: getWordsArrayFromString_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getWordsArrayFromString_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -66,11 +72,15 @@ testName: getWordsArrayFromString_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 
 testName: getWordsArrayFromString_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 --------------------------------------------------------------------------------
 testName: recombineStringArrayWithSpaces_validDataString
 input inputData: array<string> (The array of strings that should be recombined)
@@ -81,6 +91,8 @@ testName: recombineStringArrayWithSpaces_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
+status: Failed
+error: TypeError: inputData.join is not a function
 
 testName: recombineStringArrayWithSpaces_inValidDataInputMetaDataString
 input inputData: array<string> (The array of strings that should be recombined) (testDataString)
@@ -91,6 +103,8 @@ testName: recombineStringArrayWithSpaces_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.join is not a function
 
 testName: recombineStringArrayWithSpaces_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -126,6 +140,8 @@ testName: convertArrayToCamelCaseString_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
+status: Failed
+error: TypeError: inputData.map is not a function
 
 testName: convertArrayToCamelCaseString_inValidDataInputMetaDataString
 input inputData: array<string> (The array of words that should be strung together into a single long string) (testDataString)
@@ -136,6 +152,8 @@ testName: convertArrayToCamelCaseString_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+erorr: TypeError: inputData.map is not a function
 
 testName: convertArrayToCamelCaseString_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -146,11 +164,15 @@ testName: convertArrayToCamelCaseString_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
 
 testName: convertArrayToCamelCaseString_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
 
 testName: convertArrayToCamelCaseString_inValidInputDataUndefined
 input inputData: undefined
@@ -191,6 +213,8 @@ testName: doesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataIntege
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: doesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])

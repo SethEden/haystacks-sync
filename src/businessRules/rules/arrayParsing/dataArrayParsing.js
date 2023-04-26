@@ -483,7 +483,6 @@ function setNamespacedDataObject(inputData, inputMetaData) {
         // namespaceDataObject is:
         loggers.consoleLog(namespacePrefix + functionName, msg.cnamespaceDataObjectIs + JSON.stringify(namespaceDataObject));
         let fullyQualifiedKey = namespaceDataObject.join(bas.cDot);
-        console.log(fullyQualifiedKey)
         if (ruleParsing.processRulesInternal([[namespaceDataObject, cfg.cdebugSetting], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === true) {
           namespaceDataObject[fullyQualifiedKey] = inputMetaData;
         } else {

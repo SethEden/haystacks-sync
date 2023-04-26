@@ -361,12 +361,12 @@ input inputData: NaN
 input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
 output: ?
 --------------------------------------------------------------------------------
-testName: isNonZeroLengthArray_validDataString
+testName: isNonZeroLengthArray_validDataObject
 input inputData: object|array<string|integer|boolean|float|object> ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"})
 input inputMetaData: string (Not used for this business rule)
 output: boolean
 
-testName: isNonZeroLengthArray_validDataString
+testName: isNonZeroLengthArray_validDataArray
 input inputData: object|array<string|integer|boolean|float|object> (["df","xg","24","34","6d","fg"])
 input inputMetaData: string (Not used for this business rule)
 output: boolean
@@ -505,6 +505,8 @@ testName: getNamespacedDataObject_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: boolean (True or False value to indicate if the path elements should be created or not it they are not found) (testDataString)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'e')
 
 testName: getNamespacedDataObject_inValidDataInputMetaDataString
 input inputData: array<string> (The path in the data JSON object where the setting should be returned) (testDataString)
@@ -525,16 +527,22 @@ testName: getNamespacedDataObject_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '2')
 
 testName: getNamespacedDataObject_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '2')
 
 testName: getNamespacedDataObject_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: boolean (True or False value to indicate if the path elements should be created or not it they are not found) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'length')
 
 testName: getNamespacedDataObject_inValidInputDataNaN
 input inputData: NaN
@@ -550,6 +558,8 @@ testName: setNamespacedDataObject_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: object (The data to be persisted on the D-data structure) (testDataString)
 output: ?
+status: Failed
+error: TypeError: namespaceDataObject.join is not a function
 
 testName: setNamespacedDataObject_inValidDataInputMetaDataString
 input inputData: array<string> (The path in the data JSON object where the setting should be persisted) (testDataString)
@@ -570,16 +580,22 @@ testName: setNamespacedDataObject_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: namespaceDataObject.join is not a function
 
 testName: setNamespacedDataObject_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: namespaceDataObject.join is not a function
 
 testName: setNamespacedDataObject_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: object (The data to be persisted on the D-data structure) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'length')
 
 testName: setNamespacedDataObject_inValidInputDataNaN
 input inputData: NaN

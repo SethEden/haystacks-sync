@@ -99,6 +99,37 @@ export const cisArrayOrObject = wrd.cis + wrd.cArray + wrd.cOr + wrd.cObject;
 export const cisNonZeroLengthArray = wrd.cis + wrd.cNo + bas.cn + "Zero" + wrd.cLength + wrd.cArray; 
 export const carrayDeepClone = wrd.carray + wrd.cDeep + wrd.cClone;
 export const cobjectDeepMerge = wrd.cobject + wrd.cDeep + wrd.cMerge;
+export const cgetNamespacedDataObject = wrd.cget + wrd.cNamespaced + wrd.cData + wrd.cObject;
+export const csetNamespacedDataObject = wrd.cset + wrd.cNamespaced + wrd.cData + wrd.cObject;
+
+export const cdoesArrayContainFilename = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cFilename;
+export const cgetFileAndPathListForPath = wrd.cget + wrd.cFile + wrd.cAnd + wrd.cPath + wrd.cList + wrd.cFor + wrd.cPath;
+
+export const cconvertCamelCaseStringToArray = wrd.cconvert + wrd.cCamel + wrd.cCase + wrd.cString + wrd.cTo + wrd.cArray;
+export const cgetWordsArrayFromString = wrd.cget + wrd.cWords + wrd.cArray + wrd.cFrom + wrd.cString;
+export const crecombineStringArrayWithSpaces = wrd.crecombine + wrd.cString + wrd.cArray + wrd.cWith + wrd.cSpaces;
+export const cconvertArrayToCamelCaseString = wrd.cconvert + wrd.cArray + wrd.cTo + wrd.cCamel + wrd.cCase + wrd.cString;
+export const cdoesArrayContainLowerCaseConsolidatedString = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cLower + wrd.cCase + wrd.cConsolidated + wrd.cString;
+export const cascertainMatchingElements = wrd.cascertain + wrd.cMatching + wrd.cElements;
+
+export const csingleQuoteSwapAfterEquals = wrd.csingle + wrd.cQuote + wrd.cSwap + wrd.cAfter + wrd.cEquals;
+export const cswapForwardSlashToBackSlash = wrd.cswap + wrd.cForward + wrd.cSlash + wrd.cTo + wrd.cBack + wrd.cSlash;
+export const cswapBackSlashToForwardSlash = wrd.cswap + wrd.cBack + wrd.cSlash + wrd.cTo + wrd.cForward + wrd.cSlash;
+export const cswapDoubleForwardSlashToSingleForwardSlash = wrd.cswap + wrd.cDouble + wrd.cForward + wrd.cSlash + wrd.cTo + wrd.cSingle + wrd.cForward + wrd.cSlash;
+export const cswapDoubleBackSlashToSingleBackSlash = wrd.cswap + wrd.cDouble + wrd.cBack + wrd.cSlash + wrd.cTo + wrd.cSingle + wrd.cBack + wrd.cSlash;
+export const creplaceSpacesWithPlus = wrd.creplace + wrd.cSpaces + wrd.cWith + wrd.cPlus;
+export const creplaceColonWithUnderscore = wrd.creplace + wrd.cColon + wrd.cWith + wrd.cUnderscore;
+export const ccleanCarriageReturnFromString = wrd.cclean + wrd.cCarriage + wrd.cReturn + wrd.cFrom + wrd.cString;
+export const cconvertStringToLowerCase = wrd.cconvert + wrd.cString + wrd.cTo + wrd.cLower + wrd.cCase;
+export const cconvertStringToUpperCase = wrd.cconvert + wrd.cString + wrd.cTo + wrd.cUpper + wrd.cCase;
+export const cdoesStringContainUpperCaseCharacter = wrd.cdoes + wrd.cString + wrd.cContain + wrd.cUpper + wrd.cCase + wrd.cCharacter;
+export const cdoesStringContainLowerCaseCharacter = wrd.cdoes + wrd.cString + wrd.cContain + wrd.cLower + wrd.cCase + wrd.cCharacter;
+export const cisFirstCharacterLowerCase = wrd.cis + "First" + wrd.cCharacter + wrd.cLower + wrd.cCase;
+export const cisFirstCharacterUpperCase = wrd.cis + "First" + wrd.cCharacter + wrd.cUpper + wrd.cCase;
+export const creplaceCharacterAtIndexOfString = wrd.creplace + wrd.cCharacter + wrd.cAt + wrd.cIndex + wrd.cOf + wrd.cString;
+
+export const ccleanCommandInput = wrd.cclean + wrd.cCommand + wrd.cInput;
+export const cisValidCommandNameString = wrd.cis + wrd.cValid + wrd.cCommand + wrd.cName + wrd.cString;
 
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
@@ -504,3 +535,176 @@ export const cobjectDeepMerge_inValidInputDataUndefined = cobjectDeepMerge + wrd
 export const cobjectDeepMerge_inValidInputDataNaN = cobjectDeepMerge + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
 export const cobjectDeepMerge_inValidInputMetaDataUndefined = cobjectDeepMerge + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
 export const cobjectDeepMerge_inValidInputMetaDataNaN = cobjectDeepMerge + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cgetNamespacedDataObject_validDataString = cgetNamespacedDataObject + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetNamespacedDataObject_inValidDataInputMetaDataString = cgetNamespacedDataObject + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetNamespacedDataObject_inValidInputDataInteger = cgetNamespacedDataObject + wrd.cinvalid + wrd.cinput + wrd.cData + wrd.cInteger;
+export const cgetNamespacedDataObject_inValidInputDataBoolean = cgetNamespacedDataObject + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetNamespacedDataObject_inValidInputDataNaN = cgetNamespacedDataObject + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+
+export const csetNamespacedDataObject_validDataString = csetNamespacedDataObject + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetNamespacedDataObject_inValidDataInputMetaDataString = csetNamespacedDataObject + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const csetNamespacedDataObject_inValidInputDataInteger = csetNamespacedDataObject + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const csetNamespacedDataObject_inValidInputDataBoolean = csetNamespacedDataObject + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const csetNamespacedDataObject_inValidInputDataNaN = csetNamespacedDataObject + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+
+export const cdoesArrayContainFilename_validDataString = cdoesArrayContainFilename + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdoesArrayContainFilename_inValidDataInputDataString = cdoesArrayContainFilename + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdoesArrayContainFilename_inValidDataInputMetaDataString = cdoesArrayContainFilename + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdoesArrayContainFilename_inValidInputDataInteger = cdoesArrayContainFilename + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdoesArrayContainFilename_inValidInputDataBoolean = cdoesArrayContainFilename + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cdoesArrayContainFilename_inValidInputMetaDataInteger = cdoesArrayContainFilename + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean
+export const cdoesArrayContainFilename_inValidInputMetaDataBoolean = cdoesArrayContainFilename + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean
+export const cdoesArrayContainFilename_inValidInputDataUndefined = cdoesArrayContainFilename + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cdoesArrayContainFilename_inValidInputDataNaN = cdoesArrayContainFilename + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+
+export const cgetFileAndPathListForPath_validDataString = cgetFileAndPathListForPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetFileAndPathListForPath_inValidDataInputDataString = cgetFileAndPathListForPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetFileAndPathListForPath_inValidDataInputMetaDataString = cgetFileAndPathListForPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetFileAndPathListForPath_inValidInputDataBoolean = cgetFileAndPathListForPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetFileAndPathListForPath_inValidInputDataUndefined = cgetFileAndPathListForPath + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cgetFileAndPathListForPath_inValidInputDataNaN = cgetFileAndPathListForPath + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cgetFileAndPathListForPath_inValidInputMetaDataUndefined = cgetFileAndPathListForPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cgetFileAndPathListForPath_inValidInputMetaDataNaN = cgetFileAndPathListForPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cconvertCamelCaseStringToArray_validDataString = cconvertCamelCaseStringToArray + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconvertCamelCaseStringToArray_inValidDataInputDataString = cconvertCamelCaseStringToArray + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconvertCamelCaseStringToArray_inValidDataInputMetaDataString = cconvertCamelCaseStringToArray + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const CconvertCamelCaseStringToArray_inValidInputDataInteger = cconvertCamelCaseStringToArray + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconvertCamelCaseStringToArray_inValidInputDataBoolean = cconvertCamelCaseStringToArray + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cgetWordsArrayFromString_validDataString = cgetWordsArrayFromString + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetWordsArrayFromString_inValidDataInputDataString = cgetWordsArrayFromString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetWordsArrayFromString_inValidDataInputMetaDataString = cgetWordsArrayFromString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetWordsArrayFromString_inValidInputDataBoolean = cgetWordsArrayFromString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const crecombineStringArrayWithSpaces_validDataString = crecombineStringArrayWithSpaces + wrd.cvalid + wrd.cData + wrd.cString;
+export const crecombineStringArrayWithSpaces_inValidDataInputMetaDataString = crecombineStringArrayWithSpaces + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crecombineStringArrayWithSpaces_inValidInputDataBoolean = crecombineStringArrayWithSpaces + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crecombineStringArrayWithSpaces_inValidInputMetaDataInteger = crecombineStringArrayWithSpaces + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crecombineStringArrayWithSpaces_inValidInputMetaDataBoolean = crecombineStringArrayWithSpaces + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const crecombineStringArrayWithSpaces_inValidInputDataUndefined = crecombineStringArrayWithSpaces + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const crecombineStringArrayWithSpaces_inValidInputDataNaN = crecombineStringArrayWithSpaces + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+
+export const cconvertArrayToCamelCaseString_validDataString = cconvertArrayToCamelCaseString + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconvertArrayToCamelCaseString_inValidDataInputMetaDataString = cconvertArrayToCamelCaseString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconvertArrayToCamelCaseString_inValidInputDataBoolean = cconvertArrayToCamelCaseString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconvertArrayToCamelCaseString_inValidInputDataUndefined = cconvertArrayToCamelCaseString + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cconvertArrayToCamelCaseString_inValidInputDataNaN = cconvertArrayToCamelCaseString + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+
+export const cdoesArrayContainLowerCaseConsolidatedString_validDataString = cdoesArrayContainLowerCaseConsolidatedString + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdoesArrayContainLowerCaseConsolidatedString_inValidDataInputDataString = cdoesArrayContainLowerCaseConsolidatedString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdoesArrayContainLowerCaseConsolidatedString_inValidDataInputMetaDataString = cdoesArrayContainLowerCaseConsolidatedString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdoesArrayContainLowerCaseConsolidatedString_inValidInputDataInteger = cdoesArrayContainLowerCaseConsolidatedString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdoesArrayContainLowerCaseConsolidatedString_inValidInputDataBoolean = cdoesArrayContainLowerCaseConsolidatedString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cdoesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataBoolean = cdoesArrayContainLowerCaseConsolidatedString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cdoesArrayContainLowerCaseConsolidatedString_inValidInputDataUndefined = cdoesArrayContainLowerCaseConsolidatedString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cdoesArrayContainLowerCaseConsolidatedString_inValidInputDataNaN = cdoesArrayContainLowerCaseConsolidatedString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cascertainMatchingElements_validDataString = cascertainMatchingElements + wrd.cvalid + wrd.cData + wrd.cString;
+export const cascertainMatchingElements_inValidDataInputDataString = cascertainMatchingElements + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cascertainMatchingElements_inValidDataInputMetaDataString = cascertainMatchingElements + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cascertainMatchingElements_inValidInputDataInteger = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cascertainMatchingElements_inValidInputDataBoolean = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cascertainMatchingElements_inValidInputMetaDataInteger = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cascertainMatchingElements_inValidInputMetaDataBoolean = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cascertainMatchingElements_inValidInputDataUndefined = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cascertainMatchingElements_inValidInputDataNaN = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cascertainMatchingElements_inValidInputMetaDataUndefined = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cascertainMatchingElements_inValidInputMetaDataNaN = cascertainMatchingElements + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const csingleQuoteSwapAfterEquals_validDataString = csingleQuoteSwapAfterEquals + wrd.cvalid + wrd.cData + wrd.cString;
+export const csingleQuoteSwapAfterEquals_inValidDataInputDataString = csingleQuoteSwapAfterEquals + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const csingleQuoteSwapAfterEquals_inValidDataInputMetaDataString = csingleQuoteSwapAfterEquals + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const csingleQuoteSwapAfterEquals_inValidInputDataBoolean = csingleQuoteSwapAfterEquals + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const csingleQuoteSwapAfterEquals_inValidInputMetaDataInteger = csingleQuoteSwapAfterEquals + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const csingleQuoteSwapAfterEquals_inValidInputMetaDataBoolean = csingleQuoteSwapAfterEquals + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cswapForwardSlashToBackSlash_validDataString = cswapForwardSlashToBackSlash + wrd.cvalid + wrd.cData + wrd.cString;
+export const cswapForwardSlashToBackSlash_inValidDataInputDataString = cswapForwardSlashToBackSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cswapForwardSlashToBackSlash_inValidDataInputMetaDataString = cswapForwardSlashToBackSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cswapForwardSlashToBackSlash_inValidInputDataBoolean = cswapForwardSlashToBackSlash + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cswapBackSlashToForwardSlash_validDataString = cswapBackSlashToForwardSlash + wrd.cvalid + wrd.cData + wrd.cString;
+export const cswapBackSlashToForwardSlash_inValidDataInputDataString = cswapBackSlashToForwardSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cswapBackSlashToForwardSlash_inValidDataInputMetaDataString = cswapBackSlashToForwardSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cswapBackSlashToForwardSlash_inValidInputDataBoolean = cswapBackSlashToForwardSlash + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cswapDoubleForwardSlashToSingleForwardSlash_validDataString = cswapDoubleForwardSlashToSingleForwardSlash + wrd.cvalid + wrd.cData + wrd.cString;
+export const cswapDoubleForwardSlashToSingleForwardSlash_inValidDataInputDataString = cswapDoubleForwardSlashToSingleForwardSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cswapDoubleForwardSlashToSingleForwardSlash_inValidDataInputMetaDataString = cswapDoubleForwardSlashToSingleForwardSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cswapDoubleForwardSlashToSingleForwardSlash_inValidInputDataBoolean = cswapDoubleForwardSlashToSingleForwardSlash + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cswapDoubleBackSlashToSingleBackSlash_validDataString = cswapDoubleBackSlashToSingleBackSlash + wrd.cvalid + wrd.cData + wrd.cString;
+export const cswapDoubleBackSlashToSingleBackSlash_inValidDataInputDataString = cswapDoubleBackSlashToSingleBackSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cswapDoubleBackSlashToSingleBackSlash_inValidDataInputMetaDataString = cswapDoubleBackSlashToSingleBackSlash + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cswapDoubleBackSlashToSingleBackSlash_inValidInputDataBoolean = cswapDoubleBackSlashToSingleBackSlash + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const creplaceSpacesWithPlus_validDataString = creplaceSpacesWithPlus + wrd.cvalid + wrd.cData + wrd.cString;
+export const creplaceSpacesWithPlus_inValidDataInputDataString = creplaceSpacesWithPlus + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const creplaceSpacesWithPlus_inValidDataInputMetaDataString = creplaceSpacesWithPlus + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const creplaceSpacesWithPlus_inValidInputDataBoolean = creplaceSpacesWithPlus + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const creplaceColonWithUnderscore_validDataString = creplaceColonWithUnderscore + wrd.cvalid + wrd.cData + wrd.cString;
+export const creplaceColonWithUnderscore_inValidDataInputDataString = creplaceColonWithUnderscore + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const creplaceColonWithUnderscore_inValidDataInputMetaDataString = creplaceColonWithUnderscore + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const creplaceColonWithUnderscore_inValidInputDataBoolean = creplaceColonWithUnderscore + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const ccleanCarriageReturnFromString_validDataString = ccleanCarriageReturnFromString + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccleanCarriageReturnFromString_inValidDataInputDataString = ccleanCarriageReturnFromString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccleanCarriageReturnFromString_inValidDataInputMetaDataString = ccleanCarriageReturnFromString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cString;
+export const ccleanCarriageReturnFromString_inValidInputDataBoolean = ccleanCarriageReturnFromString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cconvertStringToLowerCase_validDataString = cconvertStringToLowerCase + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconvertStringToLowerCase_inValidDataInputDataString = cconvertStringToLowerCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconvertStringToLowerCase_inValidDataInputMetaDataString = cconvertStringToLowerCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconvertStringToLowerCase_inValidInputDataBoolean = cconvertStringToLowerCase + wrd.cinvalid + wrd.cInput + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cconvertStringToUpperCase_validDataString = cconvertStringToUpperCase + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconvertStringToUpperCase_inValidDataInputDataString = cconvertStringToUpperCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconvertStringToUpperCase_inValidDataInputMetaDataString = cconvertStringToUpperCase + wrd.cinvalid  + wrd.Data + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconvertStringToUpperCase_inValidInputDataBoolean = cconvertStringToUpperCase + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cdoesStringContainUpperCaseCharacter_validDataString = cdoesStringContainUpperCaseCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdoesStringContainUpperCaseCharacter_inValidDataInputDataString = cdoesStringContainUpperCaseCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdoesStringContainUpperCaseCharacter_inValidDataInputMetaDataString = cdoesStringContainUpperCaseCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdoesStringContainUpperCaseCharacter_inValidInputDataInteger = cdoesStringContainUpperCaseCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdoesStringContainUpperCaseCharacter_inValidInputDataBoolean = cdoesStringContainUpperCaseCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cdoesStringContainLowerCaseCharacter_validDataString = cdoesStringContainLowerCaseCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdoesStringContainLowerCaseCharacter_inValidDataInputDataString = cdoesStringContainLowerCaseCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdoesStringContainLowerCaseCharacter_inValidDataInputMetaDataString = cdoesStringContainLowerCaseCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdoesStringContainLowerCaseCharacter_inValidInputDataInteger = cdoesStringContainLowerCaseCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdoesStringContainLowerCaseCharacter_inValidInputDataBoolean = cdoesStringContainLowerCaseCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cisFirstCharacterLowerCase_validDataString = cisFirstCharacterLowerCase + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisFirstCharacterLowerCase_inValidDataInputDataString = cisFirstCharacterLowerCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisFirstCharacterLowerCase_inValidDataInputMetaDataString = cisFirstCharacterLowerCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisFirstCharacterLowerCase_inValidInputDataBoolean = cisFirstCharacterLowerCase + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cisFirstCharacterUpperCase_validDataString = cisFirstCharacterUpperCase + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisFirstCharacterUpperCase_inValidDataInputDataString = cisFirstCharacterUpperCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisFirstCharacterUpperCase_inValidDataInputMetaDataString = cisFirstCharacterUpperCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisFirstCharacterUpperCase_inValidInputDataBoolean = cisFirstCharacterUpperCase + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const creplaceCharacterAtIndexOfString_validDataString = creplaceCharacterAtIndexOfString + wrd.cvalid + wrd.cData + wrd.cString;
+export const creplaceCharacterAtIndexOfString_inValidDataInputDataString = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const creplaceCharacterAtIndexOfString_inValidDataInputMetaDataString = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const creplaceCharacterAtIndexOfString_inValidInputDataInteger = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const creplaceCharacterAtIndexOfString_inValidInputDataBoolean = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const creplaceCharacterAtIndexOfString_inValidInputMetaDataBoolean = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const creplaceCharacterAtIndexOfString_inValidInputDataUndefined = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const creplaceCharacterAtIndexOfString_inValidInputDataNaN = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const creplaceCharacterAtIndexOfString_inValidInputMetaDataUndefined = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const creplaceCharacterAtIndexOfString_inValidInputMetaDataNaN = creplaceCharacterAtIndexOfString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const ccleanCommandInput_validDataString = ccleanCommandInput + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccleanCommandInput_inValidDataInputDataString = ccleanCommandInput + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccleanCommandInput_inValidDataInputMetaDataString = ccleanCommandInput + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccleanCommandInput_inValidInputDataBoolean = ccleanCommandInput + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+
+export const cisValidCommandNameString_validDataString = cisValidCommandNameString + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisValidCommandNameString_inValidDataInputDataString = cisValidCommandNameString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisValidCommandNameString_inValidDataInputMetaDataString = cisValidCommandNameString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisValidCommandNameString_inValidInputDataInteger = cisValidCommandNameString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cisValidCommandNameString_inValidInputDataBoolean = cisValidCommandNameString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;

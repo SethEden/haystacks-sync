@@ -66,6 +66,8 @@ testName: getFileAndPathListForPath_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (123)
 
 testName: getFileAndPathListForPath_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -76,11 +78,15 @@ testName: getFileAndPathListForPath_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
 
 testName: getFileAndPathListForPath_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
 
 testName: getFileAndPathListForPath_inValidInputDataUndefined
 input inputData: undefined
