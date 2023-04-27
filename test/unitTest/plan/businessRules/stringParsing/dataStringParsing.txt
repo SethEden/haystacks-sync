@@ -21,6 +21,8 @@ testName: getAttributeName_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getAttributeName_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -31,11 +33,15 @@ testName: getAttributeName_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getAttributeName_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: getAttributeValue_validDataString
 input inputData:  string (The string representation of the JSON attribute that should be parsed)

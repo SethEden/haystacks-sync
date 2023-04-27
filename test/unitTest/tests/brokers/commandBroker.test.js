@@ -138,10 +138,10 @@ describe(tst_con.caddClientCommands, () => {
         commandBroker.addClientCommands(input);
 
         // Assert
-        expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cversion]).toBeTruthy();
+        expect(D[wrd.cCommands][num.c0]).toBeTruthy();
+        expect(D[wrd.cCommands][num.c1]).toBeTruthy();
+        expect(D[wrd.cCommands][num.c2]).toBeTruthy();
+        expect(D[wrd.cCommands][num.c3]).toBeTruthy();
     });
 
     /**
