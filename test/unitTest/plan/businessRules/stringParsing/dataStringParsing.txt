@@ -52,6 +52,8 @@ testName: getAttributeValue_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'replaceAll')
 
 testName: getAttributeValue_inValidDataInputMetaDataString
 input inputData: string (The string representation of the JSON attribute that should be parsed) (testDataString)
@@ -62,6 +64,8 @@ testName: getAttributeValue_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getAttributeValue_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -72,11 +76,15 @@ testName: getAttributeValue_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getAttributeValue_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: getValueFromAssignmentOperationString_validDataString
 input inputData:  string (The string that should be parsed for the value on the right side of the assignment operator)
@@ -87,6 +95,8 @@ testName: getValueFromAssignmentOperationString_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'replace')
 
 testName: getValueFromAssignmentOperationString_inValidDataInputMetaDataString
 input inputData: string (The string that should be parsed for the value on the right side of the assignment operator) (testDataString)
@@ -97,6 +107,8 @@ testName: getValueFromAssignmentOperationString_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getValueFromAssignmentOperationString_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -107,11 +119,15 @@ testName: getValueFromAssignmentOperationString_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getValueFromAssignmentOperationString_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: getDataCategoryFromDataContextName_validDataString
 input inputData:  string (The data context name, which should also contain the data category separated by underscore)
@@ -132,6 +148,8 @@ testName: getDataCategoryFromDataContextName_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getDataCategoryFromDataContextName_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -142,11 +160,15 @@ testName: getDataCategoryFromDataContextName_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getDataCategoryFromDataContextName_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: getDataCategoryDetailNameFromDataContextName_validDataString
 input inputData:  string (The data context name, which should also contain the data category and data category detail name separated by an underscore)
@@ -167,6 +189,8 @@ testName: getDataCategoryDetailNameFromDataContextName_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -177,11 +201,15 @@ testName: getDataCategoryDetailNameFromDataContextName_inValidInputMetaDataInteg
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getDataCategoryDetailNameFromDataContextName_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: getKeywordNameFromDataContextName_validDataString
 input inputData:  string (The data context name, which should also contain the data category and data category detail name and keyword name separated by an underscore)
@@ -202,6 +230,8 @@ testName: getKeywordNameFromDataContextName_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getKeywordNameFromDataContextName_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -212,11 +242,15 @@ testName: getKeywordNameFromDataContextName_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getKeywordNameFromDataContextName_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: loadDataFile_validDataString
 input inputData:  string (The full path and file name for the file that should be loaded into memory)
@@ -237,11 +271,15 @@ testName: loadDataFile_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: loadDataFile_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: loadDataFile_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
@@ -272,6 +310,8 @@ testName: saveDataFile_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.includes is not a function
 
 testName: saveDataFile_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -307,6 +347,8 @@ testName: getUserNameFromEmail_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.indexOf is not a function
 
 testName: getUserNameFromEmail_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -317,8 +359,12 @@ testName: getUserNameFromEmail_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.substr is not a function
 
 testName: getUserNameFromEmail_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.substr is not a function
