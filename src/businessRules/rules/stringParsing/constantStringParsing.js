@@ -489,7 +489,7 @@ function isConstantTypeValid(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   if (inputData) {
-    let constantsShortNames = D[sys.cConstantsValidatinoData][sys.cConstantsShortNames];
+    let constantsShortNames = D[sys.cConstantsValidationData][sys.cConstantsShortNames];
     for (let key in constantsShortNames) {
       if (inputData === key || inputData === constantsShortNames[key]) {
         returnData = true;

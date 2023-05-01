@@ -11,6 +11,8 @@ testName: validateConstantsDataValidation_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (The name of the data hive that contains the appropriate matching constants validation data) (testDataString)
 output: ?
+status: failed
+error: ENOENT: no such file or directory, open 'dfxg24346dfg'
 
 testName: validateConstantsDataValidation_inValidDataInputMetaDataString
 input inputData: string (The path of the constants file that should be validated) (testDataString)
@@ -21,6 +23,8 @@ testName: validateConstantsDataValidation_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: failed
+error: EBADF: bad file descriptor, read
 
 testName: validateConstantsDataValidation_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -31,11 +35,15 @@ testName: validateConstantsDataValidation_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Array
 
 testName: validateConstantsDataValidation_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received an instance of Array
 --------------------------------------------------------------------------------
 testName: determineConstantsContextQualifiedPrefix_validDataString
 input inputData:  string (The filename of the constants file or the full path and file name of the constants file)
@@ -81,6 +89,9 @@ testName: determineSuggestedConstantsValidationLineOfCode_inValidDataInputDataSt
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (The prefix used to reference the constants file in the code) (testDataString)
 output: ?
+status: true
+log: console.log
+      ERROR: Attempted to generate a suggested line of code to validate the constant, but the constant is not formatted correctly, it should begin with a lower case "c". Please reformat the constant correctly so a line of code can be generated for you.
 
 testName: determineSuggestedConstantsValidationLineOfCode_inValidDataInputMetaDataString
 input inputData: string (The name of the constant file that is missing and should have a line of code generated for it) (testDataString)
@@ -91,6 +102,8 @@ testName: determineSuggestedConstantsValidationLineOfCode_inValidInputDataIntege
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: failed
+error: TypeError: inputData.charAt is not a function
 
 testName: determineSuggestedConstantsValidationLineOfCode_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -101,11 +114,15 @@ testName: determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataIn
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: failed
+error: TypeError: inputData.charAt is not a function
 
 testName: determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: failed
+error: TypeError: inputData.charAt is not a function
 --------------------------------------------------------------------------------
 testName: validateConstantsDataValidationLineItemName_validDataString
 input inputData:  string (The constant definition that should be searched for)
