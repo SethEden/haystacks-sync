@@ -552,6 +552,7 @@ function constantsOptimizedFulfillmentSystem(inputData, inputMetaData) {
     if (doesConstantExist(inputData, '') === false) {
       returnData = constantsOptimizedFulfillmentSystem(inputData.substring(0, inputData.length - 1), inputMetaData);
     } else {
+      
       constantType = getConstantType(inputData, true);
       constantName = getConstantName(inputData, '');
       let constantPrefix = convertConstantTypeToConstantPrefix(constantType, '');

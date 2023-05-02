@@ -1304,29 +1304,913 @@ describe(tst_con.cgetConstantName, () => {
 });
 
 /**
- * @function getConstantName
- * @description Tests the positive and negative test cases of the getConstantName
+ * @function findConstantName
+ * @description Tests the positive and negative test cases of the findConstantName
  * @date 2023/05/01
  */
-describe(tst_con.cgetConstantName, () => {
+describe(tst_con.cfindConstantName, () => {
   /**
-   * @function getConstantName_validDataString
-   * @description Tests the business rules function getConstantName with a valid input.
+   * @function findConstantName_validDataString
+   * @description Tests the business rules function findConstantName with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
-  test(tst_con.cgetConstantName_validDataString, () => {
+  test(tst_con.cfindConstantName_validDataString, () => {
     // Arrange
-    let inputData = wrd.cSystem;
+    let inputData = wrd.cHello;
     let inputMetaData = "";    
 
     // Act
-    let returnData = constantStringParsing.getConstantName(
+    let returnData = constantStringParsing.findConstantName(
       inputData,
       inputMetaData
     );
 
     // Assert
     expect(returnData).toBe("");
+  });
+
+  /**
+   * @function findConstantName_inValidDataInputDataString
+   * @description Tests the business rules function findConstantName with a invalid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = "";    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function findConstantName_inValidDataInputMetaDataString
+   * @description Tests the business rules function findConstantName with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = wrd.cSystem;
+    let inputMetaData = "dfxg24346dfg";    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function findConstantName_inValidInputDataBoolean
+   * @description Tests the business rules function findConstantName with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function findConstantName_inValidInputMetaDataInteger
+   * @description Tests the business rules function findConstantName with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function findConstantName_inValidInputMetaDataBoolean
+   * @description Tests the business rules function findConstantName with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+});
+
+/**
+ * @function isConstantTypeValid
+ * @description Tests the positive and negative test cases of the isConstantTypeValid
+ * @date 2023/05/01
+ */
+describe(tst_con.cisConstantTypeValid, () => {
+  /**
+   * @function isConstantTypeValid_validDataString
+   * @description Tests the business rules function isConstantTypeValid with a valid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantTypeValid_validDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "";    
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.isConstantTypeValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function isConstantTypeValid_inValidDataInputDataString
+   * @description Tests the business rules function isConstantTypeValid with a invalid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantTypeValid_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = wrd.cWorld;  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.isConstantTypeValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function isConstantTypeValid_inValidDataInputMetaDataString
+   * @description Tests the business rules function isConstantTypeValid with a invalid inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantTypeValid_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "dfxg24346dfg";  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.isConstantTypeValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function isConstantTypeValid_inValidInputDataInteger
+   * @description Tests the business rules function isConstantTypeValid with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantTypeValid_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.isConstantTypeValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function isConstantTypeValid_inValidInputDataBoolean
+   * @description Tests the business rules function isConstantTypeValid with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantTypeValid_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.isConstantTypeValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function isConstantTypeValid_inValidInputMetaDataInteger
+   * @description Tests the business rules function isConstantTypeValid with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantTypeValid_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.isConstantTypeValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function isConstantTypeValid_inValidInputMetaDataBoolean
+   * @description Tests the business rules function isConstantTypeValid with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantTypeValid_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.isConstantTypeValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+});
+
+/**
+ * @function convertConstantTypeToConstantPrefix
+ * @description Tests the positive and negative test cases of the convertConstantTypeToConstantPrefix
+ * @date 2023/05/01
+ */
+describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
+  /**
+   * @function convertConstantTypeToConstantPrefix_validDataString
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a valid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconvertConstantTypeToConstantPrefix_validDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "";    
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(wrd.cHello);
+  });
+
+  /**
+   * @function convertConstantTypeToConstantPrefix_inValidDataInputDataString
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a invalid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconvertConstantTypeToConstantPrefix_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = wrd.cWorld;  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("dfxg24346dfg");
+  });
+
+  /**
+   * @function convertConstantTypeToConstantPrefix_inValidDataInputMetaDataString
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a invalid inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconvertConstantTypeToConstantPrefix_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "dfxg24346dfg";  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(wrd.cHello);
+  });
+
+  /**
+   * @function convertConstantTypeToConstantPrefix_inValidInputDataInteger
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconvertConstantTypeToConstantPrefix_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(4567);
+  });
+
+  /**
+   * @function convertConstantTypeToConstantPrefix_inValidInputDataBoolean
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconvertConstantTypeToConstantPrefix_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function convertConstantTypeToConstantPrefix_inValidInputMetaDataInteger
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconvertConstantTypeToConstantPrefix_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  });
+
+  /**
+   * @function convertConstantTypeToConstantPrefix_inValidInputMetaDataBoolean
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconvertConstantTypeToConstantPrefix_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  });
+});
+
+/**
+ * @function constantsOptimizedFulfillmentSystem
+ * @description Tests the positive and negative test cases of the constantsOptimizedFulfillmentSystem
+ * @date 2023/05/01
+ */
+describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
+  /**
+   * @function constantsOptimizedFulfillmentSystem_validDataString
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a valid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_validDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "";    
+
+    // Act
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function constantsOptimizedFulfillmentSystem_inValidDataInputDataString
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = wrd.cWorld;  
+
+    // Act
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function constantsOptimizedFulfillmentSystem_inValidDataInputMetaDataString
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "dfxg24346dfg";  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function constantsOptimizedFulfillmentSystem_inValidInputDataBoolean
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];  
+
+    // Act
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+});
+
+/**
+ * @function constantsFulfillmentSystem
+ * @description Tests the positive and negative test cases of the constantsFulfillmentSystem
+ * @date 2023/05/01
+ */
+describe(tst_con.cconstantsFulfillmentSystem, () => {
+  /**
+   * @function constantsFulfillmentSystem_validDataString
+   * @description Tests the business rules function constantsFulfillmentSystem with a valid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsFulfillmentSystem_validDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "";       
+
+    // Act
+    let returnData = constantStringParsing.constantsFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(" + ");
+  });
+});
+
+/**
+ * @function validateConstantsDataValues
+ * @description Tests the positive and negative test cases of the validateConstantsDataValues
+ * @date 2023/05/01
+ */
+describe(tst_con.cvalidateConstantsDataValues, () => {
+  /**
+   * @function validateConstantsDataValues_validDataString
+   * @description Tests the business rules function validateConstantsDataValues with a valid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cvalidateConstantsDataValues_validDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "";    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.validateConstantsDataValues(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function validateConstantsDataValues_inValidDataInputDataString
+   * @description Tests the business rules function validateConstantsDataValues with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cvalidateConstantsDataValues_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = "";    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.validateConstantsDataValues(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function validateConstantsDataValues_inValidDataInputMetaDataString
+   * @description Tests the business rules function validateConstantsDataValues with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cvalidateConstantsDataValues_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "dfxg24346dfg";    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.validateConstantsDataValues(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function validateConstantsDataValues_inValidInputDataInteger
+   * @description Tests the business rules function validateConstantsDataValues with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cvalidateConstantsDataValues_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.validateConstantsDataValues(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function validateConstantsDataValues_inValidInputDataBoolean
+   * @description Tests the business rules function validateConstantsDataValues with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cvalidateConstantsDataValues_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.validateConstantsDataValues(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function validateConstantsDataValues_inValidInputMetaDataInteger
+   * @description Tests the business rules function validateConstantsDataValues with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cvalidateConstantsDataValues_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.validateConstantsDataValues(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function validateConstantsDataValues_inValidInputMetaDataBoolean
+   * @description Tests the business rules function validateConstantsDataValues with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cvalidateConstantsDataValues_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.validateConstantsDataValues(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+});
+
+/**
+ * @function isConstantValid
+ * @description Tests the positive and negative test cases of the isConstantValid
+ * @date 2023/05/01
+ */
+describe(tst_con.cisConstantValid, () => {
+  /**
+   * @function isConstantValid_validDataString
+   * @description Tests the business rules function isConstantValid with a valid input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantValid_validDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "";    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.isConstantValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function isConstantValid_inValidDataInputDataString
+   * @description Tests the business rules function isConstantValid with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantValid_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = "";    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.isConstantValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function isConstantValid_inValidDataInputMetaDataString
+   * @description Tests the business rules function isConstantValid with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantValid_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "dfxg24346dfg";    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.isConstantValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function isConstantValid_inValidInputDataInteger
+   * @description Tests the business rules function isConstantValid with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantValid_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.isConstantValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function isConstantValid_inValidInputDataBoolean
+   * @description Tests the business rules function isConstantValid with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantValid_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.isConstantValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function isConstantValid_inValidInputMetaDataInteger
+   * @description Tests the business rules function isConstantValid with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantValid_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.isConstantValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function isConstantValid_inValidInputMetaDataBoolean
+   * @description Tests the business rules function isConstantValid with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cisConstantValid_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;    
+
+    // Act
+    dataBroker.initializeConstantsValidationData();
+    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    let returnData = constantStringParsing.isConstantValid(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
   });
 });

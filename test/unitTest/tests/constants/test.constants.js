@@ -149,6 +149,13 @@ export const cdoesConstantExist = wrd.cdoes + wrd.cConstant + wrd.cExist;
 export const cgetConstantType = wrd.cget + wrd.cConstant + wrd.cType;
 export const cgetConstantActualValue = wrd.cget + wrd.cConstant + wrd.cActual + wrd.cValue;
 export const cgetConstantName = wrd.cget + wrd.cConstant + wrd.cName;
+export const cfindConstantName = wrd.cfind + wrd.cConstant + wrd.cName;
+export const cisConstantTypeValid = wrd.cis + wrd.cConstant + wrd.cType + wrd.cValid;
+export const cconvertConstantTypeToConstantPrefix = wrd.cconvert + wrd.cConstant + wrd.cType + wrd.cTo + wrd.cConstant + wrd.cPrefix;
+export const cconstantsOptimizedFulfillmentSystem = wrd.cconstants + wrd.cOptimized + wrd.cFulfillment + wrd.cSystem;
+export const cconstantsFulfillmentSystem = wrd.cconstants + wrd.cFulfillment + wrd.cSystem;
+export const cvalidateConstantsDataValues = wrd.cvalidate + wrd.cConstants + wrd.cData + wrd.cValue;
+export const cisConstantValid = wrd.cis + wrd.cConstant + wrd.cValue;
 
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
@@ -863,3 +870,60 @@ export const cgetConstantName_inValidInputDataInteger = cgetConstantName + wrd.c
 export const cgetConstantName_inValidInputDataBoolean = cgetConstantName + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const cgetConstantName_inValidInputMetaDataInteger = cgetConstantName + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cgetConstantName_inValidInputMetaDataBoolean = cgetConstantName + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cfindConstantName_validDataString = cfindConstantName + wrd.cvalid + wrd.cData + wrd.cString;
+export const cfindConstantName_inValidDataInputDataString = cfindConstantName + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cfindConstantName_inValidDataInputMetaDataString = cfindConstantName + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cfindConstantName_inValidInputDataInteger = cfindConstantName + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cfindConstantName_inValidInputDataBoolean = cfindConstantName + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cfindConstantName_inValidInputMetaDataInteger = cfindConstantName + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cfindConstantName_inValidInputMetaDataBoolean = cfindConstantName + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cisConstantTypeValid_validDataString = cisConstantTypeValid + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisConstantTypeValid_inValidDataInputDataString = cisConstantTypeValid + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisConstantTypeValid_inValidDataInputMetaDataString = cisConstantTypeValid + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisConstantTypeValid_inValidInputDataInteger = cisConstantTypeValid + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cisConstantTypeValid_inValidInputDataBoolean = cisConstantTypeValid + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cisConstantTypeValid_inValidInputMetaDataInteger = cisConstantTypeValid + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cisConstantTypeValid_inValidInputMetaDataBoolean = cisConstantTypeValid + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cconvertConstantTypeToConstantPrefix_validDataString = cconvertConstantTypeToConstantPrefix + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconvertConstantTypeToConstantPrefix_inValidDataInputDataString = cconvertConstantTypeToConstantPrefix + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconvertConstantTypeToConstantPrefix_inValidDataInputMetaDataString = cconvertConstantTypeToConstantPrefix + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconvertConstantTypeToConstantPrefix_inValidInputDataInteger = cconvertConstantTypeToConstantPrefix + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconvertConstantTypeToConstantPrefix_inValidInputDataBoolean = cconvertConstantTypeToConstantPrefix + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconvertConstantTypeToConstantPrefix_inValidInputMetaDataInteger = cconvertConstantTypeToConstantPrefix + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconvertConstantTypeToConstantPrefix_inValidInputMetaDataBoolean = cconvertConstantTypeToConstantPrefix + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cconstantsOptimizedFulfillmentSystem_validDataString = cconstantsOptimizedFulfillmentSystem + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsOptimizedFulfillmentSystem_inValidDataInputDataString = cconstantsOptimizedFulfillmentSystem + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsOptimizedFulfillmentSystem_inValidDataInputMetaDataString = cconstantsOptimizedFulfillmentSystem + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsOptimizedFulfillmentSystem_inValidInputDataInteger = cconstantsOptimizedFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsOptimizedFulfillmentSystem_inValidInputDataBoolean = cconstantsOptimizedFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsOptimizedFulfillmentSystem_inValidInputMetaDataInteger = cconstantsOptimizedFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsOptimizedFulfillmentSystem_inValidInputMetaDataBoolean = cconstantsOptimizedFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cconstantsFulfillmentSystem_validDataString = cconstantsFulfillmentSystem + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsFulfillmentSystem_inValidDataInputDataString = cconstantsFulfillmentSystem + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsFulfillmentSystem_inValidDataInputMetaDataString = cconstantsFulfillmentSystem + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsFulfillmentSystem_inValidInputDataInteger = cconstantsFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsFulfillmentSystem_inValidInputDataBoolean = cconstantsFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsFulfillmentSystem_inValidInputMetaDataInteger = cconstantsFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsFulfillmentSystem_inValidInputMetaDataBoolean = cconstantsFulfillmentSystem + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cvalidateConstantsDataValues_validDataString = cvalidateConstantsDataValues + wrd.cvalid + wrd.cData + wrd.cString;
+export const cvalidateConstantsDataValues_inValidDataInputDataString = cvalidateConstantsDataValues + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cvalidateConstantsDataValues_inValidDataInputMetaDataString = cvalidateConstantsDataValues + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cvalidateConstantsDataValues_inValidInputDataInteger = cvalidateConstantsDataValues + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cvalidateConstantsDataValues_inValidInputDataBoolean = cvalidateConstantsDataValues + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cvalidateConstantsDataValues_inValidInputMetaDataInteger = cvalidateConstantsDataValues + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cvalidateConstantsDataValues_inValidInputMetaDataBoolean = cvalidateConstantsDataValues + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+
+export const cisConstantValid_validDataString = cisConstantValid + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisConstantValid_inValidDataInputDataString = cisConstantValid + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisConstantValid_inValidDataInputMetaDataString = cisConstantValid + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisConstantValid_inValidInputDataInteger = cisConstantValid + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cisConstantValid_inValidInputDataBoolean = cisConstantValid + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cisConstantValid_inValidInputMetaDataInteger = cisConstantValid + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cisConstantValid_inValidInputMetaDataBoolean = cisConstantValid + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
