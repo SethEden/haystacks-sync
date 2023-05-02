@@ -377,9 +377,9 @@ function getWordCountInString(inputData, inputMetaData) {
 function isStringList(inputData, inputMetaData) {
   let functionName = isStringList.name;
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
-  console.log(msg.cinputDataIs + inputData);
+  // console.log(msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
-  console.log(msg.cinputMetaDataIs + inputMetaData);
+  // console.log(msg.cinputMetaDataIs + inputMetaData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   if (inputData) {
@@ -392,7 +392,7 @@ function isStringList(inputData, inputMetaData) {
       returnData = true;
     }
   } // End-if (inputData)
-  console.log(msg.creturnDataIs + returnData);
+  // console.log(msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;

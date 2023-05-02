@@ -166,6 +166,18 @@ export const csupportedFileFormatsAre = wrd.csupported + wrd.cFile + wrd.cFormat
 export const cremoveXnumberOfFoldersFromEndOfPath = "removeXnumberOfFoldersFromEndOfPath";
 export const cgetFirstTopLevelFolderFromPath = "getFirstTopLevelFolderFromPath";
 
+export const cisStringCamelCase = wrd.cis + wrd.cString + wrd.cCamel + wrd.cCase;
+export const cmapWordToCamelCaseWord = wrd.cmap + wrd.cWord + wrd.cTo + wrd.cCamel + wrd.cCase + wrd.cWord;
+export const csimplifyAndConsolidateString = wrd.csimplify + wrd.cAnd + wrd.cConsolidate + wrd.cString;
+export const ccompareSimplifiedAndConsolidatedStrings = wrd.ccompare + wrd.cSimplified + wrd.cAnd + wrd.cConsolidated + wrd.cStrings;
+export const ccountCamelCaseWords = wrd.ccount + wrd.cCamel + wrd.cCase + wrd.cWords;
+export const cdoesStringContainAcronym = wrd.cdoes + wrd.cString + wrd.cContain + wrd.cAcronym;
+export const cdetermineWordDelimiter = wrd.cdetermine + wrd.cWord + wrd.cDelimiter;
+export const ccountDelimiterInString = wrd.ccount + wrd.cDelimiter + wrd.cIn + wrd.cString;
+export const cgetWordCountInString = wrd.cget + wrd.cWord + wrd.cCount + wrd.cIn + wrd.cString;
+export const cisStringList = wrd.cis + wrd.cString + wrd.cList;
+export const caggregateNumericalDifferenceBetweenTwoStrings = "aggregateNumericalDifferenceBetweenTwoStrings";
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1000,3 +1012,91 @@ export const cgetFirstTopLevelFolderFromPath_inValidInputDataInteger = cgetFirst
 export const cgetFirstTopLevelFolderFromPath_inValidInputDataBoolean = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const cgetFirstTopLevelFolderFromPath_inValidInputMetaDataInteger = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cgetFirstTopLevelFolderFromPath_inValidInputMetaDataBoolean = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cisStringCamelCase_validDataString = cisStringCamelCase + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisStringCamelCase_inValidDataInputDataString = cisStringCamelCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisStringCamelCase_inValidDataInputMetaDataString = cisStringCamelCase + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisStringCamelCase_inValidInputDataInteger = cisStringCamelCase + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cisStringCamelCase_inValidInputDataBoolean = cisStringCamelCase + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cisStringCamelCase_inValidInputMetaDataInteger = cisStringCamelCase + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cisStringCamelCase_inValidInputMetaDataBoolean = cisStringCamelCase + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cmapWordToCamelCaseWord_validDataString = cmapWordToCamelCaseWord + wrd.cvalid + wrd.cData + wrd.cString;
+export const cmapWordToCamelCaseWord_inValidDataInputDataString = cmapWordToCamelCaseWord + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cmapWordToCamelCaseWord_inValidDataInputMetaDataString = cmapWordToCamelCaseWord + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cmapWordToCamelCaseWord_inValidInputDataInteger = cmapWordToCamelCaseWord + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cmapWordToCamelCaseWord_inValidInputDataBoolean = cmapWordToCamelCaseWord + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cmapWordToCamelCaseWord_inValidInputMetaDataInteger = cmapWordToCamelCaseWord + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cmapWordToCamelCaseWord_inValidInputMetaDataBoolean = cmapWordToCamelCaseWord + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const csimplifyAndConsolidateString_validDataString = csimplifyAndConsolidateString + wrd.cvalid + wrd.cData + wrd.cString;
+export const csimplifyAndConsolidateString_inValidDataInputDataString = csimplifyAndConsolidateString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const csimplifyAndConsolidateString_inValidDataInputMetaDataString = csimplifyAndConsolidateString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const csimplifyAndConsolidateString_inValidInputDataInteger = csimplifyAndConsolidateString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const csimplifyAndConsolidateString_inValidInputDataBoolean = csimplifyAndConsolidateString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const csimplifyAndConsolidateString_inValidInputMetaDataInteger = csimplifyAndConsolidateString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const csimplifyAndConsolidateString_inValidInputMetaDataBoolean = csimplifyAndConsolidateString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const ccompareSimplifiedAndConsolidatedStrings_validDataString = ccompareSimplifiedAndConsolidatedStrings + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccompareSimplifiedAndConsolidatedStrings_inValidDataInputDataString = ccompareSimplifiedAndConsolidatedStrings + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccompareSimplifiedAndConsolidatedStrings_inValidDataInputMetaDataString = ccompareSimplifiedAndConsolidatedStrings + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccompareSimplifiedAndConsolidatedStrings_inValidInputDataInteger = ccompareSimplifiedAndConsolidatedStrings + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccompareSimplifiedAndConsolidatedStrings_inValidInputDataBoolean = ccompareSimplifiedAndConsolidatedStrings + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccompareSimplifiedAndConsolidatedStrings_inValidInputMetaDataInteger = ccompareSimplifiedAndConsolidatedStrings + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccompareSimplifiedAndConsolidatedStrings_inValidInputMetaDataBoolean = ccompareSimplifiedAndConsolidatedStrings + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const ccountCamelCaseWords_validDataString = ccountCamelCaseWords + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccountCamelCaseWords_inValidDataInputDataString = ccountCamelCaseWords + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccountCamelCaseWords_inValidDataInputMetaDataString = ccountCamelCaseWords + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccountCamelCaseWords_inValidInputDataInteger = ccountCamelCaseWords + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccountCamelCaseWords_inValidInputDataBoolean = ccountCamelCaseWords + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccountCamelCaseWords_inValidInputMetaDataInteger = ccountCamelCaseWords + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccountCamelCaseWords_inValidInputMetaDataBoolean = ccountCamelCaseWords + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cdoesStringContainAcronym_validDataString = cdoesStringContainAcronym + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdoesStringContainAcronym_inValidDataInputDataString = cdoesStringContainAcronym + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdoesStringContainAcronym_inValidDataInputMetaDataString = cdoesStringContainAcronym + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdoesStringContainAcronym_inValidInputDataInteger = cdoesStringContainAcronym + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdoesStringContainAcronym_inValidInputDataBoolean = cdoesStringContainAcronym + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cdoesStringContainAcronym_inValidInputMetaDataInteger = cdoesStringContainAcronym + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cdoesStringContainAcronym_inValidInputMetaDataBoolean = cdoesStringContainAcronym + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cdetermineWordDelimiter_validDataString = cdetermineWordDelimiter + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdetermineWordDelimiter_inValidDataInputDataString = cdetermineWordDelimiter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdetermineWordDelimiter_inValidDataInputMetaDataString = cdetermineWordDelimiter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdetermineWordDelimiter_inValidInputDataInteger = cdetermineWordDelimiter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdetermineWordDelimiter_inValidInputDataBoolean = cdetermineWordDelimiter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cdetermineWordDelimiter_inValidInputMetaDataInteger = cdetermineWordDelimiter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cdetermineWordDelimiter_inValidInputMetaDataBoolean = cdetermineWordDelimiter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const ccountDelimiterInString_validDataString = ccountDelimiterInString + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccountDelimiterInString_inValidDataInputDataString = ccountDelimiterInString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccountDelimiterInString_inValidDataInputMetaDataString = ccountDelimiterInString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccountDelimiterInString_inValidInputDataInteger = ccountDelimiterInString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccountDelimiterInString_inValidInputDataBoolean = ccountDelimiterInString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccountDelimiterInString_inValidInputMetaDataInteger = ccountDelimiterInString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccountDelimiterInString_inValidInputMetaDataBoolean = ccountDelimiterInString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgetWordCountInString_validDataString = cgetWordCountInString + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetWordCountInString_inValidDataInputDataString = cgetWordCountInString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetWordCountInString_inValidDataInputMetaDataString = cgetWordCountInString + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetWordCountInString_inValidInputDataInteger = cgetWordCountInString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetWordCountInString_inValidInputDataBoolean = cgetWordCountInString + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetWordCountInString_inValidInputMetaDataInteger = cgetWordCountInString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetWordCountInString_inValidInputMetaDataBoolean = cgetWordCountInString + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cisStringList_validDataString = cisStringList + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisStringList_inValidDataInputDataString = cisStringList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisStringList_inValidDataInputMetaDataString = cisStringList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisStringList_inValidInputDataInteger = cisStringList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cisStringList_inValidInputDataBoolean = cisStringList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cisStringList_inValidInputMetaDataInteger = cisStringList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cisStringList_inValidInputMetaDataBoolean = cisStringList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const caggregateNumericalDifferenceBetweenTwoStrings_validDataString = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cvalid + wrd.cData + wrd.cString;
+export const caggregateNumericalDifferenceBetweenTwoStrings_inValidDataInputDataString = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const caggregateNumericalDifferenceBetweenTwoStrings_inValidDataInputMetaDataString = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataInteger = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataBoolean = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataInteger = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataBoolean = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;

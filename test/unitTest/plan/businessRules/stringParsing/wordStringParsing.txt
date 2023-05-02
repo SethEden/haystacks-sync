@@ -21,16 +21,22 @@ testName: isStringCamelCase_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 
 testName: isStringCamelCase_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 
 testName: isStringCamelCase_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 --------------------------------------------------------------------------------
 testName: mapWordToCamelCaseWord_validDataString
 input inputData:  string (The string key/value that should be converted to a camel case word)
@@ -51,6 +57,8 @@ testName: mapWordToCamelCaseWord_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
 
 testName: mapWordToCamelCaseWord_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -61,6 +69,8 @@ testName: mapWordToCamelCaseWord_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
 --------------------------------------------------------------------------------
 testName: simplifyAndConsolidateString_validDataString
 input inputData:  string (The string that should be simplified and consolidated)
@@ -81,6 +91,8 @@ testName: simplifyAndConsolidateString_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: simplifyAndConsolidateString_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -91,6 +103,8 @@ testName: simplifyAndConsolidateString_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 --------------------------------------------------------------------------------
 testName: compareSimplifiedAndConsolidatedStrings_validDataString
 input inputData:  string (The first string to be compared)
@@ -111,6 +125,8 @@ testName: compareSimplifiedAndConsolidatedStrings_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: compareSimplifiedAndConsolidatedStrings_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -121,6 +137,8 @@ testName: compareSimplifiedAndConsolidatedStrings_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 --------------------------------------------------------------------------------
 testName: countCamelCaseWords_validDataString
 input inputData:  string (String to count words from)
@@ -151,6 +169,8 @@ testName: countCamelCaseWords_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 --------------------------------------------------------------------------------
 testName: doesStringContainAcronym_validDataString
 input inputData:  string (The string that should be scanned to determine if it contains an acronym or not)
@@ -181,6 +201,8 @@ testName: doesStringContainAcronym_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 --------------------------------------------------------------------------------
 testName: determineWordDelimiter_validDataString
 input inputData:  string (The string that should be examined to determine what delimiter should be used to break it up into words)
@@ -201,6 +223,8 @@ testName: determineWordDelimiter_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: determineWordDelimiter_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -211,6 +235,8 @@ testName: determineWordDelimiter_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.charAt is not a function
 --------------------------------------------------------------------------------
 testName: countDelimiterInString_validDataString
 input inputData:  string (String to count delimiters from)
@@ -231,6 +257,8 @@ testName: countDelimiterInString_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: countDelimiterInString_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -241,6 +269,8 @@ testName: countDelimiterInString_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: getWordCountInString_validDataString
 input inputData:  string (The string that words should be counted from)
@@ -261,6 +291,8 @@ testName: getWordCountInString_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getWordCountInString_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -271,6 +303,8 @@ testName: getWordCountInString_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: isStringList_validDataString
 input inputData:  string (The string that should be checked if it is a list or not)
@@ -291,6 +325,8 @@ testName: isStringList_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.includes is not a function
 
 testName: isStringList_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -321,6 +357,8 @@ testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -331,3 +369,5 @@ testName: aggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataInte
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
