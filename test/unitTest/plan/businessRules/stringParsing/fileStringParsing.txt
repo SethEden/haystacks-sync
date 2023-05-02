@@ -21,6 +21,8 @@ testName: getFileNameFromPath_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.includes is not a function
 
 testName: getFileNameFromPath_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -31,11 +33,15 @@ testName: getFileNameFromPath_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: getFileNameFromPath_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: getFileExtension_validDataString
 input inputData:  string (The string that should contain the file name to which we want to get the file extension from)
@@ -56,6 +62,8 @@ testName: getFileExtension_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
 
 testName: getFileExtension_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -66,11 +74,15 @@ testName: getFileExtension_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
 
 testName: getFileExtension_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
 --------------------------------------------------------------------------------
 testName: removeDotFromFileExtension_validDataString
 input inputData:  string (The string that should contain the file extension that is being modified)
@@ -91,6 +103,8 @@ testName: removeDotFromFileExtension_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.substring is not a function
 
 testName: removeDotFromFileExtension_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -101,11 +115,15 @@ testName: removeDotFromFileExtension_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.substring is not a function
 
 testName: removeDotFromFileExtension_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.substring is not a function
 --------------------------------------------------------------------------------
 testName: removeFileExtensionFromFileName_validDataString
 input inputData:  string (The string that should have all the characters after the last period in the file name removed)
@@ -126,6 +144,8 @@ testName: removeFileExtensionFromFileName_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
 
 testName: removeFileExtensionFromFileName_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -136,11 +156,15 @@ testName: removeFileExtensionFromFileName_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
 
 testName: removeFileExtensionFromFileName_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
 --------------------------------------------------------------------------------
 testName: ascertainMatchingFilenames_validDataString
 input inputData:  string (The first filename and path that should be used in making the file name comparison)
@@ -161,6 +185,8 @@ testName: ascertainMatchingFilenames_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
 
 testName: ascertainMatchingFilenames_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -171,11 +197,15 @@ testName: ascertainMatchingFilenames_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
 
 testName: ascertainMatchingFilenames_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
 --------------------------------------------------------------------------------
 testName: supportedFileFormatsAre_validDataString
 input inputData:  string (Not used for this business rule)
@@ -266,6 +296,8 @@ testName: getFirstTopLevelFolderFromPath_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.includes is not a function
 
 testName: getFirstTopLevelFolderFromPath_inValidInputDataBoolean
 input inputData: boolean (false)

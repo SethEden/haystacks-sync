@@ -157,6 +157,15 @@ export const cconstantsFulfillmentSystem = wrd.cconstants + wrd.cFulfillment + w
 export const cvalidateConstantsDataValues = wrd.cvalidate + wrd.cConstants + wrd.cData + wrd.cValue;
 export const cisConstantValid = wrd.cis + wrd.cConstant + wrd.cValue;
 
+export const cgetFileNameFromPath = wrd.cget + wrd.cFile + wrd.cName + wrd.cFrom + wrd.cPath;
+export const cgetFileExtension = wrd.cget + wrd.cFile + wrd.cExtension;
+export const cremoveDotFromFileExtension = wrd.cremove + wrd.cDot + wrd.cFrom + wrd.cFile + wrd.cExtension;
+export const cremoveFileExtensionFromFileName = wrd.cremove + wrd.cFile + wrd.cExtension + wrd.cFrom + wrd.cFile + wrd.cName;
+export const cascertainMatchingFilenames = wrd.cascertain + wrd.cMatching + wrd.cFileNames;
+export const csupportedFileFormatsAre = wrd.csupported + wrd.cFile + wrd.cFormat + wrd.cAre;
+export const cremoveXnumberOfFoldersFromEndOfPath = "removeXnumberOfFoldersFromEndOfPath";
+export const cgetFirstTopLevelFolderFromPath = "getFirstTopLevelFolderFromPath";
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -927,3 +936,67 @@ export const cisConstantValid_inValidInputDataInteger = cisConstantValid + wrd.c
 export const cisConstantValid_inValidInputDataBoolean = cisConstantValid + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const cisConstantValid_inValidInputMetaDataInteger = cisConstantValid + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cisConstantValid_inValidInputMetaDataBoolean = cisConstantValid + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgetFileNameFromPath_validDataString = cgetFileNameFromPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetFileNameFromPath_inValidDataInputDataString = cgetFileNameFromPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetFileNameFromPath_inValidDataInputMetaDataString = cgetFileNameFromPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetFileNameFromPath_inValidInputDataInteger = cgetFileNameFromPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetFileNameFromPath_inValidInputDataBoolean = cgetFileNameFromPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetFileNameFromPath_inValidInputMetaDataInteger = cgetFileNameFromPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetFileNameFromPath_inValidInputMetaDataBoolean = cgetFileNameFromPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgetFileExtension_validDataString = cgetFileExtension + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetFileExtension_inValidDataInputDataString = cgetFileExtension + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetFileExtension_inValidDataInputMetaDataString = cgetFileExtension + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetFileExtension_inValidInputDataInteger = cgetFileExtension + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetFileExtension_inValidInputDataBoolean = cgetFileExtension + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetFileExtension_inValidInputMetaDataInteger = cgetFileExtension + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetFileExtension_inValidInputMetaDataBoolean = cgetFileExtension + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cremoveDotFromFileExtension_validDataString = cremoveDotFromFileExtension + wrd.cvalid + wrd.cData + wrd.cString;
+export const cremoveDotFromFileExtension_inValidDataInputDataString = cremoveDotFromFileExtension + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cremoveDotFromFileExtension_inValidDataInputMetaDataString = cremoveDotFromFileExtension + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cremoveDotFromFileExtension_inValidInputDataInteger = cremoveDotFromFileExtension + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cremoveDotFromFileExtension_inValidInputDataBoolean = cremoveDotFromFileExtension + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cremoveDotFromFileExtension_inValidInputMetaDataInteger = cremoveDotFromFileExtension + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cremoveDotFromFileExtension_inValidInputMetaDataBoolean = cremoveDotFromFileExtension + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cremoveFileExtensionFromFileName_validDataString = cremoveFileExtensionFromFileName + wrd.cvalid + wrd.cData + wrd.cString;
+export const cremoveFileExtensionFromFileName_inValidDataInputDataString = cremoveFileExtensionFromFileName + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cremoveFileExtensionFromFileName_inValidDataInputMetaDataString = cremoveFileExtensionFromFileName + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cremoveFileExtensionFromFileName_inValidInputDataInteger = cremoveFileExtensionFromFileName + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cremoveFileExtensionFromFileName_inValidInputDataBoolean = cremoveFileExtensionFromFileName + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cremoveFileExtensionFromFileName_inValidInputMetaDataInteger = cremoveFileExtensionFromFileName + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cremoveFileExtensionFromFileName_inValidInputMetaDataBoolean = cremoveFileExtensionFromFileName + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cascertainMatchingFilenames_validDataString = cascertainMatchingFilenames + wrd.cvalid + wrd.cData + wrd.cString;
+export const cascertainMatchingFilenames_inValidDataInputDataString = cascertainMatchingFilenames + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cascertainMatchingFilenames_inValidDataInputMetaDataString = cascertainMatchingFilenames + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cascertainMatchingFilenames_inValidInputDataInteger = cascertainMatchingFilenames + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cascertainMatchingFilenames_inValidInputDataBoolean = cascertainMatchingFilenames + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cascertainMatchingFilenames_inValidInputMetaDataInteger = cascertainMatchingFilenames + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cascertainMatchingFilenames_inValidInputMetaDataBoolean = cascertainMatchingFilenames + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const csupportedFileFormatsAre_validDataString = csupportedFileFormatsAre + wrd.cvalid + wrd.cData + wrd.cString;
+export const csupportedFileFormatsAre_inValidDataInputDataString = csupportedFileFormatsAre + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const csupportedFileFormatsAre_inValidDataInputMetaDataString = csupportedFileFormatsAre + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const csupportedFileFormatsAre_inValidInputDataInteger = csupportedFileFormatsAre + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const csupportedFileFormatsAre_inValidInputDataBoolean = csupportedFileFormatsAre + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const csupportedFileFormatsAre_inValidInputMetaDataInteger = csupportedFileFormatsAre + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const csupportedFileFormatsAre_inValidInputMetaDataBoolean = csupportedFileFormatsAre + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cremoveXnumberOfFoldersFromEndOfPath_validDataString = cremoveXnumberOfFoldersFromEndOfPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cremoveXnumberOfFoldersFromEndOfPath_inValidDataInputDataString = cremoveXnumberOfFoldersFromEndOfPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cremoveXnumberOfFoldersFromEndOfPath_inValidDataInputMetaDataString = cremoveXnumberOfFoldersFromEndOfPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cremoveXnumberOfFoldersFromEndOfPath_inValidInputDataInteger = cremoveXnumberOfFoldersFromEndOfPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cremoveXnumberOfFoldersFromEndOfPath_inValidInputDataBoolean = cremoveXnumberOfFoldersFromEndOfPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cremoveXnumberOfFoldersFromEndOfPath_inValidInputMetaDataInteger = cremoveXnumberOfFoldersFromEndOfPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cremoveXnumberOfFoldersFromEndOfPath_inValidInputMetaDataBoolean = cremoveXnumberOfFoldersFromEndOfPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgetFirstTopLevelFolderFromPath_validDataString = cgetFirstTopLevelFolderFromPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetFirstTopLevelFolderFromPath_inValidDataInputDataString = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetFirstTopLevelFolderFromPath_inValidDataInputMetaDataString = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetFirstTopLevelFolderFromPath_inValidInputDataInteger = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetFirstTopLevelFolderFromPath_inValidInputDataBoolean = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetFirstTopLevelFolderFromPath_inValidInputMetaDataInteger = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetFirstTopLevelFolderFromPath_inValidInputMetaDataBoolean = cgetFirstTopLevelFolderFromPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
