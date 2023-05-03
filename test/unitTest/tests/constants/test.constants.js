@@ -178,6 +178,25 @@ export const cgetWordCountInString = wrd.cget + wrd.cWord + wrd.cCount + wrd.cIn
 export const cisStringList = wrd.cis + wrd.cString + wrd.cList;
 export const caggregateNumericalDifferenceBetweenTwoStrings = "aggregateNumericalDifferenceBetweenTwoStrings";
 
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cMixed + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cUpper + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cLower + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cEither + wrd.cMixed + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cNumber + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cEither + wrd.cUpper + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cNumber + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cEither + wrd.cLower + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cNumber + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter = wrd.crandomly + wrd.cGenerate + wrd.cMixed + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCharacter;
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter = wrd.crandomly + wrd.cGenerate + wrd.cUpper + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCharacter;
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter = wrd.crandomly + wrd.cGenerate + wrd.cLower + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCharacter;
+export const crandomlyGenerateNumericCharacter = wrd.crandomly + wrd.cGenerate + wrd.cNumeric + wrd.cCharacter;
+export const crandomlyGenerateSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cSpecial + wrd.cCharacter;
+export const crandomlyGenerateNumberInRange = wrd.crandomly + wrd.cGenerate + wrd.cNumber + wrd.cIn + wrd.cRange;
+export const crandomlyGenerateBooleanValue = wrd.crandomly + wrd.cGenerate + wrd.cBoolean + wrd.cValue;
+export const crandomlyGenerateMixedCaseAlphabeticCharacter = wrd.crandomly + wrd.cGenerate + wrd.cMixed + wrd.cCase + wrd.cAlphabetic + wrd.cCharacter;
+export const crandomlyGenerateLowerCaseLetter = wrd.crandomly + wrd.cGenerate + wrd.cLower + wrd.cCase + wrd.cLetter;
+export const crandomlyGenerateUpperCaseLetter = wrd.crandomly + wrd.cGenerate + wrd.cUpper + wrd.cCase + wrd.cLetter;
+export const cconvertNumberToUpperCaseLetter = wrd.cconvert + wrd.cNumber + wrd.cTo + wrd.cUpper + wrd.cCase + wrd.cLetter;
+export const cconvertNumberToLowerCaseLetter = wrd.cconvert + wrd.cNumber + wrd.cTo + wrd.cLower + wrd.cCase + wrd.cLetter;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1100,3 +1119,156 @@ export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataInte
 export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataBoolean = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataInteger = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const caggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataBoolean = caggregateNumericalDifferenceBetweenTwoStrings + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter_validDataString = crandomlyGenerateMixedCaseLetterOrSpecialCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidDataInputDataString = crandomlyGenerateMixedCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString = crandomlyGenerateMixedCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputDataInteger = crandomlyGenerateMixedCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputDataBoolean = crandomlyGenerateMixedCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger = crandomlyGenerateMixedCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean = crandomlyGenerateMixedCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter_validDataString = crandomlyGenerateUpperCaseLetterOrSpecialCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidDataInputDataString = crandomlyGenerateUpperCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString = crandomlyGenerateUpperCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputDataInteger = crandomlyGenerateUpperCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputDataBoolean = crandomlyGenerateUpperCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger = crandomlyGenerateUpperCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean = crandomlyGenerateUpperCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter_validDataString = crandomlyGenerateLowerCaseLetterOrSpecialCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidDataInputDataString = crandomlyGenerateLowerCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString = crandomlyGenerateLowerCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputDataInteger = crandomlyGenerateLowerCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputDataBoolean = crandomlyGenerateLowerCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger = crandomlyGenerateLowerCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean = crandomlyGenerateLowerCaseLetterOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_validDataString = crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString = crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString = crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger = crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean = crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger = crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean = crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString = crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString = crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString = crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger = crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean = crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger = crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean = crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString = crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString = crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString = crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger = crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean = crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger = crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean = crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter_validDataString = crandomlyGenerateMixedCaseAlphaNumericCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter_inValidDataInputDataString = crandomlyGenerateMixedCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter_inValidDataInputMetaDataString = crandomlyGenerateMixedCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputDataInteger = crandomlyGenerateMixedCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputDataBoolean = crandomlyGenerateMixedCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputMetaDataInteger = crandomlyGenerateMixedCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputMetaDataBoolean = crandomlyGenerateMixedCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter_validDataString = crandomlyGenerateUpperCaseAlphaNumericCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter_inValidDataInputDataString = crandomlyGenerateUpperCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter_inValidDataInputMetaDataString = crandomlyGenerateUpperCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputDataInteger = crandomlyGenerateUpperCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputDataBoolean = crandomlyGenerateUpperCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputMetaDataInteger = crandomlyGenerateUpperCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputMetaDataBoolean = crandomlyGenerateUpperCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter_validDataString = crandomlyGenerateLowerCaseAlphaNumericCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter_inValidDataInputDataString = crandomlyGenerateLowerCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter_inValidDataInputMetaDataString = crandomlyGenerateLowerCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputDataInteger = crandomlyGenerateLowerCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputDataBoolean = crandomlyGenerateLowerCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputMetaDataInteger = crandomlyGenerateLowerCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputMetaDataBoolean = crandomlyGenerateLowerCaseAlphaNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateNumericCharacter_validDataString = crandomlyGenerateNumericCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateNumericCharacter_inValidDataInputDataString = crandomlyGenerateNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateNumericCharacter_inValidDataInputMetaDataString = crandomlyGenerateNumericCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateNumericCharacter_inValidInputDataInteger = crandomlyGenerateNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateNumericCharacter_inValidInputDataBoolean = crandomlyGenerateNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateNumericCharacter_inValidInputMetaDataInteger = crandomlyGenerateNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateNumericCharacter_inValidInputMetaDataBoolean = crandomlyGenerateNumericCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateSpecialCharacter_validDataString = crandomlyGenerateSpecialCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateSpecialCharacter_inValidDataInputDataString = crandomlyGenerateSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateSpecialCharacter_inValidDataInputMetaDataString = crandomlyGenerateSpecialCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateSpecialCharacter_inValidInputDataInteger = crandomlyGenerateSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateSpecialCharacter_inValidInputDataBoolean = crandomlyGenerateSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateSpecialCharacter_inValidInputMetaDataInteger = crandomlyGenerateSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateSpecialCharacter_inValidInputMetaDataBoolean = crandomlyGenerateSpecialCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateNumberInRange_validDataStringTrueTrue = crandomlyGenerateNumberInRange + wrd.cvalid + wrd.cData + wrd.cString + "TrueTrue";
+export const crandomlyGenerateNumberInRange_validDataStringTrueFalse = crandomlyGenerateNumberInRange + wrd.cvalid + wrd.cData + wrd.cString + "TrueFalse";
+export const crandomlyGenerateNumberInRange_validDataStringFalseTrue = crandomlyGenerateNumberInRange + wrd.cvalid + wrd.cData + wrd.cString + "FalseTrue";
+export const crandomlyGenerateNumberInRange_validDataStringFalseFalse = crandomlyGenerateNumberInRange + wrd.cvalid + wrd.cData + wrd.cString + "FalseFalse";
+export const crandomlyGenerateNumberInRange_validDataInteger = crandomlyGenerateNumberInRange + wrd.cvalid + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateNumberInRange_inValidDataInputDataString = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateNumberInRange_inValidDataInputMetaDataString = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateNumberInRange_inValidInputDataInteger = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateNumberInRange_inValidInputDataBoolean = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateNumberInRange_inValidInputMetaDataInteger = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateNumberInRange_inValidInputMetaDataBoolean = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateNumberInRange_inValidInputDataUndefined = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const crandomlyGenerateNumberInRange_inValidInputDataNaN = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const crandomlyGenerateNumberInRange_inValidInputMetaDataUndefined = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const crandomlyGenerateNumberInRange_inValidInputMetaDataNaN = crandomlyGenerateNumberInRange + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const crandomlyGenerateBooleanValue_validDataString = crandomlyGenerateBooleanValue + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateBooleanValue_inValidDataInputDataString = crandomlyGenerateBooleanValue + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateBooleanValue_inValidDataInputMetaDataString = crandomlyGenerateBooleanValue + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateBooleanValue_inValidInputDataInteger = crandomlyGenerateBooleanValue + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateBooleanValue_inValidInputDataBoolean = crandomlyGenerateBooleanValue + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateBooleanValue_inValidInputMetaDataInteger = crandomlyGenerateBooleanValue + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateBooleanValue_inValidInputMetaDataBoolean = crandomlyGenerateBooleanValue + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateMixedCaseAlphabeticCharacter_validDataString = crandomlyGenerateMixedCaseAlphabeticCharacter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputDataString = crandomlyGenerateMixedCaseAlphabeticCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputMetaDataString = crandomlyGenerateMixedCaseAlphabeticCharacter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataInteger = crandomlyGenerateMixedCaseAlphabeticCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataBoolean = crandomlyGenerateMixedCaseAlphabeticCharacter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataInteger = crandomlyGenerateMixedCaseAlphabeticCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataBoolean = crandomlyGenerateMixedCaseAlphabeticCharacter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateLowerCaseLetter_validDataString = crandomlyGenerateLowerCaseLetter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseLetter_inValidDataInputDataString = crandomlyGenerateLowerCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseLetter_inValidDataInputMetaDataString = crandomlyGenerateLowerCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateLowerCaseLetter_inValidInputDataInteger = crandomlyGenerateLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateLowerCaseLetter_inValidInputDataBoolean = crandomlyGenerateLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateLowerCaseLetter_inValidInputMetaDataInteger = crandomlyGenerateLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateLowerCaseLetter_inValidInputMetaDataBoolean = crandomlyGenerateLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const crandomlyGenerateUpperCaseLetter_validDataString = crandomlyGenerateUpperCaseLetter + wrd.cvalid + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseLetter_inValidDataInputDataString = crandomlyGenerateUpperCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseLetter_inValidDataInputMetaDataString = crandomlyGenerateUpperCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const crandomlyGenerateUpperCaseLetter_inValidInputDataInteger = crandomlyGenerateUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateUpperCaseLetter_inValidInputDataBoolean = crandomlyGenerateUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const crandomlyGenerateUpperCaseLetter_inValidInputMetaDataInteger = crandomlyGenerateUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const crandomlyGenerateUpperCaseLetter_inValidInputMetaDataBoolean = crandomlyGenerateUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cconvertNumberToUpperCaseLetter_validDataString = cconvertNumberToUpperCaseLetter + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconvertNumberToUpperCaseLetter_inValidDataInputDataString = cconvertNumberToUpperCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconvertNumberToUpperCaseLetter_inValidDataInputMetaDataString = cconvertNumberToUpperCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconvertNumberToUpperCaseLetter_inValidInputDataInteger = cconvertNumberToUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconvertNumberToUpperCaseLetter_inValidInputDataBoolean = cconvertNumberToUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconvertNumberToUpperCaseLetter_inValidInputMetaDataInteger = cconvertNumberToUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconvertNumberToUpperCaseLetter_inValidInputMetaDataBoolean = cconvertNumberToUpperCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cconvertNumberToLowerCaseLetter_validDataString = cconvertNumberToLowerCaseLetter + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconvertNumberToLowerCaseLetter_inValidDataInputDataString = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconvertNumberToLowerCaseLetter_inValidDataInputMetaDataString = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconvertNumberToLowerCaseLetter_inValidInputDataInteger = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconvertNumberToLowerCaseLetter_inValidInputDataBoolean = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconvertNumberToLowerCaseLetter_inValidInputMetaDataInteger = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconvertNumberToLowerCaseLetter_inValidInputMetaDataBoolean = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+

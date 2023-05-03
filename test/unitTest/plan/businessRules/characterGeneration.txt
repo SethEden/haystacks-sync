@@ -371,6 +371,8 @@ testName: randomlyGenerateSpecialCharacter_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'toString')
 
 testName: randomlyGenerateSpecialCharacter_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -381,11 +383,15 @@ testName: randomlyGenerateSpecialCharacter_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'toString')
 
 testName: randomlyGenerateSpecialCharacter_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'toString')
 --------------------------------------------------------------------------------
 testName: randomlyGenerateNumberInRange_validDataStringTrueTrue
 input inputData:  string (A string that contains the number with the minimum value)
@@ -426,6 +432,8 @@ testName: randomlyGenerateNumberInRange_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: randomlyGenerateNumberInRange_inValidInputDataBoolean
 input inputData: boolean (false)
