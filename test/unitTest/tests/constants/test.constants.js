@@ -197,6 +197,17 @@ export const crandomlyGenerateUpperCaseLetter = wrd.crandomly + wrd.cGenerate + 
 export const cconvertNumberToUpperCaseLetter = wrd.cconvert + wrd.cNumber + wrd.cTo + wrd.cUpper + wrd.cCase + wrd.cLetter;
 export const cconvertNumberToLowerCaseLetter = wrd.cconvert + wrd.cNumber + wrd.cTo + wrd.cLower + wrd.cCase + wrd.cLetter;
 
+export const cgetXmlData = "getXmlData";
+export const cgetCsvData = "getCsvData";
+export const cgetJsonData = "getJsonData";
+export const cwriteJsonData = "writeJsonData";
+export const creadDirectoryContents = wrd.cread + wrd.cDirectory + wrd.cContents;
+export const cscanDirectoryContents = wrd.cscan + wrd.cDirectory + wrd.cContents;
+export const cgetDirectoryList = wrd.cget + wrd.cDirectory + wrd.cList;
+export const creadDirectorySynchronously = wrd.cread + wrd.cDirectory + wrd.cSynchronously;
+export const ccopyAllFilesAndFoldersFromFolderToFolder = wrd.ccopy + wrd.cAll + wrd.cFiles + wrd.cAnd + wrd.cFolders + wrd.cFrom + wrd.cFolder + wrd.cTo + wrd.cFolder;
+export const cbuildReleasePackage = wrd.cbuild + wrd.cRelease + wrd.cPackage;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1272,3 +1283,85 @@ export const cconvertNumberToLowerCaseLetter_inValidInputDataBoolean = cconvertN
 export const cconvertNumberToLowerCaseLetter_inValidInputMetaDataInteger = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cconvertNumberToLowerCaseLetter_inValidInputMetaDataBoolean = cconvertNumberToLowerCaseLetter + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
 
+export const cgetXmlData_validDataString = cgetXmlData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetXmlData_inValidDataInputDataString = cgetXmlData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetXmlData_inValidDataInputMetaDataString = cgetXmlData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetXmlData_inValidInputDataInteger = cgetXmlData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetXmlData_inValidInputDataBoolean = cgetXmlData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetXmlData_inValidInputMetaDataInteger = cgetXmlData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetXmlData_inValidInputMetaDataBoolean = cgetXmlData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgetCsvData_validDataString = cgetCsvData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetCsvData_inValidDataInputDataString = cgetCsvData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetCsvData_inValidDataInputMetaDataString = cgetCsvData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetCsvData_inValidInputDataInteger = cgetCsvData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetCsvData_inValidInputDataBoolean = cgetCsvData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetCsvData_inValidInputMetaDataInteger = cgetCsvData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetCsvData_inValidInputMetaDataBoolean = cgetCsvData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgetJsonData_validDataString = cgetJsonData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetJsonData_inValidDataInputDataString = cgetJsonData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetJsonData_inValidDataInputMetaDataString = cgetJsonData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetJsonData_inValidInputDataInteger = cgetJsonData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetJsonData_inValidInputDataBoolean = cgetJsonData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetJsonData_inValidInputMetaDataInteger = cgetJsonData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetJsonData_inValidInputMetaDataBoolean = cgetJsonData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cwriteJsonData_validDataString = cwriteJsonData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cwriteJsonData_inValidDataInputDataString = cwriteJsonData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cwriteJsonData_inValidDataInputMetaDataString = cwriteJsonData + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cwriteJsonData_inValidInputDataInteger = cwriteJsonData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cwriteJsonData_inValidInputDataBoolean = cwriteJsonData + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cwriteJsonData_inValidInputMetaDataInteger = cwriteJsonData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cwriteJsonData_inValidInputMetaDataBoolean = cwriteJsonData + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const creadDirectoryContents_validDataString = creadDirectoryContents + wrd.cvalid + wrd.cData + wrd.cString;
+export const creadDirectoryContents_inValidDataInputDataString = creadDirectoryContents + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const creadDirectoryContents_inValidDataInputMetaDataString = creadDirectoryContents + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const creadDirectoryContents_inValidInputDataInteger = creadDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const creadDirectoryContents_inValidInputDataBoolean = creadDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const creadDirectoryContents_inValidInputMetaDataInteger = creadDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const creadDirectoryContents_inValidInputMetaDataBoolean = creadDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cscanDirectoryContents_validDataString = cscanDirectoryContents + wrd.cvalid + wrd.cData + wrd.cString;
+export const cscanDirectoryContents_inValidDataInputDataString = cscanDirectoryContents + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cscanDirectoryContents_inValidDataInputMetaDataString = cscanDirectoryContents + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cscanDirectoryContents_inValidInputDataInteger = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cscanDirectoryContents_inValidInputDataBoolean = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cscanDirectoryContents_inValidInputMetaDataInteger = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cscanDirectoryContents_inValidInputMetaDataBoolean = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cscanDirectoryContents_inValidInputMetaDataNaN = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cgetDirectoryList_validDataString = cgetDirectoryList + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetDirectoryList_inValidDataInputDataString = cgetDirectoryList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetDirectoryList_inValidDataInputMetaDataString = cgetDirectoryList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetDirectoryList_inValidInputDataInteger = cgetDirectoryList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetDirectoryList_inValidInputDataBoolean = cgetDirectoryList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetDirectoryList_inValidInputMetaDataInteger = cgetDirectoryList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetDirectoryList_inValidInputMetaDataBoolean = cgetDirectoryList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const creadDirectorySynchronously_validDataString = creadDirectorySynchronously + wrd.cvalid + wrd.cData + wrd.cString;
+export const creadDirectorySynchronously_inValidDataInputDataString = creadDirectorySynchronously + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const creadDirectorySynchronously_inValidDataInputMetaDataString = creadDirectorySynchronously + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const creadDirectorySynchronously_inValidInputDataInteger = creadDirectorySynchronously + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const creadDirectorySynchronously_inValidInputDataBoolean = creadDirectorySynchronously + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const creadDirectorySynchronously_inValidInputMetaDataInteger = creadDirectorySynchronously + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const creadDirectorySynchronously_inValidInputMetaDataBoolean = creadDirectorySynchronously + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const ccopyAllFilesAndFoldersFromFolderToFolder_validDataString = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cbuildReleasePackage_validDataString = cbuildReleasePackage + wrd.cvalid + wrd.cData + wrd.cString;
+export const cbuildReleasePackage_inValidDataInputDataString = cbuildReleasePackage + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cbuildReleasePackage_inValidDataInputMetaDataString = cbuildReleasePackage + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cbuildReleasePackage_inValidInputDataInteger = cbuildReleasePackage + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cbuildReleasePackage_inValidInputDataBoolean = cbuildReleasePackage + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cbuildReleasePackage_inValidInputMetaDataInteger = cbuildReleasePackage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cbuildReleasePackage_inValidInputMetaDataBoolean = cbuildReleasePackage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
