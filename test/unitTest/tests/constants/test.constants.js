@@ -213,6 +213,13 @@ export const ccopyFileSync = wrd.ccopy + wrd.cFile + wrd.cSync;
 export const ccopyFolderRecursiveSync = wrd.ccopy + wrd.cFolder + wrd.cRecursive + wrd.cSync;
 export const cappendMessageToFile = wrd.cappend + wrd.cMessage + wrd.cTo + wrd.cFile;
 
+export const cparseBusinessRuleArgument = wrd.cparse + wrd.cBusiness + wrd.cRule + wrd.cArgument;
+export const canalyzeArgument = wrd.canalyze + wrd.cArgument;
+export const canalyzeForRegularExpression = wrd.canalyze + wrd.cFor + wrd.cRegular + wrd.cExpression;
+export const cparseArgumentAsRegularExpression = wrd.cparse + wrd.cArgument + wrd.cAs + wrd.cRegular + wrd.cExpression;
+export const cparseArgumentAsArray = wrd.cparse + wrd.cArgument + wrd.cAs + wrd.cArray;
+export const cremoveStringLiteralTagsFromArray = wrd.cremove + wrd.cString + wrd.cLiteral + wrd.cTags + wrd.cFrom + wrd.cArray;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1412,3 +1419,62 @@ export const cappendMessageToFile_inValidInputDataInteger = cappendMessageToFile
 export const cappendMessageToFile_inValidInputDataBoolean = cappendMessageToFile + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const cappendMessageToFile_inValidInputMetaDataInteger = cappendMessageToFile + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cappendMessageToFile_inValidInputMetaDataBoolean = cappendMessageToFile + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cparseBusinessRuleArgument_validDataString = cparseBusinessRuleArgument + wrd.cvalid + wrd.cData + wrd.cString;
+export const cparseBusinessRuleArgument_inValidDataInputDataString = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cparseBusinessRuleArgument_inValidDataInputMetaDataString = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cparseBusinessRuleArgument_inValidInputDataInteger = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cparseBusinessRuleArgument_inValidInputDataBoolean = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cparseBusinessRuleArgument_inValidInputMetaDataInteger = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cparseBusinessRuleArgument_inValidInputMetaDataBoolean = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cparseBusinessRuleArgument_validDataArrayString = cparseBusinessRuleArgument + wrd.cvalid + wrd.cData + wrd.cArray + wrd.cString;
+export const cparseBusinessRuleArgument_validDataArrayBoolean = cparseBusinessRuleArgument + wrd.cvalid + wrd.cData + wrd.cArray + wrd.cBoolean;
+export const cparseBusinessRuleArgument_validDataArrayInteger = cparseBusinessRuleArgument + wrd.cvalid + wrd.cData + wrd.cArray + wrd.cInteger;
+export const cparseBusinessRuleArgument_validDataArrayObject = cparseBusinessRuleArgument + wrd.cvalid + wrd.cData + wrd.cArray + wrd.cObject;
+export const cparseBusinessRuleArgument_inValidInputDataUndefined = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cparseBusinessRuleArgument_inValidInputDataNaN = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cparseBusinessRuleArgument_inValidInputMetaDataUndefined = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cparseBusinessRuleArgument_inValidInputMetaDataNaN = cparseBusinessRuleArgument + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const canalyzeArgument_validDataString = canalyzeArgument + wrd.cvalid + wrd.cData + wrd.cString;
+export const canalyzeArgument_inValidDataInputDataString = canalyzeArgument + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const canalyzeArgument_inValidDataInputMetaDataString = canalyzeArgument + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const canalyzeArgument_inValidInputDataInteger = canalyzeArgument + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const canalyzeArgument_inValidInputDataBoolean = canalyzeArgument + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const canalyzeArgument_inValidInputMetaDataInteger = canalyzeArgument + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const canalyzeArgument_inValidInputMetaDataBoolean = canalyzeArgument + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const canalyzeForRegularExpression_validDataString = canalyzeForRegularExpression + wrd.cvalid + wrd.cData + wrd.cString;
+export const canalyzeForRegularExpression_inValidDataInputDataString = canalyzeForRegularExpression + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const canalyzeForRegularExpression_inValidDataInputMetaDataString = canalyzeForRegularExpression + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const canalyzeForRegularExpression_inValidInputDataInteger = canalyzeForRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const canalyzeForRegularExpression_inValidInputDataBoolean = canalyzeForRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const canalyzeForRegularExpression_inValidInputMetaDataInteger = canalyzeForRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const canalyzeForRegularExpression_inValidInputMetaDataBoolean = canalyzeForRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cparseArgumentAsRegularExpression_validDataString = cparseArgumentAsRegularExpression + wrd.cvalid + wrd.cData + wrd.cString;
+export const cparseArgumentAsRegularExpression_inValidDataInputDataString = cparseArgumentAsRegularExpression + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cparseArgumentAsRegularExpression_inValidDataInputMetaDataString = cparseArgumentAsRegularExpression + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cparseArgumentAsRegularExpression_inValidInputDataInteger = cparseArgumentAsRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cparseArgumentAsRegularExpression_inValidInputDataBoolean = cparseArgumentAsRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cparseArgumentAsRegularExpression_inValidInputMetaDataInteger = cparseArgumentAsRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cparseArgumentAsRegularExpression_inValidInputMetaDataBoolean = cparseArgumentAsRegularExpression + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cparseArgumentAsArray_validDataString = cparseArgumentAsArray + wrd.cvalid + wrd.cData + wrd.cString;
+export const cparseArgumentAsArray_inValidDataInputDataString = cparseArgumentAsArray + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cparseArgumentAsArray_inValidDataInputMetaDataString = cparseArgumentAsArray + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cparseArgumentAsArray_inValidInputDataInteger = cparseArgumentAsArray + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cparseArgumentAsArray_inValidInputDataBoolean = cparseArgumentAsArray + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cparseArgumentAsArray_inValidInputMetaDataInteger = cparseArgumentAsArray + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cparseArgumentAsArray_inValidInputMetaDataBoolean = cparseArgumentAsArray + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cremoveStringLiteralTagsFromArray_validDataString = cremoveStringLiteralTagsFromArray + wrd.cvalid + wrd.cData + wrd.cString;
+export const cremoveStringLiteralTagsFromArray_inValidDataInputDataString = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cremoveStringLiteralTagsFromArray_inValidDataInputMetaDataString = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cremoveStringLiteralTagsFromArray_inValidInputDataInteger = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cremoveStringLiteralTagsFromArray_inValidInputDataBoolean = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cremoveStringLiteralTagsFromArray_inValidInputMetaDataInteger = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cremoveStringLiteralTagsFromArray_inValidInputMetaDataBoolean = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cremoveStringLiteralTagsFromArray_inValidInputDataNaN = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cremoveStringLiteralTagsFromArray_inValidInputDataUndefined = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+

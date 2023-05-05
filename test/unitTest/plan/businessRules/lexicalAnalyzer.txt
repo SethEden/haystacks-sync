@@ -96,11 +96,15 @@ testName: analyzeArgument_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: string (Not used for this business rule)
 output: NOTE: Determine output by running inValid input
+status: Failed
+error: TypeError: inputMetaData is not iterable
 
 testName: analyzeArgument_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: string (Not used for this business rule)
 output: NOTE: Determine output by running inValid input
+status: Failed
+error: TypeError: inputData.includes is not a function
 
 testName: analyzeArgument_inValidInputMetaDataInteger
 input inputData: string (The argument string that needs additional parsing)
@@ -131,11 +135,15 @@ testName: analyzeForRegularExpression_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: arrayElement.includes is not a function
 
 testName: analyzeForRegularExpression_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: arrayElement.includes is not a function
 
 testName: analyzeForRegularExpression_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
@@ -166,21 +174,29 @@ testName: parseArgumentAsRegularExpression_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: parseArgumentAsRegularExpression_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: parseArgumentAsRegularExpression_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: parseArgumentAsRegularExpression_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 --------------------------------------------------------------------------------
 testName: parseArgumentAsArray_validDataString
 input inputData: string (A string that contains an array, we will use the secondary command delimiter to split the string into an array)
@@ -201,21 +217,29 @@ testName: parseArgumentAsArray_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: argumentValue.includes is not a function
 
 testName: parseArgumentAsArray_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: argumentValue.includes is not a function
 
 testName: parseArgumentAsArray_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: argumentValue.includes is not a function
 
 testName: parseArgumentAsArray_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: argumentValue.includes is not a function
 --------------------------------------------------------------------------------
 testName: removeStringLiteralTagsFromArray_validDataString
 input inputData: array<string> (The argument array that should have the string literal tags removed)
@@ -246,11 +270,15 @@ testName: removeStringLiteralTagsFromArray_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: argumentValue.includes is not a function
 
 testName: removeStringLiteralTagsFromArray_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: argumentValue.includes is not a function
 
 testName: removeStringLiteralTagsFromArray_inValidInputDataUndefined
 input inputData: undefined
