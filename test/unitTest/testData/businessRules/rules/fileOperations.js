@@ -20,6 +20,12 @@ export const xmlPath = () => {
     return baseUrl;
 }
 
+export const testxmlPath = () => {
+    let baseUrl = tst_con.basePath();
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "xml";
+    return baseUrl;
+}
+
 export const xmlFolder = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash;
@@ -35,6 +41,18 @@ export const csvPath = () => {
 export const jsonPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "json";
+    return baseUrl;
+}
+
+export const commonFolderPath = () => {
+    let baseUrl = tst_con.basePath();
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cbrokers + bas.cForwardSlash;
+    return baseUrl;
+}
+
+export const zipPath = () => {
+    let baseUrl = tst_con.basePath();
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "zip";
     return baseUrl;
 }
 

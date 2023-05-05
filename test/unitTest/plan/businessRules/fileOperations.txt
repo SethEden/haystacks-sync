@@ -561,6 +561,8 @@ testName: copyFileSync_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusions array over-rides the exclusion array) (testDataString)
 output: ?
+status: Failed
+error: ERROR: Could not copy file: d
 
 testName: copyFileSync_inValidDataInputMetaDataString
 input inputData: array<string> (An array containing the source and destination paths) (testDataString)
@@ -571,11 +573,15 @@ testName: copyFileSync_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: ERROR: Could not copy file: undefined
 
 testName: copyFileSync_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: ERROR: Could not copy file: undefined
 
 testName: copyFileSync_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
@@ -586,26 +592,35 @@ testName: copyFileSync_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+error: unexpected error
 
 testName: copyFileSync_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusions array over-rides the exclusion array) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
 
 testName: copyFileSync_inValidInputDataNaN
 input inputData: NaN
 input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusions array over-rides the exclusion array) (inValidDataToStoreNaN)
 output: ?
+status: Failed
+error: ERROR: Could not copy file: undefined
 
 testName: copyFileSync_inValidInputMetaDataUndefined
 input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreUndefined)
 input inputMetaData: undefined
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
 
 testName: copyFileSync_inValidInputMetaDataNaN
 input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreNaN)
 input inputMetaData: NaN
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
 --------------------------------------------------------------------------------
 testName: copyFolderRecursiveSync_validDataString
 input inputData:  array<string> (An array containing the source and destination paths)
@@ -681,6 +696,8 @@ testName: appendMessageToFile_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (4567) 
 
 testName: appendMessageToFile_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -691,8 +708,12 @@ testName: appendMessageToFile_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. 
 
 testName: appendMessageToFile_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. 

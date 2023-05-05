@@ -494,119 +494,147 @@ describe(tst_con.creadDirectorySynchronously, () => {
 });
 
 /**
- * @function copyAllFilesAndFoldersFromFolderToFolder
- * @description Tests the positive and negative test cases of the copyAllFilesAndFoldersFromFolderToFolder
+ * @function copyFileSync
+ * @description Tests the positive and negative test cases of the copyFileSync
  * @date 2023/05/03
  */
-describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
-    /**
-     * @function copyAllFilesAndFoldersFromFolderToFolder_validDataString
-     * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a valid input.
-     * @author Json Howard
-     * @date 2023/05/03
-     */
-    test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_validDataString, () => {
-      // Arrange
-      let inputData = ["asd", "asd"]; //[obj_con.xmlFolder(), obj_con.xmlFolder()]
-      let inputMetaData = [["*.*"], ["*.*"]];
-  
-      // Act
-      rulesLibrary.initRulesLibrary();
-      let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false); // path array
-    });    
+describe(tst_con.ccopyFileSync, () => {
+  /**
+   * @function copyFileSync_validDataString
+   * @description Tests the business rules function copyFileSync with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFileSync_validDataString, () => {
+    // Arrange
+    let inputData = [obj_con.xmlPath(), obj_con.testxmlPath()];
+    let inputMetaData = [["*.*"], ["*.*"]];
 
-    /**
-     * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString
-     * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid string inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/03
-     */
-    test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = ["asd", "asd"];
-        let inputMetaData = "dfxg24346dfg";
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(false);
-    });
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = fileOperations.copyFileSync(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString
-     * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid string input.
-     * @author Json Howard
-     * @date 2023/05/03
-     */
-    test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString, () => {
-      // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = [["*.*"], ["*.*"]];
-  
-      // Act
-      rulesLibrary.initRulesLibrary();
-      let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-    });
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });    
 
-    /**
-     * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined
-     * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid undefined inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/03
-     */
-    test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined, () => {
-      // Arrange
-      let inputData = ["asd", "asd"];
-      let inputMetaData = undefined;
-  
-      // Act
-      rulesLibrary.initRulesLibrary();
-      let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-    });
+  /**
+   * @function copyFileSync_inValidDataInputMetaDataString
+   * @description Tests the business rules function copyFileSync with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFileSync_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = [obj_con.xmlPath(), obj_con.testxmlPath()];
+    let inputMetaData = "dfxg24346dfg";
 
-    /**
-     * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN
-     * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid NaN inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/03
-     */
-    test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN, () => {
-      // Arrange
-      let inputData = ["asd", "asd"];
-      let inputMetaData = NaN;
-  
-      // Act
-      rulesLibrary.initRulesLibrary();
-      let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-    });
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = fileOperations.copyFileSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });
 });
 
+/**
+ * @function appendMessageToFile
+ * @description Tests the positive and negative test cases of the appendMessageToFile
+ * @date 2023/05/03
+ */
+describe(tst_con.cappendMessageToFile, () => {
+  /**
+   * @function appendMessageToFile_validDataString
+   * @description Tests the business rules function appendMessageToFile with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cappendMessageToFile_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.testxmlPath();
+    let inputMetaData = wrd.cHello;
+
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = fileOperations.appendMessageToFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false); // path array
+  });    
+
+  /**
+   * @function appendMessageToFile_inValidDataInputMetaDataString
+   * @description Tests the business rules function appendMessageToFile with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.testxmlPath();
+    let inputMetaData = "dfxg24346dfg";
+
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = fileOperations.appendMessageToFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false); // path array
+  });
+
+  /**
+   * @function appendMessageToFile_inValidDataInputDataString
+   * @description Tests the business rules function appendMessageToFile with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = "dfxg24346dfg";
+
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = fileOperations.appendMessageToFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false); // path array
+  });
+
+  /**
+   * @function appendMessageToFile_inValidInputDataBoolean
+   * @description Tests the business rules function appendMessageToFile with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cappendMessageToFile_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = fileOperations.appendMessageToFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false); // path array
+  });
+});

@@ -207,6 +207,11 @@ export const cgetDirectoryList = wrd.cget + wrd.cDirectory + wrd.cList;
 export const creadDirectorySynchronously = wrd.cread + wrd.cDirectory + wrd.cSynchronously;
 export const ccopyAllFilesAndFoldersFromFolderToFolder = wrd.ccopy + wrd.cAll + wrd.cFiles + wrd.cAnd + wrd.cFolders + wrd.cFrom + wrd.cFolder + wrd.cTo + wrd.cFolder;
 export const cbuildReleasePackage = wrd.cbuild + wrd.cRelease + wrd.cPackage;
+export const ccreateZipArchive = "createZipArchive";
+export const ccleanRootPath = wrd.cclean + wrd.cRoot + wrd.cPath;
+export const ccopyFileSync = wrd.ccopy + wrd.cFile + wrd.cSync;
+export const ccopyFolderRecursiveSync = wrd.ccopy + wrd.cFolder + wrd.cRecursive + wrd.cSync;
+export const cappendMessageToFile = wrd.cappend + wrd.cMessage + wrd.cTo + wrd.cFile;
 
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
@@ -1365,3 +1370,45 @@ export const cbuildReleasePackage_inValidInputDataInteger = cbuildReleasePackage
 export const cbuildReleasePackage_inValidInputDataBoolean = cbuildReleasePackage + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const cbuildReleasePackage_inValidInputMetaDataInteger = cbuildReleasePackage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cbuildReleasePackage_inValidInputMetaDataBoolean = cbuildReleasePackage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const ccreateZipArchive_validDataString = ccreateZipArchive + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccreateZipArchive_inValidDataInputDataString = ccreateZipArchive + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccreateZipArchive_inValidDataInputMetaDataString = ccreateZipArchive + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccreateZipArchive_inValidInputDataInteger = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccreateZipArchive_inValidInputDataBoolean = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccreateZipArchive_inValidInputMetaDataInteger = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccreateZipArchive_inValidInputMetaDataBoolean = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const ccreateZipArchive_inValidInputMetaDataUndefined = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const ccreateZipArchive_inValidInputMetaDataNaN = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const ccleanRootPath_validDataString = ccleanRootPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccleanRootPath_inValidDataInputDataString = ccleanRootPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccleanRootPath_inValidDataInputMetaDataString = ccleanRootPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccleanRootPath_inValidInputDataInteger = ccleanRootPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccleanRootPath_inValidInputDataBoolean = ccleanRootPath + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccleanRootPath_inValidInputMetaDataInteger = ccleanRootPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccleanRootPath_inValidInputMetaDataBoolean = ccleanRootPath + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const ccopyFileSync_validDataString = ccopyFileSync + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccopyFileSync_inValidDataInputDataString = ccopyFileSync + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccopyFileSync_inValidDataInputMetaDataString = ccopyFileSync + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccopyFileSync_inValidInputDataInteger = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccopyFileSync_inValidInputDataBoolean = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccopyFileSync_inValidInputMetaDataInteger = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccopyFileSync_inValidInputMetaDataBoolean = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const ccopyFolderRecursiveSync_validDataString = ccopyFolderRecursiveSync + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccopyFolderRecursiveSync_inValidDataInputDataString = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccopyFolderRecursiveSync_inValidDataInputMetaDataString = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const ccopyFolderRecursiveSync_inValidInputDataInteger = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccopyFolderRecursiveSync_inValidInputDataBoolean = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccopyFolderRecursiveSync_inValidInputMetaDataInteger = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const ccopyFolderRecursiveSync_inValidInputMetaDataBoolean = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cappendMessageToFile_validDataString = cappendMessageToFile + wrd.cvalid + wrd.cData + wrd.cString;
+export const cappendMessageToFile_inValidDataInputDataString = cappendMessageToFile + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cappendMessageToFile_inValidDataInputMetaDataString = cappendMessageToFile + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cappendMessageToFile_inValidInputDataInteger = cappendMessageToFile + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cappendMessageToFile_inValidInputDataBoolean = cappendMessageToFile + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cappendMessageToFile_inValidInputMetaDataInteger = cappendMessageToFile + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cappendMessageToFile_inValidInputMetaDataBoolean = cappendMessageToFile + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
