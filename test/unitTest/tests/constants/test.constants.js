@@ -224,6 +224,8 @@ export const chex2rgbConversion = "hex2rgbConversion";
 export const cisOdd = wrd.cis + wrd.cOdd;
 export const cisEven = wrd.cis + wrd.cEven;
 
+export const cprompt = wrd.cprompt;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1507,3 +1509,11 @@ export const cisEven_inValidInputDataInteger = cisEven + wrd.cinvalid + wrd.cInp
 export const cisEven_inValidInputDataBoolean = cisEven + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const cisEven_inValidInputMetaDataInteger = cisEven + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cisEven_inValidInputMetaDataBoolean = cisEven + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cprompt_validDataString = cprompt + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprompt_inValidDataInputDataString = cprompt + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cprompt_inValidDataInputMetaDataString = cprompt + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cprompt_inValidInputDataInteger = cprompt + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cprompt_inValidInputDataBoolean = cprompt + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cprompt_inValidInputMetaDataInteger = cprompt + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cprompt_inValidInputMetaDataBoolean = cprompt + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;

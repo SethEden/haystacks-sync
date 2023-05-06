@@ -31,8 +31,12 @@ testName: prompt_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
 
 testName: prompt_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
