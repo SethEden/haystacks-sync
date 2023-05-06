@@ -220,6 +220,10 @@ export const cparseArgumentAsRegularExpression = wrd.cparse + wrd.cArgument + wr
 export const cparseArgumentAsArray = wrd.cparse + wrd.cArgument + wrd.cAs + wrd.cArray;
 export const cremoveStringLiteralTagsFromArray = wrd.cremove + wrd.cString + wrd.cLiteral + wrd.cTags + wrd.cFrom + wrd.cArray;
 
+export const chex2rgbConversion = "hex2rgbConversion";
+export const cisOdd = wrd.cis + wrd.cOdd;
+export const cisEven = wrd.cis + wrd.cEven;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1478,3 +1482,28 @@ export const cremoveStringLiteralTagsFromArray_inValidInputMetaDataBoolean = cre
 export const cremoveStringLiteralTagsFromArray_inValidInputDataNaN = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
 export const cremoveStringLiteralTagsFromArray_inValidInputDataUndefined = cremoveStringLiteralTagsFromArray + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
 
+export const chex2rgbConversion_validDataString = chex2rgbConversion + wrd.cvalid + wrd.cData + wrd.cString;
+export const chex2rgbConversion_inValidDataInputDataString = chex2rgbConversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const chex2rgbConversion_inValidDataInputMetaDataString = chex2rgbConversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const chex2rgbConversion_inValidInputDataInteger = chex2rgbConversion + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const chex2rgbConversion_inValidInputDataBoolean = chex2rgbConversion + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const chex2rgbConversion_inValidInputMetaDataInteger = chex2rgbConversion + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const chex2rgbConversion_inValidInputMetaDataBoolean = chex2rgbConversion + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const chex2rgbConversion_inValidInputDataNaN = chex2rgbConversion + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const chex2rgbConversion_inValidInputDataUndefined = chex2rgbConversion + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const cisOdd_validDataString = cisOdd + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisOdd_inValidDataInputDataString = cisOdd + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisOdd_inValidDataInputMetaDataString = cisOdd + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisOdd_inValidInputDataInteger = cisOdd + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cisOdd_inValidInputDataBoolean = cisOdd + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cisOdd_inValidInputMetaDataInteger = cisOdd + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cisOdd_inValidInputMetaDataBoolean = cisOdd + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cisEven_validDataString = cisEven + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisEven_inValidDataInputDataString = cisEven + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cisEven_inValidDataInputMetaDataString = cisEven + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cisEven_inValidInputDataInteger = cisEven + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cisEven_inValidInputDataBoolean = cisEven + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cisEven_inValidInputMetaDataInteger = cisEven + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cisEven_inValidInputMetaDataBoolean = cisEven + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
