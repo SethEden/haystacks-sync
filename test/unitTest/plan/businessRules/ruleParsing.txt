@@ -156,11 +156,15 @@ testName: processRulesInternal_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: array<string> (The name(s) of the rule(s) that should be executed for modifying the input data) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
 
 testName: processRulesInternal_inValidInputDataNaN
 input inputData: NaN
 input inputMetaData: array<string> (The name(s) of the rule(s) that should be executed for modifying the input data) (inValidDataToStoreNaN)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
 
 testName: processRulesInternal_inValidInputMetaDataUndefined
 input inputData: array<string|integer|boolean|object|function,string|integer|boolean|object|function> (An array of inputs, inputData & inputMetaData) (inValidDataToStoreUndefined)

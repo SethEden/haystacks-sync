@@ -226,6 +226,11 @@ export const cisEven = wrd.cis + wrd.cEven;
 
 export const cprompt = wrd.cprompt;
 
+export const cdoAllRulesExist = wrd.cdo + wrd.cAll + wrd.cRules + wrd.cExist;
+export const cdoesRuleExist = wrd.cdoes + wrd.cRule + wrd.cExist;
+export const cgetRule = wrd.cget + wrd.cRule;
+export const cprocessRulesInternal = wrd.cprocess + wrd.cRules + wrd.cInternal;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1517,3 +1522,37 @@ export const cprompt_inValidInputDataInteger = cprompt + wrd.cinvalid + wrd.cInp
 export const cprompt_inValidInputDataBoolean = cprompt + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const cprompt_inValidInputMetaDataInteger = cprompt + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cprompt_inValidInputMetaDataBoolean = cprompt + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cdoAllRulesExist_validDataString = cdoAllRulesExist + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdoAllRulesExist_inValidDataInputDataString = cdoAllRulesExist + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdoAllRulesExist_inValidDataInputMetaDataString = cdoAllRulesExist + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdoAllRulesExist_inValidInputDataInteger = cdoAllRulesExist + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdoAllRulesExist_inValidInputDataBoolean = cdoAllRulesExist + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cdoAllRulesExist_inValidInputMetaDataInteger = cdoAllRulesExist + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cdoAllRulesExist_inValidInputMetaDataBoolean = cdoAllRulesExist + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cdoesRuleExist_validDataString = cdoesRuleExist + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdoesRuleExist_inValidDataInputDataString = cdoesRuleExist + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cdoesRuleExist_inValidDataInputMetaDataString = cdoesRuleExist + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cdoesRuleExist_inValidInputDataInteger = cdoesRuleExist + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cdoesRuleExist_inValidInputDataBoolean = cdoesRuleExist + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cdoesRuleExist_inValidInputMetaDataInteger = cdoesRuleExist + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cdoesRuleExist_inValidInputMetaDataBoolean = cdoesRuleExist + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgetRule_validDataString = cgetRule + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetRule_inValidDataInputDataString = cgetRule + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgetRule_inValidDataInputMetaDataString = cgetRule + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgetRule_inValidInputDataInteger = cgetRule + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgetRule_inValidInputDataBoolean = cgetRule + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgetRule_inValidInputMetaDataInteger = cgetRule + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgetRule_inValidInputMetaDataBoolean = cgetRule + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cprocessRulesInternal_validDataString = cprocessRulesInternal + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessRulesInternal_inValidDataInputDataString = cprocessRulesInternal + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cprocessRulesInternal_inValidDataInputMetaDataString = cprocessRulesInternal + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cprocessRulesInternal_inValidInputDataInteger = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cprocessRulesInternal_inValidInputDataBoolean = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cprocessRulesInternal_inValidInputMetaDataInteger = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cprocessRulesInternal_inValidInputMetaDataBoolean = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cprocessRulesInternal_inValidInputMetaDataUndefined = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cprocessRulesInternal_inValidInputMetaDataNaN = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
