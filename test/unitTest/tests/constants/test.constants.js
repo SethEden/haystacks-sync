@@ -231,6 +231,26 @@ export const cdoesRuleExist = wrd.cdoes + wrd.cRule + wrd.cExist;
 export const cgetRule = wrd.cget + wrd.cRule;
 export const cprocessRulesInternal = wrd.cprocess + wrd.cRules + wrd.cInternal;
 
+export const cgenerateRandomMixedCaseTextByLength = wrd.cgenerate + wrd.cRandom + wrd.cMixed + wrd.cCase + wrd.cText + wrd.cBy + wrd.cLength;
+export const cgenerateRandomUpperCaseTextByLength = wrd.cgenerate + wrd.cRandom + wrd.cUpper + wrd.cCase + wrd.cText + wrd.cBy + wrd.cLength;
+export const cgenerateRandomLowerCaseTextByLength = wrd.cgenerate + wrd.cRandom + wrd.cLower + wrd.cCase + wrd.cText + wrd.cBy + wrd.cLength;
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength = wrd.cgenerate + wrd.cRandom + wrd.cMixed + wrd.cCase + wrd.cText + wrd.cWith + wrd.cSpecial + wrd.cCharacters + wrd.cBy + wrd.cLength;
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength = wrd.cgenerate + wrd.cRandom + wrd.cUpper + wrd.cCase + wrd.cText + wrd.cWith + wrd.cSpecial + wrd.cCharacters + wrd.cBy + wrd.cLength;
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength = wrd.cgenerate + wrd.cRandom + wrd.cLower + wrd.cCase + wrd.cText + wrd.cWith + wrd.cSpecial + wrd.cCharacters + wrd.cBy + wrd.cLength;
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength = wrd.cgenerate + wrd.cRandom + wrd.cMixed + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCode + wrd.cBy + wrd.cLength;
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength = wrd.cgenerate + wrd.cRandom + wrd.cUpper + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCode + wrd.cBy + wrd.cLength;
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength = wrd.cgenerate + wrd.cRandom + wrd.cLower + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCode + wrd.cBy + wrd.cLength;
+export const cgenerateRandomNumericCodeByLength = wrd.cgenerate + wrd.cRandom + wrd.cNumeric + wrd.cCode + wrd.cBy + wrd.cLength;
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength = wrd.cgenerate + wrd.cRandom + wrd.cMixed + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCode + wrd.cWith + wrd.cSpecial + wrd.cCharacters + wrd.cBy + wrd.cLength;
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength = wrd.cgenerate + wrd.cRandom + wrd.cUpper + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCode + wrd.cWith + wrd.cSpecial + wrd.cCharacters + wrd.cBy + wrd.cLength;
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength = wrd.cgenerate + wrd.cRandom + wrd.cLower + wrd.cCase + wrd.cAlpha + wrd.cNumeric + wrd.cCode + wrd.cWith + wrd.cSpecial + wrd.cCharacters + wrd.cBy + wrd.cLength;
+export const cgenerateRandomSpecialCharacterCodeByLength = wrd.cgenerate + wrd.cRandom + wrd.cSpecial + wrd.cCharacter + wrd.cCode + wrd.cBy + wrd.cLength;
+export const cgenerateValidEmail = wrd.cgenerate + wrd.cValid + wrd.cEmail;
+export const cgenerateInvalidEmail = wrd.cgenerate + wrd.cInvalid + wrd.cEmail;
+export const cgenerateRandomBrightColor = wrd.cgenerate + wrd.cRandom + wrd.cBright + wrd.cColor;
+export const cgenerateRandomDarkColor = wrd.cgenerate + wrd.cRandom + wrd.cDark + wrd.cColor;
+export const cgenerateRandomColor = wrd.cgenerate + wrd.cRandom + wrd.cColor;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1556,3 +1576,185 @@ export const cprocessRulesInternal_inValidInputMetaDataInteger = cprocessRulesIn
 export const cprocessRulesInternal_inValidInputMetaDataBoolean = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
 export const cprocessRulesInternal_inValidInputMetaDataUndefined = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
 export const cprocessRulesInternal_inValidInputMetaDataNaN = cprocessRulesInternal + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cgenerateRandomMixedCaseTextByLength_validDataString = cgenerateRandomMixedCaseTextByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseTextByLength_inValidDataInputDataString = cgenerateRandomMixedCaseTextByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseTextByLength_inValidDataInputMetaDataString = cgenerateRandomMixedCaseTextByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseTextByLength_inValidInputDataInteger = cgenerateRandomMixedCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseTextByLength_inValidInputDataBoolean = cgenerateRandomMixedCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomMixedCaseTextByLength_inValidInputMetaDataInteger = cgenerateRandomMixedCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseTextByLength_inValidInputMetaDataBoolean = cgenerateRandomMixedCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomUpperCaseTextByLength_validDataString = cgenerateRandomUpperCaseTextByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseTextByLength_inValidDataInputDataString = cgenerateRandomUpperCaseTextByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseTextByLength_inValidDataInputMetaDataString = cgenerateRandomUpperCaseTextByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseTextByLength_inValidInputDataInteger = cgenerateRandomUpperCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseTextByLength_inValidInputDataBoolean = cgenerateRandomUpperCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomUpperCaseTextByLength_inValidInputMetaDataInteger = cgenerateRandomUpperCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseTextByLength_inValidInputMetaDataBoolean = cgenerateRandomUpperCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomLowerCaseTextByLength_validDataString = cgenerateRandomLowerCaseTextByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseTextByLength_inValidDataInputDataString = cgenerateRandomLowerCaseTextByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseTextByLength_inValidDataInputMetaDataString = cgenerateRandomLowerCaseTextByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseTextByLength_inValidInputDataInteger = cgenerateRandomLowerCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseTextByLength_inValidInputDataBoolean = cgenerateRandomLowerCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomLowerCaseTextByLength_inValidInputMetaDataInteger = cgenerateRandomLowerCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseTextByLength_inValidInputMetaDataBoolean = cgenerateRandomLowerCaseTextByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_validDataString = cgenerateRandomMixedCaseTextWithSpecialCharactersByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputDataString = cgenerateRandomMixedCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString = cgenerateRandomMixedCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputDataInteger = cgenerateRandomMixedCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean = cgenerateRandomMixedCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger = cgenerateRandomMixedCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean = cgenerateRandomMixedCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_validDataString = cgenerateRandomUpperCaseTextWithSpecialCharactersByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputDataString = cgenerateRandomUpperCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString = cgenerateRandomUpperCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputDataInteger = cgenerateRandomUpperCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean = cgenerateRandomUpperCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger = cgenerateRandomUpperCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean = cgenerateRandomUpperCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_validDataString = cgenerateRandomLowerCaseTextWithSpecialCharactersByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputDataString = cgenerateRandomLowerCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString = cgenerateRandomLowerCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputDataInteger = cgenerateRandomLowerCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean = cgenerateRandomLowerCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger = cgenerateRandomLowerCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean = cgenerateRandomLowerCaseTextWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength_validDataString = cgenerateRandomMixedCaseAlphaNumericCodeByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputDataString = cgenerateRandomMixedCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString = cgenerateRandomMixedCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidInputDataInteger = cgenerateRandomMixedCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidInputDataBoolean = cgenerateRandomMixedCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger = cgenerateRandomMixedCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean = cgenerateRandomMixedCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength_validDataString = cgenerateRandomUpperCaseAlphaNumericCodeByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputDataString = cgenerateRandomUpperCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString = cgenerateRandomUpperCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidInputDataInteger = cgenerateRandomUpperCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidInputDataBoolean = cgenerateRandomUpperCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger = cgenerateRandomUpperCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean = cgenerateRandomUpperCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength_validDataString = cgenerateRandomLowerCaseAlphaNumericCodeByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputDataString = cgenerateRandomLowerCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString = cgenerateRandomLowerCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidInputDataInteger = cgenerateRandomLowerCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidInputDataBoolean = cgenerateRandomLowerCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger = cgenerateRandomLowerCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean = cgenerateRandomLowerCaseAlphaNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomNumericCodeByLength_validDataString = cgenerateRandomNumericCodeByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomNumericCodeByLength_inValidDataInputDataString = cgenerateRandomNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomNumericCodeByLength_inValidDataInputMetaDataString = cgenerateRandomNumericCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomNumericCodeByLength_inValidInputDataInteger = cgenerateRandomNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomNumericCodeByLength_inValidInputDataBoolean = cgenerateRandomNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomNumericCodeByLength_inValidInputMetaDataInteger = cgenerateRandomNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomNumericCodeByLength_inValidInputMetaDataBoolean = cgenerateRandomNumericCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString = cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString = cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString = cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger = cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean = cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger = cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean = cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString = cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString = cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString = cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger = cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean = cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger = cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean = cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString = cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString = cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString = cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger = cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean = cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger = cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean = cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateRandomSpecialCharacterCodeByLength_validDataString = cgenerateRandomSpecialCharacterCodeByLength + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomSpecialCharacterCodeByLength_inValidDataInputDataString = cgenerateRandomSpecialCharacterCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomSpecialCharacterCodeByLength_inValidDataInputMetaDataString = cgenerateRandomSpecialCharacterCodeByLength + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomSpecialCharacterCodeByLength_inValidInputDataInteger = cgenerateRandomSpecialCharacterCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean = cgenerateRandomSpecialCharacterCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomSpecialCharacterCodeByLength_inValidInputMetaDataInteger = cgenerateRandomSpecialCharacterCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean = cgenerateRandomSpecialCharacterCodeByLength + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+
+export const cgenerateValidEmail_validDataString = cgenerateValidEmail + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateValidEmail_inValidDataInputDataString = cgenerateValidEmail + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateValidEmail_inValidDataInputMetaDataString = cgenerateValidEmail + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateValidEmail_inValidInputDataInteger = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateValidEmail_inValidInputDataBoolean = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateValidEmail_inValidInputMetaDataInteger = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateValidEmail_inValidInputMetaDataBoolean = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cgenerateValidEmail_inValidInputDataUndefined = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cgenerateValidEmail_inValidInputDataNaN = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cgenerateValidEmail_inValidInputMetaDataUndefined = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cgenerateValidEmail_inValidInputMetaDataNaN = cgenerateValidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cgenerateInvalidEmail_validDataString = cgenerateInvalidEmail + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateInvalidEmail_inValidDataInputDataString = cgenerateInvalidEmail + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateInvalidEmail_inValidDataInputMetaDataString = cgenerateInvalidEmail + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateInvalidEmail_inValidInputDataInteger = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateInvalidEmail_inValidInputDataBoolean = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateInvalidEmail_inValidInputMetaDataInteger = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateInvalidEmail_inValidInputMetaDataBoolean = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cgenerateInvalidEmail_inValidInputDataUndefined = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cgenerateInvalidEmail_inValidInputDataNaN = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cgenerateInvalidEmail_inValidInputMetaDataUndefined = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cgenerateInvalidEmail_inValidInputMetaDataNaN = cgenerateInvalidEmail + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cgenerateRandomBrightColor_validDataString = cgenerateRandomBrightColor + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomBrightColor_validDataInteger = cgenerateRandomBrightColor + wrd.cvalid + wrd.cData + wrd.cInteger;
+export const cgenerateRandomBrightColor_validDataStringInteger = cgenerateRandomBrightColor + wrd.cvalid + wrd.cData + wrd.cString + wrd.cInteger;
+export const cgenerateRandomBrightColor_validDataIntegerString = cgenerateRandomBrightColor + wrd.cvalid + wrd.cData + wrd.cInteger + wrd.cString;
+export const cgenerateRandomBrightColor_inValidDataInputDataString = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomBrightColor_inValidDataInputMetaDataString = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomBrightColor_inValidInputDataInteger = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomBrightColor_inValidInputDataBoolean = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomBrightColor_inValidInputMetaDataInteger = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomBrightColor_inValidInputMetaDataBoolean = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomBrightColor_inValidInputDataUndefined = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cgenerateRandomBrightColor_inValidInputDataNaN = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cgenerateRandomBrightColor_inValidInputMetaDataUndefined = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cgenerateRandomBrightColor_inValidInputMetaDataNaN = cgenerateRandomBrightColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cgenerateRandomDarkColor_validDataString = cgenerateRandomDarkColor + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomDarkColor_validDataInteger = cgenerateRandomDarkColor + wrd.cvalid + wrd.cData + wrd.cInteger;
+export const cgenerateRandomDarkColor_validDataStringInteger = cgenerateRandomDarkColor + wrd.cvalid + wrd.cData + wrd.cString + wrd.cInteger;
+export const cgenerateRandomDarkColor_validDataIntegerString = cgenerateRandomDarkColor + wrd.cvalid + wrd.cData + wrd.cInteger + wrd.cString;
+export const cgenerateRandomDarkColor_inValidDataInputDataString = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomDarkColor_inValidDataInputMetaDataString = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomDarkColor_inValidInputDataInteger = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomDarkColor_inValidInputDataBoolean = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomDarkColor_inValidInputMetaDataInteger = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomDarkColor_inValidInputMetaDataBoolean = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomDarkColor_inValidInputDataUndefined = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cgenerateRandomDarkColor_inValidInputDataNaN = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cgenerateRandomDarkColor_inValidInputMetaDataUndefined = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cgenerateRandomDarkColor_inValidInputMetaDataNaN = cgenerateRandomDarkColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const cgenerateRandomColor_validDataString = cgenerateRandomColor + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgenerateRandomColor_validDataInteger = cgenerateRandomColor + wrd.cvalid + wrd.cData + wrd.cInteger;
+export const cgenerateRandomColor_validDataStringInteger = cgenerateRandomColor + wrd.cvalid + wrd.cData + wrd.cString + wrd.cInteger;
+export const cgenerateRandomColor_validDataIntegerString = cgenerateRandomColor + wrd.cvalid + wrd.cData + wrd.cInteger + wrd.cString;
+export const cgenerateRandomColor_inValidDataInputDataString = cgenerateRandomColor + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cgenerateRandomColor_inValidDataInputMetaDataString = cgenerateRandomColor + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cgenerateRandomColor_inValidInputDataInteger = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cgenerateRandomColor_inValidInputDataBoolean = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomColor_inValidInputMetaDataInteger = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cgenerateRandomColor_inValidInputMetaDataBoolean = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cgenerateRandomColor_inValidInputDataUndefined = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+export const cgenerateRandomColor_inValidInputDataNaN = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cgenerateRandomColor_inValidInputMetaDataUndefined = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
+export const cgenerateRandomColor_inValidInputMetaDataNaN = cgenerateRandomColor + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+

@@ -530,15 +530,37 @@ describe(tst_con.cgetRule, () => {
  * @date 2023/05/06
  */
 describe(tst_con.cprocessRulesInternal, () => {
-    /**
-     * @function processRulesInternal_validDataString
-     * @description Tests the business rules function processRulesInternal with a valid input.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_validDataString, () => {
+  /**
+   * @function processRulesInternal_validDataString
+   * @description Tests the business rules function processRulesInternal with a valid input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_validDataString, () => {
+    // Arrange
+    let inputData = [biz.creplaceCharacterWithCharacter];
+    let inputMetaData = "";
+
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = ruleParsing.processRulesInternal(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
+  });
+
+  /**
+   * @function processRulesInternal_inValidDataInputDataString
+   * @description Tests the business rules function processRulesInternal with invalid string input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = [biz.creplaceCharacterWithCharacter];
+      let inputData = "dfxg24346dfg";
       let inputMetaData = "";
   
       // Act
@@ -549,151 +571,19 @@ describe(tst_con.cprocessRulesInternal, () => {
       );
   
       // Assert
-      expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
-    });
+      expect(returnData).toBe("d");
+  });
 
-    /**
-     * @function processRulesInternal_inValidDataInputDataString
-     * @description Tests the business rules function processRulesInternal with invalid string input.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = ruleParsing.processRulesInternal(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe("d");
-    });
-
-    /**
-     * @function processRulesInternal_inValidDataInputDataString
-     * @description Tests the business rules function processRulesInternal with invalid string input.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = biz.creplaceCharacterWithCharacter;
-        let inputMetaData = "dfxg24346dfg";
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = ruleParsing.processRulesInternal(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe("r");
-    });
-
-    /**
-     * @function processRulesInternal_inValidInputDataInteger
-     * @description Tests the business rules function processRulesInternal with invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1,2,3,4,5];
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = ruleParsing.processRulesInternal(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe();
-    });
-
-    /**
-     * @function processRulesInternal_inValidInputDataBoolean
-     * @description Tests the business rules function processRulesInternal with invalid boolean input.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = [1,2,3,4,5];
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = ruleParsing.processRulesInternal(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe();
-    });
-
-    /**
-     * @function processRulesInternal_inValidInputMetaDataInteger
-     * @description Tests the business rules function processRulesInternal with invalid integer inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidInputMetaDataInteger, () => {
-        // Arrange
-        let inputData = [1,2,3,4,5];
-        let inputMetaData = 4567;
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = ruleParsing.processRulesInternal(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(1);
-    });
-
-    /**
-     * @function processRulesInternal_inValidInputMetaDataBoolean
-     * @description Tests the business rules function processRulesInternal with invalid boolean inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidInputMetaDataBoolean, () => {
-        // Arrange
-        let inputData = [1,2,3,4,5];
-        let inputMetaData = false;
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = ruleParsing.processRulesInternal(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(1);
-    });
-
-    /**
-     * @function processRulesInternal_inValidInputMetaDataUndefined
-     * @description Tests the business rules function processRulesInternal with invalid undefined inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidInputMetaDataUndefined, () => {
+  /**
+   * @function processRulesInternal_inValidDataInputDataString
+   * @description Tests the business rules function processRulesInternal with invalid string input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = [biz.creplaceCharacterWithCharacter];
-      let inputMetaData = undefined;
+      let inputData = biz.creplaceCharacterWithCharacter;
+      let inputMetaData = "dfxg24346dfg";
   
       // Act
       rulesLibrary.initRulesLibrary();
@@ -703,19 +593,19 @@ describe(tst_con.cprocessRulesInternal, () => {
       );
   
       // Assert
-      expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
-    });
+      expect(returnData).toBe("r");
+  });
 
-    /**
-     * @function processRulesInternal_inValidInputMetaDataNaN
-     * @description Tests the business rules function processRulesInternal with invalid NaN inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprocessRulesInternal_inValidInputMetaDataNaN, () => {
+  /**
+   * @function processRulesInternal_inValidInputDataInteger
+   * @description Tests the business rules function processRulesInternal with invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputDataInteger, () => {
       // Arrange
-      let inputData = [biz.creplaceCharacterWithCharacter];
-      let inputMetaData = NaN;
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
   
       // Act
       rulesLibrary.initRulesLibrary();
@@ -725,6 +615,116 @@ describe(tst_con.cprocessRulesInternal, () => {
       );
   
       // Assert
-      expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
-    });
+      expect(returnData).toBe();
+  });
+
+  /**
+   * @function processRulesInternal_inValidInputDataBoolean
+   * @description Tests the business rules function processRulesInternal with invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+  
+      // Act
+      rulesLibrary.initRulesLibrary();
+      let returnData = ruleParsing.processRulesInternal(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe();
+  });
+
+  /**
+   * @function processRulesInternal_inValidInputMetaDataInteger
+   * @description Tests the business rules function processRulesInternal with invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+  
+      // Act
+      rulesLibrary.initRulesLibrary();
+      let returnData = ruleParsing.processRulesInternal(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(1);
+  });
+
+  /**
+   * @function processRulesInternal_inValidInputMetaDataBoolean
+   * @description Tests the business rules function processRulesInternal with invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputMetaDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+  
+      // Act
+      rulesLibrary.initRulesLibrary();
+      let returnData = ruleParsing.processRulesInternal(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(1);
+  });
+
+  /**
+   * @function processRulesInternal_inValidInputMetaDataUndefined
+   * @description Tests the business rules function processRulesInternal with invalid undefined inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputMetaDataUndefined, () => {
+    // Arrange
+    let inputData = [biz.creplaceCharacterWithCharacter];
+    let inputMetaData = undefined;
+
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = ruleParsing.processRulesInternal(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
+  });
+
+  /**
+   * @function processRulesInternal_inValidInputMetaDataNaN
+   * @description Tests the business rules function processRulesInternal with invalid NaN inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputMetaDataNaN, () => {
+    // Arrange
+    let inputData = [biz.creplaceCharacterWithCharacter];
+    let inputMetaData = NaN;
+
+    // Act
+    rulesLibrary.initRulesLibrary();
+    let returnData = ruleParsing.processRulesInternal(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
+  });
 });

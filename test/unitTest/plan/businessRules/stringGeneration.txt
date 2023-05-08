@@ -476,6 +476,8 @@ testName: generateRandomSpecialCharacterCodeByLength_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: array ([1,2,3,4,5])
 output: ?
+status: Failed
+error: TypeError: inputData.substring is not a function
 
 testName: generateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -486,6 +488,8 @@ testName: generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataInteger
 input inputData: array ([1,2,3,4,5])
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'toString')
 
 testName: generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean
 input inputData: array ([1,2,3,4,5])
