@@ -21,6 +21,8 @@ testName: parseSystemRootPath_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: string (The name of the application)
 output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
 
 testName: parseSystemRootPath_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -31,6 +33,8 @@ testName: parseSystemRootPath_inValidInputMetaDataInteger
 input inputData: string (The root path as defined by calling path.resolve(__dirname))
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: inputMetaData.includes is not a function
 
 testName: parseSystemRootPath_inValidInputMetaDataBoolean
 input inputData: string (The root path as defined by calling path.resolve(__dirname))
@@ -76,6 +80,8 @@ testName: stringToDataType_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: string (Not used for this business rule)
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: stringToDataType_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -131,6 +137,8 @@ testName: stringToBoolean_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: stringToBoolean_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -186,6 +194,8 @@ testName: determineObjectDataType_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: determineObjectDataType_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -241,6 +251,8 @@ testName: isBoolean_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: isBoolean_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -296,6 +308,8 @@ testName: isInteger_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: isInteger_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -351,6 +365,8 @@ testName: isFloat_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: isFloat_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -406,6 +422,8 @@ testName: isString_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: isString_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -461,6 +479,8 @@ testName: replaceDoublePercentWithMessage_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.toLowerCase is not a function
 
 testName: replaceDoublePercentWithMessage_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -521,6 +541,8 @@ testName: 1aggregateCommandArguments_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
 
 testName: 1aggregateCommandArguments_inValidInputMetaDataInteger
 input inputData: 234string432
@@ -536,16 +558,22 @@ testName: 1aggregateCommandArguments_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: array<string,string> (An array of data that contains 2 additional string parameters) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'replaceAll')
 
 testName: 1aggregateCommandArguments_inValidInputDataNaN
 input inputData: NaN
 input inputMetaData: array<string,string> (An array of data that contains 2 additional string parameters) (inValidDataToStoreNaN)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'replaceAll')
 
 testName: 1aggregateCommandArguments_inValidInputMetaDataUndefined
 input inputData: string (A string that may or may not contain the specified characters that should be converted to another specified character) (inValidDataToStoreUndefined)
 input inputMetaData: undefined
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
 
 testName: 1aggregateCommandArguments_inValidInputMetaDataNaN
 input inputData: string (A string that may or may not contain the specified characters that should be converted to another specified character) (inValidDataToStoreNaN)

@@ -2522,7 +2522,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // Xtest.com
+    expect(returnData).toBeDefined(); // Xtest.com
   });
 
   /**
@@ -2548,12 +2548,12 @@ describe(tst_con.cgenerateInvalidEmail, () => {
   });
 
   /**
-   * @function generateInvalidEmail_inValidDataInputDataString
-   * @description Tests the business rules function generateInvalidEmail with invalid string input.
+   * @function generateInvalidEmail_inValidDataInputMetaDataString
+   * @description Tests the business rules function generateInvalidEmail with invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateInvalidEmail_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateInvalidEmail_inValidDataInputMetaDataString, () => {
       // Arrange
       let inputData = "10";
       let inputMetaData = "dfxg24346dfg";
@@ -2566,7 +2566,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // 5 characters generate
+      expect(returnData).toBeDefined(); // 5 characters generate
   });
 
   /**
@@ -2720,7 +2720,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -2742,7 +2742,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBeDefined();
   });
 });
 

@@ -21,6 +21,8 @@ testName: getNowMoment_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: format.match is not a function
 
 testName: getNowMoment_inValidInputDataBoolean
 input inputData: boolean (false)
@@ -116,56 +118,78 @@ testName: reformatDeltaTime_validDataString
 input inputData: string (A time interval measured in milliseconds)
 input inputMetaData: string (The formatting template that should be used to format the time interval)
 output: string (A time interval formatted according to the input format template string)
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (The formatting template that should be used to format the time interval) (testDataString)
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidDataInputMetaDataString
 input inputData: string (A time interval measured in milliseconds) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: 123string321
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputMetaDataInteger
 input inputData: 234string432
 input inputMetaData: integer (4567)
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputMetaDataBoolean
 input inputData: 234string432
 input inputMetaData: boolean (false)
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (The formatting template that should be used to format the time interval) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputDataNaN
 input inputData: NaN
 input inputMetaData: string (The formatting template that should be used to format the time interval) (inValidDataToStoreNaN)
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputMetaDataUndefined
 input inputData: string (A time interval measured in milliseconds) (inValidDataToStoreUndefined)
 input inputMetaData: undefined
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 
 testName: reformatDeltaTime_inValidInputMetaDataNaN
 input inputData: string (A time interval measured in milliseconds) (inValidDataToStoreNaN)
 input inputMetaData: NaN
 output: ?
+status: Failed
+error: TypeError: moment.duration(...).format is not a function
 --------------------------------------------------------------------------------
 testName: sleep_validDataString
 input inputData: string (The number of milliseconds that the system should sleep for)
