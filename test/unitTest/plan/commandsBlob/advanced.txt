@@ -54,6 +54,8 @@ testName: workflow_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '1')
 
 testName: workflow_inValidInputDataNaN
 input inputData: NaN
@@ -83,6 +85,8 @@ testName: businessRule_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'length')
 
 testName: businessRule_inValidInputDataNaN
 input inputData: NaN
@@ -147,6 +151,8 @@ testName: 1commandSequencer_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'length')
 
 testName: 1commandSequencer_inValidInputDataNaN
 input inputData: NaN

@@ -102,10 +102,10 @@ function changeConfigurationSetting(inputData, inputMetaData) {
     // ERROR: Invalid entry, please enter a valid configuration namespace to change,
     // and a value to assign to the configuration setting.
     errorMessage = msg.cchangeConfigurationSettingMessage01 + msg.cchangeConfigurationSettingMessage02;
-    console.log(errorMessage);
+    // console.log(errorMessage);
     returnData[1] = errorMessage;
     // EXAMPLE: changeConfigurationSetting debugSetting.businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode true
-    console.log(msg.cchangeConfigurationSettingMessage03);
+    // console.log(msg.cchangeConfigurationSettingMessage03);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);

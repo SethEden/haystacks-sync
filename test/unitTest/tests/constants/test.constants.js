@@ -267,6 +267,19 @@ export const ccomputeDeltaTime = wrd.ccompute + wrd.cDelta + wrd.cTime;
 export const creformatDeltaTime = wrd.creformat + wrd.cDelta + wrd.cTime;
 export const csleep = wrd.csleep;
 
+export const ccommandSequencer = wrd.ccommand + wrd.cSequencer;
+export const cworkflow = wrd.cworkflow;
+export const cbusinessRule = wrd.cbusiness + wrd.cRule;
+export const ccommandGenerator = wrd.ccommand + wrd.cGenerator;
+export const ccommandAliasGenerator = wrd.ccommand + wrd.cAlias + wrd.cGenerator;
+
+export const cchangeConfigurationSetting = wrd.cchange + wrd.cConfiguration + wrd.cSetting;
+export const cchangeDebugConfigurationTheme = wrd.cchange + wrd.cDebug + wrd.cConfiguration + wrd.cTheme;
+export const csaveConfiguration = wrd.csave + wrd.cConfiguration;
+export const clistConfigurationThemes = wrd.clist + wrd.cConfiguration + wrd.cThemes;
+
+export const cconvertColors = wrd.cconvert + wrd.cColors;
+
 // Test names
 export const cparseColorRangeInputs_validDataString = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cString;
 export const cparseColorRangeInputs_validDataInteger = cparseColorRangeInputs + wrd.cvalid + wrd.cData + wrd.cInteger;
@@ -1983,3 +1996,58 @@ export const csleep_inValidInputDataUndefined = csleep + wrd.cinvalid + wrd.cInp
 export const csleep_inValidInputDataNaN = csleep + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
 export const csleep_inValidInputMetaDataUndefined = csleep + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "Undefined";
 export const csleep_inValidInputMetaDataNaN = csleep + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + "NaN";
+
+export const ccommandSequencer_validDataString = ccommandSequencer + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccommandSequencer_inValidDataInputDataString = ccommandSequencer + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccommandSequencer_inValidInputDataInteger = ccommandSequencer + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccommandSequencer_inValidInputDataBoolean = ccommandSequencer + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccommandSequencer_inValidInputDataNaN = ccommandSequencer + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const ccommandSequencer_inValidInputDataUndefined = ccommandSequencer + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const cworkflow_validDataString = cworkflow + wrd.cvalid + wrd.cData + wrd.cString;
+export const cworkflow_inValidDataInputDataString = cworkflow + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cworkflow_inValidInputDataInteger = cworkflow + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cworkflow_inValidInputDataBoolean = cworkflow + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cworkflow_inValidInputDataNaN = cworkflow + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cworkflow_inValidInputDataUndefined = cworkflow + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const cbusinessRule_validDataString = cbusinessRule + wrd.cvalid + wrd.cData + wrd.cString;
+export const cbusinessRule_inValidDataInputDataString = cbusinessRule + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cbusinessRule_inValidInputDataInteger = cbusinessRule + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cbusinessRule_inValidInputDataBoolean = cbusinessRule + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cbusinessRule_inValidInputDataNaN = cbusinessRule + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cbusinessRule_inValidInputDataUndefined = cbusinessRule + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const ccommandGenerator_validDataString = ccommandGenerator + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccommandGenerator_inValidDataInputDataString = ccommandGenerator + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccommandGenerator_inValidInputDataInteger = ccommandGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccommandGenerator_inValidInputDataBoolean = ccommandGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccommandGenerator_inValidInputDataNaN = ccommandGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const ccommandGenerator_inValidInputDataUndefined = ccommandGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const ccommandAliasGenerator_validDataString = ccommandAliasGenerator + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccommandAliasGenerator_inValidDataInputDataString = ccommandAliasGenerator + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const ccommandAliasGenerator_inValidInputDataInteger = ccommandAliasGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const ccommandAliasGenerator_inValidInputDataBoolean = ccommandAliasGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const ccommandAliasGenerator_inValidInputDataNaN = ccommandAliasGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const ccommandAliasGenerator_inValidInputDataUndefined = ccommandAliasGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const cchangeConfigurationSetting_validDataString = cchangeConfigurationSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cchangeConfigurationSetting_inValidDataInputDataString = cchangeConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cchangeConfigurationSetting_inValidInputDataInteger = cchangeConfigurationSetting + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cchangeConfigurationSetting_inValidInputDataBoolean = cchangeConfigurationSetting + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cchangeConfigurationSetting_inValidInputDataNaN = cchangeConfigurationSetting + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cchangeConfigurationSetting_inValidInputDataUndefined = cchangeConfigurationSetting + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const cchangeDebugConfigurationTheme_validDataString = cchangeDebugConfigurationTheme + wrd.cvalid + wrd.cData + wrd.cString;
+export const cchangeDebugConfigurationTheme_inValidDataInputDataString = cchangeDebugConfigurationTheme + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cchangeDebugConfigurationTheme_inValidInputDataInteger = cchangeDebugConfigurationTheme + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cchangeDebugConfigurationTheme_inValidInputDataBoolean = cchangeDebugConfigurationTheme + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cchangeDebugConfigurationTheme_inValidInputDataNaN = cchangeDebugConfigurationTheme + wrd.cinvalid + wrd.cInput + wrd.cData + "NaN";
+export const cchangeDebugConfigurationTheme_inValidInputDataUndefined = cchangeDebugConfigurationTheme + wrd.cinvalid + wrd.cInput + wrd.cData + "Undefined";
+
+export const csaveConfiguration_validDataString = csaveConfiguration + wrd.cvalid + wrd.cData + wrd.cString;
+
+export const clistConfigurationThemes_validDataString = clistConfigurationThemes + wrd.cvalid + wrd.cData + wrd.cString;
+
+export const cconvertColors_validDataString = cconvertColors + wrd.cvalid + wrd.cData + wrd.cString;

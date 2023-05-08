@@ -141,7 +141,7 @@ function workflow(inputData, inputMetaData) {
     // was not found in either the system defined workflows, or client defined workflows.
     // Please enter a valid workflow name and try again.
     let errorMessage = msg.cworkflowMessage1 + workflowName + bas.cComa + msg.cworkflowMessage2 + msg.cworkflowMessage3;
-    console.log(errorMessage);
+    // console.log(errorMessage);
     returnData[1] = errorMessage;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
@@ -416,9 +416,9 @@ function commandAliasGenerator(inputData, inputMetaData) {
   let validCommandInput = false;
   let commandAliasDataStructure = {};
   // Command can be called by passing parameters and bypass the prompt system.
-  console.log(msg.ccommandAliasGeneratorMessage1);
+  // console.log(msg.ccommandAliasGeneratorMessage1);
   // EXAMPLE: {"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}
-  console.log(msg.ccommandAliasGeneratorMessage2);
+  // console.log(msg.ccommandAliasGeneratorMessage2);
 
   if (inputData.length === 0) {
     while (validCommandName === false) {
@@ -478,10 +478,10 @@ function commandAliasGenerator(inputData, inputMetaData) {
     }
   } else {
     // INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.
-    console.log(msg.ccommandAliasGeneratorMessage5);
+    // console.log(msg.ccommandAliasGeneratorMessage5);
     returnData[1] = msg.ccommandAliasGeneratorMessage5;
     // EXAMPLE: {"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}
-    console.log(msg.ccommandAliasGeneratorMessage2);
+    // console.log(msg.ccommandAliasGeneratorMessage2);
   }
 
   if (validCommandInput === true) {
