@@ -93,7 +93,7 @@ function commandSequencer(inputData, inputMetaData) {
     } else { // End-if (currentCommand !== false)
       // WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. <commandString>
       let errorMessage = msg.ccommandSequencerMessage1 + msg.ccommandSequencerMessage2 + bas.cSpace + commandString;
-      console.log(errorMessage);
+      // console.log(errorMessage);
       returnData[1] = errorMessage;
       commandSuccess = false;
     }
@@ -376,7 +376,7 @@ function commandGenerator(inputData, inputMetaData) {
     // WARNING: advanced.commandGenerator: The specified command:
     // was not found, please enter a valid command and try again.
     errorMessage = msg.ccommandGeneratorMessage5 + commandString + msg.ccommandGeneratorMessage6;
-    console.log(errorMessage);
+    // console.log(errorMessage);
     returnData[1] = errorMessage;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><CommandWorkflows>
+  <businessRules>
+    <arrayParsing>
+      <wordArrayParsing>
+        <Workflow Name="workflow" Description="Loads the specified workflow, calls the command sequencer to get each commands enqueued." Aliases="WorkF,WorkFl,WorkFlo,WorkFlow,WrkF,WrkFl,WrkFlo,WrkFlow,WF,WFl,WFlo"/>
+        <Workflow Name="TestCommandSequenceALL" Value="cmdSeq wrkflo,TestCommandSequence1 wrkflo,TestCommandSequence2  wrkflo,TestCommandSequence3 wrkflo,TestCommandSequence4 wrkflo,TestCommandSequence5"/>
+      </wordArrayParsing>
+    </arrayParsing>
+  </businessRules>
+</CommandWorkflows>

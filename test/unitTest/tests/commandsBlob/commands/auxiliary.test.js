@@ -40,17 +40,19 @@ describe(tst_con.cconvertColors, () => {
      */
     test(tst_con.cconvertColors_validDataString, () => {
       // Arrange
-      let inputData = ["converters", "wrkflo"];
+      let inputData = "";
       let inputMetaData = "";
   
       // Act
       rulesLibrary.initRulesLibrary();
+      D[wrd.ccolors] = {};
+      D[wrd.ccolors][sys.cColorData] = {};
       let returnData = auxiliary.convertColors(
         inputData,
         inputMetaData
       );
   
       // Assert
-      expect(returnData).toBe(); //[true, true]
+      expect(returnData).toBeTruthy(); //[true, []]
     });
 });

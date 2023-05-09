@@ -25,6 +25,8 @@ testName: commandSequencer_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '1')
 
 testName: commandSequencer_inValidInputDataNaN
 input inputData: NaN
@@ -122,6 +124,8 @@ testName: commandGenerator_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'length')
 
 testName: commandGenerator_inValidInputDataNaN
 input inputData: NaN

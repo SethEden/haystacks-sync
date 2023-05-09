@@ -135,7 +135,7 @@ function getValidCommand(commandString, commandDelimiter) {
     // Looks like the user entered something undefined: Pop the standard error message:
     // WARNING: The specified command:
     // does not exist, please try again!
-    console.log(msg.cWarningTheSpecifiedCommand + commandToExecute + msg.cdoesNotExistPleaseTryAgain);
+    // console.log(msg.cWarningTheSpecifiedCommand + commandToExecute + msg.cdoesNotExistPleaseTryAgain);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
