@@ -15,7 +15,13 @@ import * as tst_con from '../../tests/constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 const { bas, num, sys, wrd } = hayConst;
 
-// Objects name
+/**
+ * @file testData/brokers/themeBroker.js
+ * @function themePath
+ * @author Json Howard
+ * @date 2023/04/19
+ * @copyright Copyright © 2023-… by Json Howard. All rights reserved
+ */
 export const themePath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings;

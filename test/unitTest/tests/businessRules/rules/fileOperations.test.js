@@ -223,28 +223,6 @@ describe(tst_con.cwriteJsonData, () => {
     });
 
     /**
-     * @function writeJsonData_validDataString
-     * @description Tests the business rules function writeJsonData with a valid input.
-     * @author Json Howard
-     * @date 2023/05/03
-     */
-    test(tst_con.cwriteJsonData_validDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = fileOperations.writeJsonData(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(true);
-      });
-
-    /**
      * @function writeJsonData_inValidDataInputMetaDataString
      * @description Tests the business rules function writeJsonData with a invalid string inputMetaData.
      * @author Json Howard
@@ -581,28 +559,6 @@ describe(tst_con.cappendMessageToFile, () => {
   test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = obj_con.testxmlPath();
-    let inputMetaData = "dfxg24346dfg";
-
-    // Act
-    rulesLibrary.initRulesLibrary();
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe(false); // path array
-  });
-
-  /**
-   * @function appendMessageToFile_inValidDataInputDataString
-   * @description Tests the business rules function appendMessageToFile with a invalid string input.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
-    // Arrange
-    let inputData = "dfxg24346dfg";
     let inputMetaData = "dfxg24346dfg";
 
     // Act

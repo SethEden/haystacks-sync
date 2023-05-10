@@ -14,6 +14,13 @@ import * as tst_con from '../../../tests/constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 const { bas, num, sys, wrd } = hayConst;
 
+/**
+ * @file advanced.js
+ * @function workflowPath
+ * @author Json Howard
+ * @date 2023/05/09
+ * @copyright Copyright © 2023-… by Json Howard. All rights reserved
+ */
 export const workflowPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cworkflows + bas.cForwardSlash + wrd.carray + wrd.cParsing;

@@ -14,6 +14,13 @@ import * as tst_con from '../../../tests/constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 const { bas, num, sys, wrd } = hayConst;
 
+/**
+ * @file stringParsingUtilities.js
+ * @function basePath
+ * @author Json Howard
+ * @date 2023/05/08
+ * @copyright Copyright © 2023-… by Json Howard. All rights reserved
+ */
 export const basePath = () => {
     let baseUrl = tst_con.basePath();
     return baseUrl;

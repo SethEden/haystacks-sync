@@ -20,6 +20,7 @@ import configurator from "../../../../../src/executrix/configurator.js";
 import D from "../../../../../src/structures/data.js";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
 import * as tst_con from '../../constants/test.constants.js';
+import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -327,9 +328,11 @@ describe(tst_con.csaveConfiguration, () => {
       // Arrange
       let inputData = ["TestCommandSequenceALL", "wrkflo"];
       let inputMetaData = "";
+      let testPath = obj_con.testConfigPath();
   
       // Act
       rulesLibrary.initRulesLibrary();
+      configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
       let returnData = configuration.saveConfiguration(
         inputData,
         inputMetaData
