@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file dataArrayParsing.test.js
  * @module dataArrayParsing.test
@@ -17,7 +17,6 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 // Internal imports
 import dataArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/dataArrayParsing.js";
 import D from "../../../../../../src/structures/data.js";
-import commandsLibrary from "../../../../../../src/commandsBlob/commandsLibrary.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
 
 import * as tst_con from '../../../constants/test.constants.js';
@@ -25,13 +24,9 @@ import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/
 
 // External imports
 import hayConst from '@haystacks/constants';
-import path from 'path';
-import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num, biz, cfg, cmd } = hayConst;
-const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
-// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
-// const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
+const { sys, wrd } = hayConst;
 
 /**
  * @function arraysAreEqual

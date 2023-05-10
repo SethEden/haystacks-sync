@@ -11,16 +11,16 @@
 // External imports
 import hayConst from '@haystacks/constants';
 import * as tst_con from '../../../../tests/constants/test.constants.js';
-const { bas, num, sys, wrd } = hayConst;
+const { bas, wrd } = hayConst;
 
 /**
  * @file pathArrayParsing.js
- * @function StringPathsArray_01
+ * @function stringPathsArray_01
  * @author Json Howard
  * @date 2023/04/20
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
-export const StringPathsArray_01 = () => {
+export const stringPathsArray_01 = () => {
     let urlArray = [
         tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cbrokers + bas.cForwardSlash + wrd.ccommand + wrd.cBroker + bas.cDot + 'js',
         tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings + bas.cDot + 'json',
@@ -30,23 +30,23 @@ export const StringPathsArray_01 = () => {
 
 /**
  * @file pathArrayParsing.js
- * @function StringPath_01
+ * @function stringPath_01
  * @author Json Howard
  * @date 2023/04/20
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
-export const StringPath_01 = () => {
+export const stringPath_01 = () => {
     return tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings + bas.cDot + 'json';
 };
 
 /**
  * @file pathArrayParsing.js
- * @function StringPath_02
+ * @function stringPath_02
  * @author Json Howard
  * @date 2023/04/20
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
-export const StringPath_02 = () => {
+export const stringPath_02 = () => {
     return tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings;
 };
 

@@ -12,7 +12,7 @@ import * as tst_con from '../../tests/constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-const { bas, num, sys, wrd } = hayConst;
+const { bas, sys, wrd } = hayConst;
 
 // Objects name
 export const JsonObjectArrayOfStrings_01 = { 'data': ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/test.csv'] };
@@ -20,12 +20,12 @@ export const JsonObjectOfStrings_02 = { "constants": "c,const", "Generator": "g,
 
 /**
  * @file testData/brokers/dataBroker.js
- * @function JsonObjectOfStrings_03
+ * @function jsonObjectOfStrings_03
  * @author Json Howard
  * @date 2023/04/17
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
-export const JsonObjectOfStrings_03 = () => {
+export const jsonObjectOfStrings_03 = () => {
     let obj = {};
     obj[sys.cConstantsValidationData] = [JsonObjectOfStrings_02, JsonObjectArrayOfStrings_01];
     return obj;
@@ -98,12 +98,12 @@ export const jsonPath = () => {
 
 /**
  * @file testData/brokers/dataBroker.js
- * @function writeJsonDatapath
+ * @function writeJsonDataPath
  * @author Json Howard
  * @date 2023/04/17
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
-export const writeJsonDatapath = () => {
+export const writeJsonDataPath = () => {
     let baseUrl = tst_con.basePath();
     let urlArray = baseUrl.split('/');
     let resUrl = '';

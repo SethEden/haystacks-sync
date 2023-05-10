@@ -1,5 +1,5 @@
 "use strict";
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file fileOperations.test.js
  * @module fileOperations.test
@@ -17,29 +17,19 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 // Internal imports
 import fileOperations from "../../../../../src/businessRules/rules/fileOperations";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import dataBroker from "../../../../../src/brokers/dataBroker.js";
-import D from "../../../../../src/structures/data.js";
 
 import * as tst_con from "../../constants/test.constants.js";
 import * as obj_con from '../../../testData/businessRules/rules/fileOperations.js';
 
 // External imports
 import hayConst from "@haystacks/constants";
-import path from "path";
 import {
-  beforeAll,
-  beforeEach,
   describe,
   expect,
-  jest,
   test,
 } from "@jest/globals";
 
-const { bas, msg, sys, wrd, num, biz, cfg, cmd } = hayConst;
-const baseFileName = path.basename(
-  import.meta.url,
-  path.extname(import.meta.url)
-);
+const { bas, wrd } = hayConst;
 
 /**
  * @function getXmlData
@@ -485,7 +475,7 @@ describe(tst_con.ccopyFileSync, () => {
    */
   test(tst_con.ccopyFileSync_validDataString, () => {
     // Arrange
-    let inputData = [obj_con.xmlPath(), obj_con.testxmlPath()];
+    let inputData = [obj_con.xmlPath(), obj_con.testXmlPath()];
     let inputMetaData = [["*.*"], ["*.*"]];
 
     // Act
@@ -507,7 +497,7 @@ describe(tst_con.ccopyFileSync, () => {
    */
   test(tst_con.ccopyFileSync_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = [obj_con.xmlPath(), obj_con.testxmlPath()];
+    let inputData = [obj_con.xmlPath(), obj_con.testXmlPath()];
     let inputMetaData = "dfxg24346dfg";
 
     // Act
@@ -536,7 +526,7 @@ describe(tst_con.cappendMessageToFile, () => {
    */
   test(tst_con.cappendMessageToFile_validDataString, () => {
     // Arrange
-    let inputData = obj_con.testxmlPath();
+    let inputData = obj_con.testXmlPath();
     let inputMetaData = wrd.cHello;
 
     // Act
@@ -558,7 +548,7 @@ describe(tst_con.cappendMessageToFile, () => {
    */
   test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.testxmlPath();
+    let inputData = obj_con.testXmlPath();
     let inputMetaData = "dfxg24346dfg";
 
     // Act

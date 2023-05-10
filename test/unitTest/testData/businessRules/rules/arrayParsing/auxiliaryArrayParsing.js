@@ -8,10 +8,6 @@
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 
-// External imports
-import hayConst from '@haystacks/constants';
-const { bas, num, sys, wrd } = hayConst;
-
 // Objects name
 export const JsonObjectArrayOfStrings_01 = [
     [

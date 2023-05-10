@@ -10,10 +10,6 @@
 // Internal imports
 import * as tst_con from '../../../tests/constants/test.constants.js';
 
-// External imports
-import hayConst from '@haystacks/constants';
-const { bas, num, sys, wrd } = hayConst;
-
 /**
  * @file stringParsingUtilities.js
  * @function basePath

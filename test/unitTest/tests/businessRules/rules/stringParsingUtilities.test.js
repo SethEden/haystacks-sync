@@ -1,5 +1,5 @@
 "use strict";
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file stringParsingUtilities.test.js
  * @module stringParsingUtilities.test
@@ -17,29 +17,19 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 // Internal imports
 import stringParsingUtilities from "../../../../../src/businessRules/rules/stringParsingUtilities";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import dataBroker from "../../../../../src/brokers/dataBroker.js";
-import D from "../../../../../src/structures/data.js";
 
 import * as tst_con from "../../constants/test.constants.js";
 import * as obj_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
 
 // External imports
 import hayConst from "@haystacks/constants";
-import path from "path";
 import {
-  beforeAll,
-  beforeEach,
   describe,
   expect,
-  jest,
   test,
 } from "@jest/globals";
 
-const { bas, msg, sys, wrd, num, biz, cfg, cmd } = hayConst;
-const baseFileName = path.basename(
-  import.meta.url,
-  path.extname(import.meta.url)
-);
+const { wrd } = hayConst;
 
 /**
  * @function parseSystemRootPath

@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file configuration.test.js
  * @module configuration.test
@@ -17,16 +17,15 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 // Internal imports
 import configuration from "../../../../../src/commandsBlob/commands/configuration";
 import configurator from "../../../../../src/executrix/configurator.js";
-import D from "../../../../../src/structures/data.js";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
 import * as tst_con from '../../constants/test.constants.js';
 import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num, cfg } = hayConst;
+const { wrd, cfg } = hayConst;
 
 /**
  * @function changeConfigurationSetting

@@ -8,10 +8,6 @@
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 
-// External imports
-import hayConst from '@haystacks/constants';
-const { bas, num, sys, wrd } = hayConst;
-
 // Objects name
 export const IntegerArray_01 = [3, 3, 2];
 export const IntegerArray_02 = [0, [3, 2, 2]];

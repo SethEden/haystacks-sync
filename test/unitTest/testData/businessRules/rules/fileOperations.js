@@ -12,7 +12,7 @@ import * as tst_con from '../../../tests/constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-const { bas, num, sys, wrd } = hayConst;
+const { bas, wrd } = hayConst;
 
 /**
  * @file fileOpertions.js
@@ -29,12 +29,12 @@ export const xmlPath = () => {
 
 /**
  * @file fileOpertions.js
- * @function testxmlPath
+ * @function testXmlPath
  * @author Json Howard
  * @date 2023/05/03
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
-export const testxmlPath = () => {
+export const testXmlPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "xml";
     return baseUrl;

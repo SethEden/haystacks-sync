@@ -10,8 +10,7 @@
 
 // External imports
 import hayConst from '@haystacks/constants';
-import * as tst_con from '../../../../tests/constants/test.constants.js';
-const { bas, num, sys, wrd } = hayConst;
+const { wrd } = hayConst;
 
 //Object names
 export const StringsArray_01 = [wrd.cHello, wrd.cWorld, wrd.cHello, wrd.cWorld];

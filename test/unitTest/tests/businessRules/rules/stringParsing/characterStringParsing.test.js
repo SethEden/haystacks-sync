@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file characterStringParsing.test.js
  * @module characterStringParsing.test
@@ -22,13 +22,9 @@ import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import path from 'path';
-import { beforeAll, beforeEach, describe, expect, jest, test } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num, biz, cfg, cmd } = hayConst;
-const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
-// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
-// const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
+const { bas, wrd, num } = hayConst;
 
 /**
  * @function singleQuoteSwapAfterEquals

@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file pathArrayParsing.test.js
  * @module pathArrayParsing.test
@@ -23,13 +23,9 @@ import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/
 
 // External imports
 import hayConst from '@haystacks/constants';
-import path from 'path';
-import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num, biz, cfg, cmd } = hayConst;
-const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
-// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
-// const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
+const { wrd, num } = hayConst;
 
 /**
  * @function doesArrayContainFilename
@@ -45,8 +41,8 @@ describe(tst_con.cdoesArrayContainFilename, () => {
     */
     test(tst_con.cdoesArrayContainFilename_validDataString, () => {
         // Arrange
-        let inputData = obj_con.StringPathsArray_01();
-        let inputMetaData = obj_con.StringPath_01();
+        let inputData = obj_con.stringPathsArray_01();
+        let inputMetaData = obj_con.stringPath_01();
 
         // Act
         rulesLibrary.initRulesLibrary();
@@ -64,8 +60,8 @@ describe(tst_con.cdoesArrayContainFilename, () => {
     */
     test(tst_con.cdoesArrayContainFilename_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = obj_con.StringPath_01();
-        let inputMetaData = obj_con.StringPath_01();
+        let inputData = obj_con.stringPath_01();
+        let inputMetaData = obj_con.stringPath_01();
 
         // Act
         rulesLibrary.initRulesLibrary();
@@ -83,7 +79,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
     */
     test(tst_con.cdoesArrayContainFilename_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = obj_con.StringPathsArray_01();
+        let inputData = obj_con.stringPathsArray_01();
         let inputMetaData = wrd.cHello;
 
         // Act
@@ -223,7 +219,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     */
     test(tst_con.cgetFileAndPathListForPath_validDataString, () => {
         // Arrange
-        let inputData = obj_con.StringPath_02();
+        let inputData = obj_con.stringPath_02();
         let inputMetaData = 3;
 
         // Act
@@ -241,7 +237,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     */
     test(tst_con.cgetFileAndPathListForPath_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = obj_con.StringPath_02() + num.c123;
+        let inputData = obj_con.stringPath_02() + num.c123;
         let inputMetaData = 3;
 
         // Act
@@ -259,7 +255,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     */
     test(tst_con.cgetFileAndPathListForPath_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = obj_con.StringPath_02();
+        let inputData = obj_con.stringPath_02();
         let inputMetaData = wrd.cHello;
 
         // Act
@@ -331,7 +327,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     */
     test(tst_con.cgetFileAndPathListForPath_inValidInputMetaDataUndefined, () => {
         // Arrange
-        let inputData = obj_con.StringPath_02();
+        let inputData = obj_con.stringPath_02();
         let inputMetaData = undefined;
 
         // Act
@@ -349,7 +345,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     */
     test(tst_con.cgetFileAndPathListForPath_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = obj_con.StringPath_02();
+        let inputData = obj_con.stringPath_02();
         let inputMetaData = NaN;
 
         // Act

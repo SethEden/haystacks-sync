@@ -13,8 +13,7 @@ import * as tst_con from '../../tests/constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 
-import path from 'path';
-const { bas, num, sys, wrd } = hayConst;
+const { bas, wrd } = hayConst;
 
 /**
  * @file testData/brokers/workflowBroker.js

@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file advanced.test.js
  * @module advanced.test
@@ -16,20 +16,17 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
 
 // Internal imports
 import advanced from "../../../../../src/commandsBlob/commands/advanced";
-import dataDirectorate from "../../../../../src/commandsBlob/commands/dataDirectorate";
 import D from "../../../../../src/structures/data.js";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
 import commandsLibrary from "../../../../../src/commandsBlob/commandsLibrary";
 import configurator from "../../../../../src/executrix/configurator.js";
-import chiefWorkflow from "../../../../../src/controllers/chiefWorkflow.js";
 import * as tst_con from '../../constants/test.constants.js';
-import * as obj_con from '../../../testData/commandsBlob/commands/advanced';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num, cfg, cmd } = hayConst;
+const { bas, sys, wrd, cfg, cmd } = hayConst;
 
 /**
  * @function commandSequencer

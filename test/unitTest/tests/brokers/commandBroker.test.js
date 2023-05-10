@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file commandBroker.test.js
  * @module commandBroker.test
@@ -13,7 +13,6 @@ import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from
  * @date 2023/04/13
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
-
 // Internal imports
 import commandBroker from "../../../../src/brokers/commandBroker.js";
 import D from "../../../../src/structures/data.js";
@@ -22,9 +21,9 @@ import * as obj_con from '../../testData/brokers/commandBroker.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num } = hayConst;
+const { bas, wrd, num } = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;

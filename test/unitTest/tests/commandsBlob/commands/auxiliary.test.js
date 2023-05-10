@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file auxiliary.test.js
  * @module auxiliary.test
@@ -22,9 +22,9 @@ import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num } = hayConst;
+const { sys, wrd } = hayConst;
 
 /**
  * @function convertColors

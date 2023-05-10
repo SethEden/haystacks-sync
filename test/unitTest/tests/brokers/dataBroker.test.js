@@ -1,5 +1,5 @@
 'use strict';
-import { crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter } from "@haystacks/constants/src/constants/business.constants.js";
+/* eslint-disable no-undef */
 /**
  * @file dataBroker.test.js
  * @module dataBroker.test
@@ -23,9 +23,9 @@ import * as obj_con from '../../testData/brokers/dataBroker.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { beforeAll, beforeEach, describe, expect, jest } from '@jest/globals';
+import { describe, expect } from '@jest/globals';
 
-const { bas, msg, sys, wrd, num } = hayConst;
+const { sys, wrd, num } = hayConst;
 // const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.auxiliaryArrayParsing.
 // const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -458,7 +458,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     */
     test(tst_con.cwriteJsonDataToFile_validData, () => {
         // Arrange
-        let fileToSaveTo = obj_con.writeJsonDatapath();
+        let fileToSaveTo = obj_con.writeJsonDataPath();
         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
 
         // Act
@@ -476,7 +476,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     */
     test(tst_con.cwriteJsonDataToFile_inValidDataToWrite, () => {
         // Arrange
-        let fileToSaveTo = obj_con.writeJsonDatapath();
+        let fileToSaveTo = obj_con.writeJsonDataPath();
         let dataToWriteOut = wrd.cComa;
 
         // Act
@@ -996,7 +996,7 @@ describe(tst_con.caddConstantsValidationData, () => {
     */
     test(tst_con.caddConstantsValidationData_validData, () => {
         // Arrange
-        let constantLibraryData = obj_con.JsonObjectOfStrings_03();
+        let constantLibraryData = obj_con.jsonObjectOfStrings_03();
 
         // Act
         dataBroker.addConstantsValidationData(constantLibraryData);
