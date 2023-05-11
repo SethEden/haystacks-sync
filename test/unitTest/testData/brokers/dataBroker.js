@@ -113,6 +113,6 @@ export const writeJsonDataPath = () => {
             break;
         resUrl += '/';
     }
-    resUrl += bas.cForwardSlash + wrd.ctest + bas.cDot + 'json';
+    resUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + 'json';
     return resUrl;
 }

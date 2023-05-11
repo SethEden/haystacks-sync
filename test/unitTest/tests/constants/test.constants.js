@@ -12,7 +12,13 @@
 import hayConst from '@haystacks/constants';
 const {bas, num, sys, wrd} = hayConst;
 
-// Path names
+/**
+ * @file test.constants.js
+ * @function basePath
+ * @author Seth Hollingsead
+ * @date 2023/04/06
+ * @copyright Copyright © 2023-… by Seth Hollingsead. All rights reserved
+ */
 export const basePath = () => {
     let url = import.meta.url;
     

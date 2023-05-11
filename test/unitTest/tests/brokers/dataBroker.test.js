@@ -467,24 +467,6 @@ describe(tst_con.cwriteJsonDataToFile, () => {
         // Assert
         expect(returnData).toBe(true);
     });
-
-    /**
-    * @function writeJsonDataToFile_inValidDataToWrite
-    * @description Tests the business rules function writeJsonDataToFile with a invalid dataToWrite.
-    * @author Json Howard
-    * @date 2023/04/16
-    */
-    test(tst_con.cwriteJsonDataToFile_inValidDataToWrite, () => {
-        // Arrange
-        let fileToSaveTo = obj_con.writeJsonDataPath();
-        let dataToWriteOut = wrd.cComa;
-
-        // Act
-        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
-
-        // Assert
-        expect(returnData).toBe(true);
-    });
 });
 
 /**

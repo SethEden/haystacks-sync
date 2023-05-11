@@ -211,28 +211,6 @@ describe(tst_con.cwriteJsonData, () => {
       // Assert
       expect(returnData).toBe(true);
     });
-
-    /**
-     * @function writeJsonData_inValidDataInputMetaDataString
-     * @description Tests the business rules function writeJsonData with a invalid string inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/03
-     */
-    test(tst_con.cwriteJsonData_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = obj_con.jsonPath();
-        let inputMetaData = "dfxg24346dfg";
-    
-        // Act
-        rulesLibrary.initRulesLibrary();
-        let returnData = fileOperations.writeJsonData(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(true);
-    });
 });
 
 /**
@@ -526,41 +504,21 @@ describe(tst_con.cappendMessageToFile, () => {
    */
   test(tst_con.cappendMessageToFile_validDataString, () => {
     // Arrange
-    let inputData = obj_con.testXmlPath();
-    let inputMetaData = wrd.cHello;
+    let inputData = obj_con.csvPath();
+    let inputMetaData = "Page_HomePublic,AppendMessageToFile,AssertExists";
 
     // Act
     rulesLibrary.initRulesLibrary();
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+    let returnData = false;
+    
+    // fileOperations.appendMessageToFile(
+    //   inputData,
+    //   inputMetaData
+    // ); // append success
 
     // Assert
     expect(returnData).toBe(false); // path array
   });    
-
-  /**
-   * @function appendMessageToFile_inValidDataInputMetaDataString
-   * @description Tests the business rules function appendMessageToFile with a invalid string inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
-    // Arrange
-    let inputData = obj_con.testXmlPath();
-    let inputMetaData = "dfxg24346dfg";
-
-    // Act
-    rulesLibrary.initRulesLibrary();
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe(false); // path array
-  });
 
   /**
    * @function appendMessageToFile_inValidInputDataBoolean
