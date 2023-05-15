@@ -5,10 +5,10 @@
  * @module characterGeneration.test
  * @description Unit tests for the characterGeneration.js
  * @requires module:characterGeneration
+ * @requires module:rulesLibrary
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/03
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,19 +17,15 @@
 // Internal imports
 import characterGeneration from "../../../../../src/businessRules/rules/characterGeneration";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-
 import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
-import {
-  describe,
-  expect,
-  test,
-} from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
 /**
  * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter
  * @description Tests the positive and negative test cases of the randomlyGenerateMixedCaseLetterOrSpecialCharacter
+ * @author Json Howard
  * @date 2023/05/03
  */
 describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {

@@ -5,10 +5,10 @@
  * @module wordStringParsing.test
  * @description Unit tests for the wordStringParsing.js
  * @requires module:wordStringParsing
+ * @requires module:rulesLibrary
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/02
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,22 +17,18 @@
 // Internal imports
 import wordStringParsing from "../../../../../../src/businessRules/rules/stringParsing/wordStringParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
-
 import * as tst_con from "../../../constants/test.constants.js";
 
 // External imports
 import hayConst from "@haystacks/constants";
-import {
-  describe,
-  expect,
-  test,
-} from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
 const { wrd } = hayConst;
 
 /**
  * @function isStringCamelCase
  * @description Tests the positive and negative test cases of the isStringCamelCase
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cisStringCamelCase, () => {

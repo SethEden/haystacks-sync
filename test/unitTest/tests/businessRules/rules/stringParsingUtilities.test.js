@@ -5,10 +5,11 @@
  * @module stringParsingUtilities.test
  * @description Unit tests for the stringParsingUtilities.js
  * @requires module:stringParsingUtilities
+ * @requires module:rulesLibrary
+ * @requires module:testData/stringParsingUtilities
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/06
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,23 +18,19 @@
 // Internal imports
 import stringParsingUtilities from "../../../../../src/businessRules/rules/stringParsingUtilities";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-
-import * as tst_con from "../../constants/test.constants.js";
 import * as obj_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
+import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
 import hayConst from "@haystacks/constants";
-import {
-  describe,
-  expect,
-  test,
-} from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
 const { wrd } = hayConst;
 
 /**
  * @function parseSystemRootPath
  * @description Tests the positive and negative test cases of the parseSystemRootPath
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cparseSystemRootPath, () => {

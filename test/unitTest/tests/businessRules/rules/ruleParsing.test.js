@@ -5,10 +5,10 @@
  * @module ruleParsing.test
  * @description Unit tests for the ruleParsing.js
  * @requires module:ruleParsing
+ * @requires module:rulesLibrary
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/06
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,22 +17,18 @@
 // Internal imports
 import ruleParsing from "../../../../../src/businessRules/rules/ruleParsing";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-
 import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
 import hayConst from "@haystacks/constants";
-import {
-  describe,
-  expect,
-  test,
-} from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
 const { biz } = hayConst;
 
 /**
  * @function doAllRulesExist
  * @description Tests the positive and negative test cases of the doAllRulesExist
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cdoAllRulesExist, () => {

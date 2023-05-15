@@ -5,10 +5,10 @@
  * @module commandStringParsing.test
  * @description Unit tests for the commandStringParsing.js
  * @requires module:commandStringParsing
+ * @requires module:rulesLibrary
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/04/25
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,7 +17,6 @@
 // Internal imports
 import commandStringParsing from "../../../../../../src/businessRules/rules/stringParsing/commandStringParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
-
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
@@ -29,6 +28,7 @@ const { bas, wrd, num } = hayConst;
 /**
  * @function cleanCommandInput
  * @description Tests the positive and negative test cases of the cleanCommandInput
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.ccleanCommandInput, () => {

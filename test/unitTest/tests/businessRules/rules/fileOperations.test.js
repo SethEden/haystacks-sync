@@ -5,10 +5,11 @@
  * @module fileOperations.test
  * @description Unit tests for the fileOperations.js
  * @requires module:fileOperations
+ * @requires module:rulesLibrary
+ * @requires module:testData/fileOperations
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/03
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,23 +18,19 @@
 // Internal imports
 import fileOperations from "../../../../../src/businessRules/rules/fileOperations";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-
-import * as tst_con from "../../constants/test.constants.js";
 import * as obj_con from '../../../testData/businessRules/rules/fileOperations.js';
+import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
 import hayConst from "@haystacks/constants";
-import {
-  describe,
-  expect,
-  test,
-} from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
 const { bas, wrd } = hayConst;
 
 /**
  * @function getXmlData
  * @description Tests the positive and negative test cases of the getXmlData
+ * @author Json Howard
  * @date 2023/05/03
  */
 describe(tst_con.cgetXmlData, () => {

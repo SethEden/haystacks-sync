@@ -4,22 +4,24 @@
  * @file constantArrayParsing.test.js
  * @module constantArrayParsing.test
  * @description Unit tests for the constantArrayParsing.js
+ * @requires module:dataBroker
  * @requires module:constantArrayParsing
+ * @requires module:rulesLibrary
+ * @requires module:testData/constantArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/04/19
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 
 // Internal imports
-import constantArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/constantArrayParsing.js";
 import dataBroker from "../../../../../../src/brokers/dataBroker.js";
+import constantArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/constantArrayParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
-import * as tst_con from '../../../constants/test.constants.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/constantArrayParsing.js';
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -30,6 +32,7 @@ const { wrd } = hayConst;
 /**
  * @function getLengthOfLongestStringInArray
  * @description Tests the positive and negative test cases of the getLengthOfLongestStringInArray
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cgetLengthOfLongestStringInArray, () => {

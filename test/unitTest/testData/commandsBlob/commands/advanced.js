@@ -2,6 +2,7 @@
  * @file advanced.js
  * @module advanced
  * @description Contains many re-usable test object constants.
+ * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @author Json Howard
  * @date 2023/05/09
@@ -12,14 +13,14 @@ import * as tst_con from '../../../tests/constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
+
 const { bas, wrd } = hayConst;
 
 /**
- * @file advanced.js
  * @function workflowPath
+ * @description get workflow path to are used advanced.test.js for unit test
  * @author Json Howard
  * @date 2023/05/09
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const workflowPath = () => {
     let baseUrl = tst_con.basePath();

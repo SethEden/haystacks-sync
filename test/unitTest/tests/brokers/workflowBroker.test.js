@@ -5,10 +5,14 @@
  * @module workflowBroker.test
  * @description Unit tests for the workflowBroker.js
  * @requires module:workflowBroker
+ * @requires module:rulesLibrary
+ * @requires module:chiefWorkflow
+ * @requires module:configurator
+ * @requires module:data
+ * @requires module:testData/workflowBroker
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/04/17
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -16,20 +20,18 @@
 
 // Internal imports
 import workflowBroker from "../../../../src/brokers/workflowBroker.js";
-import chiefWorkflow from "../../../../src/controllers/chiefWorkflow.js";
 import rulesLibrary from "../../../../src/businessRules/rulesLibrary.js";
+import chiefWorkflow from "../../../../src/controllers/chiefWorkflow.js";
 import configurator from "../../../../src/executrix/configurator.js";
 import D from "../../../../src/structures/data.js";
-import * as tst_con from '../constants/test.constants.js';
 import * as obj_con from '../../testData/brokers/workflowBroker.js';
+import * as tst_con from '../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect } from '@jest/globals';
 
 const { sys, wrd, cfg } = hayConst;
-// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
-// const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
 
 /**
  * @function getWorkflow

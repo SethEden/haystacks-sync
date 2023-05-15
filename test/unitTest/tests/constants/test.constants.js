@@ -10,26 +10,26 @@
 
 // External imports
 import hayConst from '@haystacks/constants';
-const {bas, num, sys, wrd} = hayConst;
+
+const {bas, num, wrd, gen, biz} = hayConst;
 
 /**
- * @file test.constants.js
  * @function basePath
+ * @description Get base folder path for unit test.
  * @author Seth Hollingsead
  * @date 2023/04/06
- * @copyright Copyright © 2023-… by Seth Hollingsead. All rights reserved
  */
 export const basePath = () => {
     let url = import.meta.url;
     
     url = url.replace("file:///", "");
     let resUrl = "";
-    let urlArray = url.split('/');
+    let urlArray = url.split(bas.cForwardSlash);
     for(let i = 0; i < urlArray.length; i ++) {
         resUrl += urlArray[i];
         if(urlArray[i] === 'unitTest')
             break;
-        resUrl += '/';
+        resUrl += bas.cForwardSlash;
     }
     return resUrl;
 };
@@ -55,12 +55,12 @@ export const cexecuteCommand = wrd.cexecute + wrd.cCommand;
 
 export const cscanDataPath = wrd.cscan + wrd.cData + wrd.cPath;
 export const cfindUniversalDebugConfigSetting = wrd.cfind + wrd.cUniversal + wrd.cDebug + wrd.cConfig + wrd.cSetting;
-export const cloadAllCsvData = wrd.cload + wrd.cAll + "Csv" + wrd.cData;
-export const cloadAllXmlData = wrd.cload + wrd.cAll + "Xml" + wrd.cData;
-export const cloadAllJsonData = wrd.cload + wrd.cAll + "Json" + wrd.cData;
-export const cprocessCsvData = wrd.cprocess + "Csv" + wrd.cData;
-export const cpreprocessJsonFile = wrd.cpreprocess + "Json" + wrd.cFile;
-export const cwriteJsonDataToFile = wrd.cwrite + "Json" + wrd.cData + wrd.cTo + wrd.cFile;
+export const cloadAllCsvData = wrd.cload + wrd.cAll + gen.cCsv + wrd.cData;
+export const cloadAllXmlData = wrd.cload + wrd.cAll + gen.cXml + wrd.cData;
+export const cloadAllJsonData = wrd.cload + wrd.cAll + gen.cJson + wrd.cData;
+export const cprocessCsvData = wrd.cprocess + gen.cCsv + wrd.cData;
+export const cpreprocessJsonFile = wrd.cpreprocess + gen.cJson + wrd.cFile;
+export const cwriteJsonDataToFile = wrd.cwrite + gen.cJson + wrd.cData + wrd.cTo + wrd.cFile;
 export const csetupDataStorage = wrd.csetup + wrd.cData + wrd.cStorage;
 export const cstoreData = wrd.cstore + wrd.cData;
 export const cgetData = wrd.cget + wrd.cData;
@@ -102,7 +102,7 @@ export const cisArrayEmpty = wrd.cis + wrd.cArray + wrd.cEmpty;
 export const cisObject = wrd.cis + wrd.cObject;
 export const cisArray = wrd.cis + wrd.cArray;
 export const cisArrayOrObject = wrd.cis + wrd.cArray + wrd.cOr + wrd.cObject;
-export const cisNonZeroLengthArray = wrd.cis + wrd.cNo + bas.cn + "Zero" + wrd.cLength + wrd.cArray; 
+export const cisNonZeroLengthArray = wrd.cis + wrd.cNo + bas.cn + num.cZero + wrd.cLength + wrd.cArray; 
 export const carrayDeepClone = wrd.carray + wrd.cDeep + wrd.cClone;
 export const cobjectDeepMerge = wrd.cobject + wrd.cDeep + wrd.cMerge;
 export const cgetNamespacedDataObject = wrd.cget + wrd.cNamespaced + wrd.cData + wrd.cObject;
@@ -130,8 +130,8 @@ export const cconvertStringToLowerCase = wrd.cconvert + wrd.cString + wrd.cTo + 
 export const cconvertStringToUpperCase = wrd.cconvert + wrd.cString + wrd.cTo + wrd.cUpper + wrd.cCase;
 export const cdoesStringContainUpperCaseCharacter = wrd.cdoes + wrd.cString + wrd.cContain + wrd.cUpper + wrd.cCase + wrd.cCharacter;
 export const cdoesStringContainLowerCaseCharacter = wrd.cdoes + wrd.cString + wrd.cContain + wrd.cLower + wrd.cCase + wrd.cCharacter;
-export const cisFirstCharacterLowerCase = wrd.cis + "First" + wrd.cCharacter + wrd.cLower + wrd.cCase;
-export const cisFirstCharacterUpperCase = wrd.cis + "First" + wrd.cCharacter + wrd.cUpper + wrd.cCase;
+export const cisFirstCharacterLowerCase = wrd.cis + num.cFirst + wrd.cCharacter + wrd.cLower + wrd.cCase;
+export const cisFirstCharacterUpperCase = wrd.cis + num.cFirst + wrd.cCharacter + wrd.cUpper + wrd.cCase;
 export const creplaceCharacterAtIndexOfString = wrd.creplace + wrd.cCharacter + wrd.cAt + wrd.cIndex + wrd.cOf + wrd.cString;
 
 export const ccleanCommandInput = wrd.cclean + wrd.cCommand + wrd.cInput;
@@ -169,8 +169,8 @@ export const cremoveDotFromFileExtension = wrd.cremove + wrd.cDot + wrd.cFrom + 
 export const cremoveFileExtensionFromFileName = wrd.cremove + wrd.cFile + wrd.cExtension + wrd.cFrom + wrd.cFile + wrd.cName;
 export const cascertainMatchingFilenames = wrd.cascertain + wrd.cMatching + wrd.cFileNames;
 export const csupportedFileFormatsAre = wrd.csupported + wrd.cFile + wrd.cFormat + wrd.cAre;
-export const cremoveXnumberOfFoldersFromEndOfPath = "removeXnumberOfFoldersFromEndOfPath";
-export const cgetFirstTopLevelFolderFromPath = "getFirstTopLevelFolderFromPath";
+export const cremoveXnumberOfFoldersFromEndOfPath = wrd.cremove + bas.cX + wrd.cnumber + wrd.cOf + wrd.cFolders + wrd.cFrom + wrd.cEnd + wrd.cOf + wrd.cPath;
+export const cgetFirstTopLevelFolderFromPath = wrd.cget + num.cFirst + wrd.cTop + wrd.cLevel + wrd.cFolder + wrd.cFrom + wrd.cPath;
 
 export const cisStringCamelCase = wrd.cis + wrd.cString + wrd.cCamel + wrd.cCase;
 export const cmapWordToCamelCaseWord = wrd.cmap + wrd.cWord + wrd.cTo + wrd.cCamel + wrd.cCase + wrd.cWord;
@@ -182,7 +182,7 @@ export const cdetermineWordDelimiter = wrd.cdetermine + wrd.cWord + wrd.cDelimit
 export const ccountDelimiterInString = wrd.ccount + wrd.cDelimiter + wrd.cIn + wrd.cString;
 export const cgetWordCountInString = wrd.cget + wrd.cWord + wrd.cCount + wrd.cIn + wrd.cString;
 export const cisStringList = wrd.cis + wrd.cString + wrd.cList;
-export const caggregateNumericalDifferenceBetweenTwoStrings = "aggregateNumericalDifferenceBetweenTwoStrings";
+export const caggregateNumericalDifferenceBetweenTwoStrings = wrd.caggregate + wrd.cNumerical + wrd.cDifference + wrd.cBetween + num.cTwo + wrd.cStrings;
 
 export const crandomlyGenerateMixedCaseLetterOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cMixed + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
 export const crandomlyGenerateUpperCaseLetterOrSpecialCharacter = wrd.crandomly + wrd.cGenerate + wrd.cUpper + wrd.cCase + wrd.cLetter + wrd.cOr + wrd.cSpecial + wrd.cCharacter;
@@ -203,17 +203,17 @@ export const crandomlyGenerateUpperCaseLetter = wrd.crandomly + wrd.cGenerate + 
 export const cconvertNumberToUpperCaseLetter = wrd.cconvert + wrd.cNumber + wrd.cTo + wrd.cUpper + wrd.cCase + wrd.cLetter;
 export const cconvertNumberToLowerCaseLetter = wrd.cconvert + wrd.cNumber + wrd.cTo + wrd.cLower + wrd.cCase + wrd.cLetter;
 
-export const cgetXmlData = "getXmlData";
-export const cgetCsvData = "getCsvData";
-export const cgetJsonData = "getJsonData";
-export const cwriteJsonData = "writeJsonData";
+export const cgetXmlData = wrd.cget + gen.cXml + wrd.cData;
+export const cgetCsvData = wrd.cget + gen.cCsv + wrd.cData;
+export const cgetJsonData = wrd.cget + gen.cJson + wrd.cData;
+export const cwriteJsonData = wrd.cwrite + gen.cJson + wrd.cData;
 export const creadDirectoryContents = wrd.cread + wrd.cDirectory + wrd.cContents;
 export const cscanDirectoryContents = wrd.cscan + wrd.cDirectory + wrd.cContents;
 export const cgetDirectoryList = wrd.cget + wrd.cDirectory + wrd.cList;
 export const creadDirectorySynchronously = wrd.cread + wrd.cDirectory + wrd.cSynchronously;
 export const ccopyAllFilesAndFoldersFromFolderToFolder = wrd.ccopy + wrd.cAll + wrd.cFiles + wrd.cAnd + wrd.cFolders + wrd.cFrom + wrd.cFolder + wrd.cTo + wrd.cFolder;
 export const cbuildReleasePackage = wrd.cbuild + wrd.cRelease + wrd.cPackage;
-export const ccreateZipArchive = "createZipArchive";
+export const ccreateZipArchive = wrd.ccreate + gen.cZip + wrd.cArchive;
 export const ccleanRootPath = wrd.cclean + wrd.cRoot + wrd.cPath;
 export const ccopyFileSync = wrd.ccopy + wrd.cFile + wrd.cSync;
 export const ccopyFolderRecursiveSync = wrd.ccopy + wrd.cFolder + wrd.cRecursive + wrd.cSync;
@@ -226,7 +226,7 @@ export const cparseArgumentAsRegularExpression = wrd.cparse + wrd.cArgument + wr
 export const cparseArgumentAsArray = wrd.cparse + wrd.cArgument + wrd.cAs + wrd.cArray;
 export const cremoveStringLiteralTagsFromArray = wrd.cremove + wrd.cString + wrd.cLiteral + wrd.cTags + wrd.cFrom + wrd.cArray;
 
-export const chex2rgbConversion = "hex2rgbConversion";
+export const chex2rgbConversion = biz.chex2rgbConversion;
 export const cisOdd = wrd.cis + wrd.cOdd;
 export const cisEven = wrd.cis + wrd.cEven;
 

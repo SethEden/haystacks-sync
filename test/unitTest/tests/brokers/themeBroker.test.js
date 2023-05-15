@@ -5,10 +5,12 @@
  * @module themeBroker.test
  * @description Unit tests for the themeBroker.js
  * @requires module:themeBroker
+ * @requires module:rulesLibrary
+ * @requires module:configurator
+ * @requires module:testData/themeBroker
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/04/17
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -16,20 +18,16 @@
 
 // Internal imports
 import themeBroker from "../../../../src/brokers/themeBroker.js";
-import configurator from "../../../../src/executrix/configurator.js";
 import rulesLibrary from "../../../../src/businessRules/rulesLibrary.js";
-import D from "../../../../src/structures/data.js";
-import * as tst_con from '../constants/test.constants.js';
+import configurator from "../../../../src/executrix/configurator.js";
 import * as obj_con from '../../testData/brokers/themeBroker.js';
+import * as tst_con from '../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect } from '@jest/globals';
 
 const { bas, sys, wrd, cfg } = hayConst;
-// const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
-// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
-// const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
 
 /**
  * @function getNamedThemes

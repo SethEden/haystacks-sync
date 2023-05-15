@@ -5,10 +5,10 @@
  * @module auxiliaryArrayParsing.test
  * @description Unit tests for the auxiliaryArrayParsing.js
  * @requires module:auxiliaryArrayParsing
+ * @requires module:testData/auxiliaryArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/04/06
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -16,17 +16,14 @@
 
 // Internal imports
 import auxiliaryArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js";
-import * as tst_con from '../../../constants/test.constants.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js';
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { expect } from '@jest/globals';
 
 const {num} = hayConst;
-// const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
-// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
-// const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
 
 /**
  * @function parseColorRangeInputs

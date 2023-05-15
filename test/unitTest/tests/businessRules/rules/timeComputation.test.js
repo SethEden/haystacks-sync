@@ -5,6 +5,7 @@
  * @module timeComputation.test
  * @description Unit tests for the timeComputation.js
  * @requires module:timeComputation
+ * @requires module:rulesLibrary
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -17,19 +18,15 @@
 // Internal imports
 import timeComputation from "../../../../../src/businessRules/rules/timeComputation";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-
 import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
-import {
-  describe,
-  expect,
-  test,
-} from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
 /**
  * @function getNowMoment
  * @description Tests the positive and negative test cases of the getNowMoment
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgetNowMoment, () => {

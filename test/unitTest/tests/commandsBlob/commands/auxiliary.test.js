@@ -4,31 +4,33 @@
  * @file auxiliary.test.js
  * @module auxiliary.test
  * @description Unit tests for the auxiliary.js
+ * @requires module:rulesLibrary
  * @requires module:auxiliary
+ * @requires module:data
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/08
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 
 // Internal imports
+import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
 import auxiliary from "../../../../../src/commandsBlob/commands/auxiliary";
 import D from "../../../../../src/structures/data.js";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { sys, wrd } = hayConst;
 
 /**
  * @function convertColors
  * @description Tests the positive and negative test cases of the convertColors
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cconvertColors, () => {

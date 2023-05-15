@@ -2,6 +2,7 @@
  * @file fileOpertions.js
  * @module fileOpertions
  * @description Contains many re-usable test object constants.
+ * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @author Json Howard
  * @date 2023/05/03
@@ -12,40 +13,38 @@ import * as tst_con from '../../../tests/constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-const { bas, wrd } = hayConst;
+
+const { bas, wrd, gen } = hayConst;
 
 /**
- * @file fileOpertions.js
  * @function xmlPath
+ * @description get xml path to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const xmlPath = () => {
     let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + "xml";
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml;
     return baseUrl;
 }
 
 /**
- * @file fileOpertions.js
  * @function testXmlPath
+ * @description get test xml path to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const testXmlPath = () => {
     let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "xml";
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.cxml;
     return baseUrl;
 }
 
 /**
- * @file fileOpertions.js
  * @function xmlFolder
+ * @description get xml folder to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const xmlFolder = () => {
     let baseUrl = tst_con.basePath();
@@ -54,37 +53,34 @@ export const xmlFolder = () => {
 }
 
 /**
- * @file fileOpertions.js
  * @function csvPath
+ * @description get csv path to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const csvPath = () => {
     let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "csv";
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.ccsv;
     return baseUrl;
 }
 
 /**
- * @file fileOpertions.js
  * @function jsonPath
+ * @description get json path to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const jsonPath = () => {
     let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "json";
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.cjson;
     return baseUrl;
 }
 
 /**
- * @file fileOpertions.js
  * @function commonFolderPath
+ * @description get common folder path to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const commonFolderPath = () => {
     let baseUrl = tst_con.basePath();
@@ -93,24 +89,22 @@ export const commonFolderPath = () => {
 }
 
 /**
- * @file fileOpertions.js
  * @function zipPath
+ * @description get zip path to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const zipPath = () => {
     let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + "zip";
+    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.czip;
     return baseUrl;
 }
 
 /**
- * @file fileOpertions.js
  * @function packageFolder
+ * @description get package folder path to are used fileOperation.test.js for unit test
  * @author Json Howard
  * @date 2023/05/03
- * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 export const packageFolder = () => {
     let baseUrl = tst_con.basePath();

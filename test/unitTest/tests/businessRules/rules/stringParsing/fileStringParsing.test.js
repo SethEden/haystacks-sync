@@ -5,10 +5,11 @@
  * @module fileStringParsing.test
  * @description Unit tests for the fileStringParsing.js
  * @requires module:fileStringParsing
+ * @requires module:rulesLibrary
+ * @requires module:testData/fileStringParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/02
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,23 +18,19 @@
 // Internal imports
 import fileStringParsing from "../../../../../../src/businessRules/rules/stringParsing/fileStringParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
-
-import * as tst_con from "../../../constants/test.constants.js";
 import * as obj_con from '../../../../testData/businessRules/rules/stringParsing/fileStringParsing.js';
+import * as tst_con from "../../../constants/test.constants.js";
 
 // External imports
 import hayConst from "@haystacks/constants";
-import {
-  describe,
-  expect,
-  test,
-} from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
-const { bas, wrd } = hayConst;
+const { bas, wrd, gen } = hayConst;
 
 /**
  * @function getFileNameFromPath
  * @description Tests the positive and negative test cases of the getFileNameFromPath
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cgetFileNameFromPath, () => {
@@ -56,7 +53,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
       );
   
       // Assert
-      expect(returnData).toBe(wrd.csystem + bas.cDot + "xml");
+      expect(returnData).toBe(wrd.csystem + bas.cDot + gen.cxml);
     });
 
     /**
@@ -100,7 +97,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
         );
     
         // Assert
-        expect(returnData).toBe(wrd.csystem + bas.cDot + "xml");
+        expect(returnData).toBe(wrd.csystem + bas.cDot + gen.cxml);
     });
 
     /**
@@ -151,7 +148,7 @@ describe(tst_con.cgetFileExtension, () => {
       );
   
       // Assert
-      expect(returnData).toBe(bas.cDot + "xml");
+      expect(returnData).toBe(bas.cDot + gen.cxml);
     });
 
     /**
@@ -195,7 +192,7 @@ describe(tst_con.cgetFileExtension, () => {
         );
     
         // Assert
-        expect(returnData).toBe(bas.cDot + "xml");
+        expect(returnData).toBe(bas.cDot + gen.cxml);
     });
 
     /**
@@ -246,7 +243,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
       );
   
       // Assert
-      expect(returnData).toContain(wrd.csystem + bas.cDot + "xml");
+      expect(returnData).toContain(wrd.csystem + bas.cDot + gen.cxml);
     });
 
     /**
@@ -290,7 +287,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
         );
     
         // Assert
-        expect(returnData).toContain(wrd.csystem + bas.cDot + "xml");
+        expect(returnData).toContain(wrd.csystem + bas.cDot + gen.cxml);
     });
 
     /**

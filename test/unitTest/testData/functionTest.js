@@ -2,6 +2,8 @@
  * @file functionTest.js
  * @module functionTest
  * @description simple module for unit test
+ * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
+ * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/11
  * @copyright Copyright © 2022-… by Seth Hollingsead. All rights reserved
@@ -9,6 +11,7 @@
 
 // External imports
 import hayConst from '@haystacks/constants';
+import path from 'path';
 
 const {bas, msg, sys, wrd} = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));

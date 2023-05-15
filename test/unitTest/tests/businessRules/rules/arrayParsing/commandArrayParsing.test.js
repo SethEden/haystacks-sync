@@ -5,10 +5,11 @@
  * @module commandArrayParsing.test
  * @description Unit tests for the commandArrayParsing.js
  * @requires module:commandArrayParsing
+ * @requires module:rulesLibrary
+ * @requires module:testData/commandArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/04/19
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,17 +18,14 @@
 // Internal imports
 import commandArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/commandArrayParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
-import * as tst_con from '../../../constants/test.constants.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/commandArrayParsing.js';
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect } from '@jest/globals';
 
 const { wrd } = hayConst;
-// const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
-// businessRules.rules.arrayParsing.auxiliaryArrayParsing.
-// const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
 
 /**
  * @function solveLehmerCode

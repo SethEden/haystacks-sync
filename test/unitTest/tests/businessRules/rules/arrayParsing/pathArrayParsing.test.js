@@ -5,10 +5,11 @@
  * @module pathArrayParsing.test
  * @description Unit tests for the pathArrayParsing.js
  * @requires module:pathArrayParsing
+ * @requires module:rulesLibrary
+ * @requires module:testData/pathArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/04/20
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
@@ -17,9 +18,8 @@
 // Internal imports
 import pathArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/pathArrayParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
-
-import * as tst_con from '../../../constants/test.constants.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/pathArrayParsing.js';
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -30,6 +30,7 @@ const { wrd, num } = hayConst;
 /**
  * @function doesArrayContainFilename
  * @description Tests the positive and negative test cases of the doesArrayContainFilename
+ * @author Json Howard
  * @date 2023/04/20
  */
 describe(tst_con.cdoesArrayContainFilename, () => {

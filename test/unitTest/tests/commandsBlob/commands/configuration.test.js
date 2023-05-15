@@ -4,7 +4,10 @@
  * @file configuration.test.js
  * @module configuration.test
  * @description Unit tests for the configuration.js
+ * @requires module:rulesLibrary
  * @requires module:configuration
+ * @requires module:configurator
+ * @requires module:testData/configuration
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -15,21 +18,22 @@
  */
 
 // Internal imports
+import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
 import configuration from "../../../../../src/commandsBlob/commands/configuration";
 import configurator from "../../../../../src/executrix/configurator.js";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import * as tst_con from '../../constants/test.constants.js';
 import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
+import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { wrd, cfg } = hayConst;
 
 /**
  * @function changeConfigurationSetting
  * @description Tests the positive and negative test cases of the changeConfigurationSetting
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cchangeConfigurationSetting, () => {

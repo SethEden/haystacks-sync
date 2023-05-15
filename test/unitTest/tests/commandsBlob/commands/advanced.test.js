@@ -4,33 +4,37 @@
  * @file advanced.test.js
  * @module advanced.test
  * @description Unit tests for the advanced.js
+ * @requires module:rulesLibrary
  * @requires module:advanced
+ * @requires module:commandsLibrary
+ * @requires module:configurator
+ * @requires module:data
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
- * @requires {@link https://www.npmjs.com/package/path|path}
  * @author Json Howard
  * @date 2023/05/09
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 
 // Internal imports
-import advanced from "../../../../../src/commandsBlob/commands/advanced";
-import D from "../../../../../src/structures/data.js";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import advanced from "../../../../../src/commandsBlob/commands/advanced";
 import commandsLibrary from "../../../../../src/commandsBlob/commandsLibrary";
 import configurator from "../../../../../src/executrix/configurator.js";
+import D from "../../../../../src/structures/data.js";
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { bas, sys, wrd, cfg, cmd } = hayConst;
 
 /**
  * @function commandSequencer
  * @description Tests the positive and negative test cases of the commandSequencer
+ * @author Json Howard
  * @date 2023/05/09
 */
 describe(tst_con.ccommandSequencer, () => {
