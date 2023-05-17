@@ -17,25 +17,19 @@ import hayConst from '@haystacks/constants';
 const { bas, wrd, gen } = hayConst;
 
 /**
- * @function xmlPath
- * @description get xml path to are used constantStringParsing.test.js for unit test
+ * @function constantStringParsingXmlPath
+ * @description Get xml path to be used in constantStringParsing.test.js for unit test
+ * validateConstantsDataValidation_validDataString
+ * validateConstantsDataValidation_inValidDataInputMetaDataString
+ * determineConstantsContextQualifiedPrefix_validDataString
+ * determineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString
+ * determineConstantsContextQualifiedPrefix_validDataString
+ * determineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString
  * @author Json Howard
  * @date 2023/04/17
  */
-export const xmlPath = () => {
+export const constantStringParsingXmlPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml;
-    return baseUrl;
-}
-
-/**
- * @function xmlHivePath
- * @description get xml hive path to are used constantStringParsing.test.js for unit test
- * @author Json Howard
- * @date 2023/04/17
- */
-export const xmlHivePath = () => {
-    let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.cxml;
     return baseUrl;
 }

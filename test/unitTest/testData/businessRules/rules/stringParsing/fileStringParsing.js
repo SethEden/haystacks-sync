@@ -17,25 +17,33 @@ import hayConst from '@haystacks/constants';
 const { bas, wrd, gen } = hayConst;
 
 /**
- * @function xmlPath
- * @description get xml path to are used fileStringParsing.test.js for unit test
+ * @function fileStringParsingXmlPath
+ * @description Get xml path to be used in fileStringParsing.test.js for unit test
+ * getFileNameFromPath_validDataString
+ * getFileNameFromPath_inValidDataInputMetaDataString
+ * getFileExtension_validDataString
+ * getFileExtension_inValidDataInputMetaDataString
+ * removeDotFromFileExtension_validDataString
+ * removeDotFromFileExtension_inValidDataInputMetaDataString
+ * removeFileExtensionFromFileName_validDataString
+ * removeFileExtensionFromFileName_inValidDataInputMetaDataString
+ * ascertainMatchingFilenames_validDataString
+ * ascertainMatchingFilenames_inValidDataInputDataString
+ * ascertainMatchingFilenames_inValidDataInputMetaDataString
+ * supportedFileFormatsAre_validDataString
+ * supportedFileFormatsAre_inValidDataInputDataString
+ * supportedFileFormatsAre_inValidDataInputMetaDataString
+ * removeXnumberOfFoldersFromEndOfPath_validDataString
+ * removeXnumberOfFoldersFromEndOfPath_inValidDataInputDataString
+ * removeXnumberOfFoldersFromEndOfPath_inValidDataInputMetaDataString
+ * getFirstTopLevelFolderFromPath_validDataString
+ * getFirstTopLevelFolderFromPath_inValidDataInputDataString
+ * getFirstTopLevelFolderFromPath_inValidDataInputMetaDataString
  * @author Json Howard
  * @date 2023/05/02
  */
-export const xmlPath = () => {
+export const fileStringParsingXmlPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml;
-    return baseUrl;
-}
-
-/**
- * @function xmlFolder
- * @description get xml hive path to are used fileStringParsing.test.js for unit test
- * @author Json Howard
- * @date 2023/05/02
- */
-export const xmlFolder = () => {
-    let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cDoubleForwardSlash;
     return baseUrl;
 }

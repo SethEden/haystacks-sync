@@ -18,7 +18,6 @@
 // Internal imports
 import stringParsingUtilities from "../../../../../src/businessRules/rules/stringParsingUtilities";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import * as obj_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
 import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
@@ -42,7 +41,7 @@ describe(tst_con.cparseSystemRootPath, () => {
      */
     test(tst_con.cparseSystemRootPath_validDataString, () => {
       // Arrange
-      let inputData = obj_con.basePath();
+      let inputData = tst_con.basePath();
       let inputMetaData = "haystack";
   
       // Act
@@ -85,7 +84,7 @@ describe(tst_con.cparseSystemRootPath, () => {
      */
     test(tst_con.cparseSystemRootPath_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = obj_con.basePath();
+        let inputData = tst_con.basePath();
         let inputMetaData = "dfxg24346dfg";
     
         // Act
@@ -128,7 +127,7 @@ describe(tst_con.cparseSystemRootPath, () => {
      */
     test(tst_con.cparseSystemRootPath_inValidInputMetaDataBoolean, () => {
         // Arrange
-        let inputData = obj_con.basePath();
+        let inputData = tst_con.basePath();
         let inputMetaData = false;
         rulesLibrary.initRulesLibrary();
     
@@ -150,7 +149,7 @@ describe(tst_con.cparseSystemRootPath, () => {
      */
     test(tst_con.cparseSystemRootPath_inValidInputMetaDataUndefined, () => {
         // Arrange
-        let inputData = obj_con.basePath();
+        let inputData = tst_con.basePath();
         let inputMetaData = undefined;
         rulesLibrary.initRulesLibrary();
     
@@ -172,7 +171,7 @@ describe(tst_con.cparseSystemRootPath, () => {
      */
     test(tst_con.cparseSystemRootPath_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = obj_con.basePath();
+        let inputData = tst_con.basePath();
         let inputMetaData = NaN;
         rulesLibrary.initRulesLibrary();
     

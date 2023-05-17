@@ -573,7 +573,7 @@ describe(tst_con.cloadDataFile, () => {
    */
   test(tst_con.cloadDataFile_validDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.dataStringParsingXmlPath();
     let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
     dataBroker.setupDataStorage(false);
 
@@ -617,7 +617,7 @@ describe(tst_con.cloadDataFile, () => {
    */
   test(tst_con.cloadDataFile_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.dataStringParsingXmlPath();
     let inputMetaData = 'dfxg24346dfg';    
     dataBroker.setupDataStorage(false);
 
@@ -690,7 +690,7 @@ describe(tst_con.csaveDataFile, () => {
    */
   test(tst_con.csaveDataFile_validDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.dataStringParsingXmlPath();
     let inputMetaData = {};    
 
     // Act
@@ -732,7 +732,7 @@ describe(tst_con.csaveDataFile, () => {
    */
   test(tst_con.csaveDataFile_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.dataStringParsingXmlPath();
     let inputMetaData = "dfxg24346dfg";   
 
     // Act

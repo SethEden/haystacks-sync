@@ -19,7 +19,15 @@ const { bas, wrd } = hayConst;
 
 /**
  * @function themePath
- * @description get test theme path to are used themeBroker.test.js for unit test
+ * @description Get test theme path to be used in themeBroker.test.js for unit test
+ * getNamedThemes_validData
+ * getNamedThemes_inValidString
+ * getNamedThemes_inValidNumber
+ * getNamedThemes_inValidBoolean
+ * getNamedThemePath_validData
+ * getNamedThemePath_inValidString
+ * loadTheme_validData
+ * applyTheme_validData
  * @author Json Howard
  * @date 2023/04/19
  */

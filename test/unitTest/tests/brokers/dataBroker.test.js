@@ -153,7 +153,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_validData, () => {
         // Arrange
-        let filesToLoad = [obj_con.csvPath()];
+        let filesToLoad = [obj_con.dataBrokerCsvPath()];
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -172,7 +172,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_inValidString, () => {
         // Arrange
-        let filesToLoad = obj_con.csvPath();
+        let filesToLoad = obj_con.dataBrokerCsvPath();
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -191,7 +191,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_inValidContextNameString, () => {
         // Arrange
-        let filesToLoad = obj_con.csvPath();
+        let filesToLoad = obj_con.dataBrokerCsvPath();
         let contextName = wrd.cComa;
         rulesLibrary.initRulesLibrary();
 
@@ -237,7 +237,7 @@ describe(tst_con.cloadAllXmlData, () => {
     */
     test(tst_con.cloadedAllXmlData_validData, () => {
         // Arrange
-        let filesToLoad = [obj_con.xmlPath()];
+        let filesToLoad = [obj_con.dataBrokerXmlPath()];
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -256,7 +256,7 @@ describe(tst_con.cloadAllXmlData, () => {
     */
     test(tst_con.cloadedAllXmlData_inValidString, () => {
         // Arrange
-        let filesToLoad = obj_con.xmlPath();
+        let filesToLoad = obj_con.dataBrokerXmlPath();
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -275,7 +275,7 @@ describe(tst_con.cloadAllXmlData, () => {
     */
     test(tst_con.cloadAllXmlData_inValidContextNameString, () => {
         // Arrange
-        let filesToLoad = [obj_con.xmlPath()];
+        let filesToLoad = [obj_con.dataBrokerXmlPath()];
         let contextName = wrd.cComa;
         rulesLibrary.initRulesLibrary();
 
@@ -321,7 +321,7 @@ describe(tst_con.cloadAllJsonData, () => {
     */
     test(tst_con.cloadAllJsonData_validData, () => {
         // Arrange
-        let filesToLoad = [obj_con.jsonPath()];
+        let filesToLoad = [obj_con.dataBrokerJsonPath()];
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -340,7 +340,7 @@ describe(tst_con.cloadAllJsonData, () => {
     */
     test(tst_con.cloadAllJsonData_inValidString, () => {
         // Arrange
-        let filesToLoad = obj_con.jsonPath();
+        let filesToLoad = obj_con.dataBrokerJsonPath();
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -359,7 +359,7 @@ describe(tst_con.cloadAllJsonData, () => {
     */
     test(tst_con.cloadAllJsonData_inValidContextNameString, () => {
         // Arrange
-        let filesToLoad = [obj_con.jsonPath()];
+        let filesToLoad = [obj_con.dataBrokerJsonPath()];
         let contextName = wrd.cComa;
         rulesLibrary.initRulesLibrary();
 
@@ -432,7 +432,7 @@ describe(tst_con.cpreprocessJsonFile, () => {
     */
     test(tst_con.cpreprocessJsonFile_validData, () => {
         // Arrange
-        let fileToLoad = [obj_con.jsonPath()];
+        let fileToLoad = [obj_con.dataBrokerJsonPath()];
 
         // Act
         let returnData = dataBroker.preprocessJsonFile(fileToLoad);

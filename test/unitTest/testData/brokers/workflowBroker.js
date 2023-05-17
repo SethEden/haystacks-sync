@@ -18,7 +18,34 @@ const { bas, wrd } = hayConst;
 
 /**
  * @function workflowPath
- * @description get workflow file path to are used workflowBroker.test.js for unit test
+ * @description Get workflow file path to be used in workflowBroker.test.js for unit test
+ * getWorkflow_validData
+ * getWorkflow_inValidString
+ * getWorkflow_inValidNumber
+ * getWorkflow_inValidBoolean
+ * doesWorkflowExist_validData
+ * doesWorkflowExist_inValidString
+ * doesWorkflowExist_inValidNumber
+ * doesWorkflowExist_inValidBoolean
+ * doesWorkflowExistInWorkflowData_validData
+ * doesWorkflowExistInWorkflowData_inValidWorkflowDataString
+ * doesWorkflowExistInWorkflowData_inValidWorkflowNameString
+ * doesWorkflowExistInWorkflowData_inValidNumber
+ * doesWorkflowExistInWorkflowData_inValidBoolean
+ * searchWorkflow_validData
+ * searchWorkflow_inValidWorkflowDataString
+ * searchWorkflow_inValidWorkflowNameString
+ * searchWorkflow_inValidNumber
+ * searchWorkflow_inValidBoolean
+ * getAllWorkflows_validData
+ * getAllWorkflows_inValidString
+ * getAllWorkflows_inValidNumber
+ * getAllWorkflows_inValidBoolean
+ * getWorkflowNamespaceDataObject_validData
+ * getWorkflowNamespaceDataObject_inValidWorkflowDataStructureString
+ * getWorkflowNamespaceDataObject_inValidNamespaceToFindString
+ * getWorkflowNamespaceDataObject_inValidNumber
+ * getWorkflowNamespaceDataObject_inValidBoolean
  * @author Json Howard
  * @date 2023/04/17
  */

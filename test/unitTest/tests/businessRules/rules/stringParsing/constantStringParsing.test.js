@@ -44,7 +44,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
      */
     test(tst_con.cvalidateConstantsDataValidation_validDataString, () => {
       // Arrange
-      let inputData = obj_con.xmlPath();
+      let inputData = obj_con.constantStringParsingXmlPath();
       let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
       dataBroker.setupDataStorage(false);
 
@@ -66,7 +66,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
      */
     test(tst_con.cvalidateConstantsDataValidation_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = obj_con.xmlPath();
+      let inputData = obj_con.constantStringParsingXmlPath();
       let inputMetaData = 'dfxg24346dfg';    
       dataBroker.setupDataStorage(false);
 
@@ -117,7 +117,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_validDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.constantStringParsingXmlPath();
     let inputMetaData = "";    
     dataBroker.initializeConstantsValidationData();
 
@@ -128,7 +128,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.xmlPath());
+    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
   });
 
   /**
@@ -161,7 +161,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.constantStringParsingXmlPath();
     let inputMetaData = "dfxg24346dfg";    
     dataBroker.initializeConstantsValidationData();
 
@@ -172,7 +172,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.xmlPath());
+    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
   });
 
   /**
@@ -278,7 +278,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_validDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.constantStringParsingXmlPath();
     let inputMetaData = "";    
     dataBroker.initializeConstantsValidationData();
 
@@ -289,7 +289,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.xmlPath());
+    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
   });
 
   /**
@@ -322,7 +322,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.xmlPath();
+    let inputData = obj_con.constantStringParsingXmlPath();
     let inputMetaData = "dfxg24346dfg";    
     dataBroker.initializeConstantsValidationData();
 
@@ -333,7 +333,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.xmlPath());
+    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
   });
 
   /**

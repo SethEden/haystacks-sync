@@ -18,7 +18,8 @@ const { bas, wrd } = hayConst;
 
 /**
  * @function testConfigPath
- * @description get test config path to are used configuration.test.js for unit test
+ * @description Get test config path to be used in configuration.test.js for unit test
+ * saveConfiguration_validDataString
  * @author Json Howard
  * @date 2023/05/09
  */

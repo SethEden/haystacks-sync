@@ -17,12 +17,16 @@ import hayConst from '@haystacks/constants';
 const { bas, wrd, gen } = hayConst;
 
 /**
- * @function xmlPath
- * @description get xml path to are used fileOperation.test.js for unit test
+ * @function fileOperationsXmlPath
+ * @description Get xml path to be used in fileOperation.test.js for unit test
+ * getXmlData_validDataString
+ * getXmlData_inValidDataInputMetaDataString
+ * copyFileSync_validDataString
+ * copyFileSync_inValidDataInputMetaDataString
  * @author Json Howard
  * @date 2023/05/03
  */
-export const xmlPath = () => {
+export const fileOperationsXmlPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml;
     return baseUrl;
@@ -30,7 +34,9 @@ export const xmlPath = () => {
 
 /**
  * @function testXmlPath
- * @description get test xml path to are used fileOperation.test.js for unit test
+ * @description Get test xml path to be used in fileOperation.test.js for unit test
+ * copyFileSync_validDataString
+ * copyFileSync_inValidDataInputMetaDataString
  * @author Json Howard
  * @date 2023/05/03
  */
@@ -41,74 +47,51 @@ export const testXmlPath = () => {
 }
 
 /**
- * @function xmlFolder
- * @description get xml folder to are used fileOperation.test.js for unit test
+ * @function fileOperationsXmlFolder
+ * @description Get xml folder to be used in fileOperation.test.js for unit test
+ * readDirectoryContents_validDataString
+ * readDirectoryContents_inValidDataInputMetaDataString
+ * scanDirectoryContents_validDataString
+ * scanDirectoryContents_inValidDataInputMetaDataString
+ * scanDirectoryContents_inValidInputMetaDataNaN
+ * getDirectoryList_validDataString
+ * getDirectoryList_inValidDataInputMetaDataString
+ * readDirectorySynchronously_validDataString
+ * readDirectorySynchronously_inValidDataInputMetaDataString
  * @author Json Howard
  * @date 2023/05/03
  */
-export const xmlFolder = () => {
+export const fileOperationsXmlFolder = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash;
     return baseUrl;
 }
 
 /**
- * @function csvPath
- * @description get csv path to are used fileOperation.test.js for unit test
+ * @function fileOperationsCsvPath
+ * @description Get csv path to be used in fileOperation.test.js for unit test
+ * getCsvData_validDataString
+ * getCsvData_inValidDataInputMetaDataString
  * @author Json Howard
  * @date 2023/05/03
  */
-export const csvPath = () => {
+export const fileOperationsCsvPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.ccsv;
     return baseUrl;
 }
 
 /**
- * @function jsonPath
- * @description get json path to are used fileOperation.test.js for unit test
+ * @function fileOperationsJsonPath
+ * @description Get json path to be used in fileOperation.test.js for unit test
+ * getJsonData_validDataString
+ * getJsonData_inValidDataInputMetaDataString
+ * writeJsonData_validDataString
  * @author Json Howard
  * @date 2023/05/03
  */
-export const jsonPath = () => {
+export const fileOperationsJsonPath = () => {
     let baseUrl = tst_con.basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.cjson;
-    return baseUrl;
-}
-
-/**
- * @function commonFolderPath
- * @description get common folder path to are used fileOperation.test.js for unit test
- * @author Json Howard
- * @date 2023/05/03
- */
-export const commonFolderPath = () => {
-    let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cbrokers + bas.cForwardSlash;
-    return baseUrl;
-}
-
-/**
- * @function zipPath
- * @description get zip path to are used fileOperation.test.js for unit test
- * @author Json Howard
- * @date 2023/05/03
- */
-export const zipPath = () => {
-    let baseUrl = tst_con.basePath();
-    baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.czip;
-    return baseUrl;
-}
-
-/**
- * @function packageFolder
- * @description get package folder path to are used fileOperation.test.js for unit test
- * @author Json Howard
- * @date 2023/05/03
- */
-export const packageFolder = () => {
-    let baseUrl = tst_con.basePath();
-    console.log(baseUrl)
-    baseUrl += bas.cForwardSlash + wrd.cpackages + bas.cForwardSlash;
     return baseUrl;
 }

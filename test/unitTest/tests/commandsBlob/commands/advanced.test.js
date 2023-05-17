@@ -49,7 +49,7 @@ describe(tst_con.ccommandSequencer, () => {
     let inputData = ["TestCommandSequenceALL", cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
     let inputMetaData = "";    
     rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
+    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
@@ -74,7 +74,7 @@ describe(tst_con.ccommandSequencer, () => {
     let inputData = "dfxg24346dfg";
     let inputMetaData = "";   
     rulesLibrary.initRulesLibrary(); 
-    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
+    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
@@ -99,7 +99,7 @@ describe(tst_con.ccommandSequencer, () => {
     let inputData = 4567;
     let inputMetaData = "123string32";
     rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
+    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
@@ -124,7 +124,7 @@ describe(tst_con.ccommandSequencer, () => {
       let inputData = false;
       let inputMetaData = "123string32";
       rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
+      configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
       commandsLibrary.initCommandsLibrary();
       D[sys.cCommandQueue] = [];
 
@@ -149,7 +149,7 @@ describe(tst_con.ccommandSequencer, () => {
     let inputData = NaN;
     let inputMetaData = "";    
     rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
+    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
@@ -418,7 +418,7 @@ describe(tst_con.ccommandGenerator, () => {
     rulesLibrary.initRulesLibrary();
 
     // Act    
-    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
+    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
