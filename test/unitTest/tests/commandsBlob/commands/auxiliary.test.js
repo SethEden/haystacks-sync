@@ -44,9 +44,9 @@ describe(tst_con.cconvertColors, () => {
       // Arrange
       let inputData = "";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       D[wrd.ccolors] = {};
       D[wrd.ccolors][sys.cColorData] = {};
       let returnData = auxiliary.convertColors(

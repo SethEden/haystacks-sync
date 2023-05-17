@@ -65,9 +65,9 @@ describe(tst_con.cparseSystemRootPath, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "haystack";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.parseSystemRootPath(
           inputData,
           inputMetaData
@@ -108,9 +108,9 @@ describe(tst_con.cparseSystemRootPath, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "haystack";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.parseSystemRootPath(
           inputData,
           inputMetaData
@@ -130,9 +130,9 @@ describe(tst_con.cparseSystemRootPath, () => {
         // Arrange
         let inputData = obj_con.basePath();
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.parseSystemRootPath(
           inputData,
           inputMetaData
@@ -152,9 +152,9 @@ describe(tst_con.cparseSystemRootPath, () => {
         // Arrange
         let inputData = obj_con.basePath();
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.parseSystemRootPath(
           inputData,
           inputMetaData
@@ -174,9 +174,9 @@ describe(tst_con.cparseSystemRootPath, () => {
         // Arrange
         let inputData = obj_con.basePath();
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.parseSystemRootPath(
           inputData,
           inputMetaData
@@ -266,9 +266,9 @@ describe(tst_con.cstringToDataType, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToDataType(
           inputData,
           inputMetaData
@@ -309,9 +309,9 @@ describe(tst_con.cstringToDataType, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToDataType(
           inputData,
           inputMetaData
@@ -331,9 +331,9 @@ describe(tst_con.cstringToDataType, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToDataType(
           inputData,
           inputMetaData
@@ -353,9 +353,9 @@ describe(tst_con.cstringToDataType, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToDataType(
           inputData,
           inputMetaData
@@ -375,9 +375,9 @@ describe(tst_con.cstringToDataType, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToDataType(
           inputData,
           inputMetaData
@@ -397,9 +397,9 @@ describe(tst_con.cstringToDataType, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToDataType(
           inputData,
           inputMetaData
@@ -489,9 +489,9 @@ describe(tst_con.cstringToBoolean, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToBoolean(
           inputData,
           inputMetaData
@@ -532,9 +532,9 @@ describe(tst_con.cstringToBoolean, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToBoolean(
           inputData,
           inputMetaData
@@ -554,9 +554,9 @@ describe(tst_con.cstringToBoolean, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToBoolean(
           inputData,
           inputMetaData
@@ -576,9 +576,9 @@ describe(tst_con.cstringToBoolean, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToBoolean(
           inputData,
           inputMetaData
@@ -598,9 +598,9 @@ describe(tst_con.cstringToBoolean, () => {
         // Arrange
         let inputData = "true";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToBoolean(
           inputData,
           inputMetaData
@@ -620,9 +620,9 @@ describe(tst_con.cstringToBoolean, () => {
         // Arrange
         let inputData = "true";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.stringToBoolean(
           inputData,
           inputMetaData
@@ -712,9 +712,9 @@ describe(tst_con.cdetermineObjectDataType, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.determineObjectDataType(
           inputData,
           inputMetaData
@@ -755,9 +755,9 @@ describe(tst_con.cdetermineObjectDataType, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.determineObjectDataType(
           inputData,
           inputMetaData
@@ -777,9 +777,9 @@ describe(tst_con.cdetermineObjectDataType, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.determineObjectDataType(
           inputData,
           inputMetaData
@@ -799,9 +799,9 @@ describe(tst_con.cdetermineObjectDataType, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.determineObjectDataType(
           inputData,
           inputMetaData
@@ -821,9 +821,9 @@ describe(tst_con.cdetermineObjectDataType, () => {
         // Arrange
         let inputData = "true";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.determineObjectDataType(
           inputData,
           inputMetaData
@@ -843,9 +843,9 @@ describe(tst_con.cdetermineObjectDataType, () => {
         // Arrange
         let inputData = "true";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.determineObjectDataType(
           inputData,
           inputMetaData
@@ -935,9 +935,9 @@ describe(tst_con.cisBoolean, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isBoolean(
           inputData,
           inputMetaData
@@ -978,9 +978,9 @@ describe(tst_con.cisBoolean, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isBoolean(
           inputData,
           inputMetaData
@@ -1000,9 +1000,9 @@ describe(tst_con.cisBoolean, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isBoolean(
           inputData,
           inputMetaData
@@ -1022,9 +1022,9 @@ describe(tst_con.cisBoolean, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isBoolean(
           inputData,
           inputMetaData
@@ -1044,9 +1044,9 @@ describe(tst_con.cisBoolean, () => {
         // Arrange
         let inputData = "true";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isBoolean(
           inputData,
           inputMetaData
@@ -1066,9 +1066,9 @@ describe(tst_con.cisBoolean, () => {
         // Arrange
         let inputData = "true";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isBoolean(
           inputData,
           inputMetaData
@@ -1158,9 +1158,9 @@ describe(tst_con.cisInteger, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isInteger(
           inputData,
           inputMetaData
@@ -1201,9 +1201,9 @@ describe(tst_con.cisInteger, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isInteger(
           inputData,
           inputMetaData
@@ -1223,9 +1223,9 @@ describe(tst_con.cisInteger, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isInteger(
           inputData,
           inputMetaData
@@ -1245,9 +1245,9 @@ describe(tst_con.cisInteger, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isInteger(
           inputData,
           inputMetaData
@@ -1267,9 +1267,9 @@ describe(tst_con.cisInteger, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isInteger(
           inputData,
           inputMetaData
@@ -1289,9 +1289,9 @@ describe(tst_con.cisInteger, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isInteger(
           inputData,
           inputMetaData
@@ -1381,9 +1381,9 @@ describe(tst_con.cisFloat, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isFloat(
           inputData,
           inputMetaData
@@ -1424,9 +1424,9 @@ describe(tst_con.cisFloat, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isFloat(
           inputData,
           inputMetaData
@@ -1446,9 +1446,9 @@ describe(tst_con.cisFloat, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isFloat(
           inputData,
           inputMetaData
@@ -1468,9 +1468,9 @@ describe(tst_con.cisFloat, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isFloat(
           inputData,
           inputMetaData
@@ -1490,9 +1490,9 @@ describe(tst_con.cisFloat, () => {
         // Arrange
         let inputData = "5.5";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isFloat(
           inputData,
           inputMetaData
@@ -1512,9 +1512,9 @@ describe(tst_con.cisFloat, () => {
         // Arrange
         let inputData = "5.5";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isFloat(
           inputData,
           inputMetaData
@@ -1604,9 +1604,9 @@ describe(tst_con.cisString, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isString(
           inputData,
           inputMetaData
@@ -1647,9 +1647,9 @@ describe(tst_con.cisString, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isString(
           inputData,
           inputMetaData
@@ -1669,9 +1669,9 @@ describe(tst_con.cisString, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isString(
           inputData,
           inputMetaData
@@ -1691,9 +1691,9 @@ describe(tst_con.cisString, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isString(
           inputData,
           inputMetaData
@@ -1713,9 +1713,9 @@ describe(tst_con.cisString, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isString(
           inputData,
           inputMetaData
@@ -1735,9 +1735,9 @@ describe(tst_con.cisString, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.isString(
           inputData,
           inputMetaData
@@ -1827,9 +1827,9 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = wrd.cWorld;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
           inputData,
           inputMetaData
@@ -1870,9 +1870,9 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
           inputData,
           inputMetaData
@@ -1892,9 +1892,9 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
           inputData,
           inputMetaData
@@ -1914,9 +1914,9 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
           inputData,
           inputMetaData
@@ -1936,9 +1936,9 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         // Arrange
         let inputData = wrd.cHello + "%%";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
           inputData,
           inputMetaData
@@ -1958,9 +1958,9 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         // Arrange
         let inputData = wrd.cHello + "%%";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
           inputData,
           inputMetaData
@@ -2050,9 +2050,9 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = ["%", wrd.cWorld];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
           inputData,
           inputMetaData
@@ -2093,9 +2093,9 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
           inputData,
           inputMetaData
@@ -2115,9 +2115,9 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
           inputData,
           inputMetaData
@@ -2137,9 +2137,9 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
         // Arrange
         let inputData = wrd.cHello + "%";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
           inputData,
           inputMetaData

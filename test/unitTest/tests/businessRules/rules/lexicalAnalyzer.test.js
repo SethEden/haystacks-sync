@@ -43,9 +43,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       // Arrange
       let inputData = "<?xml version='1.0' encoding='UTF-8'?><CommandWorkflows></CommandWorkflows>";
       let inputMetaData = 1;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
         inputData,
         inputMetaData
@@ -65,9 +65,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = ["df","xg","24","34","6d","fg"];
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -87,9 +87,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -109,9 +109,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = [false,true,false];
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -131,9 +131,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = [{"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"},{"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"}];
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -153,9 +153,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -175,9 +175,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = ["df","xg","24","34","6d","fg"];
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -197,9 +197,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -219,9 +219,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -241,9 +241,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = ["df","xg","24","34","6d","fg"];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -263,9 +263,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = ["df","xg","24","34","6d","fg"];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -285,9 +285,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -307,9 +307,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -329,9 +329,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = ["df","xg","24","34","6d","fg"];
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -351,9 +351,9 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
         // Arrange
         let inputData = ["df","xg","24","34","6d","fg"];
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseBusinessRuleArgument(
           inputData,
           inputMetaData
@@ -380,9 +380,9 @@ describe(tst_con.canalyzeArgument, () => {
       // Arrange
       let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = lexicalAnalyzer.analyzeArgument(
         inputData,
         inputMetaData
@@ -402,9 +402,9 @@ describe(tst_con.canalyzeArgument, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeArgument(
           inputData,
           inputMetaData
@@ -424,9 +424,9 @@ describe(tst_con.canalyzeArgument, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeArgument(
           inputData,
           inputMetaData
@@ -446,9 +446,9 @@ describe(tst_con.canalyzeArgument, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeArgument(
           inputData,
           inputMetaData
@@ -468,9 +468,9 @@ describe(tst_con.canalyzeArgument, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeArgument(
           inputData,
           inputMetaData
@@ -497,9 +497,9 @@ describe(tst_con.canalyzeForRegularExpression, () => {
       // Arrange
       let inputData = '/g/+';
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = lexicalAnalyzer.analyzeForRegularExpression(
         inputData,
         inputMetaData
@@ -519,9 +519,9 @@ describe(tst_con.canalyzeForRegularExpression, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeForRegularExpression(
           inputData,
           inputMetaData
@@ -541,9 +541,9 @@ describe(tst_con.canalyzeForRegularExpression, () => {
         // Arrange
         let inputData = '/g/+';
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeForRegularExpression(
           inputData,
           inputMetaData
@@ -563,9 +563,9 @@ describe(tst_con.canalyzeForRegularExpression, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeForRegularExpression(
           inputData,
           inputMetaData
@@ -585,9 +585,9 @@ describe(tst_con.canalyzeForRegularExpression, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.analyzeForRegularExpression(
           inputData,
           inputMetaData
@@ -614,9 +614,9 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
       // Arrange
       let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = lexicalAnalyzer.parseArgumentAsRegularExpression(
         inputData,
         inputMetaData
@@ -636,9 +636,9 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseArgumentAsRegularExpression(
           inputData,
           inputMetaData
@@ -658,9 +658,9 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseArgumentAsRegularExpression(
           inputData,
           inputMetaData
@@ -687,9 +687,9 @@ describe(tst_con.cparseArgumentAsArray, () => {
       // Arrange
       let inputData = "[1,2,3]";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = lexicalAnalyzer.parseArgumentAsArray(
         inputData,
         inputMetaData
@@ -709,9 +709,9 @@ describe(tst_con.cparseArgumentAsArray, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseArgumentAsArray(
           inputData,
           inputMetaData
@@ -731,9 +731,9 @@ describe(tst_con.cparseArgumentAsArray, () => {
         // Arrange
         let inputData = "[1,2,3]";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.parseArgumentAsArray(
           inputData,
           inputMetaData
@@ -760,9 +760,9 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
       // Arrange
       let inputData = ["hello", "world"];
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
         inputData,
         inputMetaData
@@ -782,9 +782,9 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
           inputData,
           inputMetaData
@@ -804,9 +804,9 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
         // Arrange
         let inputData = ["hello", "world"];
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
           inputData,
           inputMetaData
@@ -826,9 +826,9 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
           inputData,
           inputMetaData
@@ -848,9 +848,9 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
           inputData,
           inputMetaData
@@ -870,9 +870,9 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
           inputData,
           inputMetaData
@@ -892,9 +892,9 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
           inputData,
           inputMetaData

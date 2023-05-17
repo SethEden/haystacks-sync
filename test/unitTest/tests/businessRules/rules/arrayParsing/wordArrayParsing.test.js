@@ -141,9 +141,9 @@ describe(tst_con.cgetWordsArrayFromString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = wordArrayParsing.getWordsArrayFromString(inputData, inputMetaData);
 
         // Assert
@@ -160,9 +160,9 @@ describe(tst_con.cgetWordsArrayFromString, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = wordArrayParsing.getWordsArrayFromString(inputData, inputMetaData);
 
         // Assert
@@ -179,9 +179,9 @@ describe(tst_con.cgetWordsArrayFromString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = wordArrayParsing.getWordsArrayFromString(inputData, inputMetaData);
 
         // Assert
@@ -198,9 +198,9 @@ describe(tst_con.cgetWordsArrayFromString, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = wordArrayParsing.getWordsArrayFromString(inputData, inputMetaData);
 
         // Assert

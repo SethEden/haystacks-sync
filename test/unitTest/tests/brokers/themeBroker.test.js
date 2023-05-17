@@ -43,10 +43,11 @@ describe(tst_con.cgetNamedThemes, () => {
     * @date 2023/04/17
     */
     test(tst_con.cgetNamedThemes_validData, () => {
-        // Act
+        // Arrange
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
+        // Act
         let returnData = themeBroker.getNamedThemes();
 
         // Assert
@@ -62,9 +63,9 @@ describe(tst_con.cgetNamedThemes, () => {
     test(tst_con.cgetNamedThemes_inValidString, () => {
         // Arrange
         let input = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemes(input);
@@ -82,9 +83,9 @@ describe(tst_con.cgetNamedThemes, () => {
     test(tst_con.cgetNamedThemes_inValidNumber, () => {
         // Arrange
         let input = 123;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemes(input);
@@ -102,9 +103,9 @@ describe(tst_con.cgetNamedThemes, () => {
     test(tst_con.cgetNamedThemes_inValidBoolean, () => {
         // Arrange
         let input = false;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemes(input);
@@ -130,9 +131,9 @@ describe(tst_con.cgetNamedThemePath, () => {
     test(tst_con.cgetNamedThemePath_validData, () => {
         // Arrange
         let themeName = wrd.cbrokers;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemePath(themeName);
@@ -150,9 +151,9 @@ describe(tst_con.cgetNamedThemePath, () => {
     test(tst_con.cgetNamedThemePath_inValidString, () => {
         // Arrange
         let themeName = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
         let returnData = themeBroker.getNamedThemePath(themeName);
@@ -178,12 +179,11 @@ describe(tst_con.cloadTheme, () => {
     test(tst_con.cloadTheme_validData, () => {
         // Arrange
         let themePath = obj_con.themePath() + bas.cForwardSlash + wrd.cbrokers;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
         configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
 
+        // Act      
         let returnData = themeBroker.loadTheme(themePath);
 
         // Assert
@@ -207,13 +207,11 @@ describe(tst_con.capplyTheme, () => {
     test(tst_con.capplyTheme_validData, () => {
         // Arrange
         let themePath = obj_con.themePath() + bas.cForwardSlash + wrd.cbrokers;
-
-        // Act
         rulesLibrary.initRulesLibrary();
-
         configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
         configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
 
+        // Act 
         let loadedThemeData = themeBroker.loadTheme(themePath);
         let returnData = themeBroker.applyTheme(loadedThemeData);
 

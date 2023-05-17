@@ -143,9 +143,9 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
@@ -162,9 +162,9 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
@@ -181,9 +181,9 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Arrange
         let inputData = 123;
         let inputMetaData = [1, 2, 3, 4];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
@@ -200,9 +200,9 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
@@ -219,9 +219,9 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
@@ -238,9 +238,9 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
@@ -264,9 +264,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = "";
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
@@ -283,9 +283,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
@@ -302,9 +302,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = "";
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
@@ -321,9 +321,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
@@ -340,9 +340,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = 123;
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
@@ -359,9 +359,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = false;
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
@@ -378,9 +378,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = "";
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
@@ -397,9 +397,9 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
-
-        // Act
         dataBroker.initializeConstantsValidationData();
+
+        // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert

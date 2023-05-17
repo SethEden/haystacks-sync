@@ -42,9 +42,9 @@ describe(tst_con.cisStringCamelCase, () => {
       // Arrange
       let inputData = "helloWorld";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.isStringCamelCase(
         inputData,
         inputMetaData
@@ -64,9 +64,9 @@ describe(tst_con.cisStringCamelCase, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.isStringCamelCase(
           inputData,
           inputMetaData
@@ -86,9 +86,9 @@ describe(tst_con.cisStringCamelCase, () => {
         // Arrange
         let inputData = "helloWorld";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.isStringCamelCase(
           inputData,
           inputMetaData
@@ -108,9 +108,9 @@ describe(tst_con.cisStringCamelCase, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.isStringCamelCase(
           inputData,
           inputMetaData
@@ -137,9 +137,9 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
       // Arrange
       let inputData = "helloWorld";
       let inputMetaData = "hello";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.mapWordToCamelCaseWord(
         inputData,
         inputMetaData
@@ -159,9 +159,9 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.mapWordToCamelCaseWord(
           inputData,
           inputMetaData
@@ -181,9 +181,9 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
         // Arrange
         let inputData = "helloWorld";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.mapWordToCamelCaseWord(
           inputData,
           inputMetaData
@@ -203,9 +203,9 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.mapWordToCamelCaseWord(
           inputData,
           inputMetaData
@@ -232,9 +232,9 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
       // Arrange
       let inputData = "helloWorld";
       let inputMetaData = "hello";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.simplifyAndConsolidateString(
         inputData,
         inputMetaData
@@ -254,9 +254,9 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.simplifyAndConsolidateString(
           inputData,
           inputMetaData
@@ -276,9 +276,9 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
         // Arrange
         let inputData = "helloWorld";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.simplifyAndConsolidateString(
           inputData,
           inputMetaData
@@ -298,9 +298,9 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.simplifyAndConsolidateString(
           inputData,
           inputMetaData
@@ -327,9 +327,9 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
       // Arrange
       let inputData = wrd.cHello;
       let inputMetaData = wrd.cHello;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.compareSimplifiedAndConsolidatedStrings(
         inputData,
         inputMetaData
@@ -349,9 +349,9 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = wrd.cHello;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.compareSimplifiedAndConsolidatedStrings(
           inputData,
           inputMetaData
@@ -371,9 +371,9 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.compareSimplifiedAndConsolidatedStrings(
           inputData,
           inputMetaData
@@ -393,9 +393,9 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.compareSimplifiedAndConsolidatedStrings(
           inputData,
           inputMetaData
@@ -422,9 +422,9 @@ describe(tst_con.ccountCamelCaseWords, () => {
       // Arrange
       let inputData = "helloWorld";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.countCamelCaseWords(
         inputData,
         inputMetaData
@@ -444,9 +444,9 @@ describe(tst_con.ccountCamelCaseWords, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.countCamelCaseWords(
           inputData,
           inputMetaData
@@ -466,9 +466,9 @@ describe(tst_con.ccountCamelCaseWords, () => {
         // Arrange
         let inputData = "helloWorld";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.countCamelCaseWords(
           inputData,
           inputMetaData
@@ -488,9 +488,9 @@ describe(tst_con.ccountCamelCaseWords, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.countCamelCaseWords(
           inputData,
           inputMetaData
@@ -510,9 +510,9 @@ describe(tst_con.ccountCamelCaseWords, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.countCamelCaseWords(
           inputData,
           inputMetaData
@@ -539,9 +539,9 @@ describe(tst_con.cdoesStringContainAcronym, () => {
       // Arrange
       let inputData = "CHEllo";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.doesStringContainAcronym(
         inputData,
         inputMetaData
@@ -561,9 +561,9 @@ describe(tst_con.cdoesStringContainAcronym, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.doesStringContainAcronym(
           inputData,
           inputMetaData
@@ -583,9 +583,9 @@ describe(tst_con.cdoesStringContainAcronym, () => {
         // Arrange
         let inputData = "CHEllo";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.doesStringContainAcronym(
           inputData,
           inputMetaData
@@ -605,9 +605,9 @@ describe(tst_con.cdoesStringContainAcronym, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.doesStringContainAcronym(
           inputData,
           inputMetaData
@@ -627,9 +627,9 @@ describe(tst_con.cdoesStringContainAcronym, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.doesStringContainAcronym(
           inputData,
           inputMetaData
@@ -656,9 +656,9 @@ describe(tst_con.cdetermineWordDelimiter, () => {
       // Arrange
       let inputData = "helloWorld";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.determineWordDelimiter(
         inputData,
         inputMetaData
@@ -678,9 +678,9 @@ describe(tst_con.cdetermineWordDelimiter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.determineWordDelimiter(
           inputData,
           inputMetaData
@@ -700,9 +700,9 @@ describe(tst_con.cdetermineWordDelimiter, () => {
         // Arrange
         let inputData = "helloWorld";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.determineWordDelimiter(
           inputData,
           inputMetaData
@@ -722,9 +722,9 @@ describe(tst_con.cdetermineWordDelimiter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.determineWordDelimiter(
           inputData,
           inputMetaData
@@ -751,9 +751,9 @@ describe(tst_con.ccountDelimiterInString, () => {
       // Arrange
       let inputData = "hello_World_welcome";
       let inputMetaData = "_";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.countDelimiterInString(
         inputData,
         inputMetaData
@@ -773,9 +773,9 @@ describe(tst_con.ccountDelimiterInString, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "_";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.countDelimiterInString(
           inputData,
           inputMetaData
@@ -795,9 +795,9 @@ describe(tst_con.ccountDelimiterInString, () => {
         // Arrange
         let inputData = "hello_World_welcome";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.countDelimiterInString(
           inputData,
           inputMetaData
@@ -817,9 +817,9 @@ describe(tst_con.ccountDelimiterInString, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.countDelimiterInString(
           inputData,
           inputMetaData
@@ -846,9 +846,9 @@ describe(tst_con.cgetWordCountInString, () => {
       // Arrange
       let inputData = "hello_World_welcome";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.getWordCountInString(
         inputData,
         inputMetaData
@@ -868,9 +868,9 @@ describe(tst_con.cgetWordCountInString, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "_";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.getWordCountInString(
           inputData,
           inputMetaData
@@ -890,9 +890,9 @@ describe(tst_con.cgetWordCountInString, () => {
         // Arrange
         let inputData = "hello_World_welcome";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.getWordCountInString(
           inputData,
           inputMetaData
@@ -912,9 +912,9 @@ describe(tst_con.cgetWordCountInString, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.getWordCountInString(
           inputData,
           inputMetaData
@@ -941,9 +941,9 @@ describe(tst_con.cisStringList, () => {
       // Arrange
       let inputData = "1,2,3";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.isStringList(
         inputData,
         inputMetaData
@@ -963,9 +963,9 @@ describe(tst_con.cisStringList, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.isStringList(
           inputData,
           inputMetaData
@@ -985,9 +985,9 @@ describe(tst_con.cisStringList, () => {
         // Arrange
         let inputData = "1,2,3";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.isStringList(
           inputData,
           inputMetaData
@@ -1007,9 +1007,9 @@ describe(tst_con.cisStringList, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.isStringList(
           inputData,
           inputMetaData
@@ -1029,9 +1029,9 @@ describe(tst_con.cisStringList, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.isStringList(
           inputData,
           inputMetaData
@@ -1058,9 +1058,9 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
       // Arrange
       let inputData = wrd.cHello;
       let inputMetaData = wrd.cWorld;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = wordStringParsing.aggregateNumericalDifferenceBetweenTwoStrings(
         inputData,
         inputMetaData
@@ -1080,9 +1080,9 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = wrd.cWorld;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.aggregateNumericalDifferenceBetweenTwoStrings(
           inputData,
           inputMetaData
@@ -1102,9 +1102,9 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.aggregateNumericalDifferenceBetweenTwoStrings(
           inputData,
           inputMetaData
@@ -1124,9 +1124,9 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = wordStringParsing.aggregateNumericalDifferenceBetweenTwoStrings(
           inputData,
           inputMetaData

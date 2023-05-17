@@ -42,9 +42,9 @@ describe(tst_con.ccleanCommandInput, () => {
         // Arrange
         let inputData = bas.cDoubleDash + wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert
@@ -61,9 +61,9 @@ describe(tst_con.ccleanCommandInput, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert
@@ -80,9 +80,9 @@ describe(tst_con.ccleanCommandInput, () => {
         // Arrange
         let inputData = bas.cDoubleDash + wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert
@@ -99,9 +99,9 @@ describe(tst_con.ccleanCommandInput, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert

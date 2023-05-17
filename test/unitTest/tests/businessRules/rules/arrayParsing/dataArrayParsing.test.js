@@ -251,9 +251,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -270,9 +270,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -289,9 +289,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -308,9 +308,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = 123;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -327,9 +327,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -346,9 +346,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = 123;
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -365,9 +365,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = false;
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -384,9 +384,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = undefined;
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -403,9 +403,9 @@ describe(tst_con.cstoreData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = NaN;
-
-        // Act
         D[sys.cDataStorage] = {};
+
+        // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
@@ -429,10 +429,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, inputMetaData);
 
         // Assert
@@ -449,10 +449,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(wrd.cWorld, inputMetaData);
 
         // Assert
@@ -469,10 +469,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, inputMetaData);
 
         // Assert
@@ -489,10 +489,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = 123;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, inputMetaData);
 
         // Assert
@@ -509,10 +509,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, inputMetaData);
 
         // Assert
@@ -529,10 +529,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = 123;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, inputMetaData);
 
         // Assert
@@ -549,10 +549,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = true;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, inputMetaData);
 
         // Assert
@@ -569,10 +569,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(undefined, inputMetaData);
 
         // Assert
@@ -589,10 +589,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(NaN, inputMetaData);
 
         // Assert
@@ -609,9 +609,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, undefined);
 
         // Assert
@@ -628,10 +629,10 @@ describe(tst_con.cgetStoredData, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = wrd.cWorld;
-
-        // Act
         D[sys.cDataStorage] = {};
         dataArrayParsing.storeData(inputData, inputMetaData);
+
+        // Act        
         let returnData = dataArrayParsing.getStoredData(inputData, NaN);
 
         // Assert

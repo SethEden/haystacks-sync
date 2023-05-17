@@ -44,9 +44,9 @@ describe(tst_con.cgetXmlData, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.getXmlData(
         inputData,
         inputMetaData
@@ -66,9 +66,9 @@ describe(tst_con.cgetXmlData, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.getXmlData(
           inputData,
           inputMetaData
@@ -95,9 +95,9 @@ describe(tst_con.cgetCsvData, () => {
       // Arrange
       let inputData = obj_con.csvPath();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.getCsvData(
         inputData,
         inputMetaData
@@ -117,9 +117,9 @@ describe(tst_con.cgetCsvData, () => {
         // Arrange
         let inputData = obj_con.csvPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.getCsvData(
           inputData,
           inputMetaData
@@ -146,9 +146,9 @@ describe(tst_con.cgetJsonData, () => {
       // Arrange
       let inputData = obj_con.jsonPath();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.getJsonData(
         inputData,
         inputMetaData
@@ -168,9 +168,9 @@ describe(tst_con.cgetJsonData, () => {
         // Arrange
         let inputData = obj_con.jsonPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.getJsonData(
           inputData,
           inputMetaData
@@ -197,9 +197,9 @@ describe(tst_con.cwriteJsonData, () => {
       // Arrange
       let inputData = obj_con.jsonPath();
       let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.writeJsonData(
         inputData,
         inputMetaData
@@ -226,9 +226,9 @@ describe(tst_con.creadDirectoryContents, () => {
       // Arrange
       let inputData = obj_con.xmlFolder();
       let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.readDirectoryContents(
         inputData,
         inputMetaData
@@ -248,9 +248,9 @@ describe(tst_con.creadDirectoryContents, () => {
         // Arrange
         let inputData = obj_con.xmlFolder();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.readDirectoryContents(
           inputData,
           inputMetaData
@@ -277,9 +277,9 @@ describe(tst_con.cscanDirectoryContents, () => {
       // Arrange
       let inputData = obj_con.xmlFolder();
       let inputMetaData = [true, 2];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.scanDirectoryContents(
         inputData,
         inputMetaData
@@ -299,9 +299,9 @@ describe(tst_con.cscanDirectoryContents, () => {
         // Arrange
         let inputData = obj_con.xmlFolder();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.scanDirectoryContents(
           inputData,
           inputMetaData
@@ -321,9 +321,9 @@ describe(tst_con.cscanDirectoryContents, () => {
         // Arrange
         let inputData = obj_con.xmlFolder();
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.scanDirectoryContents(
           inputData,
           inputMetaData
@@ -350,9 +350,9 @@ describe(tst_con.cgetDirectoryList, () => {
       // Arrange
       let inputData = obj_con.xmlFolder();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.getDirectoryList(
         inputData,
         inputMetaData
@@ -372,9 +372,9 @@ describe(tst_con.cgetDirectoryList, () => {
         // Arrange
         let inputData = obj_con.xmlFolder();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.getDirectoryList(
           inputData,
           inputMetaData
@@ -401,9 +401,9 @@ describe(tst_con.creadDirectorySynchronously, () => {
       // Arrange
       let inputData = obj_con.xmlFolder();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileOperations.readDirectorySynchronously(
         inputData,
         inputMetaData
@@ -423,9 +423,9 @@ describe(tst_con.creadDirectorySynchronously, () => {
         // Arrange
         let inputData = obj_con.xmlFolder();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileOperations.readDirectorySynchronously(
           inputData,
           inputMetaData
@@ -452,9 +452,9 @@ describe(tst_con.ccopyFileSync, () => {
     // Arrange
     let inputData = [obj_con.xmlPath(), obj_con.testXmlPath()];
     let inputMetaData = [["*.*"], ["*.*"]];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -474,9 +474,9 @@ describe(tst_con.ccopyFileSync, () => {
     // Arrange
     let inputData = [obj_con.xmlPath(), obj_con.testXmlPath()];
     let inputMetaData = "dfxg24346dfg";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -494,30 +494,6 @@ describe(tst_con.ccopyFileSync, () => {
  */
 describe(tst_con.cappendMessageToFile, () => {
   /**
-   * @function appendMessageToFile_validDataString
-   * @description Tests the business rules function appendMessageToFile with a valid input.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_validDataString, () => {
-    // Arrange
-    let inputData = obj_con.csvPath();
-    let inputMetaData = "Page_HomePublic,AppendMessageToFile,AssertExists";
-
-    // Act
-    rulesLibrary.initRulesLibrary();
-    let returnData = false;
-    
-    // fileOperations.appendMessageToFile(
-    //   inputData,
-    //   inputMetaData
-    // ); // append success
-
-    // Assert
-    expect(returnData).toBe(false); // path array
-  });    
-
-  /**
    * @function appendMessageToFile_inValidInputDataBoolean
    * @description Tests the business rules function appendMessageToFile with a invalid boolean input.
    * @author Json Howard
@@ -527,9 +503,9 @@ describe(tst_con.cappendMessageToFile, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = fileOperations.appendMessageToFile(
       inputData,
       inputMetaData

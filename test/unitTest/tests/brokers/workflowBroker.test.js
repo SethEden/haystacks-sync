@@ -49,11 +49,11 @@ describe(tst_con.cgetWorkflow, () => {
     test(tst_con.cgetWorkflow_validData, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.getWorkflow(workflowName);
 
         // Assert
@@ -69,11 +69,11 @@ describe(tst_con.cgetWorkflow, () => {
     test(tst_con.cgetWorkflow_inValidString, () => {
         // Arrange
         let workflowName = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.getWorkflow(workflowName);
 
         // Assert
@@ -89,11 +89,11 @@ describe(tst_con.cgetWorkflow, () => {
     test(tst_con.cgetWorkflow_inValidNumber, () => {
         // Arrange
         let workflowName = 123;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.getWorkflow(workflowName);
 
         // Assert
@@ -109,11 +109,11 @@ describe(tst_con.cgetWorkflow, () => {
     test(tst_con.cgetWorkflow_inValidBoolean, () => {
         // Arrange
         let workflowName = false;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.getWorkflow(workflowName);
 
         // Assert
@@ -137,11 +137,11 @@ describe(tst_con.cdoesWorkflowExist, () => {
     test(tst_con.cdoesWorkflowExist_validData, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
         // Assert
@@ -157,11 +157,11 @@ describe(tst_con.cdoesWorkflowExist, () => {
     test(tst_con.cdoesWorkflowExist_inValidString, () => {
         // Arrange
         let workflowName = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
         // Assert
@@ -177,11 +177,11 @@ describe(tst_con.cdoesWorkflowExist, () => {
     test(tst_con.cdoesWorkflowExist_inValidNumber, () => {
         // Arrange
         let workflowName = 123;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
         // Assert
@@ -197,11 +197,11 @@ describe(tst_con.cdoesWorkflowExist, () => {
     test(tst_con.cdoesWorkflowExist_inValidBoolean, () => {
         // Arrange
         let workflowName = false;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExist(workflowName);
 
         // Assert
@@ -225,11 +225,11 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     test(tst_con.cdoesWorkflowExistInWorkflowData_validData, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
         // Assert
@@ -245,11 +245,11 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     test(tst_con.cdoesWorkflowExistInWorkflowData_inValidWorkflowDataString, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData({}, workflowName);
 
         // Assert
@@ -265,11 +265,11 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     test(tst_con.cdoesWorkflowExistInWorkflowData_inValidWorkflowNameString, () => {
         // Arrange
         let workflowName = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
-        chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+        chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);        
+
+        // Act
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
         // Assert
@@ -285,11 +285,11 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     test(tst_con.cdoesWorkflowExistInWorkflowData_inValidNumber, () => {
         // Arrange
         let workflowName = 123;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
         // Assert
@@ -305,11 +305,11 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     test(tst_con.cdoesWorkflowExistInWorkflowData_inValidBoolean, () => {
         // Arrange
         let workflowName = false;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
 
         // Assert
@@ -333,11 +333,11 @@ describe(tst_con.csearchWorkflow, () => {
     test(tst_con.csearchWorkflow_validData, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.searchWorkflow(D[sys.cCommandWorkflows], workflowName);
 
         // Assert
@@ -353,11 +353,11 @@ describe(tst_con.csearchWorkflow, () => {
     test(tst_con.csearchWorkflow_inValidWorkflowDataString, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.searchWorkflow("", workflowName);
 
         // Assert
@@ -373,11 +373,11 @@ describe(tst_con.csearchWorkflow, () => {
     test(tst_con.csearchWorkflow_inValidWorkflowNameString, () => {
         // Arrange
         let workflowName = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.searchWorkflow(D[sys.cCommandWorkflows], workflowName);
 
         // Assert
@@ -393,11 +393,11 @@ describe(tst_con.csearchWorkflow, () => {
     test(tst_con.csearchWorkflow_inValidNumber, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.searchWorkflow(123, workflowName);
 
         // Assert
@@ -413,11 +413,11 @@ describe(tst_con.csearchWorkflow, () => {
     test(tst_con.csearchWorkflow_inValidBoolean, () => {
         // Arrange
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.searchWorkflow(false, workflowName);
 
         // Assert
@@ -439,10 +439,12 @@ describe(tst_con.cgetAllWorkflows, () => {
     * @date 2023/04/17
     */
     test(tst_con.cgetAllWorkflows_validData, () => {
-        // Act
+        // Arrange
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.getAllWorkflows(D[sys.cCommandWorkflows]);
 
         // Assert
@@ -456,10 +458,12 @@ describe(tst_con.cgetAllWorkflows, () => {
     * @date 2023/04/17
     */
     test(tst_con.cgetAllWorkflows_inValidString, () => {
-        // Act
+        // Arrange
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act
         let returnData = workflowBroker.getAllWorkflows("");
 
         // Assert
@@ -473,10 +477,12 @@ describe(tst_con.cgetAllWorkflows, () => {
     * @date 2023/04/17
     */
     test(tst_con.cgetAllWorkflows_inValidNumber, () => {
-        // Act
+        // Arrange
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act
         let returnData = workflowBroker.getAllWorkflows(123);
 
         // Assert
@@ -490,10 +496,12 @@ describe(tst_con.cgetAllWorkflows, () => {
     * @date 2023/04/17
     */
     test(tst_con.cgetAllWorkflows_inValidBoolean, () => {
-        // Act
+        // Arrange
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act
         let returnData = workflowBroker.getAllWorkflows(false);
 
         // Assert
@@ -517,11 +525,11 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
     test(tst_con.cgetWorkflowNamespaceDataObject_validData, () => {
         // Arrange
         let namespaceToFind = wrd.cbusiness + wrd.cRules;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(D[sys.cCommandWorkflows], namespaceToFind);
 
         // Assert
@@ -537,11 +545,11 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
     test(tst_con.cgetWorkflowNamespaceDataObject_inValidWorkflowDataStructureString, () => {
         // Arrange
         let namespaceToFind = wrd.cbusiness + wrd.cRules;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act        
         let returnData = workflowBroker.getWorkflowNamespaceDataObject("", namespaceToFind);
 
         // Assert
@@ -557,11 +565,11 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
     test(tst_con.cgetWorkflowNamespaceDataObject_inValidNamespaceToFindString, () => {
         // Arrange
         let namespaceToFind = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(D[sys.cCommandWorkflows], namespaceToFind);
 
         // Assert
@@ -577,11 +585,11 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
     test(tst_con.cgetWorkflowNamespaceDataObject_inValidNumber, () => {
         // Arrange
         let namespaceToFind = wrd.cbusiness + wrd.cRules;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(123, namespaceToFind);
 
         // Assert
@@ -597,11 +605,11 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
     test(tst_con.cgetWorkflowNamespaceDataObject_inValidBoolean, () => {
         // Arrange
         let namespaceToFind = wrd.cbusiness + wrd.cRules;
-
-        // Act
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
+
+        // Act
         let returnData = workflowBroker.getWorkflowNamespaceDataObject(false, namespaceToFind);
 
         // Assert

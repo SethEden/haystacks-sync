@@ -46,9 +46,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
-
-      // Act
       dataBroker.setupDataStorage(false);
+
+      // Act      
       let returnData = constantStringParsing.validateConstantsDataValidation(
         inputData,
         inputMetaData
@@ -68,9 +68,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = 'dfxg24346dfg';    
-
-      // Act
       dataBroker.setupDataStorage(false);
+
+      // Act      
       let returnData = constantStringParsing.validateConstantsDataValidation(
         inputData,
         inputMetaData
@@ -90,9 +90,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];    
-
-      // Act
       dataBroker.setupDataStorage(false);
+
+      // Act      
       let returnData = constantStringParsing.validateConstantsDataValidation(
         inputData,
         inputMetaData
@@ -119,9 +119,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = obj_con.xmlPath();
     let inputMetaData = "";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -141,9 +141,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = "";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -163,9 +163,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = obj_con.xmlPath();
     let inputMetaData = "dfxg24346dfg";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -185,9 +185,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -207,9 +207,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -229,9 +229,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -251,9 +251,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -280,9 +280,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = obj_con.xmlPath();
     let inputMetaData = "";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -302,9 +302,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = "";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -324,9 +324,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = obj_con.xmlPath();
     let inputMetaData = "dfxg24346dfg";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -346,9 +346,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -368,9 +368,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -390,9 +390,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -412,9 +412,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
       inputData,
       inputMetaData
@@ -441,9 +441,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = bas.cc;
     let inputMetaData = wrd.cHello;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
       inputData,
       inputMetaData
@@ -463,9 +463,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = bas.cc;
     let inputMetaData = "dfxg24346dfg";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
       inputData,
       inputMetaData
@@ -485,9 +485,9 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
       inputData,
       inputMetaData
@@ -514,11 +514,10 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = wrd.cWorld;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
-    // dataBroker.addConstantsValidationData(inputMetaData);
+
+    // Act        
     let returnData = constantStringParsing.validateConstantsDataValidationLineItemName(
       inputData,
       inputMetaData
@@ -538,10 +537,10 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = wrd.cWorld;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
+
+    // Act        
     let returnData = constantStringParsing.validateConstantsDataValidationLineItemName(
       inputData,
       inputMetaData
@@ -561,10 +560,10 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "dfxg24346dfg";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
+
+    // Act        
     let returnData = constantStringParsing.validateConstantsDataValidationLineItemName(
       inputData,
       inputMetaData
@@ -584,10 +583,10 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
+
+    // Act        
     let returnData = constantStringParsing.validateConstantsDataValidationLineItemName(
       inputData,
       inputMetaData
@@ -607,10 +606,10 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
+
+    // Act        
     let returnData = constantStringParsing.validateConstantsDataValidationLineItemName(
       inputData,
       inputMetaData
@@ -630,10 +629,10 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
+
+    // Act        
     let returnData = constantStringParsing.validateConstantsDataValidationLineItemName(
       inputData,
       inputMetaData
@@ -653,10 +652,10 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
+
+    // Act      
     let returnData = constantStringParsing.validateConstantsDataValidationLineItemName(
       inputData,
       inputMetaData
@@ -991,9 +990,9 @@ describe(tst_con.cgetConstantActualValue, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = wrd.cWorld;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.getConstantActualValue(
       inputData,
       inputMetaData
@@ -1013,9 +1012,9 @@ describe(tst_con.cgetConstantActualValue, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = wrd.cWorld;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.getConstantActualValue(
       inputData,
       inputMetaData
@@ -1035,9 +1034,9 @@ describe(tst_con.cgetConstantActualValue, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "dfxg24346dfg";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.getConstantActualValue(
       inputData,
       inputMetaData
@@ -1057,9 +1056,9 @@ describe(tst_con.cgetConstantActualValue, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.getConstantActualValue(
       inputData,
       inputMetaData
@@ -1079,9 +1078,9 @@ describe(tst_con.cgetConstantActualValue, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.getConstantActualValue(
       inputData,
       inputMetaData
@@ -1101,9 +1100,9 @@ describe(tst_con.cgetConstantActualValue, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.getConstantActualValue(
       inputData,
       inputMetaData
@@ -1123,9 +1122,9 @@ describe(tst_con.cgetConstantActualValue, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
+
+    // Act    
     let returnData = constantStringParsing.getConstantActualValue(
       inputData,
       inputMetaData
@@ -1439,9 +1438,9 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "";    
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
       inputData,
       inputMetaData
@@ -1461,9 +1460,9 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = wrd.cWorld;  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
       inputData,
       inputMetaData
@@ -1483,9 +1482,9 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "dfxg24346dfg";  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
       inputData,
       inputMetaData
@@ -1505,9 +1504,9 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
       inputData,
       inputMetaData
@@ -1527,9 +1526,9 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
       inputData,
       inputMetaData
@@ -1549,9 +1548,9 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
       inputData,
       inputMetaData
@@ -1571,9 +1570,9 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
       inputData,
       inputMetaData
@@ -1600,9 +1599,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "";    
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
       inputData,
       inputMetaData
@@ -1622,9 +1621,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = wrd.cWorld;  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
       inputData,
       inputMetaData
@@ -1644,9 +1643,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "dfxg24346dfg";  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
       inputData,
       inputMetaData
@@ -1666,9 +1665,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
       inputData,
       inputMetaData
@@ -1688,9 +1687,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
       inputData,
       inputMetaData
@@ -1710,9 +1709,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
       inputData,
       inputMetaData
@@ -1732,9 +1731,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
       inputData,
       inputMetaData
@@ -1803,9 +1802,9 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "dfxg24346dfg";  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
       inputData,
       inputMetaData
@@ -1825,9 +1824,9 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];  
-
-    // Act
     D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
       inputData,
       inputMetaData
@@ -1882,10 +1881,10 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
+
+    // Act    
     let returnData = constantStringParsing.validateConstantsDataValues(
       inputData,
       inputMetaData
@@ -1904,11 +1903,11 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
   test(tst_con.cvalidateConstantsDataValues_inValidDataInputDataString, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
-
-    // Act
+    let inputMetaData = "";  
     dataBroker.initializeConstantsValidationData();
-    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    D[sys.cConstantsValidationData][inputData] = [1, 2];  
+
+    // Act    
     let returnData = constantStringParsing.validateConstantsDataValues(
       inputData,
       inputMetaData
@@ -1927,11 +1926,11 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
   test(tst_con.cvalidateConstantsDataValues_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";    
-
-    // Act
+    let inputMetaData = "dfxg24346dfg";  
     dataBroker.initializeConstantsValidationData();
-    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    D[sys.cConstantsValidationData][inputData] = [1, 2];  
+
+    // Act    
     let returnData = constantStringParsing.validateConstantsDataValues(
       inputData,
       inputMetaData
@@ -1951,10 +1950,10 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
+
+    // Act    
     let returnData = constantStringParsing.validateConstantsDataValues(
       inputData,
       inputMetaData
@@ -1973,11 +1972,11 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
   test(tst_con.cvalidateConstantsDataValues_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];    
-
-    // Act
+    let inputMetaData = [1,2,3,4,5];   
     dataBroker.initializeConstantsValidationData();
-    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    D[sys.cConstantsValidationData][inputData] = [1, 2]; 
+
+    // Act    
     let returnData = constantStringParsing.validateConstantsDataValues(
       inputData,
       inputMetaData
@@ -1997,10 +1996,10 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
+
+    // Act    
     let returnData = constantStringParsing.validateConstantsDataValues(
       inputData,
       inputMetaData
@@ -2019,11 +2018,11 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
   test(tst_con.cvalidateConstantsDataValues_inValidInputMetaDataBoolean, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
-    let inputMetaData = false;    
-
-    // Act
+    let inputMetaData = false; 
     dataBroker.initializeConstantsValidationData();
-    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    D[sys.cConstantsValidationData][inputData] = [1, 2];   
+
+    // Act    
     let returnData = constantStringParsing.validateConstantsDataValues(
       inputData,
       inputMetaData
@@ -2050,10 +2049,10 @@ describe(tst_con.cisConstantValid, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "";    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
+
+    // Act    
     let returnData = constantStringParsing.isConstantValid(
       inputData,
       inputMetaData
@@ -2072,11 +2071,11 @@ describe(tst_con.cisConstantValid, () => {
   test(tst_con.cisConstantValid_inValidDataInputDataString, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
-
-    // Act
+    let inputMetaData = "";  
     dataBroker.initializeConstantsValidationData();
-    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    D[sys.cConstantsValidationData][inputData] = [1, 2];  
+
+    // Act    
     let returnData = constantStringParsing.isConstantValid(
       inputData,
       inputMetaData
@@ -2095,11 +2094,11 @@ describe(tst_con.cisConstantValid, () => {
   test(tst_con.cisConstantValid_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";    
-
-    // Act
+    let inputMetaData = "dfxg24346dfg";  
     dataBroker.initializeConstantsValidationData();
-    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    D[sys.cConstantsValidationData][inputData] = [1, 2];  
+
+    // Act    
     let returnData = constantStringParsing.isConstantValid(
       inputData,
       inputMetaData
@@ -2118,11 +2117,11 @@ describe(tst_con.cisConstantValid, () => {
   test(tst_con.cisConstantValid_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];    
-
-    // Act
+    let inputMetaData = [1,2,3,4,5];   
     dataBroker.initializeConstantsValidationData();
-    D[sys.cConstantsValidationData][inputData] = [1, 2];
+    D[sys.cConstantsValidationData][inputData] = [1, 2]; 
+
+    // Act    
     let returnData = constantStringParsing.isConstantValid(
       inputData,
       inputMetaData
@@ -2142,10 +2141,10 @@ describe(tst_con.cisConstantValid, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
+
+    // Act    
     let returnData = constantStringParsing.isConstantValid(
       inputData,
       inputMetaData
@@ -2165,10 +2164,10 @@ describe(tst_con.cisConstantValid, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
+
+    // Act    
     let returnData = constantStringParsing.isConstantValid(
       inputData,
       inputMetaData
@@ -2188,10 +2187,10 @@ describe(tst_con.cisConstantValid, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
+
+    // Act    
     let returnData = constantStringParsing.isConstantValid(
       inputData,
       inputMetaData

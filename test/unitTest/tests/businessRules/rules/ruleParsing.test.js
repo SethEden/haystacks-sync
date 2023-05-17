@@ -42,9 +42,9 @@ describe(tst_con.cdoAllRulesExist, () => {
       // Arrange
       let inputData = [biz.creplaceCharacterWithCharacter];
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.doAllRulesExist(
         inputData,
         inputMetaData
@@ -64,9 +64,9 @@ describe(tst_con.cdoAllRulesExist, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doAllRulesExist(
           inputData,
           inputMetaData
@@ -86,9 +86,9 @@ describe(tst_con.cdoAllRulesExist, () => {
         // Arrange
         let inputData = [biz.creplaceCharacterWithCharacter];
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doAllRulesExist(
           inputData,
           inputMetaData
@@ -108,9 +108,9 @@ describe(tst_con.cdoAllRulesExist, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doAllRulesExist(
           inputData,
           inputMetaData
@@ -130,9 +130,9 @@ describe(tst_con.cdoAllRulesExist, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doAllRulesExist(
           inputData,
           inputMetaData
@@ -152,9 +152,9 @@ describe(tst_con.cdoAllRulesExist, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doAllRulesExist(
           inputData,
           inputMetaData
@@ -174,9 +174,9 @@ describe(tst_con.cdoAllRulesExist, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doAllRulesExist(
           inputData,
           inputMetaData
@@ -203,9 +203,9 @@ describe(tst_con.cdoesRuleExist, () => {
       // Arrange
       let inputData = biz.creplaceCharacterWithCharacter;
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.doesRuleExist(
         inputData,
         inputMetaData
@@ -225,9 +225,9 @@ describe(tst_con.cdoesRuleExist, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doesRuleExist(
           inputData,
           inputMetaData
@@ -247,9 +247,9 @@ describe(tst_con.cdoesRuleExist, () => {
         // Arrange
         let inputData = biz.creplaceCharacterWithCharacter;
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doesRuleExist(
           inputData,
           inputMetaData
@@ -269,9 +269,9 @@ describe(tst_con.cdoesRuleExist, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doesRuleExist(
           inputData,
           inputMetaData
@@ -291,9 +291,9 @@ describe(tst_con.cdoesRuleExist, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doesRuleExist(
           inputData,
           inputMetaData
@@ -313,9 +313,9 @@ describe(tst_con.cdoesRuleExist, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doesRuleExist(
           inputData,
           inputMetaData
@@ -335,9 +335,9 @@ describe(tst_con.cdoesRuleExist, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.doesRuleExist(
           inputData,
           inputMetaData
@@ -364,9 +364,9 @@ describe(tst_con.cgetRule, () => {
       // Arrange
       let inputData = biz.creplaceCharacterWithCharacter;
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.getRule(
         inputData,
         inputMetaData
@@ -386,9 +386,9 @@ describe(tst_con.cgetRule, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.getRule(
           inputData,
           inputMetaData
@@ -408,9 +408,9 @@ describe(tst_con.cgetRule, () => {
         // Arrange
         let inputData = biz.creplaceCharacterWithCharacter;
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.getRule(
           inputData,
           inputMetaData
@@ -430,9 +430,9 @@ describe(tst_con.cgetRule, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.getRule(
           inputData,
           inputMetaData
@@ -452,9 +452,9 @@ describe(tst_con.cgetRule, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.getRule(
           inputData,
           inputMetaData
@@ -474,9 +474,9 @@ describe(tst_con.cgetRule, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.getRule(
           inputData,
           inputMetaData
@@ -496,9 +496,9 @@ describe(tst_con.cgetRule, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = ruleParsing.getRule(
           inputData,
           inputMetaData
@@ -525,9 +525,9 @@ describe(tst_con.cprocessRulesInternal, () => {
     // Arrange
     let inputData = [biz.creplaceCharacterWithCharacter];
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = ruleParsing.processRulesInternal(
       inputData,
       inputMetaData
@@ -547,9 +547,9 @@ describe(tst_con.cprocessRulesInternal, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.processRulesInternal(
         inputData,
         inputMetaData
@@ -569,9 +569,9 @@ describe(tst_con.cprocessRulesInternal, () => {
       // Arrange
       let inputData = biz.creplaceCharacterWithCharacter;
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.processRulesInternal(
         inputData,
         inputMetaData
@@ -591,9 +591,9 @@ describe(tst_con.cprocessRulesInternal, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.processRulesInternal(
         inputData,
         inputMetaData
@@ -613,9 +613,9 @@ describe(tst_con.cprocessRulesInternal, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.processRulesInternal(
         inputData,
         inputMetaData
@@ -635,9 +635,9 @@ describe(tst_con.cprocessRulesInternal, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.processRulesInternal(
         inputData,
         inputMetaData
@@ -657,9 +657,9 @@ describe(tst_con.cprocessRulesInternal, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = ruleParsing.processRulesInternal(
         inputData,
         inputMetaData
@@ -679,9 +679,9 @@ describe(tst_con.cprocessRulesInternal, () => {
     // Arrange
     let inputData = [biz.creplaceCharacterWithCharacter];
     let inputMetaData = undefined;
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = ruleParsing.processRulesInternal(
       inputData,
       inputMetaData
@@ -701,9 +701,9 @@ describe(tst_con.cprocessRulesInternal, () => {
     // Arrange
     let inputData = [biz.creplaceCharacterWithCharacter];
     let inputMetaData = NaN;
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = ruleParsing.processRulesInternal(
       inputData,
       inputMetaData

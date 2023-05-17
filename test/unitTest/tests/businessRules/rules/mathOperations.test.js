@@ -39,9 +39,9 @@ describe(tst_con.chex2rgbConversion, () => {
       // Arrange
       let inputData = "ffffff";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = mathOperations.hex2rgbConversion(
         inputData,
         inputMetaData
@@ -61,9 +61,9 @@ describe(tst_con.chex2rgbConversion, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.hex2rgbConversion(
           inputData,
           inputMetaData
@@ -83,9 +83,9 @@ describe(tst_con.chex2rgbConversion, () => {
         // Arrange
         let inputData = "ffffff";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.hex2rgbConversion(
           inputData,
           inputMetaData
@@ -105,9 +105,9 @@ describe(tst_con.chex2rgbConversion, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.hex2rgbConversion(
           inputData,
           inputMetaData
@@ -127,9 +127,9 @@ describe(tst_con.chex2rgbConversion, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.hex2rgbConversion(
           inputData,
           inputMetaData
@@ -149,9 +149,9 @@ describe(tst_con.chex2rgbConversion, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.hex2rgbConversion(
           inputData,
           inputMetaData
@@ -171,9 +171,9 @@ describe(tst_con.chex2rgbConversion, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.hex2rgbConversion(
           inputData,
           inputMetaData
@@ -200,9 +200,9 @@ describe(tst_con.cisOdd, () => {
       // Arrange
       let inputData = "1";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = mathOperations.isOdd(
         inputData,
         inputMetaData
@@ -222,9 +222,9 @@ describe(tst_con.cisOdd, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isOdd(
           inputData,
           inputMetaData
@@ -244,9 +244,9 @@ describe(tst_con.cisOdd, () => {
         // Arrange
         let inputData = "1";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isOdd(
           inputData,
           inputMetaData
@@ -266,9 +266,9 @@ describe(tst_con.cisOdd, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isOdd(
           inputData,
           inputMetaData
@@ -288,9 +288,9 @@ describe(tst_con.cisOdd, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isOdd(
           inputData,
           inputMetaData
@@ -310,9 +310,9 @@ describe(tst_con.cisOdd, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isOdd(
           inputData,
           inputMetaData
@@ -332,9 +332,9 @@ describe(tst_con.cisOdd, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isOdd(
           inputData,
           inputMetaData
@@ -361,9 +361,9 @@ describe(tst_con.cisEven, () => {
       // Arrange
       let inputData = "2";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = mathOperations.isEven(
         inputData,
         inputMetaData
@@ -383,9 +383,9 @@ describe(tst_con.cisEven, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isEven(
           inputData,
           inputMetaData
@@ -405,9 +405,9 @@ describe(tst_con.cisEven, () => {
         // Arrange
         let inputData = "2";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isEven(
           inputData,
           inputMetaData
@@ -427,9 +427,9 @@ describe(tst_con.cisEven, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isEven(
           inputData,
           inputMetaData
@@ -449,9 +449,9 @@ describe(tst_con.cisEven, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = 1;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isEven(
           inputData,
           inputMetaData
@@ -471,9 +471,9 @@ describe(tst_con.cisEven, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isEven(
           inputData,
           inputMetaData
@@ -493,9 +493,9 @@ describe(tst_con.cisEven, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = mathOperations.isEven(
           inputData,
           inputMetaData

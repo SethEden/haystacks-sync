@@ -157,9 +157,9 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cForwardSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapForwardSlashToBackSlash(inputData, inputMetaData);
 
         // Assert
@@ -176,9 +176,9 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapForwardSlashToBackSlash(inputData, inputMetaData);
 
         // Assert
@@ -195,9 +195,9 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cForwardSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapForwardSlashToBackSlash(inputData, inputMetaData);
 
         // Assert
@@ -214,9 +214,9 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapForwardSlashToBackSlash(inputData, inputMetaData);
 
         // Assert
@@ -240,9 +240,9 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cBackSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -259,9 +259,9 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -278,9 +278,9 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cBackSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -297,9 +297,9 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -323,9 +323,9 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cDoubleForwardSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleForwardSlashToSingleForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -342,9 +342,9 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleForwardSlashToSingleForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -361,9 +361,9 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cDoubleForwardSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleForwardSlashToSingleForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -380,9 +380,9 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleForwardSlashToSingleForwardSlash(inputData, inputMetaData);
 
         // Assert
@@ -406,9 +406,9 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cDoubleBackSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleBackSlashToSingleBackSlash(inputData, inputMetaData);
 
         // Assert
@@ -425,9 +425,9 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleBackSlashToSingleBackSlash(inputData, inputMetaData);
 
         // Assert
@@ -444,9 +444,9 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cDoubleBackSlash + wrd.cWorld;
         let inputMetaData = "";
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleBackSlashToSingleBackSlash(inputData, inputMetaData);
 
         // Assert
@@ -463,9 +463,9 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = characterStringParsing.swapDoubleBackSlashToSingleBackSlash(inputData, inputMetaData);
 
         // Assert

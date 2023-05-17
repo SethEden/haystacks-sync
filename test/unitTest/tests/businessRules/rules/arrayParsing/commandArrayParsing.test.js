@@ -44,9 +44,9 @@ describe(tst_con.csolveLehmerCode, () => {
         // Arrange
         let inputData = obj_con.IntegerArray_01;
         let inputMetaData = obj_con.StringsArray_01;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
@@ -63,9 +63,9 @@ describe(tst_con.csolveLehmerCode, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = obj_con.StringsArray_01;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
@@ -82,9 +82,9 @@ describe(tst_con.csolveLehmerCode, () => {
         // Arrange
         let inputData = obj_con.IntegerArray_01;
         let inputMetaData = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
@@ -101,9 +101,9 @@ describe(tst_con.csolveLehmerCode, () => {
         // Arrange
         let inputData = 123;
         let inputMetaData = obj_con.IntegerArray_01;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
@@ -120,9 +120,9 @@ describe(tst_con.csolveLehmerCode, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = obj_con.IntegerArray_01;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
@@ -139,9 +139,9 @@ describe(tst_con.csolveLehmerCode, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = obj_con.StringsArray_01;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
@@ -158,9 +158,9 @@ describe(tst_con.csolveLehmerCode, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = obj_con.StringsArray_01;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert

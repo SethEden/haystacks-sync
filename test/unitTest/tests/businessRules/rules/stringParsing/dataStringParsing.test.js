@@ -46,9 +46,9 @@ describe(tst_con.cgetAttributeName, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = dataStringParsing.getAttributeName(
       inputData,
       inputMetaData
@@ -68,9 +68,9 @@ describe(tst_con.cgetAttributeName, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = dataStringParsing.getAttributeName(
       inputData,
       inputMetaData
@@ -90,9 +90,9 @@ describe(tst_con.cgetAttributeName, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
     let inputMetaData = "dfxg24346dfg";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = dataStringParsing.getAttributeName(
       inputData,
       inputMetaData
@@ -114,7 +114,6 @@ describe(tst_con.cgetAttributeName, () => {
     let inputMetaData = [1,2,3,4,5];
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getAttributeName(
       inputData,
       inputMetaData
@@ -144,7 +143,6 @@ describe(tst_con.cgetAttributeValue, () => {
       let inputMetaData = "";
   
       // Act
-      // rulesLibrary.initRulesLibrary();
       let returnData = dataStringParsing.getAttributeValue(
         inputData,
         inputMetaData
@@ -166,7 +164,6 @@ describe(tst_con.cgetAttributeValue, () => {
       let inputMetaData = "dfxg24346dfg";
   
       // Act
-      // rulesLibrary.initRulesLibrary();
       let returnData = dataStringParsing.getAttributeValue(
         inputData,
         inputMetaData
@@ -188,7 +185,6 @@ describe(tst_con.cgetAttributeValue, () => {
       let inputMetaData = [1,2,3,4,5];
   
       // Act
-      // rulesLibrary.initRulesLibrary();
       let returnData = dataStringParsing.getAttributeValue(
         inputData,
         inputMetaData
@@ -217,7 +213,6 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
     let inputMetaData = "";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getValueFromAssignmentOperationString(
       inputData,
       inputMetaData
@@ -239,7 +234,6 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
     let inputMetaData = "dfxg24346dfg";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getValueFromAssignmentOperationString(
       inputData,
       inputMetaData
@@ -261,7 +255,6 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
     let inputMetaData = [1,2,3,4,5];
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getValueFromAssignmentOperationString(
       inputData,
       inputMetaData
@@ -290,7 +283,6 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     let inputMetaData = "";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
       inputData,
       inputMetaData
@@ -312,7 +304,6 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     let inputMetaData = "";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
       inputData,
       inputMetaData
@@ -334,7 +325,6 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     let inputMetaData = "dfxg24346dfg";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
       inputData,
       inputMetaData
@@ -356,7 +346,6 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     let inputMetaData = [1,2,3,4,5];
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
       inputData,
       inputMetaData
@@ -385,7 +374,6 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     let inputMetaData = "";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
       inputData,
       inputMetaData
@@ -407,7 +395,6 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     let inputMetaData = "";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
       inputData,
       inputMetaData
@@ -429,7 +416,6 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     let inputMetaData = "dfxg24346dfg";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
       inputData,
       inputMetaData
@@ -451,7 +437,6 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     let inputMetaData = [1,2,3,4,5];
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
       inputData,
       inputMetaData
@@ -473,7 +458,6 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     let inputMetaData = [1,2,3,4,5];
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
       inputData,
       inputMetaData
@@ -502,7 +486,6 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     let inputMetaData = "";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
       inputData,
       inputMetaData
@@ -524,7 +507,6 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     let inputMetaData = "";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
       inputData,
       inputMetaData
@@ -546,7 +528,6 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     let inputMetaData = "dfxg24346dfg";
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
       inputData,
       inputMetaData
@@ -568,7 +549,6 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     let inputMetaData = [1,2,3,4,5];
 
     // Act
-    // rulesLibrary.initRulesLibrary();
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
       inputData,
       inputMetaData
@@ -595,9 +575,9 @@ describe(tst_con.cloadDataFile, () => {
     // Arrange
     let inputData = obj_con.xmlPath();
     let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
-
-    // Act
     dataBroker.setupDataStorage(false);
+
+    // Act    
     let returnData = dataStringParsing.loadDataFile(
       inputData,
       inputMetaData
@@ -617,9 +597,9 @@ describe(tst_con.cloadDataFile, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
-
-    // Act
     dataBroker.setupDataStorage(false);
+
+    // Act    
     let returnData = dataStringParsing.loadDataFile(
       inputData,
       inputMetaData
@@ -639,9 +619,9 @@ describe(tst_con.cloadDataFile, () => {
     // Arrange
     let inputData = obj_con.xmlPath();
     let inputMetaData = 'dfxg24346dfg';    
-
-    // Act
     dataBroker.setupDataStorage(false);
+
+    // Act    
     let returnData = dataStringParsing.loadDataFile(
       inputData,
       inputMetaData
@@ -661,9 +641,9 @@ describe(tst_con.cloadDataFile, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;    
-
-    // Act
     dataBroker.setupDataStorage(false);
+
+    // Act    
     let returnData = dataStringParsing.loadDataFile(
       inputData,
       inputMetaData
@@ -683,9 +663,9 @@ describe(tst_con.cloadDataFile, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
     dataBroker.setupDataStorage(false);
+
+    // Act    
     let returnData = dataStringParsing.loadDataFile(
       inputData,
       inputMetaData

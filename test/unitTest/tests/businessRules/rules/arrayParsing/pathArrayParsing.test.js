@@ -44,9 +44,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = obj_con.stringPathsArray_01();
         let inputMetaData = obj_con.stringPath_01();
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -63,9 +63,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = obj_con.stringPath_01();
         let inputMetaData = obj_con.stringPath_01();
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -82,9 +82,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = obj_con.stringPathsArray_01();
         let inputMetaData = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -101,9 +101,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = 123;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -120,9 +120,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -139,9 +139,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = 123
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -158,9 +158,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = [1, 2, 3, 4, 5];
         let inputMetaData = false;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -177,9 +177,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert
@@ -196,9 +196,9 @@ describe(tst_con.cdoesArrayContainFilename, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = wrd.cHello;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = pathArrayParsing.doesArrayContainFilename(inputData, inputMetaData);
 
         // Assert

@@ -39,9 +39,9 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter(
         inputData,
         inputMetaData
@@ -61,9 +61,9 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -83,9 +83,9 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -105,9 +105,9 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -127,9 +127,9 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -149,9 +149,9 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -171,9 +171,9 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -200,9 +200,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter(
         inputData,
         inputMetaData
@@ -222,9 +222,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -244,9 +244,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -266,9 +266,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -288,9 +288,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -310,9 +310,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -332,9 +332,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -361,9 +361,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter(
         inputData,
         inputMetaData
@@ -383,9 +383,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -405,9 +405,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -427,9 +427,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -449,9 +449,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -471,9 +471,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -493,9 +493,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -522,9 +522,9 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter(
         inputData,
         inputMetaData
@@ -544,9 +544,9 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -566,9 +566,9 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -588,9 +588,9 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -610,9 +610,9 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -632,9 +632,9 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -654,9 +654,9 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -683,9 +683,9 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter(
         inputData,
         inputMetaData
@@ -705,9 +705,9 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -727,9 +727,9 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -749,9 +749,9 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -771,9 +771,9 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -793,9 +793,9 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -815,9 +815,9 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -844,9 +844,9 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter(
         inputData,
         inputMetaData
@@ -866,9 +866,9 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -888,9 +888,9 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -910,9 +910,9 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -932,9 +932,9 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -954,9 +954,9 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -976,9 +976,9 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter(
           inputData,
           inputMetaData
@@ -1005,9 +1005,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter(
         inputData,
         inputMetaData
@@ -1027,9 +1027,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1049,9 +1049,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1071,9 +1071,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1093,9 +1093,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1115,9 +1115,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1137,9 +1137,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1166,9 +1166,9 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter(
         inputData,
         inputMetaData
@@ -1188,9 +1188,9 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1210,9 +1210,9 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1232,9 +1232,9 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1254,9 +1254,9 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1276,9 +1276,9 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1298,9 +1298,9 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1327,9 +1327,9 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter(
         inputData,
         inputMetaData
@@ -1349,9 +1349,9 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1371,9 +1371,9 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = "hello_World";
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1393,9 +1393,9 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1415,9 +1415,9 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1437,9 +1437,9 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1459,9 +1459,9 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter(
           inputData,
           inputMetaData
@@ -1488,9 +1488,9 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
     // Arrange
     let inputData = "hello_World";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumericCharacter(
       inputData,
       inputMetaData
@@ -1510,9 +1510,9 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumericCharacter(
         inputData,
         inputMetaData
@@ -1532,9 +1532,9 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumericCharacter(
         inputData,
         inputMetaData
@@ -1554,9 +1554,9 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumericCharacter(
         inputData,
         inputMetaData
@@ -1576,9 +1576,9 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumericCharacter(
         inputData,
         inputMetaData
@@ -1598,9 +1598,9 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumericCharacter(
         inputData,
         inputMetaData
@@ -1620,9 +1620,9 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumericCharacter(
         inputData,
         inputMetaData
@@ -1649,9 +1649,9 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
     // Arrange
     let inputData = "hello_World";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateSpecialCharacter(
       inputData,
       inputMetaData
@@ -1671,9 +1671,9 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateSpecialCharacter(
         inputData,
         inputMetaData
@@ -1693,9 +1693,9 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
       // Arrange
       let inputData = "hello_World";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateSpecialCharacter(
         inputData,
         inputMetaData
@@ -1715,9 +1715,9 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateSpecialCharacter(
         inputData,
         inputMetaData
@@ -1744,9 +1744,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = ["5",true,true];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -1766,9 +1766,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = ["5",true,false];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -1788,9 +1788,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = ["5",false,true];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -1810,9 +1810,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = ["5",false,false];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -1832,9 +1832,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = [5,true,true];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -1854,9 +1854,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = [5,true,true];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumberInRange(
         inputData,
         inputMetaData
@@ -1876,9 +1876,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       // Arrange
       let inputData = "3";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumberInRange(
         inputData,
         inputMetaData
@@ -1898,9 +1898,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumberInRange(
         inputData,
         inputMetaData
@@ -1920,9 +1920,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumberInRange(
         inputData,
         inputMetaData
@@ -1942,9 +1942,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateNumberInRange(
         inputData,
         inputMetaData
@@ -1964,9 +1964,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = undefined;
     let inputMetaData = [5, true, true];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -1986,9 +1986,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = NaN;
     let inputMetaData = [5, true, true];
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -2008,9 +2008,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = undefined;
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -2030,9 +2030,9 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = NaN;
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateNumberInRange(
       inputData,
       inputMetaData
@@ -2059,9 +2059,9 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
     // Arrange
     let inputData = "";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateBooleanValue(
       inputData,
       inputMetaData
@@ -2081,9 +2081,9 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateBooleanValue(
         inputData,
         inputMetaData
@@ -2103,9 +2103,9 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
       // Arrange
       let inputData = "";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateBooleanValue(
         inputData,
         inputMetaData
@@ -2125,9 +2125,9 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateBooleanValue(
         inputData,
         inputMetaData
@@ -2147,9 +2147,9 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateBooleanValue(
         inputData,
         inputMetaData
@@ -2169,9 +2169,9 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateBooleanValue(
         inputData,
         inputMetaData
@@ -2191,9 +2191,9 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateBooleanValue(
         inputData,
         inputMetaData
@@ -2220,9 +2220,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
     // Arrange
     let inputData = "";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
       inputData,
       inputMetaData
@@ -2242,9 +2242,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
         inputData,
         inputMetaData
@@ -2264,9 +2264,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
       // Arrange
       let inputData = "";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
         inputData,
         inputMetaData
@@ -2286,9 +2286,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
         inputData,
         inputMetaData
@@ -2308,9 +2308,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
         inputData,
         inputMetaData
@@ -2330,9 +2330,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
         inputData,
         inputMetaData
@@ -2352,9 +2352,9 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
         inputData,
         inputMetaData
@@ -2381,9 +2381,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
     // Arrange
     let inputData = "";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
       inputData,
       inputMetaData
@@ -2403,9 +2403,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2425,9 +2425,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
       // Arrange
       let inputData = "";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2447,9 +2447,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2469,9 +2469,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2491,9 +2491,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2513,9 +2513,9 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2542,9 +2542,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
     // Arrange
     let inputData = "";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
       inputData,
       inputMetaData
@@ -2564,9 +2564,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2586,9 +2586,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
       // Arrange
       let inputData = "";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2608,9 +2608,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2630,9 +2630,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2652,9 +2652,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2674,9 +2674,9 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2703,9 +2703,9 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
     // Arrange
     let inputData = "1";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.convertNumberToUpperCaseLetter(
       inputData,
       inputMetaData
@@ -2725,9 +2725,9 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2747,9 +2747,9 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       // Arrange
       let inputData = "1";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2769,9 +2769,9 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2791,9 +2791,9 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2813,9 +2813,9 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2835,9 +2835,9 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToUpperCaseLetter(
         inputData,
         inputMetaData
@@ -2864,9 +2864,9 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
     // Arrange
     let inputData = "1";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = characterGeneration.convertNumberToLowerCaseLetter(
       inputData,
       inputMetaData
@@ -2886,9 +2886,9 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       // Arrange
       let inputData = "dfxg24346dfg";
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2908,9 +2908,9 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       // Arrange
       let inputData = "1";
       let inputMetaData = "dfxg24346dfg";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2930,9 +2930,9 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2952,9 +2952,9 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2974,9 +2974,9 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToLowerCaseLetter(
         inputData,
         inputMetaData
@@ -2996,9 +2996,9 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = characterGeneration.convertNumberToLowerCaseLetter(
         inputData,
         inputMetaData

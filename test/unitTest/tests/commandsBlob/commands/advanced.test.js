@@ -45,16 +45,15 @@ describe(tst_con.ccommandSequencer, () => {
    * @date 2023/05/09
    */
   test(tst_con.ccommandSequencer_validDataString, () => {
-    // Arrange
+    // Arrange    
     let inputData = ["TestCommandSequenceALL", cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
-    let inputMetaData = "";
-
-    // Act
+    let inputMetaData = "";    
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
+    // Act
     let returnData = advanced.commandSequencer(
       inputData,
       inputMetaData
@@ -71,16 +70,15 @@ describe(tst_con.ccommandSequencer, () => {
      * @date 2023/05/09
      */
   test(tst_con.ccommandSequencer_inValidDataInputDataString, () => {
-    // Arrange
+    // Arrange    
     let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
-
-    // Act
-    rulesLibrary.initRulesLibrary();
+    let inputMetaData = "";   
+    rulesLibrary.initRulesLibrary(); 
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
+    // Act 
     let returnData = advanced.commandSequencer(
       inputData,
       inputMetaData
@@ -97,16 +95,15 @@ describe(tst_con.ccommandSequencer, () => {
  * @date 2023/05/09
  */
   test(tst_con.ccommandSequencer_inValidInputDataInteger, () => {
-    // Arrange
+    // Arrange    
     let inputData = 4567;
-    let inputMetaData = "123string321";
-
-    // Act
+    let inputMetaData = "123string32";
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
-    
+
+    // Act 
     let returnData = advanced.commandSequencer(
       inputData,
       inputMetaData
@@ -123,16 +120,15 @@ describe(tst_con.ccommandSequencer, () => {
    * @date 2023/05/09
    */
   test(tst_con.ccommandSequencer_inValidInputDataBoolean, () => {
-      // Arrange
+      // Arrange      
       let inputData = false;
-      let inputMetaData = "123string321";
-
-      // Act
+      let inputMetaData = "123string32";
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
       commandsLibrary.initCommandsLibrary();
       D[sys.cCommandQueue] = [];
 
+      // Act
       let returnData = advanced.commandSequencer(
         inputData,
         inputMetaData
@@ -149,16 +145,15 @@ describe(tst_con.ccommandSequencer, () => {
    * @date 2023/05/09
    */
   test(tst_con.ccommandSequencer_inValidInputDataNaN, () => {
-    // Arrange
+    // Arrange    
     let inputData = NaN;
-    let inputMetaData = "";
-
-    // Act
+    let inputMetaData = "";    
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
+    // Act  
     let returnData = advanced.commandSequencer(
       inputData,
       inputMetaData
@@ -182,12 +177,12 @@ describe(tst_con.cworkflow, () => {
      * @date 2023/05/09
      */
     test(tst_con.cworkflow_validDataString, () => {
-      // Arrange
+      // Arrange      
       let inputData = ["allSystemWorkflows", "wrkflo"];
-      let inputMetaData = "";
+      let inputMetaData = "";  
+      rulesLibrary.initRulesLibrary();    
   
-      // Act
-      rulesLibrary.initRulesLibrary();
+      // Act      
       let returnData = advanced.workflow(
         inputData,
         inputMetaData
@@ -207,9 +202,9 @@ describe(tst_con.cworkflow, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.workflow(
           inputData,
           inputMetaData
@@ -229,9 +224,9 @@ describe(tst_con.cworkflow, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.workflow(
           inputData,
           inputMetaData
@@ -251,9 +246,9 @@ describe(tst_con.cworkflow, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.workflow(
           inputData,
           inputMetaData
@@ -273,9 +268,9 @@ describe(tst_con.cworkflow, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.workflow(
           inputData,
           inputMetaData
@@ -302,9 +297,9 @@ describe(tst_con.cbusinessRule, () => {
       // Arrange
       let inputData = ["allSystembusinessRules", "wrkflo"];
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = advanced.businessRule(
         inputData,
         inputMetaData
@@ -324,9 +319,9 @@ describe(tst_con.cbusinessRule, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.businessRule(
           inputData,
           inputMetaData
@@ -346,9 +341,9 @@ describe(tst_con.cbusinessRule, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.businessRule(
           inputData,
           inputMetaData
@@ -368,9 +363,9 @@ describe(tst_con.cbusinessRule, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.businessRule(
           inputData,
           inputMetaData
@@ -390,9 +385,9 @@ describe(tst_con.cbusinessRule, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.businessRule(
           inputData,
           inputMetaData
@@ -420,9 +415,9 @@ describe(tst_con.ccommandGenerator, () => {
     // Arrange
     let inputData = ["TestCommandSequenceALL", cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, ",");
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
@@ -446,9 +441,9 @@ describe(tst_con.ccommandGenerator, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = advanced.commandGenerator(
       inputData,
       inputMetaData
@@ -468,9 +463,9 @@ describe(tst_con.ccommandGenerator, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = "123string321";
-
-      // Act
       rulesLibrary.initRulesLibrary();
+
+      // Act      
       let returnData = advanced.commandGenerator(
         inputData,
         inputMetaData
@@ -490,9 +485,9 @@ describe(tst_con.ccommandGenerator, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = "123string321";
-
-      // Act
       rulesLibrary.initRulesLibrary();
+
+      // Act      
       let returnData = advanced.commandGenerator(
         inputData,
         inputMetaData
@@ -512,9 +507,9 @@ describe(tst_con.ccommandGenerator, () => {
       // Arrange
       let inputData = NaN;
       let inputMetaData = "";
-
-      // Act
       rulesLibrary.initRulesLibrary();
+
+      // Act      
       let returnData = advanced.commandGenerator(
         inputData,
         inputMetaData
@@ -541,9 +536,9 @@ describe(tst_con.ccommandAliasGenerator, () => {
       // Arrange
       let inputData = ["c,const", "g,gen,genrtr", "l,lst"];
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = advanced.commandAliasGenerator(
         inputData,
         inputMetaData
@@ -563,9 +558,9 @@ describe(tst_con.ccommandAliasGenerator, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.commandAliasGenerator(
           inputData,
           inputMetaData
@@ -585,9 +580,9 @@ describe(tst_con.ccommandAliasGenerator, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.commandAliasGenerator(
           inputData,
           inputMetaData
@@ -607,9 +602,9 @@ describe(tst_con.ccommandAliasGenerator, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.commandAliasGenerator(
           inputData,
           inputMetaData
@@ -629,9 +624,9 @@ describe(tst_con.ccommandAliasGenerator, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = advanced.commandAliasGenerator(
           inputData,
           inputMetaData

@@ -27,7 +27,7 @@ import * as tst_con from '../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect } from '@jest/globals';
 
-const { sys, wrd, num } = hayConst;
+const { sys, wrd, num, bas, gen } = hayConst;
 
 /**
  * @function scanDataPath
@@ -45,9 +45,9 @@ describe(tst_con.cscanDataPath, () => {
     test(tst_con.cscanDataPath_validData, () => {
         // Arrange
         let dataPath = tst_con.basePath();
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.scanDataPath(dataPath);
 
         // Assert
@@ -63,9 +63,9 @@ describe(tst_con.cscanDataPath, () => {
     test(tst_con.cscanDataPath_inValidString, () => {
         // Arrange
         let dataPath = tst_con.basePath() + num.c123;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.scanDataPath(dataPath);
 
         // Assert
@@ -90,9 +90,9 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
         // Arrange
         let appConfigFilesToLoad = [obj_con.applicationPath()];
         let frameworkConfigFilesToLoad = [obj_con.frameworkPath()];
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.findUniversalDebugConfigSetting(appConfigFilesToLoad, frameworkConfigFilesToLoad);
 
         // Assert
@@ -107,11 +107,11 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
     */
     test(tst_con.cfindUniversalDebugConfigSetting_inValidString, () => {
         // Arrange
-        let appConfigFilesToLoad = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/application1.system.json';
-        let frameworkConfigFilesToLoad = 'D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/framework1.system.json';
-
-        // Act
+        let appConfigFilesToLoad = tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.capplication + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
+        let frameworkConfigFilesToLoad = tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cframework + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.findUniversalDebugConfigSetting(appConfigFilesToLoad, frameworkConfigFilesToLoad);
 
         // Assert
@@ -128,9 +128,9 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
         // Arrange
         let appConfigFilesToLoad = [obj_con.applicationPath()];
         let frameworkConfigFilesToLoad = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.findUniversalDebugConfigSetting(appConfigFilesToLoad, frameworkConfigFilesToLoad);
 
         // Assert
@@ -155,9 +155,9 @@ describe(tst_con.cloadAllCsvData, () => {
         // Arrange
         let filesToLoad = [obj_con.csvPath()];
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllCsvData(filesToLoad, contextName);
 
         // Assert
@@ -174,9 +174,9 @@ describe(tst_con.cloadAllCsvData, () => {
         // Arrange
         let filesToLoad = obj_con.csvPath();
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllCsvData(filesToLoad, contextName);
 
         // Assert
@@ -193,9 +193,9 @@ describe(tst_con.cloadAllCsvData, () => {
         // Arrange
         let filesToLoad = obj_con.csvPath();
         let contextName = wrd.cComa;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllCsvData(filesToLoad, contextName);
 
         // Assert
@@ -212,9 +212,9 @@ describe(tst_con.cloadAllCsvData, () => {
         // Arrange
         let filesToLoad = [false];
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllCsvData(filesToLoad, contextName);
 
         // Assert
@@ -239,9 +239,9 @@ describe(tst_con.cloadAllXmlData, () => {
         // Arrange
         let filesToLoad = [obj_con.xmlPath()];
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllXmlData(filesToLoad, contextName);
 
         // Assert
@@ -258,9 +258,9 @@ describe(tst_con.cloadAllXmlData, () => {
         // Arrange
         let filesToLoad = obj_con.xmlPath();
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllXmlData(filesToLoad, contextName);
 
         // Assert
@@ -277,9 +277,9 @@ describe(tst_con.cloadAllXmlData, () => {
         // Arrange
         let filesToLoad = [obj_con.xmlPath()];
         let contextName = wrd.cComa;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllXmlData(filesToLoad, contextName);
 
         // Assert
@@ -296,9 +296,9 @@ describe(tst_con.cloadAllXmlData, () => {
         // Arrange
         let filesToLoad = [false];
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllXmlData(filesToLoad, contextName);
 
         // Assert
@@ -323,9 +323,9 @@ describe(tst_con.cloadAllJsonData, () => {
         // Arrange
         let filesToLoad = [obj_con.jsonPath()];
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllJsonData(filesToLoad, contextName);
 
         // Assert
@@ -342,9 +342,9 @@ describe(tst_con.cloadAllJsonData, () => {
         // Arrange
         let filesToLoad = obj_con.jsonPath();
         let contextName = wrd.cSpace;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllJsonData(filesToLoad, contextName);
 
         // Assert
@@ -361,9 +361,9 @@ describe(tst_con.cloadAllJsonData, () => {
         // Arrange
         let filesToLoad = [obj_con.jsonPath()];
         let contextName = wrd.cComa;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.loadAllJsonData(filesToLoad, contextName);
 
         // Assert
@@ -388,9 +388,9 @@ describe(tst_con.cprocessCsvData, () => {
         // Arrange
         let data = obj_con.JsonObjectArrayOfStrings_01;
         let contextName = wrd.ccolors;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.processCsvData(data, contextName);
 
         // Assert
@@ -407,9 +407,9 @@ describe(tst_con.cprocessCsvData, () => {
         // Arrange
         let data = obj_con.JsonObjectArrayOfStrings_01;
         let contextName = wrd.cComa;
-
-        // Act
         rulesLibrary.initRulesLibrary();
+
+        // Act        
         let returnData = dataBroker.processCsvData(data, contextName);
 
         // Assert

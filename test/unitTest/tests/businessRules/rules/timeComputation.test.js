@@ -61,9 +61,9 @@ describe(tst_con.cgetNowMoment, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.getNowMoment(
           inputData,
           inputMetaData
@@ -125,9 +125,9 @@ describe(tst_con.cgetNowMoment, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.getNowMoment(
           inputData,
           inputMetaData
@@ -147,9 +147,9 @@ describe(tst_con.cgetNowMoment, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.getNowMoment(
           inputData,
           inputMetaData
@@ -169,9 +169,9 @@ describe(tst_con.cgetNowMoment, () => {
         // Arrange
         let inputData = "2023-05-08";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.getNowMoment(
           inputData,
           inputMetaData
@@ -191,9 +191,9 @@ describe(tst_con.cgetNowMoment, () => {
         // Arrange
         let inputData = "2023-05-08";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.getNowMoment(
           inputData,
           inputMetaData
@@ -283,9 +283,9 @@ describe(tst_con.ccomputeDeltaTime, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "2024-05-08";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.computeDeltaTime(
           inputData,
           inputMetaData
@@ -368,9 +368,9 @@ describe(tst_con.ccomputeDeltaTime, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.computeDeltaTime(
           inputData,
           inputMetaData
@@ -390,9 +390,9 @@ describe(tst_con.ccomputeDeltaTime, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.computeDeltaTime(
           inputData,
           inputMetaData
@@ -412,9 +412,9 @@ describe(tst_con.ccomputeDeltaTime, () => {
         // Arrange
         let inputData = "2023-05-08";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.computeDeltaTime(
           inputData,
           inputMetaData
@@ -434,9 +434,9 @@ describe(tst_con.ccomputeDeltaTime, () => {
         // Arrange
         let inputData = "2023-05-08";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.computeDeltaTime(
           inputData,
           inputMetaData
@@ -526,9 +526,9 @@ describe(tst_con.csleep, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.sleep(
           inputData,
           inputMetaData
@@ -611,9 +611,9 @@ describe(tst_con.csleep, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.sleep(
           inputData,
           inputMetaData
@@ -633,9 +633,9 @@ describe(tst_con.csleep, () => {
         // Arrange
         let inputData = "234string432";
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.sleep(
           inputData,
           inputMetaData
@@ -655,9 +655,9 @@ describe(tst_con.csleep, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = undefined;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.sleep(
           inputData,
           inputMetaData
@@ -677,9 +677,9 @@ describe(tst_con.csleep, () => {
         // Arrange
         let inputData = "5";
         let inputMetaData = NaN;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = timeComputation.sleep(
           inputData,
           inputMetaData

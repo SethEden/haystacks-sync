@@ -28,7 +28,7 @@ import * as tst_con from '../../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { wrd, cfg } = hayConst;
+const { wrd, cfg, bas } = hayConst;
 
 /**
  * @function changeConfigurationSetting
@@ -47,9 +47,9 @@ describe(tst_con.cchangeConfigurationSetting, () => {
       // Arrange
       let inputData = ["TestCommandSequenceALL", "wrkflo"];
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = configuration.changeConfigurationSetting(
         inputData,
         inputMetaData
@@ -69,9 +69,9 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = configuration.changeConfigurationSetting(
           inputData,
           inputMetaData
@@ -91,9 +91,9 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = configuration.changeConfigurationSetting(
           inputData,
           inputMetaData
@@ -113,9 +113,9 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "123string321";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = configuration.changeConfigurationSetting(
           inputData,
           inputMetaData
@@ -135,9 +135,9 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = configuration.changeConfigurationSetting(
           inputData,
           inputMetaData
@@ -157,9 +157,9 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = configuration.changeConfigurationSetting(
           inputData,
           inputMetaData
@@ -186,10 +186,10 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
     // Arrange
     let inputData = ["TestCommandSequenceALL", "cmdSeq wrkflo"];
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "/");
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+
+    // Act    
     let returnData = configuration.changeDebugConfigurationTheme(
       inputData,
       inputMetaData
@@ -209,10 +209,10 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
     // Arrange
     let inputData = "dfxg24346dfg";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "/");
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+
+    // Act    
     let returnData = configuration.changeDebugConfigurationTheme(
       inputData,
       inputMetaData
@@ -232,10 +232,10 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = "123string321";
-
-      // Act
       rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "/");
+      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+
+      // Act      
       let returnData = configuration.changeDebugConfigurationTheme(
         inputData,
         inputMetaData
@@ -255,10 +255,10 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = "123string321";
-
-      // Act
       rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "/");
+      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+
+      // Act      
       let returnData = configuration.changeDebugConfigurationTheme(
         inputData,
         inputMetaData
@@ -278,10 +278,10 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       // Arrange
       let inputData = NaN;
       let inputMetaData = "";
-
-      // Act
       rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "/");
+      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+
+      // Act      
       let returnData = configuration.changeDebugConfigurationTheme(
         inputData,
         inputMetaData
@@ -301,10 +301,10 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       // Arrange
       let inputData = undefined;
       let inputMetaData = "";
-
-      // Act
       rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, "/");
+      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+
+      // Act      
       let returnData = configuration.changeDebugConfigurationTheme(
         inputData,
         inputMetaData
@@ -332,10 +332,10 @@ describe(tst_con.csaveConfiguration, () => {
       let inputData = ["TestCommandSequenceALL", "wrkflo"];
       let inputMetaData = "";
       let testPath = obj_con.testConfigPath();
-  
-      // Act
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+  
+      // Act      
       let returnData = configuration.saveConfiguration(
         inputData,
         inputMetaData
@@ -363,9 +363,9 @@ describe(tst_con.clistConfigurationThemes, () => {
     // Arrange
     let inputData = "";
     let inputMetaData = "";
-
-    // Act
     rulesLibrary.initRulesLibrary();
+
+    // Act    
     let returnData = configuration.listConfigurationThemes(
       inputData,
       inputMetaData

@@ -44,9 +44,9 @@ describe(tst_con.cgetFileNameFromPath, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.getFileNameFromPath(
         inputData,
         inputMetaData
@@ -66,9 +66,9 @@ describe(tst_con.cgetFileNameFromPath, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFileNameFromPath(
           inputData,
           inputMetaData
@@ -88,9 +88,9 @@ describe(tst_con.cgetFileNameFromPath, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFileNameFromPath(
           inputData,
           inputMetaData
@@ -110,9 +110,9 @@ describe(tst_con.cgetFileNameFromPath, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFileNameFromPath(
           inputData,
           inputMetaData
@@ -139,9 +139,9 @@ describe(tst_con.cgetFileExtension, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.getFileExtension(
         inputData,
         inputMetaData
@@ -161,9 +161,9 @@ describe(tst_con.cgetFileExtension, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFileExtension(
           inputData,
           inputMetaData
@@ -183,9 +183,9 @@ describe(tst_con.cgetFileExtension, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFileExtension(
           inputData,
           inputMetaData
@@ -205,9 +205,9 @@ describe(tst_con.cgetFileExtension, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFileExtension(
           inputData,
           inputMetaData
@@ -234,9 +234,9 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.removeDotFromFileExtension(
         inputData,
         inputMetaData
@@ -256,9 +256,9 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeDotFromFileExtension(
           inputData,
           inputMetaData
@@ -278,9 +278,9 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeDotFromFileExtension(
           inputData,
           inputMetaData
@@ -300,9 +300,9 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeDotFromFileExtension(
           inputData,
           inputMetaData
@@ -329,9 +329,9 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = "";
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.removeFileExtensionFromFileName(
         inputData,
         inputMetaData
@@ -351,9 +351,9 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = "";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeFileExtensionFromFileName(
           inputData,
           inputMetaData
@@ -373,9 +373,9 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeFileExtensionFromFileName(
           inputData,
           inputMetaData
@@ -395,9 +395,9 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeFileExtensionFromFileName(
           inputData,
           inputMetaData
@@ -424,9 +424,9 @@ describe(tst_con.cascertainMatchingFilenames, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = obj_con.xmlPath();
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.ascertainMatchingFilenames(
         inputData,
         inputMetaData
@@ -446,9 +446,9 @@ describe(tst_con.cascertainMatchingFilenames, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = obj_con.xmlPath();
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.ascertainMatchingFilenames(
           inputData,
           inputMetaData
@@ -468,9 +468,9 @@ describe(tst_con.cascertainMatchingFilenames, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.ascertainMatchingFilenames(
           inputData,
           inputMetaData
@@ -490,9 +490,9 @@ describe(tst_con.cascertainMatchingFilenames, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.ascertainMatchingFilenames(
           inputData,
           inputMetaData
@@ -519,9 +519,9 @@ describe(tst_con.csupportedFileFormatsAre, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = obj_con.xmlPath();
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.supportedFileFormatsAre(
         inputData,
         inputMetaData
@@ -541,9 +541,9 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = obj_con.xmlPath();
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.supportedFileFormatsAre(
           inputData,
           inputMetaData
@@ -563,9 +563,9 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.supportedFileFormatsAre(
           inputData,
           inputMetaData
@@ -585,9 +585,9 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.supportedFileFormatsAre(
           inputData,
           inputMetaData
@@ -607,9 +607,9 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.supportedFileFormatsAre(
           inputData,
           inputMetaData
@@ -629,9 +629,9 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.supportedFileFormatsAre(
           inputData,
           inputMetaData
@@ -651,9 +651,9 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.supportedFileFormatsAre(
           inputData,
           inputMetaData
@@ -680,9 +680,9 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = obj_con.xmlPath();
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
         inputData,
         inputMetaData
@@ -702,9 +702,9 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = obj_con.xmlPath();
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
           inputData,
           inputMetaData
@@ -724,9 +724,9 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
           inputData,
           inputMetaData
@@ -746,9 +746,9 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
           inputData,
           inputMetaData
@@ -768,9 +768,9 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
           inputData,
           inputMetaData
@@ -790,9 +790,9 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
           inputData,
           inputMetaData
@@ -812,9 +812,9 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
           inputData,
           inputMetaData
@@ -841,9 +841,9 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
       // Arrange
       let inputData = obj_con.xmlPath();
       let inputMetaData = obj_con.xmlPath();
-  
-      // Act
       rulesLibrary.initRulesLibrary();
+  
+      // Act      
       let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
         inputData,
         inputMetaData
@@ -863,9 +863,9 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
         // Arrange
         let inputData = "dfxg24346dfg";
         let inputMetaData = obj_con.xmlPath();
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
           inputData,
           inputMetaData
@@ -885,9 +885,9 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
         // Arrange
         let inputData = obj_con.xmlPath();
         let inputMetaData = "dfxg24346dfg";
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
           inputData,
           inputMetaData
@@ -907,9 +907,9 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
           inputData,
           inputMetaData
@@ -929,9 +929,9 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = 4567;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
           inputData,
           inputMetaData
@@ -951,9 +951,9 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
-    
-        // Act
         rulesLibrary.initRulesLibrary();
+    
+        // Act        
         let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
           inputData,
           inputMetaData
