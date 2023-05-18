@@ -18,7 +18,7 @@ const { bas, wrd, gen } = hayConst;
 
 /**
  * @function dataStringParsingXmlPath
- * @description Get xml path to be used in dataStringParsing.test.js for unit test
+ * @description Get xml path to be used in dataStringParsing.test.js for unit tests:
  * loadDataFile_validDataString
  * loadDataFile_inValidDataInputMetaDataString
  * saveDataFile_validDataString

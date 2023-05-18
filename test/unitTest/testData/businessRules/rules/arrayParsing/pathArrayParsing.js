@@ -18,7 +18,7 @@ const { bas, wrd, gen } = hayConst;
 
 /**
  * @function stringPathsArray_01
- * @description Get array paths to be used in pathArrayParsing.test.js for unit test
+ * @description Get array paths to be used in pathArrayParsing.test.js for unit tests:
  * doesArrayContainFilename_validDataString
  * doesArrayContainFilename_inValidDataInputMetaDataString
  * @author Json Howard
@@ -34,7 +34,7 @@ export const stringPathsArray_01 = () => {
 
 /**
  * @function stringPath_01
- * @description Get paths to be used in pathArrayParsing.test.js for unit test
+ * @description Get paths to be used in pathArrayParsing.test.js for unit tests:
  * doesArrayContainFilename_validDataString
  * doesArrayContainFilename_inValidDataInputDataString
  * doesArrayContainFilename_inValidDataInputDataString
@@ -47,7 +47,7 @@ export const stringPath_01 = () => {
 
 /**
  * @function stringPath_02
- * @description Get paths to be used in pathArrayParsing.test.js for unit test
+ * @description Get paths to be used in pathArrayParsing.test.js for unit tests:
  * getFileAndPathListForPath_validDataString
  * getFileAndPathListForPath_inValidDataInputDataString
  * getFileAndPathListForPath_inValidDataInputMetaDataString

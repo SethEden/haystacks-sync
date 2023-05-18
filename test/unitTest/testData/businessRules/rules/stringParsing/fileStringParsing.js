@@ -18,7 +18,7 @@ const { bas, wrd, gen } = hayConst;
 
 /**
  * @function fileStringParsingXmlPath
- * @description Get xml path to be used in fileStringParsing.test.js for unit test
+ * @description Get xml path to be used in fileStringParsing.test.js for unit tests:
  * getFileNameFromPath_validDataString
  * getFileNameFromPath_inValidDataInputMetaDataString
  * getFileExtension_validDataString
