@@ -18,7 +18,7 @@ const { bas, wrd } = hayConst;
 
 /**
  * @function workflowPath
- * @description Get workflow file path to be used in workflowBroker.test.js for unit test
+ * @description Get workflow file path to be used in workflowBroker.test.js for unit tests:
  * getWorkflow_validData
  * getWorkflow_inValidString
  * getWorkflow_inValidNumber

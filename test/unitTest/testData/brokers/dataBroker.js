@@ -22,7 +22,7 @@ export const JsonObjectOfStrings_02 = { "constants": "c,const", "Generator": "g,
 
 /**
  * @function jsonObjectOfStrings_03
- * @description Get object to be used in commandBroker.test.js and dataBroker.test.js for unit test
+ * @description Get object to be used in commandBroker.test.js and dataBroker.test.js for unit tests:
  * getAllCommandAliasData_validData
  * getCommandNamespaceDataObject_validData
  * getCommandNamespaceDataObject_inValidNamespaceToFindString
@@ -40,7 +40,7 @@ export const jsonObjectOfStrings_03 = () => {
 
 /**
  * @function applicationPath
- * @description Get application path to be used in dataBroker.test.js for unit test
+ * @description Get application path to be used in dataBroker.test.js for unit tests:
  * findUniversalDebugConfigSetting_validData
  * findUniversalDebugConfigSetting_inValidFrameworkConfigFilesToLoadString
  * @author Json Howard
@@ -54,7 +54,7 @@ export const applicationPath = () => {
 
 /**
  * @function frameworkPath
- * @description Get framework path to be used dataBroker.test.js for unit test
+ * @description Get framework path to be used dataBroker.test.js for unit test:
  * findUniversalDebugConfigSetting_validData
  * @author Json Howard
  * @date 2023/04/17
@@ -67,7 +67,7 @@ export const frameworkPath = () => {
 
 /**
  * @function dataBrokerCsvPath
- * @description Get test csv path to be used in dataBroker.test.js for unit test
+ * @description Get test csv path to be used in dataBroker.test.js for unit tests:
  * loadAllCsvData_validData
  * loadAllCsvData_inValidString
  * loadAllCsvData_inValidContextNameString
@@ -82,7 +82,7 @@ export const dataBrokerCsvPath = () => {
 
 /**
  * @function dataBrokerXmlPath
- * @description Get test xml path to be used in dataBroker.test.js for unit test
+ * @description Get test xml path to be used in dataBroker.test.js for unit tests:
  * loadedAllXmlData_validData
  * loadedAllXmlData_inValidString
  * loadAllXmlData_inValidContextNameString
@@ -97,7 +97,7 @@ export const dataBrokerXmlPath = () => {
 
 /**
  * @function dataBrokerJsonPath
- * @description Get test json path to be used in dataBroker.test.js for unit test
+ * @description Get test json path to be used in dataBroker.test.js for unit tests:
  * loadAllJsonData_validData
  * loadAllJsonData_inValidString
  * loadAllJsonData_inValidContextNameString
@@ -113,7 +113,7 @@ export const dataBrokerJsonPath = () => {
 
 /**
  * @function writeJsonDataPath
- * @description Get test json path to save to be used in dataBroker.test.js for unit test
+ * @description Get test json path to save to be used in dataBroker.test.js for unit test:
  * writeJsonDataToFile_validData
  * @author Json Howard
  * @date 2023/04/17
@@ -122,9 +122,9 @@ export const writeJsonDataPath = () => {
     let baseUrl = tst_con.basePath();
     let urlArray = baseUrl.split(bas.cForwardSlash);
     let resUrl = '';
-    for(let i = 0; i < urlArray.length; i ++) {
-        resUrl += urlArray[i];
-        if(urlArray[i] === wrd.cHaystack)
+    for(const element of urlArray) {
+        resUrl += element;
+        if(element === wrd.cHaystack)
             break;
         resUrl += bas.cForwardSlash;
     }

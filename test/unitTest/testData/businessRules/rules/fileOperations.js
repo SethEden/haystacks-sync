@@ -18,7 +18,7 @@ const { bas, wrd, gen } = hayConst;
 
 /**
  * @function fileOperationsXmlPath
- * @description Get xml path to be used in fileOperation.test.js for unit test
+ * @description Get xml path to be used in fileOperation.test.js for unit tests:
  * getXmlData_validDataString
  * getXmlData_inValidDataInputMetaDataString
  * copyFileSync_validDataString
@@ -34,7 +34,7 @@ export const fileOperationsXmlPath = () => {
 
 /**
  * @function testXmlPath
- * @description Get test xml path to be used in fileOperation.test.js for unit test
+ * @description Get test xml path to be used in fileOperation.test.js for unit tests:
  * copyFileSync_validDataString
  * copyFileSync_inValidDataInputMetaDataString
  * @author Json Howard
@@ -48,7 +48,7 @@ export const testXmlPath = () => {
 
 /**
  * @function fileOperationsXmlFolder
- * @description Get xml folder to be used in fileOperation.test.js for unit test
+ * @description Get xml folder to be used in fileOperation.test.js for unit tests:
  * readDirectoryContents_validDataString
  * readDirectoryContents_inValidDataInputMetaDataString
  * scanDirectoryContents_validDataString
@@ -69,7 +69,7 @@ export const fileOperationsXmlFolder = () => {
 
 /**
  * @function fileOperationsCsvPath
- * @description Get csv path to be used in fileOperation.test.js for unit test
+ * @description Get csv path to be used in fileOperation.test.js for unit tests:
  * getCsvData_validDataString
  * getCsvData_inValidDataInputMetaDataString
  * @author Json Howard
@@ -83,7 +83,7 @@ export const fileOperationsCsvPath = () => {
 
 /**
  * @function fileOperationsJsonPath
- * @description Get json path to be used in fileOperation.test.js for unit test
+ * @description Get json path to be used in fileOperation.test.js for unit tests:
  * getJsonData_validDataString
  * getJsonData_inValidDataInputMetaDataString
  * writeJsonData_validDataString
