@@ -79,7 +79,7 @@ describe(tst_con.cbootStrapCommands, () => {
     * @author Json Howard
     * @date 2023/04/13
     */
-    test(tst_con.cbootStrapCommands_inValidBoolean, () => {
+    test(tst_con.cbootStrapCommands_inValidNumber, () => {
         // Arrange
         let input = 123;
 
