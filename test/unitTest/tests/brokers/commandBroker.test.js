@@ -916,4 +916,72 @@ describe(tst_con.cexecuteCommand, () => {
         // Assert
         expect(returnData).toEqual([true, false]);
     });
+
+    /**
+    * @function executeCommand_inValidNumber
+    * @description Tests the business rules function executeCommand with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.cexecuteCommand_inValidNumber, () => {
+        // Arrange
+        let commandString = 546;
+
+        // Act
+        let returnData = commandBroker.executeCommand(commandString);
+
+        // Assert
+        expect(returnData).toEqual([true, false]);
+    });
+
+    /**
+    * @function executeCommand_inValidBoolean
+    * @description Tests the business rules function executeCommand with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.cexecuteCommand_inValidBoolean, () => {
+        // Arrange
+        let commandString = false;
+
+        // Act
+        let returnData = commandBroker.executeCommand(commandString);
+
+        // Assert
+        expect(returnData).toEqual([true, false]);
+    });
+
+    /**
+    * @function executeCommand_inValidUndefined
+    * @description Tests the business rules function executeCommand with a invalid undefined data.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.cexecuteCommand_inValidUndefined, () => {
+        // Arrange
+        let commandString = undefined;
+
+        // Act
+        let returnData = commandBroker.executeCommand(commandString);
+
+        // Assert
+        expect(returnData).toEqual([true, false]);
+    });
+
+    /**
+    * @function executeCommand_inValidNaN
+    * @description Tests the business rules function executeCommand with a invalid NaN data.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.cexecuteCommand_inValidNaN, () => {
+        // Arrange
+        let commandString = NaN;
+
+        // Act
+        let returnData = commandBroker.executeCommand(commandString);
+
+        // Assert
+        expect(returnData).toEqual([true, false]);
+    });
 });

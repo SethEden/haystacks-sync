@@ -390,6 +390,10 @@ export const cgetCommandArgs_inValidBoolean = cgetCommandArgs + wrd.cinvalid + w
 
 export const cexecuteCommand_validData = cexecuteCommand + wrd.cvalid + wrd.cData;
 export const cexecuteCommand_inValidString = cexecuteCommand + wrd.cinvalid + wrd.cString;
+export const cexecuteCommand_inValidNumber = cexecuteCommand + wrd.cinvalid + wrd.cNumber;
+export const cexecuteCommand_inValidBoolean = cexecuteCommand + wrd.cinvalid + wrd.cBoolean;
+export const cexecuteCommand_inValidUndefined = cexecuteCommand + wrd.cinvalid + cUndefined;
+export const cexecuteCommand_inValidNaN = cexecuteCommand + wrd.cinvalid + cNaN;
 
 export const cscanDataPath_validData = cscanDataPath + wrd.cvalid + wrd.cData;
 export const cscanDataPath_inValidString = cscanDataPath + wrd.cinvalid + wrd.cString;

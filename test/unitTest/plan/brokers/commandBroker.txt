@@ -233,15 +233,23 @@ output: ?
 testName: executeCommand_inValidNumber
 input: integer (546)
 output: ?
+status: Failed
+error: TypeError: commandString.includes is not a function
 
 testName: executeCommand_inValidBoolean
 input: boolean (false)
 output: ?
+status: Failed
+error: TypeError: commandString.includes is not a function
 
 testName: executeCommand_inValidUndefined
 input: undefined
 output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading 'includes')
 
 testName: executeCommand_inValidNaN
 input: NaN
 output: ?
+status: Failed
+error: TypeError: commandString.includes is not a function
