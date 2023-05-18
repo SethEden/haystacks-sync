@@ -262,6 +262,42 @@ describe(tst_con.cgetValidCommand, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+    * @function getValidCommand_inValidNumber
+    * @description Tests the business rules function getValidCommand with a invalid integer input.
+    * @author Json Howard
+    * @date 2023/04/13
+    */
+    test(tst_con.cgetValidCommand_inValidNumber, () => {
+        // Arrange
+        let commandString = 546;
+        let commandDelimiter = bas.cSpace;
+
+        // Act
+        let returnData = commandBroker.getValidCommand(commandString, commandDelimiter);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function getValidCommand_inValidBoolean
+    * @description Tests the business rules function getValidCommand with a invalid boolean input.
+    * @author Json Howard
+    * @date 2023/04/13
+    */
+    test(tst_con.cgetValidCommand_inValidBoolean, () => {
+        // Arrange
+        let commandString = false;
+        let commandDelimiter = bas.cSpace;
+
+        // Act
+        let returnData = commandBroker.getValidCommand(commandString, commandDelimiter);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -360,6 +396,42 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
         // Assert
         expect(returnData).toBe(0);
     });
+
+    /**
+    * @function countMatchingCommandAlias_inValidCommandAliasNameNumber
+    * @description Tests the business rules function countMatchingCommandAlias with a invalid integer alias.
+    * @author Json Howard
+    * @date 2023/04/14
+    */
+    test(tst_con.ccountMatchingCommandAlias_inValidCommandAliasNameNumber, () => {
+        // Arrange
+        let commandAliasData = obj_con.JsonObjectOfStrings_02;
+        let commandAliasName = 546;
+
+        // Act
+        let returnData = commandBroker.countMatchingCommandAlias(commandAliasData, commandAliasName);
+
+        // Assert
+        expect(returnData).toBe(0);
+    });
+
+    /**
+    * @function countMatchingCommandAlias_inValidCommandAliasNameBoolean
+    * @description Tests the business rules function countMatchingCommandAlias with a invalid boolean alias data.
+    * @author Json Howard
+    * @date 2023/04/14
+    */
+    test(tst_con.ccountMatchingCommandAlias_inValidCommandAliasNameBoolean, () => {
+        // Arrange
+        let commandAliasData = obj_con.JsonObjectOfStrings_02;
+        let commandAliasName = false;
+
+        // Act
+        let returnData = commandBroker.countMatchingCommandAlias(commandAliasData, commandAliasName);
+
+        // Assert
+        expect(returnData).toBe(0);
+    });
 });
 
 /**
@@ -451,6 +523,42 @@ describe(tst_con.csearchCommandAlias, () => {
         // Arrange
         let commandAliasData = false;
         let commandAliasName = wrd.cWorld;
+
+        // Act
+        let returnData = commandBroker.searchCommandAlias(commandAliasData, commandAliasName);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function searchCommandAlias_inValidCommandAliasNameNumber
+    * @description Tests the business rules function searchCommandAlias with a invalid integer alias.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.csearchCommandAlias_inValidCommandAliasNameNumber, () => {
+        // Arrange
+        let commandAliasData = obj_con.JsonObjectOfStrings_02;
+        let commandAliasName = 546;
+
+        // Act
+        let returnData = commandBroker.searchCommandAlias(commandAliasData, commandAliasName);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function searchCommandAlias_inValidCommandAliasNameBoolean
+    * @description Tests the business rules function searchCommandAlias with a invalid boolean alias.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.csearchCommandAlias_inValidCommandAliasNameBoolean, () => {
+        // Arrange
+        let commandAliasData = obj_con.JsonObjectOfStrings_02;
+        let commandAliasName = false;
 
         // Act
         let returnData = commandBroker.searchCommandAlias(commandAliasData, commandAliasName);
@@ -723,6 +831,42 @@ describe(tst_con.cgetCommandArgs, () => {
         // Arrange
         let commandString = wrd.cname + wrd.cSpace + wrd.capplication + wrd.cSpace + wrd.cversion + wrd.cSpace + wrd.cabout;
         let commandDelimiter = wrd.cAmper;
+
+        // Act
+        let returnData = commandBroker.getCommandArgs(commandString, commandDelimiter);
+
+        // Assert
+        expect(returnData).toEqual(false);
+    });
+
+    /**
+    * @function getCommandArgs_inValidNumber
+    * @description Tests the business rules function getCommandArgs with a invalid integer delimiter.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.cgetCommandArgs_inValidNumber, () => {
+        // Arrange
+        let commandString = 546;
+        let commandDelimiter = wrd.cSpace;
+
+        // Act
+        let returnData = commandBroker.getCommandArgs(commandString, commandDelimiter);
+
+        // Assert
+        expect(returnData).toEqual(false);
+    });
+
+    /**
+    * @function getCommandArgs_inValidBoolean
+    * @description Tests the business rules function getCommandArgs with a invalid boolean delimiter.
+    * @author Json Howard
+    * @date 2023/04/15
+    */
+    test(tst_con.cgetCommandArgs_inValidBoolean, () => {
+        // Arrange
+        let commandString = false;
+        let commandDelimiter = wrd.cSpace;
 
         // Act
         let returnData = commandBroker.getCommandArgs(commandString, commandDelimiter);

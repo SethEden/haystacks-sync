@@ -350,18 +350,24 @@ export const caddClientCommands_inValidBoolean = caddClientCommands + wrd.cinval
 export const cgetValidCommand_validData = cgetValidCommand + wrd.cvalid + wrd.cData;
 export const cgetValidCommand_inValidString = cgetValidCommand + wrd.cinvalid + wrd.cString;
 export const cgetValidCommand_inValidDelimiterString = cgetValidCommand + wrd.cinvalid + wrd.cDelimited + wrd.cString;
+export const cgetValidCommand_inValidNumber = cgetValidCommand + wrd.cinvalid + wrd.cDelimited + wrd.cNumber;
+export const cgetValidCommand_inValidBoolean = cgetValidCommand + wrd.cinvalid + wrd.cDelimited + wrd.cBoolean;
 
 export const ccountMatchingCommandAlias_validData = ccountMatchingCommandAlias + wrd.cvalid + wrd.cData;
 export const ccountMatchingCommandAlias_inValidCommandAliasDataString = ccountMatchingCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cData + wrd.cString;
 export const ccountMatchingCommandAlias_inValidCommandAliasNameString = ccountMatchingCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cName + wrd.cString;
 export const ccountMatchingCommandAlias_inValidCommandAliasDataNumber = ccountMatchingCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cData + wrd.cNumber;
 export const ccountMatchingCommandAlias_inValidCommandAliasDataBoolean = ccountMatchingCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cData + wrd.cBoolean;
+export const ccountMatchingCommandAlias_inValidCommandAliasNameNumber = ccountMatchingCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cName + wrd.cNumber;
+export const ccountMatchingCommandAlias_inValidCommandAliasNameBoolean = ccountMatchingCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cName + wrd.cBoolean;
 
 export const csearchCommandAlias_validData = csearchCommandAlias + wrd.cvalid + wrd.cData;
 export const csearchCommandAlias_inValidCommandAliasDataString = csearchCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cData + wrd.cString;
 export const csearchCommandAlias_inValidCommandAliasNameString = csearchCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cName + wrd.cString;
 export const csearchCommandAlias_inValidCommandAliasDataNumber = csearchCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cData + wrd.cNumber;
 export const csearchCommandAlias_inValidCommandAliasDataBoolean = csearchCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cData + wrd.cBoolean;
+export const csearchCommandAlias_inValidCommandAliasNameNumber = csearchCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cName + wrd.cNumber;
+export const csearchCommandAlias_inValidCommandAliasNameBoolean = csearchCommandAlias + wrd.cinvalid + wrd.cCommand + wrd.cAlias + wrd.cName + wrd.cBoolean;
 
 export const cgetAllCommandAliasData_validData = cgetAllCommandAliasData + wrd.cvalid + wrd.cData;
 export const cgetAllCommandAliasData_inValidString = cgetAllCommandAliasData + wrd.cinvalid + wrd.cString;
@@ -379,6 +385,8 @@ export const cgetCommandNamespaceDataObject_inValidNamespaceToFindBoolean = cget
 export const cgetCommandArgs_validData = cgetCommandArgs + wrd.cvalid + wrd.cData;
 export const cgetCommandArgs_inValidString = cgetCommandArgs + wrd.cinvalid + wrd.cString;
 export const cgetCommandArgs_inValidDelimiterString = cgetCommandArgs + wrd.cinvalid + wrd.cDelimiter + wrd.cString;
+export const cgetCommandArgs_inValidNumber = cgetCommandArgs + wrd.cinvalid + wrd.cNumber;
+export const cgetCommandArgs_inValidBoolean = cgetCommandArgs + wrd.cinvalid + wrd.cBoolean;
 
 export const cexecuteCommand_validData = cexecuteCommand + wrd.cvalid + wrd.cData;
 export const cexecuteCommand_inValidString = cexecuteCommand + wrd.cinvalid + wrd.cString;
@@ -484,10 +492,18 @@ export const cgetNamedThemes_inValidBoolean = cgetNamedThemes + wrd.cinvalid + w
 
 export const cgetNamedThemePath_validData = cgetNamedThemePath + wrd.cvalid + wrd.cData;
 export const cgetNamedThemePath_inValidString = cgetNamedThemePath + wrd.cinvalid + wrd.cString;
+export const cgetNamedThemePath_inValidNumber = cgetNamedThemePath + wrd.cinvalid + wrd.cNumber;
+export const cgetNamedThemePath_inValidBoolean = cgetNamedThemePath + wrd.cinvalid + wrd.cBoolean;
 
 export const cloadTheme_validData = cloadTheme + wrd.cvalid + wrd.cData;
+export const cloadTheme_inValidString = cloadTheme + wrd.cinvalid + wrd.cString;
+export const cloadTheme_inValidNumber = cloadTheme + wrd.cinvalid + wrd.cNumber;
+export const cloadTheme_inValidBoolean = cloadTheme + wrd.cinvalid + wrd.cBoolean;
 
 export const capplyTheme_validData = capplyTheme + wrd.cvalid + wrd.cData;
+export const capplyTheme_inValidString = capplyTheme + wrd.cinvalid + wrd.cString;
+export const capplyTheme_inValidNumber = capplyTheme + wrd.cinvalid + wrd.cNumber;
+export const capplyTheme_inValidBoolean = capplyTheme + wrd.cinvalid + wrd.cBoolean;
 
 export const cgetWorkflow_validData = cgetWorkflow + wrd.cvalid + wrd.cData;
 export const cgetWorkflow_inValidString = cgetWorkflow + wrd.cinvalid + wrd.cString;

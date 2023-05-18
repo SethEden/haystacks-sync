@@ -64,10 +64,9 @@ describe(tst_con.cgetNamedThemes, () => {
         // Arrange
         let input = wrd.cHello;
         rulesLibrary.initRulesLibrary();
-
-        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
+        // Act        
         let returnData = themeBroker.getNamedThemes(input);
 
         // Assert
@@ -84,10 +83,9 @@ describe(tst_con.cgetNamedThemes, () => {
         // Arrange
         let input = 123;
         rulesLibrary.initRulesLibrary();
-
-        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
+        // Act        
         let returnData = themeBroker.getNamedThemes(input);
 
         // Assert
@@ -104,10 +102,9 @@ describe(tst_con.cgetNamedThemes, () => {
         // Arrange
         let input = false;
         rulesLibrary.initRulesLibrary();
-
-        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
+        // Act        
         let returnData = themeBroker.getNamedThemes(input);
 
         // Assert
@@ -132,10 +129,9 @@ describe(tst_con.cgetNamedThemePath, () => {
         // Arrange
         let themeName = wrd.cbrokers;
         rulesLibrary.initRulesLibrary();
-
-        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
+        // Act        
         let returnData = themeBroker.getNamedThemePath(themeName);
 
         // Assert
@@ -152,10 +148,47 @@ describe(tst_con.cgetNamedThemePath, () => {
         // Arrange
         let themeName = wrd.cHello;
         rulesLibrary.initRulesLibrary();
-
-        // Act        
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
 
+        // Act        
+        let returnData = themeBroker.getNamedThemePath(themeName);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function getNamedThemePath_inValidNumber
+    * @description Tests the business rules function getNamedThemePath with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.cgetNamedThemePath_inValidNumber, () => {
+        // Arrange
+        let themeName = 546;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
+
+        // Act        
+        let returnData = themeBroker.getNamedThemePath(themeName);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function getNamedThemePath_inValidBoolean
+    * @description Tests the business rules function getNamedThemePath with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.cgetNamedThemePath_inValidBoolean, () => {
+        // Arrange
+        let themeName = false;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, obj_con.themePath());
+
+        // Act        
         let returnData = themeBroker.getNamedThemePath(themeName);
 
         // Assert
@@ -179,6 +212,66 @@ describe(tst_con.cloadTheme, () => {
     test(tst_con.cloadTheme_validData, () => {
         // Arrange
         let themePath = obj_con.themePath() + bas.cForwardSlash + wrd.cbrokers;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
+
+        // Act      
+        let returnData = themeBroker.loadTheme(themePath);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function loadTheme_inValidString
+    * @description Tests the business rules function loadTheme with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.cloadTheme_inValidString, () => {
+        // Arrange
+        let themePath = "464gsdsfae8f46";
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
+
+        // Act      
+        let returnData = themeBroker.loadTheme(themePath);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function loadTheme_inValidNumber
+    * @description Tests the business rules function loadTheme with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.cloadTheme_inValidNumber, () => {
+        // Arrange
+        let themePath = 546;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
+
+        // Act      
+        let returnData = themeBroker.loadTheme(themePath);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function loadTheme_inValidBoolean
+    * @description Tests the business rules function loadTheme with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.cloadTheme_inValidBoolean, () => {
+        // Arrange
+        let themePath = false;
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
         configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
@@ -217,5 +310,68 @@ describe(tst_con.capplyTheme, () => {
 
         // Assert
         expect(returnData).toBe(true);
+    });
+
+    /**
+    * @function applyTheme_inValidString
+    * @description Tests the business rules function applyTheme with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.capplyTheme_inValidString, () => {
+        // Arrange
+        let themePath = "464gsdsfae8f46";
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
+
+        // Act 
+        let loadedThemeData = themeBroker.loadTheme(themePath);
+        let returnData = themeBroker.applyTheme(loadedThemeData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function applyTheme_inValidNumber
+    * @description Tests the business rules function applyTheme with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.capplyTheme_inValidNumber, () => {
+        // Arrange
+        let themePath = 546;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
+
+        // Act 
+        let loadedThemeData = themeBroker.loadTheme(themePath);
+        let returnData = themeBroker.applyTheme(loadedThemeData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function applyTheme_inValidBoolean
+    * @description Tests the business rules function applyTheme with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/17
+    */
+    test(tst_con.capplyTheme_inValidBoolean, () => {
+        // Arrange
+        let themePath = false;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
+
+        // Act 
+        let loadedThemeData = themeBroker.loadTheme(themePath);
+        let returnData = themeBroker.applyTheme(loadedThemeData);
+
+        // Assert
+        expect(returnData).toBe(false);
     });
 });
