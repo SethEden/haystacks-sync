@@ -25,7 +25,7 @@ const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + 
  * @author Json Howard
  * @date 2023/05/11
  */
-const doesArrayContainValueTestFunction = function(inputData, inputMetaData) {
+export const doesArrayContainValueTestFunction = function(inputData, inputMetaData) {
   let functionName = doesArrayContainValueTestFunction.name;
   console.log(namespacePrefix + functionName, msg.cBEGIN_Function);
   console.log(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
