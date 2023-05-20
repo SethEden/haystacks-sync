@@ -2075,6 +2075,126 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         // Assert
         expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
     });
+
+    /**
+    * @function getNamespacedDataObject_inValidDataInputDataString
+    * @description Tests the business rules function getNamespacedDataObject with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetNamespacedDataObject_inValidDataInputDataString, () => {
+        // Arrange
+        let inputData = "dfxg24346dfg";
+        let inputMetaData = false;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
+
+        // Act
+        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
+
+        // Assert
+        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+    });
+
+    /**
+    * @function getNamespacedDataObject_inValidInputMetaDataInteger
+    * @description Tests the business rules function getNamespacedDataObject with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetNamespacedDataObject_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
+
+        // Act
+        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
+
+        // Assert
+        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+    });
+
+    /**
+    * @function getNamespacedDataObject_inValidInputMetaDataBoolean
+    * @description Tests the business rules function getNamespacedDataObject with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetNamespacedDataObject_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = false;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
+
+        // Act
+        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
+
+        // Assert
+        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+    });
+
+    /**
+    * @function getNamespacedDataObject_inValidInputDataUndefined
+    * @description Tests the business rules function getNamespacedDataObject with a invalid undefined data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetNamespacedDataObject_inValidInputDataUndefined, () => {
+        // Arrange
+        let inputData = undefined;
+        let inputMetaData = false;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
+
+        // Act
+        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
+
+        // Assert
+        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+    });
 });
 
 /**
@@ -2208,6 +2328,122 @@ describe(tst_con.csetNamespacedDataObject, () => {
     test(tst_con.csetNamespacedDataObject_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
+        let inputMetaData = obj_con.StringsArray_01;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+
+        // Act
+        let returnData = dataArrayParsing.setNamespacedDataObject(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function setNamespacedDataObject_inValidDataInputDataString
+    * @description Tests the business rules function getNamespacedDataObject with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csetNamespacedDataObject_inValidDataInputDataString, () => {
+        // Arrange
+        let inputData = "dfxg24346dfg";
+        let inputMetaData = obj_con.StringsArray_01;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+
+        // Act
+        let returnData = dataArrayParsing.setNamespacedDataObject(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function setNamespacedDataObject_inValidInputMetaDataInteger
+    * @description Tests the business rules function getNamespacedDataObject with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csetNamespacedDataObject_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+
+        // Act
+        let returnData = dataArrayParsing.setNamespacedDataObject(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function setNamespacedDataObject_inValidInputMetaDataBoolean
+    * @description Tests the business rules function getNamespacedDataObject with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csetNamespacedDataObject_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = false;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+
+        // Act
+        let returnData = dataArrayParsing.setNamespacedDataObject(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function setNamespacedDataObject_inValidInputDataUndefined
+    * @description Tests the business rules function getNamespacedDataObject with a invalid undefined data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csetNamespacedDataObject_inValidInputDataUndefined, () => {
+        // Arrange
+        let inputData = undefined;
         let inputMetaData = obj_con.StringsArray_01;
         let temp_D = D;
         for (let i = 0; i < inputData.length - 1; i++) {

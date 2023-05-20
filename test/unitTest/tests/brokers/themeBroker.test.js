@@ -226,22 +226,10 @@ describe(tst_con.cloadTheme, () => {
     /**
     * @function loadTheme_inValidString
     * @description Tests the business rules function loadTheme with a invalid string data.
+    * @result In root path create "464gsdsfae8f46" folder.
     * @author Json Howard
     * @date 2023/04/17
     */
-    test(tst_con.cloadTheme_inValidString, () => {
-        // Arrange
-        let themePath = "464gsdsfae8f46";
-        rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
-
-        // Act      
-        let returnData = themeBroker.loadTheme(themePath);
-
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
 
     /**
     * @function loadTheme_inValidNumber
@@ -315,23 +303,10 @@ describe(tst_con.capplyTheme, () => {
     /**
     * @function applyTheme_inValidString
     * @description Tests the business rules function applyTheme with a invalid string data.
+    * @result In root path create "464gsdsfae8f46" folder.
     * @author Json Howard
     * @date 2023/04/17
     */
-    test(tst_con.capplyTheme_inValidString, () => {
-        // Arrange
-        let themePath = "464gsdsfae8f46";
-        rulesLibrary.initRulesLibrary();
-        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
-        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
-
-        // Act 
-        let loadedThemeData = themeBroker.loadTheme(themePath);
-        let returnData = themeBroker.applyTheme(loadedThemeData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
 
     /**
     * @function applyTheme_inValidNumber

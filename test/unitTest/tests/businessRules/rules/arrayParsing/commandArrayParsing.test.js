@@ -166,6 +166,82 @@ describe(tst_con.csolveLehmerCode, () => {
         // Assert
         expect(returnData).toBe("");
     });
+
+    /**
+    * @function solveLehmerCode_inValidInputMetaDataInteger
+    * @description Tests the business rules function solveLehmerCode with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csolveLehmerCode_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function solveLehmerCode_inValidInputMetaDataBoolean
+    * @description Tests the business rules function solveLehmerCode with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csolveLehmerCode_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = false;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function solveLehmerCode_inValidInputMetaDataUndefined
+    * @description Tests the business rules function solveLehmerCode with a invalid undefined inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csolveLehmerCode_inValidInputMetaDataUndefined, () => {
+        // Arrange
+        let inputData = obj_con.IntegerArray_01;
+        let inputMetaData = undefined;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function solveLehmerCode_inValidInputMetaDataNaN
+    * @description Tests the business rules function solveLehmerCode with a invalid NaN inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csolveLehmerCode_inValidInputMetaDataNaN, () => {
+        // Arrange
+        let inputData = obj_con.IntegerArray_01;
+        let inputMetaData = NaN;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
 });
 
 /**
@@ -472,6 +548,96 @@ describe(tst_con.cgetLehmerCodeValue, () => {
     });
 
     /**
+    * @function getLehmerCodeValue_inValidDataInputDataString
+    * @description Tests the business rules function getLehmerCodeValue with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLehmerCodeValue_inValidDataInputDataString, () => {
+        // Arrange
+        let inputData = "dfxg24346dfg";
+        let inputMetaData = obj_con.StringsArray_01;
+
+        // Act
+        let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function getLehmerCodeValue_inValidInputMetaDataInteger
+    * @description Tests the business rules function getLehmerCodeValue with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLehmerCodeValue_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+
+        // Act
+        let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function getLehmerCodeValue_inValidInputMetaDataBoolean
+    * @description Tests the business rules function getLehmerCodeValue with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLehmerCodeValue_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = false;
+
+        // Act
+        let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function getLehmerCodeValue_inValidInputMetaDataUndefined
+    * @description Tests the business rules function getLehmerCodeValue with a invalid undefined inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLehmerCodeValue_inValidInputMetaDataUndefined, () => {
+        // Arrange
+        let inputData = obj_con.IntegerArray_01;
+        let inputMetaData = undefined;
+
+        // Act
+        let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function getLehmerCodeValue_inValidInputMetaDataNaN
+    * @description Tests the business rules function getLehmerCodeValue with a invalid NaN inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLehmerCodeValue_inValidInputMetaDataNaN, () => {
+        // Arrange
+        let inputData = obj_con.IntegerArray_01;
+        let inputMetaData = NaN;
+
+        // Act
+        let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
     * @function getLehmerCodeValue_inValidInputDataNaN
     * @description Tests the business rules function getLehmerCodeValue with a invalid NaN data.
     * @author Json Howard
@@ -767,6 +933,42 @@ describe(tst_con.caggregateCommandArguments, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
+
+        // Act
+        let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function aggregateCommandArguments_inValidInputMetaDataInteger
+    * @description Tests the business rules function aggregateCommandArguments with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.caggregateCommandArguments_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+
+        // Act
+        let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function aggregateCommandArguments_inValidInputMetaDataBoolean
+    * @description Tests the business rules function aggregateCommandArguments with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.caggregateCommandArguments_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = false;
 
         // Act
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);

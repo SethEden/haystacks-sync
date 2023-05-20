@@ -71,6 +71,42 @@ describe(tst_con.cscanDataPath, () => {
         // Assert
         expect(returnData).toEqual([]);
     });
+
+    /**
+    * @function scanDataPath_inValidNumber
+    * @description Tests the business rules function scanDataPath with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cscanDataPath_inValidNumber, () => {
+        // Arrange
+        let dataPath = 546;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.scanDataPath(dataPath);
+
+        // Assert
+        expect(returnData).toEqual([]);
+    });
+
+    /**
+    * @function scanDataPath_inValidBoolean
+    * @description Tests the business rules function scanDataPath with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cscanDataPath_inValidBoolean, () => {
+        // Arrange
+        let dataPath = false;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.scanDataPath(dataPath);
+
+        // Assert
+        expect(returnData).toEqual([]);
+    });
 });
 
 /**
@@ -136,8 +172,45 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
         // Assert
         expect(returnData).toBe(true);
     });
-});
 
+    /**
+    * @function findUniversalDebugConfigSetting_inValidNumber
+    * @description Tests the business rules function findUniversalDebugConfigSetting with a invalid integer frameworkConfigFilesToLoad data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cfindUniversalDebugConfigSetting_inValidNumber, () => {
+        // Arrange
+        let appConfigFilesToLoad = 546;
+        let frameworkConfigFilesToLoad = wrd.cSpace;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.findUniversalDebugConfigSetting(appConfigFilesToLoad, frameworkConfigFilesToLoad);
+
+        // Assert
+        expect(returnData).toBe(true);
+    });
+
+    /**
+    * @function findUniversalDebugConfigSetting_inValidBoolean
+    * @description Tests the business rules function findUniversalDebugConfigSetting with a invalid boolean frameworkConfigFilesToLoad data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cfindUniversalDebugConfigSetting_inValidBoolean, () => {
+        // Arrange
+        let appConfigFilesToLoad = false;
+        let frameworkConfigFilesToLoad = wrd.cSpace;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.findUniversalDebugConfigSetting(appConfigFilesToLoad, frameworkConfigFilesToLoad);
+
+        // Assert
+        expect(returnData).toBe(true);
+    });
+});
 /**
  * @function loadAllCsvData
  * @description Tests the positive and negative test cases of the loadAllCsvData function.
@@ -203,12 +276,31 @@ describe(tst_con.cloadAllCsvData, () => {
     });
 
     /**
+    * @function loadAllCsvData_inValidNumber
+    * @description Tests the business rules function loadAllCsvData with a invalid integer context name.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cloadAllCsvData_inValidNumber, () => {
+        // Arrange
+        let filesToLoad = 546;
+        let contextName = wrd.cSpace;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.loadAllCsvData(filesToLoad, contextName);
+
+        // Assert
+        expect(returnData).toBe(undefined);
+    });
+
+    /**
     * @function loadAllCsvData_inValidBoolean
     * @description Tests the business rules function loadAllCsvData with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.loadAllCsvData_inValidBoolean, () => {
+    test(tst_con.cloadAllCsvData_inValidBoolean, () => {
         // Arrange
         let filesToLoad = [false];
         let contextName = wrd.cSpace;
@@ -304,6 +396,25 @@ describe(tst_con.cloadAllXmlData, () => {
         // Assert
         expect(returnData).toEqual({});
     });
+
+    /**
+    * @function loadedAllXmlData_inValidNumber
+    * @description Tests the business rules function loadAllXmlData with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cloadedAllXmlData_inValidNumber, () => {
+        // Arrange
+        let filesToLoad = 546;
+        let contextName = wrd.cSpace;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.loadAllXmlData(filesToLoad, contextName);
+
+        // Assert
+        expect(returnData).toEqual({});
+    });
 });
 
 /**
@@ -369,6 +480,44 @@ describe(tst_con.cloadAllJsonData, () => {
         // Assert
         expect(returnData).toEqual({});
     });
+
+    /**
+    * @function loadAllJsonData_inValidNumber
+    * @description Tests the business rules function loadAllJsonData with a invalid integer path.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cloadAllJsonData_inValidNumber, () => {
+        // Arrange
+        let filesToLoad = 546;
+        let contextName = wrd.cSpace;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.loadAllJsonData(filesToLoad, contextName);
+
+        // Assert
+        expect(returnData).toEqual({});
+    });
+
+    /**
+    * @function loadAllJsonData_inValidBoolean
+    * @description Tests the business rules function loadAllJsonData with a invalid boolean path.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cloadAllJsonData_inValidBoolean, () => {
+        // Arrange
+        let filesToLoad = false;
+        let contextName = wrd.cSpace;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.loadAllJsonData(filesToLoad, contextName);
+
+        // Assert
+        expect(returnData).toEqual({});
+    });
 });
 
 /**
@@ -415,6 +564,63 @@ describe(tst_con.cprocessCsvData, () => {
         // Assert
         expect(returnData).toBeTruthy();
     });
+
+    /**
+    * @function processCsvData_inValidString
+    * @description Tests the business rules function processCsvData with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cprocessCsvData_inValidString, () => {
+        // Arrange
+        let data = "464gsdsfae8f46";
+        let contextName = wrd.ccolors;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.processCsvData(data, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function processCsvData_inValidNumber
+    * @description Tests the business rules function processCsvData with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cprocessCsvData_inValidNumber, () => {
+        // Arrange
+        let data = 546;
+        let contextName = wrd.ccolors;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.processCsvData(data, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function processCsvData_inValidBoolean
+    * @description Tests the business rules function processCsvData with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cprocessCsvData_inValidBoolean, () => {
+        // Arrange
+        let data = false;
+        let contextName = wrd.ccolors;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = dataBroker.processCsvData(data, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
 });
 
 /**
@@ -440,6 +646,57 @@ describe(tst_con.cpreprocessJsonFile, () => {
         // Assert
         expect(returnData).toBeTruthy();
     });
+
+    /**
+    * @function preprocessJsonFile_inValidString
+    * @description Tests the business rules function preprocessJsonFile with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cpreprocessJsonFile_inValidString, () => {
+        // Arrange
+        let fileToLoad = "464gsdsfae8f46";
+
+        // Act
+        let returnData = dataBroker.preprocessJsonFile(fileToLoad);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function preprocessJsonFile_inValidNumber
+    * @description Tests the business rules function preprocessJsonFile with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cpreprocessJsonFile_inValidNumber, () => {
+        // Arrange
+        let fileToLoad = 546;
+
+        // Act
+        let returnData = dataBroker.preprocessJsonFile(fileToLoad);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function preprocessJsonFile_inValidBoolean
+    * @description Tests the business rules function preprocessJsonFile with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cpreprocessJsonFile_inValidBoolean, () => {
+        // Arrange
+        let fileToLoad = false;
+
+        // Act
+        let returnData = dataBroker.preprocessJsonFile(fileToLoad);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
 });
 
 /**
@@ -458,6 +715,68 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     test(tst_con.cwriteJsonDataToFile_validData, () => {
         // Arrange
         let fileToSaveTo = obj_con.writeJsonDataPath();
+        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+
+        // Act
+        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+
+        // Assert
+        expect(returnData).toBe(true);
+    });
+
+    /**
+    * @function writeJsonDataToFile_inValidString
+    * @description Tests the business rules function writeJsonDataToFile with a invalid string data.
+    * @result In root path create "464gsdsfae8f46" file.
+    * @author Json Howard
+    * @date 2023/04/16
+    */    
+
+    /**
+    * @function writeJsonDataToFile_inValidDataToWrite
+    * @description Tests the business rules function writeJsonDataToFile with a invalid datatowrite.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cwriteJsonDataToFile_inValidDataToWrite, () => {
+        // Arrange
+        let fileToSaveTo = obj_con.writeJsonDataPath();
+        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+
+        // Act
+        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+
+        // Assert
+        expect(returnData).toBe(true);
+    });
+
+    /**
+    * @function writeJsonDataToFile_inValidNumber
+    * @description Tests the business rules function writeJsonDataToFile with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cwriteJsonDataToFile_inValidNumber, () => {
+        // Arrange
+        let fileToSaveTo = 546;
+        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+
+        // Act
+        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+
+        // Assert
+        expect(returnData).toBe(true);
+    });
+
+    /**
+    * @function writeJsonDataToFile_inValidBoolean
+    * @description Tests the business rules function writeJsonDataToFile with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/16
+    */
+    test(tst_con.cwriteJsonDataToFile_inValidBoolean, () => {
+        // Arrange
+        let fileToSaveTo = false;
         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
 
         // Act

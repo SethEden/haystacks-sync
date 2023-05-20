@@ -101,6 +101,94 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Assert
       expect(returnData).toBeTruthy();
     });
+
+    /**
+     * @function validateConstantsDataValidation_inValidDataInputDataString
+     * @description Tests the business rules function validateConstantsDataValidation with a invalid string input.
+     * @author Json Howard
+     * @date 2023/04/29
+     */
+    test(tst_con.cvalidateConstantsDataValidation_inValidDataInputDataString, () => {
+      // Arrange
+      let inputData = "dfxg24346dfg";
+      let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';   
+      dataBroker.setupDataStorage(false);
+
+      // Act      
+      let returnData = constantStringParsing.validateConstantsDataValidation(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy();
+    });
+
+    /**
+     * @function validateConstantsDataValidation_inValidInputDataInteger
+     * @description Tests the business rules function validateConstantsDataValidation with a invalid boolean input.
+     * @author Json Howard
+     * @date 2023/04/29
+     */
+    test(tst_con.cvalidateConstantsDataValidation_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];    
+      dataBroker.setupDataStorage(false);
+
+      // Act      
+      let returnData = constantStringParsing.validateConstantsDataValidation(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy();
+    });
+
+    /**
+     * @function validateConstantsDataValidation_inValidInputMetaDataInteger
+     * @description Tests the business rules function validateConstantsDataValidation with a invalid boolean input.
+     * @author Json Howard
+     * @date 2023/04/29
+     */
+    test(tst_con.cvalidateConstantsDataValidation_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;    
+      dataBroker.setupDataStorage(false);
+
+      // Act      
+      let returnData = constantStringParsing.validateConstantsDataValidation(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy();
+    });
+
+    /**
+     * @function validateConstantsDataValidation_inValidInputMetaDataBoolean
+     * @description Tests the business rules function validateConstantsDataValidation with a invalid boolean input.
+     * @author Json Howard
+     * @date 2023/04/29
+     */
+    test(tst_con.cvalidateConstantsDataValidation_inValidInputMetaDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;    
+      dataBroker.setupDataStorage(false);
+
+      // Act      
+      let returnData = constantStringParsing.validateConstantsDataValidation(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy();
+    });
   });
 
   /**
@@ -485,6 +573,94 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
+    dataBroker.initializeConstantsValidationData();
+
+    // Act    
+    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toContain("");
+  });
+
+  /**
+   * @function determineSuggestedConstantsValidationLineOfCode_inValidDataInputDataString
+   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid string input.
+   * @author Json Howard
+   * @date 2023/04/29
+   */
+  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = wrd.cHello;    
+    dataBroker.initializeConstantsValidationData();
+
+    // Act    
+    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toContain("");
+  });
+
+  /**
+   * @function determineSuggestedConstantsValidationLineOfCode_inValidInputDataInteger
+   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/04/29
+   */
+  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+    dataBroker.initializeConstantsValidationData();
+
+    // Act    
+    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toContain("");
+  });
+
+  /**
+   * @function determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataInteger
+   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/29
+   */
+  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;    
+    dataBroker.initializeConstantsValidationData();
+
+    // Act    
+    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toContain("");
+  });
+
+  /**
+   * @function determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataBoolean
+   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/29
+   */
+  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -1420,6 +1596,27 @@ describe(tst_con.cfindConstantName, () => {
     // Assert
     expect(returnData).toBe("");
   });
+
+  /**
+   * @function findConstantName_inValidInputDataInteger
+   * @description Tests the business rules function findConstantName with a invalid integer data.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
 });
 
 /**
@@ -1835,6 +2032,72 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     // Assert
     expect(returnData).toBe("");
   });
+
+  /**
+   * @function constantsOptimizedFulfillmentSystem_inValidInputDataInteger
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];  
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function constantsOptimizedFulfillmentSystem_inValidInputMetaDataInteger
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;  
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function constantsOptimizedFulfillmentSystem_inValidInputMetaDataBoolean
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;  
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+
+    // Act    
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
 });
 
 /**
@@ -1853,6 +2116,132 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = "";       
+
+    // Act
+    let returnData = constantStringParsing.constantsFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(" + ");
+  });
+
+  /**
+   * @function constantsFulfillmentSystem_inValidDataInputDataString
+   * @description Tests the business rules function constantsFulfillmentSystem with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsFulfillmentSystem_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = "";       
+
+    // Act
+    let returnData = constantStringParsing.constantsFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(" + ");
+  });
+
+  /**
+   * @function constantsFulfillmentSystem_inValidDataInputMetaDataString
+   * @description Tests the business rules function constantsFulfillmentSystem with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsFulfillmentSystem_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = "dfxg24346dfg";      
+
+    // Act
+    let returnData = constantStringParsing.constantsFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(" + ");
+  });
+
+  /**
+   * @function constantsFulfillmentSystem_inValidInputDataInteger
+   * @description Tests the business rules function constantsFulfillmentSystem with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsFulfillmentSystem_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];       
+
+    // Act
+    let returnData = constantStringParsing.constantsFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(" + ");
+  });
+
+  /**
+   * @function constantsFulfillmentSystem_inValidInputDataBoolean
+   * @description Tests the business rules function constantsFulfillmentSystem with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsFulfillmentSystem_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];       
+
+    // Act
+    let returnData = constantStringParsing.constantsFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(" + ");
+  });
+
+  /**
+   * @function constantsFulfillmentSystem_inValidInputMetaDataInteger
+   * @description Tests the business rules function constantsFulfillmentSystem with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsFulfillmentSystem_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;       
+
+    // Act
+    let returnData = constantStringParsing.constantsFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(" + ");
+  });
+
+  /**
+   * @function constantsFulfillmentSystem_inValidInputMetaDataBoolean
+   * @description Tests the business rules function constantsFulfillmentSystem with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsFulfillmentSystem_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;       
 
     // Act
     let returnData = constantStringParsing.constantsFulfillmentSystem(

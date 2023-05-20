@@ -107,6 +107,63 @@ describe(tst_con.ccleanCommandInput, () => {
         // Assert
         expect(returnData).toBe("");
     });
+
+    /**
+    * @function cleanCommandInput_inValidInputDataInteger
+    * @description Tests the business rules function cleanCommandInput with a invalid integer data.
+    * @author Json Howard
+    * @date 2023/04/25
+    */
+    test(tst_con.ccleanCommandInput_inValidInputDataInteger, () => {
+        // Arrange
+        let inputData = 4567;
+        let inputMetaData = [1, 2, 3, 4, 5];
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function cleanCommandInput_inValidInputMetaDataInteger
+    * @description Tests the business rules function cleanCommandInput with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/25
+    */
+    test(tst_con.ccleanCommandInput_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1, 2, 3, 4, 5];
+        let inputMetaData = 4567;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
+
+    /**
+    * @function cleanCommandInput_inValidInputMetaDataBoolean
+    * @description Tests the business rules function cleanCommandInput with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/25
+    */
+    test(tst_con.ccleanCommandInput_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1, 2, 3, 4, 5];
+        let inputMetaData = false;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe("");
+    });
 });
 
 /**

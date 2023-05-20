@@ -119,6 +119,72 @@ describe(tst_con.cisStringCamelCase, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function isStringCamelCase_inValidInputDataInteger
+     * @description Tests the business rules function isStringCamelCase with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cisStringCamelCase_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.isStringCamelCase(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function isStringCamelCase_inValidInputDataBoolean
+     * @description Tests the business rules function isStringCamelCase with a invalid boolean inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cisStringCamelCase_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.isStringCamelCase(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function isStringCamelCase_inValidInputMetaDataInteger
+     * @description Tests the business rules function isStringCamelCase with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cisStringCamelCase_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.isStringCamelCase(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -213,6 +279,50 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
     
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function mapWordToCamelCaseWord_inValidInputDataInteger
+     * @description Tests the business rules function mapWordToCamelCaseWord with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cmapWordToCamelCaseWord_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.mapWordToCamelCaseWord(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function mapWordToCamelCaseWord_inValidInputMetaDataInteger
+     * @description Tests the business rules function mapWordToCamelCaseWord with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cmapWordToCamelCaseWord_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.mapWordToCamelCaseWord(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 });
 
@@ -309,6 +419,50 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
         // Assert
         expect(returnData).toBe("");
     });
+
+    /**
+     * @function simplifyAndConsolidateString_inValidInputDataInteger
+     * @description Tests the business rules function simplifyAndConsolidateString with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.csimplifyAndConsolidateString_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.simplifyAndConsolidateString(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("");
+    });
+
+    /**
+     * @function simplifyAndConsolidateString_inValidInputMetaDataInteger
+     * @description Tests the business rules function simplifyAndConsolidateString with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.csimplifyAndConsolidateString_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.simplifyAndConsolidateString(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("");
+    });
 });
 
 /**
@@ -403,6 +557,50 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
     
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function compareSimplifiedAndConsolidatedStrings_inValidInputDataInteger
+     * @description Tests the business rules function compareSimplifiedAndConsolidatedStrings with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.ccompareSimplifiedAndConsolidatedStrings_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.compareSimplifiedAndConsolidatedStrings(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function compareSimplifiedAndConsolidatedStrings_inValidInputMetaDataInteger
+     * @description Tests the business rules function compareSimplifiedAndConsolidatedStrings with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.ccompareSimplifiedAndConsolidatedStrings_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.compareSimplifiedAndConsolidatedStrings(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 });
 
@@ -521,6 +719,28 @@ describe(tst_con.ccountCamelCaseWords, () => {
         // Assert
         expect(returnData).toBe(0);
     });
+
+    /**
+     * @function countCamelCaseWords_inValidInputMetaDataInteger
+     * @description Tests the business rules function countCamelCaseWords with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.ccountCamelCaseWords_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.countCamelCaseWords(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(0);
+    });
 });
 
 /**
@@ -638,6 +858,28 @@ describe(tst_con.cdoesStringContainAcronym, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function doesStringContainAcronym_inValidInputMetaDataInteger
+     * @description Tests the business rules function doesStringContainAcronym with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cdoesStringContainAcronym_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.doesStringContainAcronym(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -732,6 +974,50 @@ describe(tst_con.cdetermineWordDelimiter, () => {
     
         // Assert
         expect(returnData).toBe("");
+    });
+
+    /**
+     * @function determineWordDelimiter_inValidInputDataInteger
+     * @description Tests the business rules function determineWordDelimiter with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cdetermineWordDelimiter_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.determineWordDelimiter(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("");
+    });
+
+    /**
+     * @function determineWordDelimiter_inValidInputMetaDataInteger
+     * @description Tests the business rules function determineWordDelimiter with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cdetermineWordDelimiter_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.determineWordDelimiter(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("");
     });
 });
 
@@ -828,6 +1114,50 @@ describe(tst_con.ccountDelimiterInString, () => {
         // Assert
         expect(returnData).toBe(0);
     });
+
+    /**
+     * @function countDelimiterInString_inValidInputDataInteger
+     * @description Tests the business rules function countDelimiterInString with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.ccountDelimiterInString_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.countDelimiterInString(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(0);
+    });
+
+    /**
+     * @function countDelimiterInString_inValidInputMetaDataInteger
+     * @description Tests the business rules function countDelimiterInString with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.ccountDelimiterInString_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.countDelimiterInString(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(0);
+    });
 });
 
 /**
@@ -922,6 +1252,50 @@ describe(tst_con.cgetWordCountInString, () => {
     
         // Assert
         expect(returnData).toBe(0);
+    });
+
+    /**
+     * @function getWordCountInString_inValidInputDataInteger
+     * @description Tests the business rules function getWordCountInString with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cgetWordCountInString_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.getWordCountInString(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(0);
+    });
+
+    /**
+     * @function getWordCountInString_inValidInputMetaDataInteger
+     * @description Tests the business rules function getWordCountInString with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cgetWordCountInString_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.getWordCountInString(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(0);
     });
 });
 
@@ -1040,6 +1414,28 @@ describe(tst_con.cisStringList, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function isStringList_inValidInputDataInteger
+     * @description Tests the business rules function isStringList with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cisStringList_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.isStringList(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -1134,5 +1530,49 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
     
         // Assert
         expect(returnData).toBe(-1);
+    });
+
+    /**
+     * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataInteger
+     * @description Tests the business rules function aggregateNumericalDifferenceBetweenTwoStrings with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.caggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.aggregateNumericalDifferenceBetweenTwoStrings(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(-1);
+    });
+
+    /**
+     * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataInteger
+     * @description Tests the business rules function aggregateNumericalDifferenceBetweenTwoStrings with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.caggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = wordStringParsing.aggregateNumericalDifferenceBetweenTwoStrings(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(-1);
     });
 });

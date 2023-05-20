@@ -123,6 +123,68 @@ describe(tst_con.cgetAttributeName, () => {
     expect(returnData).toBe(false);
   });  
 
+  /**
+   * @function getAttributeName_inValidInputDataInteger
+   * @description Tests the business rules function getAttributeName with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/04/27
+   */
+  test(tst_con.cgetAttributeName_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getAttributeName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getAttributeName_inValidInputMetaDataInteger
+   * @description Tests the business rules function getAttributeName with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/04/27
+   */
+  test(tst_con.cgetAttributeName_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+
+    // Act
+    let returnData = dataStringParsing.getAttributeName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getAttributeName_inValidInputMetaDataBoolean
+   * @description Tests the business rules function getAttributeName with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/04/27
+   */
+  test(tst_con.cgetAttributeName_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
+
+    // Act
+    let returnData = dataStringParsing.getAttributeName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
 });
 
 /**
@@ -193,6 +255,69 @@ describe(tst_con.cgetAttributeValue, () => {
       // Assert
       expect(returnData).toBe(false);
     });
+
+    /**
+     * @function getAttributeValue_inValidInputDataInteger
+     * @description Tests the business rules function getAttributeValue with a invalid integer inputData.
+     * @author Json Howard
+     * @date 2023/04/28
+     */
+    test(tst_con.cgetAttributeValue_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+  
+      // Act
+      let returnData = dataStringParsing.getAttributeValue(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function getAttributeValue_inValidInputMetaDataInteger
+     * @description Tests the business rules function getAttributeValue with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/04/28
+     */
+    test(tst_con.cgetAttributeValue_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+  
+      // Act
+      let returnData = dataStringParsing.getAttributeValue(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function getAttributeValue_inValidInputMetaDataBoolean
+     * @description Tests the business rules function getAttributeValue with a invalid boolean inputMetaData.
+     * @author Json Howard
+     * @date 2023/04/28
+     */
+    test(tst_con.cgetAttributeValue_inValidInputMetaDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+  
+      // Act
+      let returnData = dataStringParsing.getAttributeValue(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -253,6 +378,90 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getValueFromAssignmentOperationString(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getValueFromAssignmentOperationString_inValidDataInputDataString
+   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid string inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetValueFromAssignmentOperationString_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = "dfxg24346dfg";
+    let inputMetaData = "";
+
+    // Act
+    let returnData = dataStringParsing.getValueFromAssignmentOperationString(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getValueFromAssignmentOperationString_inValidInputDataInteger
+   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid integer inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetValueFromAssignmentOperationString_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getValueFromAssignmentOperationString(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getValueFromAssignmentOperationString_inValidInputMetaDataInteger
+   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetValueFromAssignmentOperationString_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+
+    // Act
+    let returnData = dataStringParsing.getValueFromAssignmentOperationString(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getValueFromAssignmentOperationString_inValidInputMetaDataBoolean
+   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetValueFromAssignmentOperationString_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
 
     // Act
     let returnData = dataStringParsing.getValueFromAssignmentOperationString(
@@ -344,6 +553,69 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function getDataCategoryFromDataContextName_inValidInputDataInteger
+   * @description Tests the business rules function getDataCategoryFromDataContextName with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryFromDataContextName_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function getDataCategoryFromDataContextName_inValidInputMetaDataInteger
+   * @description Tests the business rules function getDataCategoryFromDataContextName with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryFromDataContextName_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function getDataCategoryFromDataContextName_inValidInputMetaDataBoolean
+   * @description Tests the business rules function getDataCategoryFromDataContextName with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryFromDataContextName_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
 
     // Act
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
@@ -466,6 +738,69 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     // Assert
     expect(returnData).toBe("");
   }); 
+
+  /**
+   * @function getDataCategoryDetailNameFromDataContextName_inValidInputDataInteger
+   * @description Tests the business rules function getDataCategoryDetailNameFromDataContextName with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  }); 
+
+  /**
+   * @function getDataCategoryDetailNameFromDataContextName_inValidInputMetaDataInteger
+   * @description Tests the business rules function getDataCategoryDetailNameFromDataContextName with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  }); 
+
+  /**
+   * @function getDataCategoryDetailNameFromDataContextName_inValidInputMetaDataBoolean
+   * @description Tests the business rules function getDataCategoryDetailNameFromDataContextName with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  }); 
 });
 
 /**
@@ -539,7 +874,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 
   /**
    * @function getKeywordNameFromDataContextName_inValidInputDataBoolean
-   * @description Tests the business rules function getKeywordNameFromDataContextName with a invalid string inputMetaData.
+   * @description Tests the business rules function getKeywordNameFromDataContextName with a invalid string inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -547,6 +882,69 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getKeywordNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function getKeywordNameFromDataContextName_inValidInputDataInteger
+   * @description Tests the business rules function getKeywordNameFromDataContextName with a invalid integer inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetKeywordNameFromDataContextName_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getKeywordNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function getKeywordNameFromDataContextName_inValidInputMetaDataInteger
+   * @description Tests the business rules function getKeywordNameFromDataContextName with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetKeywordNameFromDataContextName_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+
+    // Act
+    let returnData = dataStringParsing.getKeywordNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function getKeywordNameFromDataContextName_inValidInputMetaDataBoolean
+   * @description Tests the business rules function getKeywordNameFromDataContextName with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetKeywordNameFromDataContextName_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
 
     // Act
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
@@ -663,6 +1061,50 @@ describe(tst_con.cloadDataFile, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
+    dataBroker.setupDataStorage(false);
+
+    // Act    
+    let returnData = dataStringParsing.loadDataFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  }); 
+
+  /**
+   * @function loadDataFile_inValidInputDataInteger
+   * @description Tests the business rules function loadDataFile with a invalid integer inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cloadDataFile_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+    dataBroker.setupDataStorage(false);
+
+    // Act    
+    let returnData = dataStringParsing.loadDataFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  }); 
+
+  /**
+   * @function loadDataFile_inValidInputDataBoolean
+   * @description Tests the business rules function loadDataFile with a invalid boolean inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cloadDataFile_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];    
     dataBroker.setupDataStorage(false);
 
     // Act    
@@ -807,6 +1249,27 @@ describe(tst_con.csaveDataFile, () => {
     // Assert
     expect(returnData).toBe(false);
   });
+
+  /**
+   * @function saveDataFile_inValidInputDataInteger
+   * @description Tests the business rules function saveDataFile with a invalid integer inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.csaveDataFile_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];   
+
+    // Act
+    let returnData = dataStringParsing.saveDataFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
 });
 
 /**
@@ -888,6 +1351,69 @@ describe(tst_con.cgetUserNameFromEmail, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    let returnData = dataStringParsing.getUserNameFromEmail(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+  
+  /**
+   * @function getUserNameFromEmail_inValidInputDataInteger
+   * @description Tests the business rules function getUserNameFromEmail with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetUserNameFromEmail_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    let returnData = dataStringParsing.getUserNameFromEmail(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getUserNameFromEmail_inValidInputMetaDataInteger
+   * @description Tests the business rules function getUserNameFromEmail with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetUserNameFromEmail_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;    
+
+    // Act
+    let returnData = dataStringParsing.getUserNameFromEmail(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  }); 
+
+  /**
+   * @function getUserNameFromEmail_inValidInputMetaDataBoolean
+   * @description Tests the business rules function getUserNameFromEmail with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetUserNameFromEmail_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;    
 
     // Act
     let returnData = dataStringParsing.getUserNameFromEmail(

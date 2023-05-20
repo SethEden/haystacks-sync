@@ -1726,6 +1726,72 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
       // Assert
       expect(returnData).toBeDefined();
   });
+
+  /**
+   * @function randomlyGenerateSpecialCharacter_inValidInputDataInteger
+   * @description Tests the business rules function randomlyGenerateSpecialCharacter with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.crandomlyGenerateSpecialCharacter_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = characterGeneration.randomlyGenerateSpecialCharacter(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeDefined();
+  });
+
+  /**
+   * @function randomlyGenerateSpecialCharacter_inValidInputMetaDataInteger
+   * @description Tests the business rules function randomlyGenerateSpecialCharacter with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.crandomlyGenerateSpecialCharacter_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = characterGeneration.randomlyGenerateSpecialCharacter(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeDefined();
+  });
+
+  /**
+   * @function randomlyGenerateSpecialCharacter_inValidInputMetaDataBoolean
+   * @description Tests the business rules function randomlyGenerateSpecialCharacter with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.crandomlyGenerateSpecialCharacter_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = characterGeneration.randomlyGenerateSpecialCharacter(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeDefined();
+  });
 });
 
 /**
@@ -2030,6 +2096,28 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
     // Arrange
     let inputData = "3";
     let inputMetaData = NaN;
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = characterGeneration.randomlyGenerateNumberInRange(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function randomlyGenerateNumberInRange_inValidInputDataInteger
+   * @description Tests the business rules function randomlyGenerateNumberInRange with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.crandomlyGenerateNumberInRange_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
     rulesLibrary.initRulesLibrary();
 
     // Act    

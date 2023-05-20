@@ -128,22 +128,16 @@ testName: removeCharacterFromArray_validDataInputDataInteger
 input inputData: integer (23456)
 input inputMetaData: array<string|boolean|integer|object> (The array that should be searched for the specified character/value/etc...) (testDataInteger)
 output: ?
-status: Failed
-error: TypeError: arrayElement.includes is not a function
 
 testName: removeCharacterFromArray_validDataInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: array<string|boolean|integer|object> (The array that should be searched for the specified character/value/etc...) (testDataBoolean)
 output: ?
-status: Failed
-error: TypeError: arrayElement.includes is not a function
 
 testName: removeCharacterFromArray_validDataInputDataObject
 input inputData: object ({"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}) OR array ([1,2,3,4])
 input inputMetaData: array<string|boolean|integer|object> (The array that should be searched for the specified character/value/etc...) (testDataObject)
 output: ?
-status: Failed
-error: TypeError: arrayElement.includes is not a function
 
 testName: removeCharacterFromArray_validDataInputMetaDataString
 input inputData: string|boolean|integer|object (The character that should be searched for in the array of elements) (testDataString)
