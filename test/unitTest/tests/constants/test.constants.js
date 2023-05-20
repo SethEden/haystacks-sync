@@ -1550,6 +1550,7 @@ export const cscanDirectoryContents_inValidInputDataBoolean = cscanDirectoryCont
 export const cscanDirectoryContents_inValidInputMetaDataInteger = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const cscanDirectoryContents_inValidInputMetaDataBoolean = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
 export const cscanDirectoryContents_inValidInputMetaDataNaN = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+export const cscanDirectoryContents_inValidInputMetaDataUndefined = cscanDirectoryContents + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
 
 export const cgetDirectoryList_validDataString = cgetDirectoryList + wrd.cvalid + wrd.cData + wrd.cString;
 export const cgetDirectoryList_inValidDataInputDataString = cgetDirectoryList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
@@ -1610,6 +1611,10 @@ export const ccopyFileSync_inValidInputDataInteger = ccopyFileSync + wrd.cinvali
 export const ccopyFileSync_inValidInputDataBoolean = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const ccopyFileSync_inValidInputMetaDataInteger = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const ccopyFileSync_inValidInputMetaDataBoolean = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const ccopyFileSync_inValidInputMetaDataUndefined = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const ccopyFileSync_inValidInputMetaDataNaN = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+export const ccopyFileSync_inValidInputDataUndefined = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const ccopyFileSync_inValidInputDataNaN = ccopyFileSync + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
 
 export const ccopyFolderRecursiveSync_validDataString = ccopyFolderRecursiveSync + wrd.cvalid + wrd.cData + wrd.cString;
 export const ccopyFolderRecursiveSync_inValidDataInputDataString = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;

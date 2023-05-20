@@ -162,6 +162,31 @@ describe(tst_con.ccommandSequencer, () => {
     // Assert
     expect(returnData).toBeTruthy(); 
   });
+
+  /**
+   * @function commandSequencer_inValidInputDataUndefined
+   * @description Tests the business rules function commandSequencer with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandSequencer_inValidInputDataUndefined, () => {
+    // Arrange    
+    let inputData = undefined;
+    let inputMetaData = "";    
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
+    commandsLibrary.initCommandsLibrary();
+    D[sys.cCommandQueue] = [];
+
+    // Act  
+    let returnData = advanced.commandSequencer(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); 
+  });
 });
 
 /**
@@ -279,6 +304,28 @@ describe(tst_con.cworkflow, () => {
         // Assert
         expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
     });
+
+    /**
+     * @function workflow_inValidInputDataUndefined
+     * @description Tests the business rules function workflow with a invalid undefined input.
+     * @author Json Howard
+     * @date 2023/05/09
+     */
+    test(tst_con.cworkflow_inValidInputDataUndefined, () => {
+      // Arrange
+      let inputData = undefined;
+      let inputMetaData = "";
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = advanced.workflow(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
+  });
 });
 
 /**
@@ -396,6 +443,28 @@ describe(tst_con.cbusinessRule, () => {
         // Assert
         expect(returnData).toBeTruthy(); //[true, undefined]
     });
+
+    /**
+     * @function businessRule_inValidInputDataUndefined
+     * @description Tests the business rules function businessRule with a invalid undefined input.
+     * @author Json Howard
+     * @date 2023/05/09
+     */
+    test(tst_con.cbusinessRule_inValidInputDataUndefined, () => {
+      // Arrange
+      let inputData = undefined;
+      let inputMetaData = "";
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = advanced.businessRule(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); //[true, undefined]
+  });
 });
 
 /**
@@ -518,6 +587,28 @@ describe(tst_con.ccommandGenerator, () => {
       // Assert
       expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
   });
+
+  /**
+   * @function commandGenerator_inValidInputDataUndefined
+   * @description Tests the business rules function commandGenerator with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandGenerator_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = "";
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = advanced.commandGenerator(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+});
 });
 
 /**
@@ -635,4 +726,26 @@ describe(tst_con.ccommandAliasGenerator, () => {
         // Assert
         expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
     });
+
+    /**
+     * @function 1commandSequencer_inValidInputDataUndefined
+     * @description Tests the business rules function commandAliasGenerator with a invalid undefined input.
+     * @author Json Howard
+     * @date 2023/05/09
+     */
+    test(tst_con.c1commandSequencer_inValidInputDataUndefined, () => {
+      // Arrange
+      let inputData = undefined;
+      let inputMetaData = "";
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = advanced.commandAliasGenerator(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+  });
 });

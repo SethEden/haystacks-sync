@@ -479,6 +479,50 @@ describe(tst_con.canalyzeArgument, () => {
         // Assert
         expect(returnData).toBe(wrd.cHello + bas.cColon + wrd.cWorld);
     });
+
+    /**
+     * @function analyzeArgument_inValidInputDataInteger
+     * @description Tests the business rules function analyzeArgument with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.canalyzeArgument_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "";
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.analyzeArgument(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(wrd.cHello + bas.cColon + wrd.cWorld);
+    });
+
+    /**
+     * @function analyzeArgument_inValidInputDataBoolean
+     * @description Tests the business rules function analyzeArgument with a invalid boolean input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.canalyzeArgument_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = "";
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.analyzeArgument(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(wrd.cHello + bas.cColon + wrd.cWorld);
+    });
 });
 
 /**
@@ -596,6 +640,50 @@ describe(tst_con.canalyzeForRegularExpression, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function analyzeForRegularExpression_inValidInputDataInteger
+     * @description Tests the business rules function analyzeForRegularExpression with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.canalyzeForRegularExpression_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.analyzeForRegularExpression(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function analyzeForRegularExpression_inValidInputDataBoolean
+     * @description Tests the business rules function analyzeForRegularExpression with a invalid boolean input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.canalyzeForRegularExpression_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.analyzeForRegularExpression(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -669,6 +757,94 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
         // Assert
         expect(returnData).toBeDefined(); ///(?:)/
     });
+
+    /**
+     * @function parseArgumentAsRegularExpression_inValidInputDataInteger
+     * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsRegularExpression_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsRegularExpression(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeDefined(); ///(?:)/
+    });
+
+    /**
+     * @function parseArgumentAsRegularExpression_inValidInputDataBoolean
+     * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid boolean input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsRegularExpression_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsRegularExpression(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeDefined(); ///(?:)/
+    });
+
+    /**
+     * @function parseArgumentAsRegularExpression_inValidInputMetaDataInteger
+     * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsRegularExpression_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsRegularExpression(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeDefined(); ///(?:)/
+    });
+
+    /**
+     * @function parseArgumentAsRegularExpression_inValidInputMetaDataBoolean
+     * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid boolean inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsRegularExpression_inValidInputMetaDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsRegularExpression(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeDefined(); ///(?:)/
+    });
 });
 
 /**
@@ -741,6 +917,94 @@ describe(tst_con.cparseArgumentAsArray, () => {
     
         // Assert
         expect(returnData).toBeTruthy(); //["1,2,3"]
+    });
+
+    /**
+     * @function parseArgumentAsArray_inValidInputDataInteger
+     * @description Tests the business rules function parseArgumentAsArray with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsArray_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsArray(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); //["1,2,3"]
+    });
+
+    /**
+     * @function parseArgumentAsArray_inValidInputDataBoolean
+     * @description Tests the business rules function parseArgumentAsArray with a invalid boolean input.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsArray_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsArray(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); //["1,2,3"]
+    });
+
+    /**
+     * @function parseArgumentAsArray_inValidInputMetaDataInteger
+     * @description Tests the business rules function parseArgumentAsArray with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsArray_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsArray(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); //["1,2,3"]
+    });
+
+    /**
+     * @function parseArgumentAsArray_inValidInputMetaDataBoolean
+     * @description Tests the business rules function parseArgumentAsArray with a invalid boolean inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cparseArgumentAsArray_inValidInputMetaDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.parseArgumentAsArray(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); //["1,2,3"]
     });
 });
 
@@ -902,5 +1166,49 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
     
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function removeStringLiteralTagsFromArray_inValidInputMetaDataInteger
+     * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cremoveStringLiteralTagsFromArray_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function removeStringLiteralTagsFromArray_inValidInputMetaDataBoolean
+     * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid boolean inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/05
+     */
+    test(tst_con.cremoveStringLiteralTagsFromArray_inValidInputMetaDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = lexicalAnalyzer.removeStringLiteralTagsFromArray(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 });

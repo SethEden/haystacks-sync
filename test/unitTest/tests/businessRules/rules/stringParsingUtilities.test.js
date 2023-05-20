@@ -226,6 +226,48 @@ describe(tst_con.cparseSystemRootPath, () => {
         // Assert
         expect(returnData).toBe("");
     });
+
+    /**
+     * @function parseSystemRootPath_inValidInputDataInteger
+     * @description Tests the business rules function parseSystemRootPath with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cparseSystemRootPath_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "haystack";
+  
+      // Act
+      let returnData = stringParsingUtilities.parseSystemRootPath(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("");
+    });
+
+    /**
+     * @function parseSystemRootPath_inValidInputMetaDataInteger
+     * @description Tests the business rules function parseSystemRootPath with invalid integer inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cparseSystemRootPath_inValidInputMetaDataInteger, () => {
+      // Arrange
+      let inputData = "haystack";
+      let inputMetaData = 4567;
+  
+      // Act
+      let returnData = stringParsingUtilities.parseSystemRootPath(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("");
+    });
 });
 
 /**
@@ -448,6 +490,27 @@ describe(tst_con.cstringToDataType, () => {
     
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function stringToDataType_inValidInputDataInteger
+     * @description Tests the business rules function stringToDataType with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cstringToDataType_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "";
+  
+      // Act
+      let returnData = stringParsingUtilities.stringToDataType(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 });
 
@@ -672,6 +735,27 @@ describe(tst_con.cstringToBoolean, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function stringToBoolean_inValidInputDataInteger
+     * @description Tests the business rules function stringToBoolean with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cstringToBoolean_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = stringParsingUtilities.stringToBoolean(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+  });
 });
 
 /**
@@ -895,6 +979,27 @@ describe(tst_con.cdetermineObjectDataType, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function determineObjectDataType_inValidInputDataInteger
+     * @description Tests the business rules function determineObjectDataType with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cdetermineObjectDataType_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = stringParsingUtilities.determineObjectDataType(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+  });
 });
 
 /**
@@ -1117,6 +1222,27 @@ describe(tst_con.cisBoolean, () => {
     
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function isBoolean_inValidInputDataInteger
+     * @description Tests the business rules function isBoolean with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cisBoolean_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = stringParsingUtilities.isBoolean(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 });
 
@@ -1341,6 +1467,27 @@ describe(tst_con.cisInteger, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function isInteger_inValidInputDataInteger
+     * @description Tests the business rules function isInteger with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cisInteger_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = stringParsingUtilities.isInteger(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+  });
 });
 
 /**
@@ -1564,6 +1711,27 @@ describe(tst_con.cisFloat, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+     * @function isFloat_inValidInputDataInteger
+     * @description Tests the business rules function isFloat with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cisFloat_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = stringParsingUtilities.isFloat(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
+  });
 });
 
 /**
@@ -1786,6 +1954,27 @@ describe(tst_con.cisString, () => {
     
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+     * @function isString_inValidInputDataInteger
+     * @description Tests the business rules function isString with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cisString_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = stringParsingUtilities.isString(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 });
 
@@ -2010,6 +2199,27 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         // Assert
         expect(returnData).toBe("");
     });
+
+    /**
+     * @function replaceDoublePercentWithMessage_inValidInputDataInteger
+     * @description Tests the business rules function replaceDoublePercentWithMessage with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.creplaceDoublePercentWithMessage_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("");
+    });
 });
 
 /**
@@ -2146,5 +2356,93 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
     
         // Assert
         expect(returnData).toBe(wrd.cHello + "%");
+    });
+
+    /**
+     * @function utilitiesReplaceCharacterWithCharacter_inValidInputDataBoolean
+     * @description Tests the business rules function utilitiesReplaceCharacterWithCharacter with invalid boolean input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cutilitiesReplaceCharacterWithCharacter_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = "123string321";
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(wrd.cHello + "%");
+    });
+
+    /**
+     * @function utilitiesReplaceCharacterWithCharacter_inValidInputDataUndefined
+     * @description Tests the business rules function utilitiesReplaceCharacterWithCharacter with invalid undefined input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cutilitiesReplaceCharacterWithCharacter_inValidInputDataUndefined, () => {
+      // Arrange
+      let inputData = "undefined";
+      let inputMetaData = ["%", wrd.cWorld];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(wrd.cHello + "%");
+    });
+
+    /**
+     * @function utilitiesReplaceCharacterWithCharacter_inValidInputDataNaN
+     * @description Tests the business rules function utilitiesReplaceCharacterWithCharacter with invalid NaN input.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cutilitiesReplaceCharacterWithCharacter_inValidInputDataNaN, () => {
+      // Arrange
+      let inputData = NaN;
+      let inputMetaData = ["%", wrd.cWorld];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(wrd.cHello + "%");
+    });
+
+    /**
+     * @function utilitiesReplaceCharacterWithCharacter_inValidInputMetaDataUndefined
+     * @description Tests the business rules function utilitiesReplaceCharacterWithCharacter with invalid undefined inputMetaData.
+     * @author Json Howard
+     * @date 2023/05/06
+     */
+    test(tst_con.cutilitiesReplaceCharacterWithCharacter_inValidInputMetaDataUndefined, () => {
+      // Arrange
+      let inputData = wrd.cHello + "%";
+      let inputMetaData = undefined;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(wrd.cHello + "%");
     });
 });

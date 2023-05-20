@@ -244,6 +244,27 @@ describe(tst_con.cgetNowMoment, () => {
         // Assert
         expect(returnData).toBeTruthy(); // "2023-05-08T12:28:30-04:00"
     });
+
+    /**
+     * @function getNowMoment_inValidInputDataInteger
+     * @description Tests the business rules function getNowMoment with invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/08
+     */
+    test(tst_con.cgetNowMoment_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = "123string321";
+  
+      // Act
+      let returnData = timeComputation.getNowMoment(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBeTruthy(); // "2023-05-08T12:28:30-04:00"
+  });
 });
 
 /**

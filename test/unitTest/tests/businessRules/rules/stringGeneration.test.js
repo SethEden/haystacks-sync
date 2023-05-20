@@ -2233,6 +2233,50 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
       // Assert
       expect(returnData).toBe("");
   });
+
+  /**
+   * @function generateRandomSpecialCharacterCodeByLength_inValidInputDataInteger
+   * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = stringGeneration.generateRandomSpecialCharacterCodeByLength(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
+
+  /**
+   * @function generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataInteger
+   * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = stringGeneration.generateRandomSpecialCharacterCodeByLength(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe("");
+  });
 });
 
 /**

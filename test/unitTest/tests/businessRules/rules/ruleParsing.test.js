@@ -712,4 +712,48 @@ describe(tst_con.cprocessRulesInternal, () => {
     // Assert
     expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
   });
+
+  /**
+   * @function processRulesInternal_inValidInputDataUndefined
+   * @description Tests the business rules function processRulesInternal with invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = "";
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = ruleParsing.processRulesInternal(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
+  });
+
+  /**
+   * @function processRulesInternal_inValidInputDataNaN
+   * @description Tests the business rules function processRulesInternal with invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprocessRulesInternal_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = "";
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = ruleParsing.processRulesInternal(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
+  });
 });
