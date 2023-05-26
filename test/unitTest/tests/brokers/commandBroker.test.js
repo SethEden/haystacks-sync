@@ -830,7 +830,7 @@ describe(tst_con.cgetCommandArgs, () => {
     test(tst_con.cgetCommandArgs_inValidDelimiterString, () => {
         // Arrange
         let commandString = wrd.cname + wrd.cSpace + wrd.capplication + wrd.cSpace + wrd.cversion + wrd.cSpace + wrd.cabout;
-        let commandDelimiter = wrd.cAmper;
+        let commandDelimiter = bas.cAndPersand;
 
         // Act
         let returnData = commandBroker.getCommandArgs(commandString, commandDelimiter);

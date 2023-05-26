@@ -105,18 +105,17 @@ describe(tst_con.cparseColorRangeInputs, () => {
   });
 
   /**
-  * @function parseColorRangeInputs_inValidInputDataUndefined
+  * @function parseColorRangeInputs_inValidInputDataUndefined1
   * @description Tests the business rules function parseColorRangeInputs with a invalid undefined input.
   * @author Json Howard
   * @date 2023/04/06
   */
-  test(tst_con.cparseColorRangeInputs_inValidInputDataUndefined, () => {
+  test(tst_con.cparseColorRangeInputs_inValidInputDataUndefined1, () => {
     // Arrange
     let returnData = [];
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, 10));
-    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, num.c10));
 
     // Assert 
     expect(returnData[0][0]).toBe(0);
@@ -126,17 +125,57 @@ describe(tst_con.cparseColorRangeInputs, () => {
   });
 
   /**
-  * @function parseColorRangeInputs_inValidInputDataNaN
+  * @function parseColorRangeInputs_inValidInputDataUndefined2
+  * @description Tests the business rules function parseColorRangeInputs with a invalid undefined input.
+  * @author Json Howard
+  * @date 2023/04/06
+  */
+  test(tst_con.cparseColorRangeInputs_inValidInputDataUndefined2, () => {
+    // Arrange
+    let returnData = [];
+
+    // Act
+    returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, num.c10));
+
+    // Assert 
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
+  });
+  
+
+  /**
+  * @function parseColorRangeInputs_inValidInputDataNaN1
   * @description Tests the business rules function parseColorRangeInputs with a invalid nan input.
   * @author Json Howard
   * @date 2023/04/06
   */
-  test(tst_con.cparseColorRangeInputs_inValidInputDataNaN, () => {
+  test(tst_con.cparseColorRangeInputs_inValidInputDataNaN1, () => {
     // Arrange
     let returnData = [];
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, 10));
+
+    // Assert
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
+  });
+
+  /**
+  * @function parseColorRangeInputs_inValidInputDataNaN2
+  * @description Tests the business rules function parseColorRangeInputs with a invalid nan input.
+  * @author Json Howard
+  * @date 2023/04/06
+  */
+  test(tst_con.cparseColorRangeInputs_inValidInputDataNaN2, () => {
+    // Arrange
+    let returnData = [];
+
+    // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, num.c10));
 
     // Assert
@@ -147,17 +186,36 @@ describe(tst_con.cparseColorRangeInputs, () => {
   });
 
   /**
-  * @function parseColorRangeInputs_inValidInputMetaDataUndefined
+  * @function parseColorRangeInputs_inValidInputMetaDataUndefined1
   * @description Tests the business rules function parseColorRangeInputs with a invalid undefined input meta data.
   * @author Json Howard
   * @date 2023/04/06
   */
-  test(tst_con.cparseColorRangeInputs_inValidInputMetaDataUndefined, () => {
+  test(tst_con.cparseColorRangeInputs_inValidInputMetaDataUndefined1, () => {
     // Arrange
     let returnData = [];
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(0, undefined));
+
+    // Assert
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
+  });
+
+  /**
+  * @function parseColorRangeInputs_inValidInputMetaDataUndefined2
+  * @description Tests the business rules function parseColorRangeInputs with a invalid undefined input meta data.
+  * @author Json Howard
+  * @date 2023/04/06
+  */
+  test(tst_con.cparseColorRangeInputs_inValidInputMetaDataUndefined2, () => {
+    // Arrange
+    let returnData = [];
+
+    // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(num.c10, undefined));
 
     // Assert
@@ -168,17 +226,36 @@ describe(tst_con.cparseColorRangeInputs, () => {
   });
 
   /**
-  * @function parseColorRangeInputs_inValidInputMetaDataNaN
+  * @function parseColorRangeInputs_inValidInputMetaDataNaN1
   * @description Tests the business rules function parseColorRangeInputs with a invalid nan input meta data.
   * @author Json Howard
   * @date 2023/04/06
   */
-  test(tst_con.cparseColorRangeInputs_inValidInputMetaDataNaN, () => {
+  test(tst_con.cparseColorRangeInputs_inValidInputMetaDataNaN1, () => {
     // Arrange
     let returnData = [];
 
     // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(10, NaN));
+
+    // Assert
+    expect(returnData[0][0]).toBe(0);
+    expect(returnData[0][1]).toBe(0);
+    expect(returnData[1][0]).toBe(0);
+    expect(returnData[1][1]).toBe(0);
+  });
+
+  /**
+  * @function parseColorRangeInputs_inValidInputMetaDataNaN2
+  * @description Tests the business rules function parseColorRangeInputs with a invalid nan input meta data.
+  * @author Json Howard
+  * @date 2023/04/06
+  */
+  test(tst_con.cparseColorRangeInputs_inValidInputMetaDataNaN2, () => {
+    // Arrange
+    let returnData = [];
+
+    // Act
     returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(num.c10, NaN));
 
     // Assert
@@ -337,9 +414,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
   test(tst_con.cdoesArrayContainValue_inValidDataStorageInputMetaDataInteger, () => {
     // Arrange
     let inputData = [[1, 2, 3, 4, 5], 4567];
-    let inputMetaData = (a, b) => {
-      return a === b ? true : false;
-    };
+    let inputMetaData = 4567
     let returnData;
 
     // Act
@@ -358,9 +433,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
    test(tst_con.cdoesArrayContainValue_inValidDataStorageInputMetaDataBoolean, () => {
     // Arrange
     let inputData = [[1, 2, 3, 4, 5], false];
-    let inputMetaData = (a, b) => {
-      return a === b ? true : false;
-    };
+    let inputMetaData = false
     let returnData;
 
     // Act

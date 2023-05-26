@@ -183,23 +183,24 @@ describe(tst_con.caddClientRules, () => {
  * @date 2023/04/17
  */
 describe(tst_con.cprocessRules, () => {
-    /**
-    * @function processRules_validData
-    * @description Tests the business rules function processRules with a valid data.
-    * @author Json Howard
-    * @date 2023/04/17
-    */
-    test(tst_con.cprocessRules_validData, () => {
-        // Arrange
-        let inputs = [wrd.cHello, wrd.cWorld];
-        let rulesToExecute = [biz.cconvertStringToLowerCase];
+    // /**
+    // * @function processRules_validData
+    // * @description Tests the business rules function processRules with a valid data.
+    // * @author Json Howard
+    // * @date 2023/04/17
+    // * @NOTE To be tested with integration testing. (commented out)
+    // */
+    // test(tst_con.cprocessRules_validData, () => {
+    //     // Arrange
+    //     let inputs = [wrd.cHello, wrd.cWorld];
+    //     let rulesToExecute = [biz.cconvertStringToLowerCase];
 
-        // Act
-        let returnData = ruleBroker.processRules(inputs, rulesToExecute);
+    //     // Act
+    //     let returnData = ruleBroker.processRules(inputs, rulesToExecute);
 
-        // Assert
-        expect(returnData).toBe(wrd.chello);
-    });
+    //     // Assert
+    //     expect(returnData).toBe(wrd.chello);
+    // });
     
     /**
     * @function processRules_inValidInputsUndefined
@@ -210,7 +211,7 @@ describe(tst_con.cprocessRules, () => {
     test(tst_con.cprocessRules_inValidInputsUndefined, () => {
         // Arrange
         let inputs = undefined;
-        let rulesToExecute = [biz.cconvertStringToLowerCase];
+        let rulesToExecute = biz.cconvertStringToLowerCase;
 
         // Act
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
@@ -228,7 +229,7 @@ describe(tst_con.cprocessRules, () => {
     test(tst_con.cprocessRules_inValidInputsNaN, () => {
         // Arrange
         let inputs = NaN;
-        let rulesToExecute = [biz.cconvertStringToLowerCase];
+        let rulesToExecute = biz.cconvertStringToLowerCase;
 
         // Act
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
@@ -245,7 +246,7 @@ describe(tst_con.cprocessRules, () => {
     */
     test(tst_con.cprocessRules_inValidRulesToExecuteUndefined, () => {
         // Arrange
-        let inputs = [wrd.cHello, wrd.cWorld];
+        let inputs = wrd.cHello + wrd.cWorld;
         let rulesToExecute = undefined;
 
         // Act
@@ -263,7 +264,7 @@ describe(tst_con.cprocessRules, () => {
     */
     test(tst_con.cprocessRules_inValidRulesToExecuteNaN, () => {
         // Arrange
-        let inputs = [wrd.cHello, wrd.cWorld];
+        let inputs = wrd.cHello + wrd.cWorld;
         let rulesToExecute = NaN;
 
         // Act
@@ -282,7 +283,7 @@ describe(tst_con.cprocessRules, () => {
     test(tst_con.cprocessRules_inValidInputsInteger, () => {
         // Arrange
         let inputs = 1234;
-        let rulesToExecute = [biz.cconvertStringToLowerCase];
+        let rulesToExecute = [1,2,3,4,5];
 
         // Act
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
@@ -300,7 +301,7 @@ describe(tst_con.cprocessRules, () => {
     test(tst_con.cprocessRules_inValidInputsBoolean, () => {
         // Arrange
         let inputs = false;
-        let rulesToExecute = [biz.cconvertStringToLowerCase];
+        let rulesToExecute = [1,2,3,4,5];
 
         // Act
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
@@ -317,7 +318,7 @@ describe(tst_con.cprocessRules, () => {
     */
     test(tst_con.cprocessRules_inValidRulesToExecuteInteger, () => {
         // Arrange
-        let inputs = [wrd.cHello, wrd.cWorld];
+        let inputs = [1,2,3,4,5];
         let rulesToExecute = 123;
 
         // Act
@@ -335,7 +336,7 @@ describe(tst_con.cprocessRules, () => {
     */
     test(tst_con.cprocessRules_inValidRulesToExecuteBoolean, () => {
         // Arrange
-        let inputs = [wrd.cHello, wrd.cWorld];
+        let inputs = [1,2,3,4,5];
         let rulesToExecute = false;
 
         // Act

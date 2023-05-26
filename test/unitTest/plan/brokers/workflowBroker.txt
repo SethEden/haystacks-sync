@@ -102,7 +102,7 @@ output: false
 --------------------------------------------------------------------------------
 testName: getWorkflowNamespaceDataObject_validData
 input inputData:  object (The workflow data structure that is recursively searched for the namespace specified)
-input leafNodeName: string (The namespace to look for in the workflow metaData data structure)
+input namespaceToFind: string (The namespace to look for in the workflow metaData data structure)
 output: object (The namespace object if it is found)
 
 testName: getWorkflowNamespaceDataObject_inValidWorkflowDataStructureString

@@ -144,7 +144,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
     test(tst_con.cfindUniversalDebugConfigSetting_inValidString, () => {
         // Arrange
         let appConfigFilesToLoad = tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.capplication + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
-        let frameworkConfigFilesToLoad = tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cframework + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
+        let frameworkConfigFilesToLoad = obj_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -264,7 +264,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_inValidContextNameString, () => {
         // Arrange
-        let filesToLoad = obj_con.dataBrokerCsvPath();
+        let filesToLoad = [obj_con.dataBrokerCsvPath()];
         let contextName = wrd.cComa;
         rulesLibrary.initRulesLibrary();
 
@@ -302,7 +302,7 @@ describe(tst_con.cloadAllCsvData, () => {
     */
     test(tst_con.cloadAllCsvData_inValidBoolean, () => {
         // Arrange
-        let filesToLoad = [false];
+        let filesToLoad = false;
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -379,14 +379,14 @@ describe(tst_con.cloadAllXmlData, () => {
     });
 
     /**
-    * @function loadedAllXmlData_inValidBoolean
-    * @description Tests the business rules function loadAllXmlData with a invalid boolean data.
+    * @function loadedAllXmlData_inValidNumber
+    * @description Tests the business rules function loadAllXmlData with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidBoolean, () => {
+    test(tst_con.cloadedAllXmlData_inValidNumber, () => {
         // Arrange
-        let filesToLoad = [false];
+        let filesToLoad = 546;
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -398,14 +398,14 @@ describe(tst_con.cloadAllXmlData, () => {
     });
 
     /**
-    * @function loadedAllXmlData_inValidNumber
-    * @description Tests the business rules function loadAllXmlData with a invalid integer data.
+    * @function loadedAllXmlData_inValidBoolean
+    * @description Tests the business rules function loadAllXmlData with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidNumber, () => {
+    test(tst_con.cloadedAllXmlData_inValidBoolean, () => {
         // Arrange
-        let filesToLoad = 546;
+        let filesToLoad = false;
         let contextName = wrd.cSpace;
         rulesLibrary.initRulesLibrary();
 
@@ -547,15 +547,15 @@ describe(tst_con.cprocessCsvData, () => {
     });
 
     /**
-    * @function processCsvData_inValidContextNameString
-    * @description Tests the business rules function processCsvData with a invalid string context name.
+    * @function processCsvData_inValidString
+    * @description Tests the business rules function processCsvData with a invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cprocessCsvData_inValidContextNameString, () => {
+    test(tst_con.cprocessCsvData_inValidString, () => {
         // Arrange
-        let data = obj_con.JsonObjectArrayOfStrings_01;
-        let contextName = wrd.cComa;
+        let data = obj_con.stringRandomText;
+        let contextName = wrd.ccolors;
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -566,15 +566,15 @@ describe(tst_con.cprocessCsvData, () => {
     });
 
     /**
-    * @function processCsvData_inValidString
-    * @description Tests the business rules function processCsvData with a invalid string data.
+    * @function processCsvData_inValidContextNameString
+    * @description Tests the business rules function processCsvData with a invalid string context name.
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cprocessCsvData_inValidString, () => {
+    test(tst_con.cprocessCsvData_inValidContextNameString, () => {
         // Arrange
-        let data = "464gsdsfae8f46";
-        let contextName = wrd.ccolors;
+        let data = obj_con.JsonObjectArrayOfStrings_01;
+        let contextName = wrd.cComa;
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -655,7 +655,7 @@ describe(tst_con.cpreprocessJsonFile, () => {
     */
     test(tst_con.cpreprocessJsonFile_inValidString, () => {
         // Arrange
-        let fileToLoad = "464gsdsfae8f46";
+        let fileToLoad = obj_con.stringRandomText;
 
         // Act
         let returnData = dataBroker.preprocessJsonFile(fileToLoad);
@@ -1063,7 +1063,7 @@ describe(tst_con.cgetData, () => {
     */
     test(tst_con.cgetData_inValidString, () => {
         // Arrange
-        let dataStorageContextName = wrd.ccolors;
+        let dataStorageContextName = obj_con.stringRandomText;
 
         // Act
         dataBroker.storeData(dataStorageContextName, obj_con.JsonObjectArrayOfStrings_01);
@@ -1081,7 +1081,7 @@ describe(tst_con.cgetData, () => {
     */
     test(tst_con.cgetData_inValidNumber, () => {
         // Arrange
-        let dataStorageContextName = wrd.ccolors;
+        let dataStorageContextName = 546;
 
         // Act
         dataBroker.storeData(dataStorageContextName, obj_con.JsonObjectArrayOfStrings_01);
@@ -1099,7 +1099,7 @@ describe(tst_con.cgetData, () => {
     */
     test(tst_con.cgetData_inValidBoolean, () => {
         // Arrange
-        let dataStorageContextName = wrd.ccolors;
+        let dataStorageContextName = false;
 
         // Act
         dataBroker.storeData(dataStorageContextName, obj_con.JsonObjectArrayOfStrings_01);
@@ -1227,6 +1227,12 @@ describe(tst_con.cinitializeConstantsValidationData, () => {
 
         // Assert
         expect(D[sys.cConstantsValidationData]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsShortNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFileNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPrefix]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFilePaths]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages]).toBeTruthy();
     });
 
     /**
@@ -1244,6 +1250,12 @@ describe(tst_con.cinitializeConstantsValidationData, () => {
 
         // Assert
         expect(D[sys.cConstantsValidationData]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsShortNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFileNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPrefix]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFilePaths]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages]).toBeTruthy();
     });
 
     /**
@@ -1261,6 +1273,12 @@ describe(tst_con.cinitializeConstantsValidationData, () => {
 
         // Assert
         expect(D[sys.cConstantsValidationData]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsShortNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFileNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPrefix]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFilePaths]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages]).toBeTruthy();
     });
 
     /**
@@ -1278,6 +1296,12 @@ describe(tst_con.cinitializeConstantsValidationData, () => {
 
         // Assert
         expect(D[sys.cConstantsValidationData]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsShortNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFileNames]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPrefix]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsFilePaths]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages]).toBeTruthy();
+        expect(D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages]).toBeTruthy();
     });
 });
 

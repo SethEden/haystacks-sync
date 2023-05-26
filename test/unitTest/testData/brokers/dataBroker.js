@@ -19,6 +19,7 @@ const { bas, sys, wrd, gen } = hayConst;
 // Objects name
 export const JsonObjectArrayOfStrings_01 = { 'data': ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/test.csv'] };
 export const JsonObjectOfStrings_02 = { "constants": "c,const", "Generator": "g,gen,genrtr", "List": "l,lst" };
+export const stringRandomText = '464gsdsfae8f46';
 
 /**
  * @function jsonObjectOfStrings_03

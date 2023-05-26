@@ -24,6 +24,7 @@ import rulesLibrary from "../../../../src/businessRules/rulesLibrary.js";
 import chiefWorkflow from "../../../../src/controllers/chiefWorkflow.js";
 import configurator from "../../../../src/executrix/configurator.js";
 import D from "../../../../src/structures/data.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../testData/brokers/workflowBroker.js';
 import * as tst_con from '../constants/test.constants.js';
 
@@ -244,13 +245,14 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     */
     test(tst_con.cdoesWorkflowExistInWorkflowData_inValidWorkflowDataString, () => {
         // Arrange
+        let workflowData = data_con.stringRandomText;
         let workflowName = wrd.cdoes + wrd.cArray + wrd.cContain + wrd.cCharacter;
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
 
         // Act        
-        let returnData = workflowBroker.doesWorkflowExistInWorkflowData({}, workflowName);
+        let returnData = workflowBroker.doesWorkflowExistInWorkflowData(workflowData, workflowName);
 
         // Assert
         expect(returnData).toBe(false);
@@ -284,13 +286,14 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     */
     test(tst_con.cdoesWorkflowExistInWorkflowData_inValidNumber, () => {
         // Arrange
-        let workflowName = 123;
+        let workflowData = 123;
+        let workflowName = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
 
         // Act        
-        let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
+        let returnData = workflowBroker.doesWorkflowExistInWorkflowData(workflowData, workflowName);
 
         // Assert
         expect(returnData).toBe(false);
@@ -304,13 +307,14 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     */
     test(tst_con.cdoesWorkflowExistInWorkflowData_inValidBoolean, () => {
         // Arrange
-        let workflowName = false;
+        let workflowData = false;
+        let workflowName = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
         configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath, obj_con.workflowPath());
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
 
         // Act        
-        let returnData = workflowBroker.doesWorkflowExistInWorkflowData(D[sys.cCommandWorkflows], workflowName);
+        let returnData = workflowBroker.doesWorkflowExistInWorkflowData(workflowData, workflowName);
 
         // Assert
         expect(returnData).toBe(false);
@@ -358,7 +362,7 @@ describe(tst_con.csearchWorkflow, () => {
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
 
         // Act        
-        let returnData = workflowBroker.searchWorkflow("", workflowName);
+        let returnData = workflowBroker.searchWorkflow(data_con.stringRandomText, workflowName);
 
         // Assert
         expect(returnData).toBe(false);
@@ -464,7 +468,7 @@ describe(tst_con.cgetAllWorkflows, () => {
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
 
         // Act
-        let returnData = workflowBroker.getAllWorkflows("");
+        let returnData = workflowBroker.getAllWorkflows(data_con.stringRandomText);
 
         // Assert
         expect(returnData).toBe(false);
@@ -550,7 +554,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
         chiefWorkflow.loadCommandWorkflowsFromPath(cfg.cframeworkWorkflowsPath, wrd.cFramework);
 
         // Act        
-        let returnData = workflowBroker.getWorkflowNamespaceDataObject("", namespaceToFind);
+        let returnData = workflowBroker.getWorkflowNamespaceDataObject(data_con.stringRandomText, namespaceToFind);
 
         // Assert
         expect(returnData).toBe(false);
