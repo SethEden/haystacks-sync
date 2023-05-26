@@ -727,9 +727,9 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     /**
     * @function writeJsonDataToFile_inValidString
     * @description Tests the business rules function writeJsonDataToFile with a invalid string data.
-    * @result In root path create "464gsdsfae8f46" file.
     * @author Json Howard
     * @date 2023/04/16
+    * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called "464gsdsfae8f46", therefore this test is not implemented.
     */    
 
     /**

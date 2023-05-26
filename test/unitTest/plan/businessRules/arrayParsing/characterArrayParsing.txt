@@ -68,7 +68,7 @@ output: ?
 status: Failed
 error: TypeError: arrayElement.includes is not a function
 
-testName: doesArrayContainCharacter_validDataInputDataString
+testName: doesArrayContainCharacter_validDataInputMetaDataString
 input inputData: string|boolean|integer|object (The character that should be searched for in the array of elements) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?

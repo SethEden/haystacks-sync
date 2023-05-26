@@ -5,6 +5,7 @@
  * @module characterArrayParsing.test
  * @description Unit tests for the characterArrayParsing.js
  * @requires module:characterArrayParsing
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/characterArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -16,6 +17,7 @@
 
 // Internal imports
 import characterArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/characterArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
@@ -58,14 +60,14 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
     */
     test(tst_con.creplaceCharacterWithCharacter_validDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText;
         let inputMetaData = [wrd.cHello, wrd.cWorld];
 
         // Act 
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("dfxg24346dfg");
+        expect(returnData).toBe(data_con.stringRandomText);
     });
 
     /**
@@ -77,49 +79,13 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
     test(tst_con.creplaceCharacterWithCharacter_validDataInputMetaDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cSpace + wrd.cWorld;
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText;
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
         //Assert
-        expect(returnData).toBe("HelloSpaceWorlf");
-    })
-
-    /**
-    * @function replaceCharacterWithCharacter_inValidDataStorageInputMetaDataInteger
-    * @description Tests the business rules function replaceCharacterWithCharacter with a invalid undefined inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/09
-    */
-    test(tst_con.creplaceCharacterWithCharacter_inValidInputMetaDataUndefined, () => {
-        // Arrange
-        let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = [undefined, undefined];
-
-        // Act
-        let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
-    })
-
-    /**
-    * @function replaceCharacterWithCharacter_inValidInputMetaDataNaN
-    * @description Tests the business rules function replaceCharacterWithCharacter with a invalid NaN inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/09
-    */
-    test(tst_con.creplaceCharacterWithCharacter_inValidInputMetaDataNaN, () => {
-        // Arrange
-        let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = [NaN, NaN];
-
-        // Act
-        let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+        expect(returnData).toBe("wrd.cHello + wrd.cSpace + wrd.cWorld");
     })
 
     /**
@@ -150,6 +116,42 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1,2,3,4,5];
+
+        // Act
+        let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+    })
+
+    /**
+    * @function replaceCharacterWithCharacter_inValidInputMetaDataUndefined
+    * @description Tests the business rules function replaceCharacterWithCharacter with a invalid undefined inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/09
+    */
+    test(tst_con.creplaceCharacterWithCharacter_inValidInputMetaDataUndefined, () => {
+        // Arrange
+        let inputData = wrd.cHello + wrd.cWorld;
+        let inputMetaData = [undefined, undefined];
+
+        // Act
+        let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+    })
+
+    /**
+    * @function replaceCharacterWithCharacter_inValidInputMetaDataNaN
+    * @description Tests the business rules function replaceCharacterWithCharacter with a invalid NaN inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/09
+    */
+    test(tst_con.creplaceCharacterWithCharacter_inValidInputMetaDataNaN, () => {
+        // Arrange
+        let inputData = wrd.cHello + wrd.cWorld;
+        let inputMetaData = [NaN, NaN];
 
         // Act
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
@@ -192,7 +194,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
     */
     test(tst_con.cdoesArrayContainCharacter_validDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText;
         let inputMetaData = [wrd.cHello + wrd.cSpace + wrd.cWorld, wrd.cWorld];
 
         // Act
@@ -239,60 +241,6 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
     })    
 
     /**
-    * @function doesArrayContainCharacter_validDataInputMetaDataString
-    * @description Tests the business rules function doesArrayContainCharacter with a valid string inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/09
-    */
-    test(tst_con.cdoesArrayContainCharacter_validDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = wrd.cHello;
-        let inputMetaData = wrd.cHello + wrd.cSpace + wrd.cWorld;
-
-        // Act
-        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function doesArrayContainCharacter_inValidInputDataUndefined
-    * @description Tests the business rules function doesArrayContainCharacter with a invalid undefined input.
-    * @author Json Howard
-    * @date 2023/04/09
-    */
-    test(tst_con.cdoesArrayContainCharacter_inValidInputDataUndefined, () => {
-        // Arrange
-        let inputData = undefined;
-        let inputMetaData = [wrd.cHello, wrd.cWorld];
-
-        // Act
-        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function doesArrayContainCharacter_inValidInputDataNaN
-    * @description Tests the business rules function doesArrayContainCharacter with a invalid NaN input.
-    * @author Json Howard
-    * @date 2023/04/09
-    */
-    test(tst_con.cdoesArrayContainCharacter_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = [wrd.cHello, wrd.cWorld];
-
-        // Act
-        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
     * @function doesArrayContainCharacter_validDataInputDataObject
     * @description Tests the business rules function doesArrayContainCharacter with a valid object input.
     * @author Json Howard
@@ -302,6 +250,24 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
         // Arrange
         let inputData = {[wrd.cHello] : wrd.cWorld};
         let inputMetaData = [wrd.cHello, wrd.cWorld];
+
+        // Act
+        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function doesArrayContainCharacter_validDataInputMetaDataString
+    * @description Tests the business rules function doesArrayContainCharacter with a valid string inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/09
+    */
+    test(tst_con.cdoesArrayContainCharacter_validDataInputMetaDataString, () => {
+        // Arrange
+        let inputData = wrd.cHello;
+        let inputMetaData = wrd.cHello + wrd.cSpace + wrd.cWorld;
 
         // Act
         let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
@@ -363,6 +329,78 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+
+    /**
+    * @function doesArrayContainCharacter_inValidInputDataUndefined
+    * @description Tests the business rules function doesArrayContainCharacter with a invalid undefined input.
+    * @author Json Howard
+    * @date 2023/04/09
+    */
+    test(tst_con.cdoesArrayContainCharacter_inValidInputDataUndefined, () => {
+        // Arrange
+        let inputData = undefined;
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
+
+        // Act
+        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function doesArrayContainCharacter_inValidInputDataNaN
+    * @description Tests the business rules function doesArrayContainCharacter with a invalid NaN input.
+    * @author Json Howard
+    * @date 2023/04/09
+    */
+    test(tst_con.cdoesArrayContainCharacter_inValidInputDataNaN, () => {
+        // Arrange
+        let inputData = NaN;
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
+
+        // Act
+        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function doesArrayContainCharacter_inValidInputMetaDataUndefined
+    * @description Tests the business rules function doesArrayContainCharacter with a invalid undefined input.
+    * @author Json Howard
+    * @date 2023/04/09
+    */
+    test(tst_con.cdoesArrayContainCharacter_inValidInputMetaDataUndefined, () => {
+        // Arrange
+        let inputData = [wrd.cHello, wrd.cWorld];
+        let inputMetaData = undefined;
+
+        // Act
+        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function doesArrayContainCharacter_inValidInputMetaDataNaN
+    * @description Tests the business rules function doesArrayContainCharacter with a invalid NaN input.
+    * @author Json Howard
+    * @date 2023/04/09
+    */
+    test(tst_con.cdoesArrayContainCharacter_inValidInputMetaDataNaN, () => {
+        // Arrange
+        let inputData = [wrd.cHello, wrd.cWorld];
+        let inputMetaData = NaN;
+
+        // Act
+        let returnData = characterArrayParsing.doesArrayContainCharacter(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -391,7 +429,61 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     })
 
     /**
-    * @function removeCharacterFromArray_validDataInputDataString
+     * @function removeCharacterFromArray_validDataInputDataInteger
+     * @description Tests the business rules function removeCharacterFromArray with a valid integer inputData.
+     * @author Json Howard
+     * @date 2023/04/09
+     */
+    test(tst_con.cremoveCharacterFromArray_validDataInputDataInteger, () => {
+        // Arrange
+        let inputData = 23456;
+        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
+
+        // Act
+        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    })
+
+    /**
+     * @function removeCharacterFromArray_validDataInputDataBoolean
+     * @description Tests the business rules function removeCharacterFromArray with a invalid boolean inputData.
+     * @author Json Howard
+     * @date 2023/04/09
+     */
+    test(tst_con.cremoveCharacterFromArray_validDataInputDataBoolean, () => {
+        // Arrange
+        let inputData = false;
+        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
+
+        // Act
+        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    })
+
+    /**
+     * @function removeCharacterFromArray_validDataInputDataArray
+     * @description Tests the business rules function removeCharacterFromArray with a invalid object inputData.
+     * @author Json Howard
+     * @date 2023/04/09
+     */
+    test(tst_con.cremoveCharacterFromArray_validDataInputDataArray, () => {
+        // Arrange
+        let inputData = [1,2,3,4];
+        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
+
+        // Act
+        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    })
+
+    /**
+    * @function removeCharacterFromArray_validDataInputMetaDataString
     * @description Tests the business rules function removeCharacterFromArray with a valid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/11
@@ -409,7 +501,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     })
     
     /**
-    * @function removeCharacterFromArray_validDataInputDataInteger
+    * @function removeCharacterFromArray_validDataInputMetaDataInteger
     * @description Tests the business rules function removeCharacterFromArray with a valid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/11
@@ -532,60 +624,6 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
         // Assert
         expect(returnData).toBe(false);
-    })
-
-    /**
-     * @function removeCharacterFromArray_validDataInputDataInteger
-     * @description Tests the business rules function removeCharacterFromArray with a valid integer inputData.
-     * @author Json Howard
-     * @date 2023/04/09
-     */
-    test(tst_con.cremoveCharacterFromArray_validDataInputDataInteger, () => {
-        // Arrange
-        let inputData = 23456;
-        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
-
-        // Act
-        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBeTruthy();
-    })
-
-    /**
-     * @function removeCharacterFromArray_validDataInputDataBoolean
-     * @description Tests the business rules function removeCharacterFromArray with a invalid boolean inputData.
-     * @author Json Howard
-     * @date 2023/04/09
-     */
-    test(tst_con.cremoveCharacterFromArray_validDataInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
-
-        // Act
-        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    })
-
-    /**
-     * @function removeCharacterFromArray_validDataInputDataObject
-     * @description Tests the business rules function removeCharacterFromArray with a invalid object inputData.
-     * @author Json Howard
-     * @date 2023/04/09
-     */
-    test(tst_con.cremoveCharacterFromArray_validDataInputDataObject, () => {
-        // Arrange
-        let inputData = [1,2,3,4];
-        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
-
-        // Act
-        let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBeTruthy();
     })
 })
 

@@ -226,9 +226,9 @@ describe(tst_con.cloadTheme, () => {
     /**
     * @function loadTheme_inValidString
     * @description Tests the business rules function loadTheme with a invalid string data.
-    * @result In root path create "464gsdsfae8f46" folder.
     * @author Json Howard
     * @date 2023/04/17
+    * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called "464gsdsfae8f46", therefore this test is not implemented.
     */
 
     /**
@@ -306,6 +306,7 @@ describe(tst_con.capplyTheme, () => {
     * @result In root path create "464gsdsfae8f46" folder.
     * @author Json Howard
     * @date 2023/04/17
+    * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called "464gsdsfae8f46", therefore this test is not implemented.
     */
 
     /**

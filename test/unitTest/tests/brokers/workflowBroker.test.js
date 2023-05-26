@@ -9,6 +9,7 @@
  * @requires module:chiefWorkflow
  * @requires module:configurator
  * @requires module:data
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/workflowBroker
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
