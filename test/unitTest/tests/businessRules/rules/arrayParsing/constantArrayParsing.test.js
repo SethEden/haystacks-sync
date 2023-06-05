@@ -7,6 +7,7 @@
  * @requires module:dataBroker
  * @requires module:constantArrayParsing
  * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/constantArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -20,6 +21,7 @@
 import dataBroker from "../../../../../../src/brokers/dataBroker.js";
 import constantArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/constantArrayParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/constantArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
@@ -45,13 +47,31 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     test(tst_con.cgetLengthOfLongestStringInArray_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
 
         // Assert
         expect(returnData).toBe(10);
+    });
+
+    /**
+    * @function getLengthOfLongestStringInArray_inValidDataInputDataString
+    * @description Tests the business rules function solveLehmerCode with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLengthOfLongestStringInArray_inValidDataInputDataString, () => {
+        // Arrange
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
+
+        // Act
+        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(0);
     });
 
     /**
@@ -63,85 +83,13 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     test(tst_con.cgetLengthOfLongestStringInArray_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
 
         // Assert
         expect(returnData).toBe(10);
-    });
-
-    /**
-    * @function getLengthOfLongestStringInArray_inValidInputDataBoolean
-    * @description Tests the business rules function solveLehmerCode with a invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.cgetLengthOfLongestStringInArray_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = [1, 2, 3, 4];
-
-        // Act
-        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(0);
-    });
-
-    /**
-    * @function getLengthOfLongestStringInArray_inValidInputDataUndefined
-    * @description Tests the business rules function solveLehmerCode with a invalid undefined data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.cgetLengthOfLongestStringInArray_inValidInputDataUndefined, () => {
-        // Arrange
-        let inputData = undefined;
-        let inputMetaData = "";
-
-        // Act
-        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(0);
-    });
-
-    /**
-    * @function getLengthOfLongestStringInArray_inValidInputDataNaN
-    * @description Tests the business rules function solveLehmerCode with a invalid NaN data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.cgetLengthOfLongestStringInArray_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = undefined;
-        let inputMetaData = "";
-
-        // Act
-        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(0);
-    });
-
-    /**
-    * @function getLengthOfLongestStringInArray_inValidDataInputDataString
-    * @description Tests the business rules function solveLehmerCode with a invalid string data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.cgetLengthOfLongestStringInArray_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
-
-        // Act
-        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(0);
     });
 
     /**
@@ -154,6 +102,24 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
+
+        // Act
+        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(0);
+    });
+
+    /**
+    * @function getLengthOfLongestStringInArray_inValidInputDataBoolean
+    * @description Tests the business rules function solveLehmerCode with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLengthOfLongestStringInArray_inValidInputDataBoolean, () => {
+        // Arrange
+        let inputData = false;
+        let inputMetaData = [1, 2, 3, 4];
 
         // Act
         let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
@@ -197,6 +163,42 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
         // Assert
         expect(returnData).toBe(0);
     });
+
+    /**
+    * @function getLengthOfLongestStringInArray_inValidInputDataUndefined
+    * @description Tests the business rules function solveLehmerCode with a invalid undefined data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLengthOfLongestStringInArray_inValidInputDataUndefined, () => {
+        // Arrange
+        let inputData = undefined;
+        let inputMetaData = '';
+
+        // Act
+        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(0);
+    });
+
+    /**
+    * @function getLengthOfLongestStringInArray_inValidInputDataNaN
+    * @description Tests the business rules function solveLehmerCode with a invalid NaN data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetLengthOfLongestStringInArray_inValidInputDataNaN, () => {
+        // Arrange
+        let inputData = undefined;
+        let inputMetaData = "";
+
+        // Act
+        let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(0);
+    });
 });
 
 /**
@@ -214,7 +216,7 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
     test(tst_con.csearchForPatternsInStringArray_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -222,6 +224,25 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
 
         // Assert
         expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function searchForPatternsInStringArray_inValidDataInputDataString
+    * @description Tests the business rules function searchForPatternsInStringArray with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csearchForPatternsInStringArray_inValidDataInputDataString, () => {
+        // Arrange
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -233,7 +254,7 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
     test(tst_con.csearchForPatternsInStringArray_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -280,63 +301,6 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Assert
         expect(returnData).toBe(false);
     });
-    
-    /**
-    * @function searchForPatternsInStringArray_inValidInputDataUndefined
-    * @description Tests the business rules function searchForPatternsInStringArray with a invalid undefiend data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.csearchForPatternsInStringArray_inValidInputDataUndefined, () => {
-        // Arrange
-        let inputData = undefined;
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-    
-    /**
-    * @function searchForPatternsInStringArray_inValidInputDataNaN
-    * @description Tests the business rules function searchForPatternsInStringArray with a invalid NaN data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.csearchForPatternsInStringArray_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function searchForPatternsInStringArray_inValidDataInputDataString
-    * @description Tests the business rules function searchForPatternsInStringArray with a invalid string data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.csearchForPatternsInStringArray_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
 
     /**
     * @function searchForPatternsInStringArray_inValidInputMetaDataInteger
@@ -375,6 +339,44 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         // Assert
         expect(returnData).toBe(false);
     });
+    
+    /**
+    * @function searchForPatternsInStringArray_inValidInputDataUndefined
+    * @description Tests the business rules function searchForPatternsInStringArray with a invalid undefiend data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csearchForPatternsInStringArray_inValidInputDataUndefined, () => {
+        // Arrange
+        let inputData = undefined;
+        let inputMetaData = '';
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
+    
+    /**
+    * @function searchForPatternsInStringArray_inValidInputDataNaN
+    * @description Tests the business rules function searchForPatternsInStringArray with a invalid NaN data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.csearchForPatternsInStringArray_inValidInputDataNaN, () => {
+        // Arrange
+        let inputData = NaN;
+        let inputMetaData = '';
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
 });
 
 /**
@@ -392,7 +394,7 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
     test(tst_con.cvalidatePatternsThatNeedImplementation_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
         dataBroker.initializeConstantsValidationData();
 
         // Act        
@@ -411,7 +413,7 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
     test(tst_con.cvalidatePatternsThatNeedImplementation_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
         dataBroker.initializeConstantsValidationData();
 
         // Act        
@@ -430,7 +432,7 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
     test(tst_con.cvalidatePatternsThatNeedImplementation_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
         dataBroker.initializeConstantsValidationData();
 
         // Act        
@@ -438,6 +440,25 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
 
         // Assert
         expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function validatePatternsThatNeedImplementation_inValidInputDataInteger
+    * @description Tests the business rules function validatePatternsThatNeedImplementation with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cvalidatePatternsThatNeedImplementation_inValidInputDataInteger, () => {
+        // Arrange
+        let inputData = 4567;
+        let inputMetaData = [1,2,3,4,5];
+        dataBroker.initializeConstantsValidationData();
+
+        // Act        
+        let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe('');
     });
     
     /**
@@ -456,7 +477,7 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
     
     /**
@@ -506,14 +527,14 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
     test(tst_con.cvalidatePatternsThatNeedImplementation_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
         dataBroker.initializeConstantsValidationData();
 
         // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
     
     /**
@@ -525,32 +546,13 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
     test(tst_con.cvalidatePatternsThatNeedImplementation_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
         dataBroker.initializeConstantsValidationData();
 
         // Act        
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
-    });
-
-    /**
-    * @function validatePatternsThatNeedImplementation_inValidInputDataInteger
-    * @description Tests the business rules function validatePatternsThatNeedImplementation with a invalid integer inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.cvalidatePatternsThatNeedImplementation_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1,2,3,4,5];
-        dataBroker.initializeConstantsValidationData();
-
-        // Act        
-        let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 });

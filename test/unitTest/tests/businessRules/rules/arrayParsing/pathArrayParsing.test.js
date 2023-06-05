@@ -265,6 +265,24 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         // Assert
         expect(returnData).toBeTruthy();
     });
+
+    /**
+    * @function getFileAndPathListForPath_inValidInputDataInteger
+    * @description Tests the business rules function getFileAndPathListForPath with a invalid integer input.
+    * @author Json Howard
+    * @date 2023/04/20
+    */
+    test(tst_con.cgetFileAndPathListForPath_inValidInputDataInteger, () => {
+        // Arrange
+        let inputData = 4567;
+        let inputMetaData = [1,2,3,4,5];
+
+        // Act
+        let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
     
     /**
     * @function getFileAndPathListForPath_inValidInputDataBoolean
@@ -282,6 +300,42 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
 
         // Assert
         expect(returnData).toBe("");
+    });
+
+    /**
+    * @function getFileAndPathListForPath_inValidInputMetaDataInteger
+    * @description Tests the business rules function getFileAndPathListForPath with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/20
+    */
+    test(tst_con.cgetFileAndPathListForPath_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+
+        // Act
+        let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
+    /**
+    * @function getFileAndPathListForPath_inValidInputMetaDataBoolean
+    * @description Tests the business rules function getFileAndPathListForPath with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/20
+    */
+    test(tst_con.cgetFileAndPathListForPath_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = false;
+
+        // Act
+        let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBeTruthy();
     });
 
     /**
@@ -348,60 +402,6 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         // Arrange
         let inputData = obj_con.stringPath_02();
         let inputMetaData = NaN;
-
-        // Act
-        let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
-
-    /**
-    * @function getFileAndPathListForPath_inValidInputDataInteger
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid integer input.
-    * @author Json Howard
-    * @date 2023/04/20
-    */
-    test(tst_con.cgetFileAndPathListForPath_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1,2,3,4,5];
-
-        // Act
-        let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
-
-    /**
-    * @function getFileAndPathListForPath_inValidInputMetaDataInteger
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid integer inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/20
-    */
-    test(tst_con.cgetFileAndPathListForPath_inValidInputMetaDataInteger, () => {
-        // Arrange
-        let inputData = [1,2,3,4,5];
-        let inputMetaData = 4567;
-
-        // Act
-        let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
-
-    /**
-    * @function getFileAndPathListForPath_inValidInputMetaDataBoolean
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid boolean inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/20
-    */
-    test(tst_con.cgetFileAndPathListForPath_inValidInputMetaDataBoolean, () => {
-        // Arrange
-        let inputData = [1,2,3,4,5];
-        let inputMetaData = false;
 
         // Act
         let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);

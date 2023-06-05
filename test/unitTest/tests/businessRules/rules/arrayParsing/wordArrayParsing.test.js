@@ -6,6 +6,7 @@
  * @description Unit tests for the wordArrayParsing.js
  * @requires module:wordArrayParsing
  * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/wordArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -18,6 +19,7 @@
 // Internal imports
 import wordArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/wordArrayParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/wordArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
@@ -43,7 +45,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
     test(tst_con.cconvertCamelCaseStringToArray_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.convertCamelCaseStringToArray(inputData, inputMetaData);
@@ -61,7 +63,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
     test(tst_con.cconvertCamelCaseStringToArray_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.chello + wrd.cworld + wrd.chello + wrd.cworld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.convertCamelCaseStringToArray(inputData, inputMetaData);
@@ -79,7 +81,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
     test(tst_con.cconvertCamelCaseStringToArray_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.convertCamelCaseStringToArray(inputData, inputMetaData);
@@ -176,7 +178,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
     test(tst_con.cgetWordsArrayFromString_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -194,8 +196,8 @@ describe(tst_con.cgetWordsArrayFromString, () => {
     */
     test(tst_con.cgetWordsArrayFromString_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -214,7 +216,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
     test(tst_con.cgetWordsArrayFromString_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -316,7 +318,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
     test(tst_con.crecombineStringArrayWithSpaces_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.recombineStringArrayWithSpaces(inputData, inputMetaData);
@@ -334,7 +336,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
     test(tst_con.crecombineStringArrayWithSpaces_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.recombineStringArrayWithSpaces(inputData, inputMetaData);
@@ -406,7 +408,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
     test(tst_con.crecombineStringArrayWithSpaces_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.recombineStringArrayWithSpaces(inputData, inputMetaData);
@@ -424,7 +426,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
     test(tst_con.crecombineStringArrayWithSpaces_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.recombineStringArrayWithSpaces(inputData, inputMetaData);
@@ -441,8 +443,8 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
     */
     test(tst_con.crecombineStringArrayWithSpaces_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.recombineStringArrayWithSpaces(inputData, inputMetaData);
@@ -485,13 +487,31 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
     test(tst_con.cconvertArrayToCamelCaseString_validDataString, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld, wrd.cHello, wrd.cWorld];
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
 
         // Assert
         expect(returnData).toBe(wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld);
+    });
+
+    /**
+    * @function convertArrayToCamelCaseString_inValidDataInputDataString
+    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/21
+    */
+    test(tst_con.cconvertArrayToCamelCaseString_inValidDataInputDataString, () => {
+        // Arrange
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
+
+        // Act
+        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe();
     });
 
     /**
@@ -503,85 +523,13 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
     test(tst_con.cconvertArrayToCamelCaseString_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld, wrd.cHello, wrd.cWorld];
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
 
         // Assert
         expect(returnData).toBe(wrd.cHello + wrd.cWorld + wrd.cHello + wrd.cWorld);
-    });
-
-    /**
-    * @function convertArrayToCamelCaseString_inValidInputDataBoolean
-    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/21
-    */
-    test(tst_con.cconvertArrayToCamelCaseString_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
-        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe();
-    });
-
-    /**
-    * @function convertArrayToCamelCaseString_inValidInputDataUndefined
-    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid undefined data.
-    * @author Json Howard
-    * @date 2023/04/21
-    */
-    test(tst_con.cconvertArrayToCamelCaseString_inValidInputDataUndefined, () => {
-        // Arrange
-        let inputData = undefined;
-        let inputMetaData = "";
-
-        // Act
-        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe();
-    });
-
-    /**
-    * @function convertArrayToCamelCaseString_inValidInputDataNaN
-    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid NaN data.
-    * @author Json Howard
-    * @date 2023/04/21
-    */
-    test(tst_con.cconvertArrayToCamelCaseString_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = "";
-
-        // Act
-        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe();
-    });
-
-    /**
-    * @function convertArrayToCamelCaseString_inValidDataInputDataString
-    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid string data.
-    * @author Json Howard
-    * @date 2023/04/21
-    */
-    test(tst_con.cconvertArrayToCamelCaseString_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
-
-        // Act
-        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe();
     });
 
     /**
@@ -594,6 +542,24 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
         // Arrange
         let inputData = 4567;
         let inputMetaData = [1,2,3,4,5];
+
+        // Act
+        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe();
+    });
+
+    /**
+    * @function convertArrayToCamelCaseString_inValidInputDataBoolean
+    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/21
+    */
+    test(tst_con.cconvertArrayToCamelCaseString_inValidInputDataBoolean, () => {
+        // Arrange
+        let inputData = false;
+        let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
         let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
@@ -630,6 +596,42 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
         // Arrange
         let inputData = [1,2,3,4,5];
         let inputMetaData = false;
+
+        // Act
+        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe();
+    });
+
+    /**
+    * @function convertArrayToCamelCaseString_inValidInputDataUndefined
+    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid undefined data.
+    * @author Json Howard
+    * @date 2023/04/21
+    */
+    test(tst_con.cconvertArrayToCamelCaseString_inValidInputDataUndefined, () => {
+        // Arrange
+        let inputData = undefined;
+        let inputMetaData = '';
+
+        // Act
+        let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe();
+    });
+
+    /**
+    * @function convertArrayToCamelCaseString_inValidInputDataNaN
+    * @description Tests the business rules function convertArrayToCamelCaseString with a invalid NaN data.
+    * @author Json Howard
+    * @date 2023/04/21
+    */
+    test(tst_con.cconvertArrayToCamelCaseString_inValidInputDataNaN, () => {
+        // Arrange
+        let inputData = NaN;
+        let inputMetaData = '';
 
         // Act
         let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
@@ -736,6 +738,24 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
     });
 
     /**
+    * @function doesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataInteger
+    * @description Tests the business rules function doesArrayContainLowerCaseConsolidatedString with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/21
+    */
+    test(tst_con.cdoesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+
+        // Act
+        let returnData = wordArrayParsing.doesArrayContainLowerCaseConsolidatedString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(undefined);
+    });
+
+    /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataBoolean
     * @description Tests the business rules function doesArrayContainLowerCaseConsolidatedString with a invalid string inputMetaData.
     * @author Json Howard
@@ -781,24 +801,6 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = wrd.cHello;
-
-        // Act
-        let returnData = wordArrayParsing.doesArrayContainLowerCaseConsolidatedString(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(undefined);
-    });
-
-    /**
-    * @function doesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataInteger
-    * @description Tests the business rules function doesArrayContainLowerCaseConsolidatedString with a invalid integer inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/21
-    */
-    test(tst_con.cdoesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataInteger, () => {
-        // Arrange
-        let inputData = [1,2,3,4,5];
-        let inputMetaData = 4567;
 
         // Act
         let returnData = wordArrayParsing.doesArrayContainLowerCaseConsolidatedString(inputData, inputMetaData);

@@ -7,6 +7,7 @@
  * @requires module:dataArrayParsing
  * @requires module:rulesLibrary
  * @requires module:data
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/dataArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -20,6 +21,7 @@
 import dataArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/dataArrayParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
 import D from "../../../../../../src/structures/data.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/dataArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
@@ -268,7 +270,7 @@ describe(tst_con.cstoreData, () => {
     */
     test(tst_con.cstoreData_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "";
+        let inputData = date_con.stringRandomText;
         let inputMetaData = wrd.cWorld;
         D[sys.cDataStorage] = {};
 
@@ -288,7 +290,7 @@ describe(tst_con.cstoreData, () => {
     test(tst_con.cstoreData_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = date_con.stringRandomText;
         D[sys.cDataStorage] = {};
 
         // Act        
@@ -655,7 +657,7 @@ describe(tst_con.cisObjectEmpty, () => {
     test(tst_con.cisObjectEmpty_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsObject_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObjectEmpty(inputData, inputMetaData);
@@ -673,7 +675,7 @@ describe(tst_con.cisObjectEmpty, () => {
     test(tst_con.cisObjectEmpty_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObjectEmpty(inputData, inputMetaData);
@@ -691,7 +693,7 @@ describe(tst_con.cisObjectEmpty, () => {
     test(tst_con.cisObjectEmpty_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = obj_con.StringsObject_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObjectEmpty(inputData, inputMetaData);
@@ -709,7 +711,7 @@ describe(tst_con.cisObjectEmpty, () => {
     test(tst_con.cisObjectEmpty_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObjectEmpty(inputData, inputMetaData);
@@ -727,7 +729,7 @@ describe(tst_con.cisObjectEmpty, () => {
     test(tst_con.cisObjectEmpty_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObjectEmpty(inputData, inputMetaData);
@@ -781,7 +783,7 @@ describe(tst_con.cisObjectEmpty, () => {
     test(tst_con.cisObjectEmpty_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObjectEmpty(inputData, inputMetaData);
@@ -799,7 +801,7 @@ describe(tst_con.cisObjectEmpty, () => {
     test(tst_con.cisObjectEmpty_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObjectEmpty(inputData, inputMetaData);
@@ -860,7 +862,7 @@ describe(tst_con.cisArrayEmpty, () => {
     test(tst_con.cisArrayEmpty_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayEmpty(inputData, inputMetaData);
@@ -878,7 +880,7 @@ describe(tst_con.cisArrayEmpty, () => {
     test(tst_con.cisArrayEmpty_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayEmpty(inputData, inputMetaData);
@@ -896,7 +898,7 @@ describe(tst_con.cisArrayEmpty, () => {
     test(tst_con.cisArrayEmpty_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayEmpty(inputData, inputMetaData);
@@ -914,7 +916,7 @@ describe(tst_con.cisArrayEmpty, () => {
     test(tst_con.cisArrayEmpty_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayEmpty(inputData, inputMetaData);
@@ -932,7 +934,7 @@ describe(tst_con.cisArrayEmpty, () => {
     test(tst_con.cisArrayEmpty_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayEmpty(inputData, inputMetaData);
@@ -950,7 +952,7 @@ describe(tst_con.cisArrayEmpty, () => {
     test(tst_con.cisArrayEmpty_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayEmpty(inputData, inputMetaData);
@@ -968,7 +970,7 @@ describe(tst_con.cisArrayEmpty, () => {
     test(tst_con.cisArrayEmpty_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayEmpty(inputData, inputMetaData);
@@ -1029,7 +1031,7 @@ describe(tst_con.cisObject, () => {
     test(tst_con.cisObject_validDataObject, () => {
         // Arrange
         let inputData = obj_con.StringsObject_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObject(inputData, inputMetaData);
@@ -1047,7 +1049,7 @@ describe(tst_con.cisObject, () => {
     test(tst_con.cisObject_validDataArray, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObject(inputData, inputMetaData);
@@ -1065,7 +1067,7 @@ describe(tst_con.cisObject, () => {
     test(tst_con.cisObject_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObject(inputData, inputMetaData);
@@ -1083,7 +1085,7 @@ describe(tst_con.cisObject, () => {
     test(tst_con.cisObject_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObject(inputData, inputMetaData);
@@ -1101,7 +1103,7 @@ describe(tst_con.cisObject, () => {
     test(tst_con.cisObject_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObject(inputData, inputMetaData);
@@ -1119,7 +1121,7 @@ describe(tst_con.cisObject, () => {
     test(tst_con.cisObject_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObject(inputData, inputMetaData);
@@ -1137,7 +1139,7 @@ describe(tst_con.cisObject, () => {
     test(tst_con.cisObject_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isObject(inputData, inputMetaData);
@@ -1162,7 +1164,7 @@ describe(tst_con.cisArray, () => {
     test(tst_con.cisArray_validDataObject, () => {
         // Arrange
         let inputData = obj_con.StringsObject_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArray(inputData, inputMetaData);
@@ -1180,7 +1182,7 @@ describe(tst_con.cisArray, () => {
     test(tst_con.cisArray_validDataArray, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArray(inputData, inputMetaData);
@@ -1198,7 +1200,7 @@ describe(tst_con.cisArray, () => {
     test(tst_con.cisArray_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArray(inputData, inputMetaData);
@@ -1216,7 +1218,7 @@ describe(tst_con.cisArray, () => {
     test(tst_con.cisArray_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArray(inputData, inputMetaData);
@@ -1234,7 +1236,7 @@ describe(tst_con.cisArray, () => {
     test(tst_con.cisArray_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArray(inputData, inputMetaData);
@@ -1252,7 +1254,7 @@ describe(tst_con.cisArray, () => {
     test(tst_con.cisArray_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArray(inputData, inputMetaData);
@@ -1270,7 +1272,7 @@ describe(tst_con.cisArray, () => {
     test(tst_con.cisArray_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArray(inputData, inputMetaData);
@@ -1295,7 +1297,7 @@ describe(tst_con.cisArrayOrObject, () => {
     test(tst_con.cisArrayOrObject_validDataObject, () => {
         // Arrange
         let inputData = obj_con.StringsObject_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayOrObject(inputData, inputMetaData);
@@ -1313,7 +1315,7 @@ describe(tst_con.cisArrayOrObject, () => {
     test(tst_con.cisArrayOrObject_validDataArray, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayOrObject(inputData, inputMetaData);
@@ -1331,7 +1333,7 @@ describe(tst_con.cisArrayOrObject, () => {
     test(tst_con.cisArrayOrObject_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayOrObject(inputData, inputMetaData);
@@ -1349,7 +1351,7 @@ describe(tst_con.cisArrayOrObject, () => {
     test(tst_con.cisArrayOrObject_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayOrObject(inputData, inputMetaData);
@@ -1367,7 +1369,7 @@ describe(tst_con.cisArrayOrObject, () => {
     test(tst_con.cisArrayOrObject_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayOrObject(inputData, inputMetaData);
@@ -1385,7 +1387,7 @@ describe(tst_con.cisArrayOrObject, () => {
     test(tst_con.cisArrayOrObject_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayOrObject(inputData, inputMetaData);
@@ -1403,7 +1405,7 @@ describe(tst_con.cisArrayOrObject, () => {
     test(tst_con.cisArrayOrObject_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isArrayOrObject(inputData, inputMetaData);
@@ -1428,7 +1430,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
     test(tst_con.cisNonZeroLengthArray_validDataObject, () => {
         // Arrange
         let inputData = obj_con.StringsObject_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isNonZeroLengthArray(inputData, inputMetaData);
@@ -1446,7 +1448,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
     test(tst_con.cisNonZeroLengthArray_validDataArray, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isNonZeroLengthArray(inputData, inputMetaData);
@@ -1464,7 +1466,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
     test(tst_con.cisNonZeroLengthArray_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isNonZeroLengthArray(inputData, inputMetaData);
@@ -1482,7 +1484,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
     test(tst_con.cisNonZeroLengthArray_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isNonZeroLengthArray(inputData, inputMetaData);
@@ -1500,7 +1502,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
     test(tst_con.cisNonZeroLengthArray_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isNonZeroLengthArray(inputData, inputMetaData);
@@ -1518,7 +1520,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
     test(tst_con.cisNonZeroLengthArray_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isNonZeroLengthArray(inputData, inputMetaData);
@@ -1536,7 +1538,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
     test(tst_con.cisNonZeroLengthArray_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.isNonZeroLengthArray(inputData, inputMetaData);
@@ -1561,7 +1563,7 @@ describe(tst_con.carrayDeepClone, () => {
     test(tst_con.carrayDeepClone_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.arrayDeepClone(inputData, inputMetaData);
@@ -1579,7 +1581,7 @@ describe(tst_con.carrayDeepClone, () => {
     test(tst_con.carrayDeepClone_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.arrayDeepClone(inputData, inputMetaData);
@@ -1597,7 +1599,7 @@ describe(tst_con.carrayDeepClone, () => {
     test(tst_con.carrayDeepClone_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.arrayDeepClone(inputData, inputMetaData);
@@ -1615,7 +1617,7 @@ describe(tst_con.carrayDeepClone, () => {
     test(tst_con.carrayDeepClone_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.arrayDeepClone(inputData, inputMetaData);
@@ -1633,7 +1635,7 @@ describe(tst_con.carrayDeepClone, () => {
     test(tst_con.carrayDeepClone_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.arrayDeepClone(inputData, inputMetaData);
@@ -1687,7 +1689,7 @@ describe(tst_con.carrayDeepClone, () => {
     test(tst_con.carrayDeepClone_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.arrayDeepClone(inputData, inputMetaData);
@@ -1705,7 +1707,7 @@ describe(tst_con.carrayDeepClone, () => {
     test(tst_con.carrayDeepClone_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = dataArrayParsing.arrayDeepClone(inputData, inputMetaData);
@@ -1953,7 +1955,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
     });
 
     /**
@@ -1983,7 +1985,37 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
+    });
+
+    /**
+    * @function getNamespacedDataObject_inValidDataInputDataString
+    * @description Tests the business rules function getNamespacedDataObject with a invalid string data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetNamespacedDataObject_inValidDataInputDataString, () => {
+        // Arrange
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = false;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
+
+        // Act
+        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
+
+        // Assert
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
     });
 
     /**
@@ -2013,7 +2045,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
     });
 
     /**
@@ -2043,67 +2075,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
-    });
-
-    /**
-    * @function getNamespacedDataObject_inValidInputDataNaN
-    * @description Tests the business rules function getNamespacedDataObject with a invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.cgetNamespacedDataObject_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = false;
-        let temp_D = D;
-        for (let i = 0; i < inputData.length - 1; i++) {
-            if (i < inputData.length - 2) {
-                temp_D[inputData[i]] = {};
-            }
-            else {
-                temp_D[inputData[i]] = inputData[inputData.length - 1];
-            }
-            temp_D = temp_D[inputData[i]];
-        }
-        rulesLibrary.initRulesLibrary();
-        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
-
-        // Act
-        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
-
-        // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
-    });
-
-    /**
-    * @function getNamespacedDataObject_inValidDataInputDataString
-    * @description Tests the business rules function getNamespacedDataObject with a invalid string data.
-    * @author Json Howard
-    * @date 2023/04/19
-    */
-    test(tst_con.cgetNamespacedDataObject_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = false;
-        let temp_D = D;
-        for (let i = 0; i < inputData.length - 1; i++) {
-            if (i < inputData.length - 2) {
-                temp_D[inputData[i]] = {};
-            }
-            else {
-                temp_D[inputData[i]] = inputData[inputData.length - 1];
-            }
-            temp_D = temp_D[inputData[i]];
-        }
-        rulesLibrary.initRulesLibrary();
-        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
-
-        // Act
-        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
-
-        // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
     });
 
     /**
@@ -2133,7 +2105,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
     });
 
     /**
@@ -2163,7 +2135,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
     });
 
     /**
@@ -2193,7 +2165,37 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(expect.arrayContaining(["configuration", "debugSetting", "brokers"]));
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
+    });
+
+    /**
+    * @function getNamespacedDataObject_inValidInputDataNaN
+    * @description Tests the business rules function getNamespacedDataObject with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/19
+    */
+    test(tst_con.cgetNamespacedDataObject_inValidInputDataNaN, () => {
+        // Arrange
+        let inputData = NaN;
+        let inputMetaData = false;
+        let temp_D = D;
+        for (let i = 0; i < inputData.length - 1; i++) {
+            if (i < inputData.length - 2) {
+                temp_D[inputData[i]] = {};
+            }
+            else {
+                temp_D[inputData[i]] = inputData[inputData.length - 1];
+            }
+            temp_D = temp_D[inputData[i]];
+        }
+        rulesLibrary.initRulesLibrary();
+        dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
+
+        // Act
+        let returnData = dataArrayParsing.getNamespacedDataObject(obj_con.StringsArray_03, inputMetaData);
+
+        // Assert
+        expect(returnData).toEqual(expect.arrayContaining([wrd.cconfiguration, wrd.cdebug + wrd.cSetting, wrd.cbrokers]));
     });
 });
 
@@ -2356,7 +2358,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     */
     test(tst_con.csetNamespacedDataObject_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText;
         let inputMetaData = obj_con.StringsArray_01;
         let temp_D = D;
         for (let i = 0; i < inputData.length - 1; i++) {

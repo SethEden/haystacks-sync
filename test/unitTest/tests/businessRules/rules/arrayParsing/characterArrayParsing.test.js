@@ -419,13 +419,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cWorld];
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual([wrd.cWorld, wrd.cWorld]);
+        expect(returnData).toEqual([wrd.cWorld]);
     })
 
     /**
@@ -437,13 +437,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputDataInteger, () => {
         // Arrange
         let inputData = 23456;
-        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
+        let inputMetaData = [23456, 78910];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toEqual(78910);
     })
 
     /**
@@ -455,13 +455,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];
+        let inputMetaData = [false, true];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toEqual(true);
     })
 
     /**
@@ -491,13 +491,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = wrd.cHello;
+        let inputMetaData = [wrd.cHello, wrd.cWorld];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(wrd.cHello);
+        expect(returnData).toEqual([wrd.cWorld]);
     })
     
     /**
@@ -509,13 +509,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataInteger, () => {
         // Arrange
         let inputData = 123;
-        let inputMetaData = 123;
+        let inputMetaData = [123, 456];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(123);
+        expect(returnData).toEqual([456]);
     })
 
     /**
@@ -527,13 +527,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataBoolean, () => {
         // Arrange
         let inputData = true;
-        let inputMetaData = true;
+        let inputMetaData = [true, false];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(true);
+        expect(returnData).toEqual([false]);
     })
 
     /**
@@ -545,13 +545,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataObject, () => {
         // Arrange
         let inputData = obj_con.JsonObjectOfStrings_01;
-        let inputMetaData = obj_con.JsonObjectOfStrings_01;
+        let inputMetaData = [obj_con.JsonObjectOfStrings_01, {"hello": "345", "world": "haystacks"}];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(obj_con.JsonObjectOfStrings_01);
+        expect(returnData).toEqual([{"hello": "345", "world": "haystacks"}]);
     })
 
     /**
