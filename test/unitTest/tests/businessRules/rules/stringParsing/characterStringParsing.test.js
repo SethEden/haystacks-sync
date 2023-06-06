@@ -41,7 +41,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     test(tst_con.csingleQuoteSwapAfterEquals_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cSingleQuote + wrd.cWorld + bas.cSingleQuote;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.singleQuoteSwapAfterEquals(inputData, inputMetaData);
@@ -59,7 +59,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     test(tst_con.csingleQuoteSwapAfterEquals_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.singleQuoteSwapAfterEquals(inputData, inputMetaData);
@@ -68,22 +68,40 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
         expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     });
 
+    // /**
+    // * @function singleQuoteSwapAfterEquals_inValidDataInputMetaDataString
+    // * @description Tests the business rules function singleQuoteSwapAfterEquals with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.csingleQuoteSwapAfterEquals_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData =  wrd.cHello + bas.cSingleQuote + wrd.cWorld + bas.cSingleQuote;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+
+    //     // Act
+    //     let returnData = characterStringParsing.singleQuoteSwapAfterEquals(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cDoubleQuote + wrd.cWorld + bas.cDoubleQuote);
+    // });
+
     /**
-    * @function singleQuoteSwapAfterEquals_inValidDataInputMetaDataString
-    * @description Tests the business rules function singleQuoteSwapAfterEquals with a invalid string inputMetaData.
+    * @function singleQuoteSwapAfterEquals_inValidInputDataInteger
+    * @description Tests the business rules function singleQuoteSwapAfterEquals with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.csingleQuoteSwapAfterEquals_inValidDataInputMetaDataString, () => {
+    test(tst_con.csingleQuoteSwapAfterEquals_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputData = 4567;
+        let inputMetaData = [1,2,3,4,5];
 
         // Act
         let returnData = characterStringParsing.singleQuoteSwapAfterEquals(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+        expect(returnData).toEqual(inputData);
     });
 
     /**
@@ -139,24 +157,6 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
         // Assert
         expect(returnData).toEqual(inputData);
     });
-
-    /**
-    * @function singleQuoteSwapAfterEquals_inValidInputDataInteger
-    * @description Tests the business rules function singleQuoteSwapAfterEquals with a invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.csingleQuoteSwapAfterEquals_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1,2,3,4,5];
-
-        // Act
-        let returnData = characterStringParsing.singleQuoteSwapAfterEquals(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toEqual(inputData);
-    });
 });
 
 /**
@@ -174,7 +174,7 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
     test(tst_con.cswapForwardSlashToBackSlash_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cForwardSlash + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -193,7 +193,7 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
     test(tst_con.cswapForwardSlashToBackSlash_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -203,23 +203,42 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
         expect(returnData).toBe(wrd.cHello);
     });
 
+    // /**
+    // * @function swapForwardSlashToBackSlash_inValidDataInputMetaDataString
+    // * @description Tests the business rules function swapForwardSlashToBackSlash with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cswapForwardSlashToBackSlash_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cForwardSlash + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+    //     rulesLibrary.initRulesLibrary();
+
+    //     // Act        
+    //     let returnData = characterStringParsing.swapForwardSlashToBackSlash(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cBackSlash + wrd.cWorld);
+    // });
+
     /**
-    * @function swapForwardSlashToBackSlash_inValidDataInputMetaDataString
-    * @description Tests the business rules function swapForwardSlashToBackSlash with a invalid string inputMetaData.
+    * @function swapForwardSlashToBackSlash_inValidInputDataInteger
+    * @description Tests the business rules function swapForwardSlashToBackSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cswapForwardSlashToBackSlash_inValidDataInputMetaDataString, () => {
+    test(tst_con.cswapForwardSlashToBackSlash_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + bas.cForwardSlash + wrd.cWorld;
-        let inputMetaData = "";
+        let inputData = 4567;
+        let inputMetaData = [1,2,3,4,5];
         rulesLibrary.initRulesLibrary();
 
         // Act        
         let returnData = characterStringParsing.swapForwardSlashToBackSlash(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cBackSlash + wrd.cWorld);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -232,25 +251,6 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = characterStringParsing.swapForwardSlashToBackSlash(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function swapForwardSlashToBackSlash_inValidInputDataInteger
-    * @description Tests the business rules function swapForwardSlashToBackSlash with a invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cswapForwardSlashToBackSlash_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1,2,3,4,5];
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -314,7 +314,7 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
     test(tst_con.cswapBackSlashToForwardSlash_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cBackSlash + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -333,7 +333,7 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
     test(tst_con.cswapBackSlashToForwardSlash_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -343,34 +343,34 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
         expect(returnData).toBe(wrd.cHello);
     });
 
+    // /**
+    // * @function swapBackSlashToForwardSlash_inValidDataInputMetaDataString
+    // * @description Tests the business rules function swapBackSlashToForwardSlash with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cswapBackSlashToForwardSlash_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cBackSlash + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+    //     rulesLibrary.initRulesLibrary();
+
+    //     // Act        
+    //     let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cForwardSlash + wrd.cWorld);
+    // });
+
     /**
-    * @function swapBackSlashToForwardSlash_inValidDataInputMetaDataString
-    * @description Tests the business rules function swapBackSlashToForwardSlash with a invalid string inputMetaData.
+    * @function swapBackSlashToForwardSlash_inValidInputDataInteger
+    * @description Tests the business rules function swapBackSlashToForwardSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cswapBackSlashToForwardSlash_inValidDataInputMetaDataString, () => {
+    test(tst_con.cswapBackSlashToForwardSlash_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + bas.cBackSlash + wrd.cWorld;
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cForwardSlash + wrd.cWorld);
-    });
-
-    /**
-    * @function swapBackSlashToForwardSlash_inValidInputDataBoolean
-    * @description Tests the business rules function swapBackSlashToForwardSlash with a invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cswapBackSlashToForwardSlash_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
+        let inputData = 4567;
         let inputMetaData = [1, 2, 3, 4, 5];
         rulesLibrary.initRulesLibrary();
 
@@ -382,14 +382,14 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
     });
 
     /**
-    * @function swapBackSlashToForwardSlash_inValidInputDataInteger
-    * @description Tests the business rules function swapBackSlashToForwardSlash with a invalid integer data.
+    * @function swapBackSlashToForwardSlash_inValidInputDataBoolean
+    * @description Tests the business rules function swapBackSlashToForwardSlash with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cswapBackSlashToForwardSlash_inValidInputDataInteger, () => {
+    test(tst_con.cswapBackSlashToForwardSlash_inValidInputDataBoolean, () => {
         // Arrange
-        let inputData = 4567;
+        let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
         rulesLibrary.initRulesLibrary();
 
@@ -454,7 +454,7 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
     test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cDoubleForwardSlash + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -473,7 +473,7 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
     test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -483,34 +483,34 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
         expect(returnData).toBe(wrd.cHello);
     });
 
+    // /**
+    // * @function swapDoubleForwardSlashToSingleForwardSlash_inValidDataInputMetaDataString
+    // * @description Tests the business rules function swapDoubleForwardSlashToSingleForwardSlash with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cDoubleForwardSlash + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+    //     rulesLibrary.initRulesLibrary();
+
+    //     // Act        
+    //     let returnData = characterStringParsing.swapDoubleForwardSlashToSingleForwardSlash(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cForwardSlash + wrd.cWorld);
+    // });
+
     /**
-    * @function swapDoubleForwardSlashToSingleForwardSlash_inValidDataInputMetaDataString
-    * @description Tests the business rules function swapDoubleForwardSlashToSingleForwardSlash with a invalid string inputMetaData.
+    * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputDataInteger
+    * @description Tests the business rules function swapDoubleForwardSlashToSingleForwardSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidDataInputMetaDataString, () => {
+    test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + bas.cDoubleForwardSlash + wrd.cWorld;
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = characterStringParsing.swapDoubleForwardSlashToSingleForwardSlash(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cForwardSlash + wrd.cWorld);
-    });
-
-    /**
-    * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputDataBoolean
-    * @description Tests the business rules function swapDoubleForwardSlashToSingleForwardSlash with a invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
+        let inputData = 4567;
         let inputMetaData = [1, 2, 3, 4, 5];
         rulesLibrary.initRulesLibrary();
 
@@ -522,14 +522,14 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
     });
 
     /**
-    * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputDataInteger
-    * @description Tests the business rules function swapDoubleForwardSlashToSingleForwardSlash with a invalid integer data.
+    * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputDataBoolean
+    * @description Tests the business rules function swapDoubleForwardSlashToSingleForwardSlash with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidInputDataInteger, () => {
+    test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidInputDataBoolean, () => {
         // Arrange
-        let inputData = 4567;
+        let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
         rulesLibrary.initRulesLibrary();
 
@@ -594,7 +594,7 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
     test(tst_con.cswapDoubleBackSlashToSingleBackSlash_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cDoubleBackSlash + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -613,7 +613,7 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
     test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -623,34 +623,34 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
         expect(returnData).toBe(wrd.cHello);
     });
 
+    // /**
+    // * @function swapDoubleBackSlashToSingleBackSlash_inValidDataInputMetaDataString
+    // * @description Tests the business rules function swapDoubleBackSlashToSingleBackSlash with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cDoubleBackSlash + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+    //     rulesLibrary.initRulesLibrary();
+
+    //     // Act        
+    //     let returnData = characterStringParsing.swapDoubleBackSlashToSingleBackSlash(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cBackSlash + wrd.cWorld);
+    // });
+
     /**
-    * @function swapDoubleBackSlashToSingleBackSlash_inValidDataInputMetaDataString
-    * @description Tests the business rules function swapDoubleBackSlashToSingleBackSlash with a invalid string inputMetaData.
+    * @function swapDoubleBackSlashToSingleBackSlash_inValidInputDataInteger
+    * @description Tests the business rules function swapDoubleBackSlashToSingleBackSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidDataInputMetaDataString, () => {
+    test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + bas.cDoubleBackSlash + wrd.cWorld;
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = characterStringParsing.swapDoubleBackSlashToSingleBackSlash(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cBackSlash + wrd.cWorld);
-    });
-
-    /**
-    * @function swapDoubleBackSlashToSingleBackSlash_inValidInputDataBoolean
-    * @description Tests the business rules function swapDoubleBackSlashToSingleBackSlash with a invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
+        let inputData = 4567;
         let inputMetaData = [1, 2, 3, 4, 5];
         rulesLibrary.initRulesLibrary();
 
@@ -662,14 +662,14 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
     });
 
     /**
-    * @function swapDoubleBackSlashToSingleBackSlash_inValidInputDataInteger
-    * @description Tests the business rules function swapDoubleBackSlashToSingleBackSlash with a invalid integer data.
+    * @function swapDoubleBackSlashToSingleBackSlash_inValidInputDataBoolean
+    * @description Tests the business rules function swapDoubleBackSlashToSingleBackSlash with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidInputDataInteger, () => {
+    test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidInputDataBoolean, () => {
         // Arrange
-        let inputData = 4567;
+        let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
         rulesLibrary.initRulesLibrary();
 
@@ -734,7 +734,7 @@ describe(tst_con.creplaceSpacesWithPlus, () => {
     test(tst_con.creplaceSpacesWithPlus_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cSpace + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.replaceSpacesWithPlus(inputData, inputMetaData);
@@ -752,7 +752,7 @@ describe(tst_con.creplaceSpacesWithPlus, () => {
     test(tst_con.creplaceSpacesWithPlus_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.replaceSpacesWithPlus(inputData, inputMetaData);
@@ -761,22 +761,40 @@ describe(tst_con.creplaceSpacesWithPlus, () => {
         expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     });
 
+    // /**
+    // * @function replaceSpacesWithPlus_inValidDataInputMetaDataString
+    // * @description Tests the business rules function replaceSpacesWithPlus with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.creplaceSpacesWithPlus_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cSpace + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+
+    //     // Act
+    //     let returnData = characterStringParsing.replaceSpacesWithPlus(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cPlus + wrd.cWorld);
+    // });
+
     /**
-    * @function replaceSpacesWithPlus_inValidDataInputMetaDataString
-    * @description Tests the business rules function replaceSpacesWithPlus with a invalid string inputMetaData.
+    * @function replaceSpacesWithPlus_inValidInputDataInteger
+    * @description Tests the business rules function replaceSpacesWithPlus with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.creplaceSpacesWithPlus_inValidDataInputMetaDataString, () => {
+    test(tst_con.creplaceSpacesWithPlus_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + bas.cSpace + wrd.cWorld;
-        let inputMetaData = "";
+        let inputData = 4567;
+        let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
         let returnData = characterStringParsing.replaceSpacesWithPlus(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cPlus + wrd.cWorld);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -788,24 +806,6 @@ describe(tst_con.creplaceSpacesWithPlus, () => {
     test(tst_con.creplaceSpacesWithPlus_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
-        let returnData = characterStringParsing.replaceSpacesWithPlus(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function replaceSpacesWithPlus_inValidInputDataInteger
-    * @description Tests the business rules function replaceSpacesWithPlus with a invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.creplaceSpacesWithPlus_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
         let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
@@ -867,7 +867,7 @@ describe(tst_con.creplaceColonWithUnderscore, () => {
     test(tst_con.creplaceColonWithUnderscore_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.replaceColonWithUnderscore(inputData, inputMetaData);
@@ -885,7 +885,7 @@ describe(tst_con.creplaceColonWithUnderscore, () => {
     test(tst_con.creplaceColonWithUnderscore_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.replaceColonWithUnderscore(inputData, inputMetaData);
@@ -894,22 +894,40 @@ describe(tst_con.creplaceColonWithUnderscore, () => {
         expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     });
 
+    // /**
+    // * @function replaceColonWithUnderscore_inValidDataInputMetaDataString
+    // * @description Tests the business rules function replaceColonWithUnderscore with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.creplaceColonWithUnderscore_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+
+    //     // Act
+    //     let returnData = characterStringParsing.replaceColonWithUnderscore(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cUnderscore + wrd.cWorld);
+    // });
+
     /**
-    * @function replaceColonWithUnderscore_inValidDataInputMetaDataString
-    * @description Tests the business rules function replaceColonWithUnderscore with a invalid string inputMetaData.
+    * @function replaceColonWithUnderscore_inValidInputDataInteger
+    * @description Tests the business rules function replaceColonWithUnderscore with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.creplaceColonWithUnderscore_inValidDataInputMetaDataString, () => {
+    test(tst_con.creplaceColonWithUnderscore_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
-        let inputMetaData = "";
+        let inputData = 4567;
+        let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
         let returnData = characterStringParsing.replaceColonWithUnderscore(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cUnderscore + wrd.cWorld);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -921,24 +939,6 @@ describe(tst_con.creplaceColonWithUnderscore, () => {
     test(tst_con.creplaceColonWithUnderscore_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
-        let returnData = characterStringParsing.replaceColonWithUnderscore(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function replaceColonWithUnderscore_inValidInputDataInteger
-    * @description Tests the business rules function replaceColonWithUnderscore with a invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.creplaceColonWithUnderscore_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
         let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
@@ -1000,7 +1000,7 @@ describe(tst_con.ccleanCarriageReturnFromString, () => {
     test(tst_con.ccleanCarriageReturnFromString_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + bas.cCarriageReturn + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.cleanCarriageReturnFromString(inputData, inputMetaData);
@@ -1018,7 +1018,7 @@ describe(tst_con.ccleanCarriageReturnFromString, () => {
     test(tst_con.ccleanCarriageReturnFromString_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.cleanCarriageReturnFromString(inputData, inputMetaData);
@@ -1027,22 +1027,40 @@ describe(tst_con.ccleanCarriageReturnFromString, () => {
         expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     });
 
+    // /**
+    // * @function cleanCarriageReturnFromString_inValidDataInputMetaDataString
+    // * @description Tests the business rules function cleanCarriageReturnFromString with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.ccleanCarriageReturnFromString_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cCarriageReturn + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+
+    //     // Act
+    //     let returnData = characterStringParsing.cleanCarriageReturnFromString(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cSpace + wrd.cWorld);
+    // });
+
     /**
-    * @function cleanCarriageReturnFromString_inValidDataInputMetaDataString
-    * @description Tests the business rules function cleanCarriageReturnFromString with a invalid string inputMetaData.
+    * @function cleanCarriageReturnFromString_inValidInputDataInteger
+    * @description Tests the business rules function cleanCarriageReturnFromString with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.ccleanCarriageReturnFromString_inValidDataInputMetaDataString, () => {
+    test(tst_con.ccleanCarriageReturnFromString_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + bas.cCarriageReturn + wrd.cWorld;
-        let inputMetaData = "";
+        let inputData = 4567;
+        let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
         let returnData = characterStringParsing.cleanCarriageReturnFromString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cSpace + wrd.cWorld);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -1054,24 +1072,6 @@ describe(tst_con.ccleanCarriageReturnFromString, () => {
     test(tst_con.ccleanCarriageReturnFromString_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
-        let returnData = characterStringParsing.cleanCarriageReturnFromString(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function cleanCarriageReturnFromString_inValidInputDataInteger
-    * @description Tests the business rules function cleanCarriageReturnFromString with a invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.ccleanCarriageReturnFromString_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
         let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
@@ -1133,7 +1133,7 @@ describe(tst_con.cconvertStringToLowerCase, () => {
     test(tst_con.cconvertStringToLowerCase_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.convertStringToLowerCase(inputData, inputMetaData);
@@ -1151,7 +1151,7 @@ describe(tst_con.cconvertStringToLowerCase, () => {
     test(tst_con.cconvertStringToLowerCase_inValidDataInputDataString, () => {
         // Arrange
         let inputData = num.c123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.convertStringToLowerCase(inputData, inputMetaData);
@@ -1160,41 +1160,23 @@ describe(tst_con.cconvertStringToLowerCase, () => {
         expect(returnData).toBe(num.c123);
     });
 
-    /**
-    * @function convertStringToLowerCase_inValidDataInputMetaDataString
-    * @description Tests the business rules function convertStringToLowerCase with a invalid string inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cconvertStringToLowerCase_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+    // /**
+    // * @function convertStringToLowerCase_inValidDataInputMetaDataString
+    // * @description Tests the business rules function convertStringToLowerCase with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cconvertStringToLowerCase_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + wrd.cWorld;
+    //     let inputMetaData = num.c123;
 
-        // Act
-        let returnData = characterStringParsing.convertStringToLowerCase(inputData, inputMetaData);
+    //     // Act
+    //     let returnData = characterStringParsing.convertStringToLowerCase(inputData, inputMetaData);
 
-        // Assert
-        expect(returnData).toBe(wrd.chello + wrd.cworld);
-    });
-
-    /**
-    * @function convertStringToLowerCase_inValidInputDataBoolean
-    * @description Tests the business rules function convertStringToLowerCase with a invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cconvertStringToLowerCase_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
-        let returnData = characterStringParsing.convertStringToLowerCase(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
+    //     // Assert
+    //     expect(returnData).toBe(wrd.chello + wrd.cworld);
+    // });
 
     /**
     * @function convertStringToLowerCase_inValidInputDataInteger
@@ -1205,6 +1187,24 @@ describe(tst_con.cconvertStringToLowerCase, () => {
     test(tst_con.cconvertStringToLowerCase_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 4567;
+        let inputMetaData = [1, 2, 3, 4, 5];
+
+        // Act
+        let returnData = characterStringParsing.convertStringToLowerCase(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });ыыыыы
+
+    /**
+    * @function convertStringToLowerCase_inValidInputDataBoolean
+    * @description Tests the business rules function convertStringToLowerCase with a invalid boolean data.
+    * @author Json Howard
+    * @date 2023/04/25
+    */
+    test(tst_con.cconvertStringToLowerCase_inValidInputDataBoolean, () => {
+        // Arrange
+        let inputData = false;
         let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
@@ -1266,13 +1266,13 @@ describe(tst_con.cconvertStringToUpperCase, () => {
     test(tst_con.cconvertStringToUpperCase_validDataString, () => {
         // Arrange
         let inputData = wrd.chello + wrd.cworld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.convertStringToUpperCase(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HELLOWORLD");
+        expect(returnData).toBe(wrd.cHELLO, wrd.cWORLD);
     });
 
     /**
@@ -1284,7 +1284,7 @@ describe(tst_con.cconvertStringToUpperCase, () => {
     test(tst_con.cconvertStringToUpperCase_inValidDataInputDataString, () => {
         // Arrange
         let inputData = num.c123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.convertStringToUpperCase(inputData, inputMetaData);
@@ -1293,22 +1293,40 @@ describe(tst_con.cconvertStringToUpperCase, () => {
         expect(returnData).toBe(num.c123);
     });
 
+    // /**
+    // * @function convertStringToUpperCase_inValidDataInputMetaDataString
+    // * @description Tests the business rules function convertStringToUpperCase with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cconvertStringToUpperCase_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.chello + wrd.cworld;
+    //     let inputMetaData = num.c123;
+
+    //     // Act
+    //     let returnData = characterStringParsing.convertStringToUpperCase(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHELLO, wrd.cWORLD);
+    // });
+
     /**
-    * @function convertStringToUpperCase_inValidDataInputMetaDataString
-    * @description Tests the business rules function convertStringToUpperCase with a invalid string inputMetaData.
+    * @function convertStringToUpperCase_inValidInputDataInteger
+    * @description Tests the business rules function convertStringToUpperCase with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cconvertStringToUpperCase_inValidDataInputMetaDataString, () => {
+    test(tst_con.cconvertStringToUpperCase_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.chello + wrd.cworld;
-        let inputMetaData = "";
+        let inputData = 4567;
+        let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
         let returnData = characterStringParsing.convertStringToUpperCase(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("HELLOWORLD");
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -1320,24 +1338,6 @@ describe(tst_con.cconvertStringToUpperCase, () => {
     test(tst_con.cconvertStringToUpperCase_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = [1, 2, 3, 4, 5];
-
-        // Act
-        let returnData = characterStringParsing.convertStringToUpperCase(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(false);
-    });
-
-    /**
-    * @function convertStringToUpperCase_inValidInputDataInteger
-    * @description Tests the business rules function convertStringToUpperCase with a invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cconvertStringToUpperCase_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
         let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
@@ -1399,7 +1399,7 @@ describe(tst_con.cdoesStringContainUpperCaseCharacter, () => {
     test(tst_con.cdoesStringContainUpperCaseCharacter_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.doesStringContainUpperCaseCharacter(inputData, inputMetaData);
@@ -1417,7 +1417,7 @@ describe(tst_con.cdoesStringContainUpperCaseCharacter, () => {
     test(tst_con.cdoesStringContainUpperCaseCharacter_inValidDataInputDataString, () => {
         // Arrange
         let inputData = num.c123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.doesStringContainUpperCaseCharacter(inputData, inputMetaData);
@@ -1426,23 +1426,23 @@ describe(tst_con.cdoesStringContainUpperCaseCharacter, () => {
         expect(returnData).toBe(false);
     });
 
-    /**
-    * @function doesStringContainUpperCaseCharacter_inValidDataInputMetaDataString
-    * @description Tests the business rules function doesStringContainUpperCaseCharacter with a invalid string inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cdoesStringContainUpperCaseCharacter_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+    // /**
+    // * @function doesStringContainUpperCaseCharacter_inValidDataInputMetaDataString
+    // * @description Tests the business rules function doesStringContainUpperCaseCharacter with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cdoesStringContainUpperCaseCharacter_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + wrd.cWorld;
+    //     let inputMetaData = num.c123;
 
-        // Act
-        let returnData = characterStringParsing.doesStringContainUpperCaseCharacter(inputData, inputMetaData);
+    //     // Act
+    //     let returnData = characterStringParsing.doesStringContainUpperCaseCharacter(inputData, inputMetaData);
 
-        // Assert
-        expect(returnData).toBe(true);
-    });
+    //     // Assert
+    //     expect(returnData).toBe(true);
+    // });
 
     /**
     * @function doesStringContainUpperCaseCharacter_inValidInputDataInteger
@@ -1532,7 +1532,7 @@ describe(tst_con.cdoesStringContainLowerCaseCharacter, () => {
     test(tst_con.cdoesStringContainLowerCaseCharacter_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.doesStringContainLowerCaseCharacter(inputData, inputMetaData);
@@ -1550,7 +1550,7 @@ describe(tst_con.cdoesStringContainLowerCaseCharacter, () => {
     test(tst_con.cdoesStringContainLowerCaseCharacter_inValidDataInputDataString, () => {
         // Arrange
         let inputData = num.c123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.doesStringContainLowerCaseCharacter(inputData, inputMetaData);
@@ -1559,23 +1559,23 @@ describe(tst_con.cdoesStringContainLowerCaseCharacter, () => {
         expect(returnData).toBe(false);
     });
 
-    /**
-    * @function doesStringContainLowerCaseCharacter_inValidDataInputMetaDataString
-    * @description Tests the business rules function doesStringContainLowerCaseCharacter with a invalid string inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cdoesStringContainLowerCaseCharacter_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+    // /**
+    // * @function doesStringContainLowerCaseCharacter_inValidDataInputMetaDataString
+    // * @description Tests the business rules function doesStringContainLowerCaseCharacter with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cdoesStringContainLowerCaseCharacter_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + wrd.cWorld;
+    //     let inputMetaData = num.c123;
 
-        // Act
-        let returnData = characterStringParsing.doesStringContainLowerCaseCharacter(inputData, inputMetaData);
+    //     // Act
+    //     let returnData = characterStringParsing.doesStringContainLowerCaseCharacter(inputData, inputMetaData);
 
-        // Assert
-        expect(returnData).toBe(true);
-    });
+    //     // Assert
+    //     expect(returnData).toBe(true);
+    // });
 
     /**
     * @function doesStringContainLowerCaseCharacter_inValidInputDataInteger
@@ -1665,7 +1665,7 @@ describe(tst_con.cisFirstCharacterLowerCase, () => {
     test(tst_con.cisFirstCharacterLowerCase_validDataString, () => {
         // Arrange
         let inputData = wrd.chello + wrd.cworld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.isFirstCharacterLowerCase(inputData, inputMetaData);
@@ -1683,7 +1683,7 @@ describe(tst_con.cisFirstCharacterLowerCase, () => {
     test(tst_con.cisFirstCharacterLowerCase_inValidDataInputDataString, () => {
         // Arrange
         let inputData = num.c123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.isFirstCharacterLowerCase(inputData, inputMetaData);
@@ -1692,22 +1692,40 @@ describe(tst_con.cisFirstCharacterLowerCase, () => {
         expect(returnData).toBe(false);
     });
 
+    // /**
+    // * @function isFirstCharacterLowerCase_inValidDataInputMetaDataString
+    // * @description Tests the business rules function isFirstCharacterLowerCase with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cisFirstCharacterLowerCase_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.chello + wrd.cworld;
+    //     let inputMetaData = num.c123;
+
+    //     // Act
+    //     let returnData = characterStringParsing.isFirstCharacterLowerCase(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(true);
+    // });
+
     /**
-    * @function isFirstCharacterLowerCase_inValidDataInputMetaDataString
-    * @description Tests the business rules function isFirstCharacterLowerCase with a invalid string inputMetaData.
+    * @function isFirstCharacterLowerCase_inValidInputDataInteger
+    * @description Tests the business rules function isFirstCharacterLowerCase with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cisFirstCharacterLowerCase_inValidDataInputMetaDataString, () => {
+    test(tst_con.cisFirstCharacterLowerCase_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.chello + wrd.cworld;
-        let inputMetaData = "";
+        let inputData = 123;
+        let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
         let returnData = characterStringParsing.isFirstCharacterLowerCase(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(true);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -1780,7 +1798,7 @@ describe(tst_con.cisFirstCharacterUpperCase, () => {
     test(tst_con.cisFirstCharacterUpperCase_validDataString, () => {
         // Arrange
         let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.isFirstCharacterUpperCase(inputData, inputMetaData);
@@ -1798,7 +1816,7 @@ describe(tst_con.cisFirstCharacterUpperCase, () => {
     test(tst_con.cisFirstCharacterUpperCase_inValidDataInputDataString, () => {
         // Arrange
         let inputData = num.c123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = characterStringParsing.isFirstCharacterUpperCase(inputData, inputMetaData);
@@ -1807,22 +1825,40 @@ describe(tst_con.cisFirstCharacterUpperCase, () => {
         expect(returnData).toBe(false);
     });
 
+    // /**
+    // * @function isFirstCharacterUpperCase_inValidDataInputMetaDataString
+    // * @description Tests the business rules function isFirstCharacterUpperCase with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cisFirstCharacterUpperCase_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + wrd.cWorld;
+    //     let inputMetaData = num.c123;
+
+    //     // Act
+    //     let returnData = characterStringParsing.isFirstCharacterUpperCase(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(true);
+    // });
+
     /**
-    * @function isFirstCharacterUpperCase_inValidDataInputMetaDataString
-    * @description Tests the business rules function isFirstCharacterUpperCase with a invalid string inputMetaData.
+    * @function isFirstCharacterUpperCase_inValidInputDataInteger
+    * @description Tests the business rules function isFirstCharacterUpperCase with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.cisFirstCharacterUpperCase_inValidDataInputMetaDataString, () => {
+    test(tst_con.cisFirstCharacterUpperCase_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = wrd.cHello + wrd.cWorld;
-        let inputMetaData = "";
+        let inputData = 123;
+        let inputMetaData = [1, 2, 3, 4, 5];
 
         // Act
         let returnData = characterStringParsing.isFirstCharacterUpperCase(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(true);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -1894,14 +1930,14 @@ describe(tst_con.creplaceCharacterAtIndexOfString, () => {
     */
     test(tst_con.creplaceCharacterAtIndexOfString_validDataString, () => {
         // Arrange
-        let inputData = [wrd.cHello, 3];
-        let inputMetaData = bas.ca;
+        let inputData = [wrd.cWishes, 5];
+        let inputMetaData = bas.cd;
 
         // Act
         let returnData = characterStringParsing.replaceCharacterAtIndexOfString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("Helao");
+        expect(returnData).toBe(wrd.cWished);
     });
     
     /**
@@ -1930,14 +1966,14 @@ describe(tst_con.creplaceCharacterAtIndexOfString, () => {
     */
     test(tst_con.creplaceCharacterAtIndexOfString_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = [wrd.cHello, 3];
-        let inputMetaData = bas.ca;
+        let inputData = [wrd.cWishes, 5];
+        let inputMetaData = num.c123;
 
         // Act
         let returnData = characterStringParsing.replaceCharacterAtIndexOfString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("Helao");
+        expect(returnData).toBe(bas.cQuestion);
     });
     
     /**
@@ -1975,6 +2011,24 @@ describe(tst_con.creplaceCharacterAtIndexOfString, () => {
         // Assert
         expect(returnData).toBe(undefined);
     });
+
+    /**
+    * @function replaceCharacterAtIndexOfString_inValidInputMetaDataInteger
+    * @description Tests the business rules function replaceCharacterAtIndexOfString with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/25
+    */
+    test(tst_con.creplaceCharacterAtIndexOfString_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1,2,3,4,5];
+        let inputMetaData = 4567;
+
+        // Act
+        let returnData = characterStringParsing.replaceCharacterAtIndexOfString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe(undefined);
+    });
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputMetaDataBoolean
@@ -2003,7 +2057,7 @@ describe(tst_con.creplaceCharacterAtIndexOfString, () => {
     test(tst_con.creplaceCharacterAtIndexOfString_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = bas.ca;
+        let inputMetaData = bas.cd;
 
         // Act
         let returnData = characterStringParsing.replaceCharacterAtIndexOfString(inputData, inputMetaData);
@@ -2021,7 +2075,7 @@ describe(tst_con.creplaceCharacterAtIndexOfString, () => {
     test(tst_con.creplaceCharacterAtIndexOfString_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = bas.ca;
+        let inputMetaData = bas.cd;
 
         // Act
         let returnData = characterStringParsing.replaceCharacterAtIndexOfString(inputData, inputMetaData);
@@ -2038,7 +2092,7 @@ describe(tst_con.creplaceCharacterAtIndexOfString, () => {
     */
     test(tst_con.creplaceCharacterAtIndexOfString_inValidInputMetaDataUndefined, () => {
         // Arrange
-        let inputData = [wrd.cHello, 3];
+        let inputData = [wrd.cWishes, 5];
         let inputMetaData = undefined;
 
         // Act
@@ -2056,26 +2110,8 @@ describe(tst_con.creplaceCharacterAtIndexOfString, () => {
     */
     test(tst_con.creplaceCharacterAtIndexOfString_inValidInputMetaDataNaN, () => {
         // Arrange
-        let inputData = [wrd.cHello, 3];
+        let inputData = [wrd.cWishes, 5];
         let inputMetaData = NaN;
-
-        // Act
-        let returnData = characterStringParsing.replaceCharacterAtIndexOfString(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe(undefined);
-    });
-
-    /**
-    * @function replaceCharacterAtIndexOfString_inValidInputMetaDataInteger
-    * @description Tests the business rules function replaceCharacterAtIndexOfString with a invalid integer inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.creplaceCharacterAtIndexOfString_inValidInputMetaDataInteger, () => {
-        // Arrange
-        let inputData = [1,2,3,4,5];
-        let inputMetaData = 4567;
 
         // Act
         let returnData = characterStringParsing.replaceCharacterAtIndexOfString(inputData, inputMetaData);

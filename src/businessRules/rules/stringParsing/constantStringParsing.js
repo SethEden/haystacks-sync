@@ -146,7 +146,7 @@ function determineConstantsContextQualifiedPrefix(inputData, inputMetaData) {
 
 /**
  * @function determineSuggestedConstantsValidationLineOfCode
- * @description Takes the name of the missing constant and determines a suggested lin of code to ad to the appropriate constants validation file.
+ * @description Takes the name of the missing constant and determines a suggested line of code to ad to the appropriate constants validation file.
  * This will make it really easy for developers to maintain the constants validation system.
  * @param {string} inputData The name of the constant file that is missing and should have a line of code generated for it.
  * @param {string} inputMetaData The prefix used to reference the constants file in the code.

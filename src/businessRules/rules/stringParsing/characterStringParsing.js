@@ -29,7 +29,7 @@ const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + 
 
 /**
 * @function singleQuoteSwapAfterEquals
-* @description Swaps single quote characters in the middle of the string wih double quote characters n the middle of the string.
+* @description Swaps single quote characters in the middle of the string wih double quote characters in the middle of the string.
 * input: 'input[name='emailAddress'][class='username']'
 * output: 'input[name="emailAddress"][class="username"]'
 * @param {string} inputData A string that contains text with single quotes that should be swapped for double quotes.

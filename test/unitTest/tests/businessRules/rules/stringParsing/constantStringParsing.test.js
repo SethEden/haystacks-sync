@@ -7,6 +7,7 @@
  * @requires module:dataBroker
  * @requires module:constantStringParsing
  * @requires module:data
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/constantStringParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -20,6 +21,7 @@
 import dataBroker from "../../../../../../src/brokers/dataBroker.js";
 import constantStringParsing from "../../../../../../src/businessRules/rules/stringParsing/constantStringParsing.js";
 import D from "../../../../../../src/structures/data.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/stringParsing/constantStringParsing.js';
 import * as tst_con from "../../../constants/test.constants.js";
 
@@ -34,6 +36,7 @@ const { bas, sys, wrd } = hayConst;
  * @description Tests the positive and negative test cases of the validateConstantsDataValidation
  * @author Json Howard
  * @date 2023/04/30
+ * @NOTE Needs significant amount of test date validation implemented.
  */
 describe(tst_con.cvalidateConstantsDataValidation, () => {
     /**
@@ -44,8 +47,8 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
      */
     test(tst_con.cvalidateConstantsDataValidation_validDataString, () => {
       // Arrange
-      let inputData = obj_con.constantStringParsingXmlPath();
-      let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = 'constantsValidation.testData';    
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -55,7 +58,29 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy();
+      expect(returnData).toBe('???');
+    });
+
+    /**
+     * @function validateConstantsDataValidation_inValidDataInputDataString
+     * @description Tests the business rules function validateConstantsDataValidation with a invalid string input.
+     * @author Json Howard
+     * @date 2023/04/29
+     */
+    test(tst_con.cvalidateConstantsDataValidation_inValidDataInputDataString, () => {
+      // Arrange
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = 'constantsValidation.testData';   
+      dataBroker.setupDataStorage(false);
+
+      // Act      
+      let returnData = constantStringParsing.validateConstantsDataValidation(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe('???');
     });
   
     /**
@@ -66,8 +91,8 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
      */
     test(tst_con.cvalidateConstantsDataValidation_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = obj_con.constantStringParsingXmlPath();
-      let inputMetaData = 'dfxg24346dfg';    
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = data_con.stringRandomText;    
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -77,18 +102,18 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy();
+      expect(returnData).toBe('???');
     });
 
     /**
-     * @function validateConstantsDataValidation_inValidInputDataBoolean
+     * @function validateConstantsDataValidation_inValidInputDataInteger
      * @description Tests the business rules function validateConstantsDataValidation with a invalid boolean input.
      * @author Json Howard
      * @date 2023/04/29
      */
-    test(tst_con.cvalidateConstantsDataValidation_inValidInputDataBoolean, () => {
+    test(tst_con.cvalidateConstantsDataValidation_inValidInputDataInteger, () => {
       // Arrange
-      let inputData = false;
+      let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];    
       dataBroker.setupDataStorage(false);
 
@@ -102,37 +127,16 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       expect(returnData).toBeTruthy();
     });
 
-    /**
-     * @function validateConstantsDataValidation_inValidDataInputDataString
-     * @description Tests the business rules function validateConstantsDataValidation with a invalid string input.
-     * @author Json Howard
-     * @date 2023/04/29
-     */
-    test(tst_con.cvalidateConstantsDataValidation_inValidDataInputDataString, () => {
-      // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';   
-      dataBroker.setupDataStorage(false);
-
-      // Act      
-      let returnData = constantStringParsing.validateConstantsDataValidation(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy();
-    });
 
     /**
-     * @function validateConstantsDataValidation_inValidInputDataInteger
+     * @function validateConstantsDataValidation_inValidInputDataBoolean
      * @description Tests the business rules function validateConstantsDataValidation with a invalid boolean input.
      * @author Json Howard
      * @date 2023/04/29
      */
-    test(tst_con.cvalidateConstantsDataValidation_inValidInputDataInteger, () => {
+    test(tst_con.cvalidateConstantsDataValidation_inValidInputDataBoolean, () => {
       // Arrange
-      let inputData = 4567;
+      let inputData = false;
       let inputMetaData = [1,2,3,4,5];    
       dataBroker.setupDataStorage(false);
 
@@ -195,6 +199,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
  * @function determineConstantsContextQualifiedPrefix
  * @description Tests the positive and negative test cases of the determineConstantsContextQualifiedPrefix
  * @date 2023/04/30
+ * @NOTE Needs significant amount of test date validation implemented.
  */
 describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
   /**
@@ -205,8 +210,8 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_validDataString, () => {
     // Arrange
-    let inputData = obj_con.constantStringParsingXmlPath();
-    let inputMetaData = "";    
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = '';    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -216,7 +221,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
+    expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
   });
 
   /**
@@ -227,8 +232,8 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -238,7 +243,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe("dfxg24346dfg");
+    expect(returnData).toBe(data_con.stringRandomText);
   });
 
   /**
@@ -249,8 +254,8 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.constantStringParsingXmlPath();
-    let inputMetaData = "dfxg24346dfg";    
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = data_con.stringRandomText;    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -260,7 +265,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
+    expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
   });
 
   /**
@@ -304,7 +309,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -356,6 +361,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
  * @function determineConstantsContextQualifiedPrefix
  * @description Tests the positive and negative test cases of the determineConstantsContextQualifiedPrefix
  * @date 2023/04/30
+ * @NOTE Needs significant amount of test date validation implemented.
  */
 describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
   /**
@@ -366,8 +372,8 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_validDataString, () => {
     // Arrange
-    let inputData = obj_con.constantStringParsingXmlPath();
-    let inputMetaData = "";    
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = '';    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -377,7 +383,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
+    expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
   });
 
   /**
@@ -388,8 +394,8 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -399,7 +405,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe("dfxg24346dfg");
+    expect(returnData).toBe(data_con.stringRandomText);
   });
 
   /**
@@ -410,8 +416,8 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.constantStringParsingXmlPath();
-    let inputMetaData = "dfxg24346dfg";    
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = data_con.stringRandomText;    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -421,7 +427,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(obj_con.constantStringParsingXmlPath());
+    expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
   });
 
   /**
@@ -465,7 +471,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -542,50 +548,6 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
   });
 
   /**
-   * @function determineSuggestedConstantsValidationLineOfCode_inValidDataInputMetaDataString
-   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid string inputMetaData.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidDataInputMetaDataString, () => {
-    // Arrange
-    let inputData = bas.cc;
-    let inputMetaData = "dfxg24346dfg";    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toContain("dfxg24346dfg");
-  });
-
-  /**
-   * @function determineSuggestedConstantsValidationLineOfCode_inValidInputDataBoolean
-   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toContain("");
-  });
-
-  /**
    * @function determineSuggestedConstantsValidationLineOfCode_inValidDataInputDataString
    * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid string input.
    * @author Json Howard
@@ -593,7 +555,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
    */
   test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = wrd.cHello;    
     dataBroker.initializeConstantsValidationData();
 
@@ -604,7 +566,29 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toContain("");
+    expect(returnData).toContain('');
+  });
+
+  /**
+   * @function determineSuggestedConstantsValidationLineOfCode_inValidDataInputMetaDataString
+   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/29
+   */
+  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = bas.cc;
+    let inputMetaData = data_con.stringRandomText;    
+    dataBroker.initializeConstantsValidationData();
+
+    // Act    
+    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toContain(data_con.stringRandomText);
   });
 
   /**
@@ -626,7 +610,29 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toContain("");
+    expect(returnData).toContain('');
+  });
+
+  /**
+   * @function determineSuggestedConstantsValidationLineOfCode_inValidInputDataBoolean
+   * @description Tests the business rules function determineSuggestedConstantsValidationLineOfCode with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/04/29
+   */
+  test(tst_con.cdetermineSuggestedConstantsValidationLineOfCode_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];    
+    dataBroker.initializeConstantsValidationData();
+
+    // Act    
+    let returnData = constantStringParsing.determineSuggestedConstantsValidationLineOfCode(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toContain('');
   });
 
   /**
@@ -648,7 +654,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toContain("");
+    expect(returnData).toContain('');
   });
 
   /**
@@ -670,7 +676,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toContain("");
+    expect(returnData).toContain('');
   });
 });
 
@@ -711,7 +717,7 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
    */
   test(tst_con.cvalidateConstantsDataValidationLineItemName_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = wrd.cWorld;    
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
@@ -735,7 +741,7 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
   test(tst_con.cvalidateConstantsDataValidationLineItemName_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";    
+    let inputMetaData = data_con.stringRandomText;    
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputMetaData] = [{Name : wrd.cHello}];
 
@@ -857,7 +863,7 @@ describe(tst_con.cdoesConstantExist, () => {
   test(tst_con.cdoesConstantExist_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
 
     // Act
     let returnData = constantStringParsing.doesConstantExist(
@@ -877,8 +883,8 @@ describe(tst_con.cdoesConstantExist, () => {
    */
   test(tst_con.cdoesConstantExist_validDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';    
 
     // Act
     let returnData = constantStringParsing.doesConstantExist(
@@ -899,7 +905,7 @@ describe(tst_con.cdoesConstantExist, () => {
   test(tst_con.cdoesConstantExist_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";    
+    let inputMetaData = data_con.stringRandomText;    
 
     // Act
     let returnData = constantStringParsing.doesConstantExist(
@@ -1020,7 +1026,7 @@ describe(tst_con.cgetConstantType, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1031,7 +1037,7 @@ describe(tst_con.cgetConstantType, () => {
    */
   test(tst_con.cgetConstantType_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = true;    
 
     // Act
@@ -1041,7 +1047,7 @@ describe(tst_con.cgetConstantType, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1053,7 +1059,7 @@ describe(tst_con.cgetConstantType, () => {
   test(tst_con.cgetConstantType_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";    
+    let inputMetaData = data_con.stringRandomText;    
 
     // Act
     let returnData = constantStringParsing.getConstantType(
@@ -1062,7 +1068,7 @@ describe(tst_con.cgetConstantType, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1083,7 +1089,7 @@ describe(tst_con.cgetConstantType, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1104,7 +1110,7 @@ describe(tst_con.cgetConstantType, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1125,7 +1131,7 @@ describe(tst_con.cgetConstantType, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1146,7 +1152,7 @@ describe(tst_con.cgetConstantType, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 });
 
@@ -1175,7 +1181,7 @@ describe(tst_con.cgetConstantActualValue, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1186,7 +1192,7 @@ describe(tst_con.cgetConstantActualValue, () => {
    */
   test(tst_con.cgetConstantActualValue_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = wrd.cWorld;    
     dataBroker.initializeConstantsValidationData();
 
@@ -1197,7 +1203,7 @@ describe(tst_con.cgetConstantActualValue, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1209,7 +1215,7 @@ describe(tst_con.cgetConstantActualValue, () => {
   test(tst_con.cgetConstantActualValue_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";    
+    let inputMetaData = data_con.stringRandomText;    
     dataBroker.initializeConstantsValidationData();
 
     // Act    
@@ -1219,7 +1225,7 @@ describe(tst_con.cgetConstantActualValue, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1241,7 +1247,7 @@ describe(tst_con.cgetConstantActualValue, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
   
   /**
@@ -1263,7 +1269,7 @@ describe(tst_con.cgetConstantActualValue, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1285,7 +1291,7 @@ describe(tst_con.cgetConstantActualValue, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1307,7 +1313,7 @@ describe(tst_con.cgetConstantActualValue, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 });
 
@@ -1326,7 +1332,7 @@ describe(tst_con.cgetConstantName, () => {
   test(tst_con.cgetConstantName_validDataString, () => {
     // Arrange
     let inputData = wrd.cSystem;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
 
     // Act
     let returnData = constantStringParsing.getConstantName(
@@ -1335,7 +1341,7 @@ describe(tst_con.cgetConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1346,8 +1352,8 @@ describe(tst_con.cgetConstantName, () => {
    */
   test(tst_con.cgetConstantName_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';    
 
     // Act
     let returnData = constantStringParsing.getConstantName(
@@ -1356,7 +1362,7 @@ describe(tst_con.cgetConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1368,7 +1374,7 @@ describe(tst_con.cgetConstantName, () => {
   test(tst_con.cgetConstantName_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cSystem;
-    let inputMetaData = "dfxg24346dfg";    
+    let inputMetaData = data_con.stringRandomText;    
 
     // Act
     let returnData = constantStringParsing.getConstantName(
@@ -1377,7 +1383,7 @@ describe(tst_con.cgetConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1398,7 +1404,7 @@ describe(tst_con.cgetConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1419,7 +1425,7 @@ describe(tst_con.cgetConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1440,7 +1446,7 @@ describe(tst_con.cgetConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1461,7 +1467,7 @@ describe(tst_con.cgetConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 });
 
@@ -1480,7 +1486,7 @@ describe(tst_con.cfindConstantName, () => {
   test(tst_con.cfindConstantName_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
 
     // Act
     let returnData = constantStringParsing.findConstantName(
@@ -1489,7 +1495,7 @@ describe(tst_con.cfindConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1500,8 +1506,8 @@ describe(tst_con.cfindConstantName, () => {
    */
   test(tst_con.cfindConstantName_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';    
 
     // Act
     let returnData = constantStringParsing.findConstantName(
@@ -1510,7 +1516,7 @@ describe(tst_con.cfindConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1522,7 +1528,7 @@ describe(tst_con.cfindConstantName, () => {
   test(tst_con.cfindConstantName_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cSystem;
-    let inputMetaData = "dfxg24346dfg";    
+    let inputMetaData = data_con.stringRandomText;    
 
     // Act
     let returnData = constantStringParsing.findConstantName(
@@ -1531,7 +1537,7 @@ describe(tst_con.cfindConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1552,7 +1558,7 @@ describe(tst_con.cfindConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1573,7 +1579,7 @@ describe(tst_con.cfindConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1594,7 +1600,7 @@ describe(tst_con.cfindConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1615,7 +1621,7 @@ describe(tst_con.cfindConstantName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 });
 
@@ -1634,8 +1640,8 @@ describe(tst_con.cisConstantTypeValid, () => {
   test(tst_con.cisConstantTypeValid_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";    
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let inputMetaData = '';    
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
@@ -1655,9 +1661,9 @@ describe(tst_con.cisConstantTypeValid, () => {
    */
   test(tst_con.cisConstantTypeValid_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = wrd.cWorld;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
@@ -1678,8 +1684,8 @@ describe(tst_con.cisConstantTypeValid, () => {
   test(tst_con.cisConstantTypeValid_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let inputMetaData = data_con.stringRandomText;  
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
@@ -1701,7 +1707,7 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
@@ -1723,7 +1729,7 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
@@ -1745,7 +1751,7 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
@@ -1767,7 +1773,7 @@ describe(tst_con.cisConstantTypeValid, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.isConstantTypeValid(
@@ -1795,8 +1801,8 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
   test(tst_con.cconvertConstantTypeToConstantPrefix_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";    
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let inputMetaData = '';    
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
@@ -1816,9 +1822,9 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
    */
   test(tst_con.cconvertConstantTypeToConstantPrefix_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = wrd.cWorld;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
@@ -1827,7 +1833,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe("dfxg24346dfg");
+    expect(returnData).toBe(data_con.stringRandomText);
   });
 
   /**
@@ -1839,8 +1845,8 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
   test(tst_con.cconvertConstantTypeToConstantPrefix_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let inputMetaData = data_con.stringRandomText;  
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
@@ -1862,7 +1868,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
@@ -1884,7 +1890,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = false;
     let inputMetaData = [1,2,3,4,5];  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
@@ -1893,7 +1899,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1906,7 +1912,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
@@ -1928,7 +1934,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.convertConstantTypeToConstantPrefix(
@@ -1956,7 +1962,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
   test(tst_con.cconstantsOptimizedFulfillmentSystem_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
 
     // Act
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
@@ -1965,7 +1971,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1976,7 +1982,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
    */
   test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = wrd.cWorld;  
 
     // Act
@@ -1986,7 +1992,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1998,8 +2004,8 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
   test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    let inputMetaData = data_con.stringRandomText;  
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
@@ -2008,29 +2014,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
-  });
-
-  /**
-   * @function constantsOptimizedFulfillmentSystem_inValidInputDataBoolean
-   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/05/01
-   */
-  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
-
-    // Act    
-    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2043,7 +2027,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
@@ -2052,7 +2036,29 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
+  });
+
+  /**
+   * @function constantsOptimizedFulfillmentSystem_inValidInputDataBoolean
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cconstantsOptimizedFulfillmentSystem_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];  
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
+
+    // Act    
+    let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2065,7 +2071,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = 4567;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
@@ -2074,7 +2080,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2087,7 +2093,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: "World"};
+    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
@@ -2096,7 +2102,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 });
 
@@ -2115,7 +2121,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
   test(tst_con.cconstantsFulfillmentSystem_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";       
+    let inputMetaData = '';       
 
     // Act
     let returnData = constantStringParsing.constantsFulfillmentSystem(
@@ -2135,8 +2141,8 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
    */
   test(tst_con.cconstantsFulfillmentSystem_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";       
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';       
 
     // Act
     let returnData = constantStringParsing.constantsFulfillmentSystem(
@@ -2157,7 +2163,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
   test(tst_con.cconstantsFulfillmentSystem_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";      
+    let inputMetaData = data_con.stringRandomText;      
 
     // Act
     let returnData = constantStringParsing.constantsFulfillmentSystem(
@@ -2269,7 +2275,7 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
   test(tst_con.cvalidateConstantsDataValues_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
 
@@ -2291,8 +2297,8 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
    */
   test(tst_con.cvalidateConstantsDataValues_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";  
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';  
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];  
 
@@ -2315,7 +2321,7 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
   test(tst_con.cvalidateConstantsDataValues_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";  
+    let inputMetaData = data_con.stringRandomText;  
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];  
 
@@ -2437,7 +2443,7 @@ describe(tst_con.cisConstantValid, () => {
   test(tst_con.cisConstantValid_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];
 
@@ -2459,8 +2465,8 @@ describe(tst_con.cisConstantValid, () => {
    */
   test(tst_con.cisConstantValid_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";  
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';  
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];  
 
@@ -2483,7 +2489,7 @@ describe(tst_con.cisConstantValid, () => {
   test(tst_con.cisConstantValid_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = "dfxg24346dfg";  
+    let inputMetaData = data_con.stringRandomText;  
     dataBroker.initializeConstantsValidationData();
     D[sys.cConstantsValidationData][inputData] = [1, 2];  
 

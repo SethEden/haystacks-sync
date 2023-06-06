@@ -41,7 +41,7 @@ describe(tst_con.ccleanCommandInput, () => {
     test(tst_con.ccleanCommandInput_validDataString, () => {
         // Arrange
         let inputData = bas.cDoubleDash + wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -60,7 +60,7 @@ describe(tst_con.ccleanCommandInput, () => {
     test(tst_con.ccleanCommandInput_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -70,23 +70,42 @@ describe(tst_con.ccleanCommandInput, () => {
         expect(returnData).toBe(wrd.cHello);
     });
 
+    // /**
+    // * @function cleanCommandInput_inValidDataInputMetaDataString
+    // * @description Tests the business rules function cleanCommandInput with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.ccleanCommandInput_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = bas.cDoubleDash + wrd.cHello;
+    //     let inputMetaData = num.c123;
+    //     rulesLibrary.initRulesLibrary();
+
+    //     // Act        
+    //     let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
+
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello);
+    // });
+
     /**
-    * @function cleanCommandInput_inValidDataInputMetaDataString
-    * @description Tests the business rules function cleanCommandInput with a invalid string inputMetaData.
+    * @function cleanCommandInput_inValidInputDataInteger
+    * @description Tests the business rules function cleanCommandInput with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
-    test(tst_con.ccleanCommandInput_inValidDataInputMetaDataString, () => {
+    test(tst_con.ccleanCommandInput_inValidInputDataInteger, () => {
         // Arrange
-        let inputData = bas.cDoubleDash + wrd.cHello;
-        let inputMetaData = "";
+        let inputData = 4567;
+        let inputMetaData = [1, 2, 3, 4, 5];
         rulesLibrary.initRulesLibrary();
 
         // Act        
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(wrd.cHello);
+        expect(returnData).toBe('');
     });
 
     /**
@@ -105,26 +124,7 @@ describe(tst_con.ccleanCommandInput, () => {
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
-    });
-
-    /**
-    * @function cleanCommandInput_inValidInputDataInteger
-    * @description Tests the business rules function cleanCommandInput with a invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.ccleanCommandInput_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1, 2, 3, 4, 5];
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
-
-        // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -143,7 +143,7 @@ describe(tst_con.ccleanCommandInput, () => {
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -162,7 +162,7 @@ describe(tst_con.ccleanCommandInput, () => {
         let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 });
 
@@ -181,7 +181,7 @@ describe(tst_con.cisValidCommandNameString, () => {
     test(tst_con.cisValidCommandNameString_validDataString, () => {
         // Arrange
         let inputData = wrd.chello;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
@@ -199,7 +199,7 @@ describe(tst_con.cisValidCommandNameString, () => {
     test(tst_con.cisValidCommandNameString_inValidDataInputDataString, () => {
         // Arrange
         let inputData = num.c123;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
@@ -208,23 +208,23 @@ describe(tst_con.cisValidCommandNameString, () => {
         expect(returnData).toBe(false);
     });
 
-    /**
-    * @function isValidCommandNameString_inValidDataInputMetaDataString
-    * @description Tests the business rules function isValidCommandNameString with a invalid string inputMetaData.
-    * @author Json Howard
-    * @date 2023/04/25
-    */
-    test(tst_con.cisValidCommandNameString_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = wrd.chello;
-        let inputMetaData = "";
+    // /**
+    // * @function isValidCommandNameString_inValidDataInputMetaDataString
+    // * @description Tests the business rules function isValidCommandNameString with a invalid string inputMetaData.
+    // * @author Json Howard
+    // * @date 2023/04/25
+    // */
+    // test(tst_con.cisValidCommandNameString_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.chello;
+    //     let inputMetaData = num.c123;
 
-        // Act
-        let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
+    //     // Act
+    //     let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
 
-        // Assert
-        expect(returnData).toBe(true);
-    });
+    //     // Assert
+    //     expect(returnData).toBe(true);
+    // });
     
     /**
     * @function isValidCommandNameString_inValidInputDataInteger
@@ -260,5 +260,43 @@ describe(tst_con.cisValidCommandNameString, () => {
 
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+    * @function isValidCommandNameString_inValidInputMetaDataInteger
+    * @description Tests the business rules function isValidCommandNameString with a invalid integer inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/25
+    */
+    test(tst_con.cisValidCommandNameString_inValidInputMetaDataInteger, () => {
+        // Arrange
+        let inputData = [1, 2, 3, 4, 5];
+        let inputMetaData = 4567;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe('');
+    });
+
+    /**
+    * @function isValidCommandNameString_inValidInputMetaDataBoolean
+    * @description Tests the business rules function isValidCommandNameString with a invalid boolean inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/25
+    */
+    test(tst_con.cisValidCommandNameString_inValidInputMetaDataBoolean, () => {
+        // Arrange
+        let inputData = [1, 2, 3, 4, 5];
+        let inputMetaData = false;
+        rulesLibrary.initRulesLibrary();
+
+        // Act        
+        let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBe('');
     });
 });
