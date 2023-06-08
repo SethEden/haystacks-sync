@@ -7,6 +7,7 @@
  * @requires module:dataBroker
  * @requires module:dataStringParsing
  * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/dataStringParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -20,6 +21,7 @@
 import dataBroker from "../../../../../../src/brokers/dataBroker.js";
 import dataStringParsing from "../../../../../../src/businessRules/rules/stringParsing/dataStringParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/stringParsing/dataStringParsing.js';
 import * as tst_con from "../../../constants/test.constants.js";
 
@@ -45,7 +47,7 @@ describe(tst_con.cgetAttributeName, () => {
   test(tst_con.cgetAttributeName_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
-    let inputMetaData = "";
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -66,8 +68,8 @@ describe(tst_con.cgetAttributeName, () => {
    */
   test(tst_con.cgetAttributeName_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -77,7 +79,7 @@ describe(tst_con.cgetAttributeName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("dfxg24346dfg");
+    expect(returnData).toBe(data_con.stringRandomText);
   });
 
   /**
@@ -89,7 +91,7 @@ describe(tst_con.cgetAttributeName, () => {
   test(tst_con.cgetAttributeName_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
-    let inputMetaData = "dfxg24346dfg";
+    let inputMetaData = data_con.stringRandomText;
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -101,27 +103,6 @@ describe(tst_con.cgetAttributeName, () => {
     // Assert
     expect(returnData).toBe(wrd.cHello);
   });
-
-  /**
-   * @function getAttributeName_inValidInputDataBoolean
-   * @description Tests the business rules function getAttributeName with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/04/27
-   */
-  test(tst_con.cgetAttributeName_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-
-    // Act
-    let returnData = dataStringParsing.getAttributeName(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe(false);
-  });  
 
   /**
    * @function getAttributeName_inValidInputDataInteger
@@ -143,6 +124,27 @@ describe(tst_con.cgetAttributeName, () => {
     // Assert
     expect(returnData).toBe(false);
   }); 
+
+  /**
+   * @function getAttributeName_inValidInputDataBoolean
+   * @description Tests the business rules function getAttributeName with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/04/27
+   */
+  test(tst_con.cgetAttributeName_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getAttributeName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });  
 
   /**
    * @function getAttributeName_inValidInputMetaDataInteger
@@ -190,6 +192,7 @@ describe(tst_con.cgetAttributeName, () => {
 /**
  * @function getAttributeValue
  * @description Tests the positive and negative test cases of the getAttributeValue
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.cgetAttributeValue, () => {
@@ -202,7 +205,28 @@ describe(tst_con.cgetAttributeValue, () => {
     test(tst_con.cgetAttributeValue_validDataString, () => {
       // Arrange
       let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
-      let inputMetaData = "";
+      let inputMetaData = '';
+  
+      // Act
+      let returnData = dataStringParsing.getAttributeValue(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(wrd.cWorld);
+    }); 
+
+    /**
+     * @function getAttributeValue_inValidDataInputDataString
+     * @description Tests the business rules function getAttributeValue with a invalid inputData.
+     * @author Json Howard
+     * @date 2023/04/28
+     */
+    test(tst_con.cgetAttributeValue_inValidDataInputDataString, () => {
+      // Arrange
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
   
       // Act
       let returnData = dataStringParsing.getAttributeValue(
@@ -223,7 +247,7 @@ describe(tst_con.cgetAttributeValue, () => {
     test(tst_con.cgetAttributeValue_inValidDataInputMetaDataString, () => {
       // Arrange
       let inputData = wrd.cHello + bas.cColon + wrd.cWorld;
-      let inputMetaData = "dfxg24346dfg";
+      let inputMetaData = data_con.stringRandomText;
   
       // Act
       let returnData = dataStringParsing.getAttributeValue(
@@ -235,6 +259,27 @@ describe(tst_con.cgetAttributeValue, () => {
       expect(returnData).toBe(wrd.cWorld);
     }); 
 
+      /**
+     * @function getAttributeValue_inValidInputDataInteger
+     * @description Tests the business rules function getAttributeValue with a invalid integer inputData.
+     * @author Json Howard
+     * @date 2023/04/28
+     */
+      test(tst_con.cgetAttributeValue_inValidInputDataInteger, () => {
+        // Arrange
+        let inputData = 4567;
+        let inputMetaData = [1,2,3,4,5];
+    
+        // Act
+        let returnData = dataStringParsing.getAttributeValue(
+          inputData,
+          inputMetaData
+        );
+    
+        // Assert
+        expect(returnData).toBe(false);
+      });
+
     /**
      * @function getAttributeValue_inValidInputDataBoolean
      * @description Tests the business rules function getAttributeValue with a invalid boolean inputData.
@@ -244,27 +289,6 @@ describe(tst_con.cgetAttributeValue, () => {
     test(tst_con.cgetAttributeValue_inValidInputDataBoolean, () => {
       // Arrange
       let inputData = false;
-      let inputMetaData = [1,2,3,4,5];
-  
-      // Act
-      let returnData = dataStringParsing.getAttributeValue(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-    });
-
-    /**
-     * @function getAttributeValue_inValidInputDataInteger
-     * @description Tests the business rules function getAttributeValue with a invalid integer inputData.
-     * @author Json Howard
-     * @date 2023/04/28
-     */
-    test(tst_con.cgetAttributeValue_inValidInputDataInteger, () => {
-      // Arrange
-      let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];
   
       // Act
@@ -323,6 +347,7 @@ describe(tst_con.cgetAttributeValue, () => {
 /**
  * @function getValueFromAssignmentOperationString
  * @description Tests the positive and negative test cases of the getValueFromAssignmentOperationString
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.cgetValueFromAssignmentOperationString, () => {
@@ -335,7 +360,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
   test(tst_con.cgetValueFromAssignmentOperationString_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cEqual + wrd.cWorld;
-    let inputMetaData = "";
+    let inputMetaData = '';
 
     // Act
     let returnData = dataStringParsing.getValueFromAssignmentOperationString(
@@ -345,6 +370,27 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 
     // Assert
     expect(returnData).toBe(wrd.cWorld);
+  }); 
+
+  /**
+   * @function getValueFromAssignmentOperationString_inValidDataInputDataString
+   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid string inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetValueFromAssignmentOperationString_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
+
+    // Act
+    let returnData = dataStringParsing.getValueFromAssignmentOperationString(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
   }); 
 
   /**
@@ -356,7 +402,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
   test(tst_con.cgetValueFromAssignmentOperationString_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cEqual + wrd.cWorld;
-    let inputMetaData = "dfxg24346dfg";
+    let inputMetaData = data_con.stringRandomText;
 
     // Act
     let returnData = dataStringParsing.getValueFromAssignmentOperationString(
@@ -369,14 +415,14 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
   }); 
 
   /**
-   * @function getValueFromAssignmentOperationString_inValidInputDataBoolean
-   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid boolean inputData.
+   * @function getValueFromAssignmentOperationString_inValidInputDataInteger
+   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid integer inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
-  test(tst_con.cgetValueFromAssignmentOperationString_inValidInputDataBoolean, () => {
+  test(tst_con.cgetValueFromAssignmentOperationString_inValidInputDataInteger, () => {
     // Arrange
-    let inputData = false;
+    let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];
 
     // Act
@@ -390,35 +436,14 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
   }); 
 
   /**
-   * @function getValueFromAssignmentOperationString_inValidDataInputDataString
-   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid string inputData.
+   * @function getValueFromAssignmentOperationString_inValidInputDataBoolean
+   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid boolean inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
-  test(tst_con.cgetValueFromAssignmentOperationString_inValidDataInputDataString, () => {
+  test(tst_con.cgetValueFromAssignmentOperationString_inValidInputDataBoolean, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
-
-    // Act
-    let returnData = dataStringParsing.getValueFromAssignmentOperationString(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe(false);
-  }); 
-
-  /**
-   * @function getValueFromAssignmentOperationString_inValidInputDataInteger
-   * @description Tests the business rules function getValueFromAssignmentOperationString with a invalid integer inputData.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.cgetValueFromAssignmentOperationString_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
+    let inputData = false;
     let inputMetaData = [1,2,3,4,5];
 
     // Act
@@ -477,6 +502,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 /**
  * @function getDataCategoryFromDataContextName
  * @description Tests the positive and negative test cases of the getDataCategoryFromDataContextName
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.cgetDataCategoryFromDataContextName, () => {
@@ -489,7 +515,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
   test(tst_con.cgetDataCategoryFromDataContextName_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cUnderscore + wrd.cWorld;
-    let inputMetaData = "";
+    let inputMetaData = '';
 
     // Act
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
@@ -509,8 +535,8 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
    */
   test(tst_con.cgetDataCategoryFromDataContextName_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
 
     // Act
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
@@ -519,7 +545,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("dfxg24346dfg");
+    expect(returnData).toBe(data_con.stringRandomText);
   });
 
   /**
@@ -531,7 +557,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
   test(tst_con.cgetDataCategoryFromDataContextName_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cUnderscore + wrd.cWorld;
-    let inputMetaData = "dfxg24346dfg";
+    let inputMetaData = data_con.stringRandomText;
 
     // Act
     let returnData = dataStringParsing.getDataCategoryFromDataContextName(
@@ -541,27 +567,6 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 
     // Assert
     expect(returnData).toBe(wrd.cHello);
-  });
-
-  /**
-   * @function getDataCategoryFromDataContextName_inValidInputDataBoolean
-   * @description Tests the business rules function getDataCategoryFromDataContextName with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.cgetDataCategoryFromDataContextName_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-
-    // Act
-    let returnData = dataStringParsing.getDataCategoryFromDataContextName(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe("");
   });
 
   /**
@@ -582,7 +587,28 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
+  });
+
+  /**
+   * @function getDataCategoryFromDataContextName_inValidInputDataBoolean
+   * @description Tests the business rules function getDataCategoryFromDataContextName with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryFromDataContextName_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe('');
   });
 
   /**
@@ -603,7 +629,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -624,13 +650,14 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 });
 
 /**
  * @function getDataCategoryDetailNameFromDataContextName
  * @description Tests the positive and negative test cases of the getDataCategoryDetailNameFromDataContextName
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
@@ -643,7 +670,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
   test(tst_con.cgetDataCategoryDetailNameFromDataContextName_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cUnderscore + wrd.cWorld;
-    let inputMetaData = "";
+    let inputMetaData = '';
 
     // Act
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
@@ -663,8 +690,8 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
    */
   test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
 
     // Act
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
@@ -685,7 +712,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
   test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cUnderscore + wrd.cWorld;
-    let inputMetaData = "dfxg24346dfg";
+    let inputMetaData = data_con.stringRandomText;
 
     // Act
     let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
@@ -695,48 +722,6 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
 
     // Assert
     expect(returnData).toBe(wrd.cWorld);
-  }); 
-
-  /**
-   * @function getDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean
-   * @description Tests the business rules function getDataCategoryDetailNameFromDataContextName with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-
-    // Act
-    let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe("");
-  }); 
-
-  /**
-   * @function getDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean
-   * @description Tests the business rules function getDataCategoryDetailNameFromDataContextName with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-
-    // Act
-    let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe("");
   }); 
 
   /**
@@ -757,7 +742,28 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
+  }); 
+
+  /**
+   * @function getDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean
+   * @description Tests the business rules function getDataCategoryDetailNameFromDataContextName with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getDataCategoryDetailNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe('');
   }); 
 
   /**
@@ -778,7 +784,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   }); 
 
   /**
@@ -799,13 +805,14 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   }); 
 });
 
 /**
  * @function getKeywordNameFromDataContextName
  * @description Tests the positive and negative test cases of the getKeywordNameFromDataContextName
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.cgetKeywordNameFromDataContextName, () => {
@@ -818,7 +825,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
   test(tst_con.cgetKeywordNameFromDataContextName_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cUnderscore + wrd.cWorld + bas.cUnderscore + wrd.cUS;
-    let inputMetaData = "";
+    let inputMetaData = '';
 
     // Act
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
@@ -838,8 +845,8 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
    */
   test(tst_con.cgetKeywordNameFromDataContextName_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
 
     // Act
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
@@ -860,7 +867,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
   test(tst_con.cgetKeywordNameFromDataContextName_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cUnderscore + wrd.cWorld + bas.cUnderscore + wrd.cUS;
-    let inputMetaData = "dfxg24346dfg";
+    let inputMetaData = data_con.stringRandomText;
 
     // Act
     let returnData = dataStringParsing.getKeywordNameFromDataContextName(
@@ -871,27 +878,6 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     // Assert
     expect(returnData).toBe(wrd.cUS);
   }); 
-
-  /**
-   * @function getKeywordNameFromDataContextName_inValidInputDataBoolean
-   * @description Tests the business rules function getKeywordNameFromDataContextName with a invalid string inputData.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.cgetKeywordNameFromDataContextName_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-
-    // Act
-    let returnData = dataStringParsing.getKeywordNameFromDataContextName(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe("");
-  });
 
   /**
    * @function getKeywordNameFromDataContextName_inValidInputDataInteger
@@ -911,7 +897,28 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
+  });
+
+  /**
+   * @function getKeywordNameFromDataContextName_inValidInputDataBoolean
+   * @description Tests the business rules function getKeywordNameFromDataContextName with a invalid string inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cgetKeywordNameFromDataContextName_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1,2,3,4,5];
+
+    // Act
+    let returnData = dataStringParsing.getKeywordNameFromDataContextName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe('');
   });
 
   /**
@@ -932,7 +939,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -953,13 +960,14 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 });
 
 /**
  * @function loadDataFile
  * @description Tests the positive and negative test cases of the loadDataFile
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.cloadDataFile, () => {
@@ -971,8 +979,8 @@ describe(tst_con.cloadDataFile, () => {
    */
   test(tst_con.cloadDataFile_validDataString, () => {
     // Arrange
-    let inputData = obj_con.dataStringParsingXmlPath();
-    let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = 'constantsValidation.testData';    
     dataBroker.setupDataStorage(false);
 
     // Act    
@@ -982,7 +990,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe('???');
   });  
 
   /**
@@ -993,8 +1001,8 @@ describe(tst_con.cloadDataFile, () => {
    */
   test(tst_con.cloadDataFile_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = 'configuration.controllers.chiefCommander.myDebugSetting';    
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = 'constantsValidation.testData';    
     dataBroker.setupDataStorage(false);
 
     // Act    
@@ -1004,7 +1012,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe('???');
   });  
 
   /**
@@ -1015,52 +1023,8 @@ describe(tst_con.cloadDataFile, () => {
    */
   test(tst_con.cloadDataFile_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.dataStringParsingXmlPath();
-    let inputMetaData = 'dfxg24346dfg';    
-    dataBroker.setupDataStorage(false);
-
-    // Act    
-    let returnData = dataStringParsing.loadDataFile(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBeTruthy();
-  }); 
-
-  /**
-   * @function loadDataFile_inValidInputMetaDataInteger
-   * @description Tests the business rules function loadDataFile with a invalid integer inputMetaData.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.cloadDataFile_inValidInputMetaDataInteger, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = 4567;    
-    dataBroker.setupDataStorage(false);
-
-    // Act    
-    let returnData = dataStringParsing.loadDataFile(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBeTruthy();
-  }); 
-
-  /**
-   * @function loadDataFile_inValidInputMetaDataBoolean
-   * @description Tests the business rules function loadDataFile with a invalid boolean inputMetaData.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.cloadDataFile_inValidInputMetaDataBoolean, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = false;    
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = data_con.stringRandomText;    
     dataBroker.setupDataStorage(false);
 
     // Act    
@@ -1115,12 +1079,57 @@ describe(tst_con.cloadDataFile, () => {
 
     // Assert
     expect(returnData).toBeTruthy();
+  });
+
+  /**
+   * @function loadDataFile_inValidInputMetaDataInteger
+   * @description Tests the business rules function loadDataFile with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cloadDataFile_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;    
+    dataBroker.setupDataStorage(false);
+
+    // Act    
+    let returnData = dataStringParsing.loadDataFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
   }); 
+
+  /**
+   * @function loadDataFile_inValidInputMetaDataBoolean
+   * @description Tests the business rules function loadDataFile with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.cloadDataFile_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;    
+    dataBroker.setupDataStorage(false);
+
+    // Act    
+    let returnData = dataStringParsing.loadDataFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  });  
 });
 
 /**
  * @function saveDataFile
  * @description Tests the positive and negative test cases of the saveDataFile
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.csaveDataFile, () => {
@@ -1132,7 +1141,7 @@ describe(tst_con.csaveDataFile, () => {
    */
   test(tst_con.csaveDataFile_validDataString, () => {
     // Arrange
-    let inputData = obj_con.dataStringParsingXmlPath();
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
     let inputMetaData = {};    
 
     // Act
@@ -1153,7 +1162,7 @@ describe(tst_con.csaveDataFile, () => {
    */
   test(tst_con.csaveDataFile_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
+    let inputData = data_con.stringRandomText;
     let inputMetaData = {};    
 
     // Act
@@ -1174,8 +1183,29 @@ describe(tst_con.csaveDataFile, () => {
    */
   test(tst_con.csaveDataFile_inValidDataInputMetaDataString, () => {
     // Arrange
-    let inputData = obj_con.dataStringParsingXmlPath();
-    let inputMetaData = "dfxg24346dfg";   
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = data_con.stringRandomText;   
+
+    // Act
+    let returnData = dataStringParsing.saveDataFile(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function saveDataFile_inValidInputDataInteger
+   * @description Tests the business rules function saveDataFile with a invalid integer inputData.
+   * @author Json Howard
+   * @date 2023/04/28
+   */
+  test(tst_con.csaveDataFile_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];   
 
     // Act
     let returnData = dataStringParsing.saveDataFile(
@@ -1249,32 +1279,12 @@ describe(tst_con.csaveDataFile, () => {
     // Assert
     expect(returnData).toBe(false);
   });
-
-  /**
-   * @function saveDataFile_inValidInputDataInteger
-   * @description Tests the business rules function saveDataFile with a invalid integer inputData.
-   * @author Json Howard
-   * @date 2023/04/28
-   */
-  test(tst_con.csaveDataFile_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];   
-
-    // Act
-    let returnData = dataStringParsing.saveDataFile(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe(false);
-  });
 });
 
 /**
  * @function getUserNameFromEmail
  * @description Tests the positive and negative test cases of the getUserNameFromEmail
+ * @author Json Howard
  * @date 2023/04/28
  */
 describe(tst_con.cgetUserNameFromEmail, () => {
@@ -1287,7 +1297,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
   test(tst_con.cgetUserNameFromEmail_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cAt + wrd.cWorld;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
 
     // Act
     let returnData = dataStringParsing.getUserNameFromEmail(
@@ -1307,8 +1317,8 @@ describe(tst_con.cgetUserNameFromEmail, () => {
    */
   test(tst_con.cgetUserNameFromEmail_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";    
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';    
 
     // Act
     let returnData = dataStringParsing.getUserNameFromEmail(
@@ -1317,7 +1327,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });  
 
   /**
@@ -1329,7 +1339,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
   test(tst_con.cgetUserNameFromEmail_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cAt + wrd.cWorld;
-    let inputMetaData = "dfxg24346dfg";    
+    let inputMetaData = data_con.stringRandomText;    
 
     // Act
     let returnData = dataStringParsing.getUserNameFromEmail(
@@ -1342,14 +1352,14 @@ describe(tst_con.cgetUserNameFromEmail, () => {
   }); 
 
   /**
-   * @function getUserNameFromEmail_inValidInputDataBoolean
-   * @description Tests the business rules function getUserNameFromEmail with a invalid boolean input.
+   * @function getUserNameFromEmail_inValidInputDataInteger
+   * @description Tests the business rules function getUserNameFromEmail with a invalid integer input.
    * @author Json Howard
    * @date 2023/04/28
    */
-  test(tst_con.cgetUserNameFromEmail_inValidInputDataBoolean, () => {
+  test(tst_con.cgetUserNameFromEmail_inValidInputDataInteger, () => {
     // Arrange
-    let inputData = false;
+    let inputData = 4567;
     let inputMetaData = [1,2,3,4,5];    
 
     // Act
@@ -1361,16 +1371,16 @@ describe(tst_con.cgetUserNameFromEmail, () => {
     // Assert
     expect(returnData).toBe(false);
   });
-  
+
   /**
-   * @function getUserNameFromEmail_inValidInputDataInteger
-   * @description Tests the business rules function getUserNameFromEmail with a invalid integer input.
+   * @function getUserNameFromEmail_inValidInputDataBoolean
+   * @description Tests the business rules function getUserNameFromEmail with a invalid boolean input.
    * @author Json Howard
    * @date 2023/04/28
    */
-  test(tst_con.cgetUserNameFromEmail_inValidInputDataInteger, () => {
+  test(tst_con.cgetUserNameFromEmail_inValidInputDataBoolean, () => {
     // Arrange
-    let inputData = 4567;
+    let inputData = false;
     let inputMetaData = [1,2,3,4,5];    
 
     // Act

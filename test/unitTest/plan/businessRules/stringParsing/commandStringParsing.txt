@@ -16,6 +16,7 @@ testName: cleanCommandInput_inValidDataInputMetaDataString
 input inputData: string (The string that should have the "--" removed from it) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
+@NOTE Not implemented because inputMetaData is not used.
 
 testName: cleanCommandInput_inValidInputDataInteger
 input inputData: integer (4567)
@@ -57,6 +58,7 @@ testName: isValidCommandNameString_inValidDataInputMetaDataString
 input inputData: string (The string that should be evaluated if it is sufficiently formatted such that it could qualify as a command name) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?
+@NOTE Not implemented because inputMetaData is not used.
 
 testName: isValidCommandNameString_inValidInputDataInteger
 input inputData: integer (4567)

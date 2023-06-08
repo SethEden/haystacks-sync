@@ -169,6 +169,7 @@ describe(tst_con.ccleanCommandInput, () => {
 /**
  * @function isValidCommandNameString
  * @description Tests the positive and negative test cases of the isValidCommandNameString
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cisValidCommandNameString, () => {

@@ -166,6 +166,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 /**
  * @function getWordsArrayFromString
  * @description Tests the positive and negative test cases of the getWordsArrayFromString
+ * @author Json Howard
  * @date 2023/04/21
  */
 describe(tst_con.cgetWordsArrayFromString, () => {
@@ -306,6 +307,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 /**
  * @function recombineStringArrayWithSpaces
  * @description Tests the positive and negative test cases of the recombineStringArrayWithSpaces
+ * @author Json Howard
  * @date 2023/04/21
  */
 describe(tst_con.crecombineStringArrayWithSpaces, () => {
@@ -475,6 +477,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 /**
  * @function convertArrayToCamelCaseString
  * @description Tests the positive and negative test cases of the convertArrayToCamelCaseString
+ * @author Json Howard
  * @date 2023/04/21
  */
 describe(tst_con.cconvertArrayToCamelCaseString, () => {
@@ -644,6 +647,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 /**
  * @function doesArrayContainLowerCaseConsolidatedString
  * @description Tests the positive and negative test cases of the doesArrayContainLowerCaseConsolidatedString
+ * @author Json Howard
  * @date 2023/04/21
  */
 describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
@@ -813,6 +817,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 /**
  * @function ascertainMatchingElements
  * @description Tests the positive and negative test cases of the ascertainMatchingElements
+ * @author Json Howard
  * @date 2023/04/21
  */
 describe(tst_con.cascertainMatchingElements, () => {

@@ -162,6 +162,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 /**
  * @function swapForwardSlashToBackSlash
  * @description Tests the positive and negative test cases of the swapForwardSlashToBackSlash
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cswapForwardSlashToBackSlash, () => {
@@ -302,6 +303,7 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
 /**
  * @function swapBackSlashToForwardSlash
  * @description Tests the positive and negative test cases of the swapBackSlashToForwardSlash
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cswapBackSlashToForwardSlash, () => {
@@ -442,6 +444,7 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
 /**
  * @function swapDoubleForwardSlashToSingleForwardSlash
  * @description Tests the positive and negative test cases of the swapDoubleForwardSlashToSingleForwardSlash
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
@@ -582,6 +585,7 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
 /**
  * @function swapDoubleBackSlashToSingleBackSlash
  * @description Tests the positive and negative test cases of the swapDoubleBackSlashToSingleBackSlash
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
@@ -722,6 +726,7 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
 /**
  * @function replaceSpacesWithPlus
  * @description Tests the positive and negative test cases of the replaceSpacesWithPlus
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.creplaceSpacesWithPlus, () => {
@@ -855,6 +860,7 @@ describe(tst_con.creplaceSpacesWithPlus, () => {
 /**
  * @function replaceColonWithUnderscore
  * @description Tests the positive and negative test cases of the replaceColonWithUnderscore
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.creplaceColonWithUnderscore, () => {
@@ -988,6 +994,7 @@ describe(tst_con.creplaceColonWithUnderscore, () => {
 /**
  * @function cleanCarriageReturnFromString
  * @description Tests the positive and negative test cases of the cleanCarriageReturnFromString
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.ccleanCarriageReturnFromString, () => {
@@ -1121,6 +1128,7 @@ describe(tst_con.ccleanCarriageReturnFromString, () => {
 /**
  * @function convertStringToLowerCase
  * @description Tests the positive and negative test cases of the convertStringToLowerCase
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cconvertStringToLowerCase, () => {
@@ -1194,7 +1202,7 @@ describe(tst_con.cconvertStringToLowerCase, () => {
 
         // Assert
         expect(returnData).toBe(false);
-    });ыыыыы
+    });
 
     /**
     * @function convertStringToLowerCase_inValidInputDataBoolean
@@ -1254,6 +1262,7 @@ describe(tst_con.cconvertStringToLowerCase, () => {
 /**
  * @function convertStringToUpperCase
  * @description Tests the positive and negative test cases of the convertStringToUpperCase
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cconvertStringToUpperCase, () => {
@@ -1387,6 +1396,7 @@ describe(tst_con.cconvertStringToUpperCase, () => {
 /**
  * @function doesStringContainUpperCaseCharacter
  * @description Tests the positive and negative test cases of the doesStringContainUpperCaseCharacter
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cdoesStringContainUpperCaseCharacter, () => {
@@ -1520,6 +1530,7 @@ describe(tst_con.cdoesStringContainUpperCaseCharacter, () => {
 /**
  * @function doesStringContainLowerCaseCharacter
  * @description Tests the positive and negative test cases of the doesStringContainLowerCaseCharacter
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cdoesStringContainLowerCaseCharacter, () => {
@@ -1653,6 +1664,7 @@ describe(tst_con.cdoesStringContainLowerCaseCharacter, () => {
 /**
  * @function isFirstCharacterLowerCase
  * @description Tests the positive and negative test cases of the isFirstCharacterLowerCase
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cisFirstCharacterLowerCase, () => {
@@ -1786,6 +1798,7 @@ describe(tst_con.cisFirstCharacterLowerCase, () => {
 /**
  * @function isFirstCharacterUpperCase
  * @description Tests the positive and negative test cases of the isFirstCharacterUpperCase
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.cisFirstCharacterUpperCase, () => {
@@ -1919,6 +1932,7 @@ describe(tst_con.cisFirstCharacterUpperCase, () => {
 /**
  * @function replaceCharacterAtIndexOfString
  * @description Tests the positive and negative test cases of the replaceCharacterAtIndexOfString
+ * @author Json Howard
  * @date 2023/04/25
  */
 describe(tst_con.creplaceCharacterAtIndexOfString, () => {

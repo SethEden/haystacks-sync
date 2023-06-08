@@ -204,6 +204,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 /**
  * @function searchForPatternsInStringArray
  * @description Tests the positive and negative test cases of the searchForPatternsInStringArray
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.csearchForPatternsInStringArray, () => {
@@ -382,6 +383,7 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
 /**
  * @function validatePatternsThatNeedImplementation
  * @description Tests the positive and negative test cases of the validatePatternsThatNeedImplementation
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {

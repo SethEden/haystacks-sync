@@ -6,6 +6,7 @@
  * @description Unit tests for the fileStringParsing.js
  * @requires module:fileStringParsing
  * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker.js
  * @requires module:testData/fileStringParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -18,6 +19,7 @@
 // Internal imports
 import fileStringParsing from "../../../../../../src/businessRules/rules/stringParsing/fileStringParsing.js";
 import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/stringParsing/fileStringParsing.js';
 import * as tst_con from "../../../constants/test.constants.js";
 
@@ -42,8 +44,8 @@ describe(tst_con.cgetFileNameFromPath, () => {
    */
   test(tst_con.cgetFileNameFromPath_validDataString, () => {
     // Arrange
-    let inputData = obj_con.fileStringParsingXmlPath();
-    let inputMetaData = "";
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act      
@@ -64,8 +66,8 @@ describe(tst_con.cgetFileNameFromPath, () => {
    */
   test(tst_con.cgetFileNameFromPath_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomTextq;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act        
@@ -75,7 +77,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
       );
   
       // Assert
-      expect(returnData).toBe("dfxg24346dfg");
+      expect(returnData).toBe(data_con.stringRandomText);
     });
 
   /**
@@ -86,8 +88,8 @@ describe(tst_con.cgetFileNameFromPath, () => {
    */
   test(tst_con.cgetFileNameFromPath_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act        
@@ -98,28 +100,6 @@ describe(tst_con.cgetFileNameFromPath, () => {
   
       // Assert
       expect(returnData).toBe(wrd.csystem + bas.cDot + gen.cxml);
-  });
-
-  /**
-   * @function getFileNameFromPath_inValidInputDataBoolean
-   * @description Tests the business rules function getFileNameFromPath with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/05/02
-   */
-  test(tst_con.cgetFileNameFromPath_inValidInputDataBoolean, () => {
-      // Arrange
-      let inputData = false;
-      let inputMetaData = [1,2,3,4,5];
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileStringParsing.getFileNameFromPath(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
   });
 
   /**
@@ -142,6 +122,28 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
     // Assert
     expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function getFileNameFromPath_inValidInputDataBoolean
+   * @description Tests the business rules function getFileNameFromPath with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileNameFromPath_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = fileStringParsing.getFileNameFromPath(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
   });
 
   /**
@@ -192,22 +194,67 @@ describe(tst_con.cgetFileNameFromPath, () => {
 /**
  * @function getFileExtension
  * @description Tests the positive and negative test cases of the getFileExtension
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cgetFileExtension, () => {
-    /**
-     * @function getFileExtension_validDataString
-     * @description Tests the business rules function getFileExtension with a valid input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFileExtension_validDataString, () => {
+  /**
+   * @function getFileExtension_validDataString
+   * @description Tests the business rules function getFileExtension with a valid input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_validDataString, () => {
+    // Arrange
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = fileStringParsing.getFileExtension(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(bas.cDot + gen.cxml);
+  });
+
+  /**
+   * @function getFileExtension_inValidDataInputDataString
+   * @description Tests the business rules function getFileExtension with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
-      // Act      
+      // Act        
+      let returnData = fileStringParsing.getFileExtension(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe('');
+    });
+
+  /**
+   * @function getFileExtension_inValidDataInputMetaDataString
+   * @description Tests the business rules function getFileExtension with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_inValidDataInputMetaDataString, () => {
+      // Arrange
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = data_con.stringRandomText;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
       let returnData = fileStringParsing.getFileExtension(
         inputData,
         inputMetaData
@@ -215,83 +262,39 @@ describe(tst_con.cgetFileExtension, () => {
   
       // Assert
       expect(returnData).toBe(bas.cDot + gen.cxml);
-    });
+  });
 
-    /**
-     * @function getFileExtension_inValidDataInputDataString
-     * @description Tests the business rules function getFileExtension with a invalid string input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFileExtension_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.getFileExtension(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe("");
-      });
+  /**
+   * @function getFileExtension_inValidInputDataInteger
+   * @description Tests the business rules function getFileExtension with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function getFileExtension_inValidDataInputMetaDataString
-     * @description Tests the business rules function getFileExtension with a invalid string inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFileExtension_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = obj_con.fileStringParsingXmlPath();
-        let inputMetaData = "dfxg24346dfg";
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.getFileExtension(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(bas.cDot + gen.cxml);
-    });
+    // Act        
+    let returnData = fileStringParsing.getFileExtension(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function getFileExtension_inValidInputDataBoolean
-     * @description Tests the business rules function getFileExtension with a invalid boolean input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFileExtension_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = [1,2,3,4,5];
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.getFileExtension(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(false);
-    });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-    /**
-     * @function getFileExtension_inValidInputDataInteger
-     * @description Tests the business rules function getFileExtension with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFileExtension_inValidInputDataInteger, () => {
+  /**
+   * @function getFileExtension_inValidInputDataBoolean
+   * @description Tests the business rules function getFileExtension with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_inValidInputDataBoolean, () => {
       // Arrange
-      let inputData = 4567;
+      let inputData = false;
       let inputMetaData = [1,2,3,4,5];
       rulesLibrary.initRulesLibrary();
   
@@ -303,72 +306,117 @@ describe(tst_con.cgetFileExtension, () => {
   
       // Assert
       expect(returnData).toBe(false);
-    });
+  });
 
-    /**
-     * @function getFileExtension_inValidInputMetaDataInteger
-     * @description Tests the business rules function getFileExtension with a invalid integer inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFileExtension_inValidInputMetaDataInteger, () => {
-      // Arrange
-      let inputData = [1,2,3,4,5];
-      let inputMetaData = 4567;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileStringParsing.getFileExtension(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-    });
+  /**
+   * @function getFileExtension_inValidInputMetaDataInteger
+   * @description Tests the business rules function getFileExtension with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function getFileExtension_inValidInputMetaDataBoolean
-     * @description Tests the business rules function getFileExtension with a invalid boolean inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFileExtension_inValidInputMetaDataBoolean, () => {
-      // Arrange
-      let inputData = [1,2,3,4,5];
-      let inputMetaData = false;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileStringParsing.getFileExtension(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-    });
+    // Act        
+    let returnData = fileStringParsing.getFileExtension(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function getFileExtension_inValidInputMetaDataBoolean
+   * @description Tests the business rules function getFileExtension with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = fileStringParsing.getFileExtension(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
 });
 
 /**
  * @function removeDotFromFileExtension
  * @description Tests the positive and negative test cases of the removeDotFromFileExtension
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cremoveDotFromFileExtension, () => {
-    /**
-     * @function removeDotFromFileExtension_validDataString
-     * @description Tests the business rules function removeDotFromFileExtension with a valid input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cremoveDotFromFileExtension_validDataString, () => {
+  /**
+   * @function removeDotFromFileExtension_validDataString
+   * @description Tests the business rules function removeDotFromFileExtension with a valid input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cremoveDotFromFileExtension_validDataString, () => {
+    // Arrange
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = fileStringParsing.removeDotFromFileExtension(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toContain(wrd.csystem + bas.cDot + gen.cxml);
+  });
+
+  /**
+   * @function removeDotFromFileExtension_inValidDataInputDataString
+   * @description Tests the business rules function removeDotFromFileExtension with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cremoveDotFromFileExtension_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
-      // Act      
+      // Act        
+      let returnData = fileStringParsing.removeDotFromFileExtension(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe("fxg24346dfg");
+    });
+
+  /**
+   * @function removeDotFromFileExtension_inValidDataInputMetaDataString
+   * @description Tests the business rules function removeDotFromFileExtension with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cremoveDotFromFileExtension_inValidDataInputMetaDataString, () => {
+      // Arrange
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = data_con.stringRandomText;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
       let returnData = fileStringParsing.removeDotFromFileExtension(
         inputData,
         inputMetaData
@@ -376,83 +424,40 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
   
       // Assert
       expect(returnData).toContain(wrd.csystem + bas.cDot + gen.cxml);
-    });
+  });
 
-    /**
-     * @function removeDotFromFileExtension_inValidDataInputDataString
-     * @description Tests the business rules function removeDotFromFileExtension with a invalid string input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cremoveDotFromFileExtension_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.removeDotFromFileExtension(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe("fxg24346dfg");
-      });
+  /**
+   * @function getFileExtension_inValidInputDataInteger
+   * @description Tests the business rules function getFileExtension with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cgetFileExtension_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function removeDotFromFileExtension_inValidDataInputMetaDataString
-     * @description Tests the business rules function removeDotFromFileExtension with a invalid string inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cremoveDotFromFileExtension_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = obj_con.fileStringParsingXmlPath();
-        let inputMetaData = "dfxg24346dfg";
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.removeDotFromFileExtension(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toContain(wrd.csystem + bas.cDot + gen.cxml);
-    });
+    // Act        
+    let returnData = fileStringParsing.getFileExtension(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function removeDotFromFileExtension_inValidInputDataBoolean
-     * @description Tests the business rules function removeDotFromFileExtension with a invalid boolean input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cremoveDotFromFileExtension_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = [1,2,3,4,5];
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.removeDotFromFileExtension(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(false);
-    });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-    /**
-     * @function removeDotFromFileExtension_inValidInputDataInteger
-     * @description Tests the business rules function removeDotFromFileExtension with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cremoveDotFromFileExtension_inValidInputDataInteger, () => {
+
+  /**
+   * @function removeDotFromFileExtension_inValidInputDataBoolean
+   * @description Tests the business rules function removeDotFromFileExtension with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cremoveDotFromFileExtension_inValidInputDataBoolean, () => {
       // Arrange
-      let inputData = 4567;
+      let inputData = false;
       let inputMetaData = [1,2,3,4,5];
       rulesLibrary.initRulesLibrary();
   
@@ -464,56 +469,57 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
   
       // Assert
       expect(returnData).toBe(false);
-    });
+  });
 
-    /**
-       * @function removeDotFromFileExtension_inValidInputMetaDataInteger
-       * @description Tests the business rules function removeDotFromFileExtension with a invalid integer inputMetaData.
-       * @author Json Howard
-       * @date 2023/05/02
-       */
-    test(tst_con.cremoveDotFromFileExtension_inValidInputMetaDataInteger, () => {
-      // Arrange
-      let inputData = [1,2,3,4,5];
-      let inputMetaData = 4567;
-      rulesLibrary.initRulesLibrary();
-
-      // Act        
-      let returnData = fileStringParsing.removeDotFromFileExtension(
-        inputData,
-        inputMetaData
-      );
-
-      // Assert
-      expect(returnData).toBe(false);
-    });
-
-    /**
-     * @function removeDotFromFileExtension_inValidInputMetaDataBoolean
-     * @description Tests the business rules function removeDotFromFileExtension with a invalid boolean inputMetaData.
+  /**
+     * @function removeDotFromFileExtension_inValidInputMetaDataInteger
+     * @description Tests the business rules function removeDotFromFileExtension with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
-    test(tst_con.cremoveDotFromFileExtension_inValidInputMetaDataBoolean, () => {
-      // Arrange
-      let inputData = [1,2,3,4,5];
-      let inputMetaData = false;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileStringParsing.removeDotFromFileExtension(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-    });
+  test(tst_con.cremoveDotFromFileExtension_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = fileStringParsing.removeDotFromFileExtension(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function removeDotFromFileExtension_inValidInputMetaDataBoolean
+   * @description Tests the business rules function removeDotFromFileExtension with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cremoveDotFromFileExtension_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = fileStringParsing.removeDotFromFileExtension(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(false);
+  });
 });
 
 /**
  * @function removeFileExtensionFromFileName
  * @description Tests the positive and negative test cases of the removeFileExtensionFromFileName
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cremoveFileExtensionFromFileName, () => {
@@ -525,8 +531,8 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
    */
   test(tst_con.cremoveFileExtensionFromFileName_validDataString, () => {
     // Arrange
-    let inputData = obj_con.fileStringParsingXmlPath();
-    let inputMetaData = "";
+    let inputData = './test/unitTest/tests/constants/test.constants.js';
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act      
@@ -547,8 +553,8 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
    */
   test(tst_con.cremoveFileExtensionFromFileName_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act        
@@ -558,7 +564,7 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
       );
   
       // Assert
-      expect(returnData).toBe("dfxg24346dfg");
+      expect(returnData).toBe(data_con.stringRandomText);
     });
 
   /**
@@ -569,8 +575,8 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
    */
   test(tst_con.cremoveFileExtensionFromFileName_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act        
@@ -581,28 +587,6 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
   
       // Assert
       expect(returnData).toContain(wrd.csystem);
-  });
-
-  /**
-   * @function removeFileExtensionFromFileName_inValidInputDataBoolean
-   * @description Tests the business rules function removeFileExtensionFromFileName with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/05/02
-   */
-  test(tst_con.cremoveFileExtensionFromFileName_inValidInputDataBoolean, () => {
-      // Arrange
-      let inputData = false;
-      let inputMetaData = [1,2,3,4,5];
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileStringParsing.removeFileExtensionFromFileName(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
   });
 
   /**
@@ -625,6 +609,28 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
 
     // Assert
     expect(returnData).toBe(false);
+  });
+
+  /**
+   * @function removeFileExtensionFromFileName_inValidInputDataBoolean
+   * @description Tests the business rules function removeFileExtensionFromFileName with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+  test(tst_con.cremoveFileExtensionFromFileName_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = fileStringParsing.removeFileExtensionFromFileName(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
   });
 
   /**
@@ -675,6 +681,7 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
 /**
  * @function ascertainMatchingFilenames
  * @description Tests the positive and negative test cases of the ascertainMatchingFilenames
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cascertainMatchingFilenames, () => {
@@ -686,8 +693,8 @@ describe(tst_con.cascertainMatchingFilenames, () => {
      */
     test(tst_con.cascertainMatchingFilenames_validDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = obj_con.fileStringParsingXmlPath();
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -708,8 +715,8 @@ describe(tst_con.cascertainMatchingFilenames, () => {
      */
     test(tst_con.cascertainMatchingFilenames_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = obj_con.fileStringParsingXmlPath();
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -730,8 +737,8 @@ describe(tst_con.cascertainMatchingFilenames, () => {
      */
     test(tst_con.cascertainMatchingFilenames_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = obj_con.fileStringParsingXmlPath();
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = './test/unitTest/tests/constants/test.constants.js';
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -742,6 +749,28 @@ describe(tst_con.cascertainMatchingFilenames, () => {
     
         // Assert
         expect(returnData).toBe(false);
+    });
+
+    /**
+   * @function ascertainMatchingFilenames_inValidInputDataInteger
+   * @description Tests the business rules function ascertainMatchingFilenames with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/02
+   */
+    test(tst_con.cascertainMatchingFilenames_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = fileStringParsing.ascertainMatchingFilenames(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -764,28 +793,6 @@ describe(tst_con.cascertainMatchingFilenames, () => {
     
         // Assert
         expect(returnData).toBe(false);
-    });
-
-    /**
-     * @function ascertainMatchingFilenames_inValidInputDataInteger
-     * @description Tests the business rules function ascertainMatchingFilenames with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cascertainMatchingFilenames_inValidInputDataInteger, () => {
-      // Arrange
-      let inputData = 4567;
-      let inputMetaData = [1,2,3,4,5];
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileStringParsing.ascertainMatchingFilenames(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
     });
 
     /**
@@ -836,6 +843,7 @@ describe(tst_con.cascertainMatchingFilenames, () => {
 /**
  * @function supportedFileFormatsAre
  * @description Tests the positive and negative test cases of the supportedFileFormatsAre
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.csupportedFileFormatsAre, () => {
@@ -847,8 +855,8 @@ describe(tst_con.csupportedFileFormatsAre, () => {
      */
     test(tst_con.csupportedFileFormatsAre_validDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = obj_con.fileStringParsingXmlPath();
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -858,7 +866,7 @@ describe(tst_con.csupportedFileFormatsAre, () => {
       );
   
       // Assert
-      expect(returnData).toBe("XML, CSV, JSON");
+      expect(returnData).toBe(gen.cXML + bas.cComa + bas.cSpace + gen.cCSV + bas.cComa + bas.cSpace + gen.cJSON);
     });
 
     /**
@@ -869,8 +877,8 @@ describe(tst_con.csupportedFileFormatsAre, () => {
      */
     test(tst_con.csupportedFileFormatsAre_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = obj_con.fileStringParsingXmlPath();
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -880,7 +888,7 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         );
     
         // Assert
-        expect(returnData).toBe("XML, CSV, JSON");
+        expect(returnData).toBe(gen.cXML + bas.cComa + bas.cSpace + gen.cCSV + bas.cComa + bas.cSpace + gen.cJSON);
       });
 
     /**
@@ -891,8 +899,8 @@ describe(tst_con.csupportedFileFormatsAre, () => {
      */
     test(tst_con.csupportedFileFormatsAre_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = obj_con.fileStringParsingXmlPath();
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = './test/unitTest/tests/constants/test.constants.js';
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -902,8 +910,30 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         );
     
         // Assert
-        expect(returnData).toBe("XML, CSV, JSON");
+        expect(returnData).toBe(gen.cXML + bas.cComa + bas.cSpace + gen.cCSV + bas.cComa + bas.cSpace + gen.cJSON);
     });
+
+    /**
+     * @function supportedFileFormatsAre_inValidInputDataInteger
+     * @description Tests the business rules function supportedFileFormatsAre with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.csupportedFileFormatsAre_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = fileStringParsing.supportedFileFormatsAre(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(gen.cXML + bas.cComa + bas.cSpace + gen.cCSV + bas.cComa + bas.cSpace + gen.cJSON);
+  });
 
     /**
      * @function supportedFileFormatsAre_inValidInputDataBoolean
@@ -924,33 +954,11 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         );
     
         // Assert
-        expect(returnData).toBe("XML, CSV, JSON");
+        expect(returnData).toBe(gen.cXML + bas.cComa + bas.cSpace + gen.cCSV + bas.cComa + bas.cSpace + gen.cJSON);
     });
 
     /**
-     * @function supportedFileFormatsAre_inValidInputDataInteger
-     * @description Tests the business rules function supportedFileFormatsAre with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.csupportedFileFormatsAre_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1,2,3,4,5];
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.supportedFileFormatsAre(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe("XML, CSV, JSON");
-    });
-
-    /**
-     * @function supportedFileFormatsAre_inValidInputMetaDataInteger
+     * @function supportediFleFormatsAre_inValidInputMetaDataInteger
      * @description Tests the business rules function supportedFileFormatsAre with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
@@ -968,7 +976,7 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         );
     
         // Assert
-        expect(returnData).toBe("XML, CSV, JSON");
+        expect(returnData).toBe(gen.cXML + bas.cComa + bas.cSpace + gen.cCSV + bas.cComa + bas.cSpace + gen.cJSON);
     });
 
     /**
@@ -990,13 +998,14 @@ describe(tst_con.csupportedFileFormatsAre, () => {
         );
     
         // Assert
-        expect(returnData).toBe("XML, CSV, JSON");
+        expect(returnData).toBe(gen.cXML + bas.cComa + bas.cSpace + gen.cCSV + bas.cComa + bas.cSpace + gen.cJSON);
     });
 });
 
 /**
  * @function removeXnumberOfFoldersFromEndOfPath
  * @description Tests the positive and negative test cases of the removeXnumberOfFoldersFromEndOfPath
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
@@ -1008,8 +1017,8 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
      */
     test(tst_con.cremoveXnumberOfFoldersFromEndOfPath_validDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = obj_con.fileStringParsingXmlPath();
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1019,7 +1028,7 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
       );
   
       // Assert
-      expect(returnData).toBe(obj_con.fileStringParsingXmlPath());
+      expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
     });
 
     /**
@@ -1030,8 +1039,8 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
      */
     test(tst_con.cremoveXnumberOfFoldersFromEndOfPath_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = obj_con.fileStringParsingXmlPath();
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -1041,7 +1050,7 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         );
     
         // Assert
-        expect(returnData).toBe("dfxg24346dfg");
+        expect(returnData).toBe(data_con.stringRandomText);
       });
 
     /**
@@ -1052,8 +1061,8 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
      */
     test(tst_con.cremoveXnumberOfFoldersFromEndOfPath_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = obj_con.fileStringParsingXmlPath();
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = './test/unitTest/tests/constants/test.constants.js';
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -1063,7 +1072,29 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
         );
     
         // Assert
-        expect(returnData).toBe(obj_con.fileStringParsingXmlPath());
+        expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
+    });
+
+      /**
+     * @function removeXnumberOfFoldersFromEndOfPath_inValidInputDataInteger
+     * @description Tests the business rules function removeXnumberOfFoldersFromEndOfPath with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+      test(tst_con.cremoveXnumberOfFoldersFromEndOfPath_inValidInputDataInteger, () => {
+        // Arrange
+        let inputData = 4567;
+        let inputMetaData = [1,2,3,4,5];
+        rulesLibrary.initRulesLibrary();
+    
+        // Act        
+        let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
+          inputData,
+          inputMetaData
+        );
+    
+        // Assert
+        expect(returnData).toBe(4567);
     });
 
     /**
@@ -1086,28 +1117,6 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
     
         // Assert
         expect(returnData).toBe(false);
-    });
-
-    /**
-     * @function removeXnumberOfFoldersFromEndOfPath_inValidInputDataInteger
-     * @description Tests the business rules function removeXnumberOfFoldersFromEndOfPath with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cremoveXnumberOfFoldersFromEndOfPath_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = [1,2,3,4,5];
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = fileStringParsing.removeXnumberOfFoldersFromEndOfPath(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBe(4567);
     });
 
     /**
@@ -1158,6 +1167,7 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
 /**
  * @function getFirstTopLevelFolderFromPath
  * @description Tests the positive and negative test cases of the getFirstTopLevelFolderFromPath
+ * @author Json Howard
  * @date 2023/05/02
  */
 describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
@@ -1169,8 +1179,8 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
      */
     test(tst_con.cgetFirstTopLevelFolderFromPath_validDataString, () => {
       // Arrange
-      let inputData = obj_con.fileStringParsingXmlPath();
-      let inputMetaData = obj_con.fileStringParsingXmlPath();
+      let inputData = './test/unitTest/tests/constants/test.constants.js';
+      let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1191,8 +1201,8 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
      */
     test(tst_con.cgetFirstTopLevelFolderFromPath_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = obj_con.fileStringParsingXmlPath();
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = './test/unitTest/tests/constants/test.constants.js';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -1213,8 +1223,8 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
      */
     test(tst_con.cgetFirstTopLevelFolderFromPath_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = obj_con.fileStringParsingXmlPath();
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = './test/unitTest/tests/constants/test.constants.js';
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -1225,6 +1235,28 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
     
         // Assert
         expect(returnData).toBe("testData");
+    });
+
+    /**
+     * @function getFirstTopLevelFolderFromPath_inValidInputDataInteger
+     * @description Tests the business rules function getFirstTopLevelFolderFromPath with a invalid integer input.
+     * @author Json Howard
+     * @date 2023/05/02
+     */
+    test(tst_con.cgetFirstTopLevelFolderFromPath_inValidInputDataInteger, () => {
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act        
+      let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -1246,7 +1278,7 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -1291,27 +1323,5 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
     
         // Assert
         expect(returnData).toBe(false);
-    });
-
-    /**
-     * @function getFirstTopLevelFolderFromPath_inValidInputDataInteger
-     * @description Tests the business rules function getFirstTopLevelFolderFromPath with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/02
-     */
-    test(tst_con.cgetFirstTopLevelFolderFromPath_inValidInputDataInteger, () => {
-      // Arrange
-      let inputData = 4567;
-      let inputMetaData = [1,2,3,4,5];
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileStringParsing.getFirstTopLevelFolderFromPath(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
     });
 });

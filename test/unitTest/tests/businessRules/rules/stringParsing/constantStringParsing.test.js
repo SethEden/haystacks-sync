@@ -198,6 +198,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
   /**
  * @function determineConstantsContextQualifiedPrefix
  * @description Tests the positive and negative test cases of the determineConstantsContextQualifiedPrefix
+ * @author Json Howard
  * @date 2023/04/30
  * @NOTE Needs significant amount of test date validation implemented.
  */
@@ -360,6 +361,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
   /**
  * @function determineConstantsContextQualifiedPrefix
  * @description Tests the positive and negative test cases of the determineConstantsContextQualifiedPrefix
+ * @author Json Howard
  * @date 2023/04/30
  * @NOTE Needs significant amount of test date validation implemented.
  */
@@ -522,6 +524,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
  /**
  * @function determineSuggestedConstantsValidationLineOfCode
  * @description Tests the positive and negative test cases of the determineSuggestedConstantsValidationLineOfCode
+ * @author Json Howard
  * @date 2023/04/30
  */
  describe(tst_con.cdetermineSuggestedConstantsValidationLineOfCode, () => {
@@ -683,6 +686,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
 /**
  * @function validateConstantsDataValidationLineItemName
  * @description Tests the positive and negative test cases of the validateConstantsDataValidationLineItemName
+ * @author Json Howard
  * @date 2023/04/30
  */
 describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
@@ -851,6 +855,7 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
 /**
  * @function doesConstantExist
  * @description Tests the positive and negative test cases of the doesConstantExist
+ * @author Json Howard
  * @date 2023/04/30
  */
 describe(tst_con.cdoesConstantExist, () => {
@@ -1005,6 +1010,7 @@ describe(tst_con.cdoesConstantExist, () => {
 /**
  * @function getConstantType
  * @description Tests the positive and negative test cases of the getConstantType
+ * @author Json Howard
  * @date 2023/04/30
  */
 describe(tst_con.cgetConstantType, () => {
@@ -1159,6 +1165,7 @@ describe(tst_con.cgetConstantType, () => {
 /**
  * @function getConstantActualValue
  * @description Tests the positive and negative test cases of the getConstantActualValue
+ * @author Json Howard
  * @date 2023/04/30
  */
 describe(tst_con.cgetConstantActualValue, () => {
@@ -1320,6 +1327,7 @@ describe(tst_con.cgetConstantActualValue, () => {
 /**
  * @function getConstantName
  * @description Tests the positive and negative test cases of the getConstantName
+ * @author Json Howard
  * @date 2023/04/30
  */
 describe(tst_con.cgetConstantName, () => {
@@ -1474,6 +1482,7 @@ describe(tst_con.cgetConstantName, () => {
 /**
  * @function findConstantName
  * @description Tests the positive and negative test cases of the findConstantName
+ * @author Json Howard
  * @date 2023/05/01
  */
 describe(tst_con.cfindConstantName, () => {
@@ -1628,6 +1637,7 @@ describe(tst_con.cfindConstantName, () => {
 /**
  * @function isConstantTypeValid
  * @description Tests the positive and negative test cases of the isConstantTypeValid
+ * @author Json Howard
  * @date 2023/05/01
  */
 describe(tst_con.cisConstantTypeValid, () => {
@@ -1789,6 +1799,7 @@ describe(tst_con.cisConstantTypeValid, () => {
 /**
  * @function convertConstantTypeToConstantPrefix
  * @description Tests the positive and negative test cases of the convertConstantTypeToConstantPrefix
+ * @author Json Howard
  * @date 2023/05/01
  */
 describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
@@ -1950,6 +1961,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
 /**
  * @function constantsOptimizedFulfillmentSystem
  * @description Tests the positive and negative test cases of the constantsOptimizedFulfillmentSystem
+ * @author Json Howard
  * @date 2023/05/01
  */
 describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
@@ -2109,6 +2121,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
 /**
  * @function constantsFulfillmentSystem
  * @description Tests the positive and negative test cases of the constantsFulfillmentSystem
+ * @author Json Howard
  * @date 2023/05/01
  */
 describe(tst_con.cconstantsFulfillmentSystem, () => {
@@ -2263,6 +2276,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
 /**
  * @function validateConstantsDataValues
  * @description Tests the positive and negative test cases of the validateConstantsDataValues
+ * @author Json Howard
  * @date 2023/05/01
  */
 describe(tst_con.cvalidateConstantsDataValues, () => {
@@ -2431,6 +2445,7 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
 /**
  * @function isConstantValid
  * @description Tests the positive and negative test cases of the isConstantValid
+ * @author Json Howard
  * @date 2023/05/01
  */
 describe(tst_con.cisConstantValid, () => {

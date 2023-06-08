@@ -240,6 +240,7 @@ describe(tst_con.carraysAreEqual, () => {
 /**
  * @function storeData
  * @description Tests the positive and negative test cases of the storeData
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cstoreData, () => {
@@ -418,6 +419,7 @@ describe(tst_con.cstoreData, () => {
 /**
  * @function getStoredData
  * @description Tests the positive and negative test cases of the getStoredData
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cgetStoredData, () => {
@@ -645,6 +647,7 @@ describe(tst_con.cgetStoredData, () => {
 /**
  * @function isObjectEmpty
  * @description Tests the positive and negative test cases of the isObjectEmpty
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cisObjectEmpty, () => {
@@ -850,6 +853,7 @@ describe(tst_con.cisObjectEmpty, () => {
 /**
  * @function isArrayEmpty
  * @description Tests the positive and negative test cases of the isArrayEmpty
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cisArrayEmpty, () => {
@@ -1019,6 +1023,7 @@ describe(tst_con.cisArrayEmpty, () => {
 /**
  * @function isObject
  * @description Tests the positive and negative test cases of the isObject
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cisObject, () => {
@@ -1152,6 +1157,7 @@ describe(tst_con.cisObject, () => {
 /**
  * @function isArray
  * @description Tests the positive and negative test cases of the isArray
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cisArray, () => {
@@ -1285,6 +1291,7 @@ describe(tst_con.cisArray, () => {
 /**
  * @function isArrayOrObject
  * @description Tests the positive and negative test cases of the isArrayOrObject
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cisArrayOrObject, () => {
@@ -1418,6 +1425,7 @@ describe(tst_con.cisArrayOrObject, () => {
 /**
  * @function isNonZeroLengthArray
  * @description Tests the positive and negative test cases of the isNonZeroLengthArray
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cisNonZeroLengthArray, () => {
@@ -1551,6 +1559,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 /**
  * @function arrayDeepClone
  * @description Tests the positive and negative test cases of the arrayDeepClone
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.carrayDeepClone, () => {
@@ -1720,6 +1729,7 @@ describe(tst_con.carrayDeepClone, () => {
 /**
  * @function objectDeepMerge
  * @description Tests the positive and negative test cases of the objectDeepMerge
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cobjectDeepMerge, () => {
@@ -1925,6 +1935,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 /**
  * @function getNamespacedDataObject
  * @description Tests the positive and negative test cases of the getNamespacedDataObject
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.cgetNamespacedDataObject, () => {
@@ -2202,6 +2213,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 /**
  * @function setNamespacedDataObject
  * @description Tests the positive and negative test cases of the setNamespacedDataObject
+ * @author Json Howard
  * @date 2023/04/19
  */
 describe(tst_con.csetNamespacedDataObject, () => {

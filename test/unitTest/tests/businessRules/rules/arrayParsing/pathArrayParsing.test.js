@@ -209,6 +209,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 /**
  * @function getFileAndPathListForPath
  * @description Tests the positive and negative test cases of the getFileAndPathListForPath
+ * @author Json Howard
  * @date 2023/04/20
  */
 describe(tst_con.cgetFileAndPathListForPath, () => {
