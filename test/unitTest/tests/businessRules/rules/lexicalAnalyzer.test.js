@@ -6,6 +6,7 @@
  * @description Unit tests for the lexicalAnalyzer.js
  * @requires module:lexicalAnalyzer
  * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker.js
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -18,6 +19,7 @@
 // Internal imports
 import lexicalAnalyzer from "../../../../../src/businessRules/rules/lexicalAnalyzer";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
@@ -367,6 +369,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 /**
  * @function analyzeArgument
  * @description Tests the positive and negative test cases of the analyzeArgument
+ * @author Json Howard
  * @date 2023/05/05
  */
 describe(tst_con.canalyzeArgument, () => {
@@ -528,6 +531,7 @@ describe(tst_con.canalyzeArgument, () => {
 /**
  * @function analyzeForRegularExpression
  * @description Tests the positive and negative test cases of the analyzeForRegularExpression
+ * @author Json Howard
  * @date 2023/05/05
  */
 describe(tst_con.canalyzeForRegularExpression, () => {
@@ -689,6 +693,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 /**
  * @function parseArgumentAsRegularExpression
  * @description Tests the positive and negative test cases of the parseArgumentAsRegularExpression
+ * @author Json Howard
  * @date 2023/05/05
  */
 describe(tst_con.cparseArgumentAsRegularExpression, () => {
@@ -850,6 +855,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 /**
  * @function parseArgumentAsArray
  * @description Tests the positive and negative test cases of the parseArgumentAsArray
+ * @author Json Howard
  * @date 2023/05/05
  */
 describe(tst_con.cparseArgumentAsArray, () => {
@@ -1011,6 +1017,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
 /**
  * @function removeStringLiteralTagsFromArray
  * @description Tests the positive and negative test cases of the removeStringLiteralTagsFromArray
+ * @author Json Howard
  * @date 2023/05/05
  */
 describe(tst_con.cremoveStringLiteralTagsFromArray, () => {

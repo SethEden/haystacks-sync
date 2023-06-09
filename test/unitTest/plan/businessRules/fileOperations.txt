@@ -103,6 +103,7 @@ input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 status: Failed
 error: ENOENT: no such file or directory, open '\dfxg24346dfg'
+NOTE Not implemented because when the test is ran the garbage folder is created.
 
 testName: getJsonData_inValidDataInputMetaDataString
 input inputData: string (The path and file name of the JSON file that should be loaded and parsed into JSON objects) (testDataString)
@@ -146,6 +147,7 @@ testName: writeJsonData_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (The data that should be written to the specified file) (testDataString)
 output: ?
+@NOTE Not implemented because when the test is ran the garbage file is created in the root folder.
 
 testName: writeJsonData_inValidDataInputMetaDataString
 input inputData: string (The path and file name for the file that should have data written to it) (testDataString)
@@ -189,6 +191,7 @@ input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 status: Failed
 error: EEXIST: file already exists, mkdir 'E:\haystacks-sync\dfxg24346dfg'
+@NOTE Not implemented because when the test is ran the garbage folder is created.
 
 testName: readDirectoryContents_inValidDataInputMetaDataString
 input inputData: string (The path that needs to be scanned) (testDataString)
@@ -234,6 +237,7 @@ input inputMetaData: array<boolean,integer> (Not used for this business rule) (t
 output: ?
 status: Failed
 error: EEXIST: file already exists, mkdir 'E:\haystacks-sync\dfxg24346dfg'
+@NOTE Not implemented because when the test is ran the garbage folder is created.
 
 testName: scanDirectoryContents_inValidDataInputMetaDataString
 input inputData: string (An array of strings that represents the command and command parameters to execute) (testDataString)
@@ -336,6 +340,7 @@ input inputMetaData: string (Not used for this business rule) (testDataString)
 output: ?
 status: Failed
 error: ENOTDIR: not a directory, scandir 'dfxg24346dfg'
+@NOTE Not implemented because when the test is ran the garbage folder is created.
 
 testName: readDirectorySynchronously_inValidDataInputMetaDataString
 input inputData: string (The system path that should be scanned recursively for files) (testDataString)
