@@ -7,7 +7,7 @@
  * @requires module:dataArrayParsing
  * @requires module:rulesLibrary
  * @requires module:data
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/dataArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -18,9 +18,9 @@
  */
 
 // Internal imports
-import dataArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/dataArrayParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
-import D from "../../../../../../src/structures/data.js";
+import dataArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/dataArrayParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
+import D from '../../../../../../src/structures/data.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/dataArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';

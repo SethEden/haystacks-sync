@@ -15,7 +15,7 @@ import * as tst_con from '../../tests/constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 
-const { bas, sys, wrd, gen } = hayConst;
+const { bas, gen, num, sys, wrd } = hayConst;
 
 export const stringRandomSymbols = '!@#$%^&*';
 export const stringRandomBrackets = bas.cOpenBracket + bas.cComa + bas.cSpace + bas.cCloseBracket + bas.cComa + bas.Space + bas.cOpenParenthesis + bas.cComa + bas.cSpace + bas.ccCloseParenthesis;

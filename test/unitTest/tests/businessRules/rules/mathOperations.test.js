@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file mathOperations.test.js
@@ -6,8 +6,8 @@
  * @description Unit tests for the mathOperations.js
  * @requires module:mathOperations
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
- * @requires module:testData/mathOperations.js
+ * @requires module:testData/dataBroker
+ * @requires module:testData/mathOperations
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -17,14 +17,14 @@
  */
 
 // Internal imports
-import mathOperations from "../../../../../src/businessRules/rules/mathOperations";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import mathOperations from '../../../../../src/businessRules/rules/mathOperations';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as math_con from '../../testData/businessRules/rules/mathOperations.js';
-import * as tst_con from "../../constants/test.constants.js";
+import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
-import { describe, expect, test } from "@jest/globals";
+import { describe, expect, test } from '@jest/globals';
 
 /**
  * @function hex2rgbConversion

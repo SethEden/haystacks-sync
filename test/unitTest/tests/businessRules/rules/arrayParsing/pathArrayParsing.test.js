@@ -16,8 +16,8 @@
  */
 
 // Internal imports
-import pathArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/pathArrayParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import pathArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/pathArrayParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/pathArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
@@ -300,7 +300,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -354,7 +354,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
     
     /**
@@ -372,7 +372,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
     
     /**

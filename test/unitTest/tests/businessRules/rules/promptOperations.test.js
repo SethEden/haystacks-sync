@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file promptOperations.test.js
@@ -15,12 +15,12 @@
  */
 
 // Internal imports
-import promptOperations from "../../../../../src/businessRules/rules/promptOperations";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import * as tst_con from "../../constants/test.constants.js";
+import promptOperations from '../../../../../src/businessRules/rules/promptOperations';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
+import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
-import { describe, expect, test } from "@jest/globals";
+import { describe, expect, test } from '@jest/globals';
 
 /**
  * @function prompt

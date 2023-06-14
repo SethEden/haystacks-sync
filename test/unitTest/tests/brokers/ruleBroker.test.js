@@ -16,8 +16,8 @@
  */
 
 // Internal imports
-import ruleBroker from "../../../../src/brokers/ruleBroker.js";
-import D from "../../../../src/structures/data.js";
+import ruleBroker from '../../../../src/brokers/ruleBroker.js';
+import D from '../../../../src/structures/data.js';
 import * as obj_con from '../../testData/brokers/ruleBroker.js';
 import * as tst_con from '../constants/test.constants.js';
 

@@ -7,7 +7,7 @@
  * @requires module:dataBroker
  * @requires module:constantArrayParsing
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/constantArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -18,9 +18,9 @@
  */
 
 // Internal imports
-import dataBroker from "../../../../../../src/brokers/dataBroker.js";
-import constantArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/constantArrayParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import dataBroker from '../../../../../../src/brokers/dataBroker.js';
+import constantArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/constantArrayParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/constantArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
@@ -191,7 +191,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     test(tst_con.cgetLengthOfLongestStringInArray_inValidInputDataNaN, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
 
         // Act
         let returnData = constantArrayParsing.getLengthOfLongestStringInArray(inputData, inputMetaData);

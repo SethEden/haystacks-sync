@@ -16,9 +16,9 @@
  */
 
 // Internal imports
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import auxiliary from "../../../../../src/commandsBlob/commands/auxiliary";
-import D from "../../../../../src/structures/data.js";
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
+import auxiliary from '../../../../../src/commandsBlob/commands/auxiliary';
+import D from '../../../../../src/structures/data.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
@@ -42,8 +42,8 @@ describe(tst_con.cconvertColors, () => {
      */
     test(tst_con.cconvertColors_validDataString, () => {
       // Arrange
-      let inputData = "";
-      let inputMetaData = "";
+      let inputData = '';
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      

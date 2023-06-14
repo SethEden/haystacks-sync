@@ -17,9 +17,9 @@
  */
 
 // Internal imports
-import themeBroker from "../../../../src/brokers/themeBroker.js";
-import rulesLibrary from "../../../../src/businessRules/rulesLibrary.js";
-import configurator from "../../../../src/executrix/configurator.js";
+import themeBroker from '../../../../src/brokers/themeBroker.js';
+import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
+import configurator from '../../../../src/executrix/configurator.js';
 import * as obj_con from '../../testData/brokers/themeBroker.js';
 import * as tst_con from '../constants/test.constants.js';
 
@@ -228,7 +228,7 @@ describe(tst_con.cloadTheme, () => {
     * @description Tests the business rules function loadTheme with a invalid string data.
     * @author Json Howard
     * @date 2023/04/17
-    * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called "464gsdsfae8f46", therefore this test is not implemented.
+    * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
     */
 
     /**
@@ -303,10 +303,10 @@ describe(tst_con.capplyTheme, () => {
     /**
     * @function applyTheme_inValidString
     * @description Tests the business rules function applyTheme with a invalid string data.
-    * @result In root path create "464gsdsfae8f46" folder.
+    * @result In root path create '464gsdsfae8f46' folder.
     * @author Json Howard
     * @date 2023/04/17
-    * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called "464gsdsfae8f46", therefore this test is not implemented.
+    * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
     */
 
     /**

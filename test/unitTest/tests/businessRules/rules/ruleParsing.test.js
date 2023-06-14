@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file ruleParsing.test.js
@@ -6,7 +6,7 @@
  * @description Unit tests for the ruleParsing.js
  * @requires module:ruleParsing
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -16,14 +16,14 @@
  */
 
 // Internal imports
-import ruleParsing from "../../../../../src/businessRules/rules/ruleParsing";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import ruleParsing from '../../../../../src/businessRules/rules/ruleParsing';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as tst_con from "../../constants/test.constants.js";
+import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
-import hayConst from "@haystacks/constants";
-import { describe, expect, test } from "@jest/globals";
+import hayConst from '@haystacks/constants';
+import { describe, expect, test } from '@jest/globals';
 
 const { biz } = hayConst;
 
@@ -561,7 +561,7 @@ describe(tst_con.cprocessRulesInternal, () => {
       );
   
       // Assert
-      expect(returnData).toBe("d");
+      expect(returnData).toBe('d');
   });
 
   /**
@@ -583,7 +583,7 @@ describe(tst_con.cprocessRulesInternal, () => {
       );
   
       // Assert
-      expect(returnData).toBe("r");
+      expect(returnData).toBe('r');
   });
 
   /**

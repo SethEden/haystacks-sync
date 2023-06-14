@@ -6,7 +6,7 @@
  * @description Unit tests for the commandArrayParsing.js
  * @requires module:commandArrayParsing
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/commandArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -17,8 +17,8 @@
  */
 
 // Internal imports
-import commandArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/commandArrayParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import commandArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/commandArrayParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/commandArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
@@ -71,7 +71,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -109,7 +109,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -128,7 +128,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -147,7 +147,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -166,7 +166,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -185,7 +185,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -204,7 +204,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -223,7 +223,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -242,7 +242,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 });
 
@@ -492,7 +492,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -528,7 +528,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -546,7 +546,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -564,7 +564,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -582,7 +582,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -600,7 +600,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -618,7 +618,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -636,7 +636,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -654,7 +654,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 });
 

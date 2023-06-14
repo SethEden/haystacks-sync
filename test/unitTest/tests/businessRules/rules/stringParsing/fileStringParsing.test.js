@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file fileStringParsing.test.js
@@ -6,7 +6,7 @@
  * @description Unit tests for the fileStringParsing.js
  * @requires module:fileStringParsing
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/fileStringParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -17,15 +17,15 @@
  */
 
 // Internal imports
-import fileStringParsing from "../../../../../../src/businessRules/rules/stringParsing/fileStringParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import fileStringParsing from '../../../../../../src/businessRules/rules/stringParsing/fileStringParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/stringParsing/fileStringParsing.js';
-import * as tst_con from "../../../constants/test.constants.js";
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
-import hayConst from "@haystacks/constants";
-import { describe, expect, test } from "@jest/globals";
+import hayConst from '@haystacks/constants';
+import { describe, expect, test } from '@jest/globals';
 
 const { bas, wrd, gen } = hayConst;
 
@@ -401,7 +401,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
       );
   
       // Assert
-      expect(returnData).toBe("fxg24346dfg");
+      expect(returnData).toBe('fxg24346dfg');
     });
 
   /**
@@ -1190,7 +1190,7 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
       );
   
       // Assert
-      expect(returnData).toBe("testData");
+      expect(returnData).toBe('testData');
     });
 
     /**
@@ -1234,7 +1234,7 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
         );
     
         // Assert
-        expect(returnData).toBe("testData");
+        expect(returnData).toBe('testData');
     });
 
     /**

@@ -14,7 +14,7 @@ import * as tst_con from '../../../../tests/constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 
-const { bas, wrd, gen } = hayConst;
+const { bas, gen, num, sys, wrd } = hayConst;
 
 /**
  * @function stringPathsArray_01

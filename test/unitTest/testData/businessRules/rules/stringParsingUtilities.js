@@ -15,6 +15,7 @@ import * as tst_con from '../../tests/constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 
-const { bas, sys, wrd, gen } = hayConst;
+const { bas, gen, num, sys, wrd } = hayConst;
 
-export const stringRandomSymbols = 'haystacks';
+export const stringRandomText1 = '123string321';
+export const stringRandomText2 = '234string432';

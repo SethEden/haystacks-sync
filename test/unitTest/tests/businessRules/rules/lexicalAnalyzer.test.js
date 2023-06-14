@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file lexicalAnalyzer.test.js
@@ -6,8 +6,8 @@
  * @description Unit tests for the lexicalAnalyzer.js
  * @requires module:lexicalAnalyzer
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
- * @requires module:testData/lexicalAnalyzer.js
+ * @requires module:testData/dataBroker
+ * @requires module:testData/lexicalAnalyzer
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -18,15 +18,15 @@
  */
 
 // Internal imports
-import lexicalAnalyzer from "../../../../../src/businessRules/rules/lexicalAnalyzer";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import lexicalAnalyzer from '../../../../../src/businessRules/rules/lexicalAnalyzer';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as lex_con from '../../testData/businessRules/rules/lexicalAnalyzer.js';
-import * as tst_con from "../../constants/test.constants.js";
+import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
-import hayConst from "@haystacks/constants";
-import { describe, expect, test } from "@jest/globals";
+import hayConst from '@haystacks/constants';
+import { describe, expect, test } from '@jest/globals';
 
 const { bas, wrd } = hayConst;
 
@@ -56,7 +56,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["<?xml version='1.0' encoding='UTF-8'?><CommandWorkflows></CommandWorkflows>"]
+    expect(returnData).toBeTruthy(); // ['<?xml version='1.0' encoding='UTF-8'?><CommandWorkflows></CommandWorkflows>']
   });
 
   /**
@@ -78,7 +78,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [["df","xg","24","34","6d","fg"]]
+      expect(returnData).toBeTruthy(); // [['df','xg','24','34','6d','fg']]
   });
 
   /**
@@ -144,7 +144,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [[{"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"},{"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"}]]
+      expect(returnData).toBeTruthy(); // [[{'constants':'c,const','Generator':'g,gen,genrtr','List':'l,lst'},{'wonder':'wondr,wundr,wndr','Woman':'wman,wmn,womn','Amazing':'amzing,amzng'}]]
   });
 
   /**
@@ -188,7 +188,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [["df","xg","24","34","6d","fg"]]
+      expect(returnData).toBeTruthy(); // [['df','xg','24','34','6d','fg']]
   });
 
   /**
@@ -254,7 +254,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [["df","xg","24","34","6d","fg"]]
+      expect(returnData).toBeTruthy(); // [['df','xg','24','34','6d','fg']]
   });
 
   /**
@@ -276,7 +276,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [["df","xg","24","34","6d","fg"]]
+      expect(returnData).toBeTruthy(); // [['df','xg','24','34','6d','fg']]
   });
 
   /**
@@ -342,7 +342,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // ["df","xg","24","34","6d","fg"]
+      expect(returnData).toBeTruthy(); // ['df','xg','24','34','6d','fg']
   });
 
   /**
@@ -364,7 +364,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // ["df","xg","24","34","6d","fg"]
+      expect(returnData).toBeTruthy(); // ['df','xg','24','34','6d','fg']
   });
 });
 
@@ -880,7 +880,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //["1,2,3"]
+    expect(returnData).toBeTruthy(); //['1,2,3']
   });
 
   /**
@@ -924,7 +924,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); //["1,2,3"]
+      expect(returnData).toBeTruthy(); //['1,2,3']
   });
 
   /**
@@ -946,7 +946,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //["1,2,3"]
+    expect(returnData).toBeTruthy(); //['1,2,3']
   });
 
   /**
@@ -968,7 +968,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //["1,2,3"]
+    expect(returnData).toBeTruthy(); //['1,2,3']
   });
 
   /**
@@ -990,7 +990,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //["1,2,3"]
+    expect(returnData).toBeTruthy(); //['1,2,3']
   });
 
   /**
@@ -1012,7 +1012,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //["1,2,3"]
+    expect(returnData).toBeTruthy(); //['1,2,3']
   });
 });
 
@@ -1042,7 +1042,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //["hello", "world"]
+    expect(returnData).toBeTruthy(); //['hello', 'world']
   });
 
   /**
@@ -1086,7 +1086,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); //["hello", "world"]
+      expect(returnData).toBeTruthy(); //['hello', 'world']
   });
 
   /**

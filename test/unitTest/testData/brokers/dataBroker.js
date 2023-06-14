@@ -14,7 +14,7 @@ import * as tst_con from '../../tests/constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 
-const { bas, sys, wrd, gen } = hayConst;
+const { bas, gen, num, sys, wrd } = hayConst;
 
 // Objects name
 export const JsonObjectArrayOfStrings_01 = { 'data': ['D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/test.csv'] };

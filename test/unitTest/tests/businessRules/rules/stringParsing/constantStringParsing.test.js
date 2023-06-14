@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file constantStringParsing.test.js
@@ -7,7 +7,7 @@
  * @requires module:dataBroker
  * @requires module:constantStringParsing
  * @requires module:data
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/constantStringParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -18,16 +18,16 @@
  */
 
 // Internal imports
-import dataBroker from "../../../../../../src/brokers/dataBroker.js";
-import constantStringParsing from "../../../../../../src/businessRules/rules/stringParsing/constantStringParsing.js";
-import D from "../../../../../../src/structures/data.js";
+import dataBroker from '../../../../../../src/brokers/dataBroker.js';
+import constantStringParsing from '../../../../../../src/businessRules/rules/stringParsing/constantStringParsing.js';
+import D from '../../../../../../src/structures/data.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/stringParsing/constantStringParsing.js';
-import * as tst_con from "../../../constants/test.constants.js";
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
-import hayConst from "@haystacks/constants";
-import { describe, expect } from "@jest/globals";
+import hayConst from '@haystacks/constants';
+import { describe, expect } from '@jest/globals';
 
 const { bas, sys, wrd } = hayConst;
 
@@ -2143,7 +2143,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(" + ");
+    expect(returnData).toBe(' + ');
   });
 
   /**
@@ -2164,7 +2164,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(" + ");
+    expect(returnData).toBe(' + ');
   });
 
   /**
@@ -2185,7 +2185,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(" + ");
+    expect(returnData).toBe(' + ');
   });
 
   /**
@@ -2206,7 +2206,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(" + ");
+    expect(returnData).toBe(' + ');
   });
 
   /**
@@ -2227,7 +2227,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(" + ");
+    expect(returnData).toBe(' + ');
   });
 
   /**
@@ -2248,7 +2248,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(" + ");
+    expect(returnData).toBe(' + ');
   });
 
   /**
@@ -2269,7 +2269,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(" + ");
+    expect(returnData).toBe(' + ');
   });
 });
 

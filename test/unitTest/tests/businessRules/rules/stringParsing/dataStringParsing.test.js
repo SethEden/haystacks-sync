@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file dataStringParsing.test.js
@@ -7,7 +7,7 @@
  * @requires module:dataBroker
  * @requires module:dataStringParsing
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/dataStringParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -18,16 +18,16 @@
  */
 
 // Internal imports
-import dataBroker from "../../../../../../src/brokers/dataBroker.js";
-import dataStringParsing from "../../../../../../src/businessRules/rules/stringParsing/dataStringParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import dataBroker from '../../../../../../src/brokers/dataBroker.js';
+import dataStringParsing from '../../../../../../src/businessRules/rules/stringParsing/dataStringParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/stringParsing/dataStringParsing.js';
-import * as tst_con from "../../../constants/test.constants.js";
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
-import hayConst from "@haystacks/constants";
-import { describe, expect, test } from "@jest/globals";
+import hayConst from '@haystacks/constants';
+import { describe, expect, test } from '@jest/globals';
 
 const { bas, wrd } = hayConst;
 

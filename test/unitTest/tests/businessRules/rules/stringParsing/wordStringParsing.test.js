@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file wordStringParsing.test.js
@@ -6,7 +6,7 @@
  * @description Unit tests for the wordStringParsing.js
  * @requires module:wordStringParsing
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -16,14 +16,14 @@
  */
 
 // Internal imports
-import wordStringParsing from "../../../../../../src/businessRules/rules/stringParsing/wordStringParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import wordStringParsing from '../../../../../../src/businessRules/rules/stringParsing/wordStringParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as tst_con from "../../../constants/test.constants.js";
+import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
-import hayConst from "@haystacks/constants";
-import { describe, expect, test } from "@jest/globals";
+import hayConst from '@haystacks/constants';
+import { describe, expect, test } from '@jest/globals';
 
 const { wrd } = hayConst;
 
@@ -399,7 +399,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
         );
     
         // Assert
-        expect(returnData).toBe("dfxgdfg");
+        expect(returnData).toBe('dfxgdfg');
     });
 
     /**

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file characterGeneration.test.js
@@ -6,7 +6,7 @@
  * @description Unit tests for the characterGeneration.js
  * @requires module:characterGeneration
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -16,13 +16,13 @@
  */
 
 // Internal imports
-import characterGeneration from "../../../../../src/businessRules/rules/characterGeneration";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import characterGeneration from '../../../../../src/businessRules/rules/characterGeneration';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as tst_con from "../../constants/test.constants.js";
+import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
-import { describe, expect, test } from "@jest/globals";
+import { describe, expect, test } from '@jest/globals';
 
 /**
  * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter
@@ -2818,7 +2818,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
     );
 
     // Assert
-    expect(returnData).toBe("A"); // a-z random
+    expect(returnData).toBe('A'); // a-z random
   });
 
   /**
@@ -2862,7 +2862,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       );
   
       // Assert
-      expect(returnData).toBe("A"); 
+      expect(returnData).toBe('A'); 
   });
 
   /**
@@ -2928,7 +2928,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       );
   
       // Assert
-      expect(returnData).toBe("A");
+      expect(returnData).toBe('A');
   });
 
   /**
@@ -2950,7 +2950,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
       );
   
       // Assert
-      expect(returnData).toBe("A");
+      expect(returnData).toBe('A');
   });
 });
 
@@ -2980,7 +2980,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
     );
 
     // Assert
-    expect(returnData).toBe("a"); // a-z random
+    expect(returnData).toBe('a'); // a-z random
   });
 
   /**
@@ -3024,7 +3024,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       );
   
       // Assert
-      expect(returnData).toBe("a"); 
+      expect(returnData).toBe('a'); 
   });
 
   /**
@@ -3090,7 +3090,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       );
   
       // Assert
-      expect(returnData).toBe("a");
+      expect(returnData).toBe('a');
   });
 
   /**
@@ -3112,6 +3112,6 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
       );
   
       // Assert
-      expect(returnData).toBe("a");
+      expect(returnData).toBe('a');
   });
 });

@@ -5,7 +5,7 @@
  * @module characterArrayParsing.test
  * @description Unit tests for the characterArrayParsing.js
  * @requires module:characterArrayParsing
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/characterArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -16,7 +16,7 @@
  */
 
 // Internal imports
-import characterArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js";
+import characterArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/characterArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
@@ -85,7 +85,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
         let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
         //Assert
-        expect(returnData).toBe("wrd.cHello + wrd.cSpace + wrd.cWorld");
+        expect(returnData).toBe('wrd.cHello + wrd.cSpace + wrd.cWorld');
     })
 
     /**
@@ -545,13 +545,13 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     test(tst_con.cremoveCharacterFromArray_validDataInputMetaDataObject, () => {
         // Arrange
         let inputData = obj_con.JsonObjectOfStrings_01;
-        let inputMetaData = [obj_con.JsonObjectOfStrings_01, {"hello": "345", "world": "haystacks"}];
+        let inputMetaData = [obj_con.JsonObjectOfStrings_01, {'hello': '345', 'world': 'haystacks'}];
 
         // Act
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual([{"hello": "345", "world": "haystacks"}]);
+        expect(returnData).toEqual([{'hello': '345', 'world': 'haystacks'}]);
     })
 
     /**

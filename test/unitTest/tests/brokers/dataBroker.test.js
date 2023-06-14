@@ -17,9 +17,9 @@
  */
 
 // Internal imports
-import dataBroker from "../../../../src/brokers/dataBroker.js";
-import rulesLibrary from "../../../../src/businessRules/rulesLibrary.js";
-import D from "../../../../src/structures/data.js";
+import dataBroker from '../../../../src/brokers/dataBroker.js';
+import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
+import D from '../../../../src/structures/data.js';
 import * as obj_con from '../../testData/brokers/dataBroker.js';
 import * as tst_con from '../constants/test.constants.js';
 
@@ -729,7 +729,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     * @description Tests the business rules function writeJsonDataToFile with a invalid string data.
     * @author Json Howard
     * @date 2023/04/16
-    * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called "464gsdsfae8f46", therefore this test is not implemented.
+    * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
     */    
 
     /**

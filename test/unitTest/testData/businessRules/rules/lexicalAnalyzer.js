@@ -15,7 +15,7 @@ import * as tst_con from '../../tests/constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 
-const { bas, sys, wrd, gen } = hayConst;
+const { bas, gen, num, sys, wrd } = hayConst;
 
 export const arrayObjectRandomWords = [{"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"},{"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"}];
 export const RandomParameters = "<?xml version='1.0' encoding='UTF-8'?><CommandWorkflows></CommandWorkflows>";

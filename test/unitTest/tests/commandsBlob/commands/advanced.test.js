@@ -18,11 +18,11 @@
  */
 
 // Internal imports
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import advanced from "../../../../../src/commandsBlob/commands/advanced";
-import commandsLibrary from "../../../../../src/commandsBlob/commandsLibrary";
-import configurator from "../../../../../src/executrix/configurator.js";
-import D from "../../../../../src/structures/data.js";
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
+import advanced from '../../../../../src/commandsBlob/commands/advanced';
+import commandsLibrary from '../../../../../src/commandsBlob/commandsLibrary';
+import configurator from '../../../../../src/executrix/configurator.js';
+import D from '../../../../../src/structures/data.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
@@ -46,8 +46,8 @@ describe(tst_con.ccommandSequencer, () => {
    */
   test(tst_con.ccommandSequencer_validDataString, () => {
     // Arrange    
-    let inputData = ["TestCommandSequenceALL", cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
-    let inputMetaData = "";    
+    let inputData = ['TestCommandSequenceALL', cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
+    let inputMetaData = '';    
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
@@ -71,8 +71,8 @@ describe(tst_con.ccommandSequencer, () => {
      */
   test(tst_con.ccommandSequencer_inValidDataInputDataString, () => {
     // Arrange    
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";   
+    let inputData = 'dfxg24346dfg';
+    let inputMetaData = '';   
     rulesLibrary.initRulesLibrary(); 
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
@@ -85,7 +85,7 @@ describe(tst_con.ccommandSequencer, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. g"]
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. g']
   });
 
   /**
@@ -97,7 +97,7 @@ describe(tst_con.ccommandSequencer, () => {
   test(tst_con.ccommandSequencer_inValidInputDataInteger, () => {
     // Arrange    
     let inputData = 4567;
-    let inputMetaData = "123string32";
+    let inputMetaData = '123string32';
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
@@ -110,7 +110,7 @@ describe(tst_con.ccommandSequencer, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. g"]
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. g']
   });
 
   /**
@@ -122,7 +122,7 @@ describe(tst_con.ccommandSequencer, () => {
   test(tst_con.ccommandSequencer_inValidInputDataBoolean, () => {
       // Arrange      
       let inputData = false;
-      let inputMetaData = "123string32";
+      let inputMetaData = '123string32';
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
       commandsLibrary.initCommandsLibrary();
@@ -147,7 +147,7 @@ describe(tst_con.ccommandSequencer, () => {
   test(tst_con.ccommandSequencer_inValidInputDataNaN, () => {
     // Arrange    
     let inputData = NaN;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
@@ -172,7 +172,7 @@ describe(tst_con.ccommandSequencer, () => {
   test(tst_con.ccommandSequencer_inValidInputDataUndefined, () => {
     // Arrange    
     let inputData = undefined;
-    let inputMetaData = "";    
+    let inputMetaData = '';    
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
@@ -203,8 +203,8 @@ describe(tst_con.cworkflow, () => {
      */
     test(tst_con.cworkflow_validDataString, () => {
       // Arrange      
-      let inputData = ["allSystemWorkflows", "wrkflo"];
-      let inputMetaData = "";  
+      let inputData = ['allSystemWorkflows', 'wrkflo'];
+      let inputMetaData = '';  
       rulesLibrary.initRulesLibrary();    
   
       // Act      
@@ -214,7 +214,7 @@ describe(tst_con.cworkflow, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
+      expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
     });
 
     /**
@@ -225,8 +225,8 @@ describe(tst_con.cworkflow, () => {
      */
     test(tst_con.cworkflow_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = 'dfxg24346dfg';
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -236,7 +236,7 @@ describe(tst_con.cworkflow, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
+        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
     });
 
     /**
@@ -248,7 +248,7 @@ describe(tst_con.cworkflow, () => {
     test(tst_con.cworkflow_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 4567;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -258,7 +258,7 @@ describe(tst_con.cworkflow, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
+        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
     });
 
     /**
@@ -270,7 +270,7 @@ describe(tst_con.cworkflow, () => {
     test(tst_con.cworkflow_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -280,7 +280,7 @@ describe(tst_con.cworkflow, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
+        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
     });
 
     /**
@@ -292,7 +292,7 @@ describe(tst_con.cworkflow, () => {
     test(tst_con.cworkflow_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -302,7 +302,7 @@ describe(tst_con.cworkflow, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
+        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
     });
 
     /**
@@ -314,7 +314,7 @@ describe(tst_con.cworkflow, () => {
     test(tst_con.cworkflow_inValidInputDataUndefined, () => {
       // Arrange
       let inputData = undefined;
-      let inputMetaData = "";
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act        
@@ -324,7 +324,7 @@ describe(tst_con.cworkflow, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again."]
+      expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
   });
 });
 
@@ -342,8 +342,8 @@ describe(tst_con.cbusinessRule, () => {
      */
     test(tst_con.cbusinessRule_validDataString, () => {
       // Arrange
-      let inputData = ["allSystembusinessRules", "wrkflo"];
-      let inputMetaData = "";
+      let inputData = ['allSystembusinessRules', 'wrkflo'];
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -364,8 +364,8 @@ describe(tst_con.cbusinessRule, () => {
      */
     test(tst_con.cbusinessRule_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = 'dfxg24346dfg';
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -387,7 +387,7 @@ describe(tst_con.cbusinessRule, () => {
     test(tst_con.cbusinessRule_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 4567;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -409,7 +409,7 @@ describe(tst_con.cbusinessRule, () => {
     test(tst_con.cbusinessRule_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -431,7 +431,7 @@ describe(tst_con.cbusinessRule, () => {
     test(tst_con.cbusinessRule_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -453,7 +453,7 @@ describe(tst_con.cbusinessRule, () => {
     test(tst_con.cbusinessRule_inValidInputDataUndefined, () => {
       // Arrange
       let inputData = undefined;
-      let inputMetaData = "";
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act        
@@ -482,8 +482,8 @@ describe(tst_con.ccommandGenerator, () => {
    */
   test(tst_con.ccommandGenerator_validDataString, () => {
     // Arrange
-    let inputData = ["TestCommandSequenceALL", cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
-    let inputMetaData = "";
+    let inputData = ['TestCommandSequenceALL', cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -497,7 +497,7 @@ describe(tst_con.ccommandGenerator, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[true, "WARNING: advanced.commandGenerator: The specified command:  was not found, please enter a valid command and try again."]
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.commandGenerator: The specified command:  was not found, please enter a valid command and try again.']
   });
 
   /**
@@ -508,8 +508,8 @@ describe(tst_con.ccommandGenerator, () => {
      */
   test(tst_con.ccommandGenerator_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
+    let inputData = 'dfxg24346dfg';
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -519,7 +519,7 @@ describe(tst_con.ccommandGenerator, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 
   /**
@@ -531,7 +531,7 @@ describe(tst_con.ccommandGenerator, () => {
   test(tst_con.ccommandGenerator_inValidInputDataInteger, () => {
       // Arrange
       let inputData = 4567;
-      let inputMetaData = "123string321";
+      let inputMetaData = '123string321';
       rulesLibrary.initRulesLibrary();
 
       // Act      
@@ -541,7 +541,7 @@ describe(tst_con.ccommandGenerator, () => {
       );
 
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 
   /**
@@ -553,7 +553,7 @@ describe(tst_con.ccommandGenerator, () => {
   test(tst_con.ccommandGenerator_inValidInputDataBoolean, () => {
       // Arrange
       let inputData = false;
-      let inputMetaData = "123string321";
+      let inputMetaData = '123string321';
       rulesLibrary.initRulesLibrary();
 
       // Act      
@@ -563,7 +563,7 @@ describe(tst_con.ccommandGenerator, () => {
       );
 
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 
   /**
@@ -575,7 +575,7 @@ describe(tst_con.ccommandGenerator, () => {
   test(tst_con.ccommandGenerator_inValidInputDataNaN, () => {
       // Arrange
       let inputData = NaN;
-      let inputMetaData = "";
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
 
       // Act      
@@ -585,7 +585,7 @@ describe(tst_con.ccommandGenerator, () => {
       );
 
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 
   /**
@@ -597,7 +597,7 @@ describe(tst_con.ccommandGenerator, () => {
   test(tst_con.ccommandGenerator_inValidInputDataUndefined, () => {
     // Arrange
     let inputData = undefined;
-    let inputMetaData = "";
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act      
@@ -607,7 +607,7 @@ describe(tst_con.ccommandGenerator, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
 });
 });
 
@@ -625,8 +625,8 @@ describe(tst_con.ccommandAliasGenerator, () => {
      */
     test(tst_con.ccommandAliasGenerator_validDataString, () => {
       // Arrange
-      let inputData = ["c,const", "g,gen,genrtr", "l,lst"];
-      let inputMetaData = "";
+      let inputData = ['c,const', 'g,gen,genrtr', 'l,lst'];
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -636,7 +636,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
     });
 
     /**
@@ -647,8 +647,8 @@ describe(tst_con.ccommandAliasGenerator, () => {
      */
     test(tst_con.ccommandAliasGenerator_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = 'dfxg24346dfg';
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -658,7 +658,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
     });
 
     /**
@@ -670,7 +670,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
     test(tst_con.ccommandAliasGenerator_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 4567;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -680,7 +680,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
     });
 
     /**
@@ -692,7 +692,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
     test(tst_con.ccommandAliasGenerator_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -702,7 +702,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
     });
 
     /**
@@ -714,7 +714,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
     test(tst_con.ccommandAliasGenerator_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -724,7 +724,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
     });
 
     /**
@@ -736,7 +736,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
     test(tst_con.c1commandSequencer_inValidInputDataUndefined, () => {
       // Arrange
       let inputData = undefined;
-      let inputMetaData = "";
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act        
@@ -746,6 +746,6 @@ describe(tst_con.ccommandAliasGenerator, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters."]
+      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 });

@@ -15,8 +15,8 @@
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 // Internal imports
-import commandBroker from "../../../../src/brokers/commandBroker.js";
-import D from "../../../../src/structures/data.js";
+import commandBroker from '../../../../src/brokers/commandBroker.js';
+import D from '../../../../src/structures/data.js';
 import * as obj_con from '../../testData/brokers/commandBroker.js';
 import * as tst_con from '../constants/test.constants.js';
 

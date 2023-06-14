@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* eslint-disable no-undef */
 /**
  * @file stringGeneration.test.js
@@ -6,8 +6,8 @@
  * @description Unit tests for the stringGeneration.js
  * @requires module:stringGeneration
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
- * @requires module:testData/stringGeneration.js
+ * @requires module:testData/dataBroker
+ * @requires module:testData/stringGeneration
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -17,15 +17,15 @@
  */
 
 // Internal imports
-import stringGeneration from "../../../../../src/businessRules/rules/stringGeneration";
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import stringGeneration from '../../../../../src/businessRules/rules/stringGeneration';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as str_con from '../../testData/businessRules/rules/stringGeneration.js';
-import * as tst_con from "../../constants/test.constants.js";
+import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
-import hayConst from "@haystacks/constants";
-import { describe, expect, test } from "@jest/globals";
+import hayConst from '@haystacks/constants';
+import { describe, expect, test } from '@jest/globals';
 
 const { wrd } = hayConst;
 
@@ -2819,7 +2819,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -2840,7 +2840,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -2861,7 +2861,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -2882,7 +2882,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3131,7 +3131,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3152,7 +3152,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3173,7 +3173,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3194,7 +3194,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3443,7 +3443,7 @@ describe(tst_con.cgenerateRandomColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3464,7 +3464,7 @@ describe(tst_con.cgenerateRandomColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3485,7 +3485,7 @@ describe(tst_con.cgenerateRandomColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**
@@ -3506,7 +3506,7 @@ describe(tst_con.cgenerateRandomColor, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // ["44", "1", "114"]
+    expect(returnData).toBeTruthy(); // ['44', '1', '114']
   });
 
   /**

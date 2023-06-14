@@ -15,7 +15,7 @@
  */
 
 // Internal imports
-import auxiliaryArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js";
+import auxiliaryArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/auxiliaryArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 

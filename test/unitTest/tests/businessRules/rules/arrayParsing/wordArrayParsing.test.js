@@ -6,7 +6,7 @@
  * @description Unit tests for the wordArrayParsing.js
  * @requires module:wordArrayParsing
  * @requires module:rulesLibrary
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/wordArrayParsing
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -17,8 +17,8 @@
  */
 
 // Internal imports
-import wordArrayParsing from "../../../../../../src/businessRules/rules/arrayParsing/wordArrayParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import wordArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/wordArrayParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/wordArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';

@@ -15,8 +15,8 @@
  */
 
 // Internal imports
-import commandStringParsing from "../../../../../../src/businessRules/rules/stringParsing/commandStringParsing.js";
-import rulesLibrary from "../../../../../../src/businessRules/rulesLibrary.js";
+import commandStringParsing from '../../../../../../src/businessRules/rules/stringParsing/commandStringParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports

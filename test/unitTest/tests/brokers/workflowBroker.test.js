@@ -9,7 +9,7 @@
  * @requires module:chiefWorkflow
  * @requires module:configurator
  * @requires module:data
- * @requires module:testData/dataBroker.js
+ * @requires module:testData/dataBroker
  * @requires module:testData/workflowBroker
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -20,11 +20,11 @@
  */
 
 // Internal imports
-import workflowBroker from "../../../../src/brokers/workflowBroker.js";
-import rulesLibrary from "../../../../src/businessRules/rulesLibrary.js";
-import chiefWorkflow from "../../../../src/controllers/chiefWorkflow.js";
-import configurator from "../../../../src/executrix/configurator.js";
-import D from "../../../../src/structures/data.js";
+import workflowBroker from '../../../../src/brokers/workflowBroker.js';
+import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
+import chiefWorkflow from '../../../../src/controllers/chiefWorkflow.js';
+import configurator from '../../../../src/executrix/configurator.js';
+import D from '../../../../src/structures/data.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../testData/brokers/workflowBroker.js';
 import * as tst_con from '../constants/test.constants.js';

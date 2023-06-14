@@ -18,9 +18,9 @@
  */
 
 // Internal imports
-import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
-import configuration from "../../../../../src/commandsBlob/commands/configuration";
-import configurator from "../../../../../src/executrix/configurator.js";
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
+import configuration from '../../../../../src/commandsBlob/commands/configuration';
+import configurator from '../../../../../src/executrix/configurator.js';
 import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
 import * as tst_con from '../../constants/test.constants.js';
 
@@ -45,8 +45,8 @@ describe(tst_con.cchangeConfigurationSetting, () => {
      */
     test(tst_con.cchangeConfigurationSetting_validDataString, () => {
       // Arrange
-      let inputData = ["TestCommandSequenceALL", "wrkflo"];
-      let inputMetaData = "";
+      let inputData = ['TestCommandSequenceALL', 'wrkflo'];
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -56,7 +56,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
     });
 
     /**
@@ -67,8 +67,8 @@ describe(tst_con.cchangeConfigurationSetting, () => {
      */
     test(tst_con.cchangeConfigurationSetting_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = 'dfxg24346dfg';
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -78,7 +78,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
     });
 
     /**
@@ -90,7 +90,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
     test(tst_con.cchangeConfigurationSetting_inValidInputDataInteger, () => {
         // Arrange
         let inputData = 4567;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -100,7 +100,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
     });
 
     /**
@@ -112,7 +112,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
     test(tst_con.cchangeConfigurationSetting_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "123string321";
+        let inputMetaData = '123string321';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -122,7 +122,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
     });
 
     /**
@@ -134,7 +134,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
     test(tst_con.cchangeConfigurationSetting_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -144,7 +144,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
     });
 
     /**
@@ -156,7 +156,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
     test(tst_con.cchangeConfigurationSetting_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "";
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -166,7 +166,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
         );
     
         // Assert
-        expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
     });
 });
 
@@ -184,8 +184,8 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
    */
   test(tst_con.cchangeDebugConfigurationTheme_validDataString, () => {
     // Arrange
-    let inputData = ["TestCommandSequenceALL", "cmdSeq wrkflo"];
-    let inputMetaData = "";
+    let inputData = ['TestCommandSequenceALL', 'cmdSeq wrkflo'];
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
@@ -196,7 +196,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // [true, "ERROR: The specified theme name was not found in the current list of supported themes."]
+    expect(returnData).toBeTruthy(); // [true, 'ERROR: The specified theme name was not found in the current list of supported themes.']
   });
 
   /**
@@ -207,8 +207,8 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
      */
   test(tst_con.cchangeDebugConfigurationTheme_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = "dfxg24346dfg";
-    let inputMetaData = "";
+    let inputData = 'dfxg24346dfg';
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
@@ -219,7 +219,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 
   /**
@@ -231,7 +231,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
   test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataInteger, () => {
       // Arrange
       let inputData = 4567;
-      let inputMetaData = "123string321";
+      let inputMetaData = '123string321';
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
@@ -242,7 +242,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       );
 
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 
   /**
@@ -254,7 +254,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
   test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataBoolean, () => {
       // Arrange
       let inputData = false;
-      let inputMetaData = "123string321";
+      let inputMetaData = '123string321';
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
@@ -265,7 +265,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       );
 
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 
   /**
@@ -277,7 +277,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
   test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataNaN, () => {
       // Arrange
       let inputData = NaN;
-      let inputMetaData = "";
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
@@ -288,7 +288,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       );
 
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 
   /**
@@ -300,7 +300,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
   test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataUndefined, () => {
       // Arrange
       let inputData = undefined;
-      let inputMetaData = "";
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
@@ -311,7 +311,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
       );
 
       // Assert
-      expect(returnData).toBeTruthy(); //[true, "ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting."]
+      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 });
 
@@ -329,8 +329,8 @@ describe(tst_con.csaveConfiguration, () => {
      */
     test(tst_con.csaveConfiguration_validDataString, () => {
       // Arrange
-      let inputData = ["TestCommandSequenceALL", "wrkflo"];
-      let inputMetaData = "";
+      let inputData = ['TestCommandSequenceALL', 'wrkflo'];
+      let inputMetaData = '';
       let testPath = obj_con.testConfigPath();
       rulesLibrary.initRulesLibrary();
       configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
@@ -361,8 +361,8 @@ describe(tst_con.clistConfigurationThemes, () => {
    */
   test(tst_con.clistConfigurationThemes_validDataString, () => {
     // Arrange
-    let inputData = "";
-    let inputMetaData = "";
+    let inputData = '';
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
