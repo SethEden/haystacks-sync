@@ -27,21 +27,44 @@ import { describe, expect, test } from "@jest/globals";
  * @description Tests the positive and negative test cases of the prompt
  * @author Json Howard
  * @date 2023/05/06
+ * @NOTE Not implemented because we need to experiment with the way to capture the data that is sent to the console
  */
 describe(tst_con.cprompt, () => {
-    /**
-     * @function prompt_inValidInputMetaDataInteger
-     * @description Tests the business rules function prompt with a invalid integer inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprompt_inValidInputMetaDataInteger, () => {
+  /**
+   * @function prompt_inValidInputMetaDataInteger
+   * @description Tests the business rules function prompt with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprompt_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1,2,3,4,5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = promptOperations.prompt(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); 
+  });
+
+  /**
+   * @function prompt_inValidInputMetaDataBoolean
+   * @description Tests the business rules function prompt with invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.cprompt_inValidInputMetaDataBoolean, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
-      let inputMetaData = 4567;
+      let inputMetaData = false;
       rulesLibrary.initRulesLibrary();
   
-      // Act      
+      // Act        
       let returnData = promptOperations.prompt(
         inputData,
         inputMetaData
@@ -49,27 +72,5 @@ describe(tst_con.cprompt, () => {
   
       // Assert
       expect(returnData).toBeTruthy(); 
-    });
-
-    /**
-     * @function prompt_inValidInputMetaDataBoolean
-     * @description Tests the business rules function prompt with invalid boolean inputMetaData.
-     * @author Json Howard
-     * @date 2023/05/06
-     */
-    test(tst_con.cprompt_inValidInputMetaDataBoolean, () => {
-        // Arrange
-        let inputData = [1,2,3,4,5];
-        let inputMetaData = false;
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = promptOperations.prompt(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); 
-    });
+  });
 });

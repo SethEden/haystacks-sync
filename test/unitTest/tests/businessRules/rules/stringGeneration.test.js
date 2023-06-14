@@ -6,6 +6,8 @@
  * @description Unit tests for the stringGeneration.js
  * @requires module:stringGeneration
  * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker.js
+ * @requires module:testData/stringGeneration.js
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -17,6 +19,8 @@
 // Internal imports
 import stringGeneration from "../../../../../src/businessRules/rules/stringGeneration";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as str_con from '../../testData/businessRules/rules/stringGeneration.js';
 import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
@@ -40,8 +44,8 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
      */
     test(tst_con.cgenerateRandomMixedCaseTextByLength_validDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "";
+      let inputData = num.c5;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -62,8 +66,8 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
      */
     test(tst_con.cgenerateRandomMixedCaseTextByLength_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -73,19 +77,19 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
-     * @function generateRandomMixedCaseTextByLength_inValidDataInputDataString
+     * @function generateRandomMixedCaseTextByLength_inValidDataInputMetaDataString
      * @description Tests the business rules function generateRandomMixedCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
-    test(tst_con.cgenerateRandomMixedCaseTextByLength_inValidDataInputDataString, () => {
+    test(tst_con.cgenerateRandomMixedCaseTextByLength_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = num.c5;
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -139,7 +143,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -190,6 +194,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 /**
  * @function generateRandomUpperCaseTextByLength
  * @description Tests the positive and negative test cases of the generateRandomUpperCaseTextByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
@@ -201,8 +206,8 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
      */
     test(tst_con.cgenerateRandomUpperCaseTextByLength_validDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "";
+      let inputData = num.c5;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -223,8 +228,8 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
      */
     test(tst_con.cgenerateRandomUpperCaseTextByLength_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -234,19 +239,19 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
-     * @function generateRandomUpperCaseTextByLength_inValidDataInputDataString
+     * @function generateRandomUpperCaseTextByLength_inValidDataInputMetaDataString
      * @description Tests the business rules function generateRandomUpperCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
-    test(tst_con.cgenerateRandomUpperCaseTextByLength_inValidDataInputDataString, () => {
+    test(tst_con.cgenerateRandomUpperCaseTextByLength_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = num.c5;
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -300,7 +305,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -351,6 +356,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 /**
  * @function generateRandomLowerCaseTextByLength
  * @description Tests the positive and negative test cases of the generateRandomLowerCaseTextByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
@@ -362,8 +368,8 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
      */
     test(tst_con.cgenerateRandomLowerCaseTextByLength_validDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "";
+      let inputData = num.c5;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -384,8 +390,8 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
      */
     test(tst_con.cgenerateRandomLowerCaseTextByLength_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -395,19 +401,19 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
-     * @function generateRandomLowerCaseTextByLength_inValidDataInputDataString
+     * @function generateRandomLowerCaseTextByLength_inValidDataInputMetaDataString
      * @description Tests the business rules function generateRandomLowerCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
-    test(tst_con.cgenerateRandomLowerCaseTextByLength_inValidDataInputDataString, () => {
+    test(tst_con.cgenerateRandomLowerCaseTextByLength_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = num.c5;
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -461,7 +467,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -512,6 +518,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 /**
  * @function generateRandomMixedCaseTextWithSpecialCharactersByLength
  * @description Tests the positive and negative test cases of the generateRandomMixedCaseTextWithSpecialCharactersByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () => {
@@ -523,8 +530,8 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
      */
     test(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_validDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "";
+      let inputData = num.c5;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -545,8 +552,8 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
      */
     test(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -556,19 +563,19 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
-     * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
+     * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
      * @description Tests the business rules function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
-    test(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputDataString, () => {
+    test(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = num.c5;
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -622,7 +629,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -673,6 +680,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 /**
  * @function generateRandomUpperCaseTextWithSpecialCharactersByLength
  * @description Tests the positive and negative test cases of the generateRandomUpperCaseTextWithSpecialCharactersByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () => {
@@ -684,8 +692,8 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
      */
     test(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_validDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "";
+      let inputData = num.c5;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -706,8 +714,8 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
      */
     test(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -717,19 +725,19 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
-     * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
+     * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
      * @description Tests the business rules function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
-    test(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputDataString, () => {
+    test(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = num.c5;
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -783,7 +791,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -834,6 +842,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 /**
  * @function generateRandomLowerCaseTextWithSpecialCharactersByLength
  * @description Tests the positive and negative test cases of the generateRandomLowerCaseTextWithSpecialCharactersByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () => {
@@ -845,8 +854,8 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
      */
     test(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_validDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "";
+      let inputData = num.c5;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -867,8 +876,8 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
      */
     test(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "";
+        let inputData = data_con.stringRandomText;
+        let inputMetaData = '';
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -878,19 +887,19 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
-     * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
+     * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
      * @description Tests the business rules function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
-    test(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputDataString, () => {
+    test(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString, () => {
         // Arrange
-        let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputData = num.c5;
+        let inputMetaData = data_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -944,7 +953,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
         );
     
         // Assert
-        expect(returnData).toBe("");
+        expect(returnData).toBe('');
     });
 
     /**
@@ -995,6 +1004,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 /**
  * @function generateRandomMixedCaseAlphaNumericCodeByLength
  * @description Tests the positive and negative test cases of the generateRandomMixedCaseAlphaNumericCodeByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
@@ -1006,8 +1016,8 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "";
+    let inputData = num.c5;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -1028,8 +1038,8 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1039,19 +1049,19 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputDataString
+   * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomMixedCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1105,7 +1115,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -1156,6 +1166,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 /**
  * @function generateRandomUpperCaseAlphaNumericCodeByLength
  * @description Tests the positive and negative test cases of the generateRandomUpperCaseAlphaNumericCodeByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
@@ -1167,8 +1178,8 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "";
+    let inputData = num.c5;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -1189,8 +1200,8 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1200,19 +1211,19 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputDataString
+   * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomUpperCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1266,7 +1277,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -1317,6 +1328,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 /**
  * @function generateRandomLowerCaseAlphaNumericCodeByLength
  * @description Tests the positive and negative test cases of the generateRandomLowerCaseAlphaNumericCodeByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
@@ -1328,8 +1340,8 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "";
+    let inputData = num.c5;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -1350,8 +1362,8 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1361,19 +1373,19 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputDataString
+   * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomLowerCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1427,7 +1439,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -1478,6 +1490,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 /**
  * @function generateRandomNumericCodeByLength
  * @description Tests the positive and negative test cases of the generateRandomNumericCodeByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
@@ -1489,8 +1502,8 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomNumericCodeByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "";
+    let inputData = num.c5;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -1511,8 +1524,8 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomNumericCodeByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1522,19 +1535,19 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomNumericCodeByLength_inValidDataInputDataString
+   * @function generateRandomNumericCodeByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cgenerateRandomNumericCodeByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomNumericCodeByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1588,7 +1601,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -1639,6 +1652,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 /**
  * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength
  * @description Tests the positive and negative test cases of the generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
@@ -1650,8 +1664,8 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
    */
   test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "";
+    let inputData = num.c5;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -1672,8 +1686,8 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
    */
   test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1683,19 +1697,19 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
+   * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1749,7 +1763,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -1800,6 +1814,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 /**
  * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength
  * @description Tests the positive and negative test cases of the generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
@@ -1811,8 +1826,8 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
    */
   test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "";
+    let inputData = num.c5;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -1833,8 +1848,8 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
    */
   test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1844,19 +1859,19 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
+   * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -1910,7 +1925,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -1961,6 +1976,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 /**
  * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength
  * @description Tests the positive and negative test cases of the generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
@@ -1972,8 +1988,8 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
    */
   test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "";
+    let inputData = num.c5;
+    let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -1994,8 +2010,8 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
    */
   test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2005,19 +2021,19 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
+   * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2071,7 +2087,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -2122,6 +2138,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 /**
  * @function generateRandomSpecialCharacterCodeByLength
  * @description Tests the positive and negative test cases of the generateRandomSpecialCharacterCodeByLength
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
@@ -2133,8 +2150,8 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_validDataString, () => {
     // Arrange
-    let inputData = "5";
-    let inputMetaData = "[, ], (, )";
+    let inputData = num.c5;
+    let inputMetaData = str_con.stringRandomBrackets
 
     // Act
     let returnData = stringGeneration.generateRandomSpecialCharacterCodeByLength(
@@ -2154,8 +2171,8 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
    */
   test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "[, ], (, )";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = str_con.stringRandomBrackets
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2165,19 +2182,19 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateRandomSpecialCharacterCodeByLength_inValidDataInputDataString
+   * @function generateRandomSpecialCharacterCodeByLength_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "5";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c5;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2188,50 +2205,6 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
   
       // Assert
       expect(returnData).toBeTruthy(); // 5 characters generate
-  });
-
-  /**
-   * @function generateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean
-   * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with invalid boolean input.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean, () => {
-      // Arrange
-      let inputData = false;
-      let inputMetaData = [1,2,3,4,5];
-      rulesLibrary.initRulesLibrary();
-  
-      // Act      
-      let returnData = stringGeneration.generateRandomSpecialCharacterCodeByLength(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe("");
-  });
-
-  /**
-   * @function generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean
-   * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with invalid boolean inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean, () => {
-      // Arrange
-      let inputData = [1,2,3,4,5];
-      let inputMetaData = false;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act      
-      let returnData = stringGeneration.generateRandomSpecialCharacterCodeByLength(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe("");
   });
 
   /**
@@ -2253,7 +2226,29 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
+  });
+
+  /**
+   * @function generateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean
+   * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean, () => {
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
+  
+      // Act      
+      let returnData = stringGeneration.generateRandomSpecialCharacterCodeByLength(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe('');
   });
 
   /**
@@ -2275,13 +2270,36 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
+  });
+
+  /**
+   * @function generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean
+   * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cgenerateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean, () => {
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+      rulesLibrary.initRulesLibrary();
+  
+      // Act      
+      let returnData = stringGeneration.generateRandomSpecialCharacterCodeByLength(
+        inputData,
+        inputMetaData
+      );
+  
+      // Assert
+      expect(returnData).toBe('');
   });
 });
 
 /**
  * @function generateValidEmail
  * @description Tests the positive and negative test cases of the generateValidEmail
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateValidEmail, () => {
@@ -2293,8 +2311,8 @@ describe(tst_con.cgenerateValidEmail, () => {
    */
   test(tst_con.cgenerateValidEmail_validDataString, () => {
     // Arrange
-    let inputData = "10";
-    let inputMetaData = [true, wrd.cHello, "test.com"];
+    let inputData = num.c10
+    let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
 
     // Act
     let returnData = stringGeneration.generateValidEmail(
@@ -2314,8 +2332,8 @@ describe(tst_con.cgenerateValidEmail, () => {
    */
   test(tst_con.cgenerateValidEmail_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = [true, wrd.cHello, "test.com"];
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2325,19 +2343,19 @@ describe(tst_con.cgenerateValidEmail, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
-   * @function generateValidEmail_inValidDataInputDataString
+   * @function generateValidEmail_inValidDataInputMetaDataString
    * @description Tests the business rules function generateValidEmail with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateValidEmail_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateValidEmail_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "10";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c10
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2391,7 +2409,7 @@ describe(tst_con.cgenerateValidEmail, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -2413,7 +2431,7 @@ describe(tst_con.cgenerateValidEmail, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -2435,7 +2453,7 @@ describe(tst_con.cgenerateValidEmail, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -2447,7 +2465,7 @@ describe(tst_con.cgenerateValidEmail, () => {
   test(tst_con.cgenerateValidEmail_inValidInputDataUndefined, () => {
     // Arrange
     let inputData = undefined;
-    let inputMetaData = [true, wrd.cHello, "test.com"];
+    let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -2457,7 +2475,7 @@ describe(tst_con.cgenerateValidEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2469,7 +2487,7 @@ describe(tst_con.cgenerateValidEmail, () => {
   test(tst_con.cgenerateValidEmail_inValidInputDataNaN, () => {
     // Arrange
     let inputData = NaN;
-    let inputMetaData = [true, wrd.cHello, "test.com"];
+    let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -2479,7 +2497,7 @@ describe(tst_con.cgenerateValidEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2490,7 +2508,7 @@ describe(tst_con.cgenerateValidEmail, () => {
    */
   test(tst_con.cgenerateValidEmail_inValidInputMetaDataUndefined, () => {
     // Arrange
-    let inputData = "10";
+    let inputData = num.c10
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
@@ -2512,7 +2530,7 @@ describe(tst_con.cgenerateValidEmail, () => {
    */
   test(tst_con.cgenerateValidEmail_inValidInputMetaDataNaN, () => {
     // Arrange
-    let inputData = "10";
+    let inputData = num.c10
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 
@@ -2530,6 +2548,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 /**
  * @function generateInvalidEmail
  * @description Tests the positive and negative test cases of the generateInvalidEmail
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateInvalidEmail, () => {
@@ -2541,8 +2560,8 @@ describe(tst_con.cgenerateInvalidEmail, () => {
    */
   test(tst_con.cgenerateInvalidEmail_validDataString, () => {
     // Arrange
-    let inputData = "10";
-    let inputMetaData = [true, wrd.cHello, "test.com"];
+    let inputData = num.c10
+    let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
 
     // Act
     let returnData = stringGeneration.generateInvalidEmail(
@@ -2562,8 +2581,8 @@ describe(tst_con.cgenerateInvalidEmail, () => {
    */
   test(tst_con.cgenerateInvalidEmail_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = [true, wrd.cHello, "test.com"];
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2573,7 +2592,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
       );
   
       // Assert
-      expect(returnData).toBe("");
+      expect(returnData).toBe('');
   });
 
   /**
@@ -2584,8 +2603,8 @@ describe(tst_con.cgenerateInvalidEmail, () => {
    */
   test(tst_con.cgenerateInvalidEmail_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "10";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = num.c10
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2695,7 +2714,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
   test(tst_con.cgenerateInvalidEmail_inValidInputDataUndefined, () => {
     // Arrange
     let inputData = undefined;
-    let inputMetaData = [true, wrd.cHello, "test.com"];
+    let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -2705,7 +2724,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2717,7 +2736,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
   test(tst_con.cgenerateInvalidEmail_inValidInputDataNaN, () => {
     // Arrange
     let inputData = NaN;
-    let inputMetaData = [true, wrd.cHello, "test.com"];
+    let inputMetaData = [true, wrd.cHello, str_con.stringRandomURL];
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -2727,7 +2746,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
     );
 
     // Assert
-    expect(returnData).toBe("");
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2738,7 +2757,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
    */
   test(tst_con.cgenerateInvalidEmail_inValidInputMetaDataUndefined, () => {
     // Arrange
-    let inputData = "10";
+    let inputData = num.c10
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
@@ -2760,7 +2779,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
    */
   test(tst_con.cgenerateInvalidEmail_inValidInputMetaDataNaN, () => {
     // Arrange
-    let inputData = "10";
+    let inputData = num.c10
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 
@@ -2778,6 +2797,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 /**
  * @function generateRandomBrightColor
  * @description Tests the positive and negative test cases of the generateRandomBrightColor
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateRandomBrightColor, () => {
@@ -2789,8 +2809,8 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
    */
   test(tst_con.cgenerateRandomBrightColor_validDataString, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
-    let inputMetaData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
+    let inputMetaData = str_con.stringRandomSymbols;
 
     // Act
     let returnData = stringGeneration.generateRandomBrightColor(
@@ -2831,7 +2851,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
    */
   test(tst_con.cgenerateRandomBrightColor_validDataStringInteger, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = 57972;
 
     // Act
@@ -2853,7 +2873,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
   test(tst_con.cgenerateRandomBrightColor_validDataIntegerString, () => {
     // Arrange
     let inputData = 57972;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
 
     // Act
     let returnData = stringGeneration.generateRandomBrightColor(
@@ -2873,8 +2893,8 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
    */
   test(tst_con.cgenerateRandomBrightColor_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "!@#$%^&*";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2888,15 +2908,15 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
   });
 
   /**
-   * @function generateRandomBrightColor_inValidDataInputDataString
+   * @function generateRandomBrightColor_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomBrightColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateRandomBrightColor_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomBrightColor_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = str_con.stringRandomSymbols;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2918,7 +2938,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
   test(tst_con.cgenerateRandomBrightColor_inValidInputDataInteger, () => {
       // Arrange
       let inputData = 4567;
-      let inputMetaData = "!@#$%^&*";
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2940,7 +2960,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
   test(tst_con.cgenerateRandomBrightColor_inValidInputDataBoolean, () => {
       // Arrange
       let inputData = false;
-      let inputMetaData = "!@#$%^&*";
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -2961,7 +2981,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
    */
   test(tst_con.cgenerateRandomBrightColor_inValidInputMetaDataInteger, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
+      let inputData = str_con.stringRandomSymbols;
       let inputMetaData = 4567;
       rulesLibrary.initRulesLibrary();
   
@@ -2983,7 +3003,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
    */
   test(tst_con.cgenerateRandomBrightColor_inValidInputMetaDataBoolean, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
+      let inputData = str_con.stringRandomSymbols;
       let inputMetaData = false;
       rulesLibrary.initRulesLibrary();
   
@@ -3006,7 +3026,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
   test(tst_con.cgenerateRandomBrightColor_inValidInputDataUndefined, () => {
     // Arrange
     let inputData = undefined;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -3028,7 +3048,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
   test(tst_con.cgenerateRandomBrightColor_inValidInputDataNaN, () => {
     // Arrange
     let inputData = NaN;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -3049,7 +3069,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
    */
   test(tst_con.cgenerateRandomBrightColor_inValidInputMetaDataUndefined, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
@@ -3071,7 +3091,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
    */
   test(tst_con.cgenerateRandomBrightColor_inValidInputMetaDataNaN, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 
@@ -3089,6 +3109,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 /**
  * @function generateRandomDarkColor
  * @description Tests the positive and negative test cases of the generateRandomDarkColor
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateRandomDarkColor, () => {
@@ -3100,8 +3121,8 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
    */
   test(tst_con.cgenerateRandomDarkColor_validDataString, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
-    let inputMetaData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
+    let inputMetaData = str_con.stringRandomSymbols;
 
     // Act
     let returnData = stringGeneration.generateRandomDarkColor(
@@ -3142,7 +3163,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
    */
   test(tst_con.cgenerateRandomDarkColor_validDataStringInteger, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = 57972;
 
     // Act
@@ -3164,7 +3185,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
   test(tst_con.cgenerateRandomDarkColor_validDataIntegerString, () => {
     // Arrange
     let inputData = 57972;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
 
     // Act
     let returnData = stringGeneration.generateRandomDarkColor(
@@ -3184,8 +3205,8 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
    */
   test(tst_con.cgenerateRandomDarkColor_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "!@#$%^&*";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3199,15 +3220,15 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
   });
 
   /**
-   * @function generateRandomDarkColor_inValidDataInputDataString
+   * @function generateRandomDarkColor_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomDarkColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateRandomDarkColor_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomDarkColor_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = str_con.stringRandomSymbols;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3229,7 +3250,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
   test(tst_con.cgenerateRandomDarkColor_inValidInputDataInteger, () => {
       // Arrange
       let inputData = 4567;
-      let inputMetaData = "!@#$%^&*";
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3251,7 +3272,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
   test(tst_con.cgenerateRandomDarkColor_inValidInputDataBoolean, () => {
       // Arrange
       let inputData = false;
-      let inputMetaData = "!@#$%^&*";
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3272,7 +3293,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
    */
   test(tst_con.cgenerateRandomDarkColor_inValidInputMetaDataInteger, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
+      let inputData = str_con.stringRandomSymbols;
       let inputMetaData = 4567;
       rulesLibrary.initRulesLibrary();
   
@@ -3294,7 +3315,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
    */
   test(tst_con.cgenerateRandomDarkColor_inValidInputMetaDataBoolean, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
+      let inputData = str_con.stringRandomSymbols;
       let inputMetaData = false;
       rulesLibrary.initRulesLibrary();
   
@@ -3317,7 +3338,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
   test(tst_con.cgenerateRandomDarkColor_inValidInputDataUndefined, () => {
     // Arrange
     let inputData = undefined;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -3339,7 +3360,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
   test(tst_con.cgenerateRandomDarkColor_inValidInputDataNaN, () => {
     // Arrange
     let inputData = NaN;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -3360,7 +3381,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
    */
   test(tst_con.cgenerateRandomDarkColor_inValidInputMetaDataUndefined, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
@@ -3382,7 +3403,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
    */
   test(tst_con.cgenerateRandomDarkColor_inValidInputMetaDataNaN, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 
@@ -3400,6 +3421,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 /**
  * @function generateRandomColor
  * @description Tests the positive and negative test cases of the generateRandomColor
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.cgenerateRandomColor, () => {
@@ -3411,8 +3433,8 @@ describe(tst_con.cgenerateRandomColor, () => {
    */
   test(tst_con.cgenerateRandomColor_validDataString, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
-    let inputMetaData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
+    let inputMetaData = str_con.stringRandomSymbols;
 
     // Act
     let returnData = stringGeneration.generateRandomColor(
@@ -3453,7 +3475,7 @@ describe(tst_con.cgenerateRandomColor, () => {
    */
   test(tst_con.cgenerateRandomColor_validDataStringInteger, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = 57972;
 
     // Act
@@ -3475,7 +3497,7 @@ describe(tst_con.cgenerateRandomColor, () => {
   test(tst_con.cgenerateRandomColor_validDataIntegerString, () => {
     // Arrange
     let inputData = 57972;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
 
     // Act
     let returnData = stringGeneration.generateRandomColor(
@@ -3495,8 +3517,8 @@ describe(tst_con.cgenerateRandomColor, () => {
    */
   test(tst_con.cgenerateRandomColor_inValidDataInputDataString, () => {
       // Arrange
-      let inputData = "dfxg24346dfg";
-      let inputMetaData = "!@#$%^&*";
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3510,15 +3532,15 @@ describe(tst_con.cgenerateRandomColor, () => {
   });
 
   /**
-   * @function generateRandomColor_inValidDataInputDataString
+   * @function generateRandomColor_inValidDataInputMetaDataString
    * @description Tests the business rules function generateRandomColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.cgenerateRandomColor_inValidDataInputDataString, () => {
+  test(tst_con.cgenerateRandomColor_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
-      let inputMetaData = "dfxg24346dfg";
+      let inputData = str_con.stringRandomSymbols;
+      let inputMetaData = data_con.stringRandomText;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3540,7 +3562,7 @@ describe(tst_con.cgenerateRandomColor, () => {
   test(tst_con.cgenerateRandomColor_inValidInputDataInteger, () => {
       // Arrange
       let inputData = 4567;
-      let inputMetaData = "!@#$%^&*";
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3562,7 +3584,7 @@ describe(tst_con.cgenerateRandomColor, () => {
   test(tst_con.cgenerateRandomColor_inValidInputDataBoolean, () => {
       // Arrange
       let inputData = false;
-      let inputMetaData = "!@#$%^&*";
+      let inputMetaData = str_con.stringRandomSymbols;
       rulesLibrary.initRulesLibrary();
   
       // Act      
@@ -3583,7 +3605,7 @@ describe(tst_con.cgenerateRandomColor, () => {
    */
   test(tst_con.cgenerateRandomColor_inValidInputMetaDataInteger, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
+      let inputData = str_con.stringRandomSymbols;
       let inputMetaData = 4567;
       rulesLibrary.initRulesLibrary();
   
@@ -3605,7 +3627,7 @@ describe(tst_con.cgenerateRandomColor, () => {
    */
   test(tst_con.cgenerateRandomColor_inValidInputMetaDataBoolean, () => {
       // Arrange
-      let inputData = "!@#$%^&*";
+      let inputData = str_con.stringRandomSymbols;
       let inputMetaData = false;
       rulesLibrary.initRulesLibrary();
   
@@ -3628,7 +3650,7 @@ describe(tst_con.cgenerateRandomColor, () => {
   test(tst_con.cgenerateRandomColor_inValidInputDataUndefined, () => {
     // Arrange
     let inputData = undefined;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -3650,7 +3672,7 @@ describe(tst_con.cgenerateRandomColor, () => {
   test(tst_con.cgenerateRandomColor_inValidInputDataNaN, () => {
     // Arrange
     let inputData = NaN;
-    let inputMetaData = "!@#$%^&*";
+    let inputMetaData = str_con.stringRandomSymbols;
     rulesLibrary.initRulesLibrary();
 
     // Act    
@@ -3671,7 +3693,7 @@ describe(tst_con.cgenerateRandomColor, () => {
    */
   test(tst_con.cgenerateRandomColor_inValidInputMetaDataUndefined, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
@@ -3693,7 +3715,7 @@ describe(tst_con.cgenerateRandomColor, () => {
    */
   test(tst_con.cgenerateRandomColor_inValidInputMetaDataNaN, () => {
     // Arrange
-    let inputData = "!@#$%^&*";
+    let inputData = str_con.stringRandomSymbols;
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 

@@ -6,6 +6,8 @@
  * @description Unit tests for the stringParsingUtilities.js
  * @requires module:stringParsingUtilities
  * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker.js
+ * @requires module:testData/stringParsingUtilities.js
  * @requires module:testData/stringParsingUtilities
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -18,6 +20,8 @@
 // Internal imports
 import stringParsingUtilities from "../../../../../src/businessRules/rules/stringParsingUtilities";
 import rulesLibrary from "../../../../../src/businessRules/rulesLibrary.js";
+import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as utl_con from '../../testData/businessRules/rules/stringParsingUtilities.js';
 import * as tst_con from "../../constants/test.constants.js";
 
 // External imports
@@ -42,7 +46,7 @@ describe(tst_con.cparseSystemRootPath, () => {
     test(tst_con.cparseSystemRootPath_validDataString, () => {
       // Arrange
       let inputData = tst_con.basePath();
-      let inputMetaData = "haystack";
+      let inputMetaData = wrd.chaystack
   
       // Act
       let returnData = stringParsingUtilities.parseSystemRootPath(
@@ -62,8 +66,8 @@ describe(tst_con.cparseSystemRootPath, () => {
      */
     test(tst_con.cparseSystemRootPath_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
-        let inputMetaData = "haystack";
+        let inputData = data_con.stringRandomText
+        let inputMetaData = wrd.chaystack
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -73,7 +77,7 @@ describe(tst_con.cparseSystemRootPath, () => {
         );
     
         // Assert
-        expect(returnData).toBe("dfxg24346dfg");
+        expect(returnData).toBe('dfxg24346dfg');
     });
 
     /**
@@ -85,7 +89,7 @@ describe(tst_con.cparseSystemRootPath, () => {
     test(tst_con.cparseSystemRootPath_inValidDataInputDataString, () => {
         // Arrange
         let inputData = tst_con.basePath();
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.parseSystemRootPath(
@@ -106,7 +110,7 @@ describe(tst_con.cparseSystemRootPath, () => {
     test(tst_con.cparseSystemRootPath_inValidInputDataBoolean, () => {
         // Arrange
         let inputData = false;
-        let inputMetaData = "haystack";
+        let inputMetaData = wrd.chaystack
         rulesLibrary.initRulesLibrary();
     
         // Act        
@@ -194,7 +198,7 @@ describe(tst_con.cparseSystemRootPath, () => {
     test(tst_con.cparseSystemRootPath_inValidInputDataUndefined, () => {
         // Arrange
         let inputData = undefined;
-        let inputMetaData = "haystack";
+        let inputMetaData = wrd.chaystack
     
         // Act
         let returnData = stringParsingUtilities.parseSystemRootPath(
@@ -215,7 +219,7 @@ describe(tst_con.cparseSystemRootPath, () => {
     test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
         // Arrange
         let inputData = NaN;
-        let inputMetaData = "haystack";
+        let inputMetaData = wrd.chaystack
     
         // Act
         let returnData = stringParsingUtilities.parseSystemRootPath(
@@ -236,7 +240,7 @@ describe(tst_con.cparseSystemRootPath, () => {
     test(tst_con.cparseSystemRootPath_inValidInputDataInteger, () => {
       // Arrange
       let inputData = 4567;
-      let inputMetaData = "haystack";
+      let inputMetaData = wrd.chaystack
   
       // Act
       let returnData = stringParsingUtilities.parseSystemRootPath(
@@ -256,7 +260,7 @@ describe(tst_con.cparseSystemRootPath, () => {
      */
     test(tst_con.cparseSystemRootPath_inValidInputMetaDataInteger, () => {
       // Arrange
-      let inputData = "haystack";
+      let inputData = wrd.chaystack
       let inputMetaData = 4567;
   
       // Act
@@ -273,6 +277,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 /**
  * @function stringToDataType
  * @description Tests the positive and negative test cases of the stringToDataType
+ * @author Json Howard
  * @date 2023/05/06
  */
 describe(tst_con.cstringToDataType, () => {
@@ -305,7 +310,7 @@ describe(tst_con.cstringToDataType, () => {
      */
     test(tst_con.cstringToDataType_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = "";
         rulesLibrary.initRulesLibrary();
     
@@ -316,7 +321,7 @@ describe(tst_con.cstringToDataType, () => {
         );
     
         // Assert
-        expect(returnData).toBe("dfxg24346dfg");
+        expect(returnData).toBe('dfxg24346dfg');
     });
 
     /**
@@ -328,7 +333,7 @@ describe(tst_con.cstringToDataType, () => {
     test(tst_con.cstringToDataType_inValidDataInputDataString, () => {
         // Arrange
         let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.stringToDataType(
@@ -549,7 +554,7 @@ describe(tst_con.cstringToBoolean, () => {
      */
     test(tst_con.cstringToBoolean_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = "";
         rulesLibrary.initRulesLibrary();
     
@@ -572,7 +577,7 @@ describe(tst_con.cstringToBoolean, () => {
     test(tst_con.cstringToBoolean_inValidDataInputDataString, () => {
         // Arrange
         let inputData = "true";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.stringToBoolean(
@@ -793,7 +798,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
      */
     test(tst_con.cdetermineObjectDataType_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = "";
         rulesLibrary.initRulesLibrary();
     
@@ -816,7 +821,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
     test(tst_con.cdetermineObjectDataType_inValidDataInputDataString, () => {
         // Arrange
         let inputData = "true";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.determineObjectDataType(
@@ -1037,7 +1042,7 @@ describe(tst_con.cisBoolean, () => {
      */
     test(tst_con.cisBoolean_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = "";
         rulesLibrary.initRulesLibrary();
     
@@ -1060,7 +1065,7 @@ describe(tst_con.cisBoolean, () => {
     test(tst_con.cisBoolean_inValidDataInputDataString, () => {
         // Arrange
         let inputData = "true";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.isBoolean(
@@ -1281,7 +1286,7 @@ describe(tst_con.cisInteger, () => {
      */
     test(tst_con.cisInteger_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = "";
         rulesLibrary.initRulesLibrary();
     
@@ -1304,7 +1309,7 @@ describe(tst_con.cisInteger, () => {
     test(tst_con.cisInteger_inValidDataInputDataString, () => {
         // Arrange
         let inputData = "5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.isInteger(
@@ -1525,7 +1530,7 @@ describe(tst_con.cisFloat, () => {
      */
     test(tst_con.cisFloat_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = "";
         rulesLibrary.initRulesLibrary();
     
@@ -1548,7 +1553,7 @@ describe(tst_con.cisFloat, () => {
     test(tst_con.cisFloat_inValidDataInputDataString, () => {
         // Arrange
         let inputData = "5.5";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.isFloat(
@@ -1769,7 +1774,7 @@ describe(tst_con.cisString, () => {
      */
     test(tst_con.cisString_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = "";
         rulesLibrary.initRulesLibrary();
     
@@ -1792,7 +1797,7 @@ describe(tst_con.cisString, () => {
     test(tst_con.cisString_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.isString(
@@ -2013,7 +2018,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
      */
     test(tst_con.creplaceDoublePercentWithMessage_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = wrd.cWorld;
         rulesLibrary.initRulesLibrary();
     
@@ -2024,7 +2029,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         );
     
         // Assert
-        expect(returnData).toBe("dfxg24346dfg");
+        expect(returnData).toBe('dfxg24346dfg');
     });
 
     /**
@@ -2036,7 +2041,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     test(tst_con.creplaceDoublePercentWithMessage_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello + "%%";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.replaceDoublePercentWithMessage(
@@ -2045,7 +2050,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
         );
     
         // Assert
-        expect(returnData).toBe(wrd.cHello + "dfxg24346dfg");
+        expect(returnData).toBe(wrd.cHello + 'dfxg24346dfg');
     });
 
     /**
@@ -2257,7 +2262,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
      */
     test(tst_con.cutilitiesReplaceCharacterWithCharacter_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = "dfxg24346dfg";
+        let inputData = data_con.stringRandomText
         let inputMetaData = ["%", wrd.cWorld];
         rulesLibrary.initRulesLibrary();
     
@@ -2268,7 +2273,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
         );
     
         // Assert
-        expect(returnData).toBe("dfxg24346dfg");
+        expect(returnData).toBe('dfxg24346dfg');
     });
 
     /**
@@ -2280,7 +2285,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
     test(tst_con.cutilitiesReplaceCharacterWithCharacter_inValidDataInputDataString, () => {
         // Arrange
         let inputData = wrd.cHello + "%";
-        let inputMetaData = "dfxg24346dfg";
+        let inputMetaData = data_con.stringRandomText
     
         // Act
         let returnData = stringParsingUtilities.utilitiesReplaceCharacterWithCharacter(
