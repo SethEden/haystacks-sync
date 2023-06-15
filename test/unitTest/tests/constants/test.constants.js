@@ -25,9 +25,9 @@ export const basePath = () => {
     url = url.replace(wrd.cfile + bas.cColon + bas.cForwardSlash + bas.cForwardSlash + bas.cForwardSlash, "");
     let resUrl = "";
     let urlArray = url.split(bas.cForwardSlash);
-    for(let i = 0; i < urlArray.length; i ++) {
-        resUrl += urlArray[i];
-        if(urlArray[i] === wrd.cunit + wrd.cTest)
+    for(const element of urlArray) {
+        resUrl += element;
+        if(element === wrd.cunit + wrd.cTest)
             break;
         resUrl += bas.cForwardSlash;
     }
