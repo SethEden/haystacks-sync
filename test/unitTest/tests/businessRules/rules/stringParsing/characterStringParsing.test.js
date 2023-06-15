@@ -73,6 +73,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     // * @description Tests the business rules function singleQuoteSwapAfterEquals with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.csingleQuoteSwapAfterEquals_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -209,6 +210,7 @@ describe(tst_con.cswapForwardSlashToBackSlash, () => {
     // * @description Tests the business rules function swapForwardSlashToBackSlash with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cswapForwardSlashToBackSlash_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -350,6 +352,7 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
     // * @description Tests the business rules function swapBackSlashToForwardSlash with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cswapBackSlashToForwardSlash_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -491,6 +494,7 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
     // * @description Tests the business rules function swapDoubleForwardSlashToSingleForwardSlash with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cswapDoubleForwardSlashToSingleForwardSlash_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -632,6 +636,7 @@ describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
     // * @description Tests the business rules function swapDoubleBackSlashToSingleBackSlash with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cswapDoubleBackSlashToSingleBackSlash_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -771,6 +776,7 @@ describe(tst_con.creplaceSpacesWithPlus, () => {
     // * @description Tests the business rules function replaceSpacesWithPlus with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.creplaceSpacesWithPlus_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -905,6 +911,7 @@ describe(tst_con.creplaceColonWithUnderscore, () => {
     // * @description Tests the business rules function replaceColonWithUnderscore with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.creplaceColonWithUnderscore_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -1039,6 +1046,7 @@ describe(tst_con.ccleanCarriageReturnFromString, () => {
     // * @description Tests the business rules function cleanCarriageReturnFromString with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.ccleanCarriageReturnFromString_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -1173,6 +1181,7 @@ describe(tst_con.cconvertStringToLowerCase, () => {
     // * @description Tests the business rules function convertStringToLowerCase with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cconvertStringToLowerCase_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -1307,6 +1316,7 @@ describe(tst_con.cconvertStringToUpperCase, () => {
     // * @description Tests the business rules function convertStringToUpperCase with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cconvertStringToUpperCase_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -1441,6 +1451,7 @@ describe(tst_con.cdoesStringContainUpperCaseCharacter, () => {
     // * @description Tests the business rules function doesStringContainUpperCaseCharacter with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cdoesStringContainUpperCaseCharacter_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -1575,6 +1586,7 @@ describe(tst_con.cdoesStringContainLowerCaseCharacter, () => {
     // * @description Tests the business rules function doesStringContainLowerCaseCharacter with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cdoesStringContainLowerCaseCharacter_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -1709,6 +1721,7 @@ describe(tst_con.cisFirstCharacterLowerCase, () => {
     // * @description Tests the business rules function isFirstCharacterLowerCase with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cisFirstCharacterLowerCase_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -1843,6 +1856,7 @@ describe(tst_con.cisFirstCharacterUpperCase, () => {
     // * @description Tests the business rules function isFirstCharacterUpperCase with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cisFirstCharacterUpperCase_inValidDataInputMetaDataString, () => {
     //     // Arrange

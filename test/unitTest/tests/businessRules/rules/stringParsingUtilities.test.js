@@ -26,7 +26,6 @@ import * as tst_con from '../../constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
-import data from '../../../../../src/structures/data';
 
 const { bas, gen, num, wrd } = hayConst;
 

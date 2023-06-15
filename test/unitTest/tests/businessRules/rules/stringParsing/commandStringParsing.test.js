@@ -75,6 +75,7 @@ describe(tst_con.ccleanCommandInput, () => {
     // * @description Tests the business rules function cleanCommandInput with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.ccleanCommandInput_inValidDataInputMetaDataString, () => {
     //     // Arrange
@@ -214,6 +215,7 @@ describe(tst_con.cisValidCommandNameString, () => {
     // * @description Tests the business rules function isValidCommandNameString with a invalid string inputMetaData.
     // * @author Json Howard
     // * @date 2023/04/25
+    // * @NOTE Commented out because meta data is not used.
     // */
     // test(tst_con.cisValidCommandNameString_inValidDataInputMetaDataString, () => {
     //     // Arrange

@@ -31,9 +31,8 @@ import * as tst_con from '../../constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
-import { phonicConstantsValidation } from '@haystacks/constants/src/constantsValidation/phonic.constants.validation.js';
 
-const { wrd, cfg, bas } = hayConst;
+const { bas, cfg, phn, wrd } = hayConst;
 
 /**
  * @function changeConfigurationSetting

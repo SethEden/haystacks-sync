@@ -19,7 +19,6 @@ import loggers from '../../../executrix/loggers.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import path from 'path';
-import { cpluginThemesPath } from '@haystacks/constants/src/constants/configuration.constants.js';
 
 const {bas, biz, cfg, msg, sys, wrd} = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
