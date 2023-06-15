@@ -143,7 +143,7 @@ function searchForPatternsInStringArray(inputData, inputMetaData) {
     } // End-for (let a = 0; a < inputData.length; a++)
   } else { // Else-clause if (inputData && inputData.length > 0)
     // WARNING: InputData was not an array or had an empty array.
-    loggers.consoleLog(namespacePrefix + functionName, msg.cSearchForPatternsInSringArrayMessage4);
+    // loggers.consoleLog(namespacePrefix + functionName, msg.cSearchForPatternsInSringArrayMessage4);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -178,7 +178,7 @@ function validatePatternsThatNeedImplementation(inputData, inputMetaData) {
           passMessage = chalk.rgb(0,0,0)(passMessage);
           passMessage = chalk.bgRgb(0,255,0)(passMessage);
         } // End-if (colorizeLogsEnabled === true)
-        console.log(passMessage);
+        // console.log(passMessage);
         // constant does NOT exist:
         loggers.consoleLog(namespacePrefix + functionName, msg.cConstantDoesNotExist + currentString);
         // Make sure we add all the strings that do not exist to a coma-separated list,

@@ -47,7 +47,7 @@ function solveLehmerCode(inputData, inputMetaData) {
     //
     // {
     // "wonder": "wondr,wundr,wndr",
-    // "Woman": "wman,wmn,womn",
+    // "Woman": "wman,wmn,womn",              
     // "Amazing": "amzing,amzng"
     // }
     let lengthOfInputData = inputData.length;
@@ -304,7 +304,7 @@ function generateCommandAliases(inputData, inputMetaData) {
     // https://en.wikipedia.org/wiki/Lehmer_code
     returnData = solveLehmerCode(masterArrayIndex, masterCommandWordAliasesArray);
     // Command Aliases are:
-    console.log(msg.cCommandAliasesAre + returnData);
+    // console.log(msg.cCommandAliasesAre + returnData);
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);

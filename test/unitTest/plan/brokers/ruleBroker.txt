@@ -38,21 +38,21 @@ NOTE: To be tested with integration testing.
 
 testName: processRules_inValidInputsUndefined
 input inputs: undefined
-input rulesToExecute: string (inValidInputsUndefined)
+input rulesToExecute: string (biz.cconvertStringToLowerCase)
 output: ?
 
 testName: processRules_inValidInputsNaN
 input inputs: NaN
-input rulesToExecute: string (inValidInputsUndefined)
+input rulesToExecute: string (biz.cconvertStringToLowerCase)
 output: ?
 
 testName: processRules_inValidRulesToExecuteUndefined
-input inputs: string (inValidRulesToExecuteUndefined)
+input inputs: string (wrd.cHello + wrd.cWorld)
 input rulesToExecute: undefined
 output: ?
 
 testName: processRules_inValidRulesToExecuteNaN
-input inputs: string (inValidRulesToExecuteNaN)
+input inputs: string (wrd.cHello + wrd.cWorld)
 input rulesToExecute: NaN
 output: ?
 

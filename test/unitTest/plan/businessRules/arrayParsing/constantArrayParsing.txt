@@ -1,0 +1,154 @@
+description: Test plan for constantArrayParsing.js
+
+
+--------------------------------------------------------------------------------
+testName: getLengthOfLongestStringInArray_validDataString
+input inputData: array<string> (The array for which we should find the longest length string in)
+input inputMetaData: string (Not used for this business rule)
+output: integer (The length of the longest string in the array)
+
+testName: getLengthOfLongestStringInArray_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error:  TypeError: inputData.map is not a function
+
+testName: getLengthOfLongestStringInArray_inValidDataInputMetaDataString
+input inputData: array<string> (The array for which we should find the longest length string in) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getLengthOfLongestStringInArray_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: inputData.map is not a function
+
+testName: getLengthOfLongestStringInArray_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getLengthOfLongestStringInArray_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: Cannot calculate max of an empty array
+
+testName: getLengthOfLongestStringInArray_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: Cannot calculate max of an empty array
+
+testName: getLengthOfLongestStringInArray_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getLengthOfLongestStringInArray_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: searchForPatternsInStringArray_validDataString
+input inputData: array<string> (The array of strings that should be searched for matching patterns)
+input inputMetaData: string (Not used for this business rule)
+output: array<string> (A string array of common string values fund in more than 1 element of the array and 3 or more characters long)
+
+testName: searchForPatternsInStringArray_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: TypeError: inputData.map is not a function
+
+testName: searchForPatternsInStringArray_inValidDataInputMetaDataString
+input inputData: array<string> (The array of strings that should be searched for matching patterns) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: searchForPatternsInStringArray_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: searchForPatternsInStringArray_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: searchForPatternsInStringArray_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: Cannot calculate max of an empty array
+
+testName: searchForPatternsInStringArray_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: Cannot calculate max of an empty array
+
+testName: searchForPatternsInStringArray_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: searchForPatternsInStringArray_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: validatePatternsThatNeedImplementation_validDataString
+input inputData: array<string> (The array of strings that should be checked if they are already implemented in the constants system or not)
+input inputMetaData: string (Not used for this business rule)
+output: string (A coma separated list of constants that are not yet implemented)
+
+testName: validatePatternsThatNeedImplementation_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: validatePatternsThatNeedImplementation_inValidDataInputMetaDataString
+input inputData: array<string> (The array of strings that should be checked if they are already implemented in the constants system or not) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: validatePatternsThatNeedImplementation_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: inputData is not iterable
+
+testName: validatePatternsThatNeedImplementation_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: validatePatternsThatNeedImplementation_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: validatePatternsThatNeedImplementation_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: validatePatternsThatNeedImplementation_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: validatePatternsThatNeedImplementation_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?

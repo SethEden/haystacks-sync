@@ -1,0 +1,81 @@
+description: Test plan for commandStringParsing.js
+
+
+--------------------------------------------------------------------------------
+testName: cleanCommandInput_validDataString
+input inputData:  string (The string that should have the "--" removed from it)
+input inputMetaData: string (Not used for this business rule)
+output: string (The same as the input, but with the "--" removed)
+
+testName: cleanCommandInput_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: cleanCommandInput_inValidDataInputMetaDataString
+input inputData: string (The string that should have the "--" removed from it) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+@NOTE Not implemented because inputMetaData is not used.
+
+testName: cleanCommandInput_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
+
+testName: cleanCommandInput_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: cleanCommandInput_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
+
+testName: cleanCommandInput_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: inputData.replaceAll is not a function
+--------------------------------------------------------------------------------
+testName: isValidCommandNameString_validDataString
+input inputData:  string (The string that should be evaluated if it is sufficiently formatted such that it could qualify as a command name)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: isValidCommandNameString_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: isValidCommandNameString_inValidDataInputMetaDataString
+input inputData: string (The string that should be evaluated if it is sufficiently formatted such that it could qualify as a command name) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+@NOTE Not implemented because inputMetaData is not used.
+
+testName: isValidCommandNameString_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isValidCommandNameString_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: isValidCommandNameString_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: isValidCommandNameString_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?

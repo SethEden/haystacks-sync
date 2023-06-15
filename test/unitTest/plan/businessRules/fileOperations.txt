@@ -1,0 +1,724 @@
+description: Test plan for fileOperations.js
+
+
+--------------------------------------------------------------------------------
+testName: getXmlData_validDataString
+input inputData:  string (The path and file name of the XML file that should be loaded and parsed into JSON objects)
+input inputMetaData: string (Not used for this business rule)
+output: object (A parsed JSON object containing all of the data, meta-data, objects, values and attributes that were stored  in the specified XML file)
+
+testName: getXmlData_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: ENOENT: no such file or directory, open '\dfxg24346dfg'
+
+testName: getXmlData_inValidDataInputMetaDataString
+input inputData: string (The path and file name of the XML file that should be loaded and parsed into JSON objects) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getXmlData_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: getXmlData_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
+
+testName: getXmlData_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: getXmlData_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: getCsvData_validDataString
+input inputData:  string (The path and file name of the CSV file that should be loaded and parsed into JSON objects)
+input inputMetaData: string (Not used for this business rule)
+output: object (The JSON object as it was loaded from the file with minimal to no additional processin)
+
+testName: getCsvData_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: ENOENT: no such file or directory, open '\dfxg24346dfg'
+
+testName: getCsvData_inValidDataInputMetaDataString
+input inputData: string (The path and file name of the CSV file that should be loaded and parsed into JSON objects) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getCsvData_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: getCsvData_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
+
+testName: getCsvData_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: getCsvData_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: getJsonData_validDataString
+input inputData:  string (The path and file name of the JSON file that should be loaded and parsed into JSON objects)
+input inputMetaData: string (Not used for this business rule)
+output: object (The JSON object as it was loaded from the file with minimal to no additional processing)
+
+testName: getJsonData_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: ENOENT: no such file or directory, open '\dfxg24346dfg'
+NOTE Not implemented because when the test is ran the garbage folder is created.
+
+testName: getJsonData_inValidDataInputMetaDataString
+input inputData: string (The path and file name of the JSON file that should be loaded and parsed into JSON objects) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getJsonData_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: getJsonData_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
+
+testName: getJsonData_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: getJsonData_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: writeJsonData_validDataString
+input inputData:  string (The path and file name for the file that should have data written to it)
+input inputMetaData: string (The data that should be written to the specified file)
+output: boolean
+
+testName: writeJsonData_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The data that should be written to the specified file) (testDataString)
+output: ?
+@NOTE Not implemented because when the test is ran the garbage file is created in the root folder.
+
+testName: writeJsonData_inValidDataInputMetaDataString
+input inputData: string (The path and file name for the file that should have data written to it) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: writeJsonData_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: writeJsonData_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: undefinedError: EBADF: bad file descriptor, write
+
+testName: writeJsonData_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: undefinedError: EBADF: bad file descriptor, write
+
+testName: writeJsonData_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: undefinedError: EBADF: bad file descriptor, write
+--------------------------------------------------------------------------------
+testName: readDirectoryContents_validDataString
+input inputData:  string (The path that needs to be scanned)
+input inputMetaData: string (Not used for this business rule)
+output: object (An object containing any array of all the files in the folder and all sub-folders)
+
+testName: readDirectoryContents_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: EEXIST: file already exists, mkdir 'E:\haystacks-sync\dfxg24346dfg'
+@NOTE Not implemented because when the test is ran the garbage folder is created.
+
+testName: readDirectoryContents_inValidDataInputMetaDataString
+input inputData: string (The path that needs to be scanned) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: readDirectoryContents_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: readDirectoryContents_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
+
+testName: readDirectoryContents_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: readDirectoryContents_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: scanDirectoryContents_validDataString
+input inputData:  string (An array of strings that represents the command and command parameters to execute)
+input inputMetaData: array<boolean,integer> (Not used for this business rule)
+output: array<string> (An array of all the files in the folder up to the limit if specified)
+
+testName: scanDirectoryContents_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<boolean,integer> (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: EEXIST: file already exists, mkdir 'E:\haystacks-sync\dfxg24346dfg'
+@NOTE Not implemented because when the test is ran the garbage folder is created.
+
+testName: scanDirectoryContents_inValidDataInputMetaDataString
+input inputData: string (An array of strings that represents the command and command parameters to execute) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: scanDirectoryContents_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: scanDirectoryContents_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
+
+testName: scanDirectoryContents_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: scanDirectoryContents_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: scanDirectoryContents_inValidInputMetaDataUndefined
+input inputData: string (An array of strings that represents the command and command parameters to execute) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
+
+testName: scanDirectoryContents_inValidInputMetaDataNaN
+input inputData: string (An array of strings that represents the command and command parameters to execute) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: getDirectoryList_validDataString
+input inputData:  string (The path that should be scanned for getting a folder list at that folder level)
+input inputMetaData: string (Not used for this business rule)
+output: array<string> (The list of folders found at the specified path)
+
+testName: getDirectoryList_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: ENOTDIR: not a directory, scandir 'dfxg24346dfg'
+
+testName: getDirectoryList_inValidDataInputMetaDataString
+input inputData: string (The path that should be scanned for getting a folder list at that folder level) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getDirectoryList_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: getDirectoryList_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
+
+testName: getDirectoryList_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: getDirectoryList_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: readDirectorySynchronously_validDataString
+input inputData:  string (The system path that should be scanned recursively for files)
+input inputMetaData: string (Not used for this business rule)
+output: object (A map of all the files contained in all levels of the specified path in all the folders and sub-folders)
+
+testName: readDirectorySynchronously_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+status: Failed
+error: ENOTDIR: not a directory, scandir 'dfxg24346dfg'
+@NOTE Not implemented because when the test is ran the garbage folder is created.
+
+testName: readDirectorySynchronously_inValidDataInputMetaDataString
+input inputData: string (The system path that should be scanned recursively for files) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: readDirectorySynchronously_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: readDirectorySynchronously_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type boolean (false)
+
+testName: readDirectorySynchronously_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: readDirectorySynchronously_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: copyAllFilesAndFoldersFromFolderToFolder_validDataString
+input inputData:  array<string> (An array containing the source and destination paths)
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array)
+output: boolean
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array) (testDataString)
+output: ?
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString
+input inputData: array<string> (An array containing the source and destination paths) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received undefined
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received undefined
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (1)
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (1)
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array) (inValidDataToStoreUndefined)
+output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array) (inValidDataToStoreNaN)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received undefined
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined
+input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN
+input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: buildReleasePackage_validDataString
+input inputData:  string (The folder that should be packaged up for the release zip file)
+input inputMetaData: string (The folder where the zip file release package should be saved)
+output: boolean
+
+testName: buildReleasePackage_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The folder where the zip file release package should be saved) (testDataString)
+output: ?
+
+testName: buildReleasePackage_inValidDataInputMetaDataString
+input inputData: string (The folder that should be packaged up for the release zip file) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: buildReleasePackage_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: buildReleasePackage_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: buildReleasePackage_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: buildReleasePackage_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: createZipArchive_validDataString
+input inputData:  array<string> (All the folders and paths to include in the zip archive)
+input inputMetaData: string (The full path and file name to the destination where the zip file should be saved)
+output: boolean
+
+testName: createZipArchive_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The full path and file name to the destination where the zip file should be saved) (testDataString)
+output: ?
+
+testName: createZipArchive_inValidDataInputMetaDataString
+input inputData: array<string> (All the folders and paths to include in the zip archive) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: createZipArchive_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: createZipArchive_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: createZipArchive_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: createZipArchive_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: createZipArchive_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (The full path and file name to the destination where the zip file should be saved) (inValidDataToStoreUndefined)
+output: ?
+
+testName: createZipArchive_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (The full path and file name to the destination where the zip file should be saved) (inValidDataToStoreNaN)
+output: ?
+--------------------------------------------------------------------------------
+testName: cleanRootPath_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (The real root path or top-level path for the application)
+
+testName: cleanRootPath_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: cleanRootPath_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: cleanRootPath_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: cleanRootPath_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: cleanRootPath_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: cleanRootPath_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: copyFileSync_validDataString
+input inputData:  array<string> (An array containing the source and destination paths)
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusions array over-rides the exclusion array)
+output: boolean
+
+testName: copyFileSync_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusions array over-rides the exclusion array) (testDataString)
+output: ?
+status: Failed
+error: ERROR: Could not copy file: d
+
+testName: copyFileSync_inValidDataInputMetaDataString
+input inputData: array<string> (An array containing the source and destination paths) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: copyFileSync_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: ERROR: Could not copy file: undefined
+
+testName: copyFileSync_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: ERROR: Could not copy file: undefined
+
+testName: copyFileSync_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: copyFileSync_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+error: unexpected error
+
+testName: copyFileSync_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusions array over-rides the exclusion array) (inValidDataToStoreUndefined)
+output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
+
+testName: copyFileSync_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusions array over-rides the exclusion array) (inValidDataToStoreNaN)
+output: ?
+status: Failed
+error: ERROR: Could not copy file: undefined
+
+testName: copyFileSync_inValidInputMetaDataUndefined
+input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
+
+testName: copyFileSync_inValidInputMetaDataNaN
+input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+status: Failed
+error: TypeError: Cannot read properties of undefined (reading '0')
+--------------------------------------------------------------------------------
+testName: copyFolderRecursiveSync_validDataString
+input inputData:  array<string> (An array containing the source and destination paths)
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array)
+output: boolean
+
+testName: copyFolderRecursiveSync_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array) (testDataString)
+output: ?
+
+testName: copyFolderRecursiveSync_inValidDataInputMetaDataString
+input inputData: array<string> (An array containing the source and destination paths) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array) (inValidDataToStoreUndefined)
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: array<array<string>> (Two array's of strings that are exclusions and inclusions, file filters that should be avoided during the copy process, the inclusion array over-rides the exclusion array) (inValidDataToStoreNaN)
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputMetaDataUndefined
+input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: copyFolderRecursiveSync_inValidInputMetaDataNaN
+input inputData: array<string> (An array containing the source and destination paths) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: appendMessageToFile_validDataString
+input inputData:  string (The fully qualified path and file name for the file that should be opened, appended and saved)
+input inputMetaData: string (The message that should be appended to the specified file)
+output: boolean
+
+testName: appendMessageToFile_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The message that should be appended to the specified file) (testDataString)
+output: ?
+
+testName: appendMessageToFile_inValidDataInputMetaDataString
+input inputData: string (The fully qualified path and file name for the file that should be opened, appended and saved) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: appendMessageToFile_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. Received type number (4567) 
+
+testName: appendMessageToFile_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: appendMessageToFile_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. 
+
+testName: appendMessageToFile_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string or an instance of Buffer or URL. 

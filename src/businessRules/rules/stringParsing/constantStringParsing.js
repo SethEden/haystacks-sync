@@ -35,7 +35,7 @@ const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + 
  * @function validateConstantsDataValidation
  * @description Validates that validation data to ensure that all the contents of the
  * constants validation data matches with the actual constants definitions.
- * @param {string} inputData the path of the constants file that should be validated.
+ * @param {string} inputData The path of the constants file that should be validated.
  * @param {string} inputMetaData The name of the data hive that contains the appropriate matching constants validation data.
  * @return {boolean} True or False to indicate if all of the contents of the constants are fully validated or not.
  * @author Seth Hollingsead
@@ -146,7 +146,7 @@ function determineConstantsContextQualifiedPrefix(inputData, inputMetaData) {
 
 /**
  * @function determineSuggestedConstantsValidationLineOfCode
- * @description Takes the name of the missing constant and determines a suggested lin of code to ad to the appropriate constants validation file.
+ * @description Takes the name of the missing constant and determines a suggested line of code to ad to the appropriate constants validation file.
  * This will make it really easy for developers to maintain the constants validation system.
  * @param {string} inputData The name of the constant file that is missing and should have a line of code generated for it.
  * @param {string} inputMetaData The prefix used to reference the constants file in the code.
@@ -191,7 +191,7 @@ function determineSuggestedConstantsValidationLineOfCode(inputData, inputMetaDat
 /**
  * @function validateConstantsDataValidationLineItemName
  * @description Loops through all of the constants validation data and verifies if a matching constant definition can be found, or not found.
- * @param {string} inputData the constant definition that should be searched for.
+ * @param {string} inputData The constant definition that should be searched for.
  * @param {string} inputMetaData The name of the data hive that contains the appropriate matching constants validation data.
  * @return {boolean} True or False to indicate if a match was found or not found.
  * @author Seth Hollingsead
@@ -489,7 +489,7 @@ function isConstantTypeValid(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   if (inputData) {
-    let constantsShortNames = D[sys.cConstantsValidatinoData][sys.cConstantsShortNames];
+    let constantsShortNames = D[sys.cConstantsValidationData][sys.cConstantsShortNames];
     for (let key in constantsShortNames) {
       if (inputData === key || inputData === constantsShortNames[key]) {
         returnData = true;
@@ -534,7 +534,7 @@ function convertConstantTypeToConstantPrefix(inputData, inputMetaData) {
 /**
  * @function constantsOptimizedFulfillmentSystem
  * @description Determines what is the most optimized way to define a string using existing constant strings.
- * @param {string} inputData the string that should be determined or find a constant to fulfill part of the string.
+ * @param {string} inputData The string that should be determined or find a constant to fulfill part of the string.
  * @param {string} inputMetaData Not used for this business rule.
  * @return {string} A constant that represents part of the input string.
  * @author Seth Hollingsead
@@ -552,6 +552,7 @@ function constantsOptimizedFulfillmentSystem(inputData, inputMetaData) {
     if (doesConstantExist(inputData, '') === false) {
       returnData = constantsOptimizedFulfillmentSystem(inputData.substring(0, inputData.length - 1), inputMetaData);
     } else {
+      
       constantType = getConstantType(inputData, true);
       constantName = getConstantName(inputData, '');
       let constantPrefix = convertConstantTypeToConstantPrefix(constantType, '');
