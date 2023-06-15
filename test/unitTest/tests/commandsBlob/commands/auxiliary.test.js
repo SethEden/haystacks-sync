@@ -34,27 +34,27 @@ const { sys, wrd } = hayConst;
  * @date 2023/05/08
  */
 describe(tst_con.cconvertColors, () => {
-    /**
-     * @function convertColors_validDataString
-     * @description Tests the business rules function convertColors with a valid input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.cconvertColors_validDataString, () => {
-      // Arrange
-      let inputData = '';
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-  
-      // Act      
-      D[wrd.ccolors] = {};
-      D[wrd.ccolors][sys.cColorData] = {};
-      let returnData = auxiliary.convertColors(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, []]
-    });
+  /**
+   * @function convertColors_validDataString
+   * @description Tests the business rules function convertColors with a valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cconvertColors_validDataString, () => {
+    // Arrange
+    let inputData = '';
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    D[wrd.ccolors] = {};
+    D[wrd.ccolors][sys.cColorData] = {};
+    let returnData = auxiliary.convertColors(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, []]
+  });
 });

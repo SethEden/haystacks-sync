@@ -7,6 +7,8 @@
  * @requires module:rulesLibrary
  * @requires module:configuration
  * @requires module:configurator
+ * @requires module:testData/dataBroker
+ * @requires module:testData/stringParsingUtilities
  * @requires module:testData/configuration
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
@@ -21,12 +23,15 @@
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import configuration from '../../../../../src/commandsBlob/commands/configuration';
 import configurator from '../../../../../src/executrix/configurator.js';
+import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as utl_con from '../../testData/businessRules/rules/stringParsingUtilities.js';
 import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
+import { phonicConstantsValidation } from '@haystacks/constants/src/constantsValidation/phonic.constants.validation.js';
 
 const { wrd, cfg, bas } = hayConst;
 
@@ -37,142 +42,143 @@ const { wrd, cfg, bas } = hayConst;
  * @date 2023/05/08
  */
 describe(tst_con.cchangeConfigurationSetting, () => {
-    /**
-     * @function changeConfigurationSetting_validDataString
-     * @description Tests the business rules function changeConfigurationSetting with a valid input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.cchangeConfigurationSetting_validDataString, () => {
-      // Arrange
-      let inputData = ['TestCommandSequenceALL', 'wrkflo'];
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-  
-      // Act      
-      let returnData = configuration.changeConfigurationSetting(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-    });
+  /**
+   * @function changeConfigurationSetting_validDataString
+   * @description Tests the business rules function changeConfigurationSetting with a valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeConfigurationSetting_validDataString, () => {
+    // Arrange
+    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, wrd.cworkflow];
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function changeConfigurationSetting_inValidDataInputDataString
-     * @description Tests the business rules function changeConfigurationSetting with a invalid string input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.cchangeConfigurationSetting_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = 'dfxg24346dfg';
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = configuration.changeConfigurationSetting(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-    });
+    // Act      
+    let returnData = configuration.changeConfigurationSetting(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function changeConfigurationSetting_inValidInputDataInteger
-     * @description Tests the business rules function changeConfigurationSetting with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.cchangeConfigurationSetting_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = configuration.changeConfigurationSetting(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-    });
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
 
-    /**
-     * @function changeConfigurationSetting_inValidInputDataBoolean
-     * @description Tests the business rules function changeConfigurationSetting with a invalid boolean input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.cchangeConfigurationSetting_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = configuration.changeConfigurationSetting(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-    });
+  /**
+   * @function changeConfigurationSetting_inValidDataInputDataString
+   * @description Tests the business rules function changeConfigurationSetting with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeConfigurationSetting_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function changeConfigurationSetting_inValidInputDataNaN
-     * @description Tests the business rules function changeConfigurationSetting with a invalid NaN input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.cchangeConfigurationSetting_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = configuration.changeConfigurationSetting(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-    });
+    // Act        
+    let returnData = configuration.changeConfigurationSetting(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function changeConfigurationSetting_inValidInputDataUndefined
-     * @description Tests the business rules function changeConfigurationSetting with a invalid undefined input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.cchangeConfigurationSetting_inValidInputDataUndefined, () => {
-        // Arrange
-        let inputData = undefined;
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = configuration.changeConfigurationSetting(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-    });
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
+
+  /**
+   * @function changeConfigurationSetting_inValidInputDataInteger
+   * @description Tests the business rules function changeConfigurationSetting with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeConfigurationSetting_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = configuration.changeConfigurationSetting(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
+
+  /**
+   * @function changeConfigurationSetting_inValidInputDataBoolean
+   * @description Tests the business rules function changeConfigurationSetting with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeConfigurationSetting_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = configuration.changeConfigurationSetting(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
+
+  /**
+   * @function changeConfigurationSetting_inValidInputDataNaN
+   * @description Tests the business rules function changeConfigurationSetting with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeConfigurationSetting_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = configuration.changeConfigurationSetting(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
+
+  /**
+   * @function changeConfigurationSetting_inValidInputDataUndefined
+   * @description Tests the business rules function changeConfigurationSetting with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeConfigurationSetting_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = configuration.changeConfigurationSetting(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
 });
 
 /**
  * @function changeDebugConfigurationTheme
  * @description Tests the positive and negative test cases of the changeDebugConfigurationTheme
+ * @author Json Howard
  * @date 2023/05/08
 */
 describe(tst_con.cchangeDebugConfigurationTheme, () => {
@@ -184,7 +190,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
    */
   test(tst_con.cchangeDebugConfigurationTheme_validDataString, () => {
     // Arrange
-    let inputData = ['TestCommandSequenceALL', 'cmdSeq wrkflo'];
+    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, gen.ccmd + phn.cSeq + wrd.cworkflow];
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
@@ -207,7 +213,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
      */
   test(tst_con.cchangeDebugConfigurationTheme_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = 'dfxg24346dfg';
+    let inputData = data_con.stringRandomText;
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
@@ -229,20 +235,20 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
    * @date 2023/05/08
    */
   test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataInteger, () => {
-      // Arrange
-      let inputData = 4567;
-      let inputMetaData = '123string321';
-      rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
-      // Act      
-      let returnData = configuration.changeDebugConfigurationTheme(
-        inputData,
-        inputMetaData
-      );
+    // Act      
+    let returnData = configuration.changeDebugConfigurationTheme(
+      inputData,
+      inputMetaData
+    );
 
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 
   /**
@@ -252,43 +258,20 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
    * @date 2023/05/08
    */
   test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataBoolean, () => {
-      // Arrange
-      let inputData = false;
-      let inputMetaData = '123string321';
-      rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+    // Arrange
+    let inputData = false;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
-      // Act      
-      let returnData = configuration.changeDebugConfigurationTheme(
-        inputData,
-        inputMetaData
-      );
+    // Act      
+    let returnData = configuration.changeDebugConfigurationTheme(
+      inputData,
+      inputMetaData
+    );
 
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-  });
-
-  /**
-   * @function changeDebugConfigurationTheme_inValidInputDataNaN
-   * @description Tests the business rules function changeDebugConfigurationTheme with a invalid NaN input.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataNaN, () => {
-      // Arrange
-      let inputData = NaN;
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
-
-      // Act      
-      let returnData = configuration.changeDebugConfigurationTheme(
-        inputData,
-        inputMetaData
-      );
-
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 
   /**
@@ -298,26 +281,50 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
    * @date 2023/05/08
    */
   test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataUndefined, () => {
-      // Arrange
-      let inputData = undefined;
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
 
-      // Act      
-      let returnData = configuration.changeDebugConfigurationTheme(
-        inputData,
-        inputMetaData
-      );
+    // Act      
+    let returnData = configuration.changeDebugConfigurationTheme(
+      inputData,
+      inputMetaData
+    );
 
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
+
+  /**
+   * @function changeDebugConfigurationTheme_inValidInputDataNaN
+   * @description Tests the business rules function changeDebugConfigurationTheme with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeDebugConfigurationTheme_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath, bas.cForwardSlash);
+
+    // Act      
+    let returnData = configuration.changeDebugConfigurationTheme(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
 });
 
 /**
  * @function saveConfiguration
  * @description Tests the positive and negative test cases of the saveConfiguration
+ * @author Json Howard
  * @date 2023/05/08
  */
 describe(tst_con.csaveConfiguration, () => {
@@ -328,30 +335,30 @@ describe(tst_con.csaveConfiguration, () => {
      * @date 2023/05/08
      */
     test(tst_con.csaveConfiguration_validDataString, () => {
-      // Arrange
-      let inputData = ['TestCommandSequenceALL', 'wrkflo'];
-      let inputMetaData = '';
-      let testPath = obj_con.testConfigPath();
-      rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
-  
-      // Act      
-      let returnData = configuration.saveConfiguration(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, true]
-    });
+    // Arrange
+    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, wrd.cworkflow];
+    let inputMetaData = '';
+    let testPath = obj_con.testConfigPath();
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+
+    // Act      
+    let returnData = configuration.saveConfiguration(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, true]
+  });
 });
 
 /**
  * @function listConfigurationThemes
  * @description Tests the positive and negative test cases of the listConfigurationThemes
+ * @author Json Howard
  * @date 2023/05/08
  */
-
 describe(tst_con.clistConfigurationThemes, () => {
   /**
    * @function listConfigurationThemes_validDataString

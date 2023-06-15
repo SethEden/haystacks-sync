@@ -9,6 +9,9 @@
  * @requires module:commandsLibrary
  * @requires module:configurator
  * @requires module:data
+ * @requires module:testData/dataBroker
+ * @requires module:testData/stringParsingUtilities
+ * @requires module:testData/advanced
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
@@ -23,6 +26,9 @@ import advanced from '../../../../../src/commandsBlob/commands/advanced';
 import commandsLibrary from '../../../../../src/commandsBlob/commandsLibrary';
 import configurator from '../../../../../src/executrix/configurator.js';
 import D from '../../../../../src/structures/data.js';
+import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as utl_con from '../../testData/businessRules/rules/stringParsingUtilities.js';
+import * as adv_con from '../../testData/commandsBlob/commands/advanced.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
@@ -46,7 +52,7 @@ describe(tst_con.ccommandSequencer, () => {
    */
   test(tst_con.ccommandSequencer_validDataString, () => {
     // Arrange    
-    let inputData = ['TestCommandSequenceALL', cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
+    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
     let inputMetaData = '';    
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
@@ -71,7 +77,7 @@ describe(tst_con.ccommandSequencer, () => {
      */
   test(tst_con.ccommandSequencer_inValidDataInputDataString, () => {
     // Arrange    
-    let inputData = 'dfxg24346dfg';
+    let inputData = data_con.stringRandomText;
     let inputMetaData = '';   
     rulesLibrary.initRulesLibrary(); 
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
@@ -97,7 +103,7 @@ describe(tst_con.ccommandSequencer, () => {
   test(tst_con.ccommandSequencer_inValidInputDataInteger, () => {
     // Arrange    
     let inputData = 4567;
-    let inputMetaData = '123string32';
+    let inputMetaData = utl_con.stringRandomText1;
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
@@ -120,40 +126,15 @@ describe(tst_con.ccommandSequencer, () => {
    * @date 2023/05/09
    */
   test(tst_con.ccommandSequencer_inValidInputDataBoolean, () => {
-      // Arrange      
-      let inputData = false;
-      let inputMetaData = '123string32';
-      rulesLibrary.initRulesLibrary();
-      configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
-      commandsLibrary.initCommandsLibrary();
-      D[sys.cCommandQueue] = [];
-
-      // Act
-      let returnData = advanced.commandSequencer(
-        inputData,
-        inputMetaData
-      );
-
-      // Assert
-      expect(returnData).toBeTruthy(); 
-  });
-
-  /**
-   * @function commandSequencer_inValidInputDataNaN
-   * @description Tests the business rules function commandSequencer with a invalid NaN input.
-   * @author Json Howard
-   * @date 2023/05/09
-   */
-  test(tst_con.ccommandSequencer_inValidInputDataNaN, () => {
-    // Arrange    
-    let inputData = NaN;
-    let inputMetaData = '';    
+    // Arrange      
+    let inputData = false;
+    let inputMetaData = utl_con.stringRandomText1;
     rulesLibrary.initRulesLibrary();
     configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
     commandsLibrary.initCommandsLibrary();
     D[sys.cCommandQueue] = [];
 
-    // Act  
+    // Act
     let returnData = advanced.commandSequencer(
       inputData,
       inputMetaData
@@ -187,289 +168,317 @@ describe(tst_con.ccommandSequencer, () => {
     // Assert
     expect(returnData).toBeTruthy(); 
   });
+
+  /**
+   * @function commandSequencer_inValidInputDataNaN
+   * @description Tests the business rules function commandSequencer with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandSequencer_inValidInputDataNaN, () => {
+    // Arrange    
+    let inputData = NaN;
+    let inputMetaData = '';    
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter, bas.cComa);
+    commandsLibrary.initCommandsLibrary();
+    D[sys.cCommandQueue] = [];
+
+    // Act  
+    let returnData = advanced.commandSequencer(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); 
+  });
 });
 
 /**
  * @function workflow
  * @description Tests the positive and negative test cases of the workflow
+ * @author Json Howard
  * @date 2023/05/09
  */
 describe(tst_con.cworkflow, () => {
-    /**
-     * @function workflow_validDataString
-     * @description Tests the business rules function workflow with a valid input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cworkflow_validDataString, () => {
-      // Arrange      
-      let inputData = ['allSystemWorkflows', 'wrkflo'];
-      let inputMetaData = '';  
-      rulesLibrary.initRulesLibrary();    
-  
-      // Act      
-      let returnData = advanced.workflow(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
-    });
+  /**
+   * @function workflow_validDataString
+   * @description Tests the business rules function workflow with a valid input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cworkflow_validDataString, () => {
+    // Arrange      
+    let inputData = [wrd.call + wrd.cSystem + wrd.cWorkflows, wrd.cworkflow];
+    let inputMetaData = '';  
+    rulesLibrary.initRulesLibrary();    
 
-    /**
-     * @function workflow_inValidDataInputDataString
-     * @description Tests the business rules function workflow with a invalid string input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cworkflow_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = 'dfxg24346dfg';
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.workflow(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
-    });
+    // Act      
+    let returnData = advanced.workflow(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function workflow_inValidInputDataInteger
-     * @description Tests the business rules function workflow with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cworkflow_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.workflow(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
-    });
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
+  });
 
-    /**
-     * @function workflow_inValidInputDataBoolean
-     * @description Tests the business rules function workflow with a invalid boolean input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cworkflow_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.workflow(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
-    });
+  /**
+   * @function workflow_inValidDataInputDataString
+   * @description Tests the business rules function workflow with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cworkflow_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function workflow_inValidInputDataNaN
-     * @description Tests the business rules function workflow with a invalid NaN input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cworkflow_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.workflow(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
-    });
+    // Act        
+    let returnData = advanced.workflow(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function workflow_inValidInputDataUndefined
-     * @description Tests the business rules function workflow with a invalid undefined input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cworkflow_inValidInputDataUndefined, () => {
-      // Arrange
-      let inputData = undefined;
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = advanced.workflow(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
+  });
+
+  /**
+   * @function workflow_inValidInputDataInteger
+   * @description Tests the business rules function workflow with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cworkflow_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.workflow(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
+  });
+
+  /**
+   * @function workflow_inValidInputDataBoolean
+   * @description Tests the business rules function workflow with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cworkflow_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.workflow(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
+  });
+
+  /**
+   * @function workflow_inValidInputDataUndefined
+   * @description Tests the business rules function workflow with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cworkflow_inValidInputDataUndefined, () => {
+  // Arrange
+  let inputData = undefined;
+  let inputMetaData = '';
+  rulesLibrary.initRulesLibrary();
+
+  // Act        
+  let returnData = advanced.workflow(
+    inputData,
+    inputMetaData
+  );
+
+  // Assert
+  expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
+  });
+
+  /**
+   * @function workflow_inValidInputDataNaN
+   * @description Tests the business rules function workflow with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cworkflow_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.workflow(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'WARNING: advanced.workflow: The specified workflow: wrkflo, was not found in either the system defined workflows, or client defined workflows. Please enter a valid workflow name and try again.']
   });
 });
 
 /**
  * @function businessRule
  * @description Tests the positive and negative test cases of the businessRule
+ * @author Json Howard
  * @date 2023/05/09
  */
 describe(tst_con.cbusinessRule, () => {
-    /**
-     * @function businessRule_validDataString
-     * @description Tests the business rules function businessRule with a valid input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cbusinessRule_validDataString, () => {
-      // Arrange
-      let inputData = ['allSystembusinessRules', 'wrkflo'];
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-  
-      // Act      
-      let returnData = advanced.businessRule(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, undefined]
-    });
+  /**
+   * @function businessRule_validDataString
+   * @description Tests the business rules function businessRule with a valid input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cbusinessRule_validDataString, () => {
+    // Arrange
+    let inputData = [wrd.call + wrd.cSystem + wrd.cWorkflows, wrd.cworkflow];
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function businessRule_inValidDataInputDataString
-     * @description Tests the business rules function businessRule with a invalid string input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cbusinessRule_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = 'dfxg24346dfg';
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.businessRule(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, undefined]
-    });
+    // Act      
+    let returnData = advanced.businessRule(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function businessRule_inValidInputDataInteger
-     * @description Tests the business rules function businessRule with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cbusinessRule_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.businessRule(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, undefined]
-    });
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, undefined]
+  });
 
-    /**
-     * @function businessRule_inValidInputDataBoolean
-     * @description Tests the business rules function businessRule with a invalid boolean input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cbusinessRule_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.businessRule(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, undefined]
-    });
+  /**
+   * @function businessRule_inValidDataInputDataString
+   * @description Tests the business rules function businessRule with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cbusinessRule_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function businessRule_inValidInputDataNaN
-     * @description Tests the business rules function businessRule with a invalid NaN input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cbusinessRule_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.businessRule(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, undefined]
-    });
+    // Act        
+    let returnData = advanced.businessRule(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function businessRule_inValidInputDataUndefined
-     * @description Tests the business rules function businessRule with a invalid undefined input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.cbusinessRule_inValidInputDataUndefined, () => {
-      // Arrange
-      let inputData = undefined;
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = advanced.businessRule(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, undefined]
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, undefined]
+  });
+
+  /**
+   * @function businessRule_inValidInputDataInteger
+   * @description Tests the business rules function businessRule with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cbusinessRule_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.businessRule(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, undefined]
+  });
+
+  /**
+   * @function businessRule_inValidInputDataBoolean
+   * @description Tests the business rules function businessRule with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cbusinessRule_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.businessRule(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, undefined]
+  });
+
+  /**
+   * @function businessRule_inValidInputDataUndefined
+   * @description Tests the business rules function businessRule with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cbusinessRule_inValidInputDataUndefined, () => {
+  // Arrange
+  let inputData = undefined;
+  let inputMetaData = '';
+  rulesLibrary.initRulesLibrary();
+
+  // Act        
+  let returnData = advanced.businessRule(
+    inputData,
+    inputMetaData
+  );
+
+  // Assert
+  expect(returnData).toBeTruthy(); //[true, undefined]
+  });
+
+  /**
+   * @function businessRule_inValidInputDataNaN
+   * @description Tests the business rules function businessRule with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.cbusinessRule_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.businessRule(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, undefined]
   });
 });
 
 /**
  * @function commandGenerator
  * @description Tests the positive and negative test cases of the commandGenerator
+ * @author Json Howard
  * @date 2023/05/09
  */
 
@@ -482,7 +491,7 @@ describe(tst_con.ccommandGenerator, () => {
    */
   test(tst_con.ccommandGenerator_validDataString, () => {
     // Arrange
-    let inputData = ['TestCommandSequenceALL', cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
+    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, cmd.cconvertColors + bas.cSpace + wrd.cHello + bas.cSpace + wrd.cWorld];
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
@@ -508,7 +517,7 @@ describe(tst_con.ccommandGenerator, () => {
      */
   test(tst_con.ccommandGenerator_inValidDataInputDataString, () => {
     // Arrange
-    let inputData = 'dfxg24346dfg';
+    let inputData = data_con.stringRandomText;
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
@@ -529,19 +538,19 @@ describe(tst_con.ccommandGenerator, () => {
    * @date 2023/05/09
    */
   test(tst_con.ccommandGenerator_inValidInputDataInteger, () => {
-      // Arrange
-      let inputData = 4567;
-      let inputMetaData = '123string321';
-      rulesLibrary.initRulesLibrary();
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
 
-      // Act      
-      let returnData = advanced.commandGenerator(
-        inputData,
-        inputMetaData
-      );
+    // Act      
+    let returnData = advanced.commandGenerator(
+      inputData,
+      inputMetaData
+    );
 
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 
   /**
@@ -551,41 +560,19 @@ describe(tst_con.ccommandGenerator, () => {
    * @date 2023/05/09
    */
   test(tst_con.ccommandGenerator_inValidInputDataBoolean, () => {
-      // Arrange
-      let inputData = false;
-      let inputMetaData = '123string321';
-      rulesLibrary.initRulesLibrary();
+    // Arrange
+    let inputData = false;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
 
-      // Act      
-      let returnData = advanced.commandGenerator(
-        inputData,
-        inputMetaData
-      );
+    // Act      
+    let returnData = advanced.commandGenerator(
+      inputData,
+      inputMetaData
+    );
 
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
-  });
-
-  /**
-   * @function commandGenerator_inValidInputDataNaN
-   * @description Tests the business rules function commandGenerator with a invalid NaN input.
-   * @author Json Howard
-   * @date 2023/05/09
-   */
-  test(tst_con.ccommandGenerator_inValidInputDataNaN, () => {
-      // Arrange
-      let inputData = NaN;
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-
-      // Act      
-      let returnData = advanced.commandGenerator(
-        inputData,
-        inputMetaData
-      );
-
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 
   /**
@@ -608,144 +595,167 @@ describe(tst_con.ccommandGenerator, () => {
 
     // Assert
     expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
-});
+  });
+
+  /**
+   * @function commandGenerator_inValidInputDataNaN
+   * @description Tests the business rules function commandGenerator with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandGenerator_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act      
+    let returnData = advanced.commandGenerator(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+  });
 });
 
 /**
  * @function commandAliasGenerator
  * @description Tests the positive and negative test cases of the commandAliasGenerator
+ * @author Json Howard
  * @date 2023/05/09
  */
 describe(tst_con.ccommandAliasGenerator, () => {
-    /**
-     * @function commandAliasGenerator_validDataString
-     * @description Tests the business rules function commandAliasGenerator with a valid input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.ccommandAliasGenerator_validDataString, () => {
-      // Arrange
-      let inputData = ['c,const', 'g,gen,genrtr', 'l,lst'];
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-  
-      // Act      
-      let returnData = advanced.commandAliasGenerator(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
-    });
+  /**
+   * @function commandAliasGenerator_validDataString
+   * @description Tests the business rules function commandAliasGenerator with a valid input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandAliasGenerator_validDataString, () => {
+    // Arrange
+    let inputData = adv_con.arrayStringRandomText;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function commandAliasGenerator_inValidDataInputDataString
-     * @description Tests the business rules function commandAliasGenerator with a invalid string input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.ccommandAliasGenerator_inValidDataInputDataString, () => {
-        // Arrange
-        let inputData = 'dfxg24346dfg';
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.commandAliasGenerator(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
-    });
+    // Act      
+    let returnData = advanced.commandAliasGenerator(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function commandAliasGenerator_inValidInputDataInteger
-     * @description Tests the business rules function commandAliasGenerator with a invalid integer input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.ccommandAliasGenerator_inValidInputDataInteger, () => {
-        // Arrange
-        let inputData = 4567;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.commandAliasGenerator(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
-    });
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+  });
 
-    /**
-     * @function commandAliasGenerator_inValidInputDataBoolean
-     * @description Tests the business rules function commandAliasGenerator with a invalid boolean input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.ccommandAliasGenerator_inValidInputDataBoolean, () => {
-        // Arrange
-        let inputData = false;
-        let inputMetaData = '123string321';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.commandAliasGenerator(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
-    });
+  /**
+   * @function commandAliasGenerator_inValidDataInputDataString
+   * @description Tests the business rules function commandAliasGenerator with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandAliasGenerator_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-    /**
-     * @function commandAliasGenerator_inValidInputDataNaN
-     * @description Tests the business rules function commandAliasGenerator with a invalid NaN input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.ccommandAliasGenerator_inValidInputDataNaN, () => {
-        // Arrange
-        let inputData = NaN;
-        let inputMetaData = '';
-        rulesLibrary.initRulesLibrary();
-    
-        // Act        
-        let returnData = advanced.commandAliasGenerator(
-          inputData,
-          inputMetaData
-        );
-    
-        // Assert
-        expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
-    });
+    // Act        
+    let returnData = advanced.commandAliasGenerator(
+      inputData,
+      inputMetaData
+    );
 
-    /**
-     * @function 1commandSequencer_inValidInputDataUndefined
-     * @description Tests the business rules function commandAliasGenerator with a invalid undefined input.
-     * @author Json Howard
-     * @date 2023/05/09
-     */
-    test(tst_con.c1commandSequencer_inValidInputDataUndefined, () => {
-      // Arrange
-      let inputData = undefined;
-      let inputMetaData = '';
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = advanced.commandAliasGenerator(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+  });
+
+  /**
+   * @function commandAliasGenerator_inValidInputDataInteger
+   * @description Tests the business rules function commandAliasGenerator with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandAliasGenerator_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.commandAliasGenerator(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+  });
+
+  /**
+   * @function commandAliasGenerator_inValidInputDataBoolean
+   * @description Tests the business rules function commandAliasGenerator with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandAliasGenerator_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = utl_con.stringRandomText1;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.commandAliasGenerator(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+  });
+
+  /**
+   * @function commandSequencer_inValidInputDataUndefined
+   * @description Tests the business rules function commandAliasGenerator with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandSequencer_inValidInputDataUndefined, () => {
+  // Arrange
+  let inputData = undefined;
+  let inputMetaData = '';
+  rulesLibrary.initRulesLibrary();
+
+  // Act        
+  let returnData = advanced.commandAliasGenerator(
+    inputData,
+    inputMetaData
+  );
+
+  // Assert
+  expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
+  });
+
+  /**
+   * @function commandAliasGenerator_inValidInputDataNaN
+   * @description Tests the business rules function commandAliasGenerator with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/09
+   */
+  test(tst_con.ccommandAliasGenerator_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = advanced.commandAliasGenerator(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.']
   });
 });
