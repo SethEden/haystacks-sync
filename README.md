@@ -1,3 +1,5 @@
+# Hi Bro, This is Json, My discord account was hacked, please contact !Commander#5227
+
 # Haystacks-Sync
 A basic NodeJS framework that can be easily re-used and forked to make many different kinds of apps written with ES6 syntax. The testHarness provides an example template application for how to use the framework. There is an example architecture with coding patterns you can follow to build out your own enterprise scale business automation applications.
 This repo has been put into a support only status. For the latest updates to the haystacks framework, please look for Haystacks-Async (Active Development)
