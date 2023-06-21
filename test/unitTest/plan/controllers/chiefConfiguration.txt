@@ -3,80 +3,80 @@ description: Test plan for chiefConfiguration.js
 
 --------------------------------------------------------------------------------
 testName: setupConfiguration_validDataString
-input inputData: string (The path of the configuration files for the application layer)
-input inputMetaData: string (The path of the configuration files for the framework layer)
+input appConfigPath: string (The path of the configuration files for the application layer)
+input frameworkConfigPath: string (The path of the configuration files for the framework layer)
 output: boolean
 
-testName: setupConfiguration_inValidDataInputDataString
-input inputData: string (dfxg24346dfg)
-input inputMetaData: string (The path of the configuration files for the framework layer) (testDataString)
+testName: setupConfiguration_inValidDataAppConfigPathString
+input appConfigPath: string (dfxg24346dfg)
+input frameworkConfigPath: string (The path of the configuration files for the framework layer) (testDataString)
 output: ?
 
-testName: setupConfiguration_inValidDataInputMetaDataString
-input inputData: string (The path of the configuration files for the application layer) (testDataString)
-input inputMetaData: string (dfxg24346dfg)
+testName: setupConfiguration_inValidDataFrameworkConfigPathString
+input appConfigPath: string (The path of the configuration files for the application layer) (testDataString)
+input frameworkConfigPath: string (dfxg24346dfg)
 output: ?
 
-testName: setupConfiguration_inValidInputDataInteger
-input inputData: integer (4567)
-input inputMetaData: 123string321
+testName: setupConfiguration_inValidAppConfigPathInteger
+input appConfigPath: integer (4567)
+input frameworkConfigPath: 123string321
 output: ?
 
-testName: setupConfiguration_inValidInputDataBoolean
-input inputData: boolean (false)
-input inputMetaData: 123string321
+testName: setupConfiguration_inValidAppConfigPathBoolean
+input appConfigPath: boolean (false)
+input frameworkConfigPath: 123string321
 output: ?
 
-testName: setupConfiguration_inValidInputMetaDataInteger
-input inputData: 234string432
-input inputMetaData: string
+testName: setupConfiguration_inValidFrameworkConfigPathInteger
+input appConfigPath: 234string432
+input frameworkConfigPath: string
 output: ?
 
-testName: setupConfiguration_inValidInputMetaDataBoolean
-input inputData: 234string432
-input inputMetaData: string
+testName: setupConfiguration_inValidFrameworkConfigPathBoolean
+input appConfigPath: 234string432
+input frameworkConfigPath: string
 output: ?
 
-testName: setupConfiguration_inValidInputDataUndefined
-input inputData: undefined
-input inputMetaData: string (The path of the configuration files for the framework layer) (inValidDataToStoreUndefined)
+testName: setupConfiguration_inValidAppConfigPathUndefined
+input appConfigPath: undefined
+input frameworkConfigPath: string (The path of the configuration files for the framework layer) (inValidDataToStoreUndefined)
 output: ?
 
-testName: setupConfiguration_inValidInputDataNaN
-input inputData: NaN
-input inputMetaData: string (The path of the configuration files for the framework layer) (inValidDataToStoreNaN)
+testName: setupConfiguration_inValidAppConfigPathNaN
+input appConfigPath: NaN
+input frameworkConfigPath: string (The path of the configuration files for the framework layer) (inValidDataToStoreNaN)
 output: ?
 
-testName: setupConfiguration_inValidInputMetaDataUndefined
-input inputData: string (The path of the configuration files for the application layer) (inValidDataToStoreUndefined)
-input inputMetaData: undefined
+testName: setupConfiguration_inValidFrameworkConfigPathUndefined
+input appConfigPath: string (The path of the configuration files for the application layer) (inValidDataToStoreUndefined)
+input frameworkConfigPath: undefined
 output: ?
 
-testName: setupConfiguration_inValidInputMetaDataNaN
-input inputData: string (The path of the configuration files for the application layer) (inValidDataToStoreNaN)
-input inputMetaData: NaN
+testName: setupConfiguration_inValidFrameworkConfigPathNaN
+input appConfigPath: string (The path of the configuration files for the application layer) (inValidDataToStoreNaN)
+input frameworkConfigPath: NaN
 output: ?
 --------------------------------------------------------------------------------
 testName: parseLoadedConfigurationData_validDataString
-input inputData: object (A JSON data structure object that contains all configuration meta-data.)
+input allConfigurationData: object (A JSON data structure object that contains all configuration meta-data.)
 output: boolean
 
-testName: parseLoadedConfigurationData_inValidDataInputDataString
-input inputData: string (dfxg24346dfg)
+testName: parseLoadedConfigurationData_inValidDataAllConfigurationDataString
+input allConfigurationData: string (dfxg24346dfg)
 output: ?
 
-testName: parseLoadedConfigurationData_inValidInputDataInteger
-input inputData: integer (4567)
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataInteger
+input allConfigurationData: integer (4567)
 output: ?
 
-testName: parseLoadedConfigurationData_inValidInputDataBoolean
-input inputData: boolean (false)
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataBoolean
+input allConfigurationData: boolean (false)
 output: ?
 
-testName: parseLoadedConfigurationData_inValidInputDataUndefined
-input inputData: undefined
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataUndefined
+input allConfigurationData: undefined
 output: ?
 
-testName: parseLoadedConfigurationData_inValidInputDataNaN
-input inputData: NaN
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataNaN
+input allConfigurationData: NaN
 output: ?
