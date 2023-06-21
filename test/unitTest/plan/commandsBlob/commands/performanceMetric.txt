@@ -1,0 +1,221 @@
+description: Test plan for performanceMetric.js
+
+
+--------------------------------------------------------------------------------
+testName: businessRulesMetrics_validDataString
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = [{
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 1
+        }]
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = [randomlyGenerateMixedCaseLetterOrSpecialCharacter]
+output: [boolean, ?]
+
+testName: businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackString
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = string (dfxg24346dfg)
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = [randomlyGenerateMixedCaseLetterOrSpecialCharacter]
+output: ?
+
+testName: commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = [{
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 1
+        }]
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = string (dfxg24346dfg)
+output: ?
+
+testName: businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackInteger
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = integer (4567)
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = [randomlyGenerateMixedCaseLetterOrSpecialCharacter]
+output: ?
+
+testName: commandMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = boolean (false)
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = [randomlyGenerateMixedCaseLetterOrSpecialCharacter]
+output: ?
+
+testName: commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = [{
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 1
+        }]
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = integer (4567)
+output: ?
+
+testName: commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = [{
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 1
+        }]
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = boolean (false)
+output: ?
+
+testName: businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackUndefined
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = undefined
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = [randomlyGenerateMixedCaseLetterOrSpecialCharacter]
+output: ?
+
+testName: businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackNaN
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = NaN
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = [randomlyGenerateMixedCaseLetterOrSpecialCharacter]
+output: ?
+
+testName: commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = [{
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 1
+        }]
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = undefined
+output: ?
+
+testName: commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN
+create: D[cfg.cbusinessRulesPerformanceTrackingStack] = [{
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 0
+        }, {
+            "Name": "randomlyGenerateMixedCaseLetterOrSpecialCharacter",
+            "RunTime": 1
+        }]
+create: D[cfg.cbusinessRulesNamesPerformanceTrackingStack] = NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: commandMetrics_validDataString
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = [{
+            "Name": "commandMetrics",
+            "RunTime": 87
+        }, {
+            "Name": "name",
+            "RunTime": 1
+        }, {
+            "Name": "version",
+            "RunTime": 0
+        }]
+create: D[cfg.ccommandsPerformanceTrackingStack] = ["commandMetrics", "name", "version"]
+output: [boolean, ?]
+
+testName: commandMetrics_inValidDataCommandPerformanceTrackingStackString
+create: D[cfg.ccommandsPerformanceTrackingStack] = string (dfxg24346dfg)
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = ["commandMetrics", "name", "version"]
+output: ?
+
+testName: commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackString
+create: D[cfg.ccommandsPerformanceTrackingStack] = [{
+            "Name": "commandMetrics",
+            "RunTime": 87
+        }, {
+            "Name": "name",
+            "RunTime": 1
+        }, {
+            "Name": "version",
+            "RunTime": 0
+        }]
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = string (dfxg24346dfg)
+output: ?
+
+testName: commandMetrics_inValidDataCommandPerformanceTrackingStackInteger
+create: D[cfg.ccommandsPerformanceTrackingStack] = integer (4567)
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = ["commandMetrics", "name", "version"]
+output: ?
+
+testName: commandMetrics_inValidDataCommandPerformanceTrackingStackBoolean
+create: D[cfg.ccommandsPerformanceTrackingStack] = boolean (false)
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = ["commandMetrics", "name", "version"]
+output: ?
+
+testName: commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackInteger
+create: D[cfg.ccommandsPerformanceTrackingStack] = [{
+            "Name": "commandMetrics",
+            "RunTime": 87
+        }, {
+            "Name": "name",
+            "RunTime": 1
+        }, {
+            "Name": "version",
+            "RunTime": 0
+        }]
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = integer (4567)
+output: ?
+
+testName: commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackBoolean
+create: D[cfg.ccommandsPerformanceTrackingStack] = [{
+            "Name": "commandMetrics",
+            "RunTime": 87
+        }, {
+            "Name": "name",
+            "RunTime": 1
+        }, {
+            "Name": "version",
+            "RunTime": 0
+        }]
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = boolean (false)
+output: ?
+
+testName: commandMetrics_inValidDataCommandPerformanceTrackingStackUndefined
+create: D[cfg.ccommandsPerformanceTrackingStack] = undefined
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = ["commandMetrics", "name", "version"]
+output: ?
+
+testName: commandMetrics_inValidDataCommandPerformanceTrackingStackNaN
+create: D[cfg.ccommandsPerformanceTrackingStack] = NaN
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = ["commandMetrics", "name", "version"]
+output: ?
+
+testName: commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackUndefined
+create: D[cfg.ccommandsPerformanceTrackingStack] = [{
+            "Name": "commandMetrics",
+            "RunTime": 87
+        }, {
+            "Name": "name",
+            "RunTime": 1
+        }, {
+            "Name": "version",
+            "RunTime": 0
+        }]
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = undefined
+output: ?
+
+testName: commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackNaN
+create: D[cfg.ccommandsPerformanceTrackingStack] = [{
+            "Name": "commandMetrics",
+            "RunTime": 87
+        }, {
+            "Name": "name",
+            "RunTime": 1
+        }, {
+            "Name": "version",
+            "RunTime": 0
+        }]
+create: D[cfg.ccommandNamesPerformanceTrackingStack] = NaN
+output: ?

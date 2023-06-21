@@ -1,0 +1,180 @@
+description: Test plan for integrationTests.js
+
+
+--------------------------------------------------------------------------------
+testName: validateConstants_validDataString
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
+output: [boolean, boolean]
+NOTE File test.constants.js needs to be fixed before this test will work.
+The order of the constants needs to match the order and add missing in the tests.
+Also test.constantsValidation.js needs to be created from test.constants.js.
+
+testName: validateConstants_inValidDataString
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = string (dfxg24346dfg)
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
+output: [true, false]
+
+testName: validateConstants_inValidDataUndefined
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = Undefined
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
+output: [true, false]
+
+testName: validateConstants_inValidDataUndefined
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = Undefined
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
+output: [true, false]
+
+testName: validateConstants_inValidDataUndefined
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = Undefined
+output: [true, false]
+
+testName: validateConstants_inValidDataNaN
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = NaN
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
+output: [true, false]
+
+testName: validateConstants_inValidDataNaN
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = NaN
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
+output: [true, false]
+
+testName: validateConstants_inValidDataNaN
+create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
+D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
+D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = NaN
+output: [true, false]
+--------------------------------------------------------------------------------
+testName: validateCommandAliases_validDataString
+create: D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = [{
+                    "commandSequencer": {
+                        "Name": "commandSequencer",
+                        "Aliases": "CommandS,CommandSeq,CommandSequencer,CmdS,CmdSeq,CmdSequencer,CSeq",
+                        "Description": "Takes a sequence of commands/aliases and enqueues all to the command queue."
+                    },
+                    "workflow": {
+                        "Name": "workflow",
+                        "Aliases": "WorkF,WorkFl,WorkFlo,WorkFlow,WrkF,WrkFl,WrkFlo,WrkFlow,WF,WFl,WFlo",
+                        "Description": "Loads the specified workflow, calls the command sequencer to get each commands enqueued."
+                    },
+                    "businessRule": {
+                        "Name": "businessRule",
+                        "Aliases": "BusinessR,BusinessRul,BusinessRule,BusR,BusRul,BusRule,BizR,BizRul,BizRule,BR,BRul",
+                        "Description": "Executes a user specified business rule and prints the results."
+                    },
+                    "commandGenerator": {
+                        "Name": "commandGenerator",
+                        "Aliases": "CommandG,CommandGen,CommandGenrtr,CommandGenerator,ComdG,ComdGen,ComdGenrtr,ComdGenerator,CmdG,CmdGen,CmdGenrtr,CmdGenerator",
+                        "Description": "Generates and enqueues any number of command calls based on user input."
+                    },
+                    "commandAliasGenerator": {
+                        "Name": "commandAliasGenerator",
+                        "Aliases": "CommandAliasG,CommandAliasGen,CommandAliasGenrtr,CommandAliasGenerator,CommandAlisG,CommandAlisGen,CommandAlisGenrtr,CommandAlisGenerator,CommandAlsG,CommandAlsGen,CommandAlsGenrtr,CommandAlsGenerator,CommandAlG,CommandAlGen,CommandAlGenrtr,CommandAlGenerator,CommandAG,CommandAGen,CommandAGenrtr,CommandAGenerator,ComdAliasG,ComdAliasGen,ComdAliasGenrtr,ComdAliasGenerator,ComdAlisG,ComdAlisGen,ComdAlisGenrtr,ComdAlisGenerator,ComdAlsG,ComdAlsGen,ComdAlsGenrtr,ComdAlsGenerator,ComdAlG,ComdAlGen,ComdAlGenrtr,ComdAlGenerator,ComdAG,ComdAGen,ComdAGenrtr,ComdAGenerator,CmdAliasG,CmdAliasGen,CmdAliasGenrtr,CmdAliasGenerator,CmdAlisG,CmdAlisGen,CmdAlisGenrtr,CmdAlisGenerator,CmdAlsG,CmdAlsGen,CmdAlsGenrtr,CmdAlsGenerator,CmdAlG,CmdAlGen,CmdAlGenrtr,CmdAlGenerator,CmdAG,CmdAGen,CmdAGenrtr,CmdAGenerator,CAliasG,CAliasGen,CAliasGenrtr,CAliasGenerator,CAlisG,CAlisGen,CAlisGenrtr,CAlisGenerator,CAlsG,CAlsGen,CAlsGenrtr,CAlsGenerator,CAlG,CAlGen,CAlGenrtr,CAlGenerator,CAG,CAGen,CAGenrtr",
+                        "Description": "Generates command aliases given a command name and a list of word abbreviations."
+                    }
+                }
+            ]
+output: [boolean, boolean]
+
+testName: validateCommandAliases_inValidDataObjectDuplicate
+create: D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = [{
+                    "commandSequencer": {
+                        "Name": "commandSequencer",
+                        "Aliases": "CommandS,CommandSeq,CommandSequencer,CmdS,CmdSeq,CmdSequencer,CSeq",
+                        "Description": "Takes a sequence of commands/aliases and enqueues all to the command queue."
+                    },
+                    "workflow": {
+                        "Name": "workflow",
+                        "Aliases": "WorkF,WorkFl,WorkFlo,WorkFlow,WrkF,WrkFl,WrkFlo,WrkFlow,WF,WFl,WFlo",
+                        "Description": "Loads the specified workflow, calls the command sequencer to get each commands enqueued."
+                    },
+                    "businessRule": {
+                        "Name": "businessRule",
+                        "Aliases": "BusinessR,BusinessRul,BusinessRule,BusR,BusRul,BusRule,BizR,BizRul,BizRule,BR,BRul",
+                        "Description": "Executes a user specified business rule and prints the results."
+                    },
+                    "commandGenerator": {
+                        "Name": "commandGenerator",
+                        "Aliases": "CommandG,CommandGen,CommandGenrtr,CommandGenerator,ComdG,ComdGen,ComdGenrtr,ComdGenerator,CmdG,CmdGen,CmdGenrtr,CmdGenerator",
+                        "Description": "Generates and enqueues any number of command calls based on user input."
+                    },
+                    "commandAliasGenerator": {
+                        "Name": "commandAliasGenerator",
+                        "Aliases": "CommandAliasG,CommandAliasGen,CommandAliasGenrtr,CommandAliasGenerator,CommandAlisG,CommandAlisGen,CommandAlisGenrtr,CommandAlisGenerator,CommandAlsG,CommandAlsGen,CommandAlsGenrtr,CommandAlsGenerator,CommandAlG,CommandAlGen,CommandAlGenrtr,CommandAlGenerator,CommandAG,CommandAGen,CommandAGenrtr,CommandAGenerator,ComdAliasG,ComdAliasGen,ComdAliasGenrtr,ComdAliasGenerator,ComdAlisG,ComdAlisGen,ComdAlisGenrtr,ComdAlisGenerator,ComdAlsG,ComdAlsGen,ComdAlsGenrtr,ComdAlsGenerator,ComdAlG,ComdAlGen,ComdAlGenrtr,ComdAlGenerator,ComdAG,ComdAGen,ComdAGenrtr,ComdAGenerator,CmdAliasG,CmdAliasGen,CmdAliasGenrtr,CmdAliasGenerator,CmdAlisG,CmdAlisGen,CmdAlisGenrtr,CmdAlisGenerator,CmdAlsG,CmdAlsGen,CmdAlsGenrtr,CmdAlsGenerator,CmdAlG,CmdAlGen,CmdAlGenrtr,CmdAlGenerator,CmdAG,CmdAGen,CmdAGenrtr,CmdAGenerator,CAliasG,CAliasGen,CAliasGenrtr,CAliasGenerator,CAlisG,CAlisGen,CAlisGenrtr,CAlisGenerator,CAlsG,CAlsGen,CAlsGenrtr,CAlsGenerator,CAlG,CAlGen,CAlGenrtr,CAlGenerator,CAG,CAGen,CAGenrtr",
+                        "Description": "Generates command aliases given a command name and a list of word abbreviations."
+                    },
+                    "commandSequencer": {
+                        "Name": "commandSequencer",
+                        "Aliases": "CommandS,CommandSeq,CommandSequencer,CmdS,CmdSeq,CmdSequencer,CSeq",
+                        "Description": "Takes a sequence of commands/aliases and enqueues all to the command queue."
+                    },
+                    "workflow": {
+                        "Name": "workflow",
+                        "Aliases": "WorkF,WorkFl,WorkFlo,WorkFlow,WrkF,WrkFl,WrkFlo,WrkFlow,WF,WFl,WFlo",
+                        "Description": "Loads the specified workflow, calls the command sequencer to get each commands enqueued."
+                    },
+                    "businessRule": {
+                        "Name": "businessRule",
+                        "Aliases": "BusinessR,BusinessRul,BusinessRule,BusR,BusRul,BusRule,BizR,BizRul,BizRule,BR,BRul",
+                        "Description": "Executes a user specified business rule and prints the results."
+                    },
+                    "commandGenerator": {
+                        "Name": "commandGenerator",
+                        "Aliases": "CommandG,CommandGen,CommandGenrtr,CommandGenerator,ComdG,ComdGen,ComdGenrtr,ComdGenerator,CmdG,CmdGen,CmdGenrtr,CmdGenerator",
+                        "Description": "Generates and enqueues any number of command calls based on user input."
+                    },
+                    "commandAliasGenerator": {
+                        "Name": "commandAliasGenerator",
+                        "Aliases": "CommandAliasG,CommandAliasGen,CommandAliasGenrtr,CommandAliasGenerator,CommandAlisG,CommandAlisGen,CommandAlisGenrtr,CommandAlisGenerator,CommandAlsG,CommandAlsGen,CommandAlsGenrtr,CommandAlsGenerator,CommandAlG,CommandAlGen,CommandAlGenrtr,CommandAlGenerator,CommandAG,CommandAGen,CommandAGenrtr,CommandAGenerator,ComdAliasG,ComdAliasGen,ComdAliasGenrtr,ComdAliasGenerator,ComdAlisG,ComdAlisGen,ComdAlisGenrtr,ComdAlisGenerator,ComdAlsG,ComdAlsGen,ComdAlsGenrtr,ComdAlsGenerator,ComdAlG,ComdAlGen,ComdAlGenrtr,ComdAlGenerator,ComdAG,ComdAGen,ComdAGenrtr,ComdAGenerator,CmdAliasG,CmdAliasGen,CmdAliasGenrtr,CmdAliasGenerator,CmdAlisG,CmdAlisGen,CmdAlisGenrtr,CmdAlisGenerator,CmdAlsG,CmdAlsGen,CmdAlsGenrtr,CmdAlsGenerator,CmdAlG,CmdAlGen,CmdAlGenrtr,CmdAlGenerator,CmdAG,CmdAGen,CmdAGenrtr,CmdAGenerator,CAliasG,CAliasGen,CAliasGenrtr,CAliasGenerator,CAlisG,CAlisGen,CAlisGenrtr,CAlisGenerator,CAlsG,CAlsGen,CAlsGenrtr,CAlsGenerator,CAlG,CAlGen,CAlGenrtr,CAlGenerator,CAG,CAGen,CAGenrtr",
+                        "Description": "Generates command aliases given a command name and a list of word abbreviations."
+                    }
+                }
+            ]
+output: ?
+
+testName: validateCommandAliases_inValidDataUndefined
+create: D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = undefined
+output: ?
+
+testName: validateCommandAliases_inValidDataNaN
+create: D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = NaN
+output: ?
+--------------------------------------------------------------------------------validateWorkflows
+testName: validateWorkflows_validDataString
+create: D[sys.cCommandWorkflows][wrd.Framework][wrd.Test] = [{
+                                    "doesArrayContainCharacter": "cmdgen bizRul,doesArrayContainCharacter,$,[the|answer|to|life|the|universe|and|everything|is|$42] 4",
+                                    "removeCharacterFromArray": "cmdgen bizRul,removeCharacterFromArray,$,[the|answer|to|life|the|universe|and|everything|is|$42] 4",
+                                    "replaceCharacterAtIndex": "cmdgen bizRul,replaceCharacterAtIndex,aggregateNumericalDifferenceBetweenTwoStrings,[10|$] 4",
+                                    "characterArrayParsing": "cmdSeq wrkflo,doesArrayContainCharacter wrkflo,removeCharacterFromArray wrkflo,replaceCharacterAtIndex"
+                                }
+                            ]
+output: [boolean, ?]
+
+testName: validateWorkflows_inValidDataObjectDuplicate
+create: D[sys.cCommandWorkflows][wrd.Framework][wrd.Test] = [{
+                                    "doesArrayContainCharacter": "cmdgen bizRul,doesArrayContainCharacter,$,[the|answer|to|life|the|universe|and|everything|is|$42] 4",
+                                    "removeCharacterFromArray": "cmdgen bizRul,removeCharacterFromArray,$,[the|answer|to|life|the|universe|and|everything|is|$42] 4",
+                                    "replaceCharacterAtIndex": "cmdgen bizRul,replaceCharacterAtIndex,aggregateNumericalDifferenceBetweenTwoStrings,[10|$] 4",
+                                    "characterArrayParsing": "cmdSeq wrkflo,doesArrayContainCharacter wrkflo,removeCharacterFromArray wrkflo,replaceCharacterAtIndex"
+                                    "doesArrayContainCharacter": "cmdgen bizRul,doesArrayContainCharacter,$,[the|answer|to|life|the|universe|and|everything|is|$42] 4",
+                                    "removeCharacterFromArray": "cmdgen bizRul,removeCharacterFromArray,$,[the|answer|to|life|the|universe|and|everything|is|$42] 4",
+                                    "replaceCharacterAtIndex": "cmdgen bizRul,replaceCharacterAtIndex,aggregateNumericalDifferenceBetweenTwoStrings,[10|$] 4",
+                                    "characterArrayParsing": "cmdSeq wrkflo,doesArrayContainCharacter wrkflo,removeCharacterFromArray wrkflo,replaceCharacterAtIndex"
+                                }
+                            ]
+output: ?
+
+testName: validateWorkflows_inValidDataUndefined
+create: D[sys.cCommandWorkflows][wrd.Framework][wrd.Test] = undefined
+
+testName: validateWorkflows_inValidDataNaN
+create: D[sys.cCommandWorkflows][wrd.Framework][wrd.Test] = NaN
+output: ?
