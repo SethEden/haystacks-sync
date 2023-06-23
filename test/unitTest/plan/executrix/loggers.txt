@@ -1,0 +1,331 @@
+description: Test plan for loggers.js
+
+
+--------------------------------------------------------------------------------
+testName: consoleLog_validDataString
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input message: string (The message or data contents that should be dumped to the output)
+output: boolean
+
+testName: consoleLog_inValidDataClassPathString
+input classPath: string (dfxg24346dfg)
+input message: string (The message or data contents that should be dumped to the output) (testDataString)
+output: ?
+
+testName: consoleLog_inValidDataMessageString
+input classPath: string (The class path for the caller of this function file.function or class.method) (testDataString)
+input message: string (dfxg24346dfg)
+output: ?
+
+testName: consoleLog_inValidClassPathInteger
+input classPath: integer (4567)
+input message: 123string321
+output: ?
+
+testName: consoleLog_inValidClassPathBoolean
+input classPath: boolean (false)
+input message: 123string321
+output: ?
+
+testName: consoleLog_inValidMessageInteger
+input classPath: 234string432
+input message: string
+output: ?
+
+testName: consoleLog_inValidMessageBoolean
+input classPath: 234string432
+input message: string
+output: ?
+
+testName: consoleLog_inValidClassPathUndefined
+input classPath: undefined
+input message: string (The message or data contents that should be dumped to the output) (inValidDataToStoreUndefined)
+output: ?
+
+testName: consoleLog_inValidClassPathNaN
+input classPath: NaN
+input message: string (The message or data contents that should be dumped to the output) (inValidDataToStoreNaN)
+output: ?
+
+testName: consoleLog_inValidMessageUndefined
+input classPath: string (The class path for the caller of this function file.function or class.method) (inValidDataToStoreUndefined)
+input message: undefined
+output: ?
+
+testName: consoleLog_inValidMessageNaN
+input classPath: string (The class path for the caller of this function file.function or class.method) (inValidDataToStoreNaN)
+input message: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName:  consoleTableLog_validData
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: string (data set from ClassPath and dataToMerge)
+
+testName:  consoleTableLog_inValidClassPathString
+input classPath: string (464gsdsfae8f46)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidTableDataString
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: string (464gsdsfae8f46)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidColumnNamesString
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: string (464gsdsfae8f46)
+output: false?
+
+testName:  consoleTableLog_inValidClassPathNumber
+input classPath: integer (546)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidClassPathBoolean
+input classPath: boolean (false)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidClassPathUndefined
+input classPath: undefined
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidClassPathNaN
+input classPath: NaN
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidTableDataNumber
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: integer (546)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidTableDataBoolean
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: boolean (false)
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidTableDataUndefined
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: undefined
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidTableDataNaN
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: NaN
+input columnNames: array<string> (An array of column names that should be used when outputting the table)
+output: false?
+
+testName:  consoleTableLog_inValidColumnNamesNumber
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: integer (546)
+output: false?
+
+testName:  consoleTableLog_inValidColumnNamesBoolean
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: boolean (false)
+output: false?
+
+testName:  consoleTableLog_inValidColumnNamesUndefined
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: undefined
+output: false?
+
+testName:  consoleTableLog_inValidColumnNamesNaN
+input classPath: string (The class path for the caller of this function file.function or class.method)
+input tableData: array<object> (An array of objects that should be printed to the console as if it was data)
+input columnNames: NaN
+output: false?
+
+testName:  consoleTableLog_inValidAllUndefined
+input classPath: undefined
+input tableData: undefined
+input columnNames: undefined
+output: false?
+
+testName:  consoleTableLog_inValidAllNaN
+input classPath: NaN
+input tableData: NaN
+input columnNames: NaN
+output: false?
+--------------------------------------------------------------------------------
+testName: constantsValidationSummaryLog_validDataString
+input message: string (The message that should be displayed, if the setting determines that it should be displayed)
+input passFail: boolean (True or False to indicate if the pas or fail message should be displayed to the console log)
+output: boolean
+
+testName: constantsValidationSummaryLog_inValidDataMessageString
+input message: string (dfxg24346dfg)
+input passFail: boolean (True or False to indicate if the pas or fail message should be displayed to the console log) (testDataString)
+output: ?
+
+testName: constantsValidationSummaryLog_inValidDataPassFailString
+input message: string (The message that should be displayed, if the setting determines that it should be displayed) (testDataString)
+input passFail: string (dfxg24346dfg)
+output: ?
+
+testName: constantsValidationSummaryLog_inValidMessageInteger
+input message: integer (4567)
+input passFail: 123string321
+output: ?
+
+testName: constantsValidationSummaryLog_inValidMessageBoolean
+input message: boolean (false)
+input passFail: 123string321
+output: ?
+
+testName: constantsValidationSummaryLog_inValidPassFailInteger
+input message: 234string432
+input passFail: string
+output: ?
+
+testName: constantsValidationSummaryLog_inValidPassFailBoolean
+input message: 234string432
+input passFail: string
+output: ?
+
+testName: constantsValidationSummaryLog_inValidMessageUndefined
+input message: undefined
+input passFail: boolean (True or False to indicate if the pas or fail message should be displayed to the console log) (inValidDataToStoreUndefined)
+output: ?
+
+testName: constantsValidationSummaryLog_inValidMessageNaN
+input message: NaN
+input passFail: boolean (True or False to indicate if the pas or fail message should be displayed to the console log) (inValidDataToStoreNaN)
+output: ?
+
+testName: constantsValidationSummaryLog_inValidPassFailUndefined
+input message: string (The message that should be displayed, if the setting determines that it should be displayed) (inValidDataToStoreUndefined)
+input passFail: undefined
+output: ?
+
+testName: constantsValidationSummaryLog_inValidPassFailNaN
+input message: string (The message that should be displayed, if the setting determines that it should be displayed) (inValidDataToStoreNaN)
+input passFail: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: getLogFileNameAndPath_validDataString
+input clientRootPath: string (A path to the test log folder, use configuration setting: cfg.cclientRootPath)
+input logFileName: string (A file name for the test log file, use configuration setting: cfg.clogFileName)
+output: boolean
+
+testName: getLogFileNameAndPath_inValidDataClientRootPathString
+input clientRootPath: string (dfxg24346dfg)
+input logFileName: string (A file name for the test log file, use configuration setting: cfg.clogFileName) (testDataString)
+output: ?
+
+testName: getLogFileNameAndPath_inValidDataLogFileNameString
+input clientRootPath: string (A path to the test log folder, use configuration setting: cfg.cclientRootPath) (testDataString)
+input logFileName: string (dfxg24346dfg)
+output: ?
+
+testName: getLogFileNameAndPath_inValidClientRootPathInteger
+input clientRootPath: integer (4567)
+input logFileName: 123string321
+output: ?
+
+testName: getLogFileNameAndPath_inValidClientRootPathBoolean
+input clientRootPath: boolean (false)
+input logFileName: 123string321
+output: ?
+
+testName: getLogFileNameAndPath_inValidLogFileNameInteger
+input clientRootPath: 234string432
+input logFileName: string
+output: ?
+
+testName: getLogFileNameAndPath_inValidLogFileNameBoolean
+input clientRootPath: 234string432
+input logFileName: string
+output: ?
+
+testName: getLogFileNameAndPath_inValidClientRootPathUndefined
+input clientRootPath: undefined
+input logFileName: string (A file name for the test log file, use configuration setting: cfg.clogFileName) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getLogFileNameAndPath_inValidClientRootPathNaN
+input clientRootPath: NaN
+input logFileName: string (A file name for the test log file, use configuration setting: cfg.clogFileName) (inValidDataToStoreNaN)
+output: ?
+
+testName: getLogFileNameAndPath_inValidLogFileNameUndefined
+input clientRootPath: string (A path to the test log folder, use configuration setting: cfg.cclientRootPath) (inValidDataToStoreUndefined)
+input logFileName: undefined
+output: ?
+
+testName: getLogFileNameAndPath_inValidLogFileNameNaN
+input clientRootPath: string (A path to the test log folder, use configuration setting: cfg.cclientRootPath) (inValidDataToStoreNaN)
+input logFileName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: printMessageToFile_validDataString
+input file: string (The file path and file name where message data should be printed)
+input message: string (The message that should be logged to the log file if the specified flag is true)
+output: boolean
+
+testName: printMessageToFile_inValidDataFileString
+input file: string (dfxg24346dfg)
+input message: string (The message that should be logged to the log file if the specified flag is true) (testDataString)
+output: ?
+
+testName: printMessageToFile_inValidDataMessageString
+input file: string (The file path and file name where message data should be printed) (testDataString)
+input message: string (dfxg24346dfg)
+output: ?
+
+testName: printMessageToFile_inValidFileInteger
+input file: integer (4567)
+input message: 123string321
+output: ?
+
+testName: printMessageToFile_inValidFileBoolean
+input file: boolean (false)
+input message: 123string321
+output: ?
+
+testName: printMessageToFile_inValidMessageInteger
+input file: 234string432
+input message: string
+output: ?
+
+testName: printMessageToFile_inValidMessageBoolean
+input file: 234string432
+input message: string
+output: ?
+
+testName: printMessageToFile_inValidFileUndefined
+input file: undefined
+input message: string (The message that should be logged to the log file if the specified flag is true) (inValidDataToStoreUndefined)
+output: ?
+
+testName: printMessageToFile_inValidFileNaN
+input file: NaN
+input message: string (The message that should be logged to the log file if the specified flag is true) (inValidDataToStoreNaN)
+output: ?
+
+testName: printMessageToFile_inValidMessageUndefined
+input file: string (The file path and file name where message data should be printed) (inValidDataToStoreUndefined)
+input message: undefined
+output: ?
+
+testName: printMessageToFile_inValidMessageNaN
+input file: string (The file path and file name where message data should be printed) (inValidDataToStoreNaN)
+input message: NaN
+output: ?
