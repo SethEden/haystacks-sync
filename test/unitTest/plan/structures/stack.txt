@@ -1,0 +1,257 @@
+description: Test plan for stack.js
+
+
+--------------------------------------------------------------------------------
+testName: initStack_validDataString
+input stackNameSpace: string (The namespace the Stack array should be created under)
+output: boolean
+
+testName: initStack_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: initStack_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+output: ?
+
+testName: initStack_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+output: ?
+
+testName: initStack_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+output: ?
+
+testName: initStack_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: clearStack_validDataString
+input stackNameSpace: string (The namespace for the stack that should be cleared)
+output: boolean
+
+testName: clearStack_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: clearStack_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+output: ?
+
+testName: clearStack_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+output: ?
+
+testName: clearStack_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+output: ?
+
+testName: clearStack_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: push_validDataString
+input stackNameSpace: string (The namespace of the stack that should be used to push the data onto)
+input value: string|integer|boolean|object|array (The data that should be pushed on the stack)
+output: boolean
+
+testName: push_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+input value: string|integer|boolean|object|array (The data that should be pushed on the stack) (testDataString)
+output: ?
+
+testName: push_inValidDataValueString
+input stackNameSpace: string (The namespace of the stack that should be used to push the data onto) (testDataString)
+input value: string (dfxg24346dfg)
+output: ?
+
+testName: push_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+input value: 123string321
+output: ?
+
+testName: push_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+input value: 123string321
+output: ?
+
+testName: push_inValidValueInteger
+input stackNameSpace: 234string432
+input value: string
+output: ?
+
+testName: push_inValidValueBoolean
+input stackNameSpace: 234string432
+input value: string
+output: ?
+
+testName: push_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+input value: string|integer|boolean|object|array (The data that should be pushed on the stack) (inValidDataToStoreUndefined)
+output: ?
+
+testName: push_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+input value: string|integer|boolean|object|array (The data that should be pushed on the stack) (inValidDataToStoreNaN)
+output: ?
+
+testName: push_inValidValueUndefined
+input stackNameSpace: string (The namespace of the stack that should be used to push the data onto) (inValidDataToStoreUndefined)
+input value: undefined
+output: ?
+
+testName: push_inValidValueNaN
+input stackNameSpace: string (The namespace of the stack that should be used to push the data onto) (inValidDataToStoreNaN)
+input value: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: pop_validDataString
+input stackNameSpace: string (The namespace of the stack that should be used to pop the data and return it)
+output: boolean
+
+testName: pop_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: pop_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+output: ?
+
+testName: pop_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+output: ?
+
+testName: pop_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+output: ?
+
+testName: pop_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: isEmpty_validDataString
+input stackNameSpace: string (The namespace of the stack that should be checked if it is empty or not empty)
+output: boolean
+
+testName: isEmpty_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: isEmpty_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+output: ?
+
+testName: isEmpty_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+output: ?
+
+testName: isEmpty_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+output: ?
+
+testName: isEmpty_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: length_validDataString
+input stackNameSpace: string (The namespace of the stack that should return a length property)
+output: boolean
+
+testName: length_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: length_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+output: ?
+
+testName: length_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+output: ?
+
+testName: length_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+output: ?
+
+testName: length_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: contains_validDataString
+input stackNameSpace: string (The namespace of the stack that should be searched for the specified value)
+input value: string (The value/object that should be searched to see if it exists on the specified stack or does not exist)
+output: boolean
+
+testName: contains_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+input value: string (The value/object that should be searched to see if it exists on the specified stack or does not exist) (testDataString)
+output: ?
+
+testName: contains_inValidDataValueString
+input stackNameSpace: string (The namespace of the stack that should be searched for the specified value) (testDataString)
+input value: string (dfxg24346dfg)
+output: ?
+
+testName: contains_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+input value: 123string321
+output: ?
+
+testName: contains_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+input value: 123string321
+output: ?
+
+testName: contains_inValidValueInteger
+input stackNameSpace: 234string432
+input value: string
+output: ?
+
+testName: contains_inValidValueBoolean
+input stackNameSpace: 234string432
+input value: string
+output: ?
+
+testName: contains_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+input value: string (The value/object that should be searched to see if it exists on the specified stack or does not exist) (inValidDataToStoreUndefined)
+output: ?
+
+testName: contains_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+input value: string (The value/object that should be searched to see if it exists on the specified stack or does not exist) (inValidDataToStoreNaN)
+output: ?
+
+testName: contains_inValidValueUndefined
+input stackNameSpace: string (The namespace of the stack that should be searched for the specified value) (inValidDataToStoreUndefined)
+input value: undefined
+output: ?
+
+testName: contains_inValidValueNaN
+input stackNameSpace: string (The namespace of the stack that should be searched for the specified value) (inValidDataToStoreNaN)
+input value: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: print_validDataString
+input stackNameSpace: string (The namespace that should be used to print out the contents of the stack on the D-data structure)
+output: boolean
+
+testName: print_inValidDataStackNameSpaceString
+input stackNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: print_inValidStackNameSpaceInteger
+input stackNameSpace: integer (4567)
+output: ?
+
+testName: print_inValidStackNameSpaceBoolean
+input stackNameSpace: boolean (false)
+output: ?
+
+testName: print_inValidStackNameSpaceUndefined
+input stackNameSpace: undefined
+output: ?
+
+testName: print_inValidStackNameSpaceNaN
+input stackNameSpace: NaN
+output: ?

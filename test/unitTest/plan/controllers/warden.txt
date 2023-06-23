@@ -248,7 +248,7 @@ isCommandQueueEmpty_validDataTrue
 testName: processCommandQueue
 NOTE: Can only be tested in integration testing.
 --------------------------------------------------------------------------------
-testName: nameOfTheTest
+testName: setConfigurationSetting
 NOTE: Unit test is already covered in the configurator.js. Tested by:
 setConfigurationSetting_validData
 setConfigurationSetting_inValidConfigurationNamespaceString
@@ -270,7 +270,7 @@ setConfigurationSetting_inValidConfigurationValueNaN
 setConfigurationSetting_inValidAllUndefined
 setConfigurationSetting_inValidAllNaN
 --------------------------------------------------------------------------------
-testName: nameOfTheTest
+testName: getConfigurationSetting
 NOTE: Unit test is already covered in the configurator.js. Tested by:
 getConfigurationSetting_validDataString
 getConfigurationSetting_inValidDataConfigurationNamespaceString

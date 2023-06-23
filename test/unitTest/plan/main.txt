@@ -1,0 +1,176 @@
+description: Test plan for main.js
+
+
+--------------------------------------------------------------------------------
+testName: initFramework_validDataString
+input clientConfiguration: string (A configuration data object that contains all the data needed to bootstrap the framework for a client application)
+output: boolean
+
+testName: initFramework_inValidDataClientConfigurationString
+input clientConfiguration: string (dfxg24346dfg)
+output: ?
+
+testName: initFramework_inValidClientConfigurationInteger
+input clientConfiguration: integer (4567)
+output: ?
+
+testName: initFramework_inValidClientConfigurationBoolean
+input clientConfiguration: boolean (false)
+output: ?
+
+testName: initFramework_inValidClientConfigurationUndefined
+input clientConfiguration: undefined
+output: ?
+
+testName: initFramework_inValidClientConfigurationNaN
+input clientConfiguration: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: mergeClientBusinessRules
+NOTE: Unit test is already covered in the warden.js. Tested by:
+mergeClientBusinessRules_validDataString
+mergeClientBusinessRules_inValidDataClientBusinessRulesString
+mergeClientBusinessRules_inValidClientBusinessRulesstring
+mergeClientBusinessRules_inValidClientBusinessRulesBoolean
+mergeClientBusinessRules_inValidClientBusinessRulesUndefined
+mergeClientBusinessRules_inValidClientBusinessRulesNaN
+--------------------------------------------------------------------------------
+testName: mergeClientCommands
+NOTE: Unit test is already covered in the warden.js. Tested by:
+mergeClientCommands_validDataString
+mergeClientCommands_inValidDataClientCommandsString
+mergeClientCommands_inValidClientCommandsstring
+mergeClientCommands_inValidClientCommandsBoolean
+mergeClientCommands_inValidClientCommandsUndefined
+mergeClientCommands_inValidClientCommandsNaN
+--------------------------------------------------------------------------------
+testName: loadCommandAliases
+NOTE: Unit test is already covered in the warden.js. Tested by:
+warden.setConfigurationSetting, warden.loadCommandAliases
+setConfigurationSetting Tested by:
+setConfigurationSetting_validData
+setConfigurationSetting_inValidConfigurationNamespaceString
+setConfigurationSetting_inValidConfigurationNameString
+setConfigurationSetting_inValidConfigurationValueString
+setConfigurationSetting_inValidDataToMergeString
+setConfigurationSetting_inValidConfigurationNamespaceNumber
+setConfigurationSetting_inValidConfigurationNamespaceBoolean
+setConfigurationSetting_inValidConfigurationNamespaceUndefined
+setConfigurationSetting_inValidConfigurationNamespaceNaN
+setConfigurationSetting_inValidConfigurationNameNumber
+setConfigurationSetting_inValidConfigurationNameBoolean
+setConfigurationSetting_inValidConfigurationNameUndefined
+setConfigurationSetting_inValidConfigurationNameNaN
+setConfigurationSetting_inValidConfigurationValueNumber
+setConfigurationSetting_inValidConfigurationValueBoolean
+setConfigurationSetting_inValidConfigurationValueUndefined
+setConfigurationSetting_inValidConfigurationValueNaN
+setConfigurationSetting_inValidAllUndefined
+setConfigurationSetting_inValidAllNaN
+loadCommandAliases Tested by:
+loadCommandAliases_validDataString
+loadCommandAliases_inValidDataCommandAliasesPathString
+loadCommandAliases_inValidCommandAliasesPathstring
+loadCommandAliases_inValidCommandAliasesPathBoolean
+loadCommandAliases_inValidCommandAliasesPathUndefined
+loadCommandAliases_inValidCommandAliasesPathNaN
+--------------------------------------------------------------------------------
+testName: loadCommandWorkflows
+NOTE: Unit test is already covered in the warden.js. Tested by:
+loadCommandWorkflows_validDataString
+loadCommandWorkflows_inValidDataWorkflowPathConfigNameString
+loadCommandWorkflows_inValidWorkflowPathConfigNamestring
+loadCommandWorkflows_inValidWorkflowPathConfigNameBoolean
+loadCommandWorkflows_inValidWorkflowPathConfigNameUndefined
+loadCommandWorkflows_inValidWorkflowPathConfigNameNaN
+--------------------------------------------------------------------------------
+testName: executeBusinessRules
+NOTE: Unit test is already covered in the warden.js. Tested by:
+executeBusinessRules_validDataString
+executeBusinessRules_inValidDataInputsString
+executeBusinessRules_inValidDataBusinessRulesString
+executeBusinessRules_inValidInputsstring
+executeBusinessRules_inValidInputsBoolean
+executeBusinessRules_inValidBusinessRulesstring
+executeBusinessRules_inValidBusinessRulesBoolean
+executeBusinessRules_inValidInputsUndefined
+executeBusinessRules_inValidInputsNaN
+executeBusinessRules_inValidBusinessRulesUndefined
+executeBusinessRules_inValidBusinessRulesNaN
+--------------------------------------------------------------------------------
+testName: enqueueCommand
+NOTE: Unit test is already covered in the cheifCommander.js.
+main.enqueueCommand calls warden.enqueueCommand.
+Tested by:
+enqueueCommand_validDataString
+enqueueCommand_inValidCommandstring (The path in the configuration JSON object where the configuration setting should be set)
+enqueueCommand_inValidCommandBoolean
+enqueueCommand_inValidCommandUndefined
+enqueueCommand_inValidCommandNaN
+--------------------------------------------------------------------------------
+testName: isCommandQueueEmpty
+NOTE: Unit test is already covered in the cheifCommander.js.
+main.isCommandQueueEmpty calls warden.isCommandQueueEmpty.
+Tested by:
+isCommandQueueEmpty_validDataFalse
+isCommandQueueEmpty_validDataTrue
+--------------------------------------------------------------------------------
+testName: processCommandQueue
+NOTE: Can only be tested in integration testing.
+--------------------------------------------------------------------------------
+testName: setConfigurationSetting
+NOTE: Unit test is already covered in the configurator.js.
+main.setConfigurationSetting calls warden.setConfigurationSetting.
+Tested by:
+setConfigurationSetting_validData
+setConfigurationSetting_inValidConfigurationNamespaceString
+setConfigurationSetting_inValidConfigurationNameString
+setConfigurationSetting_inValidConfigurationValueString
+setConfigurationSetting_inValidDataToMergeString
+setConfigurationSetting_inValidConfigurationNamespaceNumber
+setConfigurationSetting_inValidConfigurationNamespaceBoolean
+setConfigurationSetting_inValidConfigurationNamespaceUndefined
+setConfigurationSetting_inValidConfigurationNamespaceNaN
+setConfigurationSetting_inValidConfigurationNameNumber
+setConfigurationSetting_inValidConfigurationNameBoolean
+setConfigurationSetting_inValidConfigurationNameUndefined
+setConfigurationSetting_inValidConfigurationNameNaN
+setConfigurationSetting_inValidConfigurationValueNumber
+setConfigurationSetting_inValidConfigurationValueBoolean
+setConfigurationSetting_inValidConfigurationValueUndefined
+setConfigurationSetting_inValidConfigurationValueNaN
+setConfigurationSetting_inValidAllUndefined
+setConfigurationSetting_inValidAllNaN
+--------------------------------------------------------------------------------
+testName: getConfigurationSetting
+NOTE: Unit test is already covered in the configurator.js.
+main.getConfigurationSetting calls warden.getConfigurationSetting.
+Tested by:
+getConfigurationSetting_validDataString
+getConfigurationSetting_inValidDataConfigurationNamespaceString
+getConfigurationSetting_inValidDataConfigurationNameString
+getConfigurationSetting_inValidConfigurationNamespaceInteger
+getConfigurationSetting_inValidConfigurationNamespaceBoolean
+getConfigurationSetting_inValidConfigurationNameInteger
+getConfigurationSetting_inValidConfigurationNameBoolean
+getConfigurationSetting_inValidConfigurationNamespaceUndefined
+getConfigurationSetting_inValidConfigurationNamespaceNaN
+getConfigurationSetting_inValidConfigurationNameUndefined
+getConfigurationSetting_inValidConfigurationNameNaN
+--------------------------------------------------------------------------------
+testName: consoleLog
+NOTE: Unit test is already covered in the loggers.js.
+main.consoleLog calls warden.consoleLog.
+Tested by:
+consoleLog_validDataString
+consoleLog_inValidDataClassPathString
+consoleLog_inValidDataMessageString
+consoleLog_inValidClassPathInteger
+consoleLog_inValidClassPathBoolean
+consoleLog_inValidMessageInteger
+consoleLog_inValidMessageBoolean
+consoleLog_inValidClassPathUndefined
+consoleLog_inValidClassPathNaN
+consoleLog_inValidMessageUndefined
+consoleLog_inValidMessageNaN
+
