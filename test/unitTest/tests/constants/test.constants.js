@@ -18,12 +18,13 @@ const {bas, num, wrd, gen, biz} = hayConst;
  * @description Get base folder path for unit test.
  * @author Seth Hollingsead
  * @date 2023/04/06
+ * @NOTE This function doesn't belong here.
  */
 export const basePath = () => {
     let url = import.meta.url;
     
     url = url.replace(wrd.cfile + bas.cColon + bas.cForwardSlash + bas.cForwardSlash + bas.cForwardSlash, "");
-    let resUrl = "";
+    let resUrl = '';
     let urlArray = url.split(bas.cForwardSlash);
     for(const element of urlArray) {
         resUrl += element;

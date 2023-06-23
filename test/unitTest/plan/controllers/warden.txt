@@ -1,0 +1,340 @@
+description: Test plan for warden.js
+
+
+--------------------------------------------------------------------------------
+testName: processRootPath_validDataString
+input inputPath: string (The path for the entry point to the framework, ie: main.js)
+input actualFrameworkName: string (The name of the framework that the application is expecting to use)
+output: boolean
+
+testName: processRootPath_inValidDataInputPathString
+input inputPath: string (dfxg24346dfg)
+input actualFrameworkName: string (The name of the framework that the application is expecting to use) (testDataString)
+output: ?
+
+testName: processRootPath_inValidDataActualFrameworkNameString
+input inputPath: string (The path for the entry point to the framework, ie: main.js) (testDataString)
+input actualFrameworkName: string (dfxg24346dfg)
+output: ?
+
+testName: processRootPath_inValidInputPathstring (The path in the configuration JSON object where the configuration setting should be set)
+input inputPath: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+input actualFrameworkName: 123string321
+output: ?
+
+testName: processRootPath_inValidInputPathBoolean
+input inputPath: boolean (false)
+input actualFrameworkName: 123string321
+output: ?
+
+testName: processRootPath_inValidActualFrameworkNamestring (The path in the configuration JSON object where the configuration setting should be set)
+input inputPath: 234string432
+input actualFrameworkName: string
+output: ?
+
+testName: processRootPath_inValidActualFrameworkNameBoolean
+input inputPath: 234string432
+input actualFrameworkName: string
+output: ?
+
+testName: processRootPath_inValidInputPathUndefined
+input inputPath: undefined
+input actualFrameworkName: string (The name of the framework that the application is expecting to use) (inValidDataToStoreUndefined)
+output: ?
+
+testName: processRootPath_inValidInputPathNaN
+input inputPath: NaN
+input actualFrameworkName: string (The name of the framework that the application is expecting to use) (inValidDataToStoreNaN)
+output: ?
+
+testName: processRootPath_inValidActualFrameworkNameUndefined
+input inputPath: string (The path for the entry point to the framework, ie: main.js) (inValidDataToStoreUndefined)
+input actualFrameworkName: undefined
+output: ?
+
+testName: processRootPath_inValidActualFrameworkNameNaN
+input inputPath: string (The path for the entry point to the framework, ie: main.js) (inValidDataToStoreNaN)
+input actualFrameworkName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: initFrameworkSchema_validDataString
+input configData: string (All of the configuration data that should be parsed as part of the setup process)
+output: boolean
+
+testName: initFrameworkSchema_inValidConfigDataString
+input configData: string (dfxg24346dfg)
+output: ?
+
+testName: initFrameworkSchema_inValidConfigDatastring (The path in the configuration JSON object where the configuration setting should be set)
+input configData: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+output: ?
+
+testName: initFrameworkSchema_inValidConfigDataBoolean
+input configData: boolean (false)
+output: ?
+
+testName: initFrameworkSchema_inValidConfigDataUndefined
+input configData: undefined
+output: ?
+
+testName: initFrameworkSchema_inValidConfigDataNaN
+input configData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: mergeClientBusinessRules_validDataString
+input clientBusinessRules: object (A map of client defined business rule names and client defined business rule function calls)
+output: boolean
+
+testName: mergeClientBusinessRules_inValidDataClientBusinessRulesString
+input clientBusinessRules: string (dfxg24346dfg)
+output: ?
+
+testName: mergeClientBusinessRules_inValidClientBusinessRulesstring (The path in the configuration JSON object where the configuration setting should be set)
+input clientBusinessRules: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+output: ?
+
+testName: mergeClientBusinessRules_inValidClientBusinessRulesBoolean
+input clientBusinessRules: boolean (false)
+output: ?
+
+testName: mergeClientBusinessRules_inValidClientBusinessRulesUndefined
+input clientBusinessRules: undefined
+output: ?
+
+testName: mergeClientBusinessRules_inValidClientBusinessRulesNaN
+input clientBusinessRules: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: mergeClientCommands_validDataString
+input clientCommands: string (A map of client defined command names and client defined command function calls)
+output: boolean
+
+testName: mergeClientCommands_inValidDataClientCommandsString
+input clientCommands: string (dfxg24346dfg)
+output: ?
+
+testName: mergeClientCommands_inValidClientCommandsstring (The path in the configuration JSON object where the configuration setting should be set)
+input clientCommands: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+output: ?
+
+testName: mergeClientCommands_inValidClientCommandsBoolean
+input clientCommands: boolean (false)
+output: ?
+
+testName: mergeClientCommands_inValidClientCommandsUndefined
+input clientCommands: undefined
+output: ?
+
+testName: mergeClientCommands_inValidClientCommandsNaN
+input clientCommands: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: loadCommandAliases_validDataString
+input commandAliasesPath: string (The configuration name of the configuration setting where the path to the commands aliases XML file is stored, that should be loaded (OPTIONAL))
+output: boolean
+
+testName: loadCommandAliases_inValidDataCommandAliasesPathString
+input commandAliasesPath: string (dfxg24346dfg)
+output: ?
+
+testName: loadCommandAliases_inValidCommandAliasesPathstring (The path in the configuration JSON object where the configuration setting should be set)
+input commandAliasesPath: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+output: ?
+
+testName: loadCommandAliases_inValidCommandAliasesPathBoolean
+input commandAliasesPath: boolean (false)
+output: ?
+
+testName: loadCommandAliases_inValidCommandAliasesPathUndefined
+input commandAliasesPath: undefined
+output: ?
+
+testName: loadCommandAliases_inValidCommandAliasesPathNaN
+input commandAliasesPath: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: loadCommandWorkflows_validDataString
+input workflowPathConfigName: string (The configuration name of the configuration setting where the path to the workflows XML file is stored, that should be loaded (OPTIONAL))
+output: boolean
+
+testName: loadCommandWorkflows_inValidDataWorkflowPathConfigNameString
+input workflowPathConfigName: string (dfxg24346dfg)
+output: ?
+
+testName: loadCommandWorkflows_inValidWorkflowPathConfigNamestring (The path in the configuration JSON object where the configuration setting should be set)
+input workflowPathConfigName: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+output: ?
+
+testName: loadCommandWorkflows_inValidWorkflowPathConfigNameBoolean
+input workflowPathConfigName: boolean (false)
+output: ?
+
+testName: loadCommandWorkflows_inValidWorkflowPathConfigNameUndefined
+input workflowPathConfigName: undefined
+output: ?
+
+testName: loadCommandWorkflows_inValidWorkflowPathConfigNameNaN
+input workflowPathConfigName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: executeBusinessRules_validDataString
+input inputs: array<string|string (The path in the configuration JSON object where the configuration setting should be set)|boolean|object|function,string|string (The path in the configuration JSON object where the configuration setting should be set)|boolean|object|function> (The array of inputs)
+input businessRules: array<string> (The array that contains the name(s) of the business rule that should be executed)
+output: boolean
+
+testName: executeBusinessRules_inValidDataInputsString
+input inputs: string (dfxg24346dfg)
+input businessRules: string (The array that contains the name(s) of the business rule that should be executed) (testDataString)
+output: ?
+
+testName: executeBusinessRules_inValidDataBusinessRulesString
+input inputs: string (The array of inputs) (testDataString)
+input businessRules: string (dfxg24346dfg)
+output: ?
+
+testName: executeBusinessRules_inValidInputsstring (The path in the configuration JSON object where the configuration setting should be set)
+input inputs: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+input businessRules: 123string321
+output: ?
+
+testName: executeBusinessRules_inValidInputsBoolean
+input inputs: boolean (false)
+input businessRules: 123string321
+output: ?
+
+testName: executeBusinessRules_inValidBusinessRulesstring (The path in the configuration JSON object where the configuration setting should be set)
+input inputs: 234string432
+input businessRules: string
+output: ?
+
+testName: executeBusinessRules_inValidBusinessRulesBoolean
+input inputs: 234string432
+input businessRules: string
+output: ?
+
+testName: executeBusinessRules_inValidInputsUndefined
+input inputs: undefined
+input businessRules: string (The array that contains the name(s) of the business rule that should be executed) (inValidDataToStoreUndefined)
+output: ?
+
+testName: executeBusinessRules_inValidInputsNaN
+input inputs: NaN
+input businessRules: string (The array that contains the name(s) of the business rule that should be executed) (inValidDataToStoreNaN)
+output: ?
+
+testName: executeBusinessRules_inValidBusinessRulesUndefined
+input inputs: string (The array of inputs) (inValidDataToStoreUndefined)
+input businessRules: undefined
+output: ?
+
+testName: executeBusinessRules_inValidBusinessRulesNaN
+input inputs: string (The array of inputs) (inValidDataToStoreNaN)
+input businessRules: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: enqueueCommand
+NOTE: Unit test is already covered in the cheifCommander.js. Tested by:
+enqueueCommand_validDataString
+enqueueCommand_inValidCommandstring (The path in the configuration JSON object where the configuration setting should be set)
+enqueueCommand_inValidCommandBoolean
+enqueueCommand_inValidCommandUndefined
+enqueueCommand_inValidCommandNaN
+--------------------------------------------------------------------------------
+testName: isCommandQueueEmpty
+NOTE: Unit test is already covered in the cheifCommander.js. Tested by:
+isCommandQueueEmpty_validDataFalse
+isCommandQueueEmpty_validDataTrue
+--------------------------------------------------------------------------------
+testName: processCommandQueue
+NOTE: Can only be tested in integration testing.
+--------------------------------------------------------------------------------
+testName: setConfigurationSetting
+NOTE: Unit test is already covered in the configurator.js. Tested by:
+setConfigurationSetting_validData
+setConfigurationSetting_inValidConfigurationNamespaceString
+setConfigurationSetting_inValidConfigurationNameString
+setConfigurationSetting_inValidConfigurationValueString
+setConfigurationSetting_inValidDataToMergeString
+setConfigurationSetting_inValidConfigurationNamespaceNumber
+setConfigurationSetting_inValidConfigurationNamespaceBoolean
+setConfigurationSetting_inValidConfigurationNamespaceUndefined
+setConfigurationSetting_inValidConfigurationNamespaceNaN
+setConfigurationSetting_inValidConfigurationNameNumber
+setConfigurationSetting_inValidConfigurationNameBoolean
+setConfigurationSetting_inValidConfigurationNameUndefined
+setConfigurationSetting_inValidConfigurationNameNaN
+setConfigurationSetting_inValidConfigurationValueNumber
+setConfigurationSetting_inValidConfigurationValueBoolean
+setConfigurationSetting_inValidConfigurationValueUndefined
+setConfigurationSetting_inValidConfigurationValueNaN
+setConfigurationSetting_inValidAllUndefined
+setConfigurationSetting_inValidAllNaN
+--------------------------------------------------------------------------------
+testName: getConfigurationSetting
+NOTE: Unit test is already covered in the configurator.js. Tested by:
+getConfigurationSetting_validDataString
+getConfigurationSetting_inValidDataConfigurationNamespaceString
+getConfigurationSetting_inValidDataConfigurationNameString
+getConfigurationSetting_inValidConfigurationNamespaceInteger
+getConfigurationSetting_inValidConfigurationNamespaceBoolean
+getConfigurationSetting_inValidConfigurationNameInteger
+getConfigurationSetting_inValidConfigurationNameBoolean
+getConfigurationSetting_inValidConfigurationNamespaceUndefined
+getConfigurationSetting_inValidConfigurationNamespaceNaN
+getConfigurationSetting_inValidConfigurationNameUndefined
+getConfigurationSetting_inValidConfigurationNameNaN
+--------------------------------------------------------------------------------
+testName: consoleLog_validDataString
+input classPath: string (The class path fro the caller of this function file.function or class.method)
+input message: string (The message or data content that should be dumped to the output)
+output: boolean
+
+testName: consoleLog_inValidDataInputDataString
+input classPath: string (dfxg24346dfg)
+input message: string (The message or data content that should be dumped to the output) (testDataString)
+output: ?
+
+testName: consoleLog_inValidDataInputMetaDataString
+input classPath: string (The class path fro the caller of this function file.function or class.method) (testDataString)
+input message: string (dfxg24346dfg)
+output: ?
+
+testName: consoleLog_inValidInputDataInteger
+input classPath: integer (4567)
+input message: 123string321
+output: ?
+
+testName: consoleLog_inValidInputDataBoolean
+input classPath: boolean (false)
+input message: 123string321
+output: ?
+
+testName: consoleLog_inValidInputMetaDataInteger
+input classPath: 234string432
+input message: string
+output: ?
+
+testName: consoleLog_inValidInputMetaDataBoolean
+input classPath: 234string432
+input message: string
+output: ?
+
+testName: consoleLog_inValidInputDataUndefined
+input classPath: undefined
+input message: string (The message or data content that should be dumped to the output) (inValidDataToStoreUndefined)
+output: ?
+
+testName: consoleLog_inValidInputDataNaN
+input classPath: NaN
+input message: string (The message or data content that should be dumped to the output) (inValidDataToStoreNaN)
+output: ?
+
+testName: consoleLog_inValidInputMetaDataUndefined
+input classPath: string (The class path fro the caller of this function file.function or class.method) (inValidDataToStoreUndefined)
+input message: undefined
+output: ?
+
+testName: consoleLog_inValidInputMetaDataNaN
+input classPath: string (The class path fro the caller of this function file.function or class.method) (inValidDataToStoreNaN)
+input message: NaN
+output: ?

@@ -1,0 +1,392 @@
+description: Test plan for system.js
+
+
+--------------------------------------------------------------------------------
+testName: echoCommand_validDataString
+input inputData: array<boolean|string|integer> 
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: echoCommand_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: echoCommand_inValidDataInputMetaDataString
+input inputData: array<boolean|string|integer> (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: echoCommand_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: echoCommand_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: echoCommand_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: echoCommand_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: echoCommand_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: echoCommand_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: echoCommand_inValidInputMetaDataUndefined
+input inputData: array<boolean|string|integer> (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: echoCommand_inValidInputMetaDataNaN
+input inputData: array<boolean|string|integer> (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: exit_validDataString
+input inputData: array<boolean|string|integer>
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: exit_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: exit_inValidDataInputMetaDataString
+input inputData: array<boolean|string|integer> (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: exit_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: exit_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: exit_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: exit_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: exit_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: exit_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: exit_inValidInputMetaDataUndefined
+input inputData: array<boolean|string|integer> (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: exit_inValidInputMetaDataNaN
+input inputData: array<boolean|string|integer> (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: version_validDataString
+input inputData: array<boolean|string|integer>
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: version_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: version_inValidDataInputMetaDataString
+input inputData: array<boolean|string|integer> (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: version_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: version_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: version_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: version_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: version_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: version_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: version_inValidInputMetaDataUndefined
+input inputData: array<boolean|string|integer> (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: version_inValidInputMetaDataNaN
+input inputData: array<boolean|string|integer> (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: about_validDataString
+input inputData: array<boolean|string|integer>
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: about_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: about_inValidDataInputMetaDataString
+input inputData: array<boolean|string|integer> (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: about_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: about_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: about_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: about_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: about_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: about_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: about_inValidInputMetaDataUndefined
+input inputData: array<boolean|string|integer> (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: about_inValidInputMetaDataNaN
+input inputData: array<boolean|string|integer> (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: name_validDataString
+input inputData: array<boolean|string|integer>
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: name_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: name_inValidDataInputMetaDataString
+input inputData: array<boolean|string|integer> (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: name_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: name_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: name_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: name_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: name_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: name_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: name_inValidInputMetaDataUndefined
+input inputData: array<boolean|string|integer> (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: name_inValidInputMetaDataNaN
+input inputData: array<boolean|string|integer> (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: clearScreen_validDataString
+NOTE: Setup: Validate that data is displayed in the console, if there is no data, run a command.
+Assert: Validate that the console log cache is cleared.
+--------------------------------------------------------------------------------
+testName: help_validDataString
+input inputData: array<boolean|string|integer>
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: help_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: help_inValidDataInputMetaDataString
+input inputData: array<boolean|string|integer> (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: help_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: help_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: help_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: help_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: help_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: help_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: help_inValidInputMetaDataUndefined
+input inputData: array<boolean|string|integer> (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: help_inValidInputMetaDataNaN
+input inputData: array<boolean|string|integer> (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: workflowHelp_validDataString
+input inputData: array<boolean|string|integer>
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: workflowHelp_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: workflowHelp_inValidDataInputMetaDataString
+input inputData: array<boolean|string|integer> (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: workflowHelp_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: workflowHelp_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: workflowHelp_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: workflowHelp_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: workflowHelp_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: workflowHelp_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: workflowHelp_inValidInputMetaDataUndefined
+input inputData: array<boolean|string|integer> (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: workflowHelp_inValidInputMetaDataNaN
+input inputData: array<boolean|string|integer> (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?

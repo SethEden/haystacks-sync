@@ -1,0 +1,82 @@
+description: Test plan for chiefConfiguration.js
+
+
+--------------------------------------------------------------------------------
+testName: setupConfiguration_validDataString
+input appConfigPath: string (The path of the configuration files for the application layer)
+input frameworkConfigPath: string (The path of the configuration files for the framework layer)
+output: boolean
+
+testName: setupConfiguration_inValidDataAppConfigPathString
+input appConfigPath: string (dfxg24346dfg)
+input frameworkConfigPath: string (The path of the configuration files for the framework layer) (testDataString)
+output: ?
+
+testName: setupConfiguration_inValidDataFrameworkConfigPathString
+input appConfigPath: string (The path of the configuration files for the application layer) (testDataString)
+input frameworkConfigPath: string (dfxg24346dfg)
+output: ?
+
+testName: setupConfiguration_inValidAppConfigPathInteger
+input appConfigPath: integer (4567)
+input frameworkConfigPath: 123string321
+output: ?
+
+testName: setupConfiguration_inValidAppConfigPathBoolean
+input appConfigPath: boolean (false)
+input frameworkConfigPath: 123string321
+output: ?
+
+testName: setupConfiguration_inValidFrameworkConfigPathInteger
+input appConfigPath: 234string432
+input frameworkConfigPath: string
+output: ?
+
+testName: setupConfiguration_inValidFrameworkConfigPathBoolean
+input appConfigPath: 234string432
+input frameworkConfigPath: string
+output: ?
+
+testName: setupConfiguration_inValidAppConfigPathUndefined
+input appConfigPath: undefined
+input frameworkConfigPath: string (The path of the configuration files for the framework layer) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setupConfiguration_inValidAppConfigPathNaN
+input appConfigPath: NaN
+input frameworkConfigPath: string (The path of the configuration files for the framework layer) (inValidDataToStoreNaN)
+output: ?
+
+testName: setupConfiguration_inValidFrameworkConfigPathUndefined
+input appConfigPath: string (The path of the configuration files for the application layer) (inValidDataToStoreUndefined)
+input frameworkConfigPath: undefined
+output: ?
+
+testName: setupConfiguration_inValidFrameworkConfigPathNaN
+input appConfigPath: string (The path of the configuration files for the application layer) (inValidDataToStoreNaN)
+input frameworkConfigPath: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: parseLoadedConfigurationData_validDataString
+input allConfigurationData: object (A JSON data structure object that contains all configuration meta-data.)
+output: boolean
+
+testName: parseLoadedConfigurationData_inValidDataAllConfigurationDataString
+input allConfigurationData: string (dfxg24346dfg)
+output: ?
+
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataInteger
+input allConfigurationData: integer (4567)
+output: ?
+
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataBoolean
+input allConfigurationData: boolean (false)
+output: ?
+
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataUndefined
+input allConfigurationData: undefined
+output: ?
+
+testName: parseLoadedConfigurationData_inValidAllConfigurationDataNaN
+input allConfigurationData: NaN
+output: ?

@@ -1,0 +1,227 @@
+description: Test plan for constant.js
+
+
+--------------------------------------------------------------------------------
+testName: constantsGenerator_validDataString
+input inputData: string (Parameterized constant to generate for.)
+input inputMetaData: string (Not used for this business rule)
+output: [boolean, ?]
+
+testName: constantsGenerator_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: constantsGenerator_inValidDataInputMetaDataString
+input inputData: string (Parameterized constant to generate for.) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: constantsGenerator_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: constantsGenerator_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: constantsGenerator_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: constantsGenerator_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: constantsGenerator_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: constantsGenerator_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: constantsGenerator_inValidInputMetaDataUndefined
+input inputData: string (Parameterized constant to generate for.) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: constantsGenerator_inValidInputMetaDataNaN
+input inputData: string (Parameterized constant to generate for.) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: constantsGeneratorList_validDataString
+input inputData: string (Parameterized coma delimited list of constants to be auto-generated)
+input inputMetaData: string (Not used for this business rule)
+output: [boolean, ?]
+
+testName: constantsGeneratorList_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: constantsGeneratorList_inValidDataInputMetaDataString
+input inputData: string (Parameterized coma delimited list of constants to be auto-generated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: constantsGeneratorList_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: constantsGeneratorList_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: constantsGeneratorList_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: constantsGeneratorList_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: constantsGeneratorList_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: constantsGeneratorList_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: constantsGeneratorList_inValidInputMetaDataUndefined
+input inputData: string (Parameterized coma delimited list of constants to be auto-generated) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: constantsGeneratorList_inValidInputMetaDataNaN
+input inputData: string (Parameterized coma delimited list of constants to be auto-generated) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------constantsPatternRecognizer
+testName: constantsPatternRecognizer_validDataString
+input inputData: string (Parameterized coma delimited list of constants to be
+ * passed through pattern recognition to find common strings among them)
+input inputMetaData: string (Not used for this business rule)
+output: [boolean, ?]
+
+testName: constantsPatternRecognizer_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: constantsPatternRecognizer_inValidDataInputMetaDataString
+input inputData: string (Parameterized coma delimited list of constants to be
+ * passed through pattern recognition to find common strings among them) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputMetaDataUndefined
+input inputData: string (Parameterized coma delimited list of constants to be
+ * passed through pattern recognition to find common strings among them) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: constantsPatternRecognizer_inValidInputMetaDataNaN
+input inputData: string (Parameterized coma delimited list of constants to be
+ * passed through pattern recognition to find common strings among them) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------evaluateConstant
+testName: evaluateConstant_validDataString
+input inputData: [string] (A string array that contains the name of the constant that should be resolved and printed)
+input inputMetaData: string (Not used for this business rule)
+output: [boolean, ?]
+
+testName: evaluateConstant_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: evaluateConstant_inValidDataInputMetaDataString
+input inputData: string (A string array that contains the name of the constant that should be resolved and printed) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: evaluateConstant_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: evaluateConstant_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: evaluateConstant_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: evaluateConstant_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: evaluateConstant_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: evaluateConstant_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: evaluateConstant_inValidInputMetaDataUndefined
+input inputData: string (A string array that contains the name of the constant that should be resolved and printed) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: evaluateConstant_inValidInputMetaDataNaN
+input inputData: string (A string array that contains the name of the constant that should be resolved and printed) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?

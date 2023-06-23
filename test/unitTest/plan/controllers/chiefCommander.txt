@@ -1,0 +1,116 @@
+description: Test plan for chiefCommander.js
+
+
+--------------------------------------------------------------------------------
+testName: bootStrapCommands_validDataString
+NOTE: Run the command and check if data was added to D-data structure.
+--------------------------------------------------------------------------------
+testName: addClientCommands_validDataString
+input clientCommands: object (NOTE: Create a new file for test commands, copy paste the plugin-one (https://github.com/SethEden/plugin-one) commands, then edit them to make them in the test commands.)
+output: ?
+
+testName: addClientCommands_inValidDataClientCommandsString
+input clientCommands: string (dfxg24346dfg)
+output: ?
+
+testName: addClientCommands_inValidClientCommandsInteger
+input clientCommands: integer (4567)
+output: ?
+
+testName: addClientCommands_inValidClientCommandsBoolean
+input clientCommands: boolean (false)
+output: ?
+
+testName: addClientCommands_inValidClientCommandsUndefined
+input clientCommands: undefined
+output: ?
+
+testName: addClientCommands_inValidClientCommandsNaN
+input clientCommands: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: loadCommandAliasesFromPath_validDataString
+input commandAliasesFilePathConfigurationName: string (The path and file name to the XML file that contains the command aliases definitions)
+input contextName: string (The context name defines what parent command alias namespace the loaded and merged data should be stored in)
+output: boolean
+
+testName: loadCommandAliasesFromPath_inValidDataCommandAliasesFilePathConfigurationNameString
+input commandAliasesFilePathConfigurationName: string (dfxg24346dfg)
+input contextName: string (The context name defines what parent command alias namespace the loaded and merged data should be stored in) (testDataString)
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidDataContextNameString
+input commandAliasesFilePathConfigurationName: string (The path and file name to the XML file that contains the command aliases definitions) (testDataString)
+input contextName: string (dfxg24346dfg)
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameInteger
+input commandAliasesFilePathConfigurationName: integer (4567)
+input contextName: 123string321
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameBoolean
+input commandAliasesFilePathConfigurationName: boolean (false)
+input contextName: 123string321
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidContextNameInteger
+input commandAliasesFilePathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidContextNameBoolean
+input commandAliasesFilePathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameUndefined
+input commandAliasesFilePathConfigurationName: undefined
+input contextName: string (The context name defines what parent command alias namespace the loaded and merged data should be stored in) (inValidDataToStoreUndefined)
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameNaN
+input commandAliasesFilePathConfigurationName: NaN
+input contextName: string (The context name defines what parent command alias namespace the loaded and merged data should be stored in) (inValidDataToStoreNaN)
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidContextNameUndefined
+input commandAliasesFilePathConfigurationName: string (The path and file name to the XML file that contains the command aliases definitions) (inValidDataToStoreUndefined)
+input contextName: undefined
+output: ?
+
+testName: loadCommandAliasesFromPath_inValidContextNameNaN
+input commandAliasesFilePathConfigurationName: string (The path and file name to the XML file that contains the command aliases definitions) (inValidDataToStoreNaN)
+input contextName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: enqueueCommand_validDataString
+input command: object (NOTE: Use string "cmdSeq wrkflo,stringToBoolean wrkflo,stringToDataType wrkflo,determineObjectDataType wrkflo,isBoolean wrkflo,isInteger wrkflo,isFloat wrkflo,isString wrkflo,singleQuoteSwapAfterEquals wrkflo,swapForwardSlashToBackSlash wrkflo,swapBackSlashToForwardSlash wrkflo,swapDoubleForwardSlashToSingleForwardSlash wrkflo,swapDoubleBackSlashToSingleBackSlash wrkflo,getUserNameFromEmail wrkflo,replaceSpacesWithPlus wrkflo,replaceColonWithUnderscore wrkflo,replaceCharacterWithCharacter wrkflo,cleanCarriageReturnFromString wrkflo,convertStringToLowerCase wrkflo,convertStringToUpperCase wrkflo,getFileNameFromPath wrkflo,getFileExtension wrkflo,removeDotFromFileExtension wrkflo,removeFileExtensionFromFileName wrkflo,aggregateNumericalDifferenceBetweenTwoStrings wrkflo,convertCamelCaseStringToArray wrkflo,convertArrayToCamelCaseString wrkflo,mapWordToCamelCaseWord wrkflo,simplifyAndConsolidateString wrkflo,compareSimplifiedAndConsolidatedStrings wrkflo,doesArrayContainLowerCaseConsolidatedString wrkflo,doesArrayContainCharacter wrkflo,removeCharacterFromArray wrkflo,ascertainMatchingFilenames wrkflo,doesArrayContainFilename wrkflo,getDataCatagoryFromDataContextName wrkflo,getDataCatagoryDetailNameFromDataContextName wrkflo,getKeywordNameFromDataContextName wrkflo,parseSystemRootPath wrkflo,removeXnumberOfFoldersFromEndOfPath wrkflo,getFirstTopLevelFolderFromPath wrkflo,isOdd wrkflo,isEven wrkflo,replaceCharacterAtIndex")
+output: ?
+
+testName: enqueueCommand_inValidCommandInteger
+input command: integer (4567)
+output: ?
+
+testName: enqueueCommand_inValidCommandBoolean
+input command: boolean (false)
+output: ?
+
+testName: enqueueCommand_inValidCommandUndefined
+input command: undefined
+output: ?
+
+testName: enqueueCommand_inValidCommandNaN
+input command: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: isCommandQueueEmpty_validDataFalse
+NOTE: Make sure command queue is not empty and run the command.
+output: boolean
+
+testName: isCommandQueueEmpty_validDataTrue
+NOTE: Make sure command queue is empty and run the command.
+output: boolean
+--------------------------------------------------------------------------------
+testName: processCommandQueue
+NOTE: Can only be tested in integration testing.
