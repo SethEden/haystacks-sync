@@ -19,7 +19,7 @@
 // Internal imports
 import fileStringParsing from '../../../../../../src/businessRules/rules/stringParsing/fileStringParsing.js';
 import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports

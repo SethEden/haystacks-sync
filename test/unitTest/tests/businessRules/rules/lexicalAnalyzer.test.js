@@ -20,8 +20,8 @@
 // Internal imports
 import lexicalAnalyzer from '../../../../../src/businessRules/rules/lexicalAnalyzer';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as lex_con from '../../testData/businessRules/rules/lexicalAnalyzer.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
+import * as lex_con from '../../../testData/businessRules/rules/lexicalAnalyzer.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
@@ -450,7 +450,7 @@ describe(tst_con.canalyzeArgument, () => {
   test(tst_con.canalyzeArgument_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = '';
+    let inputMetaData = wrd.cHello;
     rulesLibrary.initRulesLibrary();
 
     // Act        

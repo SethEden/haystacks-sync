@@ -23,8 +23,8 @@
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import configuration from '../../../../../src/commandsBlob/commands/configuration';
 import configurator from '../../../../../src/executrix/configurator.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as utl_con from '../../testData/businessRules/rules/stringParsingUtilities.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
+import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
 import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
 import * as tst_con from '../../constants/test.constants.js';
 
@@ -32,7 +32,7 @@ import * as tst_con from '../../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { bas, cfg, phn, wrd } = hayConst;
+const { bas, cfg, phn, wrd, gen } = hayConst;
 
 /**
  * @function changeConfigurationSetting

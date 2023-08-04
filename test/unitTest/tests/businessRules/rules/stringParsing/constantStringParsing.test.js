@@ -21,7 +21,7 @@
 import dataBroker from '../../../../../../src/brokers/dataBroker.js';
 import constantStringParsing from '../../../../../../src/businessRules/rules/stringParsing/constantStringParsing.js';
 import D from '../../../../../../src/structures/data.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports

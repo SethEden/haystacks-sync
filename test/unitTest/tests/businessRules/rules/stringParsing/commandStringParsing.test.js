@@ -70,25 +70,25 @@ describe(tst_con.ccleanCommandInput, () => {
         expect(returnData).toBe(wrd.cHello);
     });
 
-    // /**
-    // * @function cleanCommandInput_inValidDataInputMetaDataString
-    // * @description Tests the business rules function cleanCommandInput with a invalid string inputMetaData.
-    // * @author Json Howard
-    // * @date 2023/04/25
-    // * @NOTE Commented out because meta data is not used.
-    // */
-    // test(tst_con.ccleanCommandInput_inValidDataInputMetaDataString, () => {
-    //     // Arrange
-    //     let inputData = bas.cDoubleDash + wrd.cHello;
-    //     let inputMetaData = num.c123;
-    //     rulesLibrary.initRulesLibrary();
+    /**
+    * @function cleanCommandInput_inValidDataInputMetaDataString
+    * @description Tests the business rules function cleanCommandInput with a invalid string inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/25
+    * @NOTE Commented out because meta data is not used.
+    */
+    test(tst_con.ccleanCommandInput_inValidDataInputMetaDataString, () => {
+        // Arrange
+        let inputData = bas.cDoubleDash + wrd.cHello;
+        let inputMetaData = num.c123;
+        rulesLibrary.initRulesLibrary();
 
-    //     // Act        
-    //     let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
+        // Act        
+        let returnData = commandStringParsing.cleanCommandInput(inputData, inputMetaData);
 
-    //     // Assert
-    //     expect(returnData).toBe(wrd.cHello);
-    // });
+        // Assert
+        expect(returnData).toBe(wrd.cHello);
+    });
 
     /**
     * @function cleanCommandInput_inValidInputDataInteger
@@ -210,24 +210,24 @@ describe(tst_con.cisValidCommandNameString, () => {
         expect(returnData).toBe(false);
     });
 
-    // /**
-    // * @function isValidCommandNameString_inValidDataInputMetaDataString
-    // * @description Tests the business rules function isValidCommandNameString with a invalid string inputMetaData.
-    // * @author Json Howard
-    // * @date 2023/04/25
-    // * @NOTE Commented out because meta data is not used.
-    // */
-    // test(tst_con.cisValidCommandNameString_inValidDataInputMetaDataString, () => {
-    //     // Arrange
-    //     let inputData = wrd.chello;
-    //     let inputMetaData = num.c123;
+    /**
+    * @function isValidCommandNameString_inValidDataInputMetaDataString
+    * @description Tests the business rules function isValidCommandNameString with a invalid string inputMetaData.
+    * @author Json Howard
+    * @date 2023/04/25
+    * @NOTE Commented out because meta data is not used.
+    */
+    test(tst_con.cisValidCommandNameString_inValidDataInputMetaDataString, () => {
+        // Arrange
+        let inputData = wrd.chello;
+        let inputMetaData = num.c123;
 
-    //     // Act
-    //     let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
+        // Act
+        let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
 
-    //     // Assert
-    //     expect(returnData).toBe(true);
-    // });
+        // Assert
+        expect(returnData).toBe(true);
+    });
     
     /**
     * @function isValidCommandNameString_inValidInputDataInteger

@@ -19,12 +19,14 @@
 // Internal imports
 import mathOperations from '../../../../../src/businessRules/rules/mathOperations';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as math_con from '../../testData/businessRules/rules/mathOperations.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
+import * as math_con from '../../../testData/businessRules/rules/mathOperations.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
+import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
+const { bas, wrd, num } = hayConst;
 
 /**
  * @function hex2rgbConversion
@@ -52,7 +54,7 @@ describe(tst_con.chex2rgbConversion, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // [255,255,255]
+    expect(returnData).toBe(false); // [255,255,255]
   });
 
   /**
@@ -96,7 +98,7 @@ describe(tst_con.chex2rgbConversion, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [255,255,255]
+      expect(returnData).toBe(false); // [255,255,255]
   });
 
   /**

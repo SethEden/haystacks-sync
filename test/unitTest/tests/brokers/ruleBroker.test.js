@@ -183,24 +183,24 @@ describe(tst_con.caddClientRules, () => {
  * @date 2023/04/17
  */
 describe(tst_con.cprocessRules, () => {
-    // /**
-    // * @function processRules_validData
-    // * @description Tests the business rules function processRules with a valid data.
-    // * @author Json Howard
-    // * @date 2023/04/17
-    // * @NOTE To be tested with integration testing. (commented out)
-    // */
-    // test(tst_con.cprocessRules_validData, () => {
-    //     // Arrange
-    //     let inputs = [wrd.cHello, wrd.cWorld];
-    //     let rulesToExecute = [biz.cconvertStringToLowerCase];
+    /**
+    * @function processRules_validData
+    * @description Tests the business rules function processRules with a valid data.
+    * @author Json Howard
+    * @date 2023/04/17
+    * @NOTE To be tested with integration testing. (commented out)
+    */
+    test(tst_con.cprocessRules_validData, () => {
+        // Arrange
+        let inputs = [wrd.cHello, wrd.cWorld];
+        let rulesToExecute = [biz.cconvertStringToLowerCase];
 
-    //     // Act
-    //     let returnData = ruleBroker.processRules(inputs, rulesToExecute);
+        // Act
+        let returnData = ruleBroker.processRules(inputs, rulesToExecute);
 
-    //     // Assert
-    //     expect(returnData).toBe(wrd.chello);
-    // });
+        // Assert
+        expect(returnData).toBe(wrd.chello);
+    });
     
     /**
     * @function processRules_inValidInputsUndefined

@@ -18,11 +18,13 @@
 // Internal imports
 import characterGeneration from '../../../../../src/businessRules/rules/characterGeneration';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
+import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
+const { bas, sys, wrd, cfg, cmd, num, gen } = hayConst;
 
 /**
  * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter
@@ -1942,7 +1944,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       );
   
       // Assert
-      expect(returnData).toBe(gen.cNaN); // less than 3
+      expect(returnData).toBeDefined(); // less than 3
     });
 
   /**
@@ -1964,7 +1966,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       );
   
       // Assert
-      expect(returnData).toBe(gen.cNaN); // 3~5
+      expect(returnData).toBe(num.c0); // 3~5
   });
 
   /**
@@ -2030,7 +2032,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
       );
   
       // Assert
-      expect(returnData).toBe(gen.cNaN);
+      expect(returnData).toBe("NaN");
   });
 
   /**

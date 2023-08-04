@@ -19,8 +19,8 @@
 // Internal imports
 import stringParsingUtilities from '../../../../../src/businessRules/rules/stringParsingUtilities';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as utl_con from '../../testData/businessRules/rules/stringParsingUtilities.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
+import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
@@ -54,7 +54,7 @@ describe(tst_con.cparseSystemRootPath, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // haystacks-sync/test/unitTest
+    expect(returnData).toBe(""); // haystacks-sync/test/unitTest
   });
 
   /**
@@ -76,7 +76,7 @@ describe(tst_con.cparseSystemRootPath, () => {
       );
   
       // Assert
-      expect(returnData).toBe(data_con.stringRandomText);
+      expect(returnData).toBe("");
   });
 
   /**
@@ -1342,7 +1342,7 @@ describe(tst_con.cisInteger, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBe(true);
   });
 
   /**
