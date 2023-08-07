@@ -1383,6 +1383,684 @@ describe(tst_con.creadDirectorySynchronously, () => {
 });
 
 /**
+ * @function copyAllFilesAndFoldersFromFolderToFolder
+ * @description Tests the positive and negative test cases of the copyAllFilesAndFoldersFromFolderToFolder
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_validDataString
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = wrd.cHello;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid undefined inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = undefined;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN
+   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid NaN inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = NaN;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+});
+
+/**
+ * @function buildReleasePackage
+ * @description Tests the positive and negative test cases of the buildReleasePackage
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.cbuildReleasePackage, () => {
+  /**
+   * @function buildReleasePackage_validDataString
+   * @description Tests the business rules function buildReleasePackage with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cbuildReleasePackage_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function buildReleasePackage_inValidDataInputDataString
+   * @description Tests the business rules function buildReleasePackage with a invalid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cbuildReleasePackage_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function buildReleasePackage_inValidDataInputMetaDataString
+   * @description Tests the business rules function buildReleasePackage with a invalid inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cbuildReleasePackage_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = wrd.cHello;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function buildReleasePackage_inValidInputDataInteger
+   * @description Tests the business rules function buildReleasePackage with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cbuildReleasePackage_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function buildReleasePackage_inValidInputDataBoolean
+   * @description Tests the business rules function buildReleasePackage with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cbuildReleasePackage_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function buildReleasePackage_inValidInputMetaDataInteger
+   * @description Tests the business rules function buildReleasePackage with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cbuildReleasePackage_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function buildReleasePackage_inValidInputMetaDataBoolean
+   * @description Tests the business rules function buildReleasePackage with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cbuildReleasePackage_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+});
+
+/**
+ * @function createZipArchive
+ * @description Tests the positive and negative test cases of the createZipArchive
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.ccreateZipArchive, () => {
+  /**
+   * @function createZipArchive_validDataString
+   * @description Tests the business rules function createZipArchive with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidDataInputDataString
+   * @description Tests the business rules function createZipArchive with a invalid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidDataInputMetaDataString
+   * @description Tests the business rules function createZipArchive with a invalid inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = wrd.cHello;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidInputDataInteger
+   * @description Tests the business rules function createZipArchive with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidInputDataBoolean
+   * @description Tests the business rules function createZipArchive with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidInputMetaDataInteger
+   * @description Tests the business rules function createZipArchive with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidInputMetaDataBoolean
+   * @description Tests the business rules function createZipArchive with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidInputDataUndefined
+   * @description Tests the business rules function createZipArchive with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function createZipArchive_inValidInputDataNaN
+   * @description Tests the business rules function createZipArchive with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccreateZipArchive_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.buildReleasePackage(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+});
+
+/**
+ * @function cleanRootPath
+ * @description Tests the positive and negative test cases of the cleanRootPath
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.ccleanRootPath, () => {
+  /**
+   * @function cleanRootPath_validDataString
+   * @description Tests the business rules function cleanRootPath with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function cleanRootPath_inValidDataInputDataString
+   * @description Tests the business rules function cleanRootPath with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function cleanRootPath_inValidDataInputMetaDataString
+   * @description Tests the business rules function cleanRootPath with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = wrd.cHello;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function cleanRootPath_inValidInputDataInteger
+   * @description Tests the business rules function cleanRootPath with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function cleanRootPath_inValidInputDataBoolean
+   * @description Tests the business rules function cleanRootPath with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function cleanRootPath_inValidInputMetaDataInteger
+   * @description Tests the business rules function cleanRootPath with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+  
+  /**
+   * @function cleanRootPath_inValidInputMetaDataBoolean
+   * @description Tests the business rules function cleanRootPath with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+
+    // Assert
+    expect(returnData).toBe();
+  });
+});
+
+/**
  * @function copyFileSync
  * @description Tests the positive and negative test cases of the copyFileSync
  * @author Json Howard
@@ -1630,6 +2308,256 @@ describe(tst_con.ccopyFileSync, () => {
     // Assert
     expect(returnData).toBe(true); // path array
   });
+});
+
+/**
+ * @function copyFolderRecursiveSync
+ * @description Tests the positive and negative test cases of the copyFolderRecursiveSync
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.ccopyFolderRecursiveSync, () => {
+  /**
+   * @function copyFolderRecursiveSync_validDataString
+   * @description Tests the business rules function copyFolderRecursiveSync with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_validDataString, () => {
+    // Arrange
+    let inputData = [obj_con.fileOperationsXmlPath(), obj_con.testXmlPath()];
+    let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidDataInputDataString
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidDataInputMetaDataString
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = [obj_con.fileOperationsXmlPath(), obj_con.testXmlPath()];
+    let inputMetaData = wrd.cHello;
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputDataInteger
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputDataBoolean
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputMetaDataInteger
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputMetaDataBoolean
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputDataUndefined
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputDataNaN
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputMetaDataUndefined
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid undefined inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputMetaDataUndefined, () => {
+    // Arrange
+    let inputData = [obj_con.fileOperationsXmlPath(), obj_con.testXmlPath()];
+    let inputMetaData = undefined;
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
+  
+  /**
+   * @function copyFolderRecursiveSync_inValidInputMetaDataNaN
+   * @description Tests the business rules function copyFolderRecursiveSync with a invalid NaN inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyFolderRecursiveSync_inValidInputMetaDataNaN, () => {
+    // Arrange
+    let inputData = [obj_con.fileOperationsXmlPath(), obj_con.testXmlPath()];
+    let inputMetaData = NaN;
+    rulesLibrary.initRulesLibrary();
+
+    // Act    
+    let returnData = fileOperations.copyFolderRecursiveSync(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true); // path array
+  });  
 });
 
 /**

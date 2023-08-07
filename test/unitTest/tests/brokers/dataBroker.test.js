@@ -365,7 +365,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidContextNameString, () => {
+    test(tst_con.cloadAllXmlData_inValidContextNameString, () => {
         // Arrange
         let filesToLoad = [obj_con.dataBrokerXmlPath()];
         let contextName = wrd.cComa;

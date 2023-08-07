@@ -395,11 +395,6 @@ export const cfindUniversalDebugConfigSetting_inValidFrameworkConfigFilesToLoadS
 export const cfindUniversalDebugConfigSetting_inValidNumber = cfindUniversalDebugConfigSetting + wrd.cinvalid + wrd.cFramework + wrd.cConfig + wrd.cFiles + wrd.cTo + wrd.cLoad + wrd.cNumber;
 export const cfindUniversalDebugConfigSetting_inValidBoolean = cfindUniversalDebugConfigSetting + wrd.cinvalid + wrd.cFramework + wrd.cConfig + wrd.cFiles + wrd.cTo + wrd.cLoad + wrd.cBoolean;
 
-export const cfindIndividualDebugConfigSetting_validData = cfindIndividualDebugConfigSetting + wrd.cvalid + wrd.cData;
-export const cfindIndividualDebugConfigSetting_inValidString = cfindIndividualDebugConfigSetting + wrd.cinvalid + wrd.cString;
-export const cfindIndividualDebugConfigSetting_inValidNumber = cfindIndividualDebugConfigSetting + wrd.cinvalid + wrd.cNumber;
-export const cfindIndividualDebugConfigSetting_inValidBoolean = cfindIndividualDebugConfigSetting + wrd.cinvalid + wrd.cBoolean;
-
 export const cloadAllCsvData_validData = cloadAllCsvData + wrd.cvalid + wrd.cData;
 export const cloadAllCsvData_inValidString = cloadAllCsvData + wrd.cinvalid + wrd.cString;
 export const cloadAllCsvData_inValidContextNameString = cloadAllCsvData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cString;
@@ -409,8 +404,8 @@ export const cloadAllCsvData_inValidBoolean = cloadAllCsvData + wrd.cinvalid + w
 export const cloadAllXmlData_validData = cloadAllXmlData + wrd.cvalid + wrd.cData;
 export const cloadAllXmlData_inValidString = cloadAllXmlData + wrd.cinvalid + wrd.cString;
 export const cloadAllXmlData_inValidContextNameString = cloadAllXmlData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cString;
-export const cloadAllXmlData_inValidBoolean = cloadAllXmlData + wrd.cinvalid + wrd.cBoolean;
 export const cloadAllXmlData_inValidNumber = cloadAllXmlData + wrd.cinvalid + wrd.cNumber;
+export const cloadAllXmlData_inValidBoolean = cloadAllXmlData + wrd.cinvalid + wrd.cBoolean;
 
 export const cloadAllJsonData_validData = cloadAllJsonData + wrd.cvalid + wrd.cData;
 export const cloadAllJsonData_inValidString = cloadAllJsonData + wrd.cinvalid + wrd.cString;
@@ -1637,6 +1632,8 @@ export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger =
 export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
 export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
 export const ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN = ccopyAllFilesAndFoldersFromFolderToFolder + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
 
@@ -1655,8 +1652,8 @@ export const ccreateZipArchive_inValidInputDataInteger = ccreateZipArchive + wrd
 export const ccreateZipArchive_inValidInputDataBoolean = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const ccreateZipArchive_inValidInputMetaDataInteger = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const ccreateZipArchive_inValidInputMetaDataBoolean = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
-export const ccreateZipArchive_inValidInputMetaDataUndefined = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
-export const ccreateZipArchive_inValidInputMetaDataNaN = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+export const ccreateZipArchive_inValidInputDataUndefined = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const ccreateZipArchive_inValidInputDataNaN = ccreateZipArchive + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
 
 export const ccleanRootPath_validDataString = ccleanRootPath + wrd.cvalid + wrd.cData + wrd.cString;
 export const ccleanRootPath_inValidDataInputDataString = ccleanRootPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
@@ -1685,6 +1682,10 @@ export const ccopyFolderRecursiveSync_inValidInputDataInteger = ccopyFolderRecur
 export const ccopyFolderRecursiveSync_inValidInputDataBoolean = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
 export const ccopyFolderRecursiveSync_inValidInputMetaDataInteger = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
 export const ccopyFolderRecursiveSync_inValidInputMetaDataBoolean = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const ccopyFolderRecursiveSync_inValidInputDataUndefined = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cData + undefined;
+export const ccopyFolderRecursiveSync_inValidInputDataNaN = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cData + NaN;
+export const ccopyFolderRecursiveSync_inValidInputMetaDataUndefined = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + undefined;
+export const ccopyFolderRecursiveSync_inValidInputMetaDataNaN = ccopyFolderRecursiveSync + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + NaN;
 
 export const cappendMessageToFile_validDataString = cappendMessageToFile + wrd.cvalid + wrd.cData + wrd.cString;
 export const cappendMessageToFile_inValidDataInputDataString = cappendMessageToFile + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
