@@ -697,7 +697,7 @@ describe(tst_con.cprocessRulesInternal, () => {
   });
 
   /**
-   * @function processRulesInternal_inValidInputDataNaN
+   * @function processRulesInternal_inValidInputMetaDataNaN
    * @description Tests the business rules function processRulesInternal with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06

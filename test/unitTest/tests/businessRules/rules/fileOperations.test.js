@@ -390,6 +390,21 @@ describe(tst_con.cgetJsonData, () => {
    * @date 2023/05/03
    * @NOTE Not implemented because when the test is ran the garbage folder is created.
    */
+  test(tst_con.cgetJsonData_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.getJsonData(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  })
 
   /**
    * @function getJsonData_inValidDataInputMetaDataString
@@ -533,13 +548,76 @@ describe(tst_con.cwriteJsonData, () => {
 
   /**
    * @function writeJsonData_inValidDataInputDataString
-   * @description Tests the business rules function writeJsonData with a valid input.
+   * @description Tests the business rules function writeJsonData with a invalid string input.
    * @result In root path create garbage file
    * @author Json Howard
    * @date 2023/05/03
    * @NOTE Not implemented because when the test is ran the garbage file is created in the root folder.
    */
+  test(tst_con.cwriteJsonData_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
+    rulesLibrary.initRulesLibrary();
 
+    // Act
+    let returnData = fileOperations.writeJsonData(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+
+  /**
+   * @function writeJsonData_inValidDataInputMetaDataString
+   * @description Tests the business rules function writeJsonData with a invalid string inputMetadata.
+   * @result In root path create garbage file
+   * @author Json Howard
+   * @date 2023/05/03
+   * @NOTE Not implemented because when the test is ran the garbage file is created in the root folder.
+   */
+  test(tst_con.cwriteJsonData_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsJsonPath();
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.writeJsonData(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+  
+  /**
+   * @function cwriteJsonData_inValidInputDataInteger
+   * @description Tests the business rules function writeJsonData with a invalid integer input.
+   * @result In root path create garbage file
+   * @author Json Howard
+   * @date 2023/05/03
+   * @NOTE Not implemented because when the test is ran the garbage file is created in the root folder.
+   */
+  test(tst_con.cwriteJsonData_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 123;
+    let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.writeJsonData(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(true);
+  });
+  
   /**
    * @function writeJsonData_inValidInputDataBoolean
    * @description Tests the business rules function writeJsonData with a invalid boolean input.
@@ -644,6 +722,21 @@ describe(tst_con.creadDirectoryContents, () => {
    * @date 2023/05/03
    * @NOTE Not implemented because when the test is ran the garbage folder is created.
    */
+  test(tst_con.creadDirectoryContents_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.readDirectoryContents(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  });
 
   /**
    * @function readDirectoryContents_inValidDataInputMetaDataString
@@ -793,6 +886,20 @@ describe(tst_con.cscanDirectoryContents, () => {
    * @date 2023/05/03
    * @NOTE Not implemented because when the test is ran the garbage folder is created.
    */
+  test(tst_con.cscanDirectoryContents_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = [true, 2];
+
+    // Act
+    let returnData = fileOperations.scanDirectoryContents(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
+  })
 
   /**
    * @function scanDirectoryContents_inValidDataInputMetaDataString
@@ -1148,6 +1255,21 @@ describe(tst_con.creadDirectorySynchronously, () => {
    * @date 2023/05/03
    * @NOTE Not implemented because when the test is ran the garbage folder is created.
    */
+  test(tst_con.creadDirectorySynchronously_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.readDirectorySynchronously(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe();
+  });
 
   /**
    * @function readDirectorySynchronously_inValidDataInputMetaDataString

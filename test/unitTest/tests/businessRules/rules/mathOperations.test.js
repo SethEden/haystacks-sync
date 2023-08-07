@@ -80,12 +80,12 @@ describe(tst_con.chex2rgbConversion, () => {
   });
 
   /**
-   * @function hex2rgbConversion_inValidDataInputDataString
-   * @description Tests the business rules function hex2rgbConversion with invalid string input.
+   * @function hex2rgbConversion_inValidDataInputMetaDataString
+   * @description Tests the business rules function hex2rgbConversion with invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.chex2rgbConversion_inValidDataInputDataString, () => {
+  test(tst_con.chex2rgbConversion_inValidDataInputMetaDataString, () => {
       // Arrange
       let inputData = math_con.stringRandomF;
       let inputMetaData = data_con.stringRandomText;
@@ -188,6 +188,50 @@ describe(tst_con.chex2rgbConversion, () => {
       // Assert
       expect(returnData).toBeTruthy(); //[0, 0, 1]
   });
+  
+  /**
+   * @function hex2rgbConversion_inValidInputDataUndefined
+   * @description Tests the business rules function hex2rgbConversion with invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.chex2rgbConversion_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = mathOperations.hex2rgbConversion(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[0, 0, 1]
+});
+
+  /**
+   * @function hex2rgbConversion_inValidInputDataNaN
+   * @description Tests the business rules function hex2rgbConversion with invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/06
+   */
+  test(tst_con.chex2rgbConversion_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = mathOperations.hex2rgbConversion(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[0, 0, 1]
+});
 });
 
 /**
@@ -242,12 +286,12 @@ describe(tst_con.cisOdd, () => {
   });
 
   /**
-   * @function isOdd_inValidDataInputDataString
-   * @description Tests the business rules function isOdd with invalid string input.
+   * @function isOdd_inValidDataInputMetaDataString
+   * @description Tests the business rules function isOdd with invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cisOdd_inValidDataInputDataString, () => {
+  test(tst_con.cisOdd_inValidDataInputMetaDataString, () => {
       // Arrange
       let inputData = num.c1;
       let inputMetaData = data_con.stringRandomText;
@@ -404,12 +448,12 @@ describe(tst_con.cisEven, () => {
   });
 
   /**
-   * @function isEven_inValidDataInputDataString
+   * @function isEven_inValidDataInputMetaDataString
    * @description Tests the business rules function isEven with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cisEven_inValidDataInputDataString, () => {
+  test(tst_con.cisEven_inValidDataInputMetaDataString, () => {
       // Arrange
       let inputData = num.c2;
       let inputMetaData = data_con.stringRandomText;

@@ -327,7 +327,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_validData, () => {
+    test(tst_con.cloadAllXmlData_validData, () => {
         // Arrange
         let filesToLoad = [obj_con.dataBrokerXmlPath()];
         let contextName = wrd.cSpace;
@@ -346,7 +346,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidString, () => {
+    test(tst_con.cloadAllXmlData_inValidString, () => {
         // Arrange
         let filesToLoad = obj_con.dataBrokerXmlPath();
         let contextName = wrd.cSpace;
@@ -365,7 +365,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadAllXmlData_inValidContextNameString, () => {
+    test(tst_con.cloadedAllXmlData_inValidContextNameString, () => {
         // Arrange
         let filesToLoad = [obj_con.dataBrokerXmlPath()];
         let contextName = wrd.cComa;
@@ -384,7 +384,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidNumber, () => {
+    test(tst_con.cloadAllXmlData_inValidNumber, () => {
         // Arrange
         let filesToLoad = 546;
         let contextName = wrd.cSpace;
@@ -403,7 +403,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidBoolean, () => {
+    test(tst_con.cloadAllXmlData_inValidBoolean, () => {
         // Arrange
         let filesToLoad = false;
         let contextName = wrd.cSpace;
@@ -731,6 +731,17 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     * @date 2023/04/16
     * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
     */    
+    test(tst_con.cwriteJsonDataToFile_inValidString, () => {
+        // Arrange
+        let fileToSaveTo = wrd.cHello;
+        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+
+        // Act
+        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
 
     /**
     * @function writeJsonDataToFile_inValidDataToWrite

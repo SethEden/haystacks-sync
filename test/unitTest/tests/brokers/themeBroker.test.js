@@ -230,6 +230,19 @@ describe(tst_con.cloadTheme, () => {
     * @date 2023/04/17
     * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
     */
+    test(tst_con.cloadTheme_inValidString, () => {
+        // Arrange
+        let themePath = wrd.cHello;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.cSystem, cfg.cdebugSettings, true);
+
+        // Act
+        let returnData = themeBroker.loadTheme(themePath);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
 
     /**
     * @function loadTheme_inValidNumber
@@ -308,6 +321,20 @@ describe(tst_con.capplyTheme, () => {
     * @date 2023/04/17
     * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
     */
+    test(tst_con.capplyTheme_inValidString, () => {
+        // Arrange
+        let themePath = wrd.cHello;
+        rulesLibrary.initRulesLibrary();
+        configurator.setConfigurationSetting(wrd.csystem, sys.cthemeConfigPath, themePath);
+        configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, true);
+
+        // Act 
+        let loadedThemeData = themeBroker.loadTheme(themePath);
+        let returnData = themeBroker.applyTheme(loadedThemeData);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
 
     /**
     * @function applyTheme_inValidNumber

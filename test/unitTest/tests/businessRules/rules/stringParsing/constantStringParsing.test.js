@@ -880,12 +880,12 @@ describe(tst_con.cdoesConstantExist, () => {
   });
 
   /**
-   * @function doesConstantExist_validDataString
+   * @function doesConstantExist_inValidDataInputDataString
    * @description Tests the business rules function doesConstantExist with a invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
-  test(tst_con.cdoesConstantExist_validDataString, () => {
+  test(tst_con.cdoesConstantExist_inValidDataInputDataString, () => {
     // Arrange
     let inputData = data_con.stringRandomText;
     let inputMetaData = '';    
