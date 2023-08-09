@@ -126,7 +126,6 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       expect(returnData).toBeTruthy();
     });
 
-
     /**
      * @function validateConstantsDataValidation_inValidInputDataBoolean
      * @description Tests the business rules function validateConstantsDataValidation with a invalid boolean input.
