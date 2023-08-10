@@ -2156,6 +2156,9 @@ export const ccomputeDeltaTime_inValidInputMetaDataUndefined = ccomputeDeltaTime
 export const ccomputeDeltaTime_inValidInputMetaDataNaN = ccomputeDeltaTime + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
 
 export const creformatDeltaTime_validDataString = creformatDeltaTime + wrd.cvalid + wrd.cData + wrd.cString;
+export const creformatDeltaTime_validInputDataInteger = creformatDeltaTime + wrd.cvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const creformatDeltaTime_validInputDataStringInteger = creformatDeltaTime + wrd.cvalid + wrd.cInput + wrd.cData + wrd.cString + wrd.cInteger;
+export const creformatDeltaTime_validInputDataIntegerString = creformatDeltaTime + wrd.cvalid + wrd.cInput + wrd.cData + wrd.cInteger + wrd.cString;
 export const creformatDeltaTime_inValidDataInputDataString = creformatDeltaTime + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
 export const creformatDeltaTime_inValidDataInputMetaDataString = creformatDeltaTime + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
 export const creformatDeltaTime_inValidInputDataInteger = creformatDeltaTime + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
