@@ -2478,5 +2478,5 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
     // Assert
     expect(returnData).toBe(wrd.cHello + bas.cPercent);
-});
+  });
 });

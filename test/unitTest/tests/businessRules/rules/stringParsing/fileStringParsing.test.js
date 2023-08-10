@@ -431,7 +431,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
    * @author Json Howard
    * @date 2023/05/02
    */
-  test(tst_con.cgetFileExtension_inValidInputDataInteger, () => {
+  test(tst_con.cremoveDotFromFileExtension_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
     let inputMetaData = [1, 2, 3, 4, 5];
@@ -446,7 +446,6 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
     // Assert
     expect(returnData).toBe(false);
   });
-
 
   /**
    * @function removeDotFromFileExtension_inValidInputDataBoolean

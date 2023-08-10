@@ -209,7 +209,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
     // Assert
     expect(returnData).toBeTruthy(); //[0, 0, 1]
-});
+  });
 
   /**
    * @function hex2rgbConversion_inValidInputDataNaN
@@ -231,7 +231,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
     // Assert
     expect(returnData).toBeTruthy(); //[0, 0, 1]
-});
+  });
 });
 
 /**

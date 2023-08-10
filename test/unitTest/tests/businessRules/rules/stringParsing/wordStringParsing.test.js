@@ -820,7 +820,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
      * @author Json Howard
      * @date 2023/05/02
      */
-    test(tst_con.ccountCamelCaseWords_inValidInputDataBoolean, () => {
+    test(tst_con.ccountCamelCaseWords_inValidInputMetaDataBoolean, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;

@@ -1385,6 +1385,27 @@ describe(tst_con.cfindConstantName, () => {
   });
 
   /**
+   * @function findConstantName_inValidInputDataInteger
+   * @description Tests the business rules function findConstantName with a invalid integer data.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe('');
+  });
+
+  /**
    * @function findConstantName_inValidInputDataBoolean
    * @description Tests the business rules function findConstantName with a invalid boolean input.
    * @author Json Howard
@@ -1436,27 +1457,6 @@ describe(tst_con.cfindConstantName, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
-    let returnData = constantStringParsing.findConstantName(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe('');
-  });
-
-  /**
-   * @function findConstantName_inValidInputDataInteger
-   * @description Tests the business rules function findConstantName with a invalid integer data.
-   * @author Json Howard
-   * @date 2023/05/01
-   */
-  test(tst_con.cfindConstantName_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];    
 
     // Act
     let returnData = constantStringParsing.findConstantName(
