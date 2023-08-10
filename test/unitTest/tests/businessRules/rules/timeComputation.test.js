@@ -547,12 +547,12 @@ describe(tst_con.creformatDeltaTime, () => {
   });
   
   /**
-   * @function reformatDeltaTime_validDataInteger
+   * @function reformatDeltaTime_validInputDataInteger
    * @description Tests the business rules function reformatDeltaTime with a valid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.creformatDeltaTime_validDataInteger, () => {
+  test(tst_con.creformatDeltaTime_validInputDataInteger, () => {
     // Arrange
     let inputData = 1234;
     let inputMetaData = 3456;
@@ -568,12 +568,12 @@ describe(tst_con.creformatDeltaTime, () => {
   });
   
   /**
-   * @function reformatDeltaTime_validDataStringInteger
+   * @function reformatDeltaTime_validInputDataStringInteger
    * @description Tests the business rules function reformatDeltaTime with a valid string integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.creformatDeltaTime_validDataStringInteger, () => {
+  test(tst_con.creformatDeltaTime_validInputDataStringInteger, () => {
     // Arrange
     let inputData = tim_con.stringRandomDate;
     let inputMetaData = 1234;
@@ -589,12 +589,12 @@ describe(tst_con.creformatDeltaTime, () => {
   });
   
   /**
-   * @function reformatDeltaTime_validDataIntegerString
+   * @function reformatDeltaTime_validInputDataIntegerString
    * @description Tests the business rules function reformatDeltaTime with a integer string valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.creformatDeltaTime_validDataIntegerString, () => {
+  test(tst_con.creformatDeltaTime_validInputDataIntegerString, () => {
     // Arrange
     let inputData = 1234;
     let inputMetaData = tim_con.stringRandomDate1;
