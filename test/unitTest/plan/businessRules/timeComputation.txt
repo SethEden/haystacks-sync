@@ -142,6 +142,7 @@ output: string (A time interval formatted according to the input format template
 status: Failed
 error: TypeError: moment.duration(...).format is not a function
 
+
 testName: reformatDeltaTime_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (The formatting template that should be used to format the time interval) (testDataString)

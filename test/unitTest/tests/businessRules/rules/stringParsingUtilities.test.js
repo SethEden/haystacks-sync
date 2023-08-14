@@ -22,6 +22,7 @@ import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
 import * as tst_con from '../../constants/test.constants.js';
+import { basePath } from '../../utilities/utilities';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -44,7 +45,7 @@ describe(tst_con.cparseSystemRootPath, () => {
    */
   test(tst_con.cparseSystemRootPath_validDataString, () => {
     // Arrange
-    let inputData = tst_con.basePath();
+    let inputData = basePath();
     let inputMetaData = wrd.chaystack
 
     // Act
@@ -87,7 +88,7 @@ describe(tst_con.cparseSystemRootPath, () => {
    */
   test(tst_con.cparseSystemRootPath_inValidDataInputMetaDataString, () => {
       // Arrange
-      let inputData = tst_con.basePath();
+      let inputData = basePath();
       let inputMetaData = data_con.stringRandomText
   
       // Act
@@ -172,7 +173,7 @@ describe(tst_con.cparseSystemRootPath, () => {
    */
   test(tst_con.cparseSystemRootPath_inValidInputMetaDataBoolean, () => {
       // Arrange
-      let inputData = tst_con.basePath();
+      let inputData = basePath();
       let inputMetaData = false;
       rulesLibrary.initRulesLibrary();
   
@@ -236,7 +237,7 @@ test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
    */
   test(tst_con.cparseSystemRootPath_inValidInputMetaDataUndefined, () => {
       // Arrange
-      let inputData = tst_con.basePath();
+      let inputData = basePath();
       let inputMetaData = undefined;
       rulesLibrary.initRulesLibrary();
   
@@ -258,7 +259,7 @@ test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
    */
   test(tst_con.cparseSystemRootPath_inValidInputMetaDataNaN, () => {
       // Arrange
-      let inputData = tst_con.basePath();
+      let inputData = basePath();
       let inputMetaData = NaN;
       rulesLibrary.initRulesLibrary();
   

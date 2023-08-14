@@ -22,6 +22,7 @@ import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
 import D from '../../../../src/structures/data.js';
 import * as obj_con from '../../testData/brokers/dataBroker.js';
 import * as tst_con from '../constants/test.constants.js';
+import { basePath } from '../utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -44,7 +45,7 @@ describe(tst_con.cscanDataPath, () => {
     */
     test(tst_con.cscanDataPath_validData, () => {
         // Arrange
-        let dataPath = tst_con.basePath();
+        let dataPath = basePath();
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -62,7 +63,7 @@ describe(tst_con.cscanDataPath, () => {
     */
     test(tst_con.cscanDataPath_inValidString, () => {
         // Arrange
-        let dataPath = tst_con.basePath() + num.c123;
+        let dataPath = basePath() + num.c123;
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -143,7 +144,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
     */
     test(tst_con.cfindUniversalDebugConfigSetting_inValidString, () => {
         // Arrange
-        let appConfigFilesToLoad = tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.capplication + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
+        let appConfigFilesToLoad = basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.capplication + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
         let frameworkConfigFilesToLoad = obj_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
 

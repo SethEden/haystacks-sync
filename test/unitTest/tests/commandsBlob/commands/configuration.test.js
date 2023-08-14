@@ -327,13 +327,13 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
  * @date 2023/05/08
  */
 describe(tst_con.csaveConfiguration, () => {
-  /**
-   * @function saveConfiguration_validDataString
-   * @description Tests the business rules function saveConfiguration with a valid input.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.csaveConfiguration_validDataString, () => {
+    /**
+     * @function saveConfiguration_validDataString
+     * @description Tests the business rules function saveConfiguration with a valid input.
+     * @author Json Howard
+     * @date 2023/05/08
+     */
+    test(tst_con.csaveConfiguration_validDataString, () => {
     // Arrange
     let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, wrd.cworkflow];
     let inputMetaData = '';

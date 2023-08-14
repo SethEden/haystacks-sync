@@ -716,12 +716,12 @@ describe(tst_con.ccommandAliasGenerator, () => {
   });
 
   /**
-   * @function ccommandAliasGenerator_inValidInputDataUndefined
+   * @function commandSequencer_inValidInputDataUndefined
    * @description Tests the business rules function commandAliasGenerator with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/09
    */
-  test(tst_con.ccommandAliasGenerator_inValidInputDataUndefined, () => {
+  test(tst_con.ccommandSequencer_inValidInputDataUndefined, () => {
   // Arrange
   let inputData = undefined;
   let inputMetaData = '';
