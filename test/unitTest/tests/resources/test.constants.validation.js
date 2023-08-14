@@ -9,8 +9,10 @@
  */
 
 // Internal imports
-import hayConst from '@haystacks/constants';
 import * as tst_con from '../constants/test.constants';
+
+// External imports
+import hayConst from '@haystacks/constants';
 
 const {bas, num, wrd, gen, biz} = hayconst;
 
@@ -90,7 +92,7 @@ export const wordConstantsValidation = [
     {Name: 'caggregateCommandArguments', Actual: tst_con.caggregateCommandArguments, Expected: 'aggregateCommandArguments'},
 
     // constantArrayParsing words
-    {Name: 'cgetLengthOfLongestStringInArray', Actual:wtst_con.cgetLengthOfLongestStringInArray, Expected: 'getLengthOfLongestStringInArray'},
+    {Name: 'cgetLengthOfLongestStringInArray', Actual:tst_con.cgetLengthOfLongestStringInArray, Expected: 'getLengthOfLongestStringInArray'},
     {Name: 'csearchForPatternsInStringArray', Actual: tst_con.csearchForPatternsInStringArray, Expected: 'searchForPatternsInStringArray'},
     {Name: 'cvalidatePatternsThatNeedImplementation', Actual: tst_con.cvalidatePatternsThatNeedImplementation, Expected: 'validatePatternsThatNeedImplementation'},
 
