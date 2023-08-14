@@ -10,6 +10,7 @@
  */
 // Internal imports
 import * as tst_con from '../../../tests/constants/test.constants.js';
+import { basePath } from '../../../tests/utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -27,7 +28,7 @@ const { bas, gen, num, sys, wrd } = hayConst;
  * @date 2023/05/03
  */
 export const fileOperationsXmlPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml;
     return baseUrl;
 }
@@ -41,7 +42,7 @@ export const fileOperationsXmlPath = () => {
  * @date 2023/05/03
  */
 export const testXmlPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.cxml;
     return baseUrl;
 }
@@ -62,7 +63,7 @@ export const testXmlPath = () => {
  * @date 2023/05/03
  */
 export const fileOperationsXmlFolder = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash;
     return baseUrl;
 }
@@ -76,7 +77,7 @@ export const fileOperationsXmlFolder = () => {
  * @date 2023/05/03
  */
 export const fileOperationsCsvPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.ccsv;
     return baseUrl;
 }
@@ -91,7 +92,7 @@ export const fileOperationsCsvPath = () => {
  * @date 2023/05/03
  */
 export const fileOperationsJsonPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.cjson;
     return baseUrl;
 }

@@ -10,6 +10,7 @@
  */
 // Internal imports
 import * as tst_con from '../../../../tests/constants/test.constants.js';
+import { basePath } from '../../../../tests/utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -29,7 +30,7 @@ const { bas, wrd, gen } = hayConst;
  * @date 2023/04/17
  */
 export const constantStringParsingXmlPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml;
     return baseUrl;
 }

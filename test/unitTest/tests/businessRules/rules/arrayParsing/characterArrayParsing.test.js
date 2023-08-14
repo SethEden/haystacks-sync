@@ -465,12 +465,12 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     })
 
     /**
-     * @function removeCharacterFromArray_validDataInputDataArray
+     * @function removeCharacterFromArray_validDataInputDataObject
      * @description Tests the business rules function removeCharacterFromArray with a invalid object inputData.
      * @author Json Howard
      * @date 2023/04/09
      */
-    test(tst_con.cremoveCharacterFromArray_validDataInputDataArray, () => {
+    test(tst_con.cremoveCharacterFromArray_validDataInputDataObject, () => {
         // Arrange
         let inputData = [1,2,3,4];
         let inputMetaData = [wrd.cHello + wrd.cWorld, wrd.cHello];

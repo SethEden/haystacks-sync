@@ -22,6 +22,7 @@ import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
 import D from '../../../../src/structures/data.js';
 import * as obj_con from '../../testData/brokers/dataBroker.js';
 import * as tst_con from '../constants/test.constants.js';
+import { basePath } from '../utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -44,7 +45,7 @@ describe(tst_con.cscanDataPath, () => {
     */
     test(tst_con.cscanDataPath_validData, () => {
         // Arrange
-        let dataPath = tst_con.basePath();
+        let dataPath = basePath();
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -62,7 +63,7 @@ describe(tst_con.cscanDataPath, () => {
     */
     test(tst_con.cscanDataPath_inValidString, () => {
         // Arrange
-        let dataPath = tst_con.basePath() + num.c123;
+        let dataPath = basePath() + num.c123;
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -143,7 +144,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
     */
     test(tst_con.cfindUniversalDebugConfigSetting_inValidString, () => {
         // Arrange
-        let appConfigFilesToLoad = tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.capplication + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
+        let appConfigFilesToLoad = basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.capplication + num.c1 + wrd.csystem + bas.cDot + gen.cjson;
         let frameworkConfigFilesToLoad = obj_con.stringRandomText;
         rulesLibrary.initRulesLibrary();
 
@@ -327,7 +328,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_validData, () => {
+    test(tst_con.cloadAllXmlData_validData, () => {
         // Arrange
         let filesToLoad = [obj_con.dataBrokerXmlPath()];
         let contextName = wrd.cSpace;
@@ -346,7 +347,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidString, () => {
+    test(tst_con.cloadAllXmlData_inValidString, () => {
         // Arrange
         let filesToLoad = obj_con.dataBrokerXmlPath();
         let contextName = wrd.cSpace;
@@ -384,7 +385,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidNumber, () => {
+    test(tst_con.cloadAllXmlData_inValidNumber, () => {
         // Arrange
         let filesToLoad = 546;
         let contextName = wrd.cSpace;
@@ -403,7 +404,7 @@ describe(tst_con.cloadAllXmlData, () => {
     * @author Json Howard
     * @date 2023/04/16
     */
-    test(tst_con.cloadedAllXmlData_inValidBoolean, () => {
+    test(tst_con.cloadAllXmlData_inValidBoolean, () => {
         // Arrange
         let filesToLoad = false;
         let contextName = wrd.cSpace;
@@ -731,6 +732,17 @@ describe(tst_con.cwriteJsonDataToFile, () => {
     * @date 2023/04/16
     * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
     */    
+    test(tst_con.cwriteJsonDataToFile_inValidString, () => {
+        // Arrange
+        let fileToSaveTo = wrd.cHello;
+        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+
+        // Act
+        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+
+        // Assert
+        expect(returnData).toBe(false);
+    });
 
     /**
     * @function writeJsonDataToFile_inValidDataToWrite

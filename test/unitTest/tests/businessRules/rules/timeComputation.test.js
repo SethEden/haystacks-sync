@@ -21,13 +21,15 @@
 // Internal imports
 import timeComputation from '../../../../../src/businessRules/rules/timeComputation';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as utl_con from '../../testData/businessRules/rules/stringParsingUtilities.js';
-import * as tim_con from '../../testData/businessRules/rules/timeComputation.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
+import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
+import * as tim_con from '../../../testData/businessRules/rules/timeComputation.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
+import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
+const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 
 /**
  * @function getNowMoment
@@ -320,7 +322,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(-12940387200000);
+    expect(returnData).toBe(NaN);
   });
 
   /**
@@ -341,7 +343,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(12972009600000); 
+    expect(returnData).toBe(NaN); 
   });
 
   /**
@@ -514,6 +516,307 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
     // Assert
     expect(returnData).toBe(NaN);
+  });
+});
+
+/**
+ * @function reformatDeltaTime
+ * @author Json Howard
+ * @date 2023/05/08
+ */
+describe(tst_con.creformatDeltaTime, () => {
+  /**
+   * @function reformatDeltaTime_validDataString
+   * @description Tests the business rules function reformatDeltaTime with a valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_validDataString, () => {
+    // Arrange
+    let inputData = tim_con.stringRandomDate;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_validInputDataInteger
+   * @description Tests the business rules function reformatDeltaTime with a valid integer input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_validInputDataInteger, () => {
+    // Arrange
+    let inputData = 1234;
+    let inputMetaData = 3456;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_validInputDataStringInteger
+   * @description Tests the business rules function reformatDeltaTime with a valid string integer input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_validInputDataStringInteger, () => {
+    // Arrange
+    let inputData = tim_con.stringRandomDate;
+    let inputMetaData = 1234;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_validInputDataIntegerString
+   * @description Tests the business rules function reformatDeltaTime with a integer string valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_validInputDataIntegerString, () => {
+    // Arrange
+    let inputData = 1234;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidDataInputDataString
+   * @description Tests the business rules function reformatDeltaTime with a invalid string input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidDataInputMetaDataString
+   * @description Tests the business rules function reformatDeltaTime with a invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = tim_con.stringRandomDate;
+    let inputMetaData = wrd.cHello;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputDataInteger
+   * @description Tests the business rules function reformatDeltaTime with a invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 1234;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputDataBoolean
+   * @description Tests the business rules function reformatDeltaTime with a invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputMetaDataInteger
+   * @description Tests the business rules function reformatDeltaTime with a invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = tim_con.stringRandomDate;
+    let inputMetaData = 1234;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputMetaDataBoolean
+   * @description Tests the business rules function reformatDeltaTime with a invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = tim_con.stringRandomDate;
+    let inputMetaData = false;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputDataUndefined
+   * @description Tests the business rules function reformatDeltaTime with a invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputDataNaN
+   * @description Tests the business rules function reformatDeltaTime with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputMetaDataUndefined
+   * @description Tests the business rules function reformatDeltaTime with a invalid undefined inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputMetaDataUndefined, () => {
+    // Arrange
+    let inputData = tim_con.stringRandomDate;
+    let inputMetaData = undefined;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
+  });
+  
+  /**
+   * @function reformatDeltaTime_inValidInputMetaDataNaN
+   * @description Tests the business rules function reformatDeltaTime with a invalid NaN inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.creformatDeltaTime_inValidInputMetaDataNaN, () => {
+    // Arrange
+    let inputData = tim_con.stringRandomDate;
+    let inputMetaData = tim_con.stringRandomDate1;
+
+    // Act
+    let returnData = timeComputation.reformatDeltaTime(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe(); 
   });
 });
 

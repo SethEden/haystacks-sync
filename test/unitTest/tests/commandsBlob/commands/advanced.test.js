@@ -26,9 +26,9 @@ import advanced from '../../../../../src/commandsBlob/commands/advanced';
 import commandsLibrary from '../../../../../src/commandsBlob/commandsLibrary';
 import configurator from '../../../../../src/executrix/configurator.js';
 import D from '../../../../../src/structures/data.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
-import * as utl_con from '../../testData/businessRules/rules/stringParsingUtilities.js';
-import * as adv_con from '../../testData/commandsBlob/commands/advanced.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
+import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
+import * as adv_con from '../../../testData/commandsBlob/commands/advanced.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports

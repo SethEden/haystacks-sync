@@ -10,6 +10,7 @@
  */
 // Internal imports
 import * as tst_con from '../../../../tests/constants/test.constants.js';
+import { basePath } from '../../../../tests/utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -26,8 +27,8 @@ const { bas, gen, num, sys, wrd } = hayConst;
  */
 export const stringPathsArray_01 = () => {
     let urlArray = [
-        tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cbrokers + bas.cForwardSlash + wrd.ccommand + wrd.cBroker + bas.cDot + gen.cjs,
-        tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings + bas.cDot + gen.cjson,
+        basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cbrokers + bas.cForwardSlash + wrd.ccommand + wrd.cBroker + bas.cDot + gen.cjs,
+        basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings + bas.cDot + gen.cjson,
     ];
     return urlArray;
 };
@@ -42,7 +43,7 @@ export const stringPathsArray_01 = () => {
  * @date 2023/04/20
  */
 export const stringPath_01 = () => {
-    return tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings + bas.cDot + gen.cjson;
+    return basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings + bas.cDot + gen.cjson;
 };
 
 /**
@@ -57,6 +58,6 @@ export const stringPath_01 = () => {
  * @date 2023/04/20
  */
 export const stringPath_02 = () => {
-    return tst_con.basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings;
+    return basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cThemes + bas.cForwardSlash + wrd.cdebug + wrd.cSettings;
 };
 

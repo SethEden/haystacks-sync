@@ -18,7 +18,7 @@
 // Internal imports
 import wordStringParsing from '../../../../../../src/businessRules/rules/stringParsing/wordStringParsing.js';
 import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
@@ -820,7 +820,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
      * @author Json Howard
      * @date 2023/05/02
      */
-    test(tst_con.ccountCamelCaseWords_inValidInputDataBoolean, () => {
+    test(tst_con.ccountCamelCaseWords_inValidInputMetaDataBoolean, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;

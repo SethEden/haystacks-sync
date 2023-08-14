@@ -21,7 +21,7 @@
 import dataBroker from '../../../../../../src/brokers/dataBroker.js';
 import constantStringParsing from '../../../../../../src/businessRules/rules/stringParsing/constantStringParsing.js';
 import D from '../../../../../../src/structures/data.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
@@ -126,7 +126,6 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       expect(returnData).toBeTruthy();
     });
 
-
     /**
      * @function validateConstantsDataValidation_inValidInputDataBoolean
      * @description Tests the business rules function validateConstantsDataValidation with a invalid boolean input.
@@ -193,169 +192,6 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       expect(returnData).toBeTruthy();
     });
   });
-
-  /**
- * @function determineConstantsContextQualifiedPrefix
- * @description Tests the positive and negative test cases of the determineConstantsContextQualifiedPrefix
- * @author Json Howard
- * @date 2023/04/30
- * @NOTE Needs significant amount of test date validation implemented.
- */
-describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
-  /**
-   * @function determineConstantsContextQualifiedPrefix_validDataString
-   * @description Tests the business rules function determineConstantsContextQualifiedPrefix with a valid input.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineConstantsContextQualifiedPrefix_validDataString, () => {
-    // Arrange
-    let inputData = './test/unitTest/tests/constants/test.constants.js';
-    let inputMetaData = '';    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
-  });
-
-  /**
-   * @function determineConstantsContextQualifiedPrefix_inValidDataInputDataString
-   * @description Tests the business rules function determineConstantsContextQualifiedPrefix with a invalid string input.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputDataString, () => {
-    // Arrange
-    let inputData = data_con.stringRandomText;
-    let inputMetaData = '';    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe(data_con.stringRandomText);
-  });
-
-  /**
-   * @function determineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString
-   * @description Tests the business rules function determineConstantsContextQualifiedPrefix with a invalid string inputMetaData.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString, () => {
-    // Arrange
-    let inputData = './test/unitTest/tests/constants/test.constants.js';
-    let inputMetaData = data_con.stringRandomText;    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe('./test/unitTest/tests/constants/test.constants.js');
-  });
-
-  /**
-   * @function determineConstantsContextQualifiedPrefix_inValidInputDataInteger
-   * @description Tests the business rules function determineConstantsContextQualifiedPrefix with a invalid integer input.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe(4567);
-  });
-
-  /**
-   * @function determineConstantsContextQualifiedPrefix_inValidInputDataBoolean
-   * @description Tests the business rules function determineConstantsContextQualifiedPrefix with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe('');
-  });
-
-  /**
-   * @function determineConstantsContextQualifiedPrefix_inValidInputMetaDataInteger
-   * @description Tests the business rules function determineConstantsContextQualifiedPrefix with a invalid integer inputMetaData.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidInputMetaDataInteger, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = 4567;    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toHaveLength(5);
-  });
-
-  /**
-   * @function determineConstantsContextQualifiedPrefix_inValidInputMetaDataBoolean
-   * @description Tests the business rules function determineConstantsContextQualifiedPrefix with a invalid boolean inputMetaData.
-   * @author Json Howard
-   * @date 2023/04/29
-   */
-  test(tst_con.cdetermineConstantsContextQualifiedPrefix_inValidInputMetaDataBoolean, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = false;    
-    dataBroker.initializeConstantsValidationData();
-
-    // Act    
-    let returnData = constantStringParsing.determineConstantsContextQualifiedPrefix(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toHaveLength(5);
-  });
-});
 
   /**
  * @function determineConstantsContextQualifiedPrefix
@@ -880,12 +716,12 @@ describe(tst_con.cdoesConstantExist, () => {
   });
 
   /**
-   * @function doesConstantExist_validDataString
+   * @function doesConstantExist_inValidDataInputDataString
    * @description Tests the business rules function doesConstantExist with a invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
-  test(tst_con.cdoesConstantExist_validDataString, () => {
+  test(tst_con.cdoesConstantExist_inValidDataInputDataString, () => {
     // Arrange
     let inputData = data_con.stringRandomText;
     let inputMetaData = '';    
@@ -1549,6 +1385,27 @@ describe(tst_con.cfindConstantName, () => {
   });
 
   /**
+   * @function findConstantName_inValidInputDataInteger
+   * @description Tests the business rules function findConstantName with a invalid integer data.
+   * @author Json Howard
+   * @date 2023/05/01
+   */
+  test(tst_con.cfindConstantName_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1,2,3,4,5];    
+
+    // Act
+    let returnData = constantStringParsing.findConstantName(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBe('');
+  });
+
+  /**
    * @function findConstantName_inValidInputDataBoolean
    * @description Tests the business rules function findConstantName with a invalid boolean input.
    * @author Json Howard
@@ -1600,27 +1457,6 @@ describe(tst_con.cfindConstantName, () => {
     // Arrange
     let inputData = [1,2,3,4,5];
     let inputMetaData = false;    
-
-    // Act
-    let returnData = constantStringParsing.findConstantName(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBe('');
-  });
-
-  /**
-   * @function findConstantName_inValidInputDataInteger
-   * @description Tests the business rules function findConstantName with a invalid integer data.
-   * @author Json Howard
-   * @date 2023/05/01
-   */
-  test(tst_con.cfindConstantName_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];    
 
     // Act
     let returnData = constantStringParsing.findConstantName(

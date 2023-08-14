@@ -10,6 +10,7 @@
  */
 // Internal imports
 import * as tst_con from '../../tests/constants/test.constants.js';
+import { basePath } from '../../tests/utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -48,7 +49,7 @@ export const jsonObjectOfStrings_03 = () => {
  * @date 2023/04/17
  */
 export const applicationPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.capplication + bas.cDot + wrd.csystem + bas.cDot + gen.cjson;
     return baseUrl;
 };
@@ -61,7 +62,7 @@ export const applicationPath = () => {
  * @date 2023/04/17
  */
 export const frameworkPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cframework + bas.cDot + wrd.csystem + bas.cDot + gen.cjson;
     return baseUrl;
 };
@@ -76,7 +77,7 @@ export const frameworkPath = () => {
  * @date 2023/04/17
  */
 export const dataBrokerCsvPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.ctest + bas.cDot + gen.ccsv;
     return baseUrl;
 }
@@ -91,7 +92,7 @@ export const dataBrokerCsvPath = () => {
  * @date 2023/04/17
  */
 export const dataBrokerXmlPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml;
     return baseUrl;
 }
@@ -107,7 +108,7 @@ export const dataBrokerXmlPath = () => {
  * @date 2023/04/17
  */
 export const dataBrokerJsonPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     baseUrl += bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.cconfig + bas.cDot + gen.cjson;
     return baseUrl;
 };
@@ -120,7 +121,7 @@ export const dataBrokerJsonPath = () => {
  * @date 2023/04/17
  */
 export const writeJsonDataPath = () => {
-    let baseUrl = tst_con.basePath();
+    let baseUrl = basePath();
     let urlArray = baseUrl.split(bas.cForwardSlash);
     let resUrl = '';
     for(const element of urlArray) {

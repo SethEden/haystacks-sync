@@ -93,7 +93,7 @@ describe(tst_con.csolveLehmerCode, () => {
         expect(returnData).toBeTruthy();
     });
 
-        /**
+    /**
     * @function solveLehmerCode_inValidInputDataInteger
     * @description Tests the business rules function solveLehmerCode with a invalid integer data.
     * @author Json Howard
