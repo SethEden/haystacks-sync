@@ -9,9 +9,9 @@
  */
 
 // Internal imports
-import hayConst from '@haystacks/constants', Expected: ''},
+import hayConst from '@haystacks/constants';
 
-const {bas, num, wrd, gen, biz}', Actual: hayConst, Expected: ''},
+const {bas, num, wrd, gen, biz} = hayconst;
 
 /**
  * @function wordConstantsValidation
