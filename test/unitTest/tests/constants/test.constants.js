@@ -301,6 +301,12 @@ export const cchangeDebugConfigurationTheme = wrd.cchange + wrd.cDebug + wrd.cCo
 export const csaveConfiguration = wrd.csave + wrd.cConfiguration; // saveConfiguration
 export const clistConfigurationThemes = wrd.clist + wrd.cConfiguration + wrd.cThemes; // listConfigurationThemes
 
+/* constant */
+export const cconstantGenerator = wrd.cconstant + wrd.cGenerator; 
+export const cconstantsGeneratorList = wrd.cconstants + wrd.cGenerator + wrd.cList;
+export const cconstantsPatternRecognizer = wrd.cconstants + wrd.cPattern + wrd.cRecognizer;
+export const cevaluateConstant = wrd.cevaluate + wrd.cConstant;
+
 // Test names
 
 /* commandBroker */
@@ -2218,3 +2224,52 @@ export const cchangeDebugConfigurationTheme_inValidInputDataNaN = cchangeDebugCo
 export const csaveConfiguration_validDataString = csaveConfiguration + wrd.cvalid + wrd.cData + wrd.cString; // saveConfiguration_validDataString
 
 export const clistConfigurationThemes_validDataString = clistConfigurationThemes + wrd.cvalid + wrd.cData + wrd.cString; // listConfigurationThemes_validDataString
+
+/* constant */
+export const cconstantsGenerator_validDataString = cconstantGenerator + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsGenerator_inValidDataInputDataString = cconstantGenerator + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsGenerator_inValidDataInputMetaDataString = cconstantGenerator + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsGenerator_inValidInputDataInteger = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsGenerator_inValidInputDataBoolean = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsGenerator_inValidInputMetaDataInteger = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsGenerator_inValidInputMetaDataBoolean = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconstantsGenerator_inValidInputDataUndefined = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconstantsGenerator_inValidInputDataNaN = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconstantsGenerator_inValidInputMetaDataUndefined = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconstantsGenerator_inValidInputMetaDataNaN = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cconstantsGeneratorList_validDataString = cconstantsGeneratorList + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsGeneratorList_inValidDataInputDataString = cconstantsGeneratorList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsGeneratorList_inValidDataInputMetaDataString = cconstantsGeneratorList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsGeneratorList_inValidInputDataInteger = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsGeneratorList_inValidInputDataBoolean = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsGeneratorList_inValidInputMetaDataInteger = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsGeneratorList_inValidInputMetaDataBoolean = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconstantsGeneratorList_inValidInputDataUndefined = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconstantsGeneratorList_inValidInputDataNaN = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconstantsGeneratorList_inValidInputMetaDataUndefined = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconstantsGeneratorList_inValidInputMetaDataNaN = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cconstantsPatternRecognizer_validDataString = cconstantsPatternRecognizer + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsPatternRecognizer_inValidDataInputDataString = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsPatternRecognizer_inValidDataInputMetaDataString = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsPatternRecognizer_inValidInputDataInteger = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsPatternRecognizer_inValidInputDataBoolean = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsPatternRecognizer_inValidInputMetaDataInteger = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsPatternRecognizer_inValidInputMetaDataBoolean = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconstantsPatternRecognizer_inValidInputDataUndefined = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconstantsPatternRecognizer_inValidInputDataNaN = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconstantsPatternRecognizer_inValidInputMetaDataUndefined = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconstantsPatternRecognizer_inValidInputMetaDataNaN = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cevaluateConstant_validDataString = cevaluateConstant + wrd.cvalid + wrd.cData + wrd.cString;
+export const cevaluateConstant_inValidDataInputDataString = cevaluateConstant + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cevaluateConstant_inValidDataInputMetaDataString = cevaluateConstant + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cevaluateConstant_inValidInputDataInteger = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cevaluateConstant_inValidInputDataBoolean = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cevaluateConstant_inValidInputMetaDataInteger = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cevaluateConstant_inValidInputMetaDataBoolean = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cevaluateConstant_inValidInputDataUndefined = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cevaluateConstant_inValidInputDataNaN = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cevaluateConstant_inValidInputMetaDataUndefined = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cevaluateConstant_inValidInputMetaDataNaN = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;

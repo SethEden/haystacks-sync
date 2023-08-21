@@ -1,1 +1,5 @@
-"Hello:World"
+{
+  "data": [
+    "D:/work/WEBGL/Upwork/Haystack/haystacks-sync/test/unitTest/testData/test.csv"
+  ]
+}
