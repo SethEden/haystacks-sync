@@ -318,6 +318,10 @@ export const cvalidateConstants = wrd.cvalidate + wrd.cConstants;
 export const cvalidateCommandAliases = wrd.cvalidate + wrd.cCommand + wrd.cAliases;
 export const cvalidateWorkflows = wrd.cvalidate + wrd.cWorkflows;
 
+/* performanceMetric */
+export const cbusinessRulesMetrics = wrd.cbusiness + wrd.cRules + wrd.cMetrics;
+export const ccommandMetrics = wrd.ccommand + wrd.cMetrics;
+
 // Test names
 
 /* commandBroker */
@@ -2353,3 +2357,28 @@ export const cvalidateWorkflows_validDataString = cvalidateWorkflows + wrd.cvali
 export const cvalidateWorkflows_inValidDataObjectDuplicate = cvalidateWorkflows + wrd.cinvalid + wrd.cData + wrd.cObject + wrd.cDuplicate;
 export const cvalidateWorkflows_inValidDataUndefined = cvalidateWorkflows + wrd.cinvalid + wrd.cData + cUndefined;
 export const cvalidateWorkflows_inValidDataNaN = cvalidateWorkflows + wrd.cinvalid + wrd.cData + cNaN;
+
+/* performanceMetric */
+export const cbusinessRulesMetrics_validDataString = cbusinessRulesMetrics + wrd.cvalid + wrd.cData + wrd.cString;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackString = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackInteger = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackUndefined = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackNaN = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+
+export const ccommandMetrics_validDataString = ccommandMetrics + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackString = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackString = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackInteger = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackInteger = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackUndefined = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackUndefined = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;

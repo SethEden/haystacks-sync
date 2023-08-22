@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 /**
  * @file integrationTests.test.js
- * @module integrationTests.test
+ * @module constant.test
  * @description Unit tests for the integrationTests.js
  * @requires module:rulesLibrary
  * @requires module:constant
