@@ -1,9 +1,9 @@
 'use strict';
 /* eslint-disable no-undef */
 /**
- * @file constant.test.js
- * @module constant.test
- * @description Unit tests for the constant.js
+ * @file dataDirectorate.test.js
+ * @module dataDirectorate.test
+ * @description Unit tests for the dataDirectorate.js
  * @requires module:rulesLibrary
  * @requires module:constant
  * @requires module:commandsLibrary
@@ -11,7 +11,7 @@
  * @requires module:data
  * @requires module:testData/dataBroker
  * @requires module:testData/stringParsingUtilities
- * @requires module:testData/constant
+ * @requires module:testData/dataDirectorate
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}

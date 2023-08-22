@@ -313,6 +313,11 @@ export const cprintDataHiveAttributes = wrd.cprint + wrd.cData + wrd.cHive + wrd
 export const cclearDataStorage = wrd.cclear + wrd.cData + wrd.cStorage;
 export const cchangeSetting = wrd.cchange + wrd.cSetting;
 
+/* integrationTests */
+export const cvalidateConstants = wrd.cvalidate + wrd.cConstants;
+export const cvalidateCommandAliases = wrd.cvalidate + wrd.cCommand + wrd.cAliases;
+export const cvalidateWorkflows = wrd.cvalidate + wrd.cWorkflows;
+
 // Test names
 
 /* commandBroker */
@@ -2328,3 +2333,23 @@ export const cchangeSetting_inValidInputDataUndefined = cchangeSetting + wrd.cin
 export const cchangeSetting_inValidInputDataNaN = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
 export const cchangeSetting_inValidInputMetaDataUndefined = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
 export const cchangeSetting_inValidInputMetaDataNaN = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+/* integrationTests */
+export const cvalidateConstants_validDataString = cvalidateConstants + wrd.cvalid + wrd.cData + wrd.cString;
+export const cvalidateConstants_inValidDataString = cvalidateConstants + wrd.cinvalid + wrd.cData + wrd.cString;
+export const cvalidateConstants_inValidDataUndefined1 = cvalidateConstants + wrd.cinvalid + wrd.cData + cUndefined + num.c1;
+export const cvalidateConstants_inValidDataUndefined2 = cvalidateConstants + wrd.cinvalid + wrd.cData + cUndefined + num.c2;
+export const cvalidateConstants_inValidDataUndefined3 = cvalidateConstants + wrd.cinvalid + wrd.cData + cUndefined + num.c3;
+export const cvalidateConstants_inValidDataNaN1 = cvalidateConstants + wrd.cinvalid + wrd.cData + cNaN + num.c1;
+export const cvalidateConstants_inValidDataNaN2 = cvalidateConstants + wrd.cinvalid + wrd.cData + cNaN + num.c2;
+export const cvalidateConstants_inValidDataNaN3 = cvalidateConstants + wrd.cinvalid + wrd.cData + cNaN + num.c3;
+
+export const cvalidateCommandAliases_validDataString = cvalidateCommandAliases + wrd.cvalid + wrd.cData + wrd.cString;
+export const cvalidateCommandAliases_inValidDataObjectDuplicate = cvalidateCommandAliases + wrd.cinvalid + wrd.cData + wrd.cObject + wrd.cDuplicate;
+export const cvalidateCommandAliases_inValidDataUndefined = cvalidateCommandAliases + wrd.cinvalid + wrd.cData + cUndefined;
+export const cvalidateCommandAliases_inValidDataNaN = cvalidateCommandAliases + wrd.cinvalid + wrd.cData + cNaN;
+
+export const cvalidateWorkflows_validDataString = cvalidateWorkflows + wrd.cvalid + wrd.cData + wrd.cString;
+export const cvalidateWorkflows_inValidDataObjectDuplicate = cvalidateWorkflows + wrd.cinvalid + wrd.cData + wrd.cObject + wrd.cDuplicate;
+export const cvalidateWorkflows_inValidDataUndefined = cvalidateWorkflows + wrd.cinvalid + wrd.cData + cUndefined;
+export const cvalidateWorkflows_inValidDataNaN = cvalidateWorkflows + wrd.cinvalid + wrd.cData + cNaN;
