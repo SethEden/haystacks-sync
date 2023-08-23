@@ -322,6 +322,15 @@ export const cvalidateWorkflows = wrd.cvalidate + wrd.cWorkflows;
 export const cbusinessRulesMetrics = wrd.cbusiness + wrd.cRules + wrd.cMetrics;
 export const ccommandMetrics = wrd.ccommand + wrd.cMetrics;
 
+/* system */
+export const cechoCommand = wrd.cecho + wrd.cCommand;
+export const cexit = wrd.cexit;
+export const cversion = wrd.cversion;
+export const cabout = wrd.cabout;
+export const cname = wrd.cname;
+export const chelp = wrd.chelp;
+export const cworkflowHelp = wrd.cworkflow + wrd.cHelp;
+
 // Test names
 
 /* commandBroker */
@@ -2382,3 +2391,88 @@ export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackUndefined
 export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
 export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackUndefined = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
 export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+
+/* system */
+export const cechoCommand_validDataString = cechoCommand + wrd.cvalid + wrd.cData + wrd.cString;
+export const cechoCommand_inValidDataInputDataString = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cechoCommand_inValidDataInputMetaDataString = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cechoCommand_inValidInputDataInteger = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cechoCommand_inValidInputDataBoolean = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cechoCommand_inValidInputMetaDataInteger = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cechoCommand_inValidInputMetaDataBoolean = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cechoCommand_inValidInputDataUndefined = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cechoCommand_inValidInputDataNaN = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cechoCommand_inValidInputMetaDataUndefined = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cechoCommand_inValidInputMetaDataNaN = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cexit_validDataString = cexit + wrd.cvalid + wrd.cData + wrd.cString;
+export const cexit_inValidDataInputDataString = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cexit_inValidDataInputMetaDataString = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cexit_inValidInputDataInteger = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cexit_inValidInputDataBoolean = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cexit_inValidInputMetaDataInteger = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cexit_inValidInputMetaDataBoolean = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cexit_inValidInputDataUndefined = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cexit_inValidInputDataNaN = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cexit_inValidInputMetaDataUndefined = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cexit_inValidInputMetaDataNaN = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cversion_validDataString = cversion + wrd.cvalid + wrd.cData + wrd.cString;
+export const cversion_inValidDataInputDataString = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cversion_inValidDataInputMetaDataString = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cversion_inValidInputDataInteger = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cversion_inValidInputDataBoolean = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cversion_inValidInputMetaDataInteger = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cversion_inValidInputMetaDataBoolean = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cversion_inValidInputDataUndefined = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cversion_inValidInputDataNaN = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cversion_inValidInputMetaDataUndefined = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cversion_inValidInputMetaDataNaN = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cabout_validDataString = cabout + wrd.cvalid + wrd.cData + wrd.cString;
+export const cabout_inValidDataInputDataString = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cabout_inValidDataInputMetaDataString = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cabout_inValidInputDataInteger = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cabout_inValidInputDataBoolean = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cabout_inValidInputMetaDataInteger = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cabout_inValidInputMetaDataBoolean = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cabout_inValidInputDataUndefined = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cabout_inValidInputDataNaN = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cabout_inValidInputMetaDataUndefined = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cabout_inValidInputMetaDataNaN = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cname_validDataString = cname + wrd.cvalid + wrd.cData + wrd.cString;
+export const cname_inValidDataInputDataString = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cname_inValidDataInputMetaDataString = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cname_inValidInputDataInteger = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cname_inValidInputDataBoolean = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cname_inValidInputMetaDataInteger = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cname_inValidInputMetaDataBoolean = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cname_inValidInputDataUndefined = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cname_inValidInputDataNaN = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cname_inValidInputMetaDataUndefined = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cname_inValidInputMetaDataNaN = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const chelp_validDataString = chelp + wrd.cvalid + wrd.cData + wrd.cString;
+export const chelp_inValidDataInputDataString = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const chelp_inValidDataInputMetaDataString = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const chelp_inValidInputDataInteger = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const chelp_inValidInputDataBoolean = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const chelp_inValidInputMetaDataInteger = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const chelp_inValidInputMetaDataBoolean = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const chelp_inValidInputDataUndefined = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const chelp_inValidInputDataNaN = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const chelp_inValidInputMetaDataUndefined = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const chelp_inValidInputMetaDataNaN = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cworkflowHelp_validDataString = cworkflowHelp + wrd.cvalid + wrd.cData + wrd.cString;
+export const cworkflowHelp_inValidDataInputDataString = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cworkflowHelp_inValidDataInputMetaDataString = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cworkflowHelp_inValidInputDataInteger = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cworkflowHelp_inValidInputDataBoolean = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cworkflowHelp_inValidInputMetaDataInteger = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cworkflowHelp_inValidInputMetaDataBoolean = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cworkflowHelp_inValidInputDataUndefined = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cworkflowHelp_inValidInputDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cworkflowHelp_inValidInputMetaDataUndefined = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cworkflowHelp_inValidInputMetaDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;

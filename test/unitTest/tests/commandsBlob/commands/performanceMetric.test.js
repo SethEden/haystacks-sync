@@ -92,7 +92,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
      * @author Json Howard
      * @date 2023/08/22
      */
-    test(tst_con.ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString, () => {
+    test(tst_con.cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
@@ -132,7 +132,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
      * @author Json Howard
      * @date 2023/08/22
      */
-    test(tst_con.ccommandMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean, () => {
+    test(tst_con.cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
@@ -152,7 +152,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
      * @author Json Howard
      * @date 2023/08/22
      */
-    test(tst_con.ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger, () => {
+    test(tst_con.cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
@@ -172,7 +172,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
      * @author Json Howard
      * @date 2023/08/22
      */
-    test(tst_con.ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean, () => {
+    test(tst_con.cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
@@ -232,7 +232,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
      * @author Json Howard
      * @date 2023/08/22
      */
-    test(tst_con.ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined, () => {
+    test(tst_con.cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
@@ -252,7 +252,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
      * @author Json Howard
      * @date 2023/08/22
      */
-    test(tst_con.ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN, () => {
+    test(tst_con.cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
