@@ -2480,6 +2480,14 @@ export const cworkflowHelp_inValidInputDataNaN = cworkflowHelp + wrd.cinvalid + 
 export const cworkflowHelp_inValidInputMetaDataUndefined = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
 export const cworkflowHelp_inValidInputMetaDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
 
+/* chiefCommander */
+export const caddClientCommands_validDataString = caddClientCommands + wrd.cvalid + wrd.cData + wrd.cString;
+export const caddClientCommands_inValidDataClientCommandsString = caddClientCommands + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cCommands + wrd.cString;
+export const caddClientCommands_inValidClientCommandsInteger = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cInteger;
+export const caddClientCommands_inValidClientCommandsBoolean = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cBoolean;
+export const caddClientCommands_inValidClientCommandsUndefined = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cUndefined;
+export const caddClientCommands_inValidClientCommandsNaN = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cNaN;
+
 /* chiefWorkflow */
 export const cloadCommandWorkflowsFromPath_validDataString = cloadCommandWorkflowsFromPath + wrd.cvalid + wrd.cData + wrd.cString;
 export const cloadCommandWorkflowsFromPath_inValidDataCommandWorkflowFilePathConfigurationNameString = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
