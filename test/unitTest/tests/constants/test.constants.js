@@ -331,6 +331,9 @@ export const cname = wrd.cname;
 export const chelp = wrd.chelp;
 export const cworkflowHelp = wrd.cworkflow + wrd.cHelp;
 
+/* chiefWorkflow */
+export const cloadCommandWorkflowsFromPath = wrd.cload + wrd.cCommand + wrd.cWorkflows + wrd.cFrom + wrd.cPath;
+
 // Test names
 
 /* commandBroker */
@@ -2476,3 +2479,16 @@ export const cworkflowHelp_inValidInputDataUndefined = cworkflowHelp + wrd.cinva
 export const cworkflowHelp_inValidInputDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
 export const cworkflowHelp_inValidInputMetaDataUndefined = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
 export const cworkflowHelp_inValidInputMetaDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+/* chiefWorkflow */
+export const cloadCommandWorkflowsFromPath_validDataString = cloadCommandWorkflowsFromPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandWorkflowsFromPath_inValidDataCommandWorkflowFilePathConfigurationNameString = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const cloadCommandWorkflowsFromPath_inValidDataContextNameString = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameInteger = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameBoolean = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const cloadCommandWorkflowsFromPath_inValidContextNameInteger = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cInteger;
+export const cloadCommandWorkflowsFromPath_inValidContextNameBoolean = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameUndefined = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cUndefined;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameNaN = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
+export const cloadCommandWorkflowsFromPath_inValidContextNameUndefined = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cUndefined;
+export const cloadCommandWorkflowsFromPath_inValidContextNameNaN = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cNaN;
