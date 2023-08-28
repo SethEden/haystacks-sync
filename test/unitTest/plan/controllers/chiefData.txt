@@ -333,26 +333,26 @@ initializeConstantsValidationData_inValidString
 initializeConstantsValidationData_inValidNumber
 initializeConstantsValidationData_inValidBoolean
 --------------------------------------------------------------------------------
-testName: addConstantsValidationData _validDataString
+testName: addConstantsValidationData_validDataString
 input arrayValidationData: string (An array of arrays that contains all of the constants library validation names and data objects)
 output: boolean
 
-testName: addConstantsValidationData _inValidDataArrayValidationDataString
+testName: addConstantsValidationData_inValidDataArrayValidationDataString
 input arrayValidationData: string (dfxg24346dfg)
 output: ?
 
-testName: addConstantsValidationData _inValidArrayValidationDataInteger
+testName: addConstantsValidationData_inValidArrayValidationDataInteger
 input arrayValidationData: integer (4567)
 output: ?
 
-testName: addConstantsValidationData _inValidArrayValidationDataBoolean
+testName: addConstantsValidationData_inValidArrayValidationDataBoolean
 input arrayValidationData: boolean (false)
 output: ?
 
-testName: addConstantsValidationData _inValidArrayValidationDataUndefined
+testName: addConstantsValidationData_inValidArrayValidationDataUndefined
 input arrayValidationData: undefined
 output: ?
 
-testName: addConstantsValidationData _inValidArrayValidationDataNaN
+testName: addConstantsValidationData_inValidArrayValidationDataNaN
 input arrayValidationData: NaN
 output: ?
