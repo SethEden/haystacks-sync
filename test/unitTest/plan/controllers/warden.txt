@@ -17,7 +17,7 @@ input inputPath: string (The path for the entry point to the framework, ie: main
 input actualFrameworkName: string (dfxg24346dfg)
 output: ?
 
-testName: processRootPath_inValidInputPathstring (The path in the configuration JSON object where the configuration setting should be set)
+testName: processRootPath_inValidInputPathInteger (The path in the configuration JSON object where the configuration setting should be set)
 input inputPath: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
 input actualFrameworkName: 123string321
 output: ?
@@ -27,7 +27,7 @@ input inputPath: boolean (false)
 input actualFrameworkName: 123string321
 output: ?
 
-testName: processRootPath_inValidActualFrameworkNamestring (The path in the configuration JSON object where the configuration setting should be set)
+testName: processRootPath_inValidActualFrameworkNameInteger (The path in the configuration JSON object where the configuration setting should be set)
 input inputPath: 234string432
 input actualFrameworkName: string
 output: ?
@@ -65,7 +65,7 @@ testName: initFrameworkSchema_inValidConfigDataString
 input configData: string (dfxg24346dfg)
 output: ?
 
-testName: initFrameworkSchema_inValidConfigDatastring (The path in the configuration JSON object where the configuration setting should be set)
+testName: initFrameworkSchema_inValidConfigDataInteger (The path in the configuration JSON object where the configuration setting should be set)
 input configData: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
 output: ?
 
@@ -89,7 +89,7 @@ testName: mergeClientBusinessRules_inValidDataClientBusinessRulesString
 input clientBusinessRules: string (dfxg24346dfg)
 output: ?
 
-testName: mergeClientBusinessRules_inValidClientBusinessRulesstring (The path in the configuration JSON object where the configuration setting should be set)
+testName: mergeClientBusinessRules_inValidClientBusinessRulesInteger (The path in the configuration JSON object where the configuration setting should be set)
 input clientBusinessRules: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
 output: ?
 

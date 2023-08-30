@@ -346,6 +346,16 @@ export const csetupAllJsonConfigData = wrd.csetup + wrd.cAll + wrd.cAll + gen.cJ
 /* chiefWorkflow */
 export const cloadCommandWorkflowsFromPath = wrd.cload + wrd.cCommand + wrd.cWorkflows + wrd.cFrom + wrd.cPath;
 
+/* warden */
+export const cprocessRootPath = wrd.cprocess + wrd.cRoot + wrd.cPath;
+export const cinitFrameworkSchema = wrd.cinitiate + wrd.cFramework + wrd.cSchema;
+export const cmergeClientBusinessRules = wrd.cmerge + wrd.cClient + wrd.cBusiness + wrd.cRules;
+export const cmergeClientCommands = wrd.cmerge + wrd.cClient + wrd.cCommands;
+export const cloadCommandAliases = wrd.cload + wrd.cCommand + wrd.cAliases;
+export const cloadCommandWorkflows = wrd.cload + wrd.cCommand + wrd.cWorkflows;
+export const cexecuteBusinessRules = wrd.cexecute + wrd.cBusiness + wrd.cRules;
+export const cconsoleLog = wrd.cconsole + wrd.cLog;
+
 // Test names
 
 /* commandBroker */
@@ -2607,3 +2617,75 @@ export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigu
 export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameNaN = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
 export const cloadCommandWorkflowsFromPath_inValidContextNameUndefined = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cUndefined;
 export const cloadCommandWorkflowsFromPath_inValidContextNameNaN = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cNaN;
+
+/* warden */
+export const cprocessRootPath_validDataString = cprocessRootPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessRootPath_inValidDataInputPathString = cprocessRootPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cPath + wrd.cString;
+export const cprocessRootPath_inValidDataActualFrameworkNameString = cprocessRootPath + wrd.cinvalid + wrd.cData + wrd.cActual  + wrd.cFramework + wrd.cName + wrd.cString;
+export const cprocessRootPath_inValidInputPathInteger = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + wrd.cInteger;
+export const cprocessRootPath_inValidInputPathBoolean = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + wrd.cBoolean;
+export const cprocessRootPath_inValidActualFrameworkNameInteger = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + wrd.cInteger;
+export const cprocessRootPath_inValidActualFrameworkNameBoolean = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + wrd.cBoolean;
+export const cprocessRootPath_inValidInputPathUndefined = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + cUndefined;
+export const cprocessRootPath_inValidInputPathNaN = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + cNaN;
+export const cprocessRootPath_inValidActualFrameworkNameUndefined = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + cUndefined;
+export const cprocessRootPath_inValidActualFrameworkNameNaN = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + cNaN;
+
+export const cinitFrameworkSchema_validDataString = cinitFrameworkSchema + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitFrameworkSchema_inValidConfigDataString = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cString;
+export const cinitFrameworkSchema_inValidConfigDataInteger = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cInteger;
+export const cinitFrameworkSchema_inValidConfigDataBoolean = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cBoolean;
+export const cinitFrameworkSchema_inValidConfigDataUndefined = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + cUndefined;
+export const cinitFrameworkSchema_inValidConfigDataNaN = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + cNaN;
+
+export const cmergeClientBusinessRules_validDataString = cmergeClientBusinessRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cmergeClientBusinessRules_inValidDataClientBusinessRulesString = cmergeClientBusinessRules + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cString;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesInteger = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cInteger;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesBoolean = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cBoolean;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesUndefined = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + cUndefined;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesNaN = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + cNaN;
+
+export const cmergeClientCommands_validDataString = cmergeClientCommands + wrd.cvalid + wrd.cData + wrd.cString;
+export const cmergeClientCommands_inValidDataClientCommandsString = cmergeClientCommands + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cCommands + wrd.cString;
+export const cmergeClientCommands_inValidClientCommandsInteger = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cInteger;
+export const cmergeClientCommands_inValidClientCommandsBoolean = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cBoolean;
+export const cmergeClientCommands_inValidClientCommandsUndefined = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cUndefined;
+export const cmergeClientCommands_inValidClientCommandsNaN = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cNaN;
+
+export const cloadCommandAliases_validDataString = cloadCommandAliases + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandAliases_inValidDataCommandAliasesPathString = cloadCommandAliases + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cAliases + wrd.cPath + wrd.cString;
+export const cloadCommandAliases_inValidCommandAliasesPathInteger = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + wrd.cInteger;
+export const cloadCommandAliases_inValidCommandAliasesPathBoolean = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + wrd.cBoolean;
+export const cloadCommandAliases_inValidCommandAliasesPathUndefined = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + cUndefined;
+export const cloadCommandAliases_inValidCommandAliasesPathNaN = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + cNaN;
+
+export const cloadCommandWorkflows_validDataString = cloadCommandWorkflows + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandWorkflows_inValidDataWorkflowPathConfigNameString = cloadCommandWorkflows + wrd.cinvalid + wrd.cData + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + wrd.cString;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameInteger = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + wrd.cInteger;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameBoolean = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + wrd.cBoolean;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameUndefined = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + cUndefined;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameNaN = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + cNaN;
+
+export const cexecuteBusinessRules_validDataString = cexecuteBusinessRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cexecuteBusinessRules_inValidDataInputsString = cexecuteBusinessRules + wrd.cinvalid + wrd.cData + wrd.cInputs + wrd.cString;
+export const cexecuteBusinessRules_inValidDataBusinessRulesString = cexecuteBusinessRules + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cString;
+export const cexecuteBusinessRules_inValidInputsInteger = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + wrd.cInteger;
+export const cexecuteBusinessRules_inValidInputsBoolean = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + wrd.cBoolean;
+export const cexecuteBusinessRules_inValidBusinessRulesInteger = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + wrd.cInteger;
+export const cexecuteBusinessRules_inValidBusinessRulesBoolean = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + wrd.cBoolean;
+export const cexecuteBusinessRules_inValidInputsUndefined = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + cUndefined;
+export const cexecuteBusinessRules_inValidInputsNaN = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + cNaN;
+export const cexecuteBusinessRules_inValidBusinessRulesUndefined = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + cUndefined;
+export const cexecuteBusinessRules_inValidBusinessRulesNaN = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + cNaN;
+
+export const cconsoleLog_validDataString = cconsoleLog + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconsoleLog_inValidDataInputDataString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconsoleLog_inValidDataInputMetaDataString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconsoleLog_inValidInputDataInteger = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconsoleLog_inValidInputDataBoolean = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconsoleLog_inValidInputMetaDataInteger = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconsoleLog_inValidInputMetaDataBoolean = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconsoleLog_inValidInputDataUndefined = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconsoleLog_inValidInputDataNaN = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconsoleLog_inValidInputMetaDataUndefined = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconsoleLog_inValidInputMetaDataNaN = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
