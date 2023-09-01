@@ -616,12 +616,12 @@ describe(tst_con.cloadCommandAliases, () => {
     });
     
     /**
-     * @function loadCommandAliases_inValidCommandAliasesPathstring
+     * @function loadCommandAliases_inValidCommandAliasesPathInteger
      * @description Tests the business rules function loadCommandAliases with a invalid commandAliasesPath Integer.
      * @author Json Howard
      * @date 2023/08/29
      */
-    test(tst_con.cloadCommandAliases_inValidCommandAliasesPathstring, () => {
+    test(tst_con.cloadCommandAliases_inValidCommandAliasesPathInteger, () => {
         // Arrange
         let commandAliasesPath = num.c123;
 

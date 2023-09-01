@@ -356,6 +356,18 @@ export const cloadCommandWorkflows = wrd.cload + wrd.cCommand + wrd.cWorkflows;
 export const cexecuteBusinessRules = wrd.cexecute + wrd.cBusiness + wrd.cRules;
 export const cconsoleLog = wrd.cconsole + wrd.cLog;
 
+/* colorizer */
+export const ccolorizeMessageSimple = wrd.ccolorize + wrd.cMessage + wrd.cSimple;
+export const ccolorizeMessage = wrd.ccolorize + wrd.cMessage;
+export const caggregateStyleSetting = wrd.caggregate + wrd.cStyle + wrd.cSetting;
+export const cgetFontStyleSettingsFromSetting = wrd.cget + wrd.cFont + wrd.cStyle + wrd.cSettings + wrd.cFrom + wrd.cSetting;
+export const cgetColorStyleSettingFromSetting = wrd.cget + wrd.cColor + wrd.cStyle + wrd.cSetting + wrd.cFrom + wrd.cSetting;
+export const cgetNamedColorData = wrd.cget + wrd.cNamed + wrd.cColor + wrd.cData;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting = wrd.cset + wrd.cUnderline + wrd.cFont + wrd.cStyle + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting = wrd.cset + wrd.cBold + wrd.cFont + wrd.cStyle + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting = wrd.cset + wrd.cFont + wrd.cForeground + wrd.cColor + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting = wrd.cset + wrd.cFont + wrd.cBackground + wrd.cColor + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const cremoveFontStyles = wrd.cremove + wrd.cFont + wrd.cStyles;
 // Test names
 
 /* commandBroker */
@@ -2689,3 +2701,156 @@ export const cconsoleLog_inValidInputDataUndefined = cconsoleLog + wrd.cinvalid 
 export const cconsoleLog_inValidInputDataNaN = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
 export const cconsoleLog_inValidInputMetaDataUndefined = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
 export const cconsoleLog_inValidInputMetaDataNaN = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+/* colorizer */
+export const ccolorizeMessageSimple_validData = ccolorizeMessageSimple + wrd.cvalid + wrd.cData;
+export const ccolorizeMessageSimple_inValidMessageString = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + wrd.cString;
+export const ccolorizeMessageSimple_inValidColorArrayString = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + wrd.cString;
+export const ccolorizeMessageSimple_inValidIsForegroundString = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + wrd.cString;
+export const ccolorizeMessageSimple_inValidMessageNumber = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + wrd.cNumber;
+export const ccolorizeMessageSimple_inValidMessageBoolean = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const ccolorizeMessageSimple_inValidMessageUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const ccolorizeMessageSimple_inValidMessageNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + cNaN;
+export const ccolorizeMessageSimple_inValidColorArrayNumber = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + wrd.cNumber;
+export const ccolorizeMessageSimple_inValidColorArrayBoolean = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + wrd.cBoolean;
+export const ccolorizeMessageSimple_inValidColorArrayUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + cUndefined;
+export const ccolorizeMessageSimple_inValidColorArrayNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + cNaN;
+export const ccolorizeMessageSimple_inValidIsForegroundNumber = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + wrd.cNumber;
+export const ccolorizeMessageSimple_inValidIsForegroundBoolean = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + wrd.cBoolean;
+export const ccolorizeMessageSimple_inValidIsForegroundUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + cUndefined;
+export const ccolorizeMessageSimple_inValidIsForegroundNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + cNaN;
+export const ccolorizeMessageSimple_inValidAllUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cAll + cUndefined;
+export const ccolorizeMessageSimple_inValidAllNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const ccolorizeMessage_validData = ccolorizeMessage + wrd.cvalid + wrd.cData;
+export const ccolorizeMessage_inValidMessageString = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + wrd.cString;
+export const ccolorizeMessage_inValidClassNameString = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + wrd.cString;
+export const ccolorizeMessage_inValidFunctionNameString = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + wrd.cString;
+export const ccolorizeMessage_inValidFlatMessageLogString = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + wrd.cString;
+export const ccolorizeMessage_inValidMessageNumber = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + wrd.cNumber;
+export const ccolorizeMessage_inValidMessageBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const ccolorizeMessage_inValidMessageUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const ccolorizeMessage_inValidMessageNaN = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + cNaN;
+export const ccolorizeMessage_inValidClassNameNumber = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + wrd.cNumber;
+export const ccolorizeMessage_inValidClassNameBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + wrd.cBoolean;
+export const ccolorizeMessage_inValidClassNameUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + cUndefined;
+export const ccolorizeMessage_inValidClassNameNaN = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + cNaN;
+export const ccolorizeMessage_inValidFunctionNameNumber = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + wrd.cNumber;
+export const ccolorizeMessage_inValidFunctionNameBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + wrd.cBoolean;
+export const ccolorizeMessage_inValidFunctionNameUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + cUndefined;
+export const ccolorizeMessage_inValidFunctionNameNaN = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + cNaN;
+export const ccolorizeMessage_inValidFlatMessageLogNumber = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + wrd.cNumber;
+export const ccolorizeMessage_inValidFlatMessageLogBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + wrd.cBoolean;
+export const ccolorizeMessage_inValidFlatMessageLogUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + cUndefined;
+export const ccolorizeMessage_inValidFlatMessageLogNaN = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + cNaN;
+export const ccolorizeMessage_inValidAllUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cAll + cUndefined;
+export const ccolorizeMessage_inValidAllNaN = ccolorizeMessage + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const caggregateStyleSetting_validData = caggregateStyleSetting + wrd.cvalid + wrd.cData;
+export const caggregateStyleSetting_inValidConfigurationNamespaceString = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cString;
+export const caggregateStyleSetting_inValidConfigurationNameString = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const caggregateStyleSetting_inValidConfigurationValueString = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cString;
+export const caggregateStyleSetting_inValidConfigurationNamespaceNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cNumber;
+export const caggregateStyleSetting_inValidConfigurationNamespaceBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cBoolean;
+export const caggregateStyleSetting_inValidConfigurationNamespaceUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cUndefined;
+export const caggregateStyleSetting_inValidConfigurationNamespaceNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cNaN;
+export const caggregateStyleSetting_inValidConfigurationNameNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cNumber;
+export const caggregateStyleSetting_inValidConfigurationNameBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const caggregateStyleSetting_inValidConfigurationNameUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cUndefined;
+export const caggregateStyleSetting_inValidConfigurationNameNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cNaN;
+export const caggregateStyleSetting_inValidConfigurationValueNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cNumber;
+export const caggregateStyleSetting_inValidConfigurationValueBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cBoolean;
+export const caggregateStyleSetting_inValidConfigurationValueUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cUndefined;
+export const caggregateStyleSetting_inValidConfigurationValueNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cNaN;
+export const caggregateStyleSetting_inValidProcessAsFontSettingNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + wrd.cNumber;
+export const caggregateStyleSetting_inValidProcessAsFontSettingBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + wrd.cBoolean;
+export const caggregateStyleSetting_inValidProcessAsFontSettingUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + cUndefined;
+export const caggregateStyleSetting_inValidProcessAsFontSettingNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + cNaN;
+export const caggregateStyleSetting_inValidAllUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cAll + cUndefined;
+export const caggregateStyleSetting_inValidAllNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const cgetFontStyleSettingsFromSetting_validDataString = cgetFontStyleSettingsFromSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetFontStyleSettingsFromSetting_inValidDataSettingValueString = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cData + wrd.cSetting + wrd.cValue + wrd.cString;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueInteger = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueBoolean = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueUndefined = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + cUndefined;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueNaN = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + cNaN;
+
+export const cgetColorStyleSettingFromSetting_validDataString = cgetColorStyleSettingFromSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetColorStyleSettingFromSetting_inValidDataColorNameString = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cData + wrd.cColor + wrd.cName + wrd.cString;
+export const cgetColorStyleSettingFromSetting_inValidDataDefaultColorArrayString = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cData + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cString;
+export const cgetColorStyleSettingFromSetting_inValidColorNameInteger = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + wrd.cInteger;
+export const cgetColorStyleSettingFromSetting_inValidColorNameBoolean = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + wrd.cBoolean;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayInteger = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cInteger;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayBoolean = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cBoolean;
+export const cgetColorStyleSettingFromSetting_inValidColorNameUndefined = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + cUndefined;
+export const cgetColorStyleSettingFromSetting_inValidColorNameNaN = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + cNaN;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayUndefined = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayNaN = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined;
+
+export const cgetNamedColorData_validDataString = cgetNamedColorData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetNamedColorData_inValidDataColorNameString = cgetNamedColorData + wrd.cinvalid + wrd.cData + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cString;
+export const cgetNamedColorData_inValidDataDefaultColorArrayString = cgetNamedColorData + wrd.cinvalid + wrd.cData + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cString;  
+export const cgetNamedColorData_inValidColorNameInteger = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cInteger;
+export const cgetNamedColorData_inValidColorNameBoolean = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cBoolean;
+export const cgetNamedColorData_inValidDefaultColorArrayInteger = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cInteger;  
+export const cgetNamedColorData_inValidDefaultColorArrayBoolean = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cBoolean; 
+export const cgetNamedColorData_inValidColorNameUndefined = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined;
+export const cgetNamedColorData_inValidColorNameNaN = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cNaN;
+export const cgetNamedColorData_inValidDefaultColorArrayUndefined = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined; 
+export const cgetNamedColorData_inValidDefaultColorArrayNaN = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cNaN; 
+
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_validDataString = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataUnderlineSettingValueString = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cUnderline + wrd.cSetting + wrd.cValue + wrd.cString;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueInteger = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueBoolean = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueUndefined = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueNaN = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + cNaN;
+
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_validDataString = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cSetting;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataBoldSettingValueString = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cBold + wrd.cSetting + wrd.cValue + wrd.cString;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueInteger = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueBoolean = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueUndefined = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueNaN = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + cNaN;
+
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_validDataString = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cString;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cNaN;
+
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_validDataString = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cSetting;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cNaN;
+
+export const cremoveFontStyles_validDataString = cremoveFontStyles + wrd.cvalid + wrd.cData + wrd.cString;
+export const cremoveFontStyles_inValidDataMessageString = cremoveFontStyles + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cremoveFontStyles_inValidMessageInteger = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cremoveFontStyles_inValidMessageBoolean = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const cremoveFontStyles_inValidMessageUndefined = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cremoveFontStyles_inValidMessageNaN = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + cNaN;
