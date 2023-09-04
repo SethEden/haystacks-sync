@@ -368,6 +368,14 @@ export const csetBoldFontStyleOnMessageComponentAccordingToSetting = wrd.cset + 
 export const csetFontForegroundColorOnMessageComponentAccordingToSetting = wrd.cset + wrd.cFont + wrd.cForeground + wrd.cColor + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
 export const csetFontBackgroundColorOnMessageComponentAccordingToSetting = wrd.cset + wrd.cFont + wrd.cBackground + wrd.cColor + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
 export const cremoveFontStyles = wrd.cremove + wrd.cFont + wrd.cStyles;
+
+/* configurator */
+export const csetConfigurationSetting = wrd.cset + wrd.cConfiguration + wrd.cSetting;
+export const cgetConfigurationSetting = wrd.cget + wrd.cConfiguration + wrd.cSetting;
+export const cprocessConfigurationNameRules = wrd.cprocess + wrd.cConfiguration + wrd.cName + wrd.cRules;
+export const cprocessConfigurationNamespaceRules = wrd.cprocess + wrd.cConfiguration + wrd.cNamespace + wrd.cRules;
+export const cprocessConfigurationValueRules = wrd.cprocess + wrd.cConfiguration + wrd.cValue + wrd.cRules;
+
 // Test names
 
 /* commandBroker */
@@ -2854,3 +2862,61 @@ export const cremoveFontStyles_inValidMessageInteger = cremoveFontStyles + wrd.c
 export const cremoveFontStyles_inValidMessageBoolean = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
 export const cremoveFontStyles_inValidMessageUndefined = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + cUndefined;
 export const cremoveFontStyles_inValidMessageNaN = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + cNaN;
+
+/* configurator */
+export const csetConfigurationSetting_validData = csetConfigurationSetting + wrd.cvalid + wrd.cData;
+export const csetConfigurationSetting_inValidConfigurationNamespaceString = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cString;
+export const csetConfigurationSetting_inValidConfigurationNameString = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const csetConfigurationSetting_inValidConfigurationValueString = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cString;
+export const csetConfigurationSetting_inValidConfigurationNamespaceNumber = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cNumber;
+export const csetConfigurationSetting_inValidConfigurationNamespaceBoolean = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cBoolean;
+export const csetConfigurationSetting_inValidConfigurationNamespaceUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cUndefined;
+export const csetConfigurationSetting_inValidConfigurationNamespaceNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cNaN;
+export const csetConfigurationSetting_inValidConfigurationNameNumber = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cNumber;
+export const csetConfigurationSetting_inValidConfigurationNameBoolean = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const csetConfigurationSetting_inValidConfigurationNameUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cUndefined;
+export const csetConfigurationSetting_inValidConfigurationNameNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cNaN;
+export const csetConfigurationSetting_inValidConfigurationValueNumber = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cNumber;
+export const csetConfigurationSetting_inValidConfigurationValueBoolean = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cBoolean;
+export const csetConfigurationSetting_inValidConfigurationValueUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cUndefined;
+export const csetConfigurationSetting_inValidConfigurationValueNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cNaN;
+export const csetConfigurationSetting_inValidAllUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cAll + cUndefined;
+export const csetConfigurationSetting_inValidAllNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const cgetConfigurationSetting_validDataString = cgetConfigurationSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetConfigurationSetting_inValidDataConfigurationNamespaceString = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + wrd.cString;
+export const cgetConfigurationSetting_inValidDataConfigurationNameString = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceInteger = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + wrd.cInteger;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceBoolean = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + wrd.cBoolean;
+export const cgetConfigurationSetting_inValidConfigurationNameInteger = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const cgetConfigurationSetting_inValidConfigurationNameBoolean = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceUndefined = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + cUndefined;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceNaN = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + cNaN;
+export const cgetConfigurationSetting_inValidConfigurationNameUndefined = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + cUndefined;
+export const cgetConfigurationSetting_inValidConfigurationNameNaN = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + cNaN;
+
+export const cprocessConfigurationNameRules_validDataString = cprocessConfigurationNameRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessConfigurationNameRules_inValidDataFullyQualifiedNameString = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cData + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cString;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameInteger = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cInteger;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameBoolean = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cBoolean;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameUndefined = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cUndefined;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameNaN = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cNaN;
+
+export const cprocessConfigurationNamespaceRules_validDataString = cprocessConfigurationNameRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessConfigurationNamespaceRules_inValidDataFullyQualifiedNameString = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cData + wrd.cFully + wrd.cQualified + wrd.cString;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameInteger = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cInteger;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameBoolean = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cBoolean;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameUndefined = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cUndefined;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameNaN = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cNaN;
+
+export const cprocessConfigurationValueRules_validDataString = cprocessConfigurationValueRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessConfigurationValueRules_inValidDataNameString = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cData + wrd.cName + wrd.cString;
+export const cprocessConfigurationValueRules_inValidDataValueString = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const cprocessConfigurationValueRules_inValidNameInteger = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + wrd.cInteger;
+export const cprocessConfigurationValueRules_inValidNameBoolean = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + wrd.cBoolean;
+export const cprocessConfigurationValueRules_inValidValueInteger = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const cprocessConfigurationValueRules_inValidValueBoolean = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const cprocessConfigurationValueRules_inValidNameUndefined = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + cUndefined;
+export const cprocessConfigurationValueRules_inValidNameNaN = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + cNaN;
+export const cprocessConfigurationValueRules_inValidValueUndefined = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + cUndefined;
+export const cprocessConfigurationValueRules_inValidValueNaN = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + cNaN;
