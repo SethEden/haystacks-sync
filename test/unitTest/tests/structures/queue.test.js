@@ -1,9 +1,9 @@
 'use strict';
 /* eslint-disable no-undef */
 /**
- * @file warden.test.js
+ * @file queue.test.js
  * @module constant.test
- * @description Unit tests for the warden.js
+ * @description Unit tests for the queue.js
  * @requires module:rulesLibrary
  * @requires module:constant
  * @requires module:commandsLibrary
@@ -11,12 +11,12 @@
  * @requires module:data
  * @requires module:testData/dataBroker
  * @requires module:testData/stringParsingUtilities
- * @requires module:testData/warden
+ * @requires module:testData/queue
  * @requires module:test.constants
  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
  * @author Json Howard
- * @date 2023/08/29
+ * @date 2023/09/05
  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
  */
 

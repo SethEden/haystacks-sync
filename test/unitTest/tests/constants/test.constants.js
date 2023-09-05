@@ -10,6 +10,7 @@
 
 // External imports
 import hayConst from '@haystacks/constants';
+import { cNation } from '@haystacks/constants/src/constants/word.constants';
 
 const {bas, num, wrd, gen, biz, phn} = hayConst;
 
@@ -392,6 +393,15 @@ export const cqueueFront = wrd.cqueue + wrd.cFront;
 export const cqueueSize = wrd.cqueue + wrd.cSize;
 export const cqueueContents = wrd.cqueue + wrd.cContents;
 export const cqueuePrint = wrd.cqueue + wrd.cPrint;
+
+/* stack */
+export const cinitStack = wrd.cinitiate + wrd.cStack;
+export const cclearStack = wrd.cclear + wrd.cStack;
+export const cpush = wrd.cpush;
+export const cpop = wrd.cpop;
+export const clength = wrd.clength;
+export const ccontains = wrd.ccontains;
+export const cprint = wrd.cprint;
 
 // Test names
 
@@ -3078,3 +3088,70 @@ export const cqueuePrint_inValidQueueNameSpaceInteger = cqueuePrint + wrd.cinval
 export const cqueuePrint_inValidQueueNameSpaceBoolean = cqueuePrint + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
 export const cqueuePrint_inValidQueueNameSpaceUndefined = cqueuePrint + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
 export const cqueuePrint_inValidQueueNameSpaceNaN = cqueuePrint + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+/* stack */
+export const cinitStack_validDataString = cinitStack + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitStack_inValidDataStackNameSpaceString = cinitStack + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cinitStack_inValidStackNameSpaceInteger = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cinitStack_inValidStackNameSpaceBoolean = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cinitStack_inValidStackNameSpaceUndefined = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cinitStack_inValidStackNameSpaceNaN = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const cclearStack_validDataString = cclearStack + wrd.cvalid + wrd.cData + wrd.cString;
+export const cclearStack_inValidDataStackNameSpaceString = cclearStack + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cclearStack_inValidStackNameSpaceInteger = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cclearStack_inValidStackNameSpaceBoolean = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cclearStack_inValidStackNameSpaceUndefined = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cclearStack_inValidStackNameSpaceNaN = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const cpush_validDataString = cpush + wrd.cvalid + wrd.cData + wrd.cString;
+export const cpush_inValidDataStackNameSpaceString = cpush + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cpush_inValidDataValueString = cpush + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const cpush_inValidStackNameSpaceInteger = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cpush_inValidStackNameSpaceBoolean = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cpush_inValidValueInteger = cpush + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const cpush_inValidValueBoolean = cpush + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const cpush_inValidStackNameSpaceUndefined = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cpush_inValidStackNameSpaceNaN = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNation;
+export const cpush_inValidValueUndefined = cpush + wrd.cinvalid + wrd.cValue + cUndefined;
+export const cpush_inValidValueNaN = cpush + wrd.cinvalid + wrd.cValue + cNaN;
+
+export const cpop_validDataString = cpop + wrd.cvalid + wrd.cData + wrd.cString;
+export const cpop_inValidDataStackNameSpaceString = cpop + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cpop_inValidStackNameSpaceInteger = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cpop_inValidStackNameSpaceBoolean = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cpop_inValidStackNameSpaceUndefined = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cpop_inValidStackNameSpaceNaN = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const cisEmpty_inValidDataStackNameSpaceString = cisEmpty + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cisEmpty_inValidStackNameSpaceInteger = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cisEmpty_inValidStackNameSpaceBoolean = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cisEmpty_inValidStackNameSpaceUndefined = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cisEmpty_inValidStackNameSpaceNaN = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const clength_validDataString = clength + wrd.cvalid + wrd.cData + wrd.cString;
+export const clength_inValidDataStackNameSpaceString = clength + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const clength_inValidStackNameSpaceInteger = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const clength_inValidStackNameSpaceBoolean = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const clength_inValidStackNameSpaceUndefined = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const clength_inValidStackNameSpaceNaN = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const ccontains_validDataString = ccontains + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccontains_inValidDataStackNameSpaceString = ccontains + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const ccontains_inValidDataValueString = ccontains + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const ccontains_inValidStackNameSpaceInteger = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const ccontains_inValidStackNameSpaceBoolean = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const ccontains_inValidValueInteger = ccontains + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const ccontains_inValidValueBoolean = ccontains + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const ccontains_inValidStackNameSpaceUndefined = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const ccontains_inValidStackNameSpaceNaN = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNation;
+export const ccontains_inValidValueUndefined = ccontains + wrd.cinvalid + wrd.cValue + cUndefined;
+export const ccontains_inValidValueNaN = ccontains + wrd.cinvalid + wrd.cValue + cNaN;
+
+export const cprint_validDataString = cprint + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprint_inValidDataStackNameSpaceString = cprint + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cprint_inValidStackNameSpaceInteger = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cprint_inValidStackNameSpaceBoolean = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cprint_inValidStackNameSpaceUndefined = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cprint_inValidStackNameSpaceNaN = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
