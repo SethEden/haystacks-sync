@@ -376,6 +376,12 @@ export const cprocessConfigurationNameRules = wrd.cprocess + wrd.cConfiguration 
 export const cprocessConfigurationNamespaceRules = wrd.cprocess + wrd.cConfiguration + wrd.cNamespace + wrd.cRules;
 export const cprocessConfigurationValueRules = wrd.cprocess + wrd.cConfiguration + wrd.cValue + wrd.cRules;
 
+/* loggers */
+export const cconsoleTableLog = wrd.cconsole + wrd.cTable + wrd.cLog;
+export const cconstantsValidationSummaryLog = wrd.cconstants + wrd.cValidation + wrd.cSummary + wrd.cLog;
+export const cgetLogFileNameAndPath = wrd.cget + wrd.cLog + wrd.cFile + wrd.cName + wrd.cAnd + wrd.cPath;
+export const cprintMessageToFile = wrd.cprint + wrd.cMessage + wrd.cTo + wrd.cFile;
+
 // Test names
 
 /* commandBroker */
@@ -2920,3 +2926,70 @@ export const cprocessConfigurationValueRules_inValidNameUndefined = cprocessConf
 export const cprocessConfigurationValueRules_inValidNameNaN = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + cNaN;
 export const cprocessConfigurationValueRules_inValidValueUndefined = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + cUndefined;
 export const cprocessConfigurationValueRules_inValidValueNaN = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + cNaN;
+
+/* loggers */
+export const cconsoleLog_inValidDataClassPathString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cClass + wrd.cPath + wrd.cString;
+export const cconsoleLog_inValidDataMessageString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cconsoleLog_inValidClassPathInteger = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cInteger;
+export const cconsoleLog_inValidClassPathBoolean = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cBoolean;
+export const cconsoleLog_inValidMessageInteger = cconsoleLog + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cconsoleLog_inValidMessageBoolean = cconsoleLog + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cconsoleLog_inValidClassPathUndefined = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cUndefined;
+export const cconsoleLog_inValidClassPathNaN = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cNaN;
+export const cconsoleLog_inValidMessageUndefined = cconsoleLog + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cconsoleLog_inValidMessageNaN = cconsoleLog + wrd.cinvalid + wrd.cMessage + cNaN;
+
+export const cconsoleTableLog_validData = cconsoleTableLog + wrd.cvalid + wrd.cData;
+export const cconsoleTableLog_inValidClassPathString = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cString;
+export const cconsoleTableLog_inValidTableDataString = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + wrd.cString;
+export const cconsoleTableLog_inValidColumnNamesString = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + wrd.cString;
+export const cconsoleTableLog_inValidClassPathNumber = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cNumber;
+export const cconsoleTableLog_inValidClassPathBoolean = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cBoolean;
+export const cconsoleTableLog_inValidClassPathUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cUndefined;
+export const cconsoleTableLog_inValidClassPathNaN = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cNaN;
+export const cconsoleTableLog_inValidTableDataNumber = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + wrd.cNumber;
+export const cconsoleTableLog_inValidTableDataBoolean = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + wrd.cBoolean;
+export const cconsoleTableLog_inValidTableDataUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + cUndefined;
+export const cconsoleTableLog_inValidTableDataNaN = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + cNaN;
+export const cconsoleTableLog_inValidColumnNamesNumber = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + wrd.cNumber;
+export const cconsoleTableLog_inValidColumnNamesBoolean = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + wrd.cBoolean;
+export const cconsoleTableLog_inValidColumnNamesUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + cUndefined;
+export const cconsoleTableLog_inValidColumnNamesNaN = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + cNaN;
+export const cconsoleTableLog_inValidAllUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cAll + cUndefined;
+export const cconsoleTableLog_inValidAllNaN = cconsoleTableLog + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const cconstantsValidationSummaryLog_validDataString = cconstantsValidationSummaryLog + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsValidationSummaryLog_inValidDataMessageString = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cconstantsValidationSummaryLog_inValidDataPassFailString = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cData + wrd.cPass + wrd.cFail + wrd.cString;
+export const cconstantsValidationSummaryLog_inValidMessageInteger = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cconstantsValidationSummaryLog_inValidMessageBoolean = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const cconstantsValidationSummaryLog_inValidPassFailInteger = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + wrd.cInteger;
+export const cconstantsValidationSummaryLog_inValidPassFailBoolean = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + wrd.cBoolean;
+export const cconstantsValidationSummaryLog_inValidMessageUndefined = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cconstantsValidationSummaryLog_inValidMessageNaN = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + cNaN;
+export const cconstantsValidationSummaryLog_inValidPassFailUndefined = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + cUndefined;
+export const cconstantsValidationSummaryLog_inValidPassFailNaN = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + cNaN;
+
+export const cgetLogFileNameAndPath_validDataString = cgetLogFileNameAndPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetLogFileNameAndPath_inValidDataClientRootPathString = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cRoot + wrd.cPath + wrd.cString;
+export const cgetLogFileNameAndPath_inValidDataLogFileNameString = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cData + wrd.cLog + wrd.cFile + wrd.cName + wrd.cString;
+export const cgetLogFileNameAndPath_inValidClientRootPathInteger = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + wrd.cInteger;
+export const cgetLogFileNameAndPath_inValidClientRootPathBoolean = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + wrd.cBoolean;
+export const cgetLogFileNameAndPath_inValidLogFileNameInteger = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + wrd.cInteger;
+export const cgetLogFileNameAndPath_inValidLogFileNameBoolean = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + wrd.cBoolean;
+export const cgetLogFileNameAndPath_inValidClientRootPathUndefined = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + cUndefined;
+export const cgetLogFileNameAndPath_inValidClientRootPathNaN = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + cNaN;
+export const cgetLogFileNameAndPath_inValidLogFileNameUndefined = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + cUndefined;
+export const cgetLogFileNameAndPath_inValidLogFileNameNaN = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + cNaN;
+
+export const cprintMessageToFile_validDataString = cprintMessageToFile + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprintMessageToFile_inValidDataFileString = cprintMessageToFile + wrd.cinvalid + wrd.cData + wrd.cFile + wrd.cString;
+export const cprintMessageToFile_inValidDataMessageString = cprintMessageToFile + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cprintMessageToFile_inValidFileInteger = cprintMessageToFile + wrd.cinvalid + wrd.cFile + wrd.cInteger;
+export const cprintMessageToFile_inValidFileBoolean = cprintMessageToFile + wrd.cinvalid + wrd.cFile + wrd.cBoolean;
+export const cprintMessageToFile_inValidMessageInteger = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cprintMessageToFile_inValidMessageBoolean = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const cprintMessageToFile_inValidFileUndefined = cprintMessageToFile + wrd.cinvalid + wrd.cFile + cUndefined;
+export const cprintMessageToFile_inValidFileNaN = cprintMessageToFile + wrd.cinvalid + wrd.cFile + cNaN;
+export const cprintMessageToFile_inValidMessageUndefined = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cprintMessageToFile_inValidMessageNaN = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + cNaN;

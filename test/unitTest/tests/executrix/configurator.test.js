@@ -57,7 +57,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -76,7 +76,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -95,7 +95,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -114,7 +114,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = "";
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -133,7 +133,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -152,7 +152,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -171,7 +171,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -190,7 +190,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -209,7 +209,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -228,7 +228,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -247,7 +247,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -266,7 +266,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -285,7 +285,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = num.c123;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -304,7 +304,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = false;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -323,7 +323,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = undefined;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -342,7 +342,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = NaN;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -361,7 +361,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = undefined;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -380,7 +380,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let configurationValue = NaN;
 
         // Act
-        let returnData = colorizer.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -406,7 +406,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -424,7 +424,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -442,7 +442,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = "";
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -460,7 +460,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -478,7 +478,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -496,7 +496,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = num.c123;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -514,7 +514,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = false;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -532,7 +532,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -550,7 +550,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -568,7 +568,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = undefined;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -586,7 +586,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationName = NaN;
 
         // Act
-        let returnData = colorizer.getConfigurationSetting(configurationNamespace, configurationName);
+        let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -611,7 +611,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let fullyQualifiedName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationNameRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -628,7 +628,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let fullyQualifiedName = "";
 
         // Act
-        let returnData = colorizer.processConfigurationNameRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -645,7 +645,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let fullyQualifiedName = num.c123;
 
         // Act
-        let returnData = colorizer.processConfigurationNameRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -662,7 +662,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let fullyQualifiedName = false;
 
         // Act
-        let returnData = colorizer.processConfigurationNameRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -679,7 +679,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let fullyQualifiedName = undefined;
 
         // Act
-        let returnData = colorizer.processConfigurationNameRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -696,7 +696,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let fullyQualifiedName = NaN;
 
         // Act
-        let returnData = colorizer.processConfigurationNameRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -721,7 +721,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let fullyQualifiedName = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationNamespaceRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -738,7 +738,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let fullyQualifiedName = "";
 
         // Act
-        let returnData = colorizer.processConfigurationNamespaceRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -755,7 +755,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let fullyQualifiedName = num.c123;
 
         // Act
-        let returnData = colorizer.processConfigurationNamespaceRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -772,7 +772,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let fullyQualifiedName = false;
 
         // Act
-        let returnData = colorizer.processConfigurationNamespaceRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -789,7 +789,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let fullyQualifiedName = undefined;
 
         // Act
-        let returnData = colorizer.processConfigurationNamespaceRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -806,7 +806,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let fullyQualifiedName = NaN;
 
         // Act
-        let returnData = colorizer.processConfigurationNamespaceRules(fullyQualifiedName);
+        let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -832,7 +832,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -850,7 +850,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -868,7 +868,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = "";
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -886,7 +886,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -904,7 +904,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -922,7 +922,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = num.c123;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -940,7 +940,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = false;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -958,7 +958,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -976,7 +976,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = wrd.cHello;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -994,7 +994,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = undefined;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -1012,7 +1012,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let value = NaN;
 
         // Act
-        let returnData = colorizer.processConfigurationValueRules(name, value);
+        let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
         expect(returnData).toBeTruthy();
