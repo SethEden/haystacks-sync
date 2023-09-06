@@ -403,6 +403,9 @@ export const clength = wrd.clength;
 export const ccontains = wrd.ccontains;
 export const cprint = wrd.cprint;
 
+/* main */
+export const cinitFramework = wrd.cinitiate + wrd.cFramework;
+
 // Test names
 
 /* commandBroker */
@@ -3155,3 +3158,10 @@ export const cprint_inValidStackNameSpaceBoolean = cprint + wrd.cinvalid + wrd.c
 export const cprint_inValidStackNameSpaceUndefined = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
 export const cprint_inValidStackNameSpaceNaN = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
 
+/* main */
+export const cinitFramework_validDataString = cinitFramework + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitFramework_inValidDataClientConfigurationString = cinitFramework + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cConfiguration + wrd.cString;
+export const cinitFramework_inValidClientConfigurationInteger = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cInteger;
+export const cinitFramework_inValidClientConfigurationBoolean = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cBoolean;
+export const cinitFramework_inValidClientConfigurationUndefined = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + cUndefined;
+export const cinitFramework_inValidClientConfigurationNaN = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + cNaN;
