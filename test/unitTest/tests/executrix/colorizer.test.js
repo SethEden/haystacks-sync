@@ -396,7 +396,6 @@ describe(tst_con.ccolorizeMessageSimple, () => {
  * @author Json Howard
  * @date 2023/08/29
 */
-
 describe(tst_con.ccolorizeMessage, () => {
     /**
      * @function colorizeMessage_validData
@@ -1471,7 +1470,6 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
  * @author Json Howard
  * @date 2023/08/29
 */
-
 describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     /**
      * @function getColorStyleSettingFromSetting_validDataString

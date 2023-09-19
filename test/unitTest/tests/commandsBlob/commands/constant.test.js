@@ -581,7 +581,6 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
         // Assert
         expect(returnData).toBeTruthy();
     });
-
     
     /**
      * @function constantsPatternRecognizer_inValidInputDataUndefined

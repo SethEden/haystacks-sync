@@ -1068,16 +1068,36 @@ describe(tst_con.cname, () => {
     });
 });
 
+// /**
+//  * @function clearScreen
+//  * @description Tests the positive test case of the clear screen command.
+//  * @author Seth Hollingsead
+//  * @date 2023/09/19
+//  * @NOTE Unsure how to test this?!
+//  */
+// describe(tst_con.cclearScreen, () => {
+//     /**
+//      * @function clearScreen_validDataString
+//      * @description Tests the command function clear screen with a valid input.
+//      * @author Seth Hollingsead
+//      * @date 2023/09/19
+//      * @NOTE Unsure how to test this?!
+//      */
+//     test(tst_con.cclearScreen_validDataString, () => {
+
+//     });
+// });
+
 /**
  * @function help
- * @description Tests the positive and negative test cases of the help
+ * @description Tests the positive and negative test cases of the help.
  * @author Json Howard
  * @date 2023/08/22
 */
 describe(tst_con.chelp, () => {
     /**
      * @function help_validDataString
-     * @description Tests the business rules function help with a valid input.
+     * @description Tests the command function help with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */

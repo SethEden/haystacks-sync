@@ -883,7 +883,7 @@ describe(tst_con.csetupAllCsvData, () => {
 */
 describe(tst_con.csetupAllXmlData, () => {
     /**
-     * @function setupAllCsvData_validDataString
+     * @function setupAllXmlData_validDataString
      * @description Tests the business rules function setupAllXmlData with a valid input.
      * @author Json Howard
      * @date 2023/08/22
@@ -1089,7 +1089,7 @@ describe(tst_con.csetupAllXmlData, () => {
 */
 describe(tst_con.csetupAllJsonConfigData, () => {
     /**
-     * @function setupAllCsvData_validDataString
+     * @function setupAllJsonConfigData_validDataString
      * @description Tests the business rules function setupAllJsonConfigData with a valid input.
      * @author Json Howard
      * @date 2023/08/22

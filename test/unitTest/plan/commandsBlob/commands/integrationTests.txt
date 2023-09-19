@@ -17,37 +17,37 @@ D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestC
 D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
 output: [true, false]
 
-testName: validateConstants_inValidDataUndefined
+testName: validateConstants_inValidDataUndefined1
 create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = Undefined
 D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
 D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
 output: [true, false]
 
-testName: validateConstants_inValidDataUndefined
+testName: validateConstants_inValidDataUndefined2
 create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
 D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = Undefined
 D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
 output: [true, false]
 
-testName: validateConstants_inValidDataUndefined
+testName: validateConstants_inValidDataUndefined3
 create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
 D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
 D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = Undefined
 output: [true, false]
 
-testName: validateConstants_inValidDataNaN
+testName: validateConstants_inValidDataNaN1
 create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = NaN
 D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
 D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
 output: [true, false]
 
-testName: validateConstants_inValidDataNaN
+testName: validateConstants_inValidDataNaN2
 create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
 D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = NaN
 D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 2 Validation"
 output: [true, false]
 
-testName: validateConstants_inValidDataNaN
+testName: validateConstants_inValidDataNaN3
 create: D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = <project root path>test\unitTest\tests\constants\test.constants.js
 D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "TestConstantsValidation": "Test Constants Phase 1 Validation"
 D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = NaN

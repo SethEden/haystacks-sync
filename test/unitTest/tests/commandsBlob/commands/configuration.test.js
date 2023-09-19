@@ -35,6 +35,38 @@ import { describe, expect, test } from '@jest/globals';
 const { bas, cfg, phn, wrd, gen } = hayConst;
 
 /**
+ * @function saveConfiguration
+ * @description Tests the positive and negative test cases of the saveConfiguration
+ * @author Json Howard
+ * @date 2023/05/08
+ */
+describe(tst_con.csaveConfiguration, () => {
+  /**
+   * @function saveConfiguration_validDataString
+   * @description Tests the business rules function saveConfiguration with a valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.csaveConfiguration_validDataString, () => {
+    // Arrange
+    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, wrd.cworkflow];
+    let inputMetaData = '';
+    let testPath = obj_con.testConfigPath();
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+
+    // Act      
+    let returnData = configuration.saveConfiguration(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, true]
+  });
+});
+
+/**
  * @function changeConfigurationSetting
  * @description Tests the positive and negative test cases of the changeConfigurationSetting
  * @author Json Howard
@@ -130,28 +162,6 @@ describe(tst_con.cchangeConfigurationSetting, () => {
   });
 
   /**
-   * @function changeConfigurationSetting_inValidInputDataNaN
-   * @description Tests the business rules function changeConfigurationSetting with a invalid NaN input.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.cchangeConfigurationSetting_inValidInputDataNaN, () => {
-    // Arrange
-    let inputData = NaN;
-    let inputMetaData = '';
-    rulesLibrary.initRulesLibrary();
-
-    // Act        
-    let returnData = configuration.changeConfigurationSetting(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-  });
-
-  /**
    * @function changeConfigurationSetting_inValidInputDataUndefined
    * @description Tests the business rules function changeConfigurationSetting with a invalid undefined input.
    * @author Json Howard
@@ -172,7 +182,61 @@ describe(tst_con.cchangeConfigurationSetting, () => {
     // Assert
     expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
   });
+
+  /**
+   * @function changeConfigurationSetting_inValidInputDataNaN
+   * @description Tests the business rules function changeConfigurationSetting with a invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.cchangeConfigurationSetting_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
+
+    // Act        
+    let returnData = configuration.changeConfigurationSetting(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
+  });
 });
+
+// /**
+//  * @function listConfigurationThemes
+//  * @description Tests the positive and negative test cases of the listConfigurationThemes
+//  * @author Json Howard
+//  * @date 2023/05/08
+//  * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+//  */
+// describe(tst_con.clistConfigurationThemes, () => {
+//   /**
+//    * @function listConfigurationThemes_validDataString
+//    * @description Tests the business rules function listConfigurationThemes with a valid input.
+//    * @author Json Howard
+//    * @date 2023/05/08
+//    * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+//    */
+//   test(tst_con.clistConfigurationThemes_validDataString, () => {
+//     // Arrange
+//     let inputData = '';
+//     let inputMetaData = '';
+//     rulesLibrary.initRulesLibrary();
+
+//     // Act    
+//     let returnData = configuration.listConfigurationThemes(
+//       inputData,
+//       inputMetaData
+//     );
+
+//     // Assert
+//     expect(returnData).toBeTruthy(); //[true, true]
+//   });
+// });
 
 /**
  * @function changeDebugConfigurationTheme
@@ -317,67 +381,5 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
     // Assert
     expect(returnData).toBeTruthy(); //[true, 'ERROR: Invalid entry, please enter a valid configuration namespace to change, and a value to assign to the configuration setting.']
-  });
-});
-
-/**
- * @function saveConfiguration
- * @description Tests the positive and negative test cases of the saveConfiguration
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.csaveConfiguration, () => {
-    /**
-     * @function saveConfiguration_validDataString
-     * @description Tests the business rules function saveConfiguration with a valid input.
-     * @author Json Howard
-     * @date 2023/05/08
-     */
-    test(tst_con.csaveConfiguration_validDataString, () => {
-    // Arrange
-    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, wrd.cworkflow];
-    let inputMetaData = '';
-    let testPath = obj_con.testConfigPath();
-    rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
-
-    // Act      
-    let returnData = configuration.saveConfiguration(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBeTruthy(); //[true, true]
-  });
-});
-
-/**
- * @function listConfigurationThemes
- * @description Tests the positive and negative test cases of the listConfigurationThemes
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.clistConfigurationThemes, () => {
-  /**
-   * @function listConfigurationThemes_validDataString
-   * @description Tests the business rules function listConfigurationThemes with a valid input.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.clistConfigurationThemes_validDataString, () => {
-    // Arrange
-    let inputData = '';
-    let inputMetaData = '';
-    rulesLibrary.initRulesLibrary();
-
-    // Act    
-    let returnData = configuration.listConfigurationThemes(
-      inputData,
-      inputMetaData
-    );
-
-    // Assert
-    expect(returnData).toBeTruthy(); //[true, true]
   });
 });
