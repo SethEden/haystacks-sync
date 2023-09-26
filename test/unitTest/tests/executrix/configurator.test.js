@@ -120,6 +120,26 @@ describe(tst_con.csetConfigurationSetting, () => {
         expect(returnData).toBeTruthy();
     });
     
+    
+    /**
+     * @function setConfigurationSetting_inValidDataToMergeString
+     * @description Tests the function setConfigurationSetting with a invalid configurationValue string.
+     * @author Json Howard
+     * @date 2023/09/04
+     */
+    test(tst_con.csetConfigurationSetting_inValidDataToMergeString, () => {
+        // Arrange
+        let configurationNamespace = data_con.dataBrokerJsonPath();
+        let configurationName = wrd.cHello;
+        let configurationValue = num.c123;
+
+        // Act
+        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+
     /**
      * @function setConfigurationSetting_inValidConfigurationNamespaceNumber
      * @description Tests the function setConfigurationSetting with a invalid configurationNamespace number.

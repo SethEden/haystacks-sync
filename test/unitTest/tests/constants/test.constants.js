@@ -2930,6 +2930,7 @@ export const csetConfigurationSetting_validData = csetConfigurationSetting + wrd
 export const csetConfigurationSetting_inValidConfigurationNamespaceString = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cString;
 export const csetConfigurationSetting_inValidConfigurationNameString = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cString;
 export const csetConfigurationSetting_inValidConfigurationValueString = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cString;
+export const csetConfigurationSetting_inValidDataToMergeString = csetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cTo + wrd.cMerge + wrd.cString;
 export const csetConfigurationSetting_inValidConfigurationNamespaceNumber = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cNumber;
 export const csetConfigurationSetting_inValidConfigurationNamespaceBoolean = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cBoolean;
 export const csetConfigurationSetting_inValidConfigurationNamespaceUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cUndefined;
