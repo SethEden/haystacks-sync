@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.cinitStack, () => {
     /**
      * @function initStack_validDataString
-     * @description Tests the business rules function initStack with a valid input.
+     * @description Tests the structures stack function initStack with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -63,7 +63,7 @@ describe(tst_con.cinitStack, () => {
     
     /**
      * @function initStack_inValidDataStackNameSpaceString
-     * @description Tests the business rules function initStack with a invalid stackNameSpace string.
+     * @description Tests the structures stack function initStack with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -80,7 +80,7 @@ describe(tst_con.cinitStack, () => {
     
     /**
      * @function initStack_inValidStackNameSpaceInteger
-     * @description Tests the business rules function initStack with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function initStack with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -97,7 +97,7 @@ describe(tst_con.cinitStack, () => {
     
     /**
      * @function initStack_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function initStack with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function initStack with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -114,7 +114,7 @@ describe(tst_con.cinitStack, () => {
     
     /**
      * @function initStack_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function initStack with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function initStack with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -131,7 +131,7 @@ describe(tst_con.cinitStack, () => {
     
     /**
      * @function initStack_inValidStackNameSpaceNaN
-     * @description Tests the business rules function initStack with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function initStack with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -156,7 +156,7 @@ describe(tst_con.cinitStack, () => {
 describe(tst_con.cclearStack, () => {
     /**
      * @function clearStack_validDataString
-     * @description Tests the business rules function clearStack with a valid input.
+     * @description Tests the structures stack function clearStack with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -173,7 +173,7 @@ describe(tst_con.cclearStack, () => {
     
     /**
      * @function clearStack_inValidDataStackNameSpaceString
-     * @description Tests the business rules function clearStack with a invalid stackNameSpace string.
+     * @description Tests the structures stack function clearStack with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -190,7 +190,7 @@ describe(tst_con.cclearStack, () => {
     
     /**
      * @function clearStack_inValidStackNameSpaceInteger
-     * @description Tests the business rules function clearStack with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function clearStack with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -207,7 +207,7 @@ describe(tst_con.cclearStack, () => {
     
     /**
      * @function clearStack_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function clearStack with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function clearStack with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -224,7 +224,7 @@ describe(tst_con.cclearStack, () => {
     
     /**
      * @function clearStack_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function clearStack with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function clearStack with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -241,7 +241,7 @@ describe(tst_con.cclearStack, () => {
     
     /**
      * @function clearStack_inValidStackNameSpaceNaN
-     * @description Tests the business rules function clearStack with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function clearStack with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -266,7 +266,7 @@ describe(tst_con.cclearStack, () => {
 describe(tst_con.cpush, () => {
     /**
      * @function push_validDataString
-     * @description Tests the business rules function push with a valid input.
+     * @description Tests the structures stack function push with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -284,7 +284,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidDataStackNameSpaceString
-     * @description Tests the business rules function push with a invalid stackNameSpace string.
+     * @description Tests the structures stack function push with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -302,7 +302,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidDataValueString
-     * @description Tests the business rules function push with a invalid value string.
+     * @description Tests the structures stack function push with a invalid value string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -320,7 +320,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidStackNameSpaceInteger
-     * @description Tests the business rules function push with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function push with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -338,7 +338,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function push with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function push with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -356,7 +356,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidValueInteger
-     * @description Tests the business rules function push with a invalid value integer.
+     * @description Tests the structures stack function push with a invalid value integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -374,7 +374,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidValueBoolean
-     * @description Tests the business rules function push with a invalid value boolean.
+     * @description Tests the structures stack function push with a invalid value boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -392,7 +392,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function push with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function push with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -410,7 +410,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidStackNameSpaceNaN
-     * @description Tests the business rules function push with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function push with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -428,7 +428,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidValueUndefined
-     * @description Tests the business rules function push with a invalid value undefined.
+     * @description Tests the structures stack function push with a invalid value undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -446,7 +446,7 @@ describe(tst_con.cpush, () => {
     
     /**
      * @function push_inValidValueNaN
-     * @description Tests the business rules function push with a invalid value NaN.
+     * @description Tests the structures stack function push with a invalid value NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -472,7 +472,7 @@ describe(tst_con.cpush, () => {
 describe(tst_con.cpop, () => {
     /**
      * @function pop_validDataString
-     * @description Tests the business rules function pop with a valid input.
+     * @description Tests the structures stack function pop with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -489,7 +489,7 @@ describe(tst_con.cpop, () => {
     
     /**
      * @function pop_inValidDataStackNameSpaceString
-     * @description Tests the business rules function pop with a invalid stackNameSpace string.
+     * @description Tests the structures stack function pop with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -506,7 +506,7 @@ describe(tst_con.cpop, () => {
     
     /**
      * @function pop_inValidStackNameSpaceInteger
-     * @description Tests the business rules function pop with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function pop with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -523,7 +523,7 @@ describe(tst_con.cpop, () => {
     
     /**
      * @function pop_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function pop with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function pop with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -540,7 +540,7 @@ describe(tst_con.cpop, () => {
     
     /**
      * @function pop_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function pop with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function pop with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -557,7 +557,7 @@ describe(tst_con.cpop, () => {
     
     /**
      * @function pop_inValidStackNameSpaceNaN
-     * @description Tests the business rules function pop with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function pop with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -582,7 +582,7 @@ describe(tst_con.cpop, () => {
 describe(tst_con.cisEmpty, () => {
     /**
      * @function isEmpty_validDataString
-     * @description Tests the business rules function isEmpty with a valid input.
+     * @description Tests the structures stack function isEmpty with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -599,7 +599,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidDataStackNameSpaceString
-     * @description Tests the business rules function isEmpty with a invalid stackNameSpace string.
+     * @description Tests the structures stack function isEmpty with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -616,7 +616,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidStackNameSpaceInteger
-     * @description Tests the business rules function isEmpty with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function isEmpty with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -633,7 +633,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function isEmpty with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function isEmpty with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -650,7 +650,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function isEmpty with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function isEmpty with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -667,7 +667,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidStackNameSpaceNaN
-     * @description Tests the business rules function isEmpty with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function isEmpty with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -692,7 +692,7 @@ describe(tst_con.cisEmpty, () => {
 describe(tst_con.clength, () => {
     /**
      * @function length_validDataString
-     * @description Tests the business rules function length with a valid input.
+     * @description Tests the structures stack function length with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -709,7 +709,7 @@ describe(tst_con.clength, () => {
     
     /**
      * @function length_inValidDataStackNameSpaceString
-     * @description Tests the business rules function length with a invalid stackNameSpace string.
+     * @description Tests the structures stack function length with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -726,7 +726,7 @@ describe(tst_con.clength, () => {
     
     /**
      * @function length_inValidStackNameSpaceInteger
-     * @description Tests the business rules function length with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function length with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -743,7 +743,7 @@ describe(tst_con.clength, () => {
     
     /**
      * @function length_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function length with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function length with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -760,7 +760,7 @@ describe(tst_con.clength, () => {
     
     /**
      * @function length_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function length with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function length with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -777,7 +777,7 @@ describe(tst_con.clength, () => {
     
     /**
      * @function length_inValidStackNameSpaceNaN
-     * @description Tests the business rules function length with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function length with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -802,7 +802,7 @@ describe(tst_con.clength, () => {
 describe(tst_con.ccontains, () => {
     /**
      * @function contains_validDataString
-     * @description Tests the business rules function contains with a valid input.
+     * @description Tests the structures stack function contains with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -820,7 +820,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidDataStackNameSpaceString
-     * @description Tests the business rules function contains with a invalid stackNameSpace string.
+     * @description Tests the structures stack function contains with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -838,7 +838,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidDataValueString
-     * @description Tests the business rules function contains with a invalid value string.
+     * @description Tests the structures stack function contains with a invalid value string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -856,7 +856,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidStackNameSpaceInteger
-     * @description Tests the business rules function contains with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function contains with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -874,7 +874,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function contains with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function contains with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -892,7 +892,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidValueInteger
-     * @description Tests the business rules function contains with a invalid value integer.
+     * @description Tests the structures stack function contains with a invalid value integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -910,7 +910,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidValueBoolean
-     * @description Tests the business rules function contains with a invalid value boolean.
+     * @description Tests the structures stack function contains with a invalid value boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -928,7 +928,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function contains with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function contains with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -946,7 +946,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidStackNameSpaceNaN
-     * @description Tests the business rules function contains with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function contains with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -964,7 +964,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidValueUndefined
-     * @description Tests the business rules function contains with a invalid value undefined.
+     * @description Tests the structures stack function contains with a invalid value undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -982,7 +982,7 @@ describe(tst_con.ccontains, () => {
     
     /**
      * @function contains_inValidValueNaN
-     * @description Tests the business rules function contains with a invalid value NaN.
+     * @description Tests the structures stack function contains with a invalid value NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1008,7 +1008,7 @@ describe(tst_con.ccontains, () => {
 describe(tst_con.cprint, () => {
     /**
      * @function print_validDataString
-     * @description Tests the business rules function print with a valid input.
+     * @description Tests the structures stack function print with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1025,7 +1025,7 @@ describe(tst_con.cprint, () => {
     
     /**
      * @function print_inValidDataStackNameSpaceString
-     * @description Tests the business rules function print with a invalid stackNameSpace string.
+     * @description Tests the structures stack function print with a invalid stackNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1042,7 +1042,7 @@ describe(tst_con.cprint, () => {
     
     /**
      * @function print_inValidStackNameSpaceInteger
-     * @description Tests the business rules function print with a invalid stackNameSpace integer.
+     * @description Tests the structures stack function print with a invalid stackNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1059,7 +1059,7 @@ describe(tst_con.cprint, () => {
     
     /**
      * @function print_inValidStackNameSpaceBoolean
-     * @description Tests the business rules function print with a invalid stackNameSpace boolean.
+     * @description Tests the structures stack function print with a invalid stackNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1076,7 +1076,7 @@ describe(tst_con.cprint, () => {
     
     /**
      * @function print_inValidStackNameSpaceUndefined
-     * @description Tests the business rules function print with a invalid stackNameSpace undefined.
+     * @description Tests the structures stack function print with a invalid stackNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1093,7 +1093,7 @@ describe(tst_con.cprint, () => {
     
     /**
      * @function print_inValidStackNameSpaceNaN
-     * @description Tests the business rules function print with a invalid stackNameSpace NaN.
+     * @description Tests the structures stack function print with a invalid stackNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */

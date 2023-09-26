@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.cprintDataHive, () => {
     /**
      * @function printDataHive_validDataString
-     * @description Tests the command function printDataHive with a valid input.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -64,7 +64,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidDataInputDataString
-     * @description Tests the command function printDataHive with a invalid input string.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -82,7 +82,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidDataInputMetaDataString
-     * @description Tests the command function printDataHive with a invalid inputMetaData string.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -100,7 +100,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputDataInteger
-     * @description Tests the command function printDataHive with a invalid input integer.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -118,7 +118,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputDataBoolean
-     * @description Tests the command function printDataHive with a invalid input boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -136,7 +136,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputMetaDataInteger
-     * @description Tests the command function printDataHive with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -154,7 +154,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputMetaDataBoolean
-     * @description Tests the command function printDataHive with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -172,7 +172,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputDataUndefined
-     * @description Tests the command function printDataHive with a invalid input undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -190,7 +190,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputDataNaN
-     * @description Tests the command function printDataHive with a invalid input NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -208,7 +208,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputMetaDataUndefined
-     * @description Tests the command function printDataHive with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -226,7 +226,7 @@ describe(tst_con.cprintDataHive, () => {
     
     /**
      * @function printDataHive_inValidInputMetaDataNaN
-     * @description Tests the command function printDataHive with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHive with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -252,7 +252,7 @@ describe(tst_con.cprintDataHive, () => {
 describe(tst_con.cprintDataHiveAttributes, () => {
     /**
      * @function printDataHiveAttributes_validDataString
-     * @description Tests the command function printDataHiveAttributes with a valid input.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -270,7 +270,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidDataInputDataString
-     * @description Tests the command function printDataHiveAttributes with a invalid input string.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -288,7 +288,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidDataInputMetaDataString
-     * @description Tests the command function printDataHiveAttributes with a invalid inputMetaData string.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -306,7 +306,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataInteger
-     * @description Tests the command function printDataHiveAttributes with a ivalid input integer.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a ivalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -324,7 +324,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataBoolean
-     * @description Tests the command function printDataHiveAttributes with a invalid input boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -342,7 +342,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataInteger
-     * @description Tests the command function printDataHiveAttributes with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -360,7 +360,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataBoolean
-     * @description Tests the command function printDataHiveAttributes with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -378,7 +378,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataUndefined
-     * @description Tests the command function printDataHiveAttributes with a invalid input undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -396,7 +396,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataNaN
-     * @description Tests the command function printDataHiveAttributes with a invalid input NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -414,7 +414,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataUndefined
-     * @description Tests the command function printDataHiveAttributes with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -432,7 +432,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataNaN
-     * @description Tests the command function printDataHiveAttributes with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function printDataHiveAttributes with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -458,7 +458,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
 describe(tst_con.cclearDataStorage, () => {
     /**
      * @function clearDataStorage_validDataString
-     * @description Tests the command function clearDataStorage with a valid input.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -476,7 +476,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidDataInputDataString
-     * @description Tests the command function clearDataStorage with a invalid input string.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -494,7 +494,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidDataInputMetaDataString
-     * @description Tests the command function clearDataStorage with a invalid inputMetaData string.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -512,7 +512,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputDataInteger
-     * @description Tests the command function clearDataStorage with a invalid input integer.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -530,7 +530,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputDataBoolean
-     * @description Tests the command function clearDataStorage with a invalid input boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -548,7 +548,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputMetaDataInteger
-     * @description Tests the command function clearDataStorage with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -566,7 +566,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputMetaDataBoolean
-     * @description Tests the command function clearDataStorage with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -584,7 +584,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputDataUndefined
-     * @description Tests the command function clearDataStorage with a invalid input undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -602,7 +602,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputDataNaN
-     * @description Tests the command function clearDataStorage with a invalid input NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -620,7 +620,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputMetaDataUndefined
-     * @description Tests the command function clearDataStorage with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -638,7 +638,7 @@ describe(tst_con.cclearDataStorage, () => {
     
     /**
      * @function clearDataStorage_inValidInputMetaDataNaN
-     * @description Tests the command function clearDataStorage with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function clearDataStorage with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -664,7 +664,7 @@ describe(tst_con.cclearDataStorage, () => {
 describe(tst_con.cchangeSetting, () => {
     /**
      * @function changeSetting_validDataString
-     * @description Tests the command function changeSetting with a valid input.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -682,7 +682,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidDataInputDataString
-     * @description Tests the command function changeSetting with a invalid input string.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -700,7 +700,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidDataInputMetaDataString
-     * @description Tests the command function changeSetting with a invalid inputMetaData string.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -718,7 +718,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputDataInteger
-     * @description Tests the command function changeSetting with a invalid input integer.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -736,7 +736,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputDataBoolean
-     * @description Tests the command function changeSetting with a invalid input boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -754,7 +754,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputMetaDataInteger
-     * @description Tests the command function changeSetting with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -772,7 +772,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputMetaDataBoolean
-     * @description Tests the command function changeSetting with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -790,7 +790,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputDataUndefined
-     * @description Tests the command function changeSetting with a invalid input undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -808,7 +808,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputDataNaN
-     * @description Tests the command function changeSetting with a invalid input NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -826,7 +826,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputMetaDataUndefined
-     * @description Tests the command function changeSetting with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -844,7 +844,7 @@ describe(tst_con.cchangeSetting, () => {
     
     /**
      * @function changeSetting_inValidInputMetaDataNaN
-     * @description Tests the command function changeSetting with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob commands dataDirectorate function changeSetting with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */

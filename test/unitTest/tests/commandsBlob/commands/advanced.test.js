@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd } = hayConst;
 describe(tst_con.ccommandSequencer, () => {
   /**
    * @function commandSequencer_validDataString
-   * @description Tests the command function commandSequencer with a valid input.
+   * @description Tests the commandsBlob commands advanced function commandSequencer with a valid input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -71,7 +71,7 @@ describe(tst_con.ccommandSequencer, () => {
 
   /**
      * @function commandSequencer_inValidDataInputDataString
-     * @description Tests the command function commandSequencer with a invalid string input.
+     * @description Tests the commandsBlob commands advanced function commandSequencer with a invalid string input.
      * @author Json Howard
      * @date 2023/05/09
      */
@@ -96,7 +96,7 @@ describe(tst_con.ccommandSequencer, () => {
 
   /**
  * @function commandSequencer_inValidInputDataInteger
- * @description Tests the command function commandSequencer with a invalid integer input.
+ * @description Tests the commandsBlob commands advanced function commandSequencer with a invalid integer input.
  * @author Json Howard
  * @date 2023/05/09
  */
@@ -121,7 +121,7 @@ describe(tst_con.ccommandSequencer, () => {
 
   /**
    * @function commandSequencer_inValidInputDataBoolean
-   * @description Tests the command function commandSequencer with a invalid boolean input.
+   * @description Tests the commandsBlob commands advanced function commandSequencer with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -146,7 +146,7 @@ describe(tst_con.ccommandSequencer, () => {
 
   /**
    * @function commandSequencer_inValidInputDataUndefined
-   * @description Tests the command function commandSequencer with a invalid undefined input.
+   * @description Tests the commandsBlob commands advanced function commandSequencer with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -171,7 +171,7 @@ describe(tst_con.ccommandSequencer, () => {
 
   /**
    * @function commandSequencer_inValidInputDataNaN
-   * @description Tests the command function commandSequencer with a invalid NaN input.
+   * @description Tests the commandsBlob commands advanced function commandSequencer with a invalid NaN input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -226,7 +226,7 @@ describe(tst_con.cworkflow, () => {
 
   /**
    * @function workflow_inValidDataInputDataString
-   * @description Tests the command function workflow with a invalid string input.
+   * @description Tests the commandsBlob commands advanced function workflow with a invalid string input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -248,7 +248,7 @@ describe(tst_con.cworkflow, () => {
 
   /**
    * @function workflow_inValidInputDataInteger
-   * @description Tests the command function workflow with a invalid integer input.
+   * @description Tests the commandsBlob commands advanced function workflow with a invalid integer input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -270,7 +270,7 @@ describe(tst_con.cworkflow, () => {
 
   /**
    * @function workflow_inValidInputDataBoolean
-   * @description Tests the command function workflow with a invalid boolean input.
+   * @description Tests the commandsBlob commands advanced function workflow with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -292,7 +292,7 @@ describe(tst_con.cworkflow, () => {
 
   /**
    * @function workflow_inValidInputDataUndefined
-   * @description Tests the command function workflow with a invalid undefined input.
+   * @description Tests the commandsBlob commands advanced function workflow with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -314,7 +314,7 @@ describe(tst_con.cworkflow, () => {
 
   /**
    * @function workflow_inValidInputDataNaN
-   * @description Tests the command function workflow with a invalid NaN input.
+   * @description Tests the commandsBlob commands advanced function workflow with a invalid NaN input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -344,7 +344,7 @@ describe(tst_con.cworkflow, () => {
 describe(tst_con.cbusinessRule, () => {
   /**
    * @function businessRule_validDataString
-   * @description Tests the command function businessRule with a valid input.
+   * @description Tests the commandsBlob commands advanced function businessRule with a valid input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -366,7 +366,7 @@ describe(tst_con.cbusinessRule, () => {
 
   /**
    * @function businessRule_inValidDataInputDataString
-   * @description Tests the command function businessRule with a invalid string input.
+   * @description Tests the commandsBlob commands advanced function businessRule with a invalid string input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -388,7 +388,7 @@ describe(tst_con.cbusinessRule, () => {
 
   /**
    * @function businessRule_inValidInputDataInteger
-   * @description Tests the command function businessRule with a invalid integer input.
+   * @description Tests the commandsBlob commands advanced function businessRule with a invalid integer input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -410,7 +410,7 @@ describe(tst_con.cbusinessRule, () => {
 
   /**
    * @function businessRule_inValidInputDataBoolean
-   * @description Tests the command function businessRule with a invalid boolean input.
+   * @description Tests the commandsBlob commands advanced function businessRule with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -432,7 +432,7 @@ describe(tst_con.cbusinessRule, () => {
 
   /**
    * @function businessRule_inValidInputDataUndefined
-   * @description Tests the command function businessRule with a invalid undefined input.
+   * @description Tests the commandsBlob commands advanced function businessRule with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -454,7 +454,7 @@ describe(tst_con.cbusinessRule, () => {
 
   /**
    * @function businessRule_inValidInputDataNaN
-   * @description Tests the command function businessRule with a invalid NaN input.
+   * @description Tests the commandsBlob commands advanced function businessRule with a invalid NaN input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -485,7 +485,7 @@ describe(tst_con.cbusinessRule, () => {
 describe(tst_con.ccommandGenerator, () => {
   /**
    * @function commandGenerator_validDataString
-   * @description Tests the command function commandGenerator with a valid input.
+   * @description Tests the commandsBlob commands advanced function commandGenerator with a valid input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -511,7 +511,7 @@ describe(tst_con.ccommandGenerator, () => {
 
   /**
      * @function commandGenerator_inValidDataInputDataString
-     * @description Tests the command function commandGenerator with a invalid string input.
+     * @description Tests the commandsBlob commands advanced function commandGenerator with a invalid string input.
      * @author Json Howard
      * @date 2023/05/09
      */
@@ -533,7 +533,7 @@ describe(tst_con.ccommandGenerator, () => {
 
   /**
    * @function commandGenerator_inValidInputDataInteger
-   * @description Tests the command function commandGenerator with a invalid integer input.
+   * @description Tests the commandsBlob commands advanced function commandGenerator with a invalid integer input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -555,7 +555,7 @@ describe(tst_con.ccommandGenerator, () => {
 
   /**
    * @function commandGenerator_inValidInputDataBoolean
-   * @description Tests the command function commandGenerator with a invalid boolean input.
+   * @description Tests the commandsBlob commands advanced function commandGenerator with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -577,7 +577,7 @@ describe(tst_con.ccommandGenerator, () => {
 
   /**
    * @function commandGenerator_inValidInputDataUndefined
-   * @description Tests the command function commandGenerator with a invalid undefined input.
+   * @description Tests the commandsBlob commands advanced function commandGenerator with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -599,7 +599,7 @@ describe(tst_con.ccommandGenerator, () => {
 
   /**
    * @function commandGenerator_inValidInputDataNaN
-   * @description Tests the command function commandGenerator with a invalid NaN input.
+   * @description Tests the commandsBlob commands advanced function commandGenerator with a invalid NaN input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -629,7 +629,7 @@ describe(tst_con.ccommandGenerator, () => {
 describe(tst_con.ccommandAliasGenerator, () => {
   /**
    * @function commandAliasGenerator_validDataString
-   * @description Tests the command function commandAliasGenerator with a valid input.
+   * @description Tests the commandsBlob commands advanced function commandAliasGenerator with a valid input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -651,7 +651,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
 
   /**
    * @function commandAliasGenerator_inValidDataInputDataString
-   * @description Tests the command function commandAliasGenerator with a invalid string input.
+   * @description Tests the commandsBlob commands advanced function commandAliasGenerator with a invalid string input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -673,7 +673,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
 
   /**
    * @function commandAliasGenerator_inValidInputDataInteger
-   * @description Tests the command function commandAliasGenerator with a invalid integer input.
+   * @description Tests the commandsBlob commands advanced function commandAliasGenerator with a invalid integer input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -695,7 +695,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
 
   /**
    * @function commandAliasGenerator_inValidInputDataBoolean
-   * @description Tests the command function commandAliasGenerator with a invalid boolean input.
+   * @description Tests the commandsBlob commands advanced function commandAliasGenerator with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -717,7 +717,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
 
   /**
    * @function commandAliasGenerator_inValidInputDataUndefined
-   * @description Tests the command function commandAliasGenerator with a invalid undefined input.
+   * @description Tests the commandsBlob commands advanced function commandAliasGenerator with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/09
    */
@@ -739,7 +739,7 @@ describe(tst_con.ccommandAliasGenerator, () => {
 
   /**
    * @function commandAliasGenerator_inValidInputDataNaN
-   * @description Tests the command function commandAliasGenerator with a invalid NaN input.
+   * @description Tests the commandsBlob commands advanced function commandAliasGenerator with a invalid NaN input.
    * @author Json Howard
    * @date 2023/05/09
    */

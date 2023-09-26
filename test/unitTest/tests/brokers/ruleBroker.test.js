@@ -36,7 +36,7 @@ const { sys, wrd, biz } = hayConst;
 describe(tst_con.cbootStrapBusinessRules, () => {
     /**
     * @function bootStrapBusinessRules_validData
-    * @description Tests the business rules function bootStrapBusinessRules with a valid data.
+    * @description Tests the brokers ruleBroker function bootStrapBusinessRules with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -50,7 +50,7 @@ describe(tst_con.cbootStrapBusinessRules, () => {
 
     /**
     * @function bootStrapBusinessRules_inValidString
-    * @description Tests the business rules function bootStrapBusinessRules with a invalid string data.
+    * @description Tests the brokers ruleBroker function bootStrapBusinessRules with a invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -67,7 +67,7 @@ describe(tst_con.cbootStrapBusinessRules, () => {
 
     /**
     * @function bootStrapBusinessRules_inValidNumber
-    * @description Tests the business rules function bootStrapBusinessRules with a invalid number data.
+    * @description Tests the brokers ruleBroker function bootStrapBusinessRules with a invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -84,7 +84,7 @@ describe(tst_con.cbootStrapBusinessRules, () => {
 
     /**
     * @function bootStrapBusinessRules_inValidBoolean
-    * @description Tests the business rules function bootStrapBusinessRules with a invalid boolean data.
+    * @description Tests the brokers ruleBroker function bootStrapBusinessRules with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -109,7 +109,7 @@ describe(tst_con.cbootStrapBusinessRules, () => {
 describe(tst_con.caddClientRules, () => {
     /**
     * @function addClientRules_validData
-    * @description Tests the business rules function addClientRules with a valid data.
+    * @description Tests the brokers ruleBroker function addClientRules with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -126,7 +126,7 @@ describe(tst_con.caddClientRules, () => {
     
     /**
     * @function addClientRules_inValidString
-    * @description Tests the business rules function addClientRules with a invalid string data.
+    * @description Tests the brokers ruleBroker function addClientRules with a invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -143,7 +143,7 @@ describe(tst_con.caddClientRules, () => {
     
     /**
     * @function addClientRules_inValidNumber
-    * @description Tests the business rules function addClientRules with a invalid number data.
+    * @description Tests the brokers ruleBroker function addClientRules with a invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -160,7 +160,7 @@ describe(tst_con.caddClientRules, () => {
     
     /**
     * @function addClientRules_inValidBoolean
-    * @description Tests the business rules function addClientRules with a invalid boolean data.
+    * @description Tests the brokers ruleBroker function addClientRules with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -185,7 +185,7 @@ describe(tst_con.caddClientRules, () => {
 describe(tst_con.cprocessRules, () => {
     /**
     * @function processRules_validData
-    * @description Tests the business rules function processRules with a valid data.
+    * @description Tests the brokers ruleBroker function processRules with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     * @NOTE To be tested with integration testing. (commented out)
@@ -204,7 +204,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidInputsUndefined
-    * @description Tests the business rules function processRules with a invalid undefined data.
+    * @description Tests the brokers ruleBroker function processRules with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -222,7 +222,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidInputsNaN
-    * @description Tests the business rules function processRules with a invalid NaN data.
+    * @description Tests the brokers ruleBroker function processRules with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -240,7 +240,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidRulesToExecuteUndefined
-    * @description Tests the business rules function processRules with a invalid undefined rulesToExecute.
+    * @description Tests the brokers ruleBroker function processRules with a invalid undefined rulesToExecute.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -258,7 +258,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidRulesToExecuteNaN
-    * @description Tests the business rules function processRules with a invalid NaN rulesToExecute.
+    * @description Tests the brokers ruleBroker function processRules with a invalid NaN rulesToExecute.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -276,7 +276,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidInputsInteger
-    * @description Tests the business rules function processRules with a invalid integer data.
+    * @description Tests the brokers ruleBroker function processRules with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -294,7 +294,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidInputsBoolean
-    * @description Tests the business rules function processRules with a invalid boolean data.
+    * @description Tests the brokers ruleBroker function processRules with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -312,7 +312,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidRulesToExecuteInteger
-    * @description Tests the business rules function processRules with a invalid integer rulesToExecute.
+    * @description Tests the brokers ruleBroker function processRules with a invalid integer rulesToExecute.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -330,7 +330,7 @@ describe(tst_con.cprocessRules, () => {
     
     /**
     * @function processRules_inValidRulesToExecuteBoolean
-    * @description Tests the business rules function processRules with a invalid boolean rulesToExecute.
+    * @description Tests the brokers ruleBroker function processRules with a invalid boolean rulesToExecute.
     * @author Json Howard
     * @date 2023/04/17
     */

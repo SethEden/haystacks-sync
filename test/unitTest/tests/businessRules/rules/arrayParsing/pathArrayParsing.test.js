@@ -36,7 +36,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.cdoesArrayContainFilename, () => {
     /**
     * @function doesArrayContainFilename_validDataString
-    * @description Tests the business rules function doesArrayContainFilename with a valid data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a valid data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -55,7 +55,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidDataInputDataString
-    * @description Tests the business rules function doesArrayContainFilename with a invalid string data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid string data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -74,7 +74,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidDataInputMetaDataString
-    * @description Tests the business rules function doesArrayContainFilename with a invalid string inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -93,7 +93,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidInputDataInteger
-    * @description Tests the business rules function doesArrayContainFilename with a invalid integer data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -112,7 +112,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidInputDataBoolean
-    * @description Tests the business rules function doesArrayContainFilename with a invalid boolean data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -131,7 +131,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidInputMetaDataInteger
-    * @description Tests the business rules function doesArrayContainFilename with a invalid integer inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -150,7 +150,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidInputMetaDataBoolean
-    * @description Tests the business rules function doesArrayContainFilename with a invalid string inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -169,7 +169,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidInputDataUndefined
-    * @description Tests the business rules function doesArrayContainFilename with a invalid undefined data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -188,7 +188,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 
     /**
     * @function doesArrayContainFilename_inValidInputDataNaN
-    * @description Tests the business rules function doesArrayContainFilename with a invalid NaN data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function doesArrayContainFilename with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -215,7 +215,7 @@ describe(tst_con.cdoesArrayContainFilename, () => {
 describe(tst_con.cgetFileAndPathListForPath, () => {
     /**
     * @function getFileAndPathListForPath_validDataString
-    * @description Tests the business rules function getFileAndPathListForPath with a valid data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a valid data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -233,7 +233,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
 
     /**
     * @function getFileAndPathListForPath_inValidDataInputDataString
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid string data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid string data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -251,7 +251,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
 
     /**
     * @function getFileAndPathListForPath_inValidDataInputMetaDataString
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid string inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -269,7 +269,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
 
     /**
     * @function getFileAndPathListForPath_inValidInputDataInteger
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid integer input.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid integer input.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -287,7 +287,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     
     /**
     * @function getFileAndPathListForPath_inValidInputDataBoolean
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid boolean data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -305,7 +305,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
 
     /**
     * @function getFileAndPathListForPath_inValidInputMetaDataInteger
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid integer inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -323,7 +323,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
 
     /**
     * @function getFileAndPathListForPath_inValidInputMetaDataBoolean
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid boolean inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -341,7 +341,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
 
     /**
     * @function getFileAndPathListForPath_inValidInputDataUndefined
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid undefined data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -359,7 +359,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     
     /**
     * @function getFileAndPathListForPath_inValidInputDataNaN
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid NaN data.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -377,7 +377,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     
     /**
     * @function getFileAndPathListForPath_inValidInputMetaDataUndefined
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid undefined inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
@@ -395,7 +395,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
     
     /**
     * @function getFileAndPathListForPath_inValidInputMetaDataNaN
-    * @description Tests the business rules function getFileAndPathListForPath with a invalid NaN inputMetaData.
+    * @description Tests the businessRules rules arrayParsing pathArrayParsing function getFileAndPathListForPath with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/20
     */
