@@ -47,7 +47,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.cechoCommand, () => {
     /**
      * @function echoCommand_validDataString
-     * @description Tests the business rules function echoCommand with a valid input.
+     * @description Tests the command function echoCommand with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -65,7 +65,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidDataInputDataString
-     * @description Tests the business rules function echoCommand with a invalid input string.
+     * @description Tests the command function echoCommand with a invalid input string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -83,7 +83,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidDataInputMetaDataString
-     * @description Tests the business rules function echoCommand with a invalid inputMetaData string.
+     * @description Tests the command function echoCommand with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -101,7 +101,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputDataInteger
-     * @description Tests the business rules function echoCommand with a invalid input integer.
+     * @description Tests the command function echoCommand with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -119,7 +119,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputDataBoolean
-     * @description Tests the business rules function echoCommand with a invalid input boolean.
+     * @description Tests the command function echoCommand with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -137,7 +137,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputMetaDataInteger
-     * @description Tests the business rules function echoCommand with a invalid inputMetaData integer.
+     * @description Tests the command function echoCommand with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -155,7 +155,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputMetaDataBoolean
-     * @description Tests the business rules function echoCommand with a invalid inputMetaData boolean.
+     * @description Tests the command function echoCommand with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -173,7 +173,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputDataUndefined
-     * @description Tests the business rules function echoCommand with a invalid input undefined.
+     * @description Tests the command function echoCommand with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -191,7 +191,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputDataNaN
-     * @description Tests the business rules function echoCommand with a invalid input NaN.
+     * @description Tests the command function echoCommand with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -209,7 +209,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputMetaDataUndefined
-     * @description Tests the business rules function echoCommand with a invalid inputMetaData undefined.
+     * @description Tests the command function echoCommand with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -227,7 +227,7 @@ describe(tst_con.cechoCommand, () => {
     
     /**
      * @function echoCommand_inValidInputMetaDataNaN
-     * @description Tests the business rules function echoCommand with a invalid inputMetaData NaN.
+     * @description Tests the command function echoCommand with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -253,7 +253,7 @@ describe(tst_con.cechoCommand, () => {
 describe(tst_con.cexit, () => {
     /**
      * @function exit_validDataString
-     * @description Tests the business rules function exit with a valid input.
+     * @description Tests the command function exit with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -271,7 +271,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidDataInputDataString
-     * @description Tests the business rules function exit with a invalid input string.
+     * @description Tests the command function exit with a invalid input string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -289,7 +289,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidDataInputMetaDataString
-     * @description Tests the business rules function exit with a invalid inputMetaData string.
+     * @description Tests the command function exit with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -307,7 +307,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputDataInteger
-     * @description Tests the business rules function exit with a invalid input integer.
+     * @description Tests the command function exit with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -325,7 +325,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputDataBoolean
-     * @description Tests the business rules function exit with a invalid input boolean.
+     * @description Tests the command function exit with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -343,7 +343,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputMetaDataInteger
-     * @description Tests the business rules function exit with a invalid inputMetaData integer.
+     * @description Tests the command function exit with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -361,7 +361,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputMetaDataBoolean
-     * @description Tests the business rules function exit with a invalid inputMetaData boolean.
+     * @description Tests the command function exit with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -379,7 +379,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputDataUndefined
-     * @description Tests the business rules function exit with a invalid input undefined.
+     * @description Tests the command function exit with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -397,7 +397,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputDataNaN
-     * @description Tests the business rules function exit with a invalid input NaN.
+     * @description Tests the command function exit with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -415,7 +415,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputMetaDataUndefined
-     * @description Tests the business rules function exit with a invalid inputMetaData unefined.
+     * @description Tests the command function exit with a invalid inputMetaData unefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -433,7 +433,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputMetaDataNaN
-     * @description Tests the business rules function exit with a invalid inputMetaData NaN.
+     * @description Tests the command function exit with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -459,7 +459,7 @@ describe(tst_con.cexit, () => {
 describe(tst_con.cversion, () => {
     /**
      * @function version_validDataString
-     * @description Tests the business rules function version with a valid input.
+     * @description Tests the command function version with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -477,7 +477,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidDataInputDataString
-     * @description Tests the business rules function version with a invalid input string.
+     * @description Tests the command function version with a invalid input string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -495,7 +495,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidDataInputMetaDataString
-     * @description Tests the business rules function version with a invalid inputMetaData string.
+     * @description Tests the command function version with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -513,7 +513,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputDataInteger
-     * @description Tests the business rules function version with a invalid input integer.
+     * @description Tests the command function version with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -531,7 +531,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputDataBoolean
-     * @description Tests the business rules function version with a invalid input boolean.
+     * @description Tests the command function version with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -549,7 +549,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputMetaDataInteger
-     * @description Tests the business rules function version with a invalid inputMetaData integer.
+     * @description Tests the command function version with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -567,7 +567,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputMetaDataBoolean
-     * @description Tests the business rules function version with a invalid inputMetaData boolean.
+     * @description Tests the command function version with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -585,7 +585,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputDataUndefined
-     * @description Tests the business rules function version with a invalid input undefined.
+     * @description Tests the command function version with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -603,7 +603,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputDataNaN
-     * @description Tests the business rules function version with a invalid input NaN.
+     * @description Tests the command function version with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -621,7 +621,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputMetaDataUndefined
-     * @description Tests the business rules function version with a invalid inputMetaData undefined.
+     * @description Tests the command function version with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -639,7 +639,7 @@ describe(tst_con.cversion, () => {
     
     /**
      * @function version_inValidInputMetaDataNaN
-     * @description Tests the business rules function version with a invalid inputMetaData NaN.
+     * @description Tests the command function version with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -665,7 +665,7 @@ describe(tst_con.cversion, () => {
 describe(tst_con.cabout, () => {
     /**
      * @function about_validDataString
-     * @description Tests the business rules function about with a valid input.
+     * @description Tests the command function about with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -683,7 +683,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidDataInputDataString
-     * @description Tests the business rules function about with a valid input.
+     * @description Tests the command function about with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -701,7 +701,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidDataInputMetaDataString
-     * @description Tests the business rules function about with a invalid inputMetaData string.
+     * @description Tests the command function about with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -719,7 +719,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputDataInteger
-     * @description Tests the business rules function about with a invalid input integer.
+     * @description Tests the command function about with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -737,7 +737,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputDataBoolean
-     * @description Tests the business rules function about with a invalid input boolean.
+     * @description Tests the command function about with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -755,7 +755,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputMetaDataInteger
-     * @description Tests the business rules function about with a invalid inputMetaData integer.
+     * @description Tests the command function about with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -773,7 +773,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputMetaDataBoolean
-     * @description Tests the business rules function about with a invalid inputMetaData boolean.
+     * @description Tests the command function about with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -791,7 +791,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputDataUndefined
-     * @description Tests the business rules function about with a invalid input undefined.
+     * @description Tests the command function about with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -809,7 +809,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputDataNaN
-     * @description Tests the business rules function about with a invalid input NaN.
+     * @description Tests the command function about with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -827,7 +827,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputMetaDataUndefined
-     * @description Tests the business rules function about with a invalid inputMetaData undefined.
+     * @description Tests the command function about with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -845,7 +845,7 @@ describe(tst_con.cabout, () => {
     
     /**
      * @function about_inValidInputMetaDataNaN
-     * @description Tests the business rules function about with a invalid inputMetaData NaN.
+     * @description Tests the command function about with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -871,7 +871,7 @@ describe(tst_con.cabout, () => {
 describe(tst_con.cname, () => {
     /**
      * @function name_validDataString
-     * @description Tests the business rules function name with a valid input.
+     * @description Tests the command function name with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -889,7 +889,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidDataInputDataString
-     * @description Tests the business rules function name with a invalid input string.
+     * @description Tests the command function name with a invalid input string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -907,7 +907,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidDataInputMetaDataString
-     * @description Tests the business rules function name with a invalid inputMetaData string.
+     * @description Tests the command function name with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -925,7 +925,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputDataInteger
-     * @description Tests the business rules function name with a invalid input integer.
+     * @description Tests the command function name with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -943,7 +943,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputDataBoolean
-     * @description Tests the business rules function name with a invalid input boolean.
+     * @description Tests the command function name with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -961,7 +961,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputMetaDataInteger
-     * @description Tests the business rules function name with a invalid inputMetaData integer.
+     * @description Tests the command function name with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -979,7 +979,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputMetaDataBoolean
-     * @description Tests the business rules function name with a invalid inputMetaData boolean.
+     * @description Tests the command function name with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -997,7 +997,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputDataUndefined
-     * @description Tests the business rules function name with a invalid input undefined.
+     * @description Tests the command function name with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1015,7 +1015,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputDataNaN
-     * @description Tests the business rules function name with a invalid input NaN.
+     * @description Tests the command function name with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1033,7 +1033,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputMetaDataUndefined
-     * @description Tests the business rules function name with a invalid inputMetaData undefined.
+     * @description Tests the command function name with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1051,7 +1051,7 @@ describe(tst_con.cname, () => {
     
     /**
      * @function name_inValidInputMetaDataNaN
-     * @description Tests the business rules function name with a invalid inputMetaData NaN.
+     * @description Tests the command function name with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1115,7 +1115,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidDataInputDataString
-     * @description Tests the business rules function help with a invalid input string.
+     * @description Tests the command function help with a invalid input string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1133,7 +1133,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidDataInputMetaDataString
-     * @description Tests the business rules function help with a invalid inputMetaData string.
+     * @description Tests the command function help with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1151,7 +1151,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputDataInteger
-     * @description Tests the business rules function help with a invalid input integer.
+     * @description Tests the command function help with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1169,7 +1169,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputDataBoolean
-     * @description Tests the business rules function help with a invalid input boolean.
+     * @description Tests the command function help with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1187,7 +1187,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputMetaDataInteger
-     * @description Tests the business rules function help with a invalid inputMetaData integer.
+     * @description Tests the command function help with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1205,7 +1205,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputMetaDataBoolean
-     * @description Tests the business rules function help with a invalid inputMetaData boolean.
+     * @description Tests the command function help with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1223,7 +1223,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputDataUndefined
-     * @description Tests the business rules function help with a invalid inputMetaData undefined.
+     * @description Tests the command function help with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1241,7 +1241,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputDataNaN
-     * @description Tests the business rules function help with a invalid input NaN.
+     * @description Tests the command function help with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1259,7 +1259,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputMetaDataUndefined
-     * @description Tests the business rules function help with a invalid inputMetaData undefined.
+     * @description Tests the command function help with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1277,7 +1277,7 @@ describe(tst_con.chelp, () => {
     
     /**
      * @function help_inValidInputMetaDataNaN
-     * @description Tests the business rules function help with a invalid inputMetaData NaN.
+     * @description Tests the command function help with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1303,7 +1303,7 @@ describe(tst_con.chelp, () => {
 describe(tst_con.cworkflowHelp, () => {
     /**
      * @function workflowHelp_validDataString
-     * @description Tests the business rules function workflowHelp with a valid input.
+     * @description Tests the command function workflowHelp with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1321,7 +1321,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidDataInputDataString
-     * @description Tests the business rules function workflowHelp with a invalid input string.
+     * @description Tests the command function workflowHelp with a invalid input string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1339,7 +1339,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidDataInputMetaDataString
-     * @description Tests the business rules function workflowHelp with a invalid inputMetaData string.
+     * @description Tests the command function workflowHelp with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1357,7 +1357,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputDataInteger
-     * @description Tests the business rules function workflowHelp with a invalid input integer.
+     * @description Tests the command function workflowHelp with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1375,7 +1375,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputDataBoolean
-     * @description Tests the business rules function workflowHelp with a invalid input boolean.
+     * @description Tests the command function workflowHelp with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1393,7 +1393,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputMetaDataInteger
-     * @description Tests the business rules function workflowHelp with a invalid inputMetaData integer.
+     * @description Tests the command function workflowHelp with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1411,7 +1411,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputMetaDataBoolean
-     * @description Tests the business rules function workflowHelp with a invalid inputMetaData boolean.
+     * @description Tests the command function workflowHelp with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1429,7 +1429,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputDataUndefined
-     * @description Tests the business rules function workflowHelp with a invalid input undefined.
+     * @description Tests the command function workflowHelp with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1447,7 +1447,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputDataNaN
-     * @description Tests the business rules function workflowHelp with a invalid input NaN.
+     * @description Tests the command function workflowHelp with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1465,7 +1465,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputMetaDataUndefined
-     * @description Tests the business rules function workflowHelp with a invalid inputMetaData undefined.
+     * @description Tests the command function workflowHelp with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1483,7 +1483,7 @@ describe(tst_con.cworkflowHelp, () => {
     
     /**
      * @function workflowHelp_inValidInputMetaDataNaN
-     * @description Tests the business rules function workflowHelp with a invalid inputMetaData NaN.
+     * @description Tests the command function workflowHelp with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */

@@ -43,7 +43,7 @@ const { bas, cfg, phn, wrd, gen } = hayConst;
 describe(tst_con.csaveConfiguration, () => {
   /**
    * @function saveConfiguration_validDataString
-   * @description Tests the business rules function saveConfiguration with a valid input.
+   * @description Tests the command function saveConfiguration with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -75,7 +75,7 @@ describe(tst_con.csaveConfiguration, () => {
 describe(tst_con.cchangeConfigurationSetting, () => {
   /**
    * @function changeConfigurationSetting_validDataString
-   * @description Tests the business rules function changeConfigurationSetting with a valid input.
+   * @description Tests the command function changeConfigurationSetting with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -97,7 +97,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidDataInputDataString
-   * @description Tests the business rules function changeConfigurationSetting with a invalid string input.
+   * @description Tests the command function changeConfigurationSetting with a invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -119,7 +119,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataInteger
-   * @description Tests the business rules function changeConfigurationSetting with a invalid integer input.
+   * @description Tests the command function changeConfigurationSetting with a invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -141,7 +141,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataBoolean
-   * @description Tests the business rules function changeConfigurationSetting with a invalid boolean input.
+   * @description Tests the command function changeConfigurationSetting with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -163,7 +163,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataUndefined
-   * @description Tests the business rules function changeConfigurationSetting with a invalid undefined input.
+   * @description Tests the command function changeConfigurationSetting with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -185,7 +185,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataNaN
-   * @description Tests the business rules function changeConfigurationSetting with a invalid NaN input.
+   * @description Tests the command function changeConfigurationSetting with a invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -216,7 +216,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 // describe(tst_con.clistConfigurationThemes, () => {
 //   /**
 //    * @function listConfigurationThemes_validDataString
-//    * @description Tests the business rules function listConfigurationThemes with a valid input.
+//    * @description Tests the command function listConfigurationThemes with a valid input.
 //    * @author Json Howard
 //    * @date 2023/05/08
 //    * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
@@ -247,7 +247,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 describe(tst_con.cchangeDebugConfigurationTheme, () => {
   /**
    * @function changeDebugConfigurationTheme_validDataString
-   * @description Tests the business rules function changeDebugConfigurationTheme with a valid input.
+   * @description Tests the command function changeDebugConfigurationTheme with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -270,7 +270,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
      * @function changeDebugConfigurationTheme_inValidDataInputDataString
-     * @description Tests the business rules function changeDebugConfigurationTheme with a invalid string input.
+     * @description Tests the command function changeDebugConfigurationTheme with a invalid string input.
      * @author Json Howard
      * @date 2023/05/08
      */
@@ -293,7 +293,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataInteger
-   * @description Tests the business rules function changeDebugConfigurationTheme with a invalid integer input.
+   * @description Tests the command function changeDebugConfigurationTheme with a invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -316,7 +316,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataBoolean
-   * @description Tests the business rules function changeDebugConfigurationTheme with a invalid boolean input.
+   * @description Tests the command function changeDebugConfigurationTheme with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -339,7 +339,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataUndefined
-   * @description Tests the business rules function changeDebugConfigurationTheme with a invalid undefined input.
+   * @description Tests the command function changeDebugConfigurationTheme with a invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -362,7 +362,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataNaN
-   * @description Tests the business rules function changeDebugConfigurationTheme with a invalid NaN input.
+   * @description Tests the command function changeDebugConfigurationTheme with a invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */

@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.caddClientCommands, () => {
     /**
      * @function addClientCommands_validDataString
-     * @description Tests the business rules function addClientCommands with a valid input.
+     * @description Tests the function addClientCommands with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -65,7 +65,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidDataClientCommandsString
-     * @description Tests the business rules function addClientCommands with a invalid clientCommands string.
+     * @description Tests the function addClientCommands with a invalid clientCommands string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -82,7 +82,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsInteger
-     * @description Tests the business rules function addClientCommands with a invalid clientCommands integer.
+     * @description Tests the function addClientCommands with a invalid clientCommands integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -99,7 +99,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsBoolean
-     * @description Tests the business rules function addClientCommands with a invalid clientCommands boolean.
+     * @description Tests the function addClientCommands with a invalid clientCommands boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -116,7 +116,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsUndefined
-     * @description Tests the business rules function addClientCommands with a invalid clientCommands undefined.
+     * @description Tests the function addClientCommands with a invalid clientCommands undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -133,7 +133,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsNaN
-     * @description Tests the business rules function addClientCommands with a invalid clientCommands NaN.
+     * @description Tests the function addClientCommands with a invalid clientCommands NaN.
      * @author Json Howard
      * @date 2023/08/22
      */

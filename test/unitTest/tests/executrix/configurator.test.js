@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.csetConfigurationSetting, () => {
     /**
      * @function setConfigurationSetting_validData
-     * @description Tests the business rules function setConfigurationSetting with a valid input.
+     * @description Tests the function setConfigurationSetting with a valid input.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -65,7 +65,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNamespaceString
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNameSpace string.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNameSpace string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -84,7 +84,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNameString
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName string.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -103,7 +103,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationValueString
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationValue string.
+     * @description Tests the function setConfigurationSetting with a invalid configurationValue string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -122,7 +122,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNamespaceNumber
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace number.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace number.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -141,7 +141,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNamespaceBoolean
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace boolean.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -160,7 +160,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNamespaceUndefined
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace undefined.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -179,7 +179,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNamespaceNaN
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace NaN.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -198,7 +198,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNameNumber
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName Number.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName Number.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -217,7 +217,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNameBoolean
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName boolean.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -236,7 +236,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNameUndefined
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName undefined.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -255,7 +255,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationNameNaN
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName NaN.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -274,7 +274,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationValueNumber
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationValue number.
+     * @description Tests the function setConfigurationSetting with a invalid configurationValue number.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -293,7 +293,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationValueBoolean
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationValue boolean.
+     * @description Tests the function setConfigurationSetting with a invalid configurationValue boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -312,7 +312,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationValueUndefined
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationValue undefined.
+     * @description Tests the function setConfigurationSetting with a invalid configurationValue undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -331,7 +331,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidConfigurationValueNaN
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationValue NaN.
+     * @description Tests the function setConfigurationSetting with a invalid configurationValue NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -350,7 +350,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidAllUndefined
-     * @description Tests the business rules function setConfigurationSetting with a invalid all undefined.
+     * @description Tests the function setConfigurationSetting with a invalid all undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -369,7 +369,7 @@ describe(tst_con.csetConfigurationSetting, () => {
     
     /**
      * @function setConfigurationSetting_inValidAllNaN
-     * @description Tests the business rules function setConfigurationSetting with a invalid all NaN.
+     * @description Tests the function setConfigurationSetting with a invalid all NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -396,7 +396,7 @@ describe(tst_con.csetConfigurationSetting, () => {
 describe(tst_con.cgetConfigurationSetting, () => {
     /**
      * @function getConfigurationSetting_validDataString
-     * @description Tests the business rules function setConfigurationSetting with a valid input.
+     * @description Tests the function setConfigurationSetting with a valid input.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -414,7 +414,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidDataConfigurationNamespaceString
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace string.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -432,7 +432,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidDataConfigurationNameString
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName string.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -450,7 +450,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceInteger
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace integer.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -468,7 +468,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceBoolean
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace boolean.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -486,7 +486,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameInteger
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName integer.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -504,7 +504,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameBoolean
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName boolean.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -522,7 +522,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceUndefined
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace undefined.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -540,7 +540,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceNaN
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationNamespace NaN.
+     * @description Tests the function setConfigurationSetting with a invalid configurationNamespace NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -558,7 +558,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameUndefined
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName undefined.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -576,7 +576,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameNaN
-     * @description Tests the business rules function setConfigurationSetting with a invalid configurationName NaN.
+     * @description Tests the function setConfigurationSetting with a invalid configurationName NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -602,7 +602,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
 describe(tst_con.cprocessConfigurationNameRules, () => {
     /**
      * @function processConfigurationNameRules_validDataString
-     * @description Tests the business rules function processConfigurationNameRules with a valid input.
+     * @description Tests the function processConfigurationNameRules with a valid input.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -619,7 +619,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
     
     /**
      * @function processConfigurationNameRules_inValidDataFullyQualifiedNameString
-     * @description Tests the business rules function processConfigurationNameRules with a invalid fullyQualifiedName string.
+     * @description Tests the function processConfigurationNameRules with a invalid fullyQualifiedName string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -636,7 +636,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
     
     /**
      * @function processConfigurationNameRules_inValidFullyQualifiedNameInteger
-     * @description Tests the business rules function processConfigurationNameRules with a invalid fullyQualifiedName integer.
+     * @description Tests the function processConfigurationNameRules with a invalid fullyQualifiedName integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -653,7 +653,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
     
     /**
      * @function processConfigurationNameRules_inValidFullyQualifiedNameBoolean
-     * @description Tests the business rules function processConfigurationNameRules with a invalid fullyQualifiedName boolean.
+     * @description Tests the function processConfigurationNameRules with a invalid fullyQualifiedName boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -670,7 +670,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
     
     /**
      * @function processConfigurationNameRules_inValidFullyQualifiedNameUndefined
-     * @description Tests the business rules function processConfigurationNameRules with a invalid fullyQualifiedName undefined.
+     * @description Tests the function processConfigurationNameRules with a invalid fullyQualifiedName undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -687,7 +687,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
     
     /**
      * @function processConfigurationNameRules_inValidFullyQualifiedNameNaN
-     * @description Tests the business rules function processConfigurationNameRules with a invalid fullyQualifiedName NaN.
+     * @description Tests the function processConfigurationNameRules with a invalid fullyQualifiedName NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -712,7 +712,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
 describe(tst_con.cprocessConfigurationNamespaceRules, () => {
     /**
      * @function processConfigurationNamespaceRules_validDataString
-     * @description Tests the business rules function processConfigurationNamespaceRules with a valid input.
+     * @description Tests the function processConfigurationNamespaceRules with a valid input.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -729,7 +729,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
     
     /**
      * @function processConfigurationNamespaceRules_inValidDataFullyQualifiedNameString
-     * @description Tests the business rules function processConfigurationNamespaceRules with a invalid fullyQualifiedName string.
+     * @description Tests the function processConfigurationNamespaceRules with a invalid fullyQualifiedName string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -746,7 +746,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
     
     /**
      * @function processConfigurationNamespaceRules_inValidFullyQualifiedNameInteger
-     * @description Tests the business rules function processConfigurationNamespaceRules with a invalid fullyQualifiedName integer.
+     * @description Tests the function processConfigurationNamespaceRules with a invalid fullyQualifiedName integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -763,7 +763,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
     
     /**
      * @function processConfigurationNamespaceRules_inValidFullyQualifiedNameBoolean
-     * @description Tests the business rules function processConfigurationNamespaceRules with a invalid fullyQualifiedName boolean.
+     * @description Tests the function processConfigurationNamespaceRules with a invalid fullyQualifiedName boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -780,7 +780,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
     
     /**
      * @function processConfigurationNamespaceRules_inValidFullyQualifiedNameUndefined
-     * @description Tests the business rules function processConfigurationNamespaceRules with a invalid fullyQualifiedName undefined.
+     * @description Tests the function processConfigurationNamespaceRules with a invalid fullyQualifiedName undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -797,7 +797,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
     
     /**
      * @function processConfigurationNamespaceRules_inValidFullyQualifiedNameNaN
-     * @description Tests the business rules function processConfigurationNamespaceRules with a invalid fullyQualifiedName NaN.
+     * @description Tests the function processConfigurationNamespaceRules with a invalid fullyQualifiedName NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -822,7 +822,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
 describe(tst_con.cprocessConfigurationValueRules, () => {
     /**
      * @function processConfigurationValueRules_validDataString
-     * @description Tests the business rules function processConfigurationValueRules with a valid input.
+     * @description Tests the function processConfigurationValueRules with a valid input.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -840,7 +840,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidDataNameString
-     * @description Tests the business rules function processConfigurationValueRules with a invalid name string.
+     * @description Tests the function processConfigurationValueRules with a invalid name string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -858,7 +858,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidDataValueString
-     * @description Tests the business rules function processConfigurationValueRules with a invalid value string.
+     * @description Tests the function processConfigurationValueRules with a invalid value string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -876,7 +876,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidNameInteger
-     * @description Tests the business rules function processConfigurationValueRules with a invalid name integer.
+     * @description Tests the function processConfigurationValueRules with a invalid name integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -894,7 +894,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidNameBoolean
-     * @description Tests the business rules function processConfigurationValueRules with a invalid name boolean.
+     * @description Tests the function processConfigurationValueRules with a invalid name boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -912,7 +912,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidValueInteger
-     * @description Tests the business rules function processConfigurationValueRules with a invalid value integer.
+     * @description Tests the function processConfigurationValueRules with a invalid value integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -930,7 +930,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidValueBoolean
-     * @description Tests the business rules function processConfigurationValueRules with a invalid value boolean.
+     * @description Tests the function processConfigurationValueRules with a invalid value boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -948,7 +948,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidNameUndefined
-     * @description Tests the business rules function processConfigurationValueRules with a invalid name undefined.
+     * @description Tests the function processConfigurationValueRules with a invalid name undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -966,7 +966,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidNameNaN
-     * @description Tests the business rules function processConfigurationValueRules with a invalid name NaN.
+     * @description Tests the function processConfigurationValueRules with a invalid name NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -984,7 +984,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidValueUndefined
-     * @description Tests the business rules function processConfigurationValueRules with a invalid value undefined.
+     * @description Tests the function processConfigurationValueRules with a invalid value undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -1002,7 +1002,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
     
     /**
      * @function processConfigurationValueRules_inValidValueNaN
-     * @description Tests the business rules function processConfigurationValueRules with a invalid value NaN.
+     * @description Tests the function processConfigurationValueRules with a invalid value NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
