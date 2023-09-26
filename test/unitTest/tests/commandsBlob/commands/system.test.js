@@ -1068,25 +1068,33 @@ describe(tst_con.cname, () => {
     });
 });
 
-// /**
-//  * @function clearScreen
-//  * @description Tests the positive test case of the clear screen command.
-//  * @author Seth Hollingsead
-//  * @date 2023/09/19
-//  * @NOTE Unsure how to test this?!
-//  */
-// describe(tst_con.cclearScreen, () => {
-//     /**
-//      * @function clearScreen_validDataString
-//      * @description Tests the command function clear screen with a valid input.
-//      * @author Seth Hollingsead
-//      * @date 2023/09/19
-//      * @NOTE Unsure how to test this?!
-//      */
-//     test(tst_con.cclearScreen_validDataString, () => {
+/**
+ * @function clearScreen
+ * @description Tests the positive test case of the clear screen command.
+ * @author Seth Hollingsead
+ * @date 2023/09/19
+ * @NOTE Unsure how to test this?!
+ */
+describe(tst_con.cclearScreen, () => {
+    /**
+     * @function clearScreen_validDataString
+     * @description Tests the command function clear screen with a valid input.
+     * @author Seth Hollingsead
+     * @date 2023/09/19
+     * @NOTE Unsure how to test this?!
+     */
+    test(tst_con.cclearScreen_validDataString, () => {
+        // Arrange
+        let inputData = wrd.cHello;
+        let inputMetaData = wrd.cWorld;
 
-//     });
-// });
+        // Act
+        let returnData = system.clearScreen(inputData, inputMetaData);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+});
 
 /**
  * @function help

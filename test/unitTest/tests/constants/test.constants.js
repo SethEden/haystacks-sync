@@ -329,8 +329,15 @@ export const cexit = wrd.cexit;
 export const cversion = wrd.cversion;
 export const cabout = wrd.cabout;
 export const cname = wrd.cname;
+export const cclearScreen = wrd.cclear + wrd.cScreen;
 export const chelp = wrd.chelp;
 export const cworkflowHelp = wrd.cworkflow + wrd.cHelp;
+
+/* chiefCommander */
+export const cloadCommandAliasesFromPath = wrd.cload + wrd.cCommand + wrd.cAliases + wrd.cFrom + wrd.cPath;
+export const cenqueueCommand = wrd.cenqueue + wrd.cCommand;
+export const cisCommandQueueEmpty = wrd.cis + wrd.cCommand + wrd.cQueue + wrd.cEmpty;
+export const cprocessCommandQueue = wrd.cprocess + wrd.cCommand + wrd.cQueue;
 
 /* chiefConfiguration */
 export const csetupConfiguration = wrd.csetup + wrd.cConfiguration;
@@ -2445,15 +2452,15 @@ export const cvalidateWorkflows_inValidDataNaN = cvalidateWorkflows + wrd.cinval
 /* performanceMetric */
 export const cbusinessRulesMetrics_validDataString = cbusinessRulesMetrics + wrd.cvalid + wrd.cData + wrd.cString;
 export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackString = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
-export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
 export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackInteger = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
-export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
-export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
-export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const ccommandMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
 export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackUndefined = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
 export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackNaN = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
-export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
-export const cbusinessRulesMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
 
 export const ccommandMetrics_validDataString = ccommandMetrics + wrd.cvalid + wrd.cData + wrd.cString;
 export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackString = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
@@ -2528,6 +2535,8 @@ export const cname_inValidInputDataNaN = cname + wrd.cinvalid + wrd.cData + wrd.
 export const cname_inValidInputMetaDataUndefined = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
 export const cname_inValidInputMetaDataNaN = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
 
+export const cclearScreen_validDataString = cclearScreen + wrd.cvalid + wrd.cData + wrd.cString;
+
 export const chelp_validDataString = chelp + wrd.cvalid + wrd.cData + wrd.cString;
 export const chelp_inValidDataInputDataString = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
 export const chelp_inValidDataInputMetaDataString = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
@@ -2553,12 +2562,35 @@ export const cworkflowHelp_inValidInputMetaDataUndefined = cworkflowHelp + wrd.c
 export const cworkflowHelp_inValidInputMetaDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
 
 /* chiefCommander */
+export const cbootStrapCommands_validDataString = cbootStrapCommands + wrd.cvalid + wrd.cData + wrd.cString;
+
 export const caddClientCommands_validDataString = caddClientCommands + wrd.cvalid + wrd.cData + wrd.cString;
 export const caddClientCommands_inValidDataClientCommandsString = caddClientCommands + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cCommands + wrd.cString;
 export const caddClientCommands_inValidClientCommandsInteger = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cInteger;
 export const caddClientCommands_inValidClientCommandsBoolean = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cBoolean;
 export const caddClientCommands_inValidClientCommandsUndefined = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cUndefined;
 export const caddClientCommands_inValidClientCommandsNaN = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cNaN;
+
+export const cloadCommandAliasesFromPath_validDataString = cloadCommandAliasesFromPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandAliasesFromPath_inValidDataCommandAliasesFilePathConfigurationNameString = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const cloadCommandAliasesFromPath_inValidDataContextNameString = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameInteger = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameBoolean = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const cloadCommandAliasesFromPath_inValidContextNameInteger = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cInteger;
+export const cloadCommandAliasesFromPath_inValidContextNameBoolean = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameUndefined = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cUndefined;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameNaN = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
+export const cloadCommandAliasesFromPath_inValidContextNameUndefined = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + cUndefined;
+export const cloadCommandAliasesFromPath_inValidContextNameNaN = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + cNaN;
+
+export const cenqueueCommand_validDataString = cenqueueCommand + wrd.cvalid + wrd.cData + wrd.cString;
+export const cenqueueCommand_inValidCommandInteger = cenqueueCommand + wrd.cinvalid + wrd.cCommand + wrd.cInteger;
+export const cenqueueCommand_inValidCommandBoolean = cenqueueCommand + wrd.cinvalid + wrd.cCommand + wrd.cBoolean;
+export const cenqueueCommand_inValidCommandUndefined = cenqueueCommand + wrd.cinvalid + wrd.cCommand + cUndefined;
+export const cenqueueCommand_inValidCommandNaN = cenqueueCommand + wrd.cinvalid + wrd.cCommand + cNaN;
+
+export const cisCommandQueueEmpty_validDataFalse = cisCommandQueueEmpty + wrd.cvalid + wrd.cData + wrd.cFalse;
+export const cisCommandQueueEmpty_validDataTrue = cisCommandQueueEmpty + wrd.cvalid + wrd.cData + wrd.cTrue;
 
 /* chiefConfiguration */
 export const csetupConfiguration_validDataString = csetupConfiguration + wrd.cvalid + wrd.cData + wrd.cString;

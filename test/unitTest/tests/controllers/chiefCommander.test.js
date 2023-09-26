@@ -38,10 +38,32 @@ import { describe, expect, test } from '@jest/globals';
 const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 
 /**
+ * @function bootStrapCommands
+ * @description Tests the positive and negative test cases of the bootStrapCommands
+ * @author Json Howard
+ * @date 2023/08/22
+*/
+describe(tst_con.cbootStrapCommands, () => {
+    /**
+     * @function bootStrapCommands_validDataString
+     * @description Tests the function bootStrapCommands with a valid input.
+     * @author Json Howard
+     * @date 2023/08/22
+     */
+    test(tst_con.cbootStrapCommands_validDataString, () => {
+        // Act
+        let returnData = chiefCommander.bootStrapCommands();
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+});
+
+/**
  * @function addClientCommands
  * @description Tests the positive and negative test cases of the addClientCommands
  * @author Json Howard
- * @date 2023/08/22
+ * @date 2023/09/25
 */
 describe(tst_con.caddClientCommands, () => {
     /**
@@ -147,4 +169,348 @@ describe(tst_con.caddClientCommands, () => {
         // Assert
         expect(returnData).toBeTruthy();
     });
+});
+
+/**
+ * @function loadCommandAliasesFromPath
+ * @description Tests the positive and negative test cases of the loadCommandAliasesFromPath
+ * @author Json Howard
+ * @date 2023/08/22
+*/
+describe(tst_con.cloadCommandAliasesFromPath, () => {
+    /**
+     * @function loadCommandAliasesFromPath_validDataString
+     * @description Tests the function loadCommandAliasesFromPath with a valid input.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_validDataString, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = data_con.applicationPath();
+        let contextName = wrd.cHello;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidDataCommandAliasesFilePathConfigurationNameString
+     * @description Tests the function loadCommandAliasesFromPath with a invalid string commandAliasesFilePathConfigurationName.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidDataCommandAliasesFilePathConfigurationNameString, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = wrd.cHello;
+        let contextName = wrd.cHello;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidDataContextNameString
+     * @description Tests the function loadCommandAliasesFromPath with a invalid contextName string.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidDataContextNameString, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = data_con.applicationPath();
+        let contextName = "";
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameInteger
+     * @description Tests the function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName integer.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameInteger, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = num.c123;
+        let contextName = wrd.cHello;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameBoolean
+     * @description Tests the function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName boolean.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameBoolean, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = false;
+        let contextName = wrd.cHello;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidContextNameInteger
+     * @description Tests the function loadCommandAliasesFromPath with a invalid contextName integer.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidContextNameInteger, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = data_con.applicationPath();
+        let contextName = num.c123;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidContextNameBoolean
+     * @description Tests the function loadCommandAliasesFromPath with a invalid contextName boolean.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidContextNameBoolean, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = data_con.applicationPath();
+        let contextName = false;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameUndefined
+     * @description Tests the function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName undefined.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameUndefined, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = undefined;
+        let contextName = wrd.cHello;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameNaN
+     * @description Tests the function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName NaN.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameNaN, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = NaN;
+        let contextName = wrd.cHello;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidContextNameUndefined
+     * @description Tests the function loadCommandAliasesFromPath with a invalid contextName undefined.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidContextNameUndefined, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = data_con.applicationPath();
+        let contextName = undefined;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function loadCommandAliasesFromPath_inValidContextNameNaN
+     * @description Tests the function loadCommandAliasesFromPath with a invalid contextName NaN.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cloadCommandAliasesFromPath_inValidContextNameNaN, () => {
+        // Arrange
+        let commandAliasesFilePathConfigurationName = data_con.applicationPath();
+        let contextName = NaN;
+
+        // Act
+        let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+});
+
+/**
+ * @function enqueueCommand
+ * @description Tests the positive and negative test cases of the enqueueCommand
+ * @author Json Howard
+ * @date 2023/08/22
+*/
+describe(tst_con.cenqueueCommand, () => {
+    /**
+     * @function enqueueCommand_validDataString
+     * @description Tests the function enqueueCommand with a valid input.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cenqueueCommand_validDataString, () => {
+        // Arrange
+        let command = data_con.JsonObjectArrayOfStrings_02;
+
+        // Act
+        let returnData = chiefCommander.enqueueCommand(command);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function enqueueCommand_inValidCommandInteger
+     * @description Tests the function enqueueCommand with a invalid command integer.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cenqueueCommand_inValidCommandInteger, () => {
+        // Arrange
+        let command = num.c123;
+
+        // Act
+        let returnData = chiefCommander.enqueueCommand(command);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function enqueueCommand_inValidCommandBoolean
+     * @description Tests the function enqueueCommand with a invalid command boolean.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cenqueueCommand_inValidCommandBoolean, () => {
+        // Arrange
+        let command = false;
+
+        // Act
+        let returnData = chiefCommander.enqueueCommand(command);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function enqueueCommand_inValidCommandUndefined
+     * @description Tests the function enqueueCommand with a invalid command undefined.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cenqueueCommand_inValidCommandUndefined, () => {
+        // Arrange
+        let command = undefined;
+
+        // Act
+        let returnData = chiefCommander.enqueueCommand(command);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function enqueueCommand_inValidCommandNaN
+     * @description Tests the function enqueueCommand with a invalid command NaN.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cenqueueCommand_inValidCommandNaN, () => {
+        // Arrange
+        let command = NaN;
+
+        // Act
+        let returnData = chiefCommander.enqueueCommand(command);
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+});
+
+/**
+ * @function isCommandQueueEmpty
+ * @description Tests the positive and negative test cases of the isCommandQueueEmpty
+ * @author Json Howard
+ * @date 2023/08/22
+*/
+describe(tst_con.cisCommandQueueEmpty, () => {
+    /**
+     * @function isCommandQueueEmpty_validDataFalse
+     * @description Tests the function isCommandQueueEmpty with a valid false.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cisCommandQueueEmpty_validDataFalse, () => {
+        // Act
+        let returnData = chiefCommander.isCommandQueueEmpty();
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+    
+    /**
+     * @function isCommandQueueEmpty_validDataTrue
+     * @description Tests the function isCommandQueueEmpty with a valid true.
+     * @author Json Howard
+     * @date 2023/09/25
+     */
+    test(tst_con.cisCommandQueueEmpty_validDataTrue, () => {
+        // Act
+        let returnData = chiefCommander.isCommandQueueEmpty();
+
+        // Assert
+        expect(returnData).toBeTruthy();
+    });
+});
+
+/**
+ * @function processCommandQueue
+ * @description Tests the positive and negative test cases of the processCommandQueue
+ * @author Json Howard
+ * @date 2023/08/22
+*/
+describe(tst_con.cprocessCommandQueue, () => {
 });
