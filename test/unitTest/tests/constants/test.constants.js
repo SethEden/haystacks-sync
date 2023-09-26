@@ -2713,21 +2713,21 @@ export const cprocessRootPath_inValidInputPathNaN = cprocessRootPath + wrd.cinva
 export const cprocessRootPath_inValidActualFrameworkNameUndefined = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + cUndefined;
 export const cprocessRootPath_inValidActualFrameworkNameNaN = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + cNaN;
 
-export const cinitFrameworkSchema_validDataString = cinitFrameworkSchema + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitFrameworkSchema_validDataObject = cinitFrameworkSchema + wrd.cvalid + wrd.cData + wrd.cObject;
 export const cinitFrameworkSchema_inValidConfigDataString = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cString;
 export const cinitFrameworkSchema_inValidConfigDataInteger = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cInteger;
 export const cinitFrameworkSchema_inValidConfigDataBoolean = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cBoolean;
 export const cinitFrameworkSchema_inValidConfigDataUndefined = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + cUndefined;
 export const cinitFrameworkSchema_inValidConfigDataNaN = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + cNaN;
 
-export const cmergeClientBusinessRules_validDataString = cmergeClientBusinessRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cmergeClientBusinessRules_validDataObject = cmergeClientBusinessRules + wrd.cvalid + wrd.cData + wrd.cObject;
 export const cmergeClientBusinessRules_inValidDataClientBusinessRulesString = cmergeClientBusinessRules + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cString;
 export const cmergeClientBusinessRules_inValidClientBusinessRulesInteger = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cInteger;
 export const cmergeClientBusinessRules_inValidClientBusinessRulesBoolean = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cBoolean;
 export const cmergeClientBusinessRules_inValidClientBusinessRulesUndefined = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + cUndefined;
 export const cmergeClientBusinessRules_inValidClientBusinessRulesNaN = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + cNaN;
 
-export const cmergeClientCommands_validDataString = cmergeClientCommands + wrd.cvalid + wrd.cData + wrd.cString;
+export const cmergeClientCommands_validDataObject = cmergeClientCommands + wrd.cvalid + wrd.cData + wrd.cObject;
 export const cmergeClientCommands_inValidDataClientCommandsString = cmergeClientCommands + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cCommands + wrd.cString;
 export const cmergeClientCommands_inValidClientCommandsInteger = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cInteger;
 export const cmergeClientCommands_inValidClientCommandsBoolean = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cBoolean;

@@ -57,8 +57,8 @@ input inputPath: string (The path for the entry point to the framework, ie: main
 input actualFrameworkName: NaN
 output: ?
 --------------------------------------------------------------------------------
-testName: initFrameworkSchema_validDataString
-input configData: string (All of the configuration data that should be parsed as part of the setup process)
+testName: initFrameworkSchema_validDataObject
+input configData: Object (All of the configuration data that should be parsed as part of the setup process)
 output: boolean
 
 testName: initFrameworkSchema_inValidConfigDataString
@@ -81,7 +81,7 @@ testName: initFrameworkSchema_inValidConfigDataNaN
 input configData: NaN
 output: ?
 --------------------------------------------------------------------------------
-testName: mergeClientBusinessRules_validDataString
+testName: mergeClientBusinessRules_validDataObject
 input clientBusinessRules: object (A map of client defined business rule names and client defined business rule function calls)
 output: boolean
 
@@ -105,8 +105,8 @@ testName: mergeClientBusinessRules_inValidClientBusinessRulesNaN
 input clientBusinessRules: NaN
 output: ?
 --------------------------------------------------------------------------------
-testName: mergeClientCommands_validDataString
-input clientCommands: string (A map of client defined command names and client defined command function calls)
+testName: mergeClientCommands_validDataObject
+input clientCommands: object (A map of client defined command names and client defined command function calls)
 output: boolean
 
 testName: mergeClientCommands_inValidDataClientCommandsString

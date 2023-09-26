@@ -252,14 +252,14 @@ describe(tst_con.cprocessRootPath, () => {
 */
 describe(tst_con.cinitFrameworkSchema, () => {
     /**
-     * @function initFrameworkSchema_validDataString
-     * @description Tests the function initFrameworkSchema with a valid input.
+     * @function initFrameworkSchema_validDataObject
+     * @description Tests the function initFrameworkSchema with a valid input object.
      * @author Json Howard
      * @date 2023/08/29
      */
-    test(tst_con.cinitFrameworkSchema_validDataString, () => {
+    test(tst_con.cinitFrameworkSchema_validDataObject, () => {
         // Arrange
-        let configData = wrd.cHello;
+        let configData = data_con.JsonObjectOfStrings_02;
 
         // Act
         let returnData = warden.initFrameworkSchema(configData);
@@ -362,12 +362,12 @@ describe(tst_con.cinitFrameworkSchema, () => {
 */
 describe(tst_con.cmergeClientBusinessRules, () => {
     /**
-     * @function mergeClientBusinessRules_validDataString
+     * @function mergeClientBusinessRules_validDataObject
      * @description Tests the function mergeClientBusinessRules with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
-    test(tst_con.cmergeClientBusinessRules_validDataString, () => {
+    test(tst_con.cmergeClientBusinessRules_validDataObject, () => {
         // Arrange
         let clientBusinessRules = bus_con.StringsObject_01;
 
@@ -472,12 +472,12 @@ describe(tst_con.cmergeClientBusinessRules, () => {
 */
 describe(tst_con.cmergeClientCommands, () => {
     /**
-     * @function mergeClientCommands_validDataString
+     * @function mergeClientCommands_validDataObject
      * @description Tests the function mergeClientCommands with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
-    test(tst_con.cmergeClientCommands_validDataString, () => {
+    test(tst_con.cmergeClientCommands_validDataObject, () => {
         // Arrange
         let clientCommands = bus_con.StringsObject_01;
 
