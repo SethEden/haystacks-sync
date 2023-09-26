@@ -64,6 +64,54 @@ describe(tst_con.csaveConfiguration, () => {
     // Assert
     expect(returnData).toBeTruthy(); //[true, true]
   });
+  
+  /**
+   * @function saveConfiguration_inValidInputMetaDataUndefined
+   * @description Tests the command function saveConfiguration with a invalid input undefined.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.csaveConfiguration_inValidInputMetaDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = '';
+    let testPath = obj_con.testConfigPath();
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+
+    // Act      
+    let returnData = configuration.saveConfiguration(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, true]
+  });
+  
+  /**
+   * @function saveConfiguration_inValidInputMetaDataNaN
+   * @description Tests the command function saveConfiguration with a valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   */
+  test(tst_con.csaveConfiguration_inValidInputMetaDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = '';
+    let testPath = obj_con.testConfigPath();
+    rulesLibrary.initRulesLibrary();
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+
+    // Act      
+    let returnData = configuration.saveConfiguration(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, true]
+  });
 });
 
 /**
