@@ -120,7 +120,6 @@ describe(tst_con.csetConfigurationSetting, () => {
         expect(returnData).toBeTruthy();
     });
     
-    
     /**
      * @function setConfigurationSetting_inValidDataToMergeString
      * @description Tests the executrix configurator function setConfigurationSetting with a invalid configurationValue string.
