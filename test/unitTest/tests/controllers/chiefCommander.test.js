@@ -511,6 +511,7 @@ describe(tst_con.cisCommandQueueEmpty, () => {
  * @description Tests the positive and negative test cases of the processCommandQueue
  * @author Json Howard
  * @date 2023/08/22
+ * @NOTE Can only be tested in integration testing.
 */
 describe(tst_con.cprocessCommandQueue, () => {
 });

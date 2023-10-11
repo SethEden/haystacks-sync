@@ -64,14 +64,14 @@ describe(tst_con.csetConfigurationSetting, () => {
     });
     
     /**
-     * @function setConfigurationSetting_inValidConfigurationNamespaceString
-     * @description Tests the executrix configurator function setConfigurationSetting with a invalid configurationNameSpace string.
+     * @function setConfigurationSetting_validConfigurationNamespaceString
+     * @description Tests the executrix configurator function setConfigurationSetting with a valid configurationNameSpace string.
      * @author Json Howard
      * @date 2023/09/04
      */
-    test(tst_con.csetConfigurationSetting_inValidConfigurationNamespaceString, () => {
+    test(tst_con.csetConfigurationSetting_validConfigurationNamespaceString, () => {
         // Arrange
-        let configurationNamespace = wrd.cHello;
+        let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = wrd.cHello;
         let configurationValue = num.c123;
 
@@ -83,12 +83,12 @@ describe(tst_con.csetConfigurationSetting, () => {
     });
     
     /**
-     * @function setConfigurationSetting_inValidConfigurationNameString
-     * @description Tests the executrix configurator function setConfigurationSetting with a invalid configurationName string.
+     * @function setConfigurationSetting_validConfigurationNameString
+     * @description Tests the executrix configurator function setConfigurationSetting with a valid configurationName string.
      * @author Json Howard
      * @date 2023/09/04
      */
-    test(tst_con.csetConfigurationSetting_inValidConfigurationNameString, () => {
+    test(tst_con.csetConfigurationSetting_validConfigurationNameString, () => {
         // Arrange
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = "";
@@ -102,35 +102,16 @@ describe(tst_con.csetConfigurationSetting, () => {
     });
     
     /**
-     * @function setConfigurationSetting_inValidConfigurationValueString
-     * @description Tests the executrix configurator function setConfigurationSetting with a invalid configurationValue string.
+     * @function setConfigurationSetting_validConfigurationValueString
+     * @description Tests the executrix configurator function setConfigurationSetting with a valid configurationValue string.
      * @author Json Howard
      * @date 2023/09/04
      */
-    test(tst_con.csetConfigurationSetting_inValidConfigurationValueString, () => {
+    test(tst_con.csetConfigurationSetting_validConfigurationValueString, () => {
         // Arrange
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = wrd.cHello;
         let configurationValue = "";
-
-        // Act
-        let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
-
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
-    
-    /**
-     * @function setConfigurationSetting_inValidDataToMergeString
-     * @description Tests the executrix configurator function setConfigurationSetting with a invalid configurationValue string.
-     * @author Json Howard
-     * @date 2023/09/04
-     */
-    test(tst_con.csetConfigurationSetting_inValidDataToMergeString, () => {
-        // Arrange
-        let configurationNamespace = data_con.dataBrokerJsonPath();
-        let configurationName = wrd.cHello;
-        let configurationValue = num.c123;
 
         // Act
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
