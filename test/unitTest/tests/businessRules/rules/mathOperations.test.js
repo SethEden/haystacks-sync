@@ -26,7 +26,7 @@ import * as tst_con from '../../constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
-const { bas, wrd, num } = hayConst;
+const { num } = hayConst;
 
 /**
  * @function hex2rgbConversion

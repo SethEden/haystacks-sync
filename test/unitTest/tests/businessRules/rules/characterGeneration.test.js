@@ -24,7 +24,7 @@ import * as tst_con from '../../constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
-const { bas, sys, wrd, cfg, cmd, num, gen } = hayConst;
+const { bas, wrd, num } = hayConst;
 
 /**
  * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter

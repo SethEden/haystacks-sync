@@ -11,7 +11,7 @@
 // External imports
 import hayConst from '@haystacks/constants';
 
-const {bas, num, wrd, gen, biz} = hayConst;
+const { bas, wrd } = hayConst;
 
 /**
  * @function basePath

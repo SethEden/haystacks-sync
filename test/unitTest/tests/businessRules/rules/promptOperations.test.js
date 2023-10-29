@@ -23,7 +23,7 @@ import * as tst_con from '../../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { bas, wrd } = hayConst;
+const { wrd } = hayConst;
 
 /**
  * @function prompt

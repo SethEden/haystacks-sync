@@ -29,7 +29,7 @@ import * as tst_con from '../../constants/test.constants.js';
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
-const { bas, sys, wrd, cfg, cmd, num } = hayConst;
+const { wrd, num } = hayConst;
 
 /**
  * @function getNowMoment
