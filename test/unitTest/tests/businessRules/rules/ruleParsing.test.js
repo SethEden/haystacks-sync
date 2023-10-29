@@ -36,7 +36,7 @@ const { biz } = hayConst;
 describe(tst_con.cdoAllRulesExist, () => {
   /**
    * @function doAllRulesExist_validDataString
-   * @description Tests the businessRules rules ruleParsing function doAllRulesExist with a valid input.
+   * @description Tests the businessRules.rules.ruleParsing function doAllRulesExist with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -58,7 +58,7 @@ describe(tst_con.cdoAllRulesExist, () => {
 
   /**
    * @function doAllRulesExist_inValidDataInputDataString
-   * @description Tests the businessRules rules ruleParsing function doAllRulesExist with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function doAllRulesExist with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -80,7 +80,7 @@ describe(tst_con.cdoAllRulesExist, () => {
 
   /**
    * @function doAllRulesExist_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules ruleParsing function doAllRulesExist with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function doAllRulesExist with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -102,7 +102,7 @@ describe(tst_con.cdoAllRulesExist, () => {
 
   /**
    * @function doAllRulesExist_inValidInputDataInteger
-   * @description Tests the businessRules rules ruleParsing function doAllRulesExist with invalid integer input.
+   * @description Tests the businessRules.rules.ruleParsing function doAllRulesExist with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -124,7 +124,7 @@ describe(tst_con.cdoAllRulesExist, () => {
 
   /**
    * @function doAllRulesExist_inValidInputDataBoolean
-   * @description Tests the businessRules rules ruleParsing function doAllRulesExist with invalid boolean input.
+   * @description Tests the businessRules.rules.ruleParsing function doAllRulesExist with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -146,7 +146,7 @@ describe(tst_con.cdoAllRulesExist, () => {
 
   /**
    * @function doAllRulesExist_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules ruleParsing function doAllRulesExist with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function doAllRulesExist with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -168,7 +168,7 @@ describe(tst_con.cdoAllRulesExist, () => {
 
   /**
    * @function doAllRulesExist_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules ruleParsing function doAllRulesExist with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function doAllRulesExist with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -191,14 +191,7 @@ describe(tst_con.cdoAllRulesExist, () => {
 
 /**
  * @function doesRuleExist
- * @description Tests the positive and negative test cases of the doesRuleExist
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cdoesRuleExist, () => {
-  /**
-   * @function doesRuleExist_validDataString
-   * @description Tests the businessRules rules ruleParsing function doesRuleExist with a valid input.
+ * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -220,7 +213,7 @@ describe(tst_con.cdoesRuleExist, () => {
 
   /**
    * @function doesRuleExist_inValidDataInputDataString
-   * @description Tests the businessRules rules ruleParsing function doesRuleExist with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -242,7 +235,7 @@ describe(tst_con.cdoesRuleExist, () => {
 
   /**
    * @function doesRuleExist_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules ruleParsing function doesRuleExist with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -264,7 +257,7 @@ describe(tst_con.cdoesRuleExist, () => {
 
   /**
    * @function doesRuleExist_inValidInputDataInteger
-   * @description Tests the businessRules rules ruleParsing function doesRuleExist with invalid integer input.
+   * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -286,7 +279,7 @@ describe(tst_con.cdoesRuleExist, () => {
 
   /**
    * @function doesRuleExist_inValidInputDataBoolean
-   * @description Tests the businessRules rules ruleParsing function doesRuleExist with invalid boolean input.
+   * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -308,7 +301,7 @@ describe(tst_con.cdoesRuleExist, () => {
 
   /**
    * @function doesRuleExist_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules ruleParsing function doesRuleExist with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -330,7 +323,7 @@ describe(tst_con.cdoesRuleExist, () => {
 
   /**
    * @function doesRuleExist_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules ruleParsing function doesRuleExist with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -353,14 +346,7 @@ describe(tst_con.cdoesRuleExist, () => {
 
 /**
  * @function getRule
- * @description Tests the positive and negative test cases of the getRule
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgetRule, () => {
-  /**
-   * @function getRule_validDataString
-   * @description Tests the businessRules rules ruleParsing function getRule with a valid input.
+ * @description Tests the businessRules.rules.ruleParsing function getRule with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -382,7 +368,7 @@ describe(tst_con.cgetRule, () => {
 
   /**
    * @function getRule_inValidDataInputDataString
-   * @description Tests the businessRules rules ruleParsing function getRule with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function getRule with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -404,7 +390,7 @@ describe(tst_con.cgetRule, () => {
 
   /**
    * @function getRule_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules ruleParsing function getRule with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function getRule with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -426,7 +412,7 @@ describe(tst_con.cgetRule, () => {
 
   /**
    * @function getRule_inValidInputDataInteger
-   * @description Tests the businessRules rules ruleParsing function getRule with invalid integer input.
+   * @description Tests the businessRules.rules.ruleParsing function getRule with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -448,7 +434,7 @@ describe(tst_con.cgetRule, () => {
 
   /**
    * @function getRule_inValidInputDataBoolean
-   * @description Tests the businessRules rules ruleParsing function getRule with invalid boolean input.
+   * @description Tests the businessRules.rules.ruleParsing function getRule with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -470,7 +456,7 @@ describe(tst_con.cgetRule, () => {
 
   /**
    * @function getRule_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules ruleParsing function getRule with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function getRule with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -492,7 +478,7 @@ describe(tst_con.cgetRule, () => {
 
   /**
    * @function getRule_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules ruleParsing function getRule with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function getRule with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -515,14 +501,7 @@ describe(tst_con.cgetRule, () => {
 
 /**
  * @function processRulesInternal
- * @description Tests the positive and negative test cases of the processRulesInternal
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cprocessRulesInternal, () => {
-  /**
-   * @function processRulesInternal_validDataString
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with a valid input.
+ * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -544,7 +523,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidDataInputDataString
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -566,7 +545,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid string input.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -588,7 +567,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputDataInteger
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid integer input.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -610,7 +589,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputDataBoolean
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid boolean input.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -632,7 +611,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -654,7 +633,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -676,7 +655,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputDataUndefined
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid undefined input.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -698,7 +677,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid NaN input.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -720,7 +699,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -742,7 +721,7 @@ describe(tst_con.cprocessRulesInternal, () => {
 
   /**
    * @function processRulesInternal_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules ruleParsing function processRulesInternal with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */

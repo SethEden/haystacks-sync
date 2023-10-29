@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     /**
      * @function searchForUniversalDebugConfigSetting_validDataString
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a valid input.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -64,7 +64,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidDataAppConfigPathNameString
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName string.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -82,7 +82,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidDataFrameworkConfigPathNameString
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName string.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -100,7 +100,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidAppConfigPathNameInteger
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName integer.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -118,7 +118,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidAppConfigPathNameBoolean
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName boolean.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -136,7 +136,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameInteger
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid frammeworkConfigPathName integer.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid frammeworkConfigPathName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -154,7 +154,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameBoolean
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName boolean.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -172,7 +172,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidAppConfigPathNameUndefined
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName undefined.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -190,7 +190,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidAppConfigPathNameNaN
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName NaN.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid appConfigPathName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -208,7 +208,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameUndefined
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName undefined.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -226,7 +226,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
     
     /**
      * @function searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameNaN
-     * @description Tests the controllers chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName NaN.
+     * @description Tests the controllers.chiefData function searchForUniversalDebugConfigSetting with a invalid frameworkConfigPathName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -252,7 +252,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
 describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
     /**
      * @function determineThemeDebugConfigFilesToLoad_validDataString
-     * @description Tests the controllers chiefData function determineThemeDebugConfigFilesToLoad with a valid input.
+     * @description Tests the controllers.chiefData function determineThemeDebugConfigFilesToLoad with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -269,7 +269,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
     
     /**
      * @function determineThemeDebugConfigFilesToLoad_inValidDataThemeConfigPathNameString
-     * @description Tests the controllers chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName string.
+     * @description Tests the controllers.chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -286,7 +286,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
     
     /**
      * @function determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameInteger
-     * @description Tests the controllers chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName integer.
+     * @description Tests the controllers.chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -303,7 +303,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
     
     /**
      * @function determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameBoolean
-     * @description Tests the controllers chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName boolean.
+     * @description Tests the controllers.chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -320,7 +320,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
     
     /**
      * @function determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameUndefined
-     * @description Tests the controllers chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName undefined.
+     * @description Tests the controllers.chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -337,7 +337,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
     
     /**
      * @function determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameNaN
-     * @description Tests the controllers chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName NaN.
+     * @description Tests the controllers.chiefData function determineThemeDebugConfigFilesToLoad with a invalid themeConfigPathName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -362,7 +362,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
 describe(tst_con.cgetAndProcessCsvData, () => {
     /**
      * @function getAndProcessCsvData_validDataString
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a valid input.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -380,7 +380,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidDataPathAndFilenameString
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid pathAndFilename string.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid pathAndFilename string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -398,7 +398,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidDataContextNameString
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid contextName string.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid contextName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -416,7 +416,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidPathAndFilenameInteger
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid pathAndFilename integer.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid pathAndFilename integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -434,7 +434,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidPathAndFilenameBoolean
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid pathAndFilename boolean.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid pathAndFilename boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -452,7 +452,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidContextNameInteger
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid contextName integer.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid contextName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -470,7 +470,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidContextNameBoolean
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid contextName boolean.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid contextName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -488,7 +488,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidPathAndFilenameUndefined
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid pathAndFilename undefined.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid pathAndFilename undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -506,7 +506,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidPathAndFilenameNaN
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid pathAndFilename NaN.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid pathAndFilename NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -524,7 +524,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidContextNameUndefined
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid contextName undefined.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid contextName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -542,7 +542,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
     
     /**
      * @function getAndProcessCsvData_inValidContextNameNaN
-     * @description Tests the controllers chiefData function getAndProcessCsvData with a invalid contextName NaN.
+     * @description Tests the controllers.chiefData function getAndProcessCsvData with a invalid contextName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -568,7 +568,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
 describe(tst_con.cgetAndProcessXmlData, () => {
     /**
      * @function getAndProcessXmlData_validDataString
-     * @description Tests the controllers chiefData function getAndProcessXmlData with a valid input.
+     * @description Tests the controllers.chiefData function getAndProcessXmlData with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -585,7 +585,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
     
     /**
      * @function getAndProcessXmlData_inValidDataPathAndFilenameString
-     * @description Tests the controllers chiefData function getAndProcessXmlData with a invalid pathAndFilename string.
+     * @description Tests the controllers.chiefData function getAndProcessXmlData with a invalid pathAndFilename string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -602,7 +602,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
     
     /**
      * @function getAndProcessXmlData_inValidPathAndFilenameInteger
-     * @description Tests the controllers chiefData function getAndProcessXmlData with a invalid pathAndFilename integer.
+     * @description Tests the controllers.chiefData function getAndProcessXmlData with a invalid pathAndFilename integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -619,7 +619,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
     
     /**
      * @function getAndProcessXmlData_inValidPathAndFilenameBoolean
-     * @description Tests the controllers chiefData function getAndProcessXmlData with a invalid pathAndFilename boolean.
+     * @description Tests the controllers.chiefData function getAndProcessXmlData with a invalid pathAndFilename boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -636,7 +636,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
     
     /**
      * @function getAndProcessXmlData_inValidPathAndFilenameUndefined
-     * @description Tests the controllers chiefData function getAndProcessXmlData with a invalid pathAndFilename undefined.
+     * @description Tests the controllers.chiefData function getAndProcessXmlData with a invalid pathAndFilename undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -653,7 +653,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
     
     /**
      * @function getAndProcessXmlData_inValidPathAndFilenameNaN
-     * @description Tests the controllers chiefData function getAndProcessXmlData with a invalid pathAndFilename NaN.
+     * @description Tests the controllers.chiefData function getAndProcessXmlData with a invalid pathAndFilename NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -678,7 +678,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
 describe(tst_con.csetupAllCsvData, () => {
     /**
      * @function setupAllCsvData_validDataString
-     * @description Tests the controllers chiefData function setupAllCsvData with a valid input.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -696,7 +696,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidDataDataPathConfigurationNameString
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid dataPathConfigurationName string.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid dataPathConfigurationName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -714,7 +714,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidDataContextNameString
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid contextName string.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid contextName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -732,7 +732,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidDataPathConfigurationNameInteger
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid dataPathConfigurationName integer.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid dataPathConfigurationName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -750,7 +750,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidDataPathConfigurationNameBoolean
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid dataPathConfigurationName boolean.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid dataPathConfigurationName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -768,7 +768,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidContextNameInteger
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid contextName integer.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid contextName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -786,7 +786,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidContextNameBoolean
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid contextName boolean.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid contextName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -804,7 +804,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidDataPathConfigurationNameUndefined
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid dataPathConfigurationName undefined.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid dataPathConfigurationName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -822,7 +822,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidDataPathConfigurationNameNaN
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid dataPathConfigurationName NaN.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid dataPathConfigurationName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -840,7 +840,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidContextNameUndefined
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid contextName undefined.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid contextName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -858,7 +858,7 @@ describe(tst_con.csetupAllCsvData, () => {
     
     /**
      * @function setupAllCsvData_inValidContextNameNaN
-     * @description Tests the controllers chiefData function setupAllCsvData with a invalid contextName NaN.
+     * @description Tests the controllers.chiefData function setupAllCsvData with a invalid contextName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -884,7 +884,7 @@ describe(tst_con.csetupAllCsvData, () => {
 describe(tst_con.csetupAllXmlData, () => {
     /**
      * @function setupAllXmlData_validDataString
-     * @description Tests the controllers chiefData function setupAllXmlData with a valid input.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -902,7 +902,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidDataDataPathConfigurationNameString
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid dataPathConfigurationName string.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid dataPathConfigurationName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -920,7 +920,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidDataContextNameString
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid contextName string.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid contextName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -938,7 +938,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidDataPathConfigurationNameInteger
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid dataPathConfigurationName integer.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid dataPathConfigurationName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -956,7 +956,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidDataPathConfigurationNameBoolean
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid dataPathConfigurationname boolean.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid dataPathConfigurationname boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -974,7 +974,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidContextNameInteger
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid contextName integer.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid contextName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -992,7 +992,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidContextNameBoolean
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid contextName boolean.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid contextName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1010,7 +1010,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidDataPathConfigurationNameUndefined
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid dataPathConfigurationName undefined.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid dataPathConfigurationName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1028,7 +1028,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidDataPathConfigurationNameNaN
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid dataPathConfigurationName NaN.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid dataPathConfigurationName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1046,7 +1046,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidContextNameUndefined
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid contextName undefined.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid contextName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1064,7 +1064,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidContextNameNaN
-     * @description Tests the controllers chiefData function setupAllXmlData with a invalid contextName NaN.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid contextName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1090,7 +1090,7 @@ describe(tst_con.csetupAllXmlData, () => {
 describe(tst_con.csetupAllJsonConfigData, () => {
     /**
      * @function setupAllJsonConfigData_validDataString
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a valid input.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1108,7 +1108,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidDataPathConfigurationNameString
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName string.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1126,7 +1126,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidDataContextNameString
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid contextName string.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid contextName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1144,7 +1144,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidDataPathConfigurationNameInteger
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName integer.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1162,7 +1162,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidDataPathConfigurationNameBoolean
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName boolean.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1180,7 +1180,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidContextNameInteger
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid contextName integer.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid contextName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1198,7 +1198,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidContextNameBoolean
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid contextName boolean.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid contextName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1216,7 +1216,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidDataPathConfigurationNameUndefined
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationname undefined.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationname undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1234,7 +1234,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidDataPathConfigurationNameNaN
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName NaN.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1252,7 +1252,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidContextNameUndefined
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid contextName undefined.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid contextName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1270,7 +1270,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidContextNameNaN
-     * @description Tests the controllers chiefData function setupAllJsonConfigData with a invalid contextName NaN.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid contextName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1296,7 +1296,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
 describe(tst_con.caddConstantsValidationData, () => {
     /**
      * @function addConstantsValidationData_validDataString
-     * @description Tests the controllers chiefData function addConstantsValidationData with a valid input.
+     * @description Tests the controllers.chiefData function addConstantsValidationData with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1313,7 +1313,7 @@ describe(tst_con.caddConstantsValidationData, () => {
     
     /**
      * @function addConstantsValidationData_inValidDataArrayValidationDataString
-     * @description Tests the controllers chiefData function addConstantsValidationData with a invalid arrayValidationData string.
+     * @description Tests the controllers.chiefData function addConstantsValidationData with a invalid arrayValidationData string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1330,7 +1330,7 @@ describe(tst_con.caddConstantsValidationData, () => {
     
     /**
      * @function addConstantsValidationData_inValidArrayValidationDataInteger
-     * @description Tests the controllers chiefData function addConstantsValidationData with a invalid arrayValidationData integer.
+     * @description Tests the controllers.chiefData function addConstantsValidationData with a invalid arrayValidationData integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1347,7 +1347,7 @@ describe(tst_con.caddConstantsValidationData, () => {
     
     /**
      * @function addConstantsValidationData_inValidArrayValidationDataBoolean
-     * @description Tests the controllers chiefData function addConstantsValidationData with a invalid arrayValidationData boolean.
+     * @description Tests the controllers.chiefData function addConstantsValidationData with a invalid arrayValidationData boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1364,7 +1364,7 @@ describe(tst_con.caddConstantsValidationData, () => {
     
     /**
      * @function addConstantsValidationData_inValidArrayValidationDataUndefined
-     * @description Tests the controllers chiefData function addConstantsValidationData with a invalid arrayValidationData undefined.
+     * @description Tests the controllers.chiefData function addConstantsValidationData with a invalid arrayValidationData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1381,7 +1381,7 @@ describe(tst_con.caddConstantsValidationData, () => {
     
     /**
      * @function addConstantsValidationData_inValidArrayValidationDataNaN
-     * @description Tests the controllers chiefData function addConstantsValidationData with a invalid arrayValidationData NaN.
+     * @description Tests the controllers.chiefData function addConstantsValidationData with a invalid arrayValidationData NaN.
      * @author Json Howard
      * @date 2023/08/22
      */

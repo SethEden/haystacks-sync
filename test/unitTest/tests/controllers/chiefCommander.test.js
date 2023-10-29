@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.cbootStrapCommands, () => {
     /**
      * @function bootStrapCommands_validDataString
-     * @description Tests the controllers chiefCommander function bootStrapCommands with a valid input.
+     * @description Tests the controllers.chiefCommander function bootStrapCommands with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -68,7 +68,7 @@ describe(tst_con.cbootStrapCommands, () => {
 describe(tst_con.caddClientCommands, () => {
     /**
      * @function addClientCommands_validDataString
-     * @description Tests the controllers chiefCommander function addClientCommands with a valid input.
+     * @description Tests the controllers.chiefCommander function addClientCommands with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -87,7 +87,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidDataClientCommandsString
-     * @description Tests the controllers chiefCommander function addClientCommands with a invalid clientCommands string.
+     * @description Tests the controllers.chiefCommander function addClientCommands with a invalid clientCommands string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -104,7 +104,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsInteger
-     * @description Tests the controllers chiefCommander function addClientCommands with a invalid clientCommands integer.
+     * @description Tests the controllers.chiefCommander function addClientCommands with a invalid clientCommands integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -121,7 +121,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsBoolean
-     * @description Tests the controllers chiefCommander function addClientCommands with a invalid clientCommands boolean.
+     * @description Tests the controllers.chiefCommander function addClientCommands with a invalid clientCommands boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -138,7 +138,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsUndefined
-     * @description Tests the controllers chiefCommander function addClientCommands with a invalid clientCommands undefined.
+     * @description Tests the controllers.chiefCommander function addClientCommands with a invalid clientCommands undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -155,7 +155,7 @@ describe(tst_con.caddClientCommands, () => {
     
     /**
      * @function addClientCommands_inValidClientCommandsNaN
-     * @description Tests the controllers chiefCommander function addClientCommands with a invalid clientCommands NaN.
+     * @description Tests the controllers.chiefCommander function addClientCommands with a invalid clientCommands NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -180,7 +180,7 @@ describe(tst_con.caddClientCommands, () => {
 describe(tst_con.cloadCommandAliasesFromPath, () => {
     /**
      * @function loadCommandAliasesFromPath_validDataString
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a valid input.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a valid input.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -198,7 +198,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidDataCommandAliasesFilePathConfigurationNameString
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid string commandAliasesFilePathConfigurationName.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid string commandAliasesFilePathConfigurationName.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -216,7 +216,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidDataContextNameString
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid contextName string.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid contextName string.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -234,7 +234,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameInteger
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName integer.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName integer.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -252,7 +252,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameBoolean
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName boolean.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName boolean.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -270,7 +270,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidContextNameInteger
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid contextName integer.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid contextName integer.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -288,7 +288,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidContextNameBoolean
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid contextName boolean.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid contextName boolean.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -306,7 +306,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameUndefined
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName undefined.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName undefined.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -324,7 +324,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameNaN
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName NaN.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid commandAliasesFilePathConfigurationName NaN.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -342,7 +342,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidContextNameUndefined
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid contextName undefined.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid contextName undefined.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -360,7 +360,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
     
     /**
      * @function loadCommandAliasesFromPath_inValidContextNameNaN
-     * @description Tests the controllers chiefCommander function loadCommandAliasesFromPath with a invalid contextName NaN.
+     * @description Tests the controllers.chiefCommander function loadCommandAliasesFromPath with a invalid contextName NaN.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -386,7 +386,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
 describe(tst_con.cenqueueCommand, () => {
     /**
      * @function enqueueCommand_validDataString
-     * @description Tests the controllers chiefCommander function enqueueCommand with a valid input.
+     * @description Tests the controllers.chiefCommander function enqueueCommand with a valid input.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -403,7 +403,7 @@ describe(tst_con.cenqueueCommand, () => {
     
     /**
      * @function enqueueCommand_inValidCommandInteger
-     * @description Tests the controllers chiefCommander function enqueueCommand with a invalid command integer.
+     * @description Tests the controllers.chiefCommander function enqueueCommand with a invalid command integer.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -420,7 +420,7 @@ describe(tst_con.cenqueueCommand, () => {
     
     /**
      * @function enqueueCommand_inValidCommandBoolean
-     * @description Tests the controllers chiefCommander function enqueueCommand with a invalid command boolean.
+     * @description Tests the controllers.chiefCommander function enqueueCommand with a invalid command boolean.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -437,7 +437,7 @@ describe(tst_con.cenqueueCommand, () => {
     
     /**
      * @function enqueueCommand_inValidCommandUndefined
-     * @description Tests the controllers chiefCommander function enqueueCommand with a invalid command undefined.
+     * @description Tests the controllers.chiefCommander function enqueueCommand with a invalid command undefined.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -454,7 +454,7 @@ describe(tst_con.cenqueueCommand, () => {
     
     /**
      * @function enqueueCommand_inValidCommandNaN
-     * @description Tests the controllers chiefCommander function enqueueCommand with a invalid command NaN.
+     * @description Tests the controllers.chiefCommander function enqueueCommand with a invalid command NaN.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -479,7 +479,7 @@ describe(tst_con.cenqueueCommand, () => {
 describe(tst_con.cisCommandQueueEmpty, () => {
     /**
      * @function isCommandQueueEmpty_validDataFalse
-     * @description Tests the controllers chiefCommander function isCommandQueueEmpty with a valid false.
+     * @description Tests the controllers.chiefCommander function isCommandQueueEmpty with a valid false.
      * @author Json Howard
      * @date 2023/09/25
      */
@@ -493,7 +493,7 @@ describe(tst_con.cisCommandQueueEmpty, () => {
     
     /**
      * @function isCommandQueueEmpty_validDataTrue
-     * @description Tests the controllers chiefCommander function isCommandQueueEmpty with a valid true.
+     * @description Tests the controllers.chiefCommander function isCommandQueueEmpty with a valid true.
      * @author Json Howard
      * @date 2023/09/25
      */

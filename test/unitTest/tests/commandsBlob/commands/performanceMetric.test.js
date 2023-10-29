@@ -21,23 +21,16 @@
  */
 
 // Internal imports
-import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import performanceMetric from '../../../../../src/commandsBlob/commands/performanceMetric.js';
-import commandsLibrary from '../../../../../src/commandsBlob/commandsLibrary';
-import configurator from '../../../../../src/executrix/configurator.js';
 import D from '../../../../../src/structures/data.js';
-import * as data_con from '../../../testData/brokers/dataBroker.js';
-import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
-import * as adv_con from '../../../testData/commandsBlob/commands/advanced.js';
 import * as per_con from '../../../testData/commandsBlob/commands/performanceMetric.js'
 import * as tst_con from '../../constants/test.constants.js';
-import { basePath } from '../../utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { bas, sys, wrd, cfg, cmd, num } = hayConst;
+const { wrd, cfg, num } = hayConst;
 
 /**
  * @function businessRulesMetrics
@@ -48,7 +41,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.cbusinessRulesMetrics, () => {
     /**
      * @function businessRulesMetrics_validDataString
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a valid input.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -68,7 +61,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackString
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack string.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -88,7 +81,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack string.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -108,7 +101,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackInteger
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack integer.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -128,7 +121,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack integer.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -148,7 +141,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack integer.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -168,7 +161,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack boolean.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -188,7 +181,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackUndefined
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack undefined.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -208,7 +201,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function businessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackNaN
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack NaN.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesPerformanceTrackingStack NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -228,7 +221,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack undefined.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -248,7 +241,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN
-     * @description Tests the commandsBlob commands performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack NaN.
+     * @description Tests the commandsBlob.commands.performanceMetric function businessRulesMetrics with a invalid businessRulesNamesPerformanceTrackingStack NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -276,7 +269,7 @@ describe(tst_con.cbusinessRulesMetrics, () => {
 describe(tst_con.ccommandMetrics, () => {
     /**
      * @function commandMetrics_validDataString
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a valid input.
+     * @description Tests the commandsBlob.commands.performanceMetrics function commandMetrics with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -296,7 +289,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandPerformanceTrackingStackString
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack string.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -316,7 +309,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackString
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack string.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -336,7 +329,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandPerformanceTrackingStackInteger
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack integer.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -356,7 +349,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandPerformanceTrackingStackBoolean
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack boolean.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -376,7 +369,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackInteger
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack integer.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -396,7 +389,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackBoolean
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack boolean.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -416,7 +409,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandPerformanceTrackingStackUndefined
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack undefined.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -436,7 +429,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandPerformanceTrackingStackNaN
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack NaN.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandPerformanceTrackingStack NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -456,7 +449,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackUndefined
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack undefined.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -476,7 +469,7 @@ describe(tst_con.ccommandMetrics, () => {
     
     /**
      * @function commandMetrics_inValidDataCommandsNamesPerformanceTrackingStackNaN
-     * @description Tests the commandsBlob commands performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack NaN.
+     * @description Tests the commandsBlob.commands.performanceMetric function commandMetrics with a invalid commandsNamesPerformanceTrackingStack NaN.
      * @author Json Howard
      * @date 2023/08/22
      */

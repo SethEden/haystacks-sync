@@ -46,7 +46,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.csetupConfiguration, () => {
     /**
      * @function setupConfiguration_validDataString
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a valid input.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -64,7 +64,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidDataAppConfigPathString
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid appConfigPath string.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid appConfigPath string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -82,7 +82,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidDataFrameworkConfigPathString
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath string.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -100,7 +100,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidAppConfigPathInteger
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid appConfigPath integer.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid appConfigPath integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -118,7 +118,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidAppConfigPathBoolean
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid appConfigPath boolean.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid appConfigPath boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -136,7 +136,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidFrameworkConfigPathInteger
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath integer.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -154,7 +154,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidFrameworkConfigPathBoolean
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath boolean.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -172,7 +172,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidAppConfigPathUndefined
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid appConfigPath undefined.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid appConfigPath undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -190,7 +190,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidAppConfigPathNaN
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid appConfigPath NaN.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid appConfigPath NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -208,7 +208,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidFrameworkConfigPathUndefined
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath undefined.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -226,7 +226,7 @@ describe(tst_con.csetupConfiguration, () => {
     
     /**
      * @function setupConfiguration_inValidFrameworkConfigPathNaN
-     * @description Tests the controllers chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath NaN.
+     * @description Tests the controllers.chiefConfiguration function setupConfiguration with a invalid frameworkConfigPath NaN.
      * @author Json Howard
      * @date 2023/08/22
      */

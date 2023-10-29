@@ -39,7 +39,7 @@ const { bas, gen, num, wrd } = hayConst;
 describe(tst_con.cparseSystemRootPath, () => {
   /**
    * @function parseSystemRootPath_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with a valid input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -60,7 +60,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
   /**
    * @function parseSystemRootPath_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -82,7 +82,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
   /**
    * @function parseSystemRootPath_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -103,7 +103,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
   /**
    * @function parseSystemRootPath_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -124,7 +124,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
   /**
    * @function parseSystemRootPath_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -146,7 +146,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
   /**
    * @function parseSystemRootPath_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -167,7 +167,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
   /**
    * @function parseSystemRootPath_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -189,7 +189,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
   /**
    * @function parseSystemRootPath_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -210,7 +210,7 @@ describe(tst_con.cparseSystemRootPath, () => {
 
 /**
  * @function parseSystemRootPath_inValidInputDataNaN
- * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid NaN input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid NaN input.
  * @author Json Howard
  * @date 2023/05/06
  */
@@ -231,7 +231,7 @@ test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
 
   /**
    * @function parseSystemRootPath_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -253,7 +253,7 @@ test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
 
   /**
    * @function parseSystemRootPath_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function parseSystemRootPath with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function parseSystemRootPath with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -276,14 +276,7 @@ test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
 
 /**
  * @function stringToDataType
- * @description Tests the positive and negative test cases of the stringToDataType
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cstringToDataType, () => {
-  /**
-   * @function stringToDataType_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -304,7 +297,7 @@ describe(tst_con.cstringToDataType, () => {
 
   /**
    * @function stringToDataType_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -326,7 +319,7 @@ describe(tst_con.cstringToDataType, () => {
 
   /**
    * @function stringToDataType_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -347,7 +340,7 @@ describe(tst_con.cstringToDataType, () => {
 
   /**
    * @function stringToDataType_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -368,7 +361,7 @@ describe(tst_con.cstringToDataType, () => {
 
   /**
    * @function stringToDataType_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -390,7 +383,7 @@ describe(tst_con.cstringToDataType, () => {
 
   /**
    * @function stringToDataType_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -412,7 +405,7 @@ describe(tst_con.cstringToDataType, () => {
 
   /**
    * @function stringToDataType_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -434,7 +427,7 @@ describe(tst_con.cstringToDataType, () => {
 
   /**
    * @function stringToDataType_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -455,7 +448,7 @@ describe(tst_con.cstringToDataType, () => {
 
 /**
  * @function stringToDataType_inValidInputDataNaN
- * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid NaN input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid NaN input.
  * @author Json Howard
  * @date 2023/05/06
  */
@@ -476,7 +469,7 @@ test(tst_con.cstringToDataType_inValidInputDataNaN, () => {
 
   /**
    * @function stringToDataType_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -498,7 +491,7 @@ test(tst_con.cstringToDataType_inValidInputDataNaN, () => {
 
   /**
    * @function stringToDataType_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function stringToDataType with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -521,14 +514,7 @@ test(tst_con.cstringToDataType_inValidInputDataNaN, () => {
 
 /**
  * @function stringToBoolean
- * @description Tests the positive and negative test cases of the stringToBoolean
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cstringToBoolean, () => {
-  /**
-   * @function stringToBoolean_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -549,7 +535,7 @@ describe(tst_con.cstringToBoolean, () => {
 
   /**
    * @function stringToBoolean_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -571,7 +557,7 @@ describe(tst_con.cstringToBoolean, () => {
 
   /**
    * @function stringToBoolean_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -592,7 +578,7 @@ describe(tst_con.cstringToBoolean, () => {
 
   /**
    * @function stringToBoolean_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -613,7 +599,7 @@ describe(tst_con.cstringToBoolean, () => {
 
   /**
    * @function stringToBoolean_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -635,7 +621,7 @@ describe(tst_con.cstringToBoolean, () => {
 
   /**
    * @function stringToBoolean_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -657,7 +643,7 @@ describe(tst_con.cstringToBoolean, () => {
 
   /**
    * @function stringToBoolean_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -679,7 +665,7 @@ describe(tst_con.cstringToBoolean, () => {
 
   /**
    * @function stringToBoolean_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -700,7 +686,7 @@ describe(tst_con.cstringToBoolean, () => {
 
 /**
  * @function stringToBoolean_inValidInputDataNaN
- * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid NaN input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid NaN input.
  * @author Json Howard
  * @date 2023/05/06
  */
@@ -721,7 +707,7 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
   /**
    * @function stringToBoolean_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -743,7 +729,7 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
   /**
    * @function stringToBoolean_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function stringToBoolean with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -766,14 +752,7 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function determineObjectDataType
- * @description Tests the positive and negative test cases of the determineObjectDataType
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cdetermineObjectDataType, () => {
-  /**
-   * @function determineObjectDataType_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -794,7 +773,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -816,7 +795,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -837,7 +816,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -858,7 +837,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -880,7 +859,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -902,7 +881,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -924,7 +903,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -945,7 +924,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid NaN input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -966,7 +945,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -988,7 +967,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
   /**
    * @function determineObjectDataType_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function determineObjectDataType with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1011,14 +990,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
 
 /**
  * @function isBoolean
- * @description Tests the positive and negative test cases of the isBoolean
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cisBoolean, () => {
-  /**
-   * @function isBoolean_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1039,7 +1011,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1061,7 +1033,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1082,7 +1054,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1103,7 +1075,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1125,7 +1097,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1147,7 +1119,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1169,7 +1141,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1190,7 +1162,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid NaN input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1211,7 +1183,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1233,7 +1205,7 @@ describe(tst_con.cisBoolean, () => {
 
   /**
    * @function isBoolean_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isBoolean with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1256,14 +1228,7 @@ describe(tst_con.cisBoolean, () => {
 
 /**
  * @function isInteger
- * @description Tests the positive and negative test cases of the isInteger
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cisInteger, () => {
-  /**
-   * @function isInteger_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1284,7 +1249,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1306,7 +1271,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1327,7 +1292,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1348,7 +1313,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1370,7 +1335,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1392,7 +1357,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1414,7 +1379,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1435,7 +1400,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid NaN input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1456,7 +1421,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1478,7 +1443,7 @@ describe(tst_con.cisInteger, () => {
 
   /**
    * @function isInteger_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isInteger with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1501,14 +1466,7 @@ describe(tst_con.cisInteger, () => {
 
 /**
  * @function isFloat
- * @description Tests the positive and negative test cases of the isFloat
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cisFloat, () => {
-  /**
-   * @function isFloat_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1529,7 +1487,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1551,7 +1509,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1572,7 +1530,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1593,7 +1551,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1615,7 +1573,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1637,7 +1595,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1659,7 +1617,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1680,7 +1638,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid NaN input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1701,7 +1659,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1723,7 +1681,7 @@ describe(tst_con.cisFloat, () => {
 
   /**
    * @function isFloat_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isFloat with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1746,14 +1704,7 @@ describe(tst_con.cisFloat, () => {
 
 /**
  * @function isString
- * @description Tests the positive and negative test cases of the isString
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cisString, () => {
-  /**
-   * @function isString_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isString with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function isString with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1774,7 +1725,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1796,7 +1747,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1817,7 +1768,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1838,7 +1789,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1860,7 +1811,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1882,7 +1833,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1904,7 +1855,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1925,7 +1876,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid NaN input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1946,7 +1897,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1968,7 +1919,7 @@ describe(tst_con.cisString, () => {
 
   /**
    * @function isString_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function isString with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1991,14 +1942,7 @@ describe(tst_con.cisString, () => {
 
 /**
  * @function replaceDoublePercentWithMessage
- * @description Tests the positive and negative test cases of the replaceDoublePercentWithMessage
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.creplaceDoublePercentWithMessage, () => {
-  /**
-   * @function replaceDoublePercentWithMessage_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2019,7 +1963,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2041,7 +1985,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2062,7 +2006,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid integer input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2083,7 +2027,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2105,7 +2049,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2127,7 +2071,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2149,7 +2093,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2170,7 +2114,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid NaN input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2191,7 +2135,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2213,7 +2157,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
   /**
    * @function replaceDoublePercentWithMessage_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function replaceDoublePercentWithMessage with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2236,14 +2180,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
 
 /**
  * @function utilitiesReplaceCharacterWithCharacter
- * @description Tests the positive and negative test cases of the utilitiesReplaceCharacterWithCharacter
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
-  /**
-   * @function utilitiesReplaceCharacterWithCharacter_validDataString
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with a valid input.
+ * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2264,7 +2201,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidDataInputDataString
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2286,7 +2223,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid string input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2307,7 +2244,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid integer inputData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid integer inputData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2329,7 +2266,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2351,7 +2288,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2373,7 +2310,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2395,7 +2332,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid undefined input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2417,7 +2354,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid NaN input.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2439,7 +2376,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -2461,7 +2398,7 @@ describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
 
   /**
    * @function utilitiesReplaceCharacterWithCharacter_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */

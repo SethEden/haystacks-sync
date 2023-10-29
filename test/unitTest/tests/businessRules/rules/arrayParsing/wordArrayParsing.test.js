@@ -38,7 +38,7 @@ const { bas, wrd, num } = hayConst;
 describe(tst_con.cconvertCamelCaseStringToArray, () => {
     /**
     * @function convertCamelCaseStringToArray_validDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainFilename with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -56,7 +56,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainFilename with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a invalid string data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -74,7 +74,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainFilename with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -92,7 +92,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainFilename with a invalid INTEGER data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a invalid INTEGER data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -110,7 +110,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainFilename with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -128,7 +128,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainFilename with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -146,7 +146,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainFilename with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -165,14 +165,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
 /**
  * @function getWordsArrayFromString
- * @description Tests the positive and negative test cases of the getWordsArrayFromString
- * @author Json Howard
- * @date 2023/04/21
- */
-describe(tst_con.cgetWordsArrayFromString, () => {
-    /**
-    * @function getWordsArrayFromString_validDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function getWordsArrayFromString with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function getWordsArrayFromString with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -191,7 +184,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 
     /**
     * @function getWordsArrayFromString_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function getWordsArrayFromString with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function getWordsArrayFromString with a invalid string data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -210,7 +203,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 
     /**
     * @function getWordsArrayFromString_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function getWordsArrayFromString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function getWordsArrayFromString with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -229,7 +222,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 
     /**
     * @function getWordsArrayFromString_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function getWordsArrayFromString with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function getWordsArrayFromString with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -248,7 +241,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 
     /**
     * @function getWordsArrayFromString_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function getWordsArrayFromString with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function getWordsArrayFromString with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -267,7 +260,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 
     /**
     * @function getWordsArrayFromString_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function getWordsArrayFromString with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function getWordsArrayFromString with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -286,7 +279,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 
     /**
     * @function getWordsArrayFromString_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function getWordsArrayFromString with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function getWordsArrayFromString with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -306,14 +299,7 @@ describe(tst_con.cgetWordsArrayFromString, () => {
 
 /**
  * @function recombineStringArrayWithSpaces
- * @description Tests the positive and negative test cases of the recombineStringArrayWithSpaces
- * @author Json Howard
- * @date 2023/04/21
- */
-describe(tst_con.crecombineStringArrayWithSpaces, () => {
-    /**
-    * @function recombineStringArrayWithSpaces_validDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -331,7 +317,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -349,7 +335,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -367,7 +353,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -385,7 +371,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -403,7 +389,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -421,7 +407,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -439,7 +425,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid string data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -457,7 +443,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
     /**
     * @function recombineStringArrayWithSpaces_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function recombineStringArrayWithSpaces with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function recombineStringArrayWithSpaces with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -476,14 +462,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 
 /**
  * @function convertArrayToCamelCaseString
- * @description Tests the positive and negative test cases of the convertArrayToCamelCaseString
- * @author Json Howard
- * @date 2023/04/21
- */
-describe(tst_con.cconvertArrayToCamelCaseString, () => {
-    /**
-    * @function convertArrayToCamelCaseString_validDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -501,7 +480,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid string data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -519,7 +498,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -537,7 +516,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -555,7 +534,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -573,7 +552,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -591,7 +570,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -609,7 +588,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -627,7 +606,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
     /**
     * @function convertArrayToCamelCaseString_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function convertArrayToCamelCaseString with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -646,14 +625,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 
 /**
  * @function doesArrayContainLowerCaseConsolidatedString
- * @description Tests the positive and negative test cases of the doesArrayContainLowerCaseConsolidatedString
- * @author Json Howard
- * @date 2023/04/21
- */
-describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
-    /**
-    * @function doesArrayContainLowerCaseConsolidatedString_validDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -671,7 +643,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid string data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -689,7 +661,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -707,7 +679,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -725,7 +697,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -743,7 +715,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -761,7 +733,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -779,7 +751,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -797,7 +769,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -816,14 +788,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 
 /**
  * @function ascertainMatchingElements
- * @description Tests the positive and negative test cases of the ascertainMatchingElements
- * @author Json Howard
- * @date 2023/04/21
- */
-describe(tst_con.cascertainMatchingElements, () => {
-    /**
-    * @function ascertainMatchingElements_validDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -841,7 +806,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid string data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -859,7 +824,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -877,7 +842,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -895,7 +860,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -913,7 +878,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -931,7 +896,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -949,7 +914,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -967,7 +932,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -985,7 +950,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputMetaDataUndefined
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -1003,7 +968,7 @@ describe(tst_con.cascertainMatchingElements, () => {
     
     /**
     * @function ascertainMatchingElements_inValidInputMetaDataNaN
-    * @description Tests the businessRules rules arrayParsing wordArrayParsing function ascertainMatchingElements with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */

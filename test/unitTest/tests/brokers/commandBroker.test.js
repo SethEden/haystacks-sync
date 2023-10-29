@@ -35,7 +35,7 @@ const { bas, wrd, num } = hayConst;
 describe(tst_con.cbootStrapCommands, () => {
     /**
     * @function bootStrapCommands_validData
-    * @description Tests the brokers commandBroker function bootStrapCommands with a valid input.
+    * @description Tests the brokers.commandBroker function bootStrapCommands with a valid input.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -55,7 +55,7 @@ describe(tst_con.cbootStrapCommands, () => {
 
     /**
     * @function bootStrapCommands_inValidString
-    * @description Tests the brokers commandBroker function bootStrapCommands with a invalid string.
+    * @description Tests the brokers.commandBroker function bootStrapCommands with a invalid string.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -75,7 +75,7 @@ describe(tst_con.cbootStrapCommands, () => {
 
     /**
     * @function bootStrapCommands_inValidNumber
-    * @description Tests the brokers commandBroker function bootStrapCommands with a invalid number.
+    * @description Tests the brokers.commandBroker function bootStrapCommands with a invalid number.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -95,7 +95,7 @@ describe(tst_con.cbootStrapCommands, () => {
 
     /**
     * @function bootStrapCommands_inValidBoolean
-    * @description Tests the brokers commandBroker function bootStrapCommands with a invalid boolean.
+    * @description Tests the brokers.commandBroker function bootStrapCommands with a invalid boolean.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -123,7 +123,7 @@ describe(tst_con.cbootStrapCommands, () => {
 describe(tst_con.caddClientCommands, () => {
     /**
     * @function addClientCommands_validData
-    * @description Tests the brokers commandBroker function addClientCommands with a valid input.
+    * @description Tests the brokers.commandBroker function addClientCommands with a valid input.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -143,7 +143,7 @@ describe(tst_con.caddClientCommands, () => {
 
     /**
     * @function addClientCommands_inValidString
-    * @description Tests the brokers commandBroker function addClientCommands with a invalid string.
+    * @description Tests the brokers.commandBroker function addClientCommands with a invalid string.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -163,7 +163,7 @@ describe(tst_con.caddClientCommands, () => {
 
     /**
     * @function addClientCommands_inValidNumber
-    * @description Tests the brokers commandBroker function addClientCommands with a invalid number.
+    * @description Tests the brokers.commandBroker function addClientCommands with a invalid number.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -183,7 +183,7 @@ describe(tst_con.caddClientCommands, () => {
 
     /**
     * @function addClientCommands_inValidBoolean
-    * @description Tests the brokers commandBroker function addClientCommands with a invalid boolean.
+    * @description Tests the brokers.commandBroker function addClientCommands with a invalid boolean.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -211,7 +211,7 @@ describe(tst_con.caddClientCommands, () => {
 describe(tst_con.cgetValidCommand, () => {
     /**
     * @function getValidCommand_validData
-    * @description Tests the brokers commandBroker function getValidCommand with a valid input.
+    * @description Tests the brokers.commandBroker function getValidCommand with a valid input.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -229,7 +229,7 @@ describe(tst_con.cgetValidCommand, () => {
 
     /**
     * @function getValidCommand_inValidString
-    * @description Tests the brokers commandBroker function getValidCommand with a invalid string.
+    * @description Tests the brokers.commandBroker function getValidCommand with a invalid string.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -247,7 +247,7 @@ describe(tst_con.cgetValidCommand, () => {
 
     /**
     * @function getValidCommand_inValidDelimiterString
-    * @description Tests the brokers commandBroker function getValidCommand with a invalid delimiter string input.
+    * @description Tests the brokers.commandBroker function getValidCommand with a invalid delimiter string input.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -265,7 +265,7 @@ describe(tst_con.cgetValidCommand, () => {
 
     /**
     * @function getValidCommand_inValidNumber
-    * @description Tests the brokers commandBroker function getValidCommand with a invalid integer input.
+    * @description Tests the brokers.commandBroker function getValidCommand with a invalid integer input.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -283,7 +283,7 @@ describe(tst_con.cgetValidCommand, () => {
 
     /**
     * @function getValidCommand_inValidBoolean
-    * @description Tests the brokers commandBroker function getValidCommand with a invalid boolean input.
+    * @description Tests the brokers.commandBroker function getValidCommand with a invalid boolean input.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -309,7 +309,7 @@ describe(tst_con.cgetValidCommand, () => {
 describe(tst_con.ccountMatchingCommandAlias, () => {
     /**
     * @function countMatchingCommandAlias_validData
-    * @description Tests the brokers commandBroker function countMatchingCommandAlias with a valid data.
+    * @description Tests the brokers.commandBroker function countMatchingCommandAlias with a valid data.
     * @author Json Howard
     * @date 2023/04/13
     */
@@ -327,7 +327,7 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
 
     /**
     * @function countMatchingCommandAlias_inValidCommandAliasDataString
-    * @description Tests the brokers commandBroker function countMatchingCommandAlias with a invalid string alias data.
+    * @description Tests the brokers.commandBroker function countMatchingCommandAlias with a invalid string alias data.
     * @author Json Howard
     * @date 2023/04/14
     */
@@ -345,7 +345,7 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
 
     /**
     * @function countMatchingCommandAlias_inValidCommandAliasNameString
-    * @description Tests the brokers commandBroker function countMatchingCommandAlias with a invalid string alias name.
+    * @description Tests the brokers.commandBroker function countMatchingCommandAlias with a invalid string alias name.
     * @author Json Howard
     * @date 2023/04/14
     */
@@ -363,7 +363,7 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
 
     /**
     * @function countMatchingCommandAlias_inValidCommandAliasDataNumber
-    * @description Tests the brokers commandBroker function countMatchingCommandAlias with a invalid number alias data.
+    * @description Tests the brokers.commandBroker function countMatchingCommandAlias with a invalid number alias data.
     * @author Json Howard
     * @date 2023/04/14
     */
@@ -381,7 +381,7 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
 
     /**
     * @function countMatchingCommandAlias_inValidCommandAliasDataBoolean
-    * @description Tests the brokers commandBroker function countMatchingCommandAlias with a invalid boolean alias data.
+    * @description Tests the brokers.commandBroker function countMatchingCommandAlias with a invalid boolean alias data.
     * @author Json Howard
     * @date 2023/04/14
     */
@@ -399,7 +399,7 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
 
     /**
     * @function countMatchingCommandAlias_inValidCommandAliasNameNumber
-    * @description Tests the brokers commandBroker function countMatchingCommandAlias with a invalid integer alias.
+    * @description Tests the brokers.commandBroker function countMatchingCommandAlias with a invalid integer alias.
     * @author Json Howard
     * @date 2023/04/14
     */
@@ -417,7 +417,7 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
 
     /**
     * @function countMatchingCommandAlias_inValidCommandAliasNameBoolean
-    * @description Tests the brokers commandBroker function countMatchingCommandAlias with a invalid boolean alias data.
+    * @description Tests the brokers.commandBroker function countMatchingCommandAlias with a invalid boolean alias data.
     * @author Json Howard
     * @date 2023/04/14
     */
@@ -443,7 +443,7 @@ describe(tst_con.ccountMatchingCommandAlias, () => {
 describe(tst_con.csearchCommandAlias, () => {
     /**
     * @function searchCommandAlias_validData
-    * @description Tests the brokers commandBroker function searchCommandAlias with a valid data.
+    * @description Tests the brokers.commandBroker function searchCommandAlias with a valid data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -461,7 +461,7 @@ describe(tst_con.csearchCommandAlias, () => {
 
     /**
     * @function searchCommandAlias_inValidCommandAliasDataString
-    * @description Tests the brokers commandBroker function searchCommandAlias with a invalid string data.
+    * @description Tests the brokers.commandBroker function searchCommandAlias with a invalid string data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -479,7 +479,7 @@ describe(tst_con.csearchCommandAlias, () => {
 
     /**
     * @function searchCommandAlias_inValidCommandAliasNameString
-    * @description Tests the brokers commandBroker function searchCommandAlias with a invalid string name.
+    * @description Tests the brokers.commandBroker function searchCommandAlias with a invalid string name.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -497,7 +497,7 @@ describe(tst_con.csearchCommandAlias, () => {
 
     /**
     * @function searchCommandAlias_inValidCommandAliasDataNumber
-    * @description Tests the brokers commandBroker function searchCommandAlias with a invalid number data.
+    * @description Tests the brokers.commandBroker function searchCommandAlias with a invalid number data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -515,7 +515,7 @@ describe(tst_con.csearchCommandAlias, () => {
 
     /**
     * @function searchCommandAlias_inValidCommandAliasDataBoolean
-    * @description Tests the brokers commandBroker function searchCommandAlias with a invalid boolean data.
+    * @description Tests the brokers.commandBroker function searchCommandAlias with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -533,7 +533,7 @@ describe(tst_con.csearchCommandAlias, () => {
 
     /**
     * @function searchCommandAlias_inValidCommandAliasNameNumber
-    * @description Tests the brokers commandBroker function searchCommandAlias with a invalid integer alias.
+    * @description Tests the brokers.commandBroker function searchCommandAlias with a invalid integer alias.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -551,7 +551,7 @@ describe(tst_con.csearchCommandAlias, () => {
 
     /**
     * @function searchCommandAlias_inValidCommandAliasNameBoolean
-    * @description Tests the brokers commandBroker function searchCommandAlias with a invalid boolean alias.
+    * @description Tests the brokers.commandBroker function searchCommandAlias with a invalid boolean alias.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -577,7 +577,7 @@ describe(tst_con.csearchCommandAlias, () => {
 describe(tst_con.cgetAllCommandAliasData, () => {
     /**
     * @function getAllCommandAliasData_validData
-    * @description Tests the brokers commandBroker function getAllCommandAliasData with a valid data.
+    * @description Tests the brokers.commandBroker function getAllCommandAliasData with a valid data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -594,7 +594,7 @@ describe(tst_con.cgetAllCommandAliasData, () => {
 
     /**
     * @function getAllCommandAliasData_inValidString
-    * @description Tests the brokers commandBroker function getAllCommandAliasData with a invalid string data.
+    * @description Tests the brokers.commandBroker function getAllCommandAliasData with a invalid string data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -611,7 +611,7 @@ describe(tst_con.cgetAllCommandAliasData, () => {
 
     /**
     * @function getAllCommandAliasData_inValidNumber
-    * @description Tests the brokers commandBroker function getAllCommandAliasData with a invalid number data.
+    * @description Tests the brokers.commandBroker function getAllCommandAliasData with a invalid number data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -628,7 +628,7 @@ describe(tst_con.cgetAllCommandAliasData, () => {
 
     /**
     * @function getAllCommandAliasData_inValidBoolean
-    * @description Tests the brokers commandBroker function getAllCommandAliasData with a invalid boolean data.
+    * @description Tests the brokers.commandBroker function getAllCommandAliasData with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -653,7 +653,7 @@ describe(tst_con.cgetAllCommandAliasData, () => {
 describe(tst_con.cgetCommandNamespaceDataObject, () => {
     /**
     * @function getCommandNamespaceDataObject_validData
-    * @description Tests the brokers commandBroker function getCommandNamespaceDataObject with a valid data.
+    * @description Tests the brokers.commandBroker function getCommandNamespaceDataObject with a valid data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -671,7 +671,7 @@ describe(tst_con.cgetCommandNamespaceDataObject, () => {
 
     /**
     * @function getCommandNamespaceDataObject_inValidCommandAliasDataStructureString
-    * @description Tests the brokers commandBroker function getCommandNamespaceDataObject with a invalid string data structure.
+    * @description Tests the brokers.commandBroker function getCommandNamespaceDataObject with a invalid string data structure.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -689,7 +689,7 @@ describe(tst_con.cgetCommandNamespaceDataObject, () => {
 
     /**
     * @function getCommandNamespaceDataObject_inValidNamespaceToFindString
-    * @description Tests the brokers commandBroker function getCommandNamespaceDataObject with a invalid string namespaceToFind.
+    * @description Tests the brokers.commandBroker function getCommandNamespaceDataObject with a invalid string namespaceToFind.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -707,7 +707,7 @@ describe(tst_con.cgetCommandNamespaceDataObject, () => {
 
     /**
     * @function getCommandNamespaceDataObject_inValidCommandAliasDataStructureNumber
-    * @description Tests the brokers commandBroker function getCommandNamespaceDataObject with a invalid number data structure.
+    * @description Tests the brokers.commandBroker function getCommandNamespaceDataObject with a invalid number data structure.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -725,7 +725,7 @@ describe(tst_con.cgetCommandNamespaceDataObject, () => {
 
     /**
     * @function getCommandNamespaceDataObject_inValidCommandAliasDataStructureBoolean
-    * @description Tests the brokers commandBroker function getCommandNamespaceDataObject with a invalid boolean data structure.
+    * @description Tests the brokers.commandBroker function getCommandNamespaceDataObject with a invalid boolean data structure.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -743,7 +743,7 @@ describe(tst_con.cgetCommandNamespaceDataObject, () => {
 
     /**
     * @function getCommandNamespaceDataObject_inValidNamespaceToFindNumber
-    * @description Tests the brokers commandBroker function getCommandNamespaceDataObject with a invalid number namespaceToFind.
+    * @description Tests the brokers.commandBroker function getCommandNamespaceDataObject with a invalid number namespaceToFind.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -761,7 +761,7 @@ describe(tst_con.cgetCommandNamespaceDataObject, () => {
 
     /**
     * @function getCommandNamespaceDataObject_inValidNamespaceToFindBoolean
-    * @description Tests the brokers commandBroker function getCommandNamespaceDataObject with a invalid boolean namespaceToFind.
+    * @description Tests the brokers.commandBroker function getCommandNamespaceDataObject with a invalid boolean namespaceToFind.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -787,7 +787,7 @@ describe(tst_con.cgetCommandNamespaceDataObject, () => {
 describe(tst_con.cgetCommandArgs, () => {
     /**
     * @function getCommandArgs_validData
-    * @description Tests the brokers commandBroker function getCommandArgs with a valid data.
+    * @description Tests the brokers.commandBroker function getCommandArgs with a valid data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -805,7 +805,7 @@ describe(tst_con.cgetCommandArgs, () => {
 
     /**
     * @function getCommandArgs_inValidString
-    * @description Tests the brokers commandBroker function getCommandArgs with a invalid string data.
+    * @description Tests the brokers.commandBroker function getCommandArgs with a invalid string data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -823,7 +823,7 @@ describe(tst_con.cgetCommandArgs, () => {
 
     /**
     * @function getCommandArgs_inValidDelimiterString
-    * @description Tests the brokers commandBroker function getCommandArgs with a invalid string delimiter.
+    * @description Tests the brokers.commandBroker function getCommandArgs with a invalid string delimiter.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -841,7 +841,7 @@ describe(tst_con.cgetCommandArgs, () => {
 
     /**
     * @function getCommandArgs_inValidNumber
-    * @description Tests the brokers commandBroker function getCommandArgs with a invalid integer delimiter.
+    * @description Tests the brokers.commandBroker function getCommandArgs with a invalid integer delimiter.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -859,7 +859,7 @@ describe(tst_con.cgetCommandArgs, () => {
 
     /**
     * @function getCommandArgs_inValidBoolean
-    * @description Tests the brokers commandBroker function getCommandArgs with a invalid boolean delimiter.
+    * @description Tests the brokers.commandBroker function getCommandArgs with a invalid boolean delimiter.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -885,7 +885,7 @@ describe(tst_con.cgetCommandArgs, () => {
 describe(tst_con.cexecuteCommand, () => {
     /**
     * @function executeCommand_validData
-    * @description Tests the brokers commandBroker function executeCommand with a valid data.
+    * @description Tests the brokers.commandBroker function executeCommand with a valid data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -902,7 +902,7 @@ describe(tst_con.cexecuteCommand, () => {
 
     /**
     * @function executeCommand_inValidString
-    * @description Tests the brokers commandBroker function executeCommand with a invalid string data.
+    * @description Tests the brokers.commandBroker function executeCommand with a invalid string data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -919,7 +919,7 @@ describe(tst_con.cexecuteCommand, () => {
 
     /**
     * @function executeCommand_inValidNumber
-    * @description Tests the brokers commandBroker function executeCommand with a invalid integer data.
+    * @description Tests the brokers.commandBroker function executeCommand with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -936,7 +936,7 @@ describe(tst_con.cexecuteCommand, () => {
 
     /**
     * @function executeCommand_inValidBoolean
-    * @description Tests the brokers commandBroker function executeCommand with a invalid boolean data.
+    * @description Tests the brokers.commandBroker function executeCommand with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -953,7 +953,7 @@ describe(tst_con.cexecuteCommand, () => {
 
     /**
     * @function executeCommand_inValidUndefined
-    * @description Tests the brokers commandBroker function executeCommand with a invalid undefined data.
+    * @description Tests the brokers.commandBroker function executeCommand with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/15
     */
@@ -970,7 +970,7 @@ describe(tst_con.cexecuteCommand, () => {
 
     /**
     * @function executeCommand_inValidNaN
-    * @description Tests the brokers commandBroker function executeCommand with a invalid NaN data.
+    * @description Tests the brokers.commandBroker function executeCommand with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/15
     */

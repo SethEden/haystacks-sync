@@ -34,7 +34,7 @@ const {num} = hayConst;
 describe(tst_con.cparseColorRangeInputs, () => {
   /**
   * @function parseColorRangeInputs_validDataString
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a valid string input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a valid string input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -52,7 +52,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_validDataMixedUse1
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a valid mixed input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a valid mixed input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -70,7 +70,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_validDataMixedUse2
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a valid mixed input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a valid mixed input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -88,7 +88,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_validDataInteger
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a valid integer input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a valid integer input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -106,7 +106,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputDataUndefined1
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -126,7 +126,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputDataUndefined2
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -147,7 +147,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputDataNaN1
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -167,7 +167,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputDataNaN2
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -187,7 +187,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputMetaDataUndefined1
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input meta data.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input meta data.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -207,7 +207,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputMetaDataUndefined2
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input meta data.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid undefined input meta data.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -227,7 +227,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputMetaDataNaN1
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input meta data.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input meta data.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -247,7 +247,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 
   /**
   * @function parseColorRangeInputs_inValidInputMetaDataNaN2
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input meta data.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function parseColorRangeInputs with a invalid nan input meta data.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -275,7 +275,7 @@ describe(tst_con.cparseColorRangeInputs, () => {
 describe(tst_con.cdoesArrayContainValue, () => {
   /**
   * @function doesArrayContainValue_validDataInputDataString
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a valid string array input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a valid string array input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -296,7 +296,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
 
   /**
   * @function doesArrayContainValue_validDataInputDataInteger
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a valid integer array input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a valid integer array input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -317,7 +317,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
 
   /**
   * @function doesArrayContainValue_validDataInputDataBoolean
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a valid boolean array input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a valid boolean array input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -338,7 +338,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
 
   /**
   * @function doesArrayContainValue_validDataInputDataObject
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a valid object array input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a valid object array input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -365,7 +365,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
 
   /**
   * @function doesArrayContainValue_inValidInputDataUndefined
-  * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a invalid undefined input.
+  * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a invalid undefined input.
   * @author Json Howard
   * @date 2023/04/06
   */
@@ -386,7 +386,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
 
   /**
    * @function doesArrayContainValue_inValidInputDataNaN
-   * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a invalid NaN input.
+   * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a invalid NaN input.
    * @author Json Howard
    * @date 2023/04/06
    */
@@ -407,7 +407,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
 
   /**
    * @function doesArrayContainValue_inValidDataStorageInputMetaDataInteger
-   * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a invalid integer input meta data.
+   * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a invalid integer input meta data.
    * @author Json Howard
    * @date 2023/04/06
    */
@@ -426,7 +426,7 @@ describe(tst_con.cdoesArrayContainValue, () => {
   
   /**
    * @function doesArrayContainValue_inValidDataStorageInputMetaDataBoolean
-   * @description Tests the businessRules rules arrayParsing auxiliaryArrayParsing function doesArrayContainValue with a invalid boolean input meta data.
+   * @description Tests the businessRules.rules.arrayParsing.auxiliaryArrayParsing function doesArrayContainValue with a invalid boolean input meta data.
    * @author Json Howard
    * @date 2023/04/06
    */

@@ -36,7 +36,7 @@ const { wrd } = hayConst;
 describe(tst_con.cisStringCamelCase, () => {
     /**
      * @function isStringCamelCase_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringCamelCase with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringCamelCase with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -58,7 +58,7 @@ describe(tst_con.cisStringCamelCase, () => {
 
     /**
      * @function isStringCamelCase_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringCamelCase with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringCamelCase with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -80,7 +80,7 @@ describe(tst_con.cisStringCamelCase, () => {
 
     /**
      * @function isStringCamelCase_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringCamelCase with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringCamelCase with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -102,7 +102,7 @@ describe(tst_con.cisStringCamelCase, () => {
 
     /**
      * @function isStringCamelCase_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringCamelCase with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringCamelCase with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -124,7 +124,7 @@ describe(tst_con.cisStringCamelCase, () => {
 
     /**
      * @function isStringCamelCase_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringCamelCase with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringCamelCase with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -146,7 +146,7 @@ describe(tst_con.cisStringCamelCase, () => {
 
     /**
      * @function isStringCamelCase_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringCamelCase with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringCamelCase with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -168,7 +168,7 @@ describe(tst_con.cisStringCamelCase, () => {
 
     /**
      * @function isStringCamelCase_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringCamelCase with a invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringCamelCase with a invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -191,14 +191,7 @@ describe(tst_con.cisStringCamelCase, () => {
 
 /**
  * @function mapWordToCamelCaseWord
- * @description Tests the positive and negative test cases of the mapWordToCamelCaseWord
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.cmapWordToCamelCaseWord, () => {
-    /**
-     * @function mapWordToCamelCaseWord_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function mapWordToCamelCaseWord with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -220,7 +213,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 
     /**
      * @function mapWordToCamelCaseWord_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function mapWordToCamelCaseWord with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -242,7 +235,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 
     /**
      * @function mapWordToCamelCaseWord_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function mapWordToCamelCaseWord with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -264,7 +257,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 
     /**
      * @function mapWordToCamelCaseWord_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function mapWordToCamelCaseWord with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -286,7 +279,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 
     /**
      * @function mapWordToCamelCaseWord_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function mapWordToCamelCaseWord with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -308,7 +301,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 
     /**
      * @function mapWordToCamelCaseWord_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function mapWordToCamelCaseWord with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -330,7 +323,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 
     /**
      * @function mapWordToCamelCaseWord_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function mapWordToCamelCaseWord with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -353,14 +346,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 
 /**
  * @function simplifyAndConsolidateString
- * @description Tests the positive and negative test cases of the simplifyAndConsolidateString
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.csimplifyAndConsolidateString, () => {
-    /**
-     * @function simplifyAndConsolidateString_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function simplifyAndConsolidateString with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -382,7 +368,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 
     /**
      * @function simplifyAndConsolidateString_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function simplifyAndConsolidateString with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -404,7 +390,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 
     /**
      * @function simplifyAndConsolidateString_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function simplifyAndConsolidateString with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -426,7 +412,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 
     /**
      * @function simplifyAndConsolidateString_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function simplifyAndConsolidateString with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -448,7 +434,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 
     /**
      * @function simplifyAndConsolidateString_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function simplifyAndConsolidateString with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -470,7 +456,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 
     /**
      * @function simplifyAndConsolidateString_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function simplifyAndConsolidateString with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -492,7 +478,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 
     /**
      * @function simplifyAndConsolidateString_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function simplifyAndConsolidateString with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -515,14 +501,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 
 /**
  * @function compareSimplifiedAndConsolidatedStrings
- * @description Tests the positive and negative test cases of the compareSimplifiedAndConsolidatedStrings
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
-    /**
-     * @function compareSimplifiedAndConsolidatedStrings_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function compareSimplifiedAndConsolidatedStrings with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -544,7 +523,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 
     /**
      * @function compareSimplifiedAndConsolidatedStrings_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -566,7 +545,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 
     /**
      * @function compareSimplifiedAndConsolidatedStrings_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -588,7 +567,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 
     /**
      * @function compareSimplifiedAndConsolidatedStrings_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -610,7 +589,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 
     /**
      * @function compareSimplifiedAndConsolidatedStrings_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -632,7 +611,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 
     /**
      * @function compareSimplifiedAndConsolidatedStrings_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -654,7 +633,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 
     /**
      * @function compareSimplifiedAndConsolidatedStrings_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -677,14 +656,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 
 /**
  * @function countCamelCaseWords
- * @description Tests the positive and negative test cases of the countCamelCaseWords
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.ccountCamelCaseWords, () => {
-    /**
-     * @function countCamelCaseWords_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countCamelCaseWords with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -706,7 +678,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 
     /**
      * @function countCamelCaseWords_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countCamelCaseWords with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -728,7 +700,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 
     /**
      * @function countCamelCaseWords_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countCamelCaseWords with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -750,7 +722,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 
     /**
      * @function countCamelCaseWords_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countCamelCaseWords with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -772,7 +744,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 
     /**
      * @function countCamelCaseWords_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countCamelCaseWords with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -794,7 +766,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 
     /**
      * @function countCamelCaseWords_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countCamelCaseWords with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -816,7 +788,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 
     /**
      * @function countCamelCaseWords_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countCamelCaseWords with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -839,14 +811,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 
 /**
  * @function doesStringContainAcronym
- * @description Tests the positive and negative test cases of the doesStringContainAcronym
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.cdoesStringContainAcronym, () => {
-    /**
-     * @function doesStringContainAcronym_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function doesStringContainAcronym with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -868,7 +833,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 
     /**
      * @function doesStringContainAcronym_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function doesStringContainAcronym with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -890,7 +855,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 
     /**
      * @function doesStringContainAcronym_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function doesStringContainAcronym with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -912,7 +877,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 
     /**
      * @function doesStringContainAcronym_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function doesStringContainAcronym with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -934,7 +899,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 
     /**
      * @function doesStringContainAcronym_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function doesStringContainAcronym with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -956,7 +921,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 
     /**
      * @function doesStringContainAcronym_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function doesStringContainAcronym with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -978,7 +943,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 
     /**
      * @function doesStringContainAcronym_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function doesStringContainAcronym with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1001,14 +966,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 
 /**
  * @function determineWordDelimiter
- * @description Tests the positive and negative test cases of the determineWordDelimiter
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.cdetermineWordDelimiter, () => {
-    /**
-     * @function determineWordDelimiter_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function determineWordDelimiter with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1030,7 +988,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 
     /**
      * @function determineWordDelimiter_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function determineWordDelimiter with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1052,7 +1010,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 
     /**
      * @function determineWordDelimiter_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function determineWordDelimiter with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1074,7 +1032,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 
     /**
      * @function determineWordDelimiter_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function determineWordDelimiter with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1096,7 +1054,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 
     /**
      * @function determineWordDelimiter_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function determineWordDelimiter with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1118,7 +1076,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 
     /**
      * @function determineWordDelimiter_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function determineWordDelimiter with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1140,7 +1098,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 
     /**
      * @function determineWordDelimiter_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function determineWordDelimiter with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1163,14 +1121,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 
 /**
  * @function countDelimiterInString
- * @description Tests the positive and negative test cases of the countDelimiterInString
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.ccountDelimiterInString, () => {
-    /**
-     * @function countDelimiterInString_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countDelimiterInString with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1192,7 +1143,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 
     /**
      * @function countDelimiterInString_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countDelimiterInString with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1214,7 +1165,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 
     /**
      * @function countDelimiterInString_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countDelimiterInString with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1236,7 +1187,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 
     /**
      * @function countDelimiterInString_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countDelimiterInString with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1258,7 +1209,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 
     /**
      * @function countDelimiterInString_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countDelimiterInString with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1280,7 +1231,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 
     /**
      * @function countDelimiterInString_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countDelimiterInString with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1302,7 +1253,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 
     /**
      * @function countDelimiterInString_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function countDelimiterInString with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1326,14 +1277,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 
 /**
  * @function getWordCountInString
- * @description Tests the positive and negative test cases of the getWordCountInString
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.cgetWordCountInString, () => {
-    /**
-     * @function getWordCountInString_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function getWordCountInString with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1355,7 +1299,7 @@ describe(tst_con.cgetWordCountInString, () => {
 
     /**
      * @function getWordCountInString_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function getWordCountInString with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1377,7 +1321,7 @@ describe(tst_con.cgetWordCountInString, () => {
 
     /**
      * @function getWordCountInString_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function getWordCountInString with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1399,7 +1343,7 @@ describe(tst_con.cgetWordCountInString, () => {
 
     /**
      * @function getWordCountInString_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function getWordCountInString with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1421,7 +1365,7 @@ describe(tst_con.cgetWordCountInString, () => {
 
     /**
      * @function getWordCountInString_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function getWordCountInString with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1443,7 +1387,7 @@ describe(tst_con.cgetWordCountInString, () => {
 
     /**
      * @function getWordCountInString_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function getWordCountInString with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1465,7 +1409,7 @@ describe(tst_con.cgetWordCountInString, () => {
   
     /**
      * @function getWordCountInString_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function getWordCountInString with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1488,14 +1432,7 @@ describe(tst_con.cgetWordCountInString, () => {
 
 /**
  * @function isStringList
- * @description Tests the positive and negative test cases of the isStringList
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.cisStringList, () => {
-    /**
-     * @function isStringList_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringList with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1517,7 +1454,7 @@ describe(tst_con.cisStringList, () => {
 
     /**
      * @function isStringList_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringList with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1539,7 +1476,7 @@ describe(tst_con.cisStringList, () => {
 
     /**
      * @function isStringList_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringList with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1561,7 +1498,7 @@ describe(tst_con.cisStringList, () => {
 
     /**
      * @function isStringList_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringList with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1583,7 +1520,7 @@ describe(tst_con.cisStringList, () => {
 
     /**
      * @function isStringList_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringList with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1605,7 +1542,7 @@ describe(tst_con.cisStringList, () => {
 
     /**
      * @function isStringList_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringList with a invalid integer inputMetadata.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a invalid integer inputMetadata.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1627,7 +1564,7 @@ describe(tst_con.cisStringList, () => {
 
     /**
      * @function isStringList_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function isStringList with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1650,14 +1587,7 @@ describe(tst_con.cisStringList, () => {
 
 /**
  * @function aggregateNumericalDifferenceBetweenTwoStrings
- * @description Tests the positive and negative test cases of the aggregateNumericalDifferenceBetweenTwoStrings
- * @author Json Howard
- * @date 2023/05/02
- */
-describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
-    /**
-     * @function aggregateNumericalDifferenceBetweenTwoStrings_validDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a valid input.
+ * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1679,7 +1609,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
 
     /**
      * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidDataInputDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid string input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1701,7 +1631,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
 
     /**
      * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringParsing wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1723,7 +1653,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
 
     /**
      * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid integer input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid integer input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1745,7 +1675,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
 
     /**
      * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1767,7 +1697,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
 
     /**
      * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringParsing wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1789,7 +1719,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
 
     /**
      * @function aggregateNumericalDifferenceBetweenTwoStrings_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringParsing wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a invalid boolean input.
      * @author Json Howard
      * @date 2023/05/02
      */

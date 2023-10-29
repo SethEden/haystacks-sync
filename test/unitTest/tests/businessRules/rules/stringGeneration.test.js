@@ -38,7 +38,7 @@ const { bas, sys, wrd, cfg, cmd, num } = hayConst;
 describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
     /**
      * @function generateRandomMixedCaseTextByLength_validDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextByLength with a valid input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -60,7 +60,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 
     /**
      * @function generateRandomMixedCaseTextByLength_inValidDataInputDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -82,7 +82,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 
     /**
      * @function generateRandomMixedCaseTextByLength_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -104,7 +104,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 
     /**
      * @function generateRandomMixedCaseTextByLength_inValidInputDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextByLength with invalid integer input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextByLength with invalid integer input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -126,7 +126,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 
     /**
      * @function generateRandomMixedCaseTextByLength_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextByLength with invalid boolean input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextByLength with invalid boolean input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -148,7 +148,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 
     /**
      * @function generateRandomMixedCaseTextByLength_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextByLength with invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextByLength with invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -170,7 +170,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 
     /**
      * @function generateRandomMixedCaseTextByLength_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextByLength with invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextByLength with invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -193,14 +193,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 
 /**
  * @function generateRandomUpperCaseTextByLength
- * @description Tests the positive and negative test cases of the generateRandomUpperCaseTextByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
-    /**
-     * @function generateRandomUpperCaseTextByLength_validDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -222,7 +215,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 
     /**
      * @function generateRandomUpperCaseTextByLength_inValidDataInputDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -244,7 +237,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 
     /**
      * @function generateRandomUpperCaseTextByLength_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -266,7 +259,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 
     /**
      * @function generateRandomUpperCaseTextByLength_inValidInputDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextByLength with invalid integer input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with invalid integer input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -288,7 +281,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 
     /**
      * @function generateRandomUpperCaseTextByLength_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextByLength with invalid boolean input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with invalid boolean input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -310,7 +303,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 
     /**
      * @function generateRandomUpperCaseTextByLength_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextByLength with invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -332,7 +325,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 
     /**
      * @function generateRandomUpperCaseTextByLength_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextByLength with invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -355,14 +348,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 
 /**
  * @function generateRandomLowerCaseTextByLength
- * @description Tests the positive and negative test cases of the generateRandomLowerCaseTextByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
-    /**
-     * @function generateRandomLowerCaseTextByLength_validDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -384,7 +370,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 
     /**
      * @function generateRandomLowerCaseTextByLength_inValidDataInputDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -406,7 +392,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 
     /**
      * @function generateRandomLowerCaseTextByLength_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -428,7 +414,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 
     /**
      * @function generateRandomLowerCaseTextByLength_inValidInputDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextByLength with invalid integer input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with invalid integer input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -450,7 +436,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 
     /**
      * @function generateRandomLowerCaseTextByLength_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextByLength with invalid boolean input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with invalid boolean input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -472,7 +458,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 
     /**
      * @function generateRandomLowerCaseTextByLength_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextByLength with invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -494,7 +480,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 
     /**
      * @function generateRandomLowerCaseTextByLength_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextByLength with invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -517,14 +503,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 
 /**
  * @function generateRandomMixedCaseTextWithSpecialCharactersByLength
- * @description Tests the positive and negative test cases of the generateRandomMixedCaseTextWithSpecialCharactersByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () => {
-    /**
-     * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_validDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -546,7 +525,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -568,7 +547,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -590,7 +569,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid integer input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid integer input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -612,7 +591,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid boolean input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid boolean input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -634,7 +613,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -656,7 +635,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -679,14 +658,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 
 /**
  * @function generateRandomUpperCaseTextWithSpecialCharactersByLength
- * @description Tests the positive and negative test cases of the generateRandomUpperCaseTextWithSpecialCharactersByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () => {
-    /**
-     * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_validDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -708,7 +680,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -730,7 +702,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -752,7 +724,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid integer input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid integer input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -774,7 +746,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid boolean input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid boolean input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -796,7 +768,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -818,7 +790,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -841,14 +813,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 
 /**
  * @function generateRandomLowerCaseTextWithSpecialCharactersByLength
- * @description Tests the positive and negative test cases of the generateRandomLowerCaseTextWithSpecialCharactersByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () => {
-    /**
-     * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_validDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -870,7 +835,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -892,7 +857,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidDataInputMetaDataString
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid string input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid string input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -914,7 +879,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid integer input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid integer input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -936,7 +901,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid boolean input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid boolean input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -958,7 +923,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputMetaDataInteger
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -980,7 +945,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 
     /**
      * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_inValidInputMetaDataBoolean
-     * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -1003,14 +968,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 
 /**
  * @function generateRandomMixedCaseAlphaNumericCodeByLength
- * @description Tests the positive and negative test cases of the generateRandomMixedCaseAlphaNumericCodeByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
-  /**
-   * @function generateRandomMixedCaseAlphaNumericCodeByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1032,7 +990,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1054,7 +1012,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1076,7 +1034,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1098,7 +1056,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1120,7 +1078,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1142,7 +1100,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1165,14 +1123,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 
 /**
  * @function generateRandomUpperCaseAlphaNumericCodeByLength
- * @description Tests the positive and negative test cases of the generateRandomUpperCaseAlphaNumericCodeByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
-  /**
-   * @function generateRandomUpperCaseAlphaNumericCodeByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1194,7 +1145,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1216,7 +1167,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1238,7 +1189,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1260,7 +1211,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1282,7 +1233,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1304,7 +1255,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1327,14 +1278,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 
 /**
  * @function generateRandomLowerCaseAlphaNumericCodeByLength
- * @description Tests the positive and negative test cases of the generateRandomLowerCaseAlphaNumericCodeByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
-  /**
-   * @function generateRandomLowerCaseAlphaNumericCodeByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1356,7 +1300,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1378,7 +1322,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1400,7 +1344,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1422,7 +1366,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1444,7 +1388,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1466,7 +1410,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1489,14 +1433,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 
 /**
  * @function generateRandomNumericCodeByLength
- * @description Tests the positive and negative test cases of the generateRandomNumericCodeByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
-  /**
-   * @function generateRandomNumericCodeByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomNumericCodeByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1518,7 +1455,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 
   /**
    * @function generateRandomNumericCodeByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1540,7 +1477,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 
   /**
    * @function generateRandomNumericCodeByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomNumericCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1562,7 +1499,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 
   /**
    * @function generateRandomNumericCodeByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomNumericCodeByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1584,7 +1521,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 
   /**
    * @function generateRandomNumericCodeByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomNumericCodeByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1606,7 +1543,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 
   /**
    * @function generateRandomNumericCodeByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomNumericCodeByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1628,7 +1565,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 
   /**
    * @function generateRandomNumericCodeByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomNumericCodeByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1651,14 +1588,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 
 /**
  * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength
- * @description Tests the positive and negative test cases of the generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength
- * @author Json Howard
- * @date 2023/05/06
- */
-describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
-  /**
-   * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1680,7 +1610,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1702,7 +1632,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1724,7 +1654,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1746,7 +1676,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1768,7 +1698,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1790,7 +1720,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1813,14 +1743,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 
 /**
  * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength
- * @description Tests the positive and negative test cases of the generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
-  /**
-   * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1842,7 +1765,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1864,7 +1787,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1886,7 +1809,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1908,7 +1831,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1930,7 +1853,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1952,7 +1875,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1975,14 +1898,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 
 /**
  * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength
- * @description Tests the positive and negative test cases of the generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
-  /**
-   * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2004,7 +1920,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2026,7 +1942,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2048,7 +1964,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2070,7 +1986,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2092,7 +2008,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2114,7 +2030,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2137,14 +2053,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 
 /**
  * @function generateRandomSpecialCharacterCodeByLength
- * @description Tests the positive and negative test cases of the generateRandomSpecialCharacterCodeByLength
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
-  /**
-   * @function generateRandomSpecialCharacterCodeByLength_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomSpecialCharacterCodeByLength with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2165,7 +2074,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 
   /**
    * @function generateRandomSpecialCharacterCodeByLength_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2187,7 +2096,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 
   /**
    * @function generateRandomSpecialCharacterCodeByLength_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2209,7 +2118,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 
   /**
    * @function generateRandomSpecialCharacterCodeByLength_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2231,7 +2140,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 
   /**
    * @function generateRandomSpecialCharacterCodeByLength_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2253,7 +2162,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 
   /**
    * @function generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2275,7 +2184,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 
   /**
    * @function generateRandomSpecialCharacterCodeByLength_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2298,14 +2207,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 
 /**
  * @function generateValidEmail
- * @description Tests the positive and negative test cases of the generateValidEmail
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateValidEmail, () => {
-  /**
-   * @function generateValidEmail_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2326,7 +2228,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2348,7 +2250,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2370,7 +2272,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2392,7 +2294,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2414,7 +2316,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2436,7 +2338,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2458,7 +2360,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid undefined input.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2480,7 +2382,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid NaN input.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2502,7 +2404,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2524,7 +2426,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
   /**
    * @function generateValidEmail_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateValidEmail with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2547,14 +2449,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 
 /**
  * @function generateInvalidEmail
- * @description Tests the positive and negative test cases of the generateInvalidEmail
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateInvalidEmail, () => {
-  /**
-   * @function generateInvalidEmail_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2575,7 +2470,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2597,7 +2492,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2619,7 +2514,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2641,7 +2536,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2663,7 +2558,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2685,7 +2580,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2707,7 +2602,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid undefined input.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2729,7 +2624,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid NaN input.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2751,7 +2646,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2773,7 +2668,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
   /**
    * @function generateInvalidEmail_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateInvalidEmail with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2796,14 +2691,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 
 /**
  * @function generateRandomBrightColor
- * @description Tests the positive and negative test cases of the generateRandomBrightColor
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateRandomBrightColor, () => {
-  /**
-   * @function generateRandomBrightColor_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2824,7 +2712,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_validDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2845,7 +2733,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_validDataStringInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2866,7 +2754,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_validDataIntegerString
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2887,7 +2775,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2909,7 +2797,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2931,7 +2819,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2953,7 +2841,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2975,7 +2863,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2997,7 +2885,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3019,7 +2907,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid undefined input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3041,7 +2929,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid NaN input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3063,7 +2951,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3085,7 +2973,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
   /**
    * @function generateRandomBrightColor_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateRandomBrightColor with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3108,14 +2996,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 
 /**
  * @function generateRandomDarkColor
- * @description Tests the positive and negative test cases of the generateRandomDarkColor
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateRandomDarkColor, () => {
-  /**
-   * @function generateRandomDarkColor_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3136,7 +3017,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_validDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3157,7 +3038,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_validDataStringInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3178,7 +3059,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_validDataIntegerString
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3199,7 +3080,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3221,7 +3102,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3243,7 +3124,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3265,7 +3146,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3287,7 +3168,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3309,7 +3190,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3331,7 +3212,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid undefined input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3353,7 +3234,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid NaN input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3375,7 +3256,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3397,7 +3278,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
   /**
    * @function generateRandomDarkColor_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateRandomDarkColor with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3420,14 +3301,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 
 /**
  * @function generateRandomColor
- * @description Tests the positive and negative test cases of the generateRandomColor
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.cgenerateRandomColor, () => {
-  /**
-   * @function generateRandomColor_validDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with a valid input.
+ * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3448,7 +3322,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_validDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3469,7 +3343,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_validDataStringInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3490,7 +3364,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_validDataIntegerString
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3511,7 +3385,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidDataInputDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3533,7 +3407,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid string input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3555,7 +3429,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid integer input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3577,7 +3451,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid boolean input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3599,7 +3473,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3621,7 +3495,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3643,7 +3517,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid undefined input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3665,7 +3539,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid NaN input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3687,7 +3561,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputMetaDataUndefined
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3709,7 +3583,7 @@ describe(tst_con.cgenerateRandomColor, () => {
 
   /**
    * @function generateRandomColor_inValidInputMetaDataNaN
-   * @description Tests the businessRules rules stringGeneration function generateRandomColor with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */

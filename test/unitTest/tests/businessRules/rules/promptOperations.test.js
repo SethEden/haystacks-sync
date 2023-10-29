@@ -35,7 +35,7 @@ const { bas, wrd } = hayConst;
 describe(tst_con.cprompt, () => {
   /**
    * @function prompt_validDataString
-   * @description Tests the businessRules rules promptOperations function prompt with a valid string input.
+   * @description Tests the businessRules.rules.promptOperations function prompt with a valid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -57,7 +57,7 @@ describe(tst_con.cprompt, () => {
   
   /**
    * @function prompt_inValidDataInputDataString
-   * @description Tests the businessRules rules promptOperations function prompt with a invalid string input.
+   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -79,7 +79,7 @@ describe(tst_con.cprompt, () => {
   
   /**
    * @function prompt_inValidDataInputMetaDataString
-   * @description Tests the businessRules rules promptOperations function prompt with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -101,7 +101,7 @@ describe(tst_con.cprompt, () => {
   
   /**
    * @function prompt_inValidInputDataInteger
-   * @description Tests the businessRules rules promptOperations function prompt with a invalid integer input.
+   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -123,7 +123,7 @@ describe(tst_con.cprompt, () => {
 
   /**
    * @function prompt_inValidInputDataBoolean
-   * @description Tests the businessRules rules promptOperations function prompt with a invalid boolean input.
+   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -145,7 +145,7 @@ describe(tst_con.cprompt, () => {
 
   /**
    * @function prompt_inValidInputMetaDataInteger
-   * @description Tests the businessRules rules promptOperations function prompt with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -167,7 +167,7 @@ describe(tst_con.cprompt, () => {
 
   /**
    * @function prompt_inValidInputMetaDataBoolean
-   * @description Tests the businessRules rules promptOperations function prompt with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.promptOperations function prompt with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */

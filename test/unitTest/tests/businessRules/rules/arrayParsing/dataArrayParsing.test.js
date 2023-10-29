@@ -40,7 +40,7 @@ const { sys, wrd } = hayConst;
 describe(tst_con.carraysAreEqual, () => {
     /**
     * @function arraysAreEqual_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -58,7 +58,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -76,7 +76,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -94,7 +94,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -112,7 +112,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -130,7 +130,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -148,7 +148,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -166,7 +166,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -184,7 +184,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -202,7 +202,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputMetaDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -220,7 +220,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function arraysAreEqual_inValidInputMetaDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arraysAreEqual with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arraysAreEqual with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -239,14 +239,7 @@ describe(tst_con.carraysAreEqual, () => {
 
 /**
  * @function storeData
- * @description Tests the positive and negative test cases of the storeData
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cstoreData, () => {
-    /**
-    * @function storeData_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -265,7 +258,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -284,7 +277,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -303,7 +296,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -322,7 +315,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -341,7 +334,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -360,7 +353,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -379,7 +372,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidInputMetaDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -398,7 +391,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidInputMetaDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function storeData with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function storeData with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -418,14 +411,7 @@ describe(tst_con.cstoreData, () => {
 
 /**
  * @function getStoredData
- * @description Tests the positive and negative test cases of the getStoredData
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cgetStoredData, () => {
-    /**
-    * @function getStoredData_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -445,7 +431,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -465,7 +451,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -485,7 +471,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -505,7 +491,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -525,7 +511,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -545,7 +531,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -565,7 +551,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid undefiend data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid undefiend data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -585,7 +571,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -605,7 +591,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputMetaDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -625,7 +611,7 @@ describe(tst_con.cgetStoredData, () => {
 
     /**
     * @function getStoredData_inValidInputMetaDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getStoredData with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -646,14 +632,7 @@ describe(tst_con.cgetStoredData, () => {
 
 /**
  * @function isObjectEmpty
- * @description Tests the positive and negative test cases of the isObjectEmpty
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cisObjectEmpty, () => {
-    /**
-    * @function isObjectEmpty_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -671,7 +650,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -689,7 +668,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -707,7 +686,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -725,7 +704,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -743,7 +722,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -761,7 +740,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -779,7 +758,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -797,7 +776,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -815,7 +794,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputMetaDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid undefiend inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid undefiend inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -833,7 +812,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
     /**
     * @function isObjectEmpty_inValidInputMetaDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObjectEmpty with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -852,14 +831,7 @@ describe(tst_con.cisObjectEmpty, () => {
 
 /**
  * @function isArrayEmpty
- * @description Tests the positive and negative test cases of the isArrayEmpty
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cisArrayEmpty, () => {
-    /**
-    * @function isArrayEmpty_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -877,7 +849,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -895,7 +867,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -913,7 +885,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -931,7 +903,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -949,7 +921,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -967,7 +939,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -985,7 +957,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidInputMetaDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1003,7 +975,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
     /**
     * @function isArrayEmpty_inValidInputMetaDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayEmpty with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayEmpty with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1022,14 +994,7 @@ describe(tst_con.cisArrayEmpty, () => {
 
 /**
  * @function isObject
- * @description Tests the positive and negative test cases of the isObject
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cisObject, () => {
-    /**
-    * @function isObject_validDataObject
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObject with a valid object data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObject with a valid object data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1047,7 +1012,7 @@ describe(tst_con.cisObject, () => {
 
     /**
     * @function isObject_validDataArray
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObject with a valid array data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObject with a valid array data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1065,7 +1030,7 @@ describe(tst_con.cisObject, () => {
 
     /**
     * @function isObject_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObject with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObject with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1083,7 +1048,7 @@ describe(tst_con.cisObject, () => {
 
     /**
     * @function isObject_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObject with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObject with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1101,7 +1066,7 @@ describe(tst_con.cisObject, () => {
 
     /**
     * @function isObject_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObject with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObject with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1119,7 +1084,7 @@ describe(tst_con.cisObject, () => {
 
     /**
     * @function isObject_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObject with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObject with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1137,7 +1102,7 @@ describe(tst_con.cisObject, () => {
 
     /**
     * @function isObject_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isObject with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObject with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1156,14 +1121,7 @@ describe(tst_con.cisObject, () => {
 
 /**
  * @function isArray
- * @description Tests the positive and negative test cases of the isArray
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cisArray, () => {
-    /**
-    * @function isArray_validDataObject
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArray with a valid object data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArray with a valid object data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1181,7 +1139,7 @@ describe(tst_con.cisArray, () => {
 
     /**
     * @function isArray_validDataArray
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArray with a valid Array data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArray with a valid Array data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1199,7 +1157,7 @@ describe(tst_con.cisArray, () => {
 
     /**
     * @function isArray_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArray with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArray with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1217,7 +1175,7 @@ describe(tst_con.cisArray, () => {
 
     /**
     * @function isArray_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArray with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArray with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1235,7 +1193,7 @@ describe(tst_con.cisArray, () => {
 
     /**
     * @function isArray_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArray with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArray with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1253,7 +1211,7 @@ describe(tst_con.cisArray, () => {
 
     /**
     * @function isArray_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArray with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArray with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1271,7 +1229,7 @@ describe(tst_con.cisArray, () => {
 
     /**
     * @function isArray_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArray with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArray with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1290,14 +1248,7 @@ describe(tst_con.cisArray, () => {
 
 /**
  * @function isArrayOrObject
- * @description Tests the positive and negative test cases of the isArrayOrObject
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cisArrayOrObject, () => {
-    /**
-    * @function isArrayOrObject_validDataObject
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayOrObject with a valid object data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayOrObject with a valid object data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1315,7 +1266,7 @@ describe(tst_con.cisArrayOrObject, () => {
 
     /**
     * @function isArrayOrObject_validDataArray
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayOrObject with a valid array data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayOrObject with a valid array data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1333,7 +1284,7 @@ describe(tst_con.cisArrayOrObject, () => {
 
     /**
     * @function isArrayOrObject_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayOrObject with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayOrObject with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1351,7 +1302,7 @@ describe(tst_con.cisArrayOrObject, () => {
 
     /**
     * @function isArrayOrObject_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayOrObject with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayOrObject with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1369,7 +1320,7 @@ describe(tst_con.cisArrayOrObject, () => {
 
     /**
     * @function isArrayOrObject_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayOrObject with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayOrObject with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1387,7 +1338,7 @@ describe(tst_con.cisArrayOrObject, () => {
 
     /**
     * @function isArrayOrObject_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayOrObject with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayOrObject with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1405,7 +1356,7 @@ describe(tst_con.cisArrayOrObject, () => {
 
     /**
     * @function isArrayOrObject_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isArrayOrObject with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isArrayOrObject with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1424,14 +1375,7 @@ describe(tst_con.cisArrayOrObject, () => {
 
 /**
  * @function isNonZeroLengthArray
- * @description Tests the positive and negative test cases of the isNonZeroLengthArray
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cisNonZeroLengthArray, () => {
-    /**
-    * @function isNonZeroLengthArray_validDataObject
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isNonZeroLengthArray with a valid object data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isNonZeroLengthArray with a valid object data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1449,7 +1393,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 
     /**
     * @function isNonZeroLengthArray_validDataArray
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isNonZeroLengthArray with a valid array data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isNonZeroLengthArray with a valid array data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1467,7 +1411,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 
     /**
     * @function isNonZeroLengthArray_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isNonZeroLengthArray with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isNonZeroLengthArray with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1485,7 +1429,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 
     /**
     * @function isNonZeroLengthArray_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isNonZeroLengthArray with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isNonZeroLengthArray with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1503,7 +1447,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 
     /**
     * @function isNonZeroLengthArray_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isNonZeroLengthArray with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isNonZeroLengthArray with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1521,7 +1465,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 
     /**
     * @function isNonZeroLengthArray_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isNonZeroLengthArray with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isNonZeroLengthArray with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1539,7 +1483,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 
     /**
     * @function isNonZeroLengthArray_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function isNonZeroLengthArray with a invalid naN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isNonZeroLengthArray with a invalid naN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1558,14 +1502,7 @@ describe(tst_con.cisNonZeroLengthArray, () => {
 
 /**
  * @function arrayDeepClone
- * @description Tests the positive and negative test cases of the arrayDeepClone
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.carrayDeepClone, () => {
-    /**
-    * @function arrayDeepClone_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1583,7 +1520,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a valid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a valid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1601,7 +1538,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1619,7 +1556,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1637,7 +1574,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1655,7 +1592,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1673,7 +1610,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1691,7 +1628,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1709,7 +1646,7 @@ describe(tst_con.carrayDeepClone, () => {
 
     /**
     * @function arrayDeepClone_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function arrayDeepClone with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function arrayDeepClone with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1728,14 +1665,7 @@ describe(tst_con.carrayDeepClone, () => {
 
 /**
  * @function objectDeepMerge
- * @description Tests the positive and negative test cases of the objectDeepMerge
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cobjectDeepMerge, () => {
-    /**
-    * @function objectDeepMerge_validDataObject
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1753,7 +1683,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1771,7 +1701,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1789,7 +1719,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1807,7 +1737,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1825,7 +1755,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1843,7 +1773,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1861,7 +1791,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1879,7 +1809,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1897,7 +1827,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputMetaDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1915,7 +1845,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
     /**
     * @function objectDeepMerge_inValidInputMetaDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function objectDeepMerge with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function objectDeepMerge with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1934,14 +1864,7 @@ describe(tst_con.cobjectDeepMerge, () => {
 
 /**
  * @function getNamespacedDataObject
- * @description Tests the positive and negative test cases of the getNamespacedDataObject
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.cgetNamespacedDataObject, () => {
-    /**
-    * @function getNamespacedDataObject_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -1971,7 +1894,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2001,7 +1924,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2031,7 +1954,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2061,7 +1984,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2091,7 +2014,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2121,7 +2044,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2151,7 +2074,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2181,7 +2104,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
     /**
     * @function getNamespacedDataObject_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2212,14 +2135,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 
 /**
  * @function setNamespacedDataObject
- * @description Tests the positive and negative test cases of the setNamespacedDataObject
- * @author Json Howard
- * @date 2023/04/19
- */
-describe(tst_con.csetNamespacedDataObject, () => {
-    /**
-    * @function setNamespacedDataObject_validDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a valid data.
+ * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2248,7 +2164,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidDataInputMetaDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2277,7 +2193,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidInputDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2306,7 +2222,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidInputDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2335,7 +2251,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidInputDataNaN
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2364,7 +2280,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidDataInputDataString
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2393,7 +2309,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidInputMetaDataInteger
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2422,7 +2338,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidInputMetaDataBoolean
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2451,7 +2367,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidInputDataUndefined
-    * @description Tests the businessRules rules arrayParsing dataArrayParsing function getNamespacedDataObject with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
