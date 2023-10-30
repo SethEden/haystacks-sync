@@ -299,7 +299,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataInteger
-     * @description Tests the commandsBlob.commands.dataDirectorate function printDataHiveAttributes with a ivalid input integer.
+     * @description Tests the commandsBlob.commands.dataDirectorate function printDataHiveAttributes with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */

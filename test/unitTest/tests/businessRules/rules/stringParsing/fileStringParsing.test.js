@@ -921,7 +921,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
   });
 
   /**
-   * @function supportediFleFormatsAre_inValidInputMetaDataInteger
+   * @function supportedFileFormatsAre_inValidInputMetaDataInteger
    * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/02

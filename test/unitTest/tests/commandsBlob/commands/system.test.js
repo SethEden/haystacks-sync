@@ -407,7 +407,7 @@ describe(tst_con.cexit, () => {
     
     /**
      * @function exit_inValidInputMetaDataUndefined
-     * @description Tests the commandsBlob.commands.system function exit with a invalid inputMetaData unefined.
+     * @description Tests the commandsBlob.commands.system function exit with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -1062,7 +1062,7 @@ describe(tst_con.cname, () => {
 
 /**
  * @function clearScreen
- * @description Tests the positive test case of the clear screen command.
+ * @description Tests the positive test case of the clearScreen command.
  * @author Seth Hollingsead
  * @date 2023/09/19
  * @NOTE Unsure how to test this?!
@@ -1070,7 +1070,7 @@ describe(tst_con.cname, () => {
 describe(tst_con.cclearScreen, () => {
     /**
      * @function clearScreen_validDataString
-     * @description Tests the commandsBlob.commands.system function clear screen with a valid input.
+     * @description Tests the commandsBlob.commands.system function clearScreen with a valid input.
      * @author Seth Hollingsead
      * @date 2023/09/19
      * @NOTE Unsure how to test this?!

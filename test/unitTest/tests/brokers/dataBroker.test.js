@@ -746,7 +746,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
 
     /**
     * @function writeJsonDataToFile_inValidDataToWrite
-    * @description Tests the brokers.dataBroker function writeJsonDataToFile with a invalid datatowrite.
+    * @description Tests the brokers.dataBroker function writeJsonDataToFile with a invalid dataToWrite.
     * @author Json Howard
     * @date 2023/04/16
     */

@@ -55,7 +55,7 @@ describe(tst_con.cinitFramework, () => {
     
     /**
      * @function initFramework_inValidDataClientConfigurationString
-     * @description Tests the main function initFramework with a invalid cientConfiguration string.
+     * @description Tests the main function initFramework with a invalid clientConfiguration string.
      * @author Json Howard
      * @date 2023/09/05
      */

@@ -1210,7 +1210,7 @@ describe(tst_con.csetupAllJsonConfigData, () => {
     
     /**
      * @function setupAllJsonConfigData_inValidDataPathConfigurationNameUndefined
-     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationname undefined.
+     * @description Tests the controllers.chiefData function setupAllJsonConfigData with a invalid dataPathConfigurationName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */

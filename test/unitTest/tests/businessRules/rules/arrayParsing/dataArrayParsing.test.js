@@ -551,7 +551,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function getStoredData_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid undefiend data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getStoredData with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -794,7 +794,7 @@ describe(tst_con.carraysAreEqual, () => {
 
     /**
     * @function isObjectEmpty_inValidInputMetaDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid undefiend inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function isObjectEmpty with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */

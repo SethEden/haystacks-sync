@@ -44,7 +44,7 @@ const { sys, wrd, cfg } = hayConst;
 describe(tst_con.cgetWorkflow, () => {
     /**
     * @function getWorkflow_validData
-    * @description Tests the brokers.workflowBroker function getWorkflow with a valid data.
+    * @description Tests the brokers.workflowBroker function getWorkflow with valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -64,7 +64,7 @@ describe(tst_con.cgetWorkflow, () => {
 
     /**
     * @function getWorkflow_inValidString
-    * @description Tests the brokers.workflowBroker function getWorkflow with a invalid string data.
+    * @description Tests the brokers.workflowBroker function getWorkflow with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */

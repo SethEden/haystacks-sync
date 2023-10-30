@@ -34,7 +34,7 @@ const { bas, wrd, num } = hayConst;
 describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     /**
     * @function singleQuoteSwapAfterEquals_validDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function singleQuoteSwapAfterEquals with a valid data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function singleQuoteSwapAfterEquals with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -52,7 +52,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function singleQuoteSwapAfterEquals_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -70,7 +70,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function singleQuoteSwapAfterEquals_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -89,7 +89,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function singleQuoteSwapAfterEquals_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -107,7 +107,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function singleQuoteSwapAfterEquals_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -125,7 +125,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function singleQuoteSwapAfterEquals_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -143,7 +143,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function singleQuoteSwapAfterEquals_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function singleQuoteSwapAfterEquals with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -162,7 +162,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function swapForwardSlashToBackSlash
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapForwardSlashToBackSlash with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapForwardSlashToBackSlash with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -181,7 +181,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapForwardSlashToBackSlash_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -200,7 +200,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapForwardSlashToBackSlash_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -220,7 +220,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapForwardSlashToBackSlash_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -239,7 +239,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapForwardSlashToBackSlash_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -258,7 +258,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapForwardSlashToBackSlash_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -277,7 +277,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapForwardSlashToBackSlash_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapForwardSlashToBackSlash with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -297,7 +297,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function swapBackSlashToForwardSlash
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapBackSlashToForwardSlash with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapBackSlashToForwardSlash with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -316,7 +316,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapBackSlashToForwardSlash_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -335,7 +335,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapBackSlashToForwardSlash_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -355,7 +355,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapBackSlashToForwardSlash_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -374,7 +374,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapBackSlashToForwardSlash_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -393,7 +393,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapBackSlashToForwardSlash_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -412,7 +412,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapBackSlashToForwardSlash_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapBackSlashToForwardSlash with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -432,7 +432,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function swapDoubleForwardSlashToSingleForwardSlash
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -451,7 +451,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleForwardSlashToSingleForwardSlash_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -470,7 +470,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleForwardSlashToSingleForwardSlash_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -490,7 +490,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -509,7 +509,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -528,7 +528,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -547,7 +547,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleForwardSlashToSingleForwardSlash_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -567,7 +567,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function swapDoubleBackSlashToSingleBackSlash
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -586,7 +586,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleBackSlashToSingleBackSlash_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -605,7 +605,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleBackSlashToSingleBackSlash_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -625,7 +625,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleBackSlashToSingleBackSlash_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -644,7 +644,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleBackSlashToSingleBackSlash_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -663,7 +663,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleBackSlashToSingleBackSlash_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -682,7 +682,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function swapDoubleBackSlashToSingleBackSlash_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -702,7 +702,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function replaceSpacesWithPlus
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceSpacesWithPlus with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceSpacesWithPlus with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -720,7 +720,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceSpacesWithPlus_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceSpacesWithPlus with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceSpacesWithPlus with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -738,7 +738,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceSpacesWithPlus_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceSpacesWithPlus with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceSpacesWithPlus with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -757,7 +757,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceSpacesWithPlus_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceSpacesWithPlus with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceSpacesWithPlus with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -775,7 +775,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceSpacesWithPlus_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceSpacesWithPlus with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceSpacesWithPlus with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -793,7 +793,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceSpacesWithPlus_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceSpacesWithPlus with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceSpacesWithPlus with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -811,7 +811,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceSpacesWithPlus_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceSpacesWithPlus with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceSpacesWithPlus with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -830,7 +830,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function replaceColonWithUnderscore
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceColonWithUnderscore with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceColonWithUnderscore with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -848,7 +848,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceColonWithUnderscore_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceColonWithUnderscore with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceColonWithUnderscore with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -866,7 +866,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceColonWithUnderscore_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceColonWithUnderscore with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceColonWithUnderscore with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -885,7 +885,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceColonWithUnderscore_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceColonWithUnderscore with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceColonWithUnderscore with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -903,7 +903,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceColonWithUnderscore_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceColonWithUnderscore with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceColonWithUnderscore with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -921,7 +921,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceColonWithUnderscore_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceColonWithUnderscore with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceColonWithUnderscore with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -939,7 +939,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceColonWithUnderscore_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceColonWithUnderscore with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceColonWithUnderscore with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -958,7 +958,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function cleanCarriageReturnFromString
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function cleanCarriageReturnFromString with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function cleanCarriageReturnFromString with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -976,7 +976,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function cleanCarriageReturnFromString_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function cleanCarriageReturnFromString with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function cleanCarriageReturnFromString with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -994,7 +994,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function cleanCarriageReturnFromString_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function cleanCarriageReturnFromString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function cleanCarriageReturnFromString with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -1013,7 +1013,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function cleanCarriageReturnFromString_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function cleanCarriageReturnFromString with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function cleanCarriageReturnFromString with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1031,7 +1031,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function cleanCarriageReturnFromString_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function cleanCarriageReturnFromString with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function cleanCarriageReturnFromString with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1049,7 +1049,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function cleanCarriageReturnFromString_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function cleanCarriageReturnFromString with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function cleanCarriageReturnFromString with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1067,7 +1067,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function cleanCarriageReturnFromString_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function cleanCarriageReturnFromString with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function cleanCarriageReturnFromString with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1086,7 +1086,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function convertStringToLowerCase
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToLowerCase with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToLowerCase with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1104,7 +1104,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToLowerCase_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToLowerCase with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToLowerCase with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1122,7 +1122,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToLowerCase_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToLowerCase with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToLowerCase with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -1141,7 +1141,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToLowerCase_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToLowerCase with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToLowerCase with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1159,7 +1159,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToLowerCase_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToLowerCase with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToLowerCase with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1177,7 +1177,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToLowerCase_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToLowerCase with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToLowerCase with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1195,7 +1195,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToLowerCase_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToLowerCase with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToLowerCase with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1214,7 +1214,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function convertStringToUpperCase
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToUpperCase with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToUpperCase with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1232,7 +1232,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToUpperCase_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToUpperCase with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToUpperCase with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1250,7 +1250,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToUpperCase_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToUpperCase with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToUpperCase with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -1269,7 +1269,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToUpperCase_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToUpperCase with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToUpperCase with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1287,7 +1287,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToUpperCase_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToUpperCase with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToUpperCase with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1305,7 +1305,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToUpperCase_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToUpperCase with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToUpperCase with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1323,7 +1323,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function convertStringToUpperCase_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function convertStringToUpperCase with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function convertStringToUpperCase with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1342,7 +1342,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function doesStringContainUpperCaseCharacter
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainUpperCaseCharacter with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainUpperCaseCharacter with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1360,7 +1360,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainUpperCaseCharacter_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1378,7 +1378,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainUpperCaseCharacter_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -1397,7 +1397,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainUpperCaseCharacter_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1415,7 +1415,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainUpperCaseCharacter_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1433,7 +1433,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainUpperCaseCharacter_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1451,7 +1451,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainUpperCaseCharacter_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainUpperCaseCharacter with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1470,7 +1470,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function doesStringContainLowerCaseCharacter
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainLowerCaseCharacter with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1488,7 +1488,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainLowerCaseCharacter_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1506,7 +1506,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainLowerCaseCharacter_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -1525,7 +1525,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainLowerCaseCharacter_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1543,7 +1543,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainLowerCaseCharacter_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1561,7 +1561,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainLowerCaseCharacter_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1579,7 +1579,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function doesStringContainLowerCaseCharacter_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1598,7 +1598,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function isFirstCharacterLowerCase
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterLowerCase with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterLowerCase with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1616,7 +1616,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterLowerCase_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterLowerCase with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterLowerCase with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1634,7 +1634,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterLowerCase_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterLowerCase with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterLowerCase with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -1653,7 +1653,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterLowerCase_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterLowerCase with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterLowerCase with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1671,7 +1671,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterLowerCase_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterLowerCase with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterLowerCase with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1689,7 +1689,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterLowerCase_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterLowerCase with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterLowerCase with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1707,7 +1707,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterLowerCase_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterLowerCase with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterLowerCase with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1726,7 +1726,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function isFirstCharacterUpperCase
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterUpperCase with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterUpperCase with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1744,7 +1744,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterUpperCase_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterUpperCase with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterUpperCase with a invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1762,7 +1762,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterUpperCase_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterUpperCase with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterUpperCase with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -1781,7 +1781,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterUpperCase_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterUpperCase with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterUpperCase with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1799,7 +1799,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterUpperCase_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterUpperCase with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterUpperCase with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1817,7 +1817,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterUpperCase_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterUpperCase with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterUpperCase with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1835,7 +1835,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function isFirstCharacterUpperCase_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function isFirstCharacterUpperCase with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function isFirstCharacterUpperCase with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1854,7 +1854,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
 /**
  * @function replaceCharacterAtIndexOfString
- * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a valid data.
+ * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1872,7 +1872,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidDataInputDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1890,7 +1890,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1908,7 +1908,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1926,7 +1926,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1944,7 +1944,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
 
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1962,7 +1962,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1980,7 +1980,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid undefined data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid undefined data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1998,7 +1998,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputDataNaN
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid NaN data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid NaN data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -2016,7 +2016,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputMetaDataUndefined
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -2034,7 +2034,7 @@ describe(tst_con.csingleQuoteSwapAfterEquals, () => {
     
     /**
     * @function replaceCharacterAtIndexOfString_inValidInputMetaDataNaN
-    * @description Tests the businessRules.rules.stringparsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */

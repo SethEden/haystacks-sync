@@ -567,7 +567,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidMessageNaN
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid mesage NaN.
+     * @description Tests the executrix.colorizer function colorizeMessage with a invalid message NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -902,7 +902,6 @@ describe(tst_con.ccolorizeMessage, () => {
  * @author Json Howard
  * @date 2023/08/29
 */
-
 describe(tst_con.caggregateStyleSetting, () => {
     /**
      * @function aggregateStyleSetting_validData
@@ -1226,7 +1225,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidProcessAsFontSettingNumber
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid processsAsFontSetting number.
+     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid processAsFontSetting number.
      * @author Json Howard
      * @date 2023/08/29
      */
