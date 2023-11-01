@@ -57,7 +57,7 @@ describe(tst_con.cscanDataPath, () => {
 
     /**
     * @function scanDataPath_inValidString
-    * @description Tests the brokers.dataBroker function scanDataPath with a invalid string data.
+    * @description Tests the brokers.dataBroker function scanDataPath with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -75,7 +75,7 @@ describe(tst_con.cscanDataPath, () => {
 
     /**
     * @function scanDataPath_inValidNumber
-    * @description Tests the brokers.dataBroker function scanDataPath with a invalid integer data.
+    * @description Tests the brokers.dataBroker function scanDataPath with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -93,7 +93,7 @@ describe(tst_con.cscanDataPath, () => {
 
     /**
     * @function scanDataPath_inValidBoolean
-    * @description Tests the brokers.dataBroker function scanDataPath with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function scanDataPath with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -138,7 +138,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
 
     /**
     * @function findUniversalDebugConfigSetting_inValidString
-    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with a invalid string data.
+    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -157,7 +157,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
 
     /**
     * @function findUniversalDebugConfigSetting_inValidFrameworkConfigFilesToLoadString
-    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with a invalid string frameworkConfigFilesToLoad data.
+    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with an invalid string frameworkConfigFilesToLoad data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -176,7 +176,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
 
     /**
     * @function findUniversalDebugConfigSetting_inValidNumber
-    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with a invalid integer frameworkConfigFilesToLoad data.
+    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with an invalid integer frameworkConfigFilesToLoad data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -195,7 +195,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
 
     /**
     * @function findUniversalDebugConfigSetting_inValidBoolean
-    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with a invalid boolean frameworkConfigFilesToLoad data.
+    * @description Tests the brokers.dataBroker function findUniversalDebugConfigSetting with an invalid boolean frameworkConfigFilesToLoad data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -240,7 +240,7 @@ describe(tst_con.cloadAllCsvData, () => {
 
     /**
     * @function loadAllCsvData_inValidString
-    * @description Tests the brokers.dataBroker function loadAllCsvData with a invalid string data.
+    * @description Tests the brokers.dataBroker function loadAllCsvData with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -259,7 +259,7 @@ describe(tst_con.cloadAllCsvData, () => {
 
     /**
     * @function loadAllCsvData_inValidContextNameString
-    * @description Tests the brokers.dataBroker function loadAllCsvData with a invalid string context name.
+    * @description Tests the brokers.dataBroker function loadAllCsvData with an invalid string context name.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -278,7 +278,7 @@ describe(tst_con.cloadAllCsvData, () => {
 
     /**
     * @function loadAllCsvData_inValidNumber
-    * @description Tests the brokers.dataBroker function loadAllCsvData with a invalid integer context name.
+    * @description Tests the brokers.dataBroker function loadAllCsvData with an invalid integer context name.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -297,7 +297,7 @@ describe(tst_con.cloadAllCsvData, () => {
 
     /**
     * @function loadAllCsvData_inValidBoolean
-    * @description Tests the brokers.dataBroker function loadAllCsvData with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function loadAllCsvData with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -343,7 +343,7 @@ describe(tst_con.cloadAllXmlData, () => {
 
     /**
     * @function loadedAllXmlData_inValidString
-    * @description Tests the brokers.dataBroker function loadAllXmlData with a invalid string data.
+    * @description Tests the brokers.dataBroker function loadAllXmlData with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -362,7 +362,7 @@ describe(tst_con.cloadAllXmlData, () => {
 
     /**
     * @function loadAllXmlData_inValidContextNameString
-    * @description Tests the brokers.dataBroker function loadAllXmlData with a invalid string contextName.
+    * @description Tests the brokers.dataBroker function loadAllXmlData with an invalid string contextName.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -381,7 +381,7 @@ describe(tst_con.cloadAllXmlData, () => {
 
     /**
     * @function loadedAllXmlData_inValidNumber
-    * @description Tests the brokers.dataBroker function loadAllXmlData with a invalid integer data.
+    * @description Tests the brokers.dataBroker function loadAllXmlData with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -400,7 +400,7 @@ describe(tst_con.cloadAllXmlData, () => {
 
     /**
     * @function loadedAllXmlData_inValidBoolean
-    * @description Tests the brokers.dataBroker function loadAllXmlData with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function loadAllXmlData with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -446,7 +446,7 @@ describe(tst_con.cloadAllJsonData, () => {
 
     /**
     * @function loadAllJsonData_inValidString
-    * @description Tests the brokers.dataBroker function loadAllJsonData with a invalid string data.
+    * @description Tests the brokers.dataBroker function loadAllJsonData with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -465,7 +465,7 @@ describe(tst_con.cloadAllJsonData, () => {
 
     /**
     * @function loadAllJsonData_inValidContextNameString
-    * @description Tests the brokers.dataBroker function loadAllJsonData with a invalid string contextName.
+    * @description Tests the brokers.dataBroker function loadAllJsonData with an invalid string contextName.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -484,7 +484,7 @@ describe(tst_con.cloadAllJsonData, () => {
 
     /**
     * @function loadAllJsonData_inValidNumber
-    * @description Tests the brokers.dataBroker function loadAllJsonData with a invalid integer path.
+    * @description Tests the brokers.dataBroker function loadAllJsonData with an invalid integer path.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -503,7 +503,7 @@ describe(tst_con.cloadAllJsonData, () => {
 
     /**
     * @function loadAllJsonData_inValidBoolean
-    * @description Tests the brokers.dataBroker function loadAllJsonData with a invalid boolean path.
+    * @description Tests the brokers.dataBroker function loadAllJsonData with an invalid boolean path.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -549,7 +549,7 @@ describe(tst_con.cprocessCsvData, () => {
 
     /**
     * @function processCsvData_inValidString
-    * @description Tests the brokers.dataBroker function processCsvData with a invalid string data.
+    * @description Tests the brokers.dataBroker function processCsvData with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -568,7 +568,7 @@ describe(tst_con.cprocessCsvData, () => {
 
     /**
     * @function processCsvData_inValidContextNameString
-    * @description Tests the brokers.dataBroker function processCsvData with a invalid string context name.
+    * @description Tests the brokers.dataBroker function processCsvData with an invalid string context name.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -587,7 +587,7 @@ describe(tst_con.cprocessCsvData, () => {
 
     /**
     * @function processCsvData_inValidNumber
-    * @description Tests the brokers.dataBroker function processCsvData with a invalid integer data.
+    * @description Tests the brokers.dataBroker function processCsvData with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -606,7 +606,7 @@ describe(tst_con.cprocessCsvData, () => {
 
     /**
     * @function processCsvData_inValidBoolean
-    * @description Tests the brokers.dataBroker function processCsvData with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function processCsvData with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -650,7 +650,7 @@ describe(tst_con.cpreprocessJsonFile, () => {
 
     /**
     * @function preprocessJsonFile_inValidString
-    * @description Tests the brokers.dataBroker function preprocessJsonFile with a invalid string data.
+    * @description Tests the brokers.dataBroker function preprocessJsonFile with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -667,7 +667,7 @@ describe(tst_con.cpreprocessJsonFile, () => {
 
     /**
     * @function preprocessJsonFile_inValidNumber
-    * @description Tests the brokers.dataBroker function preprocessJsonFile with a invalid integer data.
+    * @description Tests the brokers.dataBroker function preprocessJsonFile with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -684,7 +684,7 @@ describe(tst_con.cpreprocessJsonFile, () => {
 
     /**
     * @function preprocessJsonFile_inValidBoolean
-    * @description Tests the brokers.dataBroker function preprocessJsonFile with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function preprocessJsonFile with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -727,7 +727,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
 
     /**
     * @function writeJsonDataToFile_inValidString
-    * @description Tests the brokers.dataBroker function writeJsonDataToFile with a invalid string data.
+    * @description Tests the brokers.dataBroker function writeJsonDataToFile with an invalid string data.
     * @author Json Howard
     * @date 2023/04/16
     * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
@@ -746,7 +746,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
 
     /**
     * @function writeJsonDataToFile_inValidDataToWrite
-    * @description Tests the brokers.dataBroker function writeJsonDataToFile with a invalid dataToWrite.
+    * @description Tests the brokers.dataBroker function writeJsonDataToFile with an invalid dataToWrite.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -764,7 +764,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
 
     /**
     * @function writeJsonDataToFile_inValidNumber
-    * @description Tests the brokers.dataBroker function writeJsonDataToFile with a invalid integer data.
+    * @description Tests the brokers.dataBroker function writeJsonDataToFile with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -782,7 +782,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
 
     /**
     * @function writeJsonDataToFile_inValidBoolean
-    * @description Tests the brokers.dataBroker function writeJsonDataToFile with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function writeJsonDataToFile with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/16
     */
@@ -822,7 +822,7 @@ describe(tst_con.csetupDataStorage, () => {
 
     /**
     * @function setupDataStorage_inValidString
-    * @description Tests the brokers.dataBroker function setupDataStorage with a invalid string data.
+    * @description Tests the brokers.dataBroker function setupDataStorage with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -839,7 +839,7 @@ describe(tst_con.csetupDataStorage, () => {
 
     /**
     * @function setupDataStorage_inValidNumber
-    * @description Tests the brokers.dataBroker function setupDataStorage with a invalid number data.
+    * @description Tests the brokers.dataBroker function setupDataStorage with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -856,7 +856,7 @@ describe(tst_con.csetupDataStorage, () => {
 
     /**
     * @function setupDataStorage_inValidBoolean
-    * @description Tests the brokers.dataBroker function setupDataStorage with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function setupDataStorage with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -971,7 +971,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidDataToStoreUndefined
-    * @description Tests the brokers.dataBroker function storeData with a invalid undefined data.
+    * @description Tests the brokers.dataBroker function storeData with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -989,7 +989,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidDataToStoreNaN
-    * @description Tests the brokers.dataBroker function storeData with a invalid NaN data.
+    * @description Tests the brokers.dataBroker function storeData with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1007,7 +1007,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidDataStorageDataToStoreNumber
-    * @description Tests the brokers.dataBroker function storeData with a invalid number dataStorageContextName.
+    * @description Tests the brokers.dataBroker function storeData with an invalid number dataStorageContextName.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1025,7 +1025,7 @@ describe(tst_con.cstoreData, () => {
 
     /**
     * @function storeData_inValidDataStorageDataToStoreBoolean
-    * @description Tests the brokers.dataBroker function storeData with a invalid boolean dataStorageContextName.
+    * @description Tests the brokers.dataBroker function storeData with an invalid boolean dataStorageContextName.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1069,7 +1069,7 @@ describe(tst_con.cgetData, () => {
 
     /**
     * @function getData_inValidString
-    * @description Tests the brokers.dataBroker function getData with a invalid string data.
+    * @description Tests the brokers.dataBroker function getData with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1087,7 +1087,7 @@ describe(tst_con.cgetData, () => {
 
     /**
     * @function getData_inValidNumber
-    * @description Tests the brokers.dataBroker function getData with a invalid number data.
+    * @description Tests the brokers.dataBroker function getData with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1105,7 +1105,7 @@ describe(tst_con.cgetData, () => {
 
     /**
     * @function getData_inValidBoolean
-    * @description Tests the brokers.dataBroker function getData with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function getData with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1149,7 +1149,7 @@ describe(tst_con.cclearData, () => {
 
     /**
     * @function clearData_inValidUndefined
-    * @description Tests the brokers.dataBroker function clearData with a invalid undefined data.
+    * @description Tests the brokers.dataBroker function clearData with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1167,7 +1167,7 @@ describe(tst_con.cclearData, () => {
 
     /**
     * @function clearData_inValidNaN
-    * @description Tests the brokers.dataBroker function clearData with a invalid NaN data.
+    * @description Tests the brokers.dataBroker function clearData with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1185,7 +1185,7 @@ describe(tst_con.cclearData, () => {
 
     /**
     * @function clearData_inValidNumber
-    * @description Tests the brokers.dataBroker function clearData with a invalid number data.
+    * @description Tests the brokers.dataBroker function clearData with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1203,7 +1203,7 @@ describe(tst_con.cclearData, () => {
 
     /**
     * @function clearData_inValidBoolean
-    * @description Tests the brokers.dataBroker function clearData with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function clearData with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1249,7 +1249,7 @@ describe(tst_con.cinitializeConstantsValidationData, () => {
 
     /**
     * @function initializeConstantsValidationData_inValidString
-    * @description Tests the brokers.dataBroker function initializeConstantsValidationData with a invalid string data.
+    * @description Tests the brokers.dataBroker function initializeConstantsValidationData with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1272,7 +1272,7 @@ describe(tst_con.cinitializeConstantsValidationData, () => {
 
     /**
     * @function initializeConstantsValidationData_inValidNumber
-    * @description Tests the brokers.dataBroker function initializeConstantsValidationData with a invalid number data.
+    * @description Tests the brokers.dataBroker function initializeConstantsValidationData with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1295,7 +1295,7 @@ describe(tst_con.cinitializeConstantsValidationData, () => {
 
     /**
     * @function initializeConstantsValidationData_inValidBoolean
-    * @description Tests the brokers.dataBroker function initializeConstantsValidationData with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function initializeConstantsValidationData with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1343,7 +1343,7 @@ describe(tst_con.caddConstantsValidationData, () => {
 
     /**
     * @function addConstantsValidationData_inValidString
-    * @description Tests the brokers.dataBroker function addConstantsValidationData with a invalid string data.
+    * @description Tests the brokers.dataBroker function addConstantsValidationData with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1360,7 +1360,7 @@ describe(tst_con.caddConstantsValidationData, () => {
 
     /**
     * @function addConstantsValidationData_inValidNumber
-    * @description Tests the brokers.dataBroker function addConstantsValidationData with a invalid number data.
+    * @description Tests the brokers.dataBroker function addConstantsValidationData with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1377,7 +1377,7 @@ describe(tst_con.caddConstantsValidationData, () => {
 
     /**
     * @function addConstantsValidationData_inValidBoolean
-    * @description Tests the brokers.dataBroker function addConstantsValidationData with a invalid boolean data.
+    * @description Tests the brokers.dataBroker function addConstantsValidationData with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1421,7 +1421,7 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
     
     /**
     * @function addDeeplyNestedConstantsValidationData_inValidDeeplyNestedDataString
-    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with a invalid string nested data.
+    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with an invalid string nested data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1440,7 +1440,7 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
     
     /**
     * @function addDeeplyNestedConstantsValidationData_inValidDeeplyNestedDataNumber
-    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with a invalid number nested data.
+    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with an invalid number nested data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1459,7 +1459,7 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
     
     /**
     * @function addDeeplyNestedConstantsValidationData_inValidDeeplyNestedDataBoolean
-    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with a invalid boolean nested data.
+    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with an invalid boolean nested data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1478,7 +1478,7 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
     
     /**
     * @function addDeeplyNestedConstantsValidationData_inValidContextNameUndefined
-    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with a invalid undefined context name.
+    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with an invalid undefined context name.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1497,7 +1497,7 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
     
     /**
     * @function addDeeplyNestedConstantsValidationData_inValidContextNameNaN
-    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with a invalid NaN context name.
+    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with an invalid NaN context name.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1516,7 +1516,7 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
     
     /**
     * @function addDeeplyNestedConstantsValidationData_inValidContextNameNumber
-    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with a invalid number context name.
+    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with an invalid number context name.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -1535,7 +1535,7 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
     
     /**
     * @function addDeeplyNestedConstantsValidationData_inValidContextNameBoolean
-    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with a invalid boolean context name.
+    * @description Tests the brokers.dataBroker function addDeeplyNestedConstantsValidationData with an invalid boolean context name.
     * @author Json Howard
     * @date 2023/04/17
     */

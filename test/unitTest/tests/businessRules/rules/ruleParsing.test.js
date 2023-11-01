@@ -191,7 +191,14 @@ describe(tst_con.cdoAllRulesExist, () => {
 
 /**
  * @function doesRuleExist
- * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with a valid input.
+ * @description Tests the positive and negative test cases of the doesRuleExist
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cdoesRuleExist, () => {
+  /**
+   * @function doesRuleExist_validDataString
+   * @description Tests the businessRules.rules.ruleParsing function doesRuleExist with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -346,7 +353,14 @@ describe(tst_con.cdoAllRulesExist, () => {
 
 /**
  * @function getRule
- * @description Tests the businessRules.rules.ruleParsing function getRule with a valid input.
+ * @description Tests the positive and negative test cases of the getRule
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cgetRule, () => {
+  /**
+   * @function getRule_validDataString
+   * @description Tests the businessRules.rules.ruleParsing function getRule with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -501,7 +515,14 @@ describe(tst_con.cdoAllRulesExist, () => {
 
 /**
  * @function processRulesInternal
- * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with a valid input.
+ * @description Tests the positive and negative test cases of the processRulesInternal
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cprocessRulesInternal, () => {
+  /**
+   * @function processRulesInternal_validDataString
+   * @description Tests the businessRules.rules.ruleParsing function processRulesInternal with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */

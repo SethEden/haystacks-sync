@@ -57,7 +57,7 @@ describe(tst_con.cprompt, () => {
   
   /**
    * @function prompt_inValidDataInputDataString
-   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid string input.
+   * @description Tests the businessRules.rules.promptOperations function prompt with an invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -79,7 +79,7 @@ describe(tst_con.cprompt, () => {
   
   /**
    * @function prompt_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.promptOperations function prompt with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -101,7 +101,7 @@ describe(tst_con.cprompt, () => {
   
   /**
    * @function prompt_inValidInputDataInteger
-   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid integer input.
+   * @description Tests the businessRules.rules.promptOperations function prompt with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -123,7 +123,7 @@ describe(tst_con.cprompt, () => {
 
   /**
    * @function prompt_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid boolean input.
+   * @description Tests the businessRules.rules.promptOperations function prompt with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -145,7 +145,7 @@ describe(tst_con.cprompt, () => {
 
   /**
    * @function prompt_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.promptOperations function prompt with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.promptOperations function prompt with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */

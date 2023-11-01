@@ -60,29 +60,29 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getXmlData_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function getXmlData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidDataInputDataString, () => {
-    // Arrange
-    let inputData = data_con.stringRandomText;
-    let inputMetaData = '';
-    rulesLibrary.initRulesLibrary();
+      // Arrange
+      let inputData = data_con.stringRandomText;
+      let inputMetaData = '';
+      rulesLibrary.initRulesLibrary();
 
-    // Act        
-    let returnData = fileOperations.getXmlData(
-      inputData,
-      inputMetaData
-    );
+      // Act        
+      let returnData = fileOperations.getXmlData(
+        inputData,
+        inputMetaData
+      );
 
-    // Assert
-    expect(returnData).toBeTruthy();
+      // Assert
+      expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getXmlData_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function getXmlData with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -104,73 +104,73 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getXmlData_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getXmlData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
-    rulesLibrary.initRulesLibrary();
+      // Arrange
+      let inputData = 4567;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
 
-    // Act        
-    let returnData = fileOperations.getXmlData(
-      inputData,
-      inputMetaData
-    );
+      // Act        
+      let returnData = fileOperations.getXmlData(
+        inputData,
+        inputMetaData
+      );
 
-    // Assert
-    expect(returnData).toBeTruthy();
+      // Assert
+      expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getXmlData_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getXmlData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-    rulesLibrary.initRulesLibrary();
+      // Arrange
+      let inputData = false;
+      let inputMetaData = [1,2,3,4,5];
+      rulesLibrary.initRulesLibrary();
 
-    // Act        
-    let returnData = fileOperations.getXmlData(
-      inputData,
-      inputMetaData
-    );
+      // Act        
+      let returnData = fileOperations.getXmlData(
+        inputData,
+        inputMetaData
+      );
 
-    // Assert
-    expect(returnData).toBeTruthy();
+      // Assert
+      expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getXmlData_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getXmlData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidInputMetaDataInteger, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = 4567;
-    rulesLibrary.initRulesLibrary();
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = 4567;
+      rulesLibrary.initRulesLibrary();
 
-    // Act        
-    let returnData = fileOperations.getXmlData(
-      inputData,
-      inputMetaData
-    );
+      // Act        
+      let returnData = fileOperations.getXmlData(
+        inputData,
+        inputMetaData
+      );
 
-    // Assert
-    expect(returnData).toBeTruthy();
+      // Assert
+      expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getXmlData_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getXmlData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -193,29 +193,36 @@ describe(tst_con.cgetXmlData, () => {
 
 /**
  * @function getCsvData
- * @description Tests the businessRules.rules.fileOperations function getCsvData with a valid input.
+ * @description Tests the positive and negative test cases of the getCsvData
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.cgetCsvData, () => {
+  /**
+   * @function getCsvData_validDataString
+   * @description Tests the business rules function getCsvData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
-  test(tst_con.cgetCsvData_validDataString, () => {
-    // Arrange
-    let inputData = obj_con.fileOperationsCsvPath();
-    let inputMetaData = '';
-    rulesLibrary.initRulesLibrary();
+    test(tst_con.cgetCsvData_validDataString, () => {
+        // Arrange
+        let inputData = obj_con.fileOperationsCsvPath();
+        let inputMetaData = '';
+        rulesLibrary.initRulesLibrary();
 
-    // Act      
-    let returnData = fileOperations.getCsvData(
-      inputData,
-      inputMetaData
-    );
+        // Act      
+        let returnData = fileOperations.getCsvData(
+          inputData,
+          inputMetaData
+        );
 
-    // Assert
-    expect(returnData).toBeTruthy();
+        // Assert
+        expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getCsvData_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function getCsvData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -237,7 +244,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getCsvData_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function getCsvData with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -259,7 +266,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getCsvData_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getCsvData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -281,7 +288,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getCsvData_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getCsvData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -303,7 +310,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getCsvData_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getCsvData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -325,34 +332,41 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getCsvData_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getCsvData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetCsvData_inValidInputMetaDataBoolean, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = false;
-    rulesLibrary.initRulesLibrary();
+      // Arrange
+      let inputData = [1,2,3,4,5];
+      let inputMetaData = false;
+      rulesLibrary.initRulesLibrary();
 
-    // Act        
-    let returnData = fileOperations.getCsvData(
-      inputData,
-      inputMetaData
-    );
+      // Act        
+      let returnData = fileOperations.getCsvData(
+        inputData,
+        inputMetaData
+      );
 
-    // Assert
-    expect(returnData).toBeTruthy();
+      // Assert
+      expect(returnData).toBeTruthy();
   });
 });
 
 /**
  * @function getJsonData
- * @description Tests the businessRules.rules.fileOperations function getJsonData with a valid input.
+ * @description Tests the positive and negative test cases of the getJsonData
+ * @author Json Howards
+ * @date 2023/05/03
+ */
+describe(tst_con.cgetJsonData, () => {
+  /**
+   * @function getJsonData_validDataString
+   * @description Tests the business rules function getJsonData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
-  test(tst_con.cgetJsonData_validDataString, () => {
+    test(tst_con.cgetJsonData_validDataString, () => {
     // Arrange
     let inputData = obj_con.fileOperationsJsonPath();
     let inputMetaData = '';
@@ -370,7 +384,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getJsonData_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function getJsonData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid string input.
    * @result Create garbage folder
    * @author Json Howard
    * @date 2023/05/03
@@ -394,7 +408,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getJsonData_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function getJsonData with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -416,7 +430,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getJsonData_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getJsonData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -438,7 +452,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getJsonData_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getJsonData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -460,7 +474,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getJsonData_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getJsonData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -482,7 +496,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getJsonData_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getJsonData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -527,7 +541,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function writeJsonData_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid string input.
    * @result In root path create garbage file
    * @author Json Howard
    * @date 2023/05/03
@@ -551,7 +565,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function writeJsonData_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a invalid string inputMetadata.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid string inputMetadata.
    * @result In root path create garbage file
    * @author Json Howard
    * @date 2023/05/03
@@ -575,7 +589,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function cwriteJsonData_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid integer input.
    * @result In root path create garbage file
    * @author Json Howard
    * @date 2023/05/03
@@ -599,7 +613,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function writeJsonData_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -621,7 +635,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function writeJsonData_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -643,7 +657,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function writeJsonData_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -688,7 +702,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectoryContents_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid string input.
    * @return Create garbage folder 
    * @author Json Howard
    * @date 2023/05/03
@@ -712,7 +726,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectoryContents_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -734,7 +748,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectoryContents_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -756,7 +770,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectoryContents_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a invalid false input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid false input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -778,7 +792,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectoryContents_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -800,7 +814,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectoryContents_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -845,7 +859,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid string input.
    * @result Create garbage folder
    * @author Json Howard
    * @date 2023/05/03
@@ -868,7 +882,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -890,7 +904,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -912,7 +926,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -934,7 +948,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -956,7 +970,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -978,7 +992,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1000,7 +1014,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1045,7 +1059,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function getDirectoryList_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1067,7 +1081,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getDirectoryList_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1089,7 +1103,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getDirectoryList_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1111,7 +1125,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getDirectoryList_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1133,7 +1147,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getDirectoryList_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1155,7 +1169,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getDirectoryList_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1200,7 +1214,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function readDirectorySynchronously_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid string input.
    * @result Create garbage folder
    * @author Json Howard
    * @date 2023/05/03
@@ -1224,7 +1238,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectorySynchronously_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1246,7 +1260,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectorySynchronously_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1268,7 +1282,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectorySynchronously_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1290,7 +1304,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectorySynchronously_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1312,7 +1326,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function readDirectorySynchronously_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1354,7 +1368,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1373,7 +1387,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1392,7 +1406,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1411,7 +1425,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1430,7 +1444,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1449,7 +1463,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1468,7 +1482,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1487,7 +1501,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1506,7 +1520,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1525,7 +1539,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1564,7 +1578,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function buildReleasePackage_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a invalid input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1583,7 +1597,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function buildReleasePackage_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1602,7 +1616,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function buildReleasePackage_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1621,7 +1635,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function buildReleasePackage_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1640,7 +1654,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function buildReleasePackage_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1659,7 +1673,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function buildReleasePackage_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1698,7 +1712,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1717,7 +1731,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1736,7 +1750,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1755,7 +1769,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1774,7 +1788,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1793,7 +1807,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1812,7 +1826,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1831,7 +1845,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function createZipArchive_inValidInputDataNaN
-   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1870,7 +1884,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function cleanRootPath_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1889,7 +1903,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function cleanRootPath_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1908,7 +1922,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function cleanRootPath_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1927,7 +1941,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function cleanRootPath_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1946,7 +1960,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function cleanRootPath_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1965,7 +1979,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function cleanRootPath_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2007,7 +2021,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2029,7 +2043,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2051,7 +2065,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2073,7 +2087,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2095,7 +2109,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */  
@@ -2117,7 +2131,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2139,7 +2153,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2161,7 +2175,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputDataNaN
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2183,7 +2197,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2205,7 +2219,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2250,7 +2264,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2272,7 +2286,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2294,7 +2308,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2316,7 +2330,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2338,7 +2352,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2360,7 +2374,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2382,7 +2396,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2404,7 +2418,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputDataNaN
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2426,7 +2440,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2448,7 +2462,7 @@ describe(tst_con.cgetXmlData, () => {
   
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2493,7 +2507,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function appendMessageToFile_inValidDataInputDataString
-   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2515,7 +2529,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function appendMessageToFile_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2537,7 +2551,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function appendMessageToFile_inValidInputDataInteger
-   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2559,7 +2573,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function appendMessageToFile_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2581,7 +2595,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function appendMessageToFile_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2603,7 +2617,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function appendMessageToFile_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */

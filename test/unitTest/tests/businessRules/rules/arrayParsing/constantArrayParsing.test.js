@@ -58,7 +58,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -76,7 +76,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -94,7 +94,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -112,7 +112,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -130,7 +130,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -148,7 +148,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -166,7 +166,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -184,7 +184,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function getLengthOfLongestStringInArray_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function solveLehmerCode with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -203,7 +203,14 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
 /**
  * @function searchForPatternsInStringArray
- * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a valid data.
+ * @description Tests the positive and negative test cases of the searchForPatternsInStringArray
+ * @author Json Howard
+ * @date 2023/04/19
+ */
+describe(tst_con.csearchForPatternsInStringArray, () => {
+    /**
+    * @function searchForPatternsInStringArray_validDataString
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -222,7 +229,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function searchForPatternsInStringArray_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -241,7 +248,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function searchForPatternsInStringArray_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -260,7 +267,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function searchForPatternsInStringArray_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -279,7 +286,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function searchForPatternsInStringArray_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -298,7 +305,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function searchForPatternsInStringArray_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -317,7 +324,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function searchForPatternsInStringArray_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -336,7 +343,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function searchForPatternsInStringArray_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid undefiend data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid undefiend data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -355,7 +362,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function searchForPatternsInStringArray_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function searchForPatternsInStringArray with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -375,11 +382,17 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
 /**
  * @function validatePatternsThatNeedImplementation
- * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a valid data.
+ * @description Tests the positive and negative test cases of the validatePatternsThatNeedImplementation
+ * @author Json Howard
+ * @date 2023/04/19
+ */
+describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
+    /**
+    * @function validatePatternsThatNeedImplementation_validDataString
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a valid data.
     * @author Json Howard
     * @date 2023/04/19
-    */
-    test(tst_con.cvalidatePatternsThatNeedImplementation_validDataString, () => {
+    */    test(tst_con.cvalidatePatternsThatNeedImplementation_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = '';
@@ -394,7 +407,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function validatePatternsThatNeedImplementation_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -413,7 +426,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function validatePatternsThatNeedImplementation_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -432,7 +445,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
 
     /**
     * @function validatePatternsThatNeedImplementation_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -451,7 +464,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function validatePatternsThatNeedImplementation_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -470,7 +483,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function validatePatternsThatNeedImplementation_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -489,7 +502,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function validatePatternsThatNeedImplementation_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -508,7 +521,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function validatePatternsThatNeedImplementation_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -527,7 +540,7 @@ describe(tst_con.cgetLengthOfLongestStringInArray, () => {
     
     /**
     * @function validatePatternsThatNeedImplementation_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with a invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing function validatePatternsThatNeedImplementation with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */

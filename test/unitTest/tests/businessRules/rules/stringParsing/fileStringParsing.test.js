@@ -59,7 +59,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileNameFromPath_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -81,7 +81,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileNameFromPath_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -103,7 +103,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileNameFromPath_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -125,7 +125,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileNameFromPath_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -147,7 +147,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
      * @function getFileNameFromPath_inValidInputMetaDataInteger
-     * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with an invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -169,7 +169,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
        * @function getFileNameFromPath_inValidInputMetaDataBoolean
-       * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with a invalid boolean inputMetaData.
+       * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileNameFromPath with an invalid boolean inputMetaData.
        * @author Json Howard
        * @date 2023/05/02
        */
@@ -192,7 +192,14 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
 /**
  * @function getFileExtension
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a valid input.
+ * @description Tests the positive and negative test cases of the getFileExtension
+ * @author Json Howard
+ * @date 2023/05/02
+ */
+describe(tst_con.cgetFileExtension, () => {
+  /**
+   * @function getFileExtension_validDataString
+   * @description Tests the business.rules.arrayParsing.fileStringParsing function getFileExtension with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -214,7 +221,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileExtension_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -236,7 +243,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileExtension_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -258,7 +265,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileExtension_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -280,7 +287,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileExtension_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -302,7 +309,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileExtension_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -324,7 +331,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileExtension_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -347,7 +354,14 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
 /**
  * @function removeDotFromFileExtension
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a valid input.
+ * @description Tests the positive and negative test cases of the removeDotFromFileExtension
+ * @author Json Howard
+ * @date 2023/05/02
+ */
+describe(tst_con.cremoveDotFromFileExtension, () => {
+  /**
+   * @function removeDotFromFileExtension_validDataString
+   * @description Tests the business.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -369,7 +383,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeDotFromFileExtension_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -391,7 +405,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeDotFromFileExtension_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -413,7 +427,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFileExtension_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFileExtension with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -435,7 +449,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeDotFromFileExtension_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -457,7 +471,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
      * @function removeDotFromFileExtension_inValidInputMetaDataInteger
-     * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with an invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -479,7 +493,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeDotFromFileExtension_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -500,9 +514,16 @@ describe(tst_con.cgetFileNameFromPath, () => {
   });
 });
 
-/**
+ /**
  * @function removeFileExtensionFromFileName
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a valid input.
+ * @description Tests the positive and negative test cases of the removeFileExtensionFromFileName
+ * @author Json Howard
+ * @date 2023/05/02
+ */
+describe(tst_con.cremoveFileExtensionFromFileName, () => {
+  /**
+   * @function removeFileExtensionFromFileName_validDataString
+   * @description Tests the business.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -524,7 +545,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeFileExtensionFromFileName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -546,7 +567,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeFileExtensionFromFileName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -568,7 +589,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeFileExtensionFromFileName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -590,7 +611,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeFileExtensionFromFileName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -612,7 +633,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeFileExtensionFromFileName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -634,7 +655,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeFileExtensionFromFileName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -657,7 +678,14 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
 /**
  * @function ascertainMatchingFilenames
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a valid input.
+ * @description Tests the positive and negative test cases of the ascertainMatchingFilenames
+ * @author Json Howard
+ * @date 2023/05/02
+ */
+describe(tst_con.cascertainMatchingFilenames, () => {
+  /**
+   * @function ascertainMatchingFilenames_validDataString
+   * @description Tests the business.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -679,7 +707,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function ascertainMatchingFilenames_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -701,7 +729,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function ascertainMatchingFilenames_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -723,7 +751,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
  * @function ascertainMatchingFilenames_inValidInputDataInteger
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a invalid integer input.
+ * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with an invalid integer input.
  * @author Json Howard
  * @date 2023/05/02
  */
@@ -745,7 +773,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function ascertainMatchingFilenames_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -767,7 +795,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function ascertainMatchingFilenames_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -789,7 +817,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function ascertainMatchingFilenames_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -812,7 +840,14 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
 /**
  * @function supportedFileFormatsAre
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a valid input.
+ * @description Tests the positive and negative test cases of the supportedFileFormatsAre
+ * @author Json Howard
+ * @date 2023/05/02
+ */
+describe(tst_con.csupportedFileFormatsAre, () => {
+  /**
+   * @function supportedFileFormatsAre_validDataString
+   * @description Tests the business.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -834,7 +869,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function supportedFileFormatsAre_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -856,7 +891,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function supportedFileFormatsAre_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -878,7 +913,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function supportedFileFormatsAre_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -900,7 +935,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function supportedFileFormatsAre_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -922,7 +957,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function supportedFileFormatsAre_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -944,7 +979,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function supportedFileFormatsAre_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -967,7 +1002,14 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
 /**
  * @function removeXnumberOfFoldersFromEndOfPath
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a valid input.
+ * @description Tests the positive and negative test cases of the removeXnumberOfFoldersFromEndOfPath
+ * @author Json Howard
+ * @date 2023/05/02
+ */
+describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
+  /**
+   * @function removeXnumberOfFoldersFromEndOfPath_validDataString
+   * @description Tests the business.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -989,7 +1031,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeXnumberOfFoldersFromEndOfPath_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1011,7 +1053,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeXnumberOfFoldersFromEndOfPath_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1033,7 +1075,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
  * @function removeXnumberOfFoldersFromEndOfPath_inValidInputDataInteger
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a invalid integer input.
+ * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with an invalid integer input.
  * @author Json Howard
  * @date 2023/05/02
  */
@@ -1055,7 +1097,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeXnumberOfFoldersFromEndOfPath_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1077,7 +1119,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeXnumberOfFoldersFromEndOfPath_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1099,7 +1141,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function removeXnumberOfFoldersFromEndOfPath_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1122,7 +1164,14 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
 /**
  * @function getFirstTopLevelFolderFromPath
- * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a valid input.
+ * @description Tests the positive and negative test cases of the getFirstTopLevelFolderFromPath
+ * @author Json Howard
+ * @date 2023/05/02
+ */
+describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
+  /**
+   * @function getFirstTopLevelFolderFromPath_validDataString
+   * @description Tests the business.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1144,7 +1193,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFirstTopLevelFolderFromPath_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with an invalid string input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1166,7 +1215,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFirstTopLevelFolderFromPath_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1188,7 +1237,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFirstTopLevelFolderFromPath_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1210,7 +1259,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFirstTopLevelFolderFromPath_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1232,7 +1281,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFirstTopLevelFolderFromPath_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1254,7 +1303,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 
   /**
    * @function getFirstTopLevelFolderFromPath_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/02
    */

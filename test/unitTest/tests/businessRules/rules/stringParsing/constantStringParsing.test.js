@@ -62,7 +62,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
     /**
      * @function validateConstantsDataValidation_inValidDataInputDataString
-     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with a invalid string input.
+     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with an invalid string input.
      * @author Json Howard
      * @date 2023/04/29
      */
@@ -84,7 +84,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
   
     /**
      * @function validateConstantsDataValidation_inValidDataInputMetaDataString
-     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with a invalid string inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with an invalid string inputMetaData.
      * @author Json Howard
      * @date 2023/04/29
      */
@@ -106,7 +106,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
     /**
      * @function validateConstantsDataValidation_inValidInputDataInteger
-     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with an invalid boolean input.
      * @author Json Howard
      * @date 2023/04/29
      */
@@ -128,7 +128,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
     /**
      * @function validateConstantsDataValidation_inValidInputDataBoolean
-     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with an invalid boolean input.
      * @author Json Howard
      * @date 2023/04/29
      */
@@ -150,7 +150,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
     /**
      * @function validateConstantsDataValidation_inValidInputMetaDataInteger
-     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with an invalid boolean input.
      * @author Json Howard
      * @date 2023/04/29
      */
@@ -172,7 +172,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
     /**
      * @function validateConstantsDataValidation_inValidInputMetaDataBoolean
-     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with a invalid boolean input.
+     * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidation with an invalid boolean input.
      * @author Json Howard
      * @date 2023/04/29
      */
@@ -193,9 +193,17 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
     });
   });
 
-  /**
+ /**
  * @function determineConstantsContextQualifiedPrefix
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a valid input.
+ * @description Tests the positive and negative test cases of the determineConstantsContextQualifiedPrefix
+ * @author Json Howard
+ * @date 2023/04/30
+ * @NOTE Needs significant amount of test date validation implemented.
+ */
+describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
+  /**
+   * @function determineConstantsContextQualifiedPrefix_validDataString
+   * @description Tests the business.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -217,7 +225,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineConstantsContextQualifiedPrefix_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with an invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -239,7 +247,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineConstantsContextQualifiedPrefix_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -261,7 +269,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineConstantsContextQualifiedPrefix_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -283,7 +291,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineConstantsContextQualifiedPrefix_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -305,7 +313,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineConstantsContextQualifiedPrefix_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -327,7 +335,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineConstantsContextQualifiedPrefix_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -350,7 +358,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
  /**
  * @function determineSuggestedConstantsValidationLineOfCode
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a valid input.
+ * @description Tests the positive and negative test cases of the determineSuggestedConstantsValidationLineOfCode
+ * @author Json Howard
+ * @date 2023/04/30
+ */
+ describe(tst_con.cdetermineSuggestedConstantsValidationLineOfCode, () => {
+  /**
+   * @function determineSuggestedConstantsValidationLineOfCode_validDataString
+   * @description Tests the business.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -372,7 +387,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineSuggestedConstantsValidationLineOfCode_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with an invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -394,7 +409,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineSuggestedConstantsValidationLineOfCode_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -416,7 +431,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineSuggestedConstantsValidationLineOfCode_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -438,7 +453,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineSuggestedConstantsValidationLineOfCode_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -460,7 +475,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -482,7 +497,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function determineSuggestedConstantsValidationLineOfCode_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -505,7 +520,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function validateConstantsDataValidationLineItemName
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a valid input.
+ * @description Tests the positive and negative test cases of the validateConstantsDataValidationLineItemName
+ * @author Json Howard
+ * @date 2023/04/30
+ */
+describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
+  /**
+   * @function validateConstantsDataValidationLineItemName_validDataString
+   * @description Tests the business.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -528,7 +550,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValidationLineItemName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with an invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -551,7 +573,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValidationLineItemName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -574,7 +596,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValidationLineItemName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -597,7 +619,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValidationLineItemName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -620,7 +642,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValidationLineItemName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -643,7 +665,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValidationLineItemName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -667,7 +689,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function doesConstantExist
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a valid input.
+ * @description Tests the positive and negative test cases of the doesConstantExist
+ * @author Json Howard
+ * @date 2023/04/30
+ */
+describe(tst_con.cdoesConstantExist, () => {
+  /**
+   * @function doesConstantExist_validDataString
+   * @description Tests the business rules function doesConstantExist with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -688,7 +717,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function doesConstantExist_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with an invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -709,7 +738,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function doesConstantExist_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -730,7 +759,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function doesConstantExist_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -751,7 +780,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function doesConstantExist_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -772,7 +801,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function doesConstantExist_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -793,7 +822,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function doesConstantExist_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -815,7 +844,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function getConstantType
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with a valid input.
+ * @description Tests the positive and negative test cases of the getConstantType
+ * @author Json Howard
+ * @date 2023/04/30
+ */
+describe(tst_con.cgetConstantType, () => {
+  /**
+   * @function getConstantType_validDataString
+   * @description Tests the business rules function getConstantType with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -836,7 +872,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantType_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with an invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -857,7 +893,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantType_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -878,7 +914,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantType_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -899,7 +935,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantType_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -920,7 +956,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantType_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -941,7 +977,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantType_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantType with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -963,7 +999,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function getConstantActualValue
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a valid input.
+ * @description Tests the positive and negative test cases of the getConstantActualValue
+ * @author Json Howard
+ * @date 2023/04/30
+ */
+describe(tst_con.cgetConstantActualValue, () => {
+  /**
+   * @function getConstantActualValue_validDataString
+   * @description Tests the business rules function getConstantActualValue with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -985,7 +1028,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantActualValue_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with an invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1007,7 +1050,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantActualValue_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1029,7 +1072,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantActualValue_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1051,7 +1094,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
   
   /**
    * @function getConstantActualValue_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1073,7 +1116,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantActualValue_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1095,7 +1138,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantActualValue_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1118,7 +1161,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function getConstantName
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a valid input.
+ * @description Tests the positive and negative test cases of the getConstantName
+ * @author Json Howard
+ * @date 2023/04/30
+ */
+describe(tst_con.cgetConstantName, () => {
+  /**
+   * @function getConstantName_validDataString
+   * @description Tests the business rules function getConstantName with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1139,7 +1189,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with an invalid string input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1160,7 +1210,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1181,7 +1231,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1202,7 +1252,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1223,7 +1273,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1244,7 +1294,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function getConstantName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1266,7 +1316,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function findConstantName
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a valid input.
+ * @description Tests the positive and negative test cases of the findConstantName
+ * @author Json Howard
+ * @date 2023/05/01
+ */
+describe(tst_con.cfindConstantName, () => {
+  /**
+   * @function findConstantName_validDataString
+   * @description Tests the business rules function findConstantName with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1287,7 +1344,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function findConstantName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a invalid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with an invalid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1308,7 +1365,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function findConstantName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1329,7 +1386,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function findConstantName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a invalid integer data.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with an invalid integer data.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1350,7 +1407,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function findConstantName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1371,7 +1428,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function findConstantName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1392,7 +1449,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function findConstantName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1414,7 +1471,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function isConstantTypeValid
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a valid input.
+ * @description Tests the positive and negative test cases of the isConstantTypeValid
+ * @author Json Howard
+ * @date 2023/05/01
+ */
+describe(tst_con.cisConstantTypeValid, () => {
+  /**
+   * @function isConstantTypeValid_validDataString
+   * @description Tests the business rules function isConstantTypeValid with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1436,7 +1500,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantTypeValid_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a invalid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with an invalid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1458,7 +1522,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantTypeValid_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1480,7 +1544,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantTypeValid_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1502,7 +1566,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantTypeValid_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1524,7 +1588,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantTypeValid_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1546,7 +1610,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantTypeValid_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1569,7 +1633,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function convertConstantTypeToConstantPrefix
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a valid input.
+ * @description Tests the positive and negative test cases of the convertConstantTypeToConstantPrefix
+ * @author Json Howard
+ * @date 2023/05/01
+ */
+describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
+  /**
+   * @function convertConstantTypeToConstantPrefix_validDataString
+   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1591,7 +1662,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function convertConstantTypeToConstantPrefix_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a invalid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with an invalid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1613,7 +1684,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function convertConstantTypeToConstantPrefix_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1635,7 +1706,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function convertConstantTypeToConstantPrefix_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1657,7 +1728,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function convertConstantTypeToConstantPrefix_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1679,7 +1750,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function convertConstantTypeToConstantPrefix_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1701,7 +1772,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function convertConstantTypeToConstantPrefix_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1724,7 +1795,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function constantsOptimizedFulfillmentSystem
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a valid input.
+ * @description Tests the positive and negative test cases of the constantsOptimizedFulfillmentSystem
+ * @author Json Howard
+ * @date 2023/05/01
+ */
+describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
+  /**
+   * @function constantsOptimizedFulfillmentSystem_validDataString
+   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1745,7 +1823,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsOptimizedFulfillmentSystem_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a invalid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with an invalid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1766,7 +1844,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsOptimizedFulfillmentSystem_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1788,7 +1866,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsOptimizedFulfillmentSystem_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1810,7 +1888,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsOptimizedFulfillmentSystem_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1832,7 +1910,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsOptimizedFulfillmentSystem_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1854,7 +1932,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsOptimizedFulfillmentSystem_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1877,7 +1955,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function constantsFulfillmentSystem
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a valid input.
+ * @description Tests the positive and negative test cases of the constantsFulfillmentSystem
+ * @author Json Howard
+ * @date 2023/05/01
+ */
+describe(tst_con.cconstantsFulfillmentSystem, () => {
+  /**
+   * @function constantsFulfillmentSystem_validDataString
+   * @description Tests the business rules function constantsFulfillmentSystem with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1898,7 +1983,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsFulfillmentSystem_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with an invalid string input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1919,7 +2004,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsFulfillmentSystem_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1940,7 +2025,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsFulfillmentSystem_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1961,7 +2046,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsFulfillmentSystem_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1982,7 +2067,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsFulfillmentSystem_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2003,7 +2088,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function constantsFulfillmentSystem_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2025,7 +2110,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function validateConstantsDataValues
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a valid input.
+ * @description Tests the positive and negative test cases of the validateConstantsDataValues
+ * @author Json Howard
+ * @date 2023/05/01
+ */
+describe(tst_con.cvalidateConstantsDataValues, () => {
+  /**
+   * @function validateConstantsDataValues_validDataString
+   * @description Tests the business rules function validateConstantsDataValues with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2048,7 +2140,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValues_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with an invalid string input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2071,7 +2163,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValues_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2094,7 +2186,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValues_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2117,7 +2209,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValues_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2140,7 +2232,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValues_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2163,7 +2255,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function validateConstantsDataValues_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2187,7 +2279,14 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
 /**
  * @function isConstantValid
- * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a valid input.
+ * @description Tests the positive and negative test cases of the isConstantValid
+ * @author Json Howard
+ * @date 2023/05/01
+ */
+describe(tst_con.cisConstantValid, () => {
+  /**
+   * @function isConstantValid_validDataString
+   * @description Tests the business rules function isConstantValid with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2210,7 +2309,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantValid_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with an invalid string input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2233,7 +2332,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantValid_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2256,7 +2355,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantValid_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2279,7 +2378,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantValid_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2302,7 +2401,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantValid_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2325,7 +2424,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 
   /**
    * @function isConstantValid_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/01
    */
