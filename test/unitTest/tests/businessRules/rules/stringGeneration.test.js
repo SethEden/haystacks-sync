@@ -200,7 +200,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextByLength, () => {
 describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
     /**
      * @function generateRandomUpperCaseTextByLength_validDataString
-     * @description Tests the business rules function generateRandomUpperCaseTextByLength with a valid input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -362,7 +362,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextByLength, () => {
 describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
     /**
      * @function generateRandomLowerCaseTextByLength_validDataString
-     * @description Tests the business rules function generateRandomLowerCaseTextByLength with a valid input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -524,7 +524,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
 describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () => {
     /**
      * @function generateRandomMixedCaseTextWithSpecialCharactersByLength_validDataString
-     * @description Tests the business rules function generateRandomMixedCaseTextWithSpecialCharactersByLength with a valid input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseTextWithSpecialCharactersByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -686,7 +686,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
 describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () => {
     /**
      * @function generateRandomUpperCaseTextWithSpecialCharactersByLength_validDataString
-     * @description Tests the business rules function generateRandomUpperCaseTextWithSpecialCharactersByLength with a valid input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseTextWithSpecialCharactersByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -848,7 +848,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
 describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () => {
     /**
      * @function generateRandomLowerCaseTextWithSpecialCharactersByLength_validDataString
-     * @description Tests the business rules function generateRandomLowerCaseTextWithSpecialCharactersByLength with a valid input.
+     * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseTextWithSpecialCharactersByLength with a valid input.
      * @author Json Howard
      * @date 2023/05/06
      */
@@ -1010,7 +1010,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () =
 describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeByLength_validDataString
-   * @description Tests the business rules function generateRandomMixedCaseAlphaNumericCodeByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1172,7 +1172,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeByLength, () => {
 describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeByLength_validDataString
-   * @description Tests the business rules function generateRandomUpperCaseAlphaNumericCodeByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1334,7 +1334,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeByLength, () => {
 describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeByLength_validDataString
-   * @description Tests the business rules function generateRandomLowerCaseAlphaNumericCodeByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1496,7 +1496,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeByLength, () => {
 describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
   /**
    * @function generateRandomNumericCodeByLength_validDataString
-   * @description Tests the business rules function generateRandomNumericCodeByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomNumericCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1658,7 +1658,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
 describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
   /**
    * @function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
-   * @description Tests the business rules function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -1820,7 +1820,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
 describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
   /**
    * @function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
-   * @description Tests the business rules function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1982,7 +1982,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
 describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
   /**
    * @function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength_validDataString
-   * @description Tests the business rules function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2144,7 +2144,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
 describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
   /**
    * @function generateRandomSpecialCharacterCodeByLength_validDataString
-   * @description Tests the business rules function generateRandomSpecialCharacterCodeByLength with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomSpecialCharacterCodeByLength with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2305,7 +2305,7 @@ describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
 describe(tst_con.cgenerateValidEmail, () => {
   /**
    * @function generateValidEmail_validDataString
-   * @description Tests the business rules function generateValidEmail with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateValidEmail with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2554,7 +2554,7 @@ describe(tst_con.cgenerateValidEmail, () => {
 describe(tst_con.cgenerateInvalidEmail, () => {
   /**
    * @function generateInvalidEmail_validDataString
-   * @description Tests the business rules function generateInvalidEmail with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateInvalidEmail with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -2803,7 +2803,7 @@ describe(tst_con.cgenerateInvalidEmail, () => {
 describe(tst_con.cgenerateRandomBrightColor, () => {
   /**
    * @function generateRandomBrightColor_validDataString
-   * @description Tests the business rules function generateRandomBrightColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomBrightColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3115,7 +3115,7 @@ describe(tst_con.cgenerateRandomBrightColor, () => {
 describe(tst_con.cgenerateRandomDarkColor, () => {
   /**
    * @function generateRandomDarkColor_validDataString
-   * @description Tests the business rules function generateRandomDarkColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomDarkColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -3427,7 +3427,7 @@ describe(tst_con.cgenerateRandomDarkColor, () => {
 describe(tst_con.cgenerateRandomColor, () => {
   /**
    * @function generateRandomColor_validDataString
-   * @description Tests the business rules function generateRandomColor with a valid input.
+   * @description Tests the businessRules.rules.stringGeneration function generateRandomColor with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */

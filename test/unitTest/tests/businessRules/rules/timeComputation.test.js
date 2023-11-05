@@ -821,7 +821,7 @@ describe(tst_con.creformatDeltaTime, () => {
 describe(tst_con.csleep, () => {
   /**
    * @function sleep_validDataString
-   * @description Tests the business rules function sleep with a valid input.
+   * @description Tests the businessRules.rules.timeComputation function sleep with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */

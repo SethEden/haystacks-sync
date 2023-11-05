@@ -199,7 +199,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
 describe(tst_con.cgetFileExtension, () => {
   /**
    * @function getFileExtension_validDataString
-   * @description Tests the business.rules.arrayParsing.fileStringParsing function getFileExtension with a valid input.
+   * @description Tests the businessRules.rules.arrayParsing.fileStringParsing function getFileExtension with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -361,7 +361,7 @@ describe(tst_con.cgetFileExtension, () => {
 describe(tst_con.cremoveDotFromFileExtension, () => {
   /**
    * @function removeDotFromFileExtension_validDataString
-   * @description Tests the business.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeDotFromFileExtension with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -523,7 +523,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
 describe(tst_con.cremoveFileExtensionFromFileName, () => {
   /**
    * @function removeFileExtensionFromFileName_validDataString
-   * @description Tests the business.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeFileExtensionFromFileName with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -685,7 +685,7 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
 describe(tst_con.cascertainMatchingFilenames, () => {
   /**
    * @function ascertainMatchingFilenames_validDataString
-   * @description Tests the business.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function ascertainMatchingFilenames with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -847,7 +847,7 @@ describe(tst_con.cascertainMatchingFilenames, () => {
 describe(tst_con.csupportedFileFormatsAre, () => {
   /**
    * @function supportedFileFormatsAre_validDataString
-   * @description Tests the business.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function supportedFileFormatsAre with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1009,7 +1009,7 @@ describe(tst_con.csupportedFileFormatsAre, () => {
 describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
   /**
    * @function removeXnumberOfFoldersFromEndOfPath_validDataString
-   * @description Tests the business.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function removeXnumberOfFoldersFromEndOfPath with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1171,7 +1171,7 @@ describe(tst_con.cremoveXnumberOfFoldersFromEndOfPath, () => {
 describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
   /**
    * @function getFirstTopLevelFolderFromPath_validDataString
-   * @description Tests the business.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.fileStringParsing function getFirstTopLevelFolderFromPath with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */

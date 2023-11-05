@@ -197,7 +197,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateUpperCaseLetterOrSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -359,7 +359,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateLowerCaseLetterOrSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -521,7 +521,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -682,7 +682,11 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
  */
 describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter, () => {
 	/**
-	 * test(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
+	 * ?????
+	 * Why was this test commented out?
+	 * Why was the header removed from this test?
+	 */ 
+	test(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
 		// Arrange
 		let inputData = wrd.chello + bas.cUnderscore + wrd.cWorld;
 		let inputMetaData = '';
@@ -839,6 +843,10 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
  */
 describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter, () => {
 	/**
+	 * ?????
+	 * Why was this test commented out???
+	 * Why was the header removed from this test???
+	 */
 	 * test(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
 		// Arrange
 		let inputData = wrd.chello + bas.cUnderscore + wrd.cWorld;
@@ -997,7 +1005,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateMixedCaseAlphaNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1159,7 +1167,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateUpperCaseAlphaNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1321,7 +1329,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateLowerCaseAlphaNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1483,7 +1491,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateNumericCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1645,7 +1653,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateSpecialCharacter_validDataString
-	 * @description Tests the business rules function randomlyGenerateSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1807,7 +1815,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateNumberInRange, () => {
 	/**
 	 * @function randomlyGenerateNumberInRange_validDataStringTrueTrue
-	 * @description Tests the business rules function randomlyGenerateNumberInRange with a valid inputMeta true, true.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with a valid inputMeta true, true.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2145,7 +2153,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 describe(tst_con.crandomlyGenerateBooleanValue, () => {
 	/**
 	 * @function randomlyGenerateBooleanValue_validDataString
-	 * @description Tests the business rules function randomlyGenerateBooleanValue with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */

@@ -200,7 +200,7 @@ describe(tst_con.cgetXmlData, () => {
 describe(tst_con.cgetCsvData, () => {
   /**
    * @function getCsvData_validDataString
-   * @description Tests the business rules function getCsvData with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -356,13 +356,13 @@ describe(tst_con.cgetCsvData, () => {
 /**
  * @function getJsonData
  * @description Tests the positive and negative test cases of the getJsonData
- * @author Json Howards
+ * @author Json Howard
  * @date 2023/05/03
  */
 describe(tst_con.cgetJsonData, () => {
   /**
    * @function getJsonData_validDataString
-   * @description Tests the business rules function getJsonData with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -526,7 +526,7 @@ describe(tst_con.cgetJsonData, () => {
 describe(tst_con.cwriteJsonData, () => {
   /**
    * @function writeJsonData_validDataString
-   * @description Tests the business rules function writeJsonData with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -694,7 +694,7 @@ describe(tst_con.cwriteJsonData, () => {
 describe(tst_con.creadDirectoryContents, () => {
   /**
    * @function readDirectoryContents_validDataString
-   * @description Tests the business rules function readDirectoryContents with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -858,7 +858,7 @@ describe(tst_con.creadDirectoryContents, () => {
 describe(tst_con.cscanDirectoryContents, () => {
   /**
    * @function scanDirectoryContents_validDataString
-   * @description Tests the business rules function scanDirectoryContents with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1065,7 +1065,7 @@ describe(tst_con.cscanDirectoryContents, () => {
 describe(tst_con.cgetDirectoryList, () => {
   /**
    * @function getDirectoryList_validDataString
-   * @description Tests the business rules function getDirectoryList with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1227,7 +1227,7 @@ describe(tst_con.cgetDirectoryList, () => {
 describe(tst_con.creadDirectorySynchronously, () => {
   /**
    * @function readDirectorySynchronously_validDataString
-   * @description Tests the business rules function readDirectorySynchronously with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1391,7 +1391,7 @@ describe(tst_con.creadDirectorySynchronously, () => {
 describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_validDataString
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1608,7 +1608,7 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
 describe(tst_con.cbuildReleasePackage, () => {
   /**
    * @function buildReleasePackage_validDataString
-   * @description Tests the business rules function buildReleasePackage with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1749,7 +1749,7 @@ describe(tst_con.cbuildReleasePackage, () => {
 describe(tst_con.ccreateZipArchive, () => {
   /**
    * @function createZipArchive_validDataString
-   * @description Tests the business rules function createZipArchive with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1928,7 +1928,7 @@ describe(tst_con.ccreateZipArchive, () => {
 describe(tst_con.ccleanRootPath, () => {
   /**
    * @function cleanRootPath_validDataString
-   * @description Tests the business rules function cleanRootPath with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2069,7 +2069,7 @@ describe(tst_con.ccleanRootPath, () => {
 describe(tst_con.ccopyFileSync, () => {
   /**
    * @function copyFileSync_validDataString
-   * @description Tests the business rules function copyFileSync with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2319,7 +2319,7 @@ describe(tst_con.ccopyFileSync, () => {
 describe(tst_con.ccopyFolderRecursiveSync, () => {
   /**
    * @function copyFolderRecursiveSync_validDataString
-   * @description Tests the business rules function copyFolderRecursiveSync with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */

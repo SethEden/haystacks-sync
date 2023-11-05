@@ -587,15 +587,15 @@ describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
 });
 
 /**
- * @function swapDoubleForwardSlashToSingleForwardSlash
- * @description Tests the positive and negative test cases of the swapDoubleForwardSlashToSingleForwardSlash
+ * @function swapDoubleBackSlashToSingleBackSlash
+ * @description Tests the positive and negative test cases of the swapDoubleBackSlashToSingleBackSlash
  * @author Json Howard
  * @date 2023/04/25
  */
-describe(tst_con.cswapDoubleForwardSlashToSingleForwardSlash, () => {
+describe(tst_con.cswapDoubleBackSlashToSingleBackSlash, () => {
     /**
-    * @function swapDoubleForwardSlashToSingleForwardSlash_validDataString
-    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleForwardSlashToSingleForwardSlash with a valid data.
+    * @function swapDoubleBackSlashToSingleBackSlash_validDataString
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function swapDoubleBackSlashToSingleBackSlash with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -1545,7 +1545,7 @@ describe(tst_con.cdoesStringContainUpperCaseCharacter, () => {
  * @date 2023/04/25
  */
 describe(tst_con.cdoesStringContainLowerCaseCharacter, () => {
-    /*
+    /**
     * @function doesStringContainLowerCaseCharacter_validDataString
     * @description Tests the businessRules.rules.stringParsing.characterStringParsing function doesStringContainLowerCaseCharacter with a valid data.
     * @author Json Howard
@@ -1952,7 +1952,7 @@ describe(tst_con.cisFirstCharacterUpperCase, () => {
 describe(tst_con.creplaceCharacterAtIndexOfString, () => {
     /**
     * @function replaceCharacterAtIndexOfString_validDataString
-    * @description Tests the businessRules.rules.stringParsing.characterStringParsin/ function replaceCharacterAtIndexOfString with a valid data.
+    * @description Tests the businessRules.rules.stringParsing.characterStringParsing function replaceCharacterAtIndexOfString with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */

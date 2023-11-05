@@ -483,7 +483,7 @@ describe(tst_con.crecombineStringArrayWithSpaces, () => {
 describe(tst_con.cconvertArrayToCamelCaseString, () => {
     /**
     * @function convertArrayToCamelCaseString_validDataString
-    * @description Tests the business rules function convertArrayToCamelCaseString with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertArrayToCamelCaseString with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -653,7 +653,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
 describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
     /**
     * @function doesArrayContainLowerCaseConsolidatedString_validDataString
-    * @description Tests the business rules function doesArrayContainLowerCaseConsolidatedString with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainLowerCaseConsolidatedString with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -823,7 +823,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
 describe(tst_con.cascertainMatchingElements, () => {
     /**
     * @function ascertainMatchingElements_validDataString
-    * @description Tests the business rules function ascertainMatchingElements with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function ascertainMatchingElements with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */    test(tst_con.cascertainMatchingElements_validDataString, () => {

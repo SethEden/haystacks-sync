@@ -390,7 +390,7 @@ describe(tst_con.csetConfigurationSetting, () => {
 describe(tst_con.cgetConfigurationSetting, () => {
     /**
      * @function getConfigurationSetting_validDataString
-     * @description Tests the executrix.configurator function setConfigurationSetting with a valid input.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a valid input.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -408,7 +408,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidDataConfigurationNamespaceString
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationNamespace string.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationNamespace string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -426,7 +426,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidDataConfigurationNameString
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationName string.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationName string.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -444,7 +444,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceInteger
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationNamespace integer.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationNamespace integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -462,7 +462,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceBoolean
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationNamespace boolean.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationNamespace boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -480,7 +480,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameInteger
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationName integer.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationName integer.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -498,7 +498,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameBoolean
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationName boolean.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationName boolean.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -516,7 +516,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceUndefined
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationNamespace undefined.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationNamespace undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -534,7 +534,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNamespaceNaN
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationNamespace NaN.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationNamespace NaN.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -552,7 +552,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameUndefined
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationName undefined.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationName undefined.
      * @author Json Howard
      * @date 2023/09/04
      */
@@ -570,7 +570,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
     
     /**
      * @function getConfigurationSetting_inValidConfigurationNameNaN
-     * @description Tests the executrix.configurator function setConfigurationSetting with a invalid configurationName NaN.
+     * @description Tests the executrix.configurator function getConfigurationSetting with a invalid configurationName NaN.
      * @author Json Howard
      * @date 2023/09/04
      */

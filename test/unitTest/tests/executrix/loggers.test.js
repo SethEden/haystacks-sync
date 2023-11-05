@@ -266,7 +266,7 @@ describe(tst_con.cconsoleTableLog, () => {
     
     /**
      * @function consoleTableLog_inValidClassPathString
-     * @description Tests the executrix.loggers function consoleTableLog with a invalid classpath string.
+     * @description Tests the executrix.loggers function consoleTableLog with a invalid classPath string.
      * @author Json Howard
      * @date 2023/09/04
      */

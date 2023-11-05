@@ -198,7 +198,7 @@ describe(tst_con.cisStringCamelCase, () => {
 describe(tst_con.cmapWordToCamelCaseWord, () => {
     /**
      * @function mapWordToCamelCaseWord_validDataString
-     * @description Tests the business.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function mapWordToCamelCaseWord with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -360,7 +360,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
 describe(tst_con.csimplifyAndConsolidateString, () => {
     /**
      * @function simplifyAndConsolidateString_validDataString
-     * @description Tests the business.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function simplifyAndConsolidateString with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -522,7 +522,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
 describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
     /**
      * @function compareSimplifiedAndConsolidatedStrings_validDataString
-     * @description Tests the business.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function compareSimplifiedAndConsolidatedStrings with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -684,7 +684,7 @@ describe(tst_con.ccompareSimplifiedAndConsolidatedStrings, () => {
 describe(tst_con.ccountCamelCaseWords, () => {
     /**
      * @function countCamelCaseWords_validDataString
-     * @description Tests the business.rules.stringParsing.wordStringParsing function countCamelCaseWords with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countCamelCaseWords with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -846,7 +846,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
 describe(tst_con.cdoesStringContainAcronym, () => {
     /**
      * @function doesStringContainAcronym_validDataString
-     * @description Tests the business.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function doesStringContainAcronym with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1008,7 +1008,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
 describe(tst_con.cdetermineWordDelimiter, () => {
     /**
      * @function determineWordDelimiter_validDataString
-     * @description Tests the business.rules.stringParsing.wordStringParsing function determineWordDelimiter with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function determineWordDelimiter with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */
@@ -1170,7 +1170,7 @@ describe(tst_con.cdetermineWordDelimiter, () => {
 describe(tst_con.ccountDelimiterInString, () => {
   /**
    * @function countDelimiterInString_validDataString
-   * @description Tests the business.rules.stringParsing.wordStringParsing function countDelimiterInString with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.wordStringParsing function countDelimiterInString with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1332,7 +1332,7 @@ describe(tst_con.ccountDelimiterInString, () => {
 describe(tst_con.cgetWordCountInString, () => {
   /**
    * @function getWordCountInString_validDataString
-   * @description Tests the business.rules.stringParsing.wordStringParsing function getWordCountInString with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.wordStringParsing function getWordCountInString with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1494,7 +1494,7 @@ describe(tst_con.cgetWordCountInString, () => {
 describe(tst_con.cisStringList, () => {
   /**
    * @function isStringList_validDataString
-   * @description Tests the business.rules.stringParsing.wordStringParsing function isStringList with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.wordStringParsing function isStringList with a valid input.
    * @author Json Howard
    * @date 2023/05/02
    */
@@ -1656,7 +1656,7 @@ describe(tst_con.cisStringList, () => {
 describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
     /**
      * @function aggregateNumericalDifferenceBetweenTwoStrings_validDataString
-     * @description Tests the business.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.wordStringParsing function aggregateNumericalDifferenceBetweenTwoStrings with a valid input.
      * @author Json Howard
      * @date 2023/05/02
      */

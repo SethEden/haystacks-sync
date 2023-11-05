@@ -950,7 +950,7 @@ describe(tst_con.csetupAllXmlData, () => {
     
     /**
      * @function setupAllXmlData_inValidDataPathConfigurationNameBoolean
-     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid dataPathConfigurationname boolean.
+     * @description Tests the controllers.chiefData function setupAllXmlData with a invalid dataPathConfigurationName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */

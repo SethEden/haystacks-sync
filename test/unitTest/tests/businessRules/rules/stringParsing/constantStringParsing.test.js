@@ -203,7 +203,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
 describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
   /**
    * @function determineConstantsContextQualifiedPrefix_validDataString
-   * @description Tests the business.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineConstantsContextQualifiedPrefix with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -365,7 +365,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
  describe(tst_con.cdetermineSuggestedConstantsValidationLineOfCode, () => {
   /**
    * @function determineSuggestedConstantsValidationLineOfCode_validDataString
-   * @description Tests the business.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function determineSuggestedConstantsValidationLineOfCode with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -527,7 +527,7 @@ describe(tst_con.cdetermineConstantsContextQualifiedPrefix, () => {
 describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
   /**
    * @function validateConstantsDataValidationLineItemName_validDataString
-   * @description Tests the business.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValidationLineItemName with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -696,7 +696,7 @@ describe(tst_con.cvalidateConstantsDataValidationLineItemName, () => {
 describe(tst_con.cdoesConstantExist, () => {
   /**
    * @function doesConstantExist_validDataString
-   * @description Tests the business rules function doesConstantExist with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function doesConstantExist with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -851,7 +851,7 @@ describe(tst_con.cdoesConstantExist, () => {
 describe(tst_con.cgetConstantType, () => {
   /**
    * @function getConstantType_validDataString
-   * @description Tests the business rules function getConstantType with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantsStringParsing function getConstantType with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1006,7 +1006,7 @@ describe(tst_con.cgetConstantType, () => {
 describe(tst_con.cgetConstantActualValue, () => {
   /**
    * @function getConstantActualValue_validDataString
-   * @description Tests the business rules function getConstantActualValue with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantActualValue with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1168,7 +1168,7 @@ describe(tst_con.cgetConstantActualValue, () => {
 describe(tst_con.cgetConstantName, () => {
   /**
    * @function getConstantName_validDataString
-   * @description Tests the business rules function getConstantName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function getConstantName with a valid input.
    * @author Json Howard
    * @date 2023/04/29
    */
@@ -1323,7 +1323,7 @@ describe(tst_con.cgetConstantName, () => {
 describe(tst_con.cfindConstantName, () => {
   /**
    * @function findConstantName_validDataString
-   * @description Tests the business rules function findConstantName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function findConstantName with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1478,7 +1478,7 @@ describe(tst_con.cfindConstantName, () => {
 describe(tst_con.cisConstantTypeValid, () => {
   /**
    * @function isConstantTypeValid_validDataString
-   * @description Tests the business rules function isConstantTypeValid with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantTypeValid with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1640,7 +1640,7 @@ describe(tst_con.cisConstantTypeValid, () => {
 describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
   /**
    * @function convertConstantTypeToConstantPrefix_validDataString
-   * @description Tests the business rules function convertConstantTypeToConstantPrefix with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function convertConstantTypeToConstantPrefix with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1802,7 +1802,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
 describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
   /**
    * @function constantsOptimizedFulfillmentSystem_validDataString
-   * @description Tests the business rules function constantsOptimizedFulfillmentSystem with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsOptimizedFulfillmentSystem with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -1962,7 +1962,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
 describe(tst_con.cconstantsFulfillmentSystem, () => {
   /**
    * @function constantsFulfillmentSystem_validDataString
-   * @description Tests the business rules function constantsFulfillmentSystem with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function constantsFulfillmentSystem with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2117,7 +2117,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
 describe(tst_con.cvalidateConstantsDataValues, () => {
   /**
    * @function validateConstantsDataValues_validDataString
-   * @description Tests the business rules function validateConstantsDataValues with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function validateConstantsDataValues with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */
@@ -2286,7 +2286,7 @@ describe(tst_con.cvalidateConstantsDataValues, () => {
 describe(tst_con.cisConstantValid, () => {
   /**
    * @function isConstantValid_validDataString
-   * @description Tests the business rules function isConstantValid with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.constantStringParsing function isConstantValid with a valid input.
    * @author Json Howard
    * @date 2023/05/01
    */

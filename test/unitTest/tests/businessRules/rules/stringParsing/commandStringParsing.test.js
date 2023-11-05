@@ -176,7 +176,7 @@ describe(tst_con.ccleanCommandInput, () => {
 describe(tst_con.cisValidCommandNameString, () => {
     /**
     * @function isValidCommandNameString_validDataString
-    * @description Tests the business.rules.stringParsing.commandStringParsing function isValidCommandNameString with a valid data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
