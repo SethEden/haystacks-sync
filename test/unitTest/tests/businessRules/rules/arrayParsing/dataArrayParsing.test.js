@@ -2219,7 +2219,7 @@ describe(tst_con.cgetNamespacedDataObject, () => {
 describe(tst_con.csetNamespacedDataObject, () => {
     /**
     * @function setNamespacedDataObject_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2248,7 +2248,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2277,7 +2277,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2306,7 +2306,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2335,7 +2335,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
     
     /**
     * @function setNamespacedDataObject_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2364,7 +2364,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2393,7 +2393,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2422,7 +2422,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -2451,7 +2451,7 @@ describe(tst_con.csetNamespacedDataObject, () => {
 
     /**
     * @function setNamespacedDataObject_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function getNamespacedDataObject with an invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.dataArrayParsing function setNamespacedDataObject with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */

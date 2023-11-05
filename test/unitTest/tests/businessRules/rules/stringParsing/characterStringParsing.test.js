@@ -1131,7 +1131,6 @@ describe(tst_con.ccleanCarriageReturnFromString, () => {
         // Assert
         expect(returnData).toBe(false);
     });
-    u
 });
 
 /**

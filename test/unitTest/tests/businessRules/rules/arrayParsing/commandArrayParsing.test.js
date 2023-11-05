@@ -667,7 +667,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 describe(tst_con.cgenerateCommandAliases, () => {
     /**
     * @function generateCommandAliases_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -685,7 +685,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -703,7 +703,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -721,7 +721,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -739,7 +739,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -757,7 +757,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -775,7 +775,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
     
     /**
     * @function generateCommandAliases_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -793,7 +793,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -811,7 +811,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */

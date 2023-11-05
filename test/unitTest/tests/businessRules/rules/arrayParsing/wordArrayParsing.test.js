@@ -38,7 +38,7 @@ const { bas, wrd, num } = hayConst;
 describe(tst_con.cconvertCamelCaseStringToArray, () => {
     /**
     * @function convertCamelCaseStringToArray_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertCamelCaseStringToArray with a valid data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -56,7 +56,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertCamelCaseStringToArray with an invalid string data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -74,7 +74,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertCamelCaseStringToArray with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -92,7 +92,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with an invalid INTEGER data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertCamelCaseStringToArray with an invalid INTEGER data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -110,7 +110,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertCamelCaseStringToArray with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -128,7 +128,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with an invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertCamelCaseStringToArray with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
@@ -146,7 +146,7 @@ describe(tst_con.cconvertCamelCaseStringToArray, () => {
 
     /**
     * @function convertCamelCaseStringToArray_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function doesArrayContainFilename with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing function convertCamelCaseStringToArray with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/21
     */
