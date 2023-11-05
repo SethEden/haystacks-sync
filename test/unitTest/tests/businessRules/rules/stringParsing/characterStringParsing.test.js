@@ -354,18 +354,18 @@ describe(tst_con.cswapBackSlashToForwardSlash, () => {
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
     */
-    test(tst_con.cswapBackSlashToForwardSlash_inValidDataInputMetaDataString, () => {
-        // Arrange
-        let inputData = wrd.cHello + bas.cBackSlash + wrd.cWorld;
-        let inputMetaData = wrd.cHello + wrd.cWorld;
-        rulesLibrary.initRulesLibrary();
+    // test(tst_con.cswapBackSlashToForwardSlash_inValidDataInputMetaDataString, () => {
+    //     // Arrange
+    //     let inputData = wrd.cHello + bas.cBackSlash + wrd.cWorld;
+    //     let inputMetaData = wrd.cHello + wrd.cWorld;
+    //     rulesLibrary.initRulesLibrary();
 
-        // Act        
-        let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
+    //     // Act        
+    //     let returnData = characterStringParsing.swapBackSlashToForwardSlash(inputData, inputMetaData);
 
-        // Assert
-        expect(returnData).toBe(wrd.cHello + bas.cForwardSlash + wrd.cWorld);
-    });
+    //     // Assert
+    //     expect(returnData).toBe(wrd.cHello + bas.cForwardSlash + wrd.cWorld);
+    // });
 
     /**
     * @function swapBackSlashToForwardSlash_inValidInputDataInteger
