@@ -681,11 +681,12 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
  * @date 2023/05/03
  */
 describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter, () => {
-	/**
-	 * ?????
-	 * Why was this test commented out?
-	 * Why was the header removed from this test?
-	 */ 
+  /**
+   * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString
+   * @description Tests the business rules function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
 	test(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
 		// Arrange
 		let inputData = wrd.chello + bas.cUnderscore + wrd.cWorld;
@@ -847,7 +848,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 	 * Why was this test commented out???
 	 * Why was the header removed from this test???
 	 */
-	 * test(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
+	 test(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
 		// Arrange
 		let inputData = wrd.chello + bas.cUnderscore + wrd.cWorld;
 		let inputMetaData = '';
