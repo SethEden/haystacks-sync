@@ -1,0 +1,316 @@
+description: Test plan for fileStringParsing.js
+
+
+--------------------------------------------------------------------------------
+testName: getFileNameFromPath_validDataString
+input inputData:  string (The string that should have all the folders and path removed from it)
+input inputMetaData: string (Not used for this business rule)
+output: string (The file name and file extension string without the full path)
+
+testName: getFileNameFromPath_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: getFileNameFromPath_inValidDataInputMetaDataString
+input inputData: string (The string that should have all the folders and path removed from it) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getFileNameFromPath_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: inputData.includes is not a function
+
+testName: getFileNameFromPath_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getFileNameFromPath_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
+
+testName: getFileNameFromPath_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: inputData.split is not a function
+--------------------------------------------------------------------------------
+testName: getFileExtension_validDataString
+input inputData:  string (The string that should contain the file name to which we want to get the file extension from)
+input inputMetaData: string (Not used for this business rule)
+output: string (The file extension such as txt, xml, csv, etc...)
+
+testName: getFileExtension_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: getFileExtension_inValidDataInputMetaDataString
+input inputData: string (The string that should contain the file name to which we want to get the file extension from) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getFileExtension_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: getFileExtension_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getFileExtension_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: getFileExtension_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: removeDotFromFileExtension_validDataString
+input inputData:  string (The string that should contain the file extension that is being modified)
+input inputMetaData: string (Not used for this business rule)
+output: string (The file extension without the dot prefix)
+
+testName: removeDotFromFileExtension_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: removeDotFromFileExtension_inValidDataInputMetaDataString
+input inputData: string (The string that should contain the file extension that is being modified) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: removeDotFromFileExtension_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: inputData.substring is not a function
+
+testName: removeDotFromFileExtension_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: removeDotFromFileExtension_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: inputData.substring is not a function
+
+testName: removeDotFromFileExtension_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: inputData.substring is not a function
+--------------------------------------------------------------------------------
+testName: removeFileExtensionFromFileName_validDataString
+input inputData:  string (The string that should have all the characters after the last period in the file name removed)
+input inputMetaData: string (Not used for this business rule)
+output: string (The same input string but without the file extension or all the characters removed after the last dot)
+
+testName: removeFileExtensionFromFileName_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: removeFileExtensionFromFileName_inValidDataInputMetaDataString
+input inputData: string (The string that should have all the characters after the last period in the file name removed) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: removeFileExtensionFromFileName_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
+
+testName: removeFileExtensionFromFileName_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: removeFileExtensionFromFileName_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
+
+testName: removeFileExtensionFromFileName_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: inputData.replace is not a function
+--------------------------------------------------------------------------------
+testName: ascertainMatchingFilenames_validDataString
+input inputData:  string (The first filename and path that should be used in making the file name comparison)
+input inputMetaData: string (The second filename and path that should be used in making the file name comparison)
+output: boolean
+
+testName: ascertainMatchingFilenames_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The second filename and path that should be used in making the file name comparison) (testDataString)
+output: ?
+
+testName: ascertainMatchingFilenames_inValidDataInputMetaDataString
+input inputData: string (The first filename and path that should be used in making the file name comparison) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: ascertainMatchingFilenames_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received type number (4567)
+
+testName: ascertainMatchingFilenames_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: ascertainMatchingFilenames_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+
+testName: ascertainMatchingFilenames_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+status: Failed
+error: TypeError: The "path" argument must be of type string. Received an instance of Array
+--------------------------------------------------------------------------------
+testName: supportedFileFormatsAre_validDataString
+input inputData:  string (Not used for this business rule)
+input inputMetaData: string (Not used for this business rule)
+output: string (A coma separated ist of supported file formats. IE a list of file extensions)
+
+testName: supportedFileFormatsAre_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: supportedFileFormatsAre_inValidDataInputMetaDataString
+input inputData: string (Not used for this business rule) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: supportedFileFormatsAre_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: supportedFileFormatsAre_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: supportedFileFormatsAre_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: supportedFileFormatsAre_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: removeXnumberOfFoldersFromEndOfPath_validDataString
+input inputData:  string (The path that should have the number of folders removed)
+input inputMetaData: string (The number of paths that should be removed from the input path)
+output: string (The modified string with the folders removed from the input path)
+
+testName: removeXnumberOfFoldersFromEndOfPath_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (The number of paths that should be removed from the input path) (testDataString)
+output: ?
+
+testName: removeXnumberOfFoldersFromEndOfPath_inValidDataInputMetaDataString
+input inputData: string (The path that should have the number of folders removed) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: removeXnumberOfFoldersFromEndOfPath_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: removeXnumberOfFoldersFromEndOfPath_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: removeXnumberOfFoldersFromEndOfPath_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: removeXnumberOfFoldersFromEndOfPath_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+--------------------------------------------------------------------------------
+testName: getFirstTopLevelFolderFromPath_validDataString
+input inputData:  string (The path that should be evaluated)
+input inputMetaData: string (Not used for this business rule)
+output: string (The folder at the far-right of the input path)
+
+testName: getFirstTopLevelFolderFromPath_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: getFirstTopLevelFolderFromPath_inValidDataInputMetaDataString
+input inputData: string (The path that should be evaluated) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: getFirstTopLevelFolderFromPath_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+status: Failed
+error: TypeError: inputData.includes is not a function
+
+testName: getFirstTopLevelFolderFromPath_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: array ([1,2,3,4,5])
+output: ?
+
+testName: getFirstTopLevelFolderFromPath_inValidInputMetaDataInteger
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: integer (4567)
+output: ?
+
+testName: getFirstTopLevelFolderFromPath_inValidInputMetaDataBoolean
+input inputData: array ([1,2,3,4,5])
+input inputMetaData: boolean (false)
+output: ?
+ 

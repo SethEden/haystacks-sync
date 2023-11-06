@@ -1,0 +1,58 @@
+description: Test plan for chiefWorkflow.js
+
+
+--------------------------------------------------------------------------------
+testName: loadCommandWorkflowsFromPath_validDataString
+input commandWorkflowFilePathConfigurationName: string (The path and file name to the XML that contains the command workflows definitions. (Could be system defined command workflows or client command defined command workflows))
+input contextName: string (The context name defines what parent workflow namespace the loaded and merged data should be stored in)
+output: boolean
+
+testName: loadCommandWorkflowsFromPath_inValidDataCommandWorkflowFilePathConfigurationNameString
+input commandWorkflowFilePathConfigurationName: string (dfxg24346dfg)
+input contextName: string (The context name defines what parent workflow namespace the loaded and merged data should be stored in) (testDataString)
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidDataContextNameString
+input commandWorkflowFilePathConfigurationName: string (The path and file name to the XML that contains the command workflows definitions. (Could be system defined command workflows or client command defined command workflows)) (testDataString)
+input contextName: string (dfxg24346dfg)
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameInteger
+input commandWorkflowFilePathConfigurationName: integer (4567)
+input contextName: 123string321
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameBoolean
+input commandWorkflowFilePathConfigurationName: boolean (false)
+input contextName: 123string321
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidContextNameInteger
+input commandWorkflowFilePathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidContextNameBoolean
+input commandWorkflowFilePathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameUndefined
+input commandWorkflowFilePathConfigurationName: undefined
+input contextName: string (The context name defines what parent workflow namespace the loaded and merged data should be stored in) (inValidDataToStoreUndefined)
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameNaN
+input commandWorkflowFilePathConfigurationName: NaN
+input contextName: string (The context name defines what parent workflow namespace the loaded and merged data should be stored in) (inValidDataToStoreNaN)
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidContextNameUndefined
+input commandWorkflowFilePathConfigurationName: string (The path and file name to the XML that contains the command workflows definitions. (Could be system defined command workflows or client command defined command workflows)) (inValidDataToStoreUndefined)
+input contextName: undefined
+output: ?
+
+testName: loadCommandWorkflowsFromPath_inValidContextNameNaN
+input commandWorkflowFilePathConfigurationName: string (The path and file name to the XML that contains the command workflows definitions. (Could be system defined command workflows or client command defined command workflows)) (inValidDataToStoreNaN)
+input contextName: NaN
+output: ?

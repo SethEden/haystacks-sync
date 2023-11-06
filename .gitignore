@@ -10,3 +10,4 @@ documentation/*
 *.LOG
 *.html
 *.HTML
+.vscode

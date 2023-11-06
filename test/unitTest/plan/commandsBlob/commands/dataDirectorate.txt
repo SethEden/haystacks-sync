@@ -1,0 +1,271 @@
+description: Test plan for dataDirectorate.js
+
+
+--------------------------------------------------------------------------------
+testName: printDataHive_validDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: printDataHive_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: printDataHive_inValidDataInputMetaDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: printDataHive_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: printDataHive_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: printDataHive_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: printDataHive_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: printDataHive_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: printDataHive_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: printDataHive_inValidInputMetaDataUndefined
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: printDataHive_inValidInputMetaDataNaN
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: printDataHiveAttributes_validDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: printDataHiveAttributes_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: printDataHiveAttributes_inValidDataInputMetaDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: printDataHiveAttributes_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: printDataHiveAttributes_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: printDataHiveAttributes_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: printDataHiveAttributes_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: printDataHiveAttributes_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: printDataHiveAttributes_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: printDataHiveAttributes_inValidInputMetaDataUndefined
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: printDataHiveAttributes_inValidInputMetaDataNaN
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data hive or leaf data structure in the hierarchy and
+    a name of an attribute where all values should be printed.) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: clearDataStorage_validDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: clearDataStorage_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: clearDataStorage_inValidDataInputMetaDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: clearDataStorage_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: clearDataStorage_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: clearDataStorage_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: clearDataStorage_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: clearDataStorage_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: clearDataStorage_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: clearDataStorage_inValidInputMetaDataUndefined
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: clearDataStorage_inValidInputMetaDataNaN
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?
+--------------------------------------------------------------------------------changeSetting
+testName: changeSetting_validDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!)
+input inputMetaData: string (Not used for this business rule)
+output: boolean
+
+testName: changeSetting_inValidDataInputDataString
+input inputData: string (dfxg24346dfg)
+input inputMetaData: string (Not used for this business rule) (testDataString)
+output: ?
+
+testName: changeSetting_inValidDataInputMetaDataString
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!) (testDataString)
+input inputMetaData: string (dfxg24346dfg)
+output: ?
+
+testName: changeSetting_inValidInputDataInteger
+input inputData: integer (4567)
+input inputMetaData: 123string321
+output: ?
+
+testName: changeSetting_inValidInputDataBoolean
+input inputData: boolean (false)
+input inputMetaData: 123string321
+output: ?
+
+testName: changeSetting_inValidInputMetaDataInteger
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: changeSetting_inValidInputMetaDataBoolean
+input inputData: 234string432
+input inputMetaData: string
+output: ?
+
+testName: changeSetting_inValidInputDataUndefined
+input inputData: undefined
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreUndefined)
+output: ?
+
+testName: changeSetting_inValidInputDataNaN
+input inputData: NaN
+input inputMetaData: string (Not used for this business rule) (inValidDataToStoreNaN)
+output: ?
+
+testName: changeSetting_inValidInputMetaDataUndefined
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!) (inValidDataToStoreUndefined)
+input inputMetaData: undefined
+output: ?
+
+testName: changeSetting_inValidInputMetaDataNaN
+input inputData: [boolean|string|integer] (An array that could actually contain anything,
+    depending on what the user entered. But the function filters all of that internally and
+    extracts the case the user has entered a data storage name to clear.
+    If none is provided, the all data storage will be cleared!) (inValidDataToStoreNaN)
+input inputMetaData: NaN
+output: ?

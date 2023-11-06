@@ -1,0 +1,850 @@
+description: Test plan for colorizer.js
+
+
+--------------------------------------------------------------------------------
+testName:  colorizeMessageSimple_validData
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: string
+
+testName:  colorizeMessageSimple_inValidMessageString
+input message: string (464gsdsfae8f46)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidColorArrayString
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: string (464gsdsfae8f46)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidIsForegroundString
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: string (464gsdsfae8f46)
+output: false?
+
+testName:  colorizeMessageSimple_inValidMessageNumber
+input message: integer (546)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidMessageBoolean
+input message: boolean (false)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidMessageUndefined
+input message: undefined
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidMessageNaN
+input message: NaN
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidColorArrayNumber
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: integer (546)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidColorArrayBoolean
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: boolean (false)
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidColorArrayUndefined
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: undefined
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidColorArrayNaN
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: NaN
+input isForeground: boolean (A True or False to indicate if the color setting should be applied to the foreground or not)
+output: false?
+
+testName:  colorizeMessageSimple_inValidIsForegroundNumber
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: integer (546)
+output: false?
+
+testName:  colorizeMessageSimple_inValidIsForegroundBoolean
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: boolean (false)
+output: false?
+
+testName:  colorizeMessageSimple_inValidIsForegroundUndefined
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: undefined
+output: false?
+
+testName:  colorizeMessageSimple_inValidIsForegroundNaN
+input message: string (The message that should be formatted and returned according to the inputs, and controlled by the system configuration setting)
+input colorArray: array<integers> (The RGB color array that describes the color that should be applied to the message)
+input isForeground: NaN
+output: false?
+
+testName:  colorizeMessageSimple_inValidAllUndefined
+input message: undefined
+input colorArray: undefined
+input isForeground: undefined
+output: false?
+
+testName:  colorizeMessageSimple_inValidAllNaN
+input message: NaN
+input colorArray: NaN
+input isForeground: NaN
+output: false?
+--------------------------------------------------------------------------------
+testName:  colorizeMessage_validData
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: string
+
+testName:  colorizeMessage_inValidMessageString
+input message: string (464gsdsfae8f46)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidClassNameString
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (464gsdsfae8f46)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidFunctionNameString
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (464gsdsfae8f46)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidFlatMessageLogString
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: string (464gsdsfae8f46)
+output: false?
+
+testName:  colorizeMessage_inValidMessageNumber
+input message: integer (546)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidMessageBoolean
+input message: boolean (false)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidMessageUndefined
+input message: undefined
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidMessageNaN
+input message: NaN
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidClassNameNumber
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: integer (546)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidClassNameBoolean
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: boolean (false)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidClassNameUndefined
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: undefined
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidClassNameNaN
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: NaN
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidFunctionNameNumber
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: integer (546)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidFunctionNameBoolean
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: boolean (false)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidFunctionNameUndefined
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: undefined
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidFunctionNameNaN
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: NaN
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (A True or False value to indicate if we are logging a flat message or if we should do additional processing)
+output: false?
+
+testName:  colorizeMessage_inValidFlatMessageLogNumber
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: integer (546)
+output: false?
+
+testName:  colorizeMessage_inValidFlatMessageLogBoolean
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: boolean (false)
+output: false?
+
+testName:  colorizeMessage_inValidFlatMessageLogUndefined
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: undefined
+output: false?
+
+testName:  colorizeMessage_inValidFlatMessageLogNaN
+input message: string (The message that should be formatted and returned to be logged to the console and/or logged to a log file)
+input className: string (The name of the module/file that made the log call)
+input functionName: string (The name of the function that made the log call)
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: NaN
+output: false?
+
+testName:  colorizeMessage_inValidAllUndefined
+input message: undefined
+input className: undefined
+input functionName: undefined
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: underfined
+output: false?
+
+testName:  colorizeMessage_inValidAllNaN
+input message: NaN
+input className: NaN
+input functionName: NaN
+input debugFilesSetting: boolean (Always to be false, because it's not used in the function.)
+input debugFunctionsSetting: boolean (Always to be false, because it's not used in the function.)
+input flatMessageLog: NaN
+output: false?
+--------------------------------------------------------------------------------
+testName:  aggregateStyleSetting_validData
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: string
+
+testName:  aggregateStyleSetting_inValidConfigurationNamespaceString
+input settingValue1: string (464gsdsfae8f46)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNameString
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (464gsdsfae8f46)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationValueString
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: string (464gsdsfae8f46)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNamespaceNumber
+input settingValue1: integer (546)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNamespaceBoolean
+input settingValue1: boolean (false)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNamespaceUndefined
+input settingValue1: undefined
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNamespaceNaN
+input settingValue1: NaN
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNameNumber
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: integer (546)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNameBoolean
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: boolean (false)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNameUndefined
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: undefined
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationNameNaN
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: NaN
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationValueNumber
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: integer (546)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationValueBoolean
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: boolean (false)
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationValueUndefined
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: undefined
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidConfigurationValueNaN
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: NaN
+input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
+output: false?
+
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingNumber
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: integer (546)
+output: false?
+
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingBoolean
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: boolean (false)
+output: false?
+
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingUndefined
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: undefined
+output: false?
+
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingNaN
+input settingValue1: string (The file level setting from the configuration file)
+input settingValue2: string (The function level setting from the configuration file)
+input defaultColorArray: array<integer> (The default color value that should be used)
+input processAsFontSetting: NaN
+output: false?
+
+testName:  aggregateStyleSetting_inValidAllUndefined
+input settingValue1: undefined
+input settingValue2: undefined
+input defaultColorArray: undefined
+input processAsFontSetting: underfined
+output: false?
+
+testName:  aggregateStyleSetting_inValidAllNaN
+input settingValue1: NaN
+input settingValue2: NaN
+input defaultColorArray: NaN
+input processAsFontSetting: NaN
+output: false?
+--------------------------------------------------------------------------------
+testName: getFontStyleSettingsFromSetting_validDataString
+input settingValue: string (The setting value that should be parsed)
+output: boolean
+
+testName: getFontStyleSettingsFromSetting_inValidDataSettingValueString
+input settingValue: string (dfxg24346dfg)
+output: ?
+
+testName: getFontStyleSettingsFromSetting_inValidSettingValueInteger
+input settingValue: integer (4567)
+output: ?
+
+testName: getFontStyleSettingsFromSetting_inValidSettingValueBoolean
+input settingValue: boolean (false)
+output: ?
+
+testName: getFontStyleSettingsFromSetting_inValidSettingValueUndefined
+input settingValue: undefined
+output: ?
+
+testName: getFontStyleSettingsFromSetting_inValidSettingValueNaN
+input settingValue: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: getColorStyleSettingFromSetting_validDataString
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure)
+input defaultColorArray: array<integer> (The default color that should be used)
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidDataColorNameString
+input colorName: string (dfxg24346dfg)
+input defaultColorArray: array<integer> (The default color that should be used) (testDataString)
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidDataDefaultColorArrayString
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure) (testDataString)
+input defaultColorArray: string (dfxg24346dfg)
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidColorNameInteger
+input colorName: integer (4567)
+input defaultColorArray: 123string321
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidColorNameBoolean
+input colorName: boolean (false)
+input defaultColorArray: 123string321
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidDefaultColorArrayInteger
+input colorName: 234string432
+input defaultColorArray: string
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidDefaultColorArrayBoolean
+input colorName: 234string432
+input defaultColorArray: string
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidColorNameUndefined
+input colorName: undefined
+input defaultColorArray: array<integer> (The default color that should be used) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidColorNameNaN
+input colorName: NaN
+input defaultColorArray: array<integer> (The default color that should be used) (inValidDataToStoreNaN)
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidDefaultColorArrayUndefined
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure) (inValidDataToStoreUndefined)
+input defaultColorArray: undefined
+output: ?
+
+testName: getColorStyleSettingFromSetting_inValidDefaultColorArrayNaN
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure) (inValidDataToStoreNaN)
+input defaultColorArray: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: getNamedColorData_validDataString
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure)
+input defaultColorArray: array<integer> (The default color that should be used)
+output: boolean
+
+testName: getNamedColorData_inValidDataColorNameString
+input colorName: string (dfxg24346dfg)
+input defaultColorArray: array<integer> (The default color that should be used) (testDataString)
+output: ?
+
+testName: getNamedColorData_inValidDataDefaultColorArrayString
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure) (testDataString)
+input defaultColorArray: string (dfxg24346dfg)
+output: ?
+
+testName: getNamedColorData_inValidColorNameInteger
+input colorName: integer (4567)
+input defaultColorArray: 123string321
+output: ?
+
+testName: getNamedColorData_inValidColorNameBoolean
+input colorName: boolean (false)
+input defaultColorArray: 123string321
+output: ?
+
+testName: getNamedColorData_inValidDefaultColorArrayInteger
+input colorName: 234string432
+input defaultColorArray: string
+output: ?
+
+testName: getNamedColorData_inValidDefaultColorArrayBoolean
+input colorName: 234string432
+input defaultColorArray: string
+output: ?
+
+testName: getNamedColorData_inValidColorNameUndefined
+input colorName: undefined
+input defaultColorArray: array<integer> (The default color that should be used) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getNamedColorData_inValidColorNameNaN
+input colorName: NaN
+input defaultColorArray: array<integer> (The default color that should be used) (inValidDataToStoreNaN)
+output: ?
+
+testName: getNamedColorData_inValidDefaultColorArrayUndefined
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure) (inValidDataToStoreUndefined)
+input defaultColorArray: undefined
+output: ?
+
+testName: getNamedColorData_inValidDefaultColorArrayNaN
+input colorName: string (The name of the color who's RGB value we should look up from the color data structure) (inValidDataToStoreNaN)
+input defaultColorArray: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_validDataString
+input messageComponent: string (The message to which the underline font setting should be applied if the setting value calls for it)
+input underlineSettingValue: boolean (A True or False value to indicate if the underline font setting should be applied or not applied)
+output: boolean
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
+input messageComponent: string (dfxg24346dfg)
+input underlineSettingValue: boolean (A True or False value to indicate if the underline font setting should be applied or not applied) (testDataString)
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataUnderlineSettingValueString
+input messageComponent: string (The message to which the underline font setting should be applied if the setting value calls for it) (testDataString)
+input underlineSettingValue: string (dfxg24346dfg)
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
+input messageComponent: integer (4567)
+input underlineSettingValue: 123string321
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
+input messageComponent: boolean (false)
+input underlineSettingValue: 123string321
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueInteger
+input messageComponent: 234string432
+input underlineSettingValue: string
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueBoolean
+input messageComponent: 234string432
+input underlineSettingValue: string
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
+input messageComponent: undefined
+input underlineSettingValue: boolean (A True or False value to indicate if the underline font setting should be applied or not applied) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
+input messageComponent: NaN
+input underlineSettingValue: boolean (A True or False value to indicate if the underline font setting should be applied or not applied) (inValidDataToStoreNaN)
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueUndefined
+input messageComponent: string (The message to which the underline font setting should be applied if the setting value calls for it) (inValidDataToStoreUndefined)
+input underlineSettingValue: undefined
+output: ?
+
+testName: setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueNaN
+input messageComponent: string (The message to which the underline font setting should be applied if the setting value calls for it) (inValidDataToStoreNaN)
+input underlineSettingValue: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_validDataString
+input messageComponent: string (The message to which the bold font setting should be applied if the setting value calls for it)
+input boldSettingValue: string (A True or False value to indicate if the bold font setting should be applied or not applied)
+output: boolean
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
+input messageComponent: string (dfxg24346dfg)
+input boldSettingValue: string (A True or False value to indicate if the bold font setting should be applied or not applied) (testDataString)
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataBoldSettingValueString
+input messageComponent: string (The message to which the bold font setting should be applied if the setting value calls for it) (testDataString)
+input boldSettingValue: string (dfxg24346dfg)
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
+input messageComponent: integer (4567)
+input boldSettingValue: 123string321
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
+input messageComponent: boolean (false)
+input boldSettingValue: 123string321
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueInteger
+input messageComponent: 234string432
+input boldSettingValue: string
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueBoolean
+input messageComponent: 234string432
+input boldSettingValue: string
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
+input messageComponent: undefined
+input boldSettingValue: string (A True or False value to indicate if the bold font setting should be applied or not applied) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
+input messageComponent: NaN
+input boldSettingValue: string (A True or False value to indicate if the bold font setting should be applied or not applied) (inValidDataToStoreNaN)
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueUndefined
+input messageComponent: string (The message to which the bold font setting should be applied if the setting value calls for it) (inValidDataToStoreUndefined)
+input boldSettingValue: undefined
+output: ?
+
+testName: setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueNaN
+input messageComponent: string (The message to which the bold font setting should be applied if the setting value calls for it) (inValidDataToStoreNaN)
+input boldSettingValue: NaN
+output: ?
+--------------------------------------------------------------------------------setFontForegroundColorOnMessageComponentAccordingToSetting
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_validDataString
+input messageComponent: string (The message to which the foreground color setting should be applied if the color setting value != false)
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if no color should be applied)
+output: boolean
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
+input messageComponent: string (dfxg24346dfg)
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if no color should be applied) (testDataString)
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString
+input messageComponent: string (The message to which the foreground color setting should be applied if the color setting value != false) (testDataString)
+input colorSettingValue: string (dfxg24346dfg)
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
+input messageComponent: integer (4567)
+input colorSettingValue: 123string321
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
+input messageComponent: boolean (false)
+input colorSettingValue: 123string321
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger
+input messageComponent: 234string432
+input colorSettingValue: string
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean
+input messageComponent: 234string432
+input colorSettingValue: string
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
+input messageComponent: undefined
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if no color should be applied) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
+input messageComponent: NaN
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if no color should be applied) (inValidDataToStoreNaN)
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined
+input messageComponent: string (The message to which the foreground color setting should be applied if the color setting value != false) (inValidDataToStoreUndefined)
+input colorSettingValue: undefined
+output: ?
+
+testName: setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN
+input messageComponent: string (The message to which the foreground color setting should be applied if the color setting value != false) (inValidDataToStoreNaN)
+input colorSettingValue: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_validDataString
+input messageComponent: string (The message to which the background color setting should be applied if the color setting value != false)
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if not color should be applied)
+output: boolean
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
+input messageComponent: string (dfxg24346dfg)
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if not color should be applied) (testDataString)
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString
+input messageComponent: string (The message to which the background color setting should be applied if the color setting value != false) (testDataString)
+input colorSettingValue: string (dfxg24346dfg)
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
+input messageComponent: integer (4567)
+input colorSettingValue: 123string321
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
+input messageComponent: boolean (false)
+input colorSettingValue: 123string321
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger
+input messageComponent: 234string432
+input colorSettingValue: string
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean
+input messageComponent: 234string432
+input colorSettingValue: string
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
+input messageComponent: undefined
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if not color should be applied) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
+input messageComponent: NaN
+input colorSettingValue: boolean|array<integer> (A value of False or an array of integers for RGB values. False if not color should be applied) (inValidDataToStoreNaN)
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined
+input messageComponent: string (The message to which the background color setting should be applied if the color setting value != false) (inValidDataToStoreUndefined)
+input colorSettingValue: undefined
+output: ?
+
+testName: setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN
+input messageComponent: string (The message to which the background color setting should be applied if the color setting value != false) (inValidDataToStoreNaN)
+input colorSettingValue: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: removeFontStyles_validDataString
+input message: string (The string message that has formatting applied to it where the formatting should be removed)
+output: boolean
+
+testName: removeFontStyles_inValidDataMessageString
+input message: string (dfxg24346dfg)
+output: ?
+
+testName: removeFontStyles_inValidMessageInteger
+input message: integer (4567)
+output: ?
+
+testName: removeFontStyles_inValidMessageBoolean
+input message: boolean (false)
+output: ?
+
+testName: removeFontStyles_inValidMessageUndefined
+input message: undefined
+output: ?
+
+testName: removeFontStyles_inValidMessageNaN
+input message: NaN
+output: ?

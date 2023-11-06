@@ -104,7 +104,7 @@ function loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, con
  * @function enqueueCommand
  * @description Determines if the command queue has been setup or not,
  * if not then it is initialized, and the command is added to the command queue.
- * @param {string} command The command that should be added  to the command queue.
+ * @param {string} command The command that should be added to the command queue.
  * @return {void}
  * @author Seth Hollingsead
  * @date 2022/02/02

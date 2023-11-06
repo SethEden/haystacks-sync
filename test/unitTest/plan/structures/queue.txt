@@ -1,0 +1,281 @@
+description: Test plan for queue.js
+
+
+--------------------------------------------------------------------------------
+testName: initQueue_validDataString
+input queueNameSpace: string (The namespace the queue array should be created under)
+output: boolean
+
+testName: initQueue_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: initQueue_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+output: ?
+
+testName: initQueue_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+output: ?
+
+testName: initQueue_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+output: ?
+
+testName: initQueue_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: dequeue_validDataString
+input queueNameSpace: string (The namespace the queue array should be dequeued from)
+output: boolean
+
+testName: dequeue_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: dequeue_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+output: ?
+
+testName: dequeue_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+output: ?
+
+testName: dequeue_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+output: ?
+
+testName: dequeue_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: enqueue_validDataString
+input queueNameSpace: string (The namespace the queue array should have a value added to)
+input value: string|array<string> (The value that should be added to the specified queue array)
+output: boolean
+
+testName: enqueue_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+input value: string|array<string> (The value that should be added to the specified queue array) (testDataString)
+output: ?
+
+testName: enqueue_inValidDataValueString
+input queueNameSpace: string (The namespace the queue array should have a value added to) (testDataString)
+input value: string (dfxg24346dfg)
+output: ?
+
+testName: enqueue_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+input value: 123string321
+output: ?
+
+testName: enqueue_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+input value: 123string321
+output: ?
+
+testName: enqueue_inValidValueInteger
+input queueNameSpace: 234string432
+input value: string
+output: ?
+
+testName: enqueue_inValidValueBoolean
+input queueNameSpace: 234string432
+input value: string
+output: ?
+
+testName: enqueue_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+input value: string|array<string> (The value that should be added to the specified queue array) (inValidDataToStoreUndefined)
+output: ?
+
+testName: enqueue_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+input value: string|array<string> (The value that should be added to the specified queue array) (inValidDataToStoreNaN)
+output: ?
+
+testName: enqueue_inValidValueUndefined
+input queueNameSpace: string (The namespace the queue array should have a value added to) (inValidDataToStoreUndefined)
+input value: undefined
+output: ?
+
+testName: enqueue_inValidValueNaN
+input queueNameSpace: string (The namespace the queue array should have a value added to) (inValidDataToStoreNaN)
+input value: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: enqueueFront_validDataString
+input queueNameSpace: string (The namespace the queue array should have a value added to)
+input value: string|array<string> (The value that should be added to the specified queue array, it could be a string value or an array of string values)
+output: boolean
+
+testName: enqueueFront_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+input value: string|array<string> (The value that should be added to the specified queue array, it could be a string value or an array of string values) (testDataString)
+output: ?
+
+testName: enqueueFront_inValidDataValueString
+input queueNameSpace: string (The namespace the queue array should have a value added to) (testDataString)
+input value: string (dfxg24346dfg)
+output: ?
+
+testName: enqueueFront_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+input value: 123string321
+output: ?
+
+testName: enqueueFront_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+input value: 123string321
+output: ?
+
+testName: enqueueFront_inValidValueInteger
+input queueNameSpace: 234string432
+input value: string
+output: ?
+
+testName: enqueueFront_inValidValueBoolean
+input queueNameSpace: 234string432
+input value: string
+output: ?
+
+testName: enqueueFront_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+input value: string|array<string> (The value that should be added to the specified queue array, it could be a string value or an array of string values) (inValidDataToStoreUndefined)
+output: ?
+
+testName: enqueueFront_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+input value: string|array<string> (The value that should be added to the specified queue array, it could be a string value or an array of string values) (inValidDataToStoreNaN)
+output: ?
+
+testName: enqueueFront_inValidValueUndefined
+input queueNameSpace: string (The namespace the queue array should have a value added to) (inValidDataToStoreUndefined)
+input value: undefined
+output: ?
+
+testName: enqueueFront_inValidValueNaN
+input queueNameSpace: string (The namespace the queue array should have a value added to) (inValidDataToStoreNaN)
+input value: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: isEmpty_validDataString
+input queueNameSpace: string (The namespace the queue array should have a value added to)
+output: boolean
+
+testName: isEmpty_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: isEmpty_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+output: ?
+
+testName: isEmpty_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+output: ?
+
+testName: isEmpty_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+output: ?
+
+testName: isEmpty_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: queueFront_validDataString
+input queueNameSpace: string (The namespace the queue array from which the front of the queue should be found)
+output: boolean
+
+testName: queueFront_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: queueFront_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+output: ?
+
+testName: queueFront_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+output: ?
+
+testName: queueFront_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+output: ?
+
+testName: queueFront_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: queueSize_validDataString
+input queueNameSpace: string (The namespace of the queue array from which we should get the current queue size)
+output: boolean
+
+testName: queueSize_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: queueSize_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+output: ?
+
+testName: queueSize_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+output: ?
+
+testName: queueSize_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+output: ?
+
+testName: queueSize_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: queueContents_validDataString
+input queueNameSpace: string (The namespace of the queue who's contents should be returned as an array)
+output: boolean
+
+testName: queueContents_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: queueContents_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+output: ?
+
+testName: queueContents_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+output: ?
+
+testName: queueContents_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+output: ?
+
+testName: queueContents_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: queuePrint_validDataString
+input queueNameSpace: string (The namespace that should be used to print out the contents of the queue on the D-data structure)
+output: boolean
+
+testName: queuePrint_inValidDataQueueNameSpaceString
+input queueNameSpace: string (dfxg24346dfg)
+output: ?
+
+testName: queuePrint_inValidQueueNameSpaceInteger
+input queueNameSpace: integer (4567)
+output: ?
+
+testName: queuePrint_inValidQueueNameSpaceBoolean
+input queueNameSpace: boolean (false)
+output: ?
+
+testName: queuePrint_inValidQueueNameSpaceUndefined
+input queueNameSpace: undefined
+output: ?
+
+testName: queuePrint_inValidQueueNameSpaceNaN
+input queueNameSpace: NaN
+output: ?

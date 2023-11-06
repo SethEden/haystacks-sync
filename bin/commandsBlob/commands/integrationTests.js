@@ -57,6 +57,9 @@ const namespacePrefix = sys.ccommandsBlob + bas.cDot + wrd.ccommands + bas.cDot 
     let phase1Results = {};
     let phase2Results = {};
 
+    // validationArray is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cvalidationArrayIs + JSON.stringify(validationArray));
+
     // Phase1 Constants Validation
     // BEGIN Phase 1 Constants Validation
     loggers.consoleLog(namespacePrefix + functionName, msg.cBeginPhase1ConstantsValidation);
@@ -67,6 +70,8 @@ const namespacePrefix = sys.ccommandsBlob + bas.cDot + wrd.ccommands + bas.cDot 
     } // End-for (let key1 in validationArray)
     // END Phase 1 Constants Validation
     loggers.consoleLog(namespacePrefix + functionName, msg.cEndPhase1ConstantsValidation);
+    // phase1Results is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cphase1ResultsIs + JSON.stringify(phase1Results));
 
     // Phase 2 Constants Validation
     // BEGIN Phase 2 Constants Validation
@@ -77,6 +82,8 @@ const namespacePrefix = sys.ccommandsBlob + bas.cDot + wrd.ccommands + bas.cDot 
     } // End-for (let key2 in validationArray)
     // END Phase 2 Constants Validation
     loggers.consoleLog(namespacePrefix + functionName, msg.cEndPhase2ConstantsValidation);
+    // phase2Results is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cphase2ResultsIs + JSON.stringify(phase2Results));
 
     for (let key3 in phase1Results) {
       loggers.constantsValidationSummaryLog(D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages][key3], phase1Results[key3]);
@@ -137,6 +144,7 @@ const namespacePrefix = sys.ccommandsBlob + bas.cDot + wrd.ccommands + bas.cDot 
     let currentCommand = allCommandAliases[0][key1];
     // currentCommand is:
     loggers.consoleLog(namespacePrefix + functionName, msg.ccurrentCommandIs + JSON.stringify(currentCommand));
+    console.log(msg.ccurrentCommandIs + currentCommand[wrd.cName]);
     let aliasList = currentCommand[wrd.cAliases];
     // aliasList is:
     loggers.consoleLog(namespacePrefix + functionName, msg.caliasListIs + aliasList);
@@ -206,6 +214,9 @@ const namespacePrefix = sys.ccommandsBlob + bas.cDot + wrd.ccommands + bas.cDot 
   for (let workflowKey in allWorkflowsData) {
     numberOfDuplicatesFound = 0;
     let workflowName = allWorkflowsData[workflowKey];
+    // workflowName is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cworkflowNameIs + workflowName);
+    console.log(msg.cworkflowNameIs + workflowName);
     for (const element of allWorkflowsData) {
       let secondTierWorkflowName = element;
       // console.log('workflowName is: ' + workflowName);

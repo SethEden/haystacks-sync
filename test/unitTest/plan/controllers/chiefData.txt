@@ -1,0 +1,358 @@
+description: chiefData.js
+
+
+--------------------------------------------------------------------------------
+testName: searchForUniversalDebugConfigSetting_validDataString
+input appConfigPathName: string (The name of the configuration setting that has the path for the appConfigPath)
+input frameworkConfigPathName: string (The name of the configuration setting that has the path for the frameworkConfigPath)
+output: boolean
+
+testName: searchForUniversalDebugConfigSetting_inValidDataAppConfigPathNameString
+input appConfigPathName: string (dfxg24346dfg)
+input frameworkConfigPathName: string (The name of the configuration setting that has the path for the frameworkConfigPath) (testDataString)
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidDataFrameworkConfigPathNameString
+input appConfigPathName: string (The name of the configuration setting that has the path for the appConfigPath) (testDataString)
+input frameworkConfigPathName: string (dfxg24346dfg)
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidAppConfigPathNameInteger
+input appConfigPathName: integer (4567)
+input frameworkConfigPathName: 123string321
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidAppConfigPathNameBoolean
+input appConfigPathName: boolean (false)
+input frameworkConfigPathName: 123string321
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameInteger
+input appConfigPathName: 234string432
+input frameworkConfigPathName: string
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameBoolean
+input appConfigPathName: 234string432
+input frameworkConfigPathName: string
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidAppConfigPathNameUndefined
+input appConfigPathName: undefined
+input frameworkConfigPathName: string (The name of the configuration setting that has the path for the frameworkConfigPath) (inValidDataToStoreUndefined)
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidAppConfigPathNameNaN
+input appConfigPathName: NaN
+input frameworkConfigPathName: string (The name of the configuration setting that has the path for the frameworkConfigPath) (inValidDataToStoreNaN)
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameUndefined
+input appConfigPathName: string (The name of the configuration setting that has the path for the appConfigPath) (inValidDataToStoreUndefined)
+input frameworkConfigPathName: undefined
+output: ?
+
+testName: searchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameNaN
+input appConfigPathName: string (The name of the configuration setting that has the path for the appConfigPath) (inValidDataToStoreNaN)
+input frameworkConfigPathName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: determineThemeDebugConfigFilesToLoad_validDataString
+input themeConfigPathName: string (The configuration name of the path that should be looked up for scaning purposes)
+output: boolean
+
+testName: determineThemeDebugConfigFilesToLoad_inValidDataThemeConfigPathNameString
+input themeConfigPathName: string (dfxg24346dfg)
+output: ?
+
+testName: determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameInteger
+input themeConfigPathName: integer (4567)
+output: ?
+
+testName: determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameBoolean
+input themeConfigPathName: boolean (false)
+output: ?
+
+testName: determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameUndefined
+input themeConfigPathName: undefined
+output: ?
+
+testName: determineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameNaN
+input themeConfigPathName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: getAndProcessCsvData_validDataString
+input pathAndFilename: string (The path and file name of the CSV file that should be loaded and parsed into JSON objects)
+input contextName: string (The name that should be used when adding the objects to the D data structure for data-sharing)
+output: boolean
+
+testName: getAndProcessCsvData_inValidDataPathAndFilenameString
+input pathAndFilename: string (dfxg24346dfg)
+input contextName: string (The name that should be used when adding the objects to the D data structure for data-sharing) (testDataString)
+output: ?
+
+testName: getAndProcessCsvData_inValidDataContextNameString
+input pathAndFilename: string (The path and file name of the CSV file that should be loaded and parsed into JSON objects) (testDataString)
+input contextName: string (dfxg24346dfg)
+output: ?
+
+testName: getAndProcessCsvData_inValidPathAndFilenameInteger
+input pathAndFilename: integer (4567)
+input contextName: 123string321
+output: ?
+
+testName: getAndProcessCsvData_inValidPathAndFilenameBoolean
+input pathAndFilename: boolean (false)
+input contextName: 123string321
+output: ?
+
+testName: getAndProcessCsvData_inValidContextNameInteger
+input pathAndFilename: 234string432
+input contextName: string
+output: ?
+
+testName: getAndProcessCsvData_inValidContextNameBoolean
+input pathAndFilename: 234string432
+input contextName: string
+output: ?
+
+testName: getAndProcessCsvData_inValidPathAndFilenameUndefined
+input pathAndFilename: undefined
+input contextName: string (The name that should be used when adding the objects to the D data structure for data-sharing) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getAndProcessCsvData_inValidPathAndFilenameNaN
+input pathAndFilename: NaN
+input contextName: string (The name that should be used when adding the objects to the D data structure for data-sharing) (inValidDataToStoreNaN)
+output: ?
+
+testName: getAndProcessCsvData_inValidContextNameUndefined
+input pathAndFilename: string (The path and file name of the CSV file that should be loaded and parsed into JSON objects) (inValidDataToStoreUndefined)
+input contextName: undefined
+output: ?
+
+testName: getAndProcessCsvData_inValidContextNameNaN
+input pathAndFilename: string (The path and file name of the CSV file that should be loaded and parsed into JSON objects) (inValidDataToStoreNaN)
+input contextName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: getAndProcessXmlData_validDataString
+input pathAndFilename: string (The path and file name of the XML file that should be loaded and parsed into JSON objects)
+output: boolean
+
+testName: getAndProcessXmlData_inValidDataPathAndFilenameString
+input pathAndFilename: string (dfxg24346dfg)
+output: ?
+
+testName: getAndProcessXmlData_inValidPathAndFilenameInteger
+input pathAndFilename: integer (4567)
+output: ?
+
+testName: getAndProcessXmlData_inValidPathAndFilenameBoolean
+input pathAndFilename: boolean (false)
+output: ?
+
+testName: getAndProcessXmlData_inValidPathAndFilenameUndefined
+input pathAndFilename: undefined
+output: ?
+
+testName: getAndProcessXmlData_inValidPathAndFilenameNaN
+input pathAndFilename: NaN
+output: ?
+
+--------------------------------------------------------------------------------
+testName: setupAllCsvData_validDataString
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search)
+input contextName: string (The context name that should be used when adding data to the D data structure)
+output: boolean
+
+testName: setupAllCsvData_inValidDataDataPathConfigurationNameString
+input dataPathConfigurationName: string (dfxg24346dfg)
+input contextName: string (The context name that should be used when adding data to the D data structure) (testDataString)
+output: ?
+
+testName: setupAllCsvData_inValidDataContextNameString
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (testDataString)
+input contextName: string (dfxg24346dfg)
+output: ?
+
+testName: setupAllCsvData_inValidDataPathConfigurationNameInteger
+input dataPathConfigurationName: integer (4567)
+input contextName: 123string321
+output: ?
+
+testName: setupAllCsvData_inValidDataPathConfigurationNameBoolean
+input dataPathConfigurationName: boolean (false)
+input contextName: 123string321
+output: ?
+
+testName: setupAllCsvData_inValidContextNameInteger
+input dataPathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: setupAllCsvData_inValidContextNameBoolean
+input dataPathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: setupAllCsvData_inValidDataPathConfigurationNameUndefined
+input dataPathConfigurationName: undefined
+input contextName: string (The context name that should be used when adding data to the D data structure) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setupAllCsvData_inValidDataPathConfigurationNameNaN
+input dataPathConfigurationName: NaN
+input contextName: string (The context name that should be used when adding data to the D data structure) (inValidDataToStoreNaN)
+output: ?
+
+testName: setupAllCsvData_inValidContextNameUndefined
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (inValidDataToStoreUndefined)
+input contextName: undefined
+output: ?
+
+testName: setupAllCsvData_inValidContextNameNaN
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (inValidDataToStoreNaN)
+input contextName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: setupAllXmlData_validDataString
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search)
+input contextName: string (The context name that should be used when adding data to the D data structure)
+output: boolean
+
+testName: setupAllXmlData_inValidDataDataPathConfigurationNameString
+input dataPathConfigurationName: string (dfxg24346dfg)
+input contextName: string (The context name that should be used when adding data to the D data structure) (testDataString)
+output: ?
+
+testName: setupAllXmlData_inValidDataContextNameString
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (testDataString)
+input contextName: string (dfxg24346dfg)
+output: ?
+
+testName: setupAllXmlData_inValidDataPathConfigurationNameInteger
+input dataPathConfigurationName: integer (4567)
+input contextName: 123string321
+output: ?
+
+testName: setupAllXmlData_inValidDataPathConfigurationNameBoolean
+input dataPathConfigurationName: boolean (false)
+input contextName: 123string321
+output: ?
+
+testName: setupAllXmlData_inValidContextNameInteger
+input dataPathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: setupAllXmlData_inValidContextNameBoolean
+input dataPathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: setupAllXmlData_inValidDataPathConfigurationNameUndefined
+input dataPathConfigurationName: undefined
+input contextName: string (The context name that should be used when adding data to the D data structure) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setupAllXmlData_inValidDataPathConfigurationNameNaN
+input dataPathConfigurationName: NaN
+input contextName: string (The context name that should be used when adding data to the D data structure) (inValidDataToStoreNaN)
+output: ?
+
+testName: setupAllXmlData_inValidContextNameUndefined
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (inValidDataToStoreUndefined)
+input contextName: undefined
+output: ?
+
+testName: setupAllXmlData_inValidContextNameNaN
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (inValidDataToStoreNaN)
+input contextName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: setupAllJsonConfigData_validDataString
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search)
+input contextName: string (The context name that should be used when adding data to the D data structure)
+output: boolean
+
+testName: setupAllJsonConfigData_inValidDataPathConfigurationNameString
+input dataPathConfigurationName: string (dfxg24346dfg)
+input contextName: string (The context name that should be used when adding data to the D data structure) (testDataString)
+output: ?
+
+testName: setupAllJsonConfigData_inValidDataContextNameString
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (testDataString)
+input contextName: string (dfxg24346dfg)
+output: ?
+
+testName: setupAllJsonConfigData_inValidDataPathConfigurationNameInteger
+input dataPathConfigurationName: integer (4567)
+input contextName: 123string321
+output: ?
+
+testName: setupAllJsonConfigData_inValidDataPathConfigurationNameBoolean
+input dataPathConfigurationName: boolean (false)
+input contextName: 123string321
+output: ?
+
+testName: setupAllJsonConfigData_inValidContextNameInteger
+input dataPathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: setupAllJsonConfigData_inValidContextNameBoolean
+input dataPathConfigurationName: 234string432
+input contextName: string
+output: ?
+
+testName: setupAllJsonConfigData_inValidDataPathConfigurationNameUndefined
+input dataPathConfigurationName: undefined
+input contextName: string (The context name that should be used when adding data to the D data structure) (inValidDataToStoreUndefined)
+output: ?
+
+testName: setupAllJsonConfigData_inValidDataPathConfigurationNameNaN
+input dataPathConfigurationName: NaN
+input contextName: string (The context name that should be used when adding data to the D data structure) (inValidDataToStoreNaN)
+output: ?
+
+testName: setupAllJsonConfigData_inValidContextNameUndefined
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (inValidDataToStoreUndefined)
+input contextName: undefined
+output: ?
+
+testName: setupAllJsonConfigData_inValidContextNameNaN
+input dataPathConfigurationName: string (The name of the configuration setting that has the path we should search) (inValidDataToStoreNaN)
+input contextName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: initializeConstantsValidationData
+NOTE: Unit test is already covered in the dataBroker.js. Tested by:
+initializeConstantsValidationData_validData
+initializeConstantsValidationData_inValidString
+initializeConstantsValidationData_inValidNumber
+initializeConstantsValidationData_inValidBoolean
+--------------------------------------------------------------------------------
+testName: addConstantsValidationData_validDataString
+input arrayValidationData: string (An array of arrays that contains all of the constants library validation names and data objects)
+output: boolean
+
+testName: addConstantsValidationData_inValidDataArrayValidationDataString
+input arrayValidationData: string (dfxg24346dfg)
+output: ?
+
+testName: addConstantsValidationData_inValidArrayValidationDataInteger
+input arrayValidationData: integer (4567)
+output: ?
+
+testName: addConstantsValidationData_inValidArrayValidationDataBoolean
+input arrayValidationData: boolean (false)
+output: ?
+
+testName: addConstantsValidationData_inValidArrayValidationDataUndefined
+input arrayValidationData: undefined
+output: ?
+
+testName: addConstantsValidationData_inValidArrayValidationDataNaN
+input arrayValidationData: NaN
+output: ?

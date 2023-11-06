@@ -348,7 +348,7 @@ function generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength(in
  * should be generated; generate them and string them together to the specified length.
  * @param {string} inputData The number of randomly generated upper case english letters,
  * numeric characters and special characters that should be generated.
- * @param {string} inputMetaData Teh list of special characters that should be used during the generation process.
+ * @param {string} inputMetaData The list of special characters that should be used during the generation process.
  * @return {string} A string of randomly generated upper case alpha numeric characters,
  * and special characters where the length of the string is defined as one of the input parameters.
  * @author Seth Hollingsead
@@ -406,7 +406,7 @@ function generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength(in
  * @description Generate a random selection of characters from the input allowable alphabet of characters,
  * generate them and string them together to the specified length.
  * @param {string} inputData The number of randomly generated special characters that should be generated.
- * @param {string} inputMetaData The ist of special characters that should be used during the generation process.
+ * @param {string} inputMetaData The list of special characters that should be used during the generation process.
  * @return {string} A string of randomly generated characters from the list of
  * allowable special characters that are passed in where the length of the string is defined as one of the input parameters.
  * @author Seth Hollingsead
@@ -502,7 +502,7 @@ function generateValidEmail(inputData, inputMetaData) {
  * only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE}.
  * inputMetaData[2] = specifiedSuffixAndDomain - The specified suffix and domain to use
  * after the "@" symbol in the email being generated, example "Yahoo.com".
- * @return {string}A string of randomly generated mixed case alpha numeric characters and
+ * @return {string} A string of randomly generated mixed case alpha numeric characters and
  * optionally special characters where the length of the string is also defined as one
  * of the input parameters, formatted as an email: "a@b.com".
  * @author Seth Hollingsead
@@ -817,7 +817,7 @@ function generateInvalidEmailWithSpecificSuffixAndDomainName(numberOfCharactersT
  * @param {integer} numberOfCharactersToGenerate The number of characters to generate as an integer.
  * @param {boolean} generateSpecialCharacters A boolean value to indicate if special characters should be
  * included when randomly generating characters for the output string.
- * @param {string} allowableSpecialCharacters The ist of allowable special characters as a string,
+ * @param {string} allowableSpecialCharacters The list of allowable special characters as a string,
  * only used if the {@code generateSpecialCharacters} boolean value is set to {@code TRUE}.
  * @return {string} A string of randomly generated mixed case alpha numeric characters and optionally special characters
  * where the length of the string is also defined as one of the input parameters, formatted as an email "a@b.com".

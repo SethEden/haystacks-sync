@@ -1,0 +1,269 @@
+description: Test plan for configurator.js
+
+
+--------------------------------------------------------------------------------
+testName:  setConfigurationSetting_validData
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: string (data set from configurationNamespace and dataToMerge)
+
+testName:  setConfigurationSetting_validConfigurationNamespaceString
+input configurationNamespace: string (464gsdsfae8f46)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_validConfigurationNameString
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: string (464gsdsfae8f46)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_validConfigurationValueString
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: string (464gsdsfae8f46)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNamespaceNumber
+input configurationNamespace: integer (546)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNamespaceBoolean
+input configurationNamespace: boolean (false)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNamespaceUndefined
+input configurationNamespace: undefined
+input configurationName: string (The key of the configuration setting)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNamespaceNaN
+input configurationNamespace: NaN
+input configurationName: string (The key of the configuration setting)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNameNumber
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: integer (546)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNameBoolean
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: boolean (false)
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNameUndefined
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: undefined
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationNameNaN
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: NaN
+input configurationValue: string|integer|boolean|double (The value of the configuration setting)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationValueNumber
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: integer (546)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationValueBoolean
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: boolean (false)
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationValueUndefined
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: undefined
+output: false?
+
+testName:  setConfigurationSetting_inValidConfigurationValueNaN
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
+input configurationName: string (The key of the configuration setting)
+input configurationValue: NaN
+output: false?
+
+testName:  setConfigurationSetting_inValidAllUndefined
+input configurationNamespace: undefined
+input configurationName: undefined
+input configurationValue: undefined
+output: false?
+
+testName:  setConfigurationSetting_inValidAllNaN
+input configurationNamespace: NaN
+input configurationName: NaN
+input configurationValue: NaN
+output: false?
+--------------------------------------------------------------------------------
+testName: getConfigurationSetting_validDataString
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be found)
+input configurationName: string (The key of the configuration setting)
+output: boolean
+
+testName: getConfigurationSetting_inValidDataConfigurationNamespaceString
+input configurationNamespace: string (dfxg24346dfg)
+input configurationName: string (The key of the configuration setting) (testDataString)
+output: ?
+
+testName: getConfigurationSetting_inValidDataConfigurationNameString
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be found) (testDataString)
+input configurationName: string (dfxg24346dfg)
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNamespaceInteger
+input configurationNamespace: integer (4567)
+input configurationName: 123string321
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNamespaceBoolean
+input configurationNamespace: boolean (false)
+input configurationName: 123string321
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNameInteger
+input configurationNamespace: 234string432
+input configurationName: string
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNameBoolean
+input configurationNamespace: 234string432
+input configurationName: string
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNamespaceUndefined
+input configurationNamespace: undefined
+input configurationName: string (The key of the configuration setting) (inValidDataToStoreUndefined)
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNamespaceNaN
+input configurationNamespace: NaN
+input configurationName: string (The key of the configuration setting) (inValidDataToStoreNaN)
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNameUndefined
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be found) (inValidDataToStoreUndefined)
+input configurationName: undefined
+output: ?
+
+testName: getConfigurationSetting_inValidConfigurationNameNaN
+input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be found) (inValidDataToStoreNaN)
+input configurationName: NaN
+output: ?
+--------------------------------------------------------------------------------processConfigurationNameRules
+testName: processConfigurationNameRules_validDataString
+input fullyQualifiedName: string (The fully qualified name with the namespace included)
+output: boolean
+
+testName: processConfigurationNameRules_inValidDataFullyQualifiedNameString
+input fullyQualifiedName: string (dfxg24346dfg)
+output: ?
+
+testName: processConfigurationNameRules_inValidFullyQualifiedNameInteger
+input fullyQualifiedName: integer (4567)
+output: ?
+
+testName: processConfigurationNameRules_inValidFullyQualifiedNameBoolean
+input fullyQualifiedName: boolean (false)
+output: ?
+
+testName: processConfigurationNameRules_inValidFullyQualifiedNameUndefined
+input fullyQualifiedName: undefined
+output: ?
+
+testName: processConfigurationNameRules_inValidFullyQualifiedNameNaN
+input fullyQualifiedName: NaN
+output: ?
+--------------------------------------------------------------------------------processConfigurationNamespaceRules
+testName: processConfigurationNamespaceRules_validDataString
+input fullyQualifiedName: string (The fully qualified name with the namespace included)
+output: boolean
+
+testName: processConfigurationNamespaceRules_inValidDataFullyQualifiedNameString
+input fullyQualifiedName: string (dfxg24346dfg)
+output: ?
+
+testName: processConfigurationNamespaceRules_inValidFullyQualifiedNameInteger
+input fullyQualifiedName: integer (4567)
+output: ?
+
+testName: processConfigurationNamespaceRules_inValidFullyQualifiedNameBoolean
+input fullyQualifiedName: boolean (false)
+output: ?
+
+testName: processConfigurationNamespaceRules_inValidFullyQualifiedNameUndefined
+input fullyQualifiedName: undefined
+output: ?
+
+testName: processConfigurationNamespaceRules_inValidFullyQualifiedNameNaN
+input fullyQualifiedName: NaN
+output: ?
+--------------------------------------------------------------------------------
+testName: processConfigurationValueRules_validDataString
+input name: string (The name of the configuration variable, without the namespace)
+input value: string (The value of the configuration variable)
+output: boolean
+
+testName: processConfigurationValueRules_inValidDataNameString
+input name: string (dfxg24346dfg)
+input value: string (The value of the configuration variable) (testDataString)
+output: ?
+
+testName: processConfigurationValueRules_inValidDataValueString
+input name: string (The name of the configuration variable, without the namespace) (testDataString)
+input value: string (dfxg24346dfg)
+output: ?
+
+testName: processConfigurationValueRules_inValidNameInteger
+input name: integer (4567)
+input value: 123string321
+output: ?
+
+testName: processConfigurationValueRules_inValidNameBoolean
+input name: boolean (false)
+input value: 123string321
+output: ?
+
+testName: processConfigurationValueRules_inValidValueInteger
+input name: 234string432
+input value: string
+output: ?
+
+testName: processConfigurationValueRules_inValidValueBoolean
+input name: 234string432
+input value: string
+output: ?
+
+testName: processConfigurationValueRules_inValidNameUndefined
+input name: undefined
+input value: string (The value of the configuration variable) (inValidDataToStoreUndefined)
+output: ?
+
+testName: processConfigurationValueRules_inValidNameNaN
+input name: NaN
+input value: string (The value of the configuration variable) (inValidDataToStoreNaN)
+output: ?
+
+testName: processConfigurationValueRules_inValidValueUndefined
+input name: string (The name of the configuration variable, without the namespace) (inValidDataToStoreUndefined)
+input value: undefined
+output: ?
+
+testName: processConfigurationValueRules_inValidValueNaN
+input name: string (The name of the configuration variable, without the namespace) (inValidDataToStoreNaN)
+input value: NaN
+output: ?
