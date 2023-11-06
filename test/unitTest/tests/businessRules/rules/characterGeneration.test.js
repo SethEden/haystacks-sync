@@ -843,6 +843,13 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
  * @date 2023/05/03
  */
 describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter, () => {
+  /**
+   * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString
+   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+	describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter, () => {
 	/**
 	 * ?????
 	 * Why was this test commented out???
