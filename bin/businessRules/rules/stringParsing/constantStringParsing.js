@@ -35,7 +35,7 @@ const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + 
  * @function validateConstantsDataValidation
  * @description Validates that validation data to ensure that all the contents of the
  * constants validation data matches with the actual constants definitions.
- * @param {string} inputData the path of the constants file that should be validated.
+ * @param {string} inputData The path of the constants file that should be validated.
  * @param {string} inputMetaData The name of the data hive that contains the appropriate matching constants validation data.
  * @return {boolean} True or False to indicate if all of the contents of the constants are fully validated or not.
  * @author Seth Hollingsead
@@ -48,16 +48,32 @@ function validateConstantsDataValidation(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   let foundAFailure = false;
+  let processed = false;
   if (inputData && inputMetaData) {
-    const liner = new lineByLine(inputData);
-    let line;
+    // Scanning constants phase 1 validation data for file:
+    console.log(msg.cScanningConstantsValidationPhase1Message + inputData);
+    let inputFilePath = path.resolve(inputData);
+    const fileContents = ruleParsing.processRulesInternal([inputFilePath, ''], [biz.cloadAsciiFileFromPath]);
+    // fileContents are:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cfileContentsAre + JSON.stringify(fileContents));
+    const fileContentsLineArray = fileContents.split(/\r?\n/);
+    
     let colorizeLogsEnabled = configurator.getConfigurationSetting(wrd.csystem, cfg.cenableColorizedConsoleLogs);
-
-    while (line === liner.next()) {
-      if (line) {
+    // BEGIN processing all lines from file: 
+    loggers.consoleLog(namespacePrefix + functionName, msg.cBeginProcessingAllLinesFromFile + inputData);
+    for (const lineKey in fileContentsLineArray) {
+      // BEGIN processing a line
+      loggers.consoleLog(namespacePrefix + functionName, msg.cBeginProcessingLine);
+      // line is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.clineIs + JSON.stringify(lineKey));
+      if (lineKey) {
+        processed = true;
+        // constants LineKey is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.cconstantsLineKeyIs + lineKey.toString(gen.cascii));
+        
+        let lineInCode = fileContentsLineArray[lineKey];
         // constants line is:
-        loggers.consoleLog(namespacePrefix + functionName, msg.cconstantsLineIs + line.toString(gen.cascii));
-        let lineInCode = line.toString(gen.cascii);
+        loggers.consoleLog(namespacePrefix + functionName, msg.cconstantsLineIs + lineInCode);
         let foundConstant = false;
         if (lineInCode.includes(sys.cexportconst) === true) {
           let lineArray = lineInCode.split(bas.cSpace);
@@ -100,11 +116,17 @@ function validateConstantsDataValidation(inputData, inputMetaData) {
       } else {
         // ERROR: line is null or undefined:
         // file is:
-        console.log(msg.cErrorLineIsNullOrUndefined + line + msg.cSpaceFileIs + inputData);
-      }      
-    } // End-while (line = liner.next())
+        console.log(msg.cErrorLineIsNullOrUndefined + lineKey + msg.cSpaceFileIs + inputData);
+      }   
+      // END processing a line
+      loggers.consoleLog(namespacePrefix + functionName, msg.cEndProcessingLine);
+    } // End-for (const line in fileContentsLineArray)
+    // END processing all lines from file: 
+    loggers.consoleLog(namespacePrefix + functionName, msg.cEndProcessingAllLinesFromFile + inputData);
   } // End-if (inputData && inputMetaData)
-  if (foundAFailure === false) {
+  if (foundAFailure === false && processed === true) {
+    // Make sure we didn't find a failure, and we also actually did some processing of the data file.
+    // Otherwise this could just fall through and never read the file, but still return true.
     returnData = true;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -146,7 +168,7 @@ function determineConstantsContextQualifiedPrefix(inputData, inputMetaData) {
 
 /**
  * @function determineSuggestedConstantsValidationLineOfCode
- * @description Takes the name of the missing constant and determines a suggested lin of code to ad to the appropriate constants validation file.
+ * @description Takes the name of the missing constant and determines a suggested line of code to ad to the appropriate constants validation file.
  * This will make it really easy for developers to maintain the constants validation system.
  * @param {string} inputData The name of the constant file that is missing and should have a line of code generated for it.
  * @param {string} inputMetaData The prefix used to reference the constants file in the code.
@@ -191,7 +213,7 @@ function determineSuggestedConstantsValidationLineOfCode(inputData, inputMetaDat
 /**
  * @function validateConstantsDataValidationLineItemName
  * @description Loops through all of the constants validation data and verifies if a matching constant definition can be found, or not found.
- * @param {string} inputData the constant definition that should be searched for.
+ * @param {string} inputData The constant definition that should be searched for.
  * @param {string} inputMetaData The name of the data hive that contains the appropriate matching constants validation data.
  * @return {boolean} True or False to indicate if a match was found or not found.
  * @author Seth Hollingsead
@@ -489,7 +511,7 @@ function isConstantTypeValid(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   if (inputData) {
-    let constantsShortNames = D[sys.cConstantsValidatinoData][sys.cConstantsShortNames];
+    let constantsShortNames = D[sys.cConstantsValidationData][sys.cConstantsShortNames];
     for (let key in constantsShortNames) {
       if (inputData === key || inputData === constantsShortNames[key]) {
         returnData = true;
@@ -534,7 +556,7 @@ function convertConstantTypeToConstantPrefix(inputData, inputMetaData) {
 /**
  * @function constantsOptimizedFulfillmentSystem
  * @description Determines what is the most optimized way to define a string using existing constant strings.
- * @param {string} inputData the string that should be determined or find a constant to fulfill part of the string.
+ * @param {string} inputData The string that should be determined or find a constant to fulfill part of the string.
  * @param {string} inputMetaData Not used for this business rule.
  * @return {string} A constant that represents part of the input string.
  * @author Seth Hollingsead
@@ -552,6 +574,7 @@ function constantsOptimizedFulfillmentSystem(inputData, inputMetaData) {
     if (doesConstantExist(inputData, '') === false) {
       returnData = constantsOptimizedFulfillmentSystem(inputData.substring(0, inputData.length - 1), inputMetaData);
     } else {
+      
       constantType = getConstantType(inputData, true);
       constantName = getConstantName(inputData, '');
       let constantPrefix = convertConstantTypeToConstantPrefix(constantType, '');
