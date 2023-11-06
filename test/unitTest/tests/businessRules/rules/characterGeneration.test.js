@@ -683,7 +683,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter, () => {
   /**
    * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString
-   * @description Tests the business rules function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with a valid input.
+   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
