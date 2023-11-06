@@ -34,7 +34,7 @@ const { bas, wrd, num } = hayConst;
 describe(tst_con.ccleanCommandInput, () => {
     /**
     * @function cleanCommandInput_validDataString
-    * @description Tests the business rules function cleanCommandInput with a valid data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function cleanCommandInput with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -53,7 +53,7 @@ describe(tst_con.ccleanCommandInput, () => {
 
     /**
     * @function cleanCommandInput_inValidDataInputDataString
-    * @description Tests the business rules function cleanCommandInput with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function cleanCommandInput with an invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -72,7 +72,7 @@ describe(tst_con.ccleanCommandInput, () => {
 
     /**
     * @function cleanCommandInput_inValidDataInputMetaDataString
-    * @description Tests the business rules function cleanCommandInput with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function cleanCommandInput with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -92,7 +92,7 @@ describe(tst_con.ccleanCommandInput, () => {
 
     /**
     * @function cleanCommandInput_inValidInputDataInteger
-    * @description Tests the business rules function cleanCommandInput with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function cleanCommandInput with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -111,7 +111,7 @@ describe(tst_con.ccleanCommandInput, () => {
 
     /**
     * @function cleanCommandInput_inValidInputDataBoolean
-    * @description Tests the business rules function cleanCommandInput with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function cleanCommandInput with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -130,7 +130,7 @@ describe(tst_con.ccleanCommandInput, () => {
 
     /**
     * @function cleanCommandInput_inValidInputMetaDataInteger
-    * @description Tests the business rules function cleanCommandInput with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function cleanCommandInput with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -149,7 +149,7 @@ describe(tst_con.ccleanCommandInput, () => {
 
     /**
     * @function cleanCommandInput_inValidInputMetaDataBoolean
-    * @description Tests the business rules function cleanCommandInput with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function cleanCommandInput with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -176,7 +176,7 @@ describe(tst_con.ccleanCommandInput, () => {
 describe(tst_con.cisValidCommandNameString, () => {
     /**
     * @function isValidCommandNameString_validDataString
-    * @description Tests the business rules function isValidCommandNameString with a valid data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with a valid data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -194,7 +194,7 @@ describe(tst_con.cisValidCommandNameString, () => {
 
     /**
     * @function isValidCommandNameString_inValidDataInputDataString
-    * @description Tests the business rules function isValidCommandNameString with a invalid string data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with an invalid string data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -212,7 +212,7 @@ describe(tst_con.cisValidCommandNameString, () => {
 
     /**
     * @function isValidCommandNameString_inValidDataInputMetaDataString
-    * @description Tests the business rules function isValidCommandNameString with a invalid string inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     * @NOTE Commented out because meta data is not used.
@@ -231,7 +231,7 @@ describe(tst_con.cisValidCommandNameString, () => {
     
     /**
     * @function isValidCommandNameString_inValidInputDataInteger
-    * @description Tests the business rules function isValidCommandNameString with a invalid integer data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -249,7 +249,7 @@ describe(tst_con.cisValidCommandNameString, () => {
     
     /**
     * @function isValidCommandNameString_inValidInputDataBoolean
-    * @description Tests the business rules function isValidCommandNameString with a invalid boolean data.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -267,7 +267,7 @@ describe(tst_con.cisValidCommandNameString, () => {
 
     /**
     * @function isValidCommandNameString_inValidInputMetaDataInteger
-    * @description Tests the business rules function isValidCommandNameString with a invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */
@@ -286,7 +286,7 @@ describe(tst_con.cisValidCommandNameString, () => {
 
     /**
     * @function isValidCommandNameString_inValidInputMetaDataBoolean
-    * @description Tests the business rules function isValidCommandNameString with a invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.stringParsing.commandStringParsing function isValidCommandNameString with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/25
     */

@@ -28,7 +28,7 @@ output: ?
 --------------------------------------------------------------------------------
 testName: mergeClientBusinessRules
 NOTE: Unit test is already covered in the warden.js. Tested by:
-mergeClientBusinessRules_validDataString
+mergeClientBusinessRules_validDataObject
 mergeClientBusinessRules_inValidDataClientBusinessRulesString
 mergeClientBusinessRules_inValidClientBusinessRulesstring
 mergeClientBusinessRules_inValidClientBusinessRulesBoolean
@@ -37,7 +37,7 @@ mergeClientBusinessRules_inValidClientBusinessRulesNaN
 --------------------------------------------------------------------------------
 testName: mergeClientCommands
 NOTE: Unit test is already covered in the warden.js. Tested by:
-mergeClientCommands_validDataString
+mergeClientCommands_validDataObject
 mergeClientCommands_inValidDataClientCommandsString
 mergeClientCommands_inValidClientCommandsstring
 mergeClientCommands_inValidClientCommandsBoolean

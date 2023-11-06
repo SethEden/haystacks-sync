@@ -17,8 +17,8 @@ input inputPath: string (The path for the entry point to the framework, ie: main
 input actualFrameworkName: string (dfxg24346dfg)
 output: ?
 
-testName: processRootPath_inValidInputPathstring (The path in the configuration JSON object where the configuration setting should be set)
-input inputPath: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+testName: processRootPath_inValidInputPathInteger
+input inputPath: integer (4567)
 input actualFrameworkName: 123string321
 output: ?
 
@@ -27,9 +27,9 @@ input inputPath: boolean (false)
 input actualFrameworkName: 123string321
 output: ?
 
-testName: processRootPath_inValidActualFrameworkNamestring (The path in the configuration JSON object where the configuration setting should be set)
+testName: processRootPath_inValidActualFrameworkNameInteger (The path in the configuration JSON object where the configuration setting should be set)
 input inputPath: 234string432
-input actualFrameworkName: string
+input actualFrameworkName: integer
 output: ?
 
 testName: processRootPath_inValidActualFrameworkNameBoolean
@@ -57,16 +57,16 @@ input inputPath: string (The path for the entry point to the framework, ie: main
 input actualFrameworkName: NaN
 output: ?
 --------------------------------------------------------------------------------
-testName: initFrameworkSchema_validDataString
-input configData: string (All of the configuration data that should be parsed as part of the setup process)
+testName: initFrameworkSchema_validDataObject
+input configData: Object (All of the configuration data that should be parsed as part of the setup process)
 output: boolean
 
 testName: initFrameworkSchema_inValidConfigDataString
 input configData: string (dfxg24346dfg)
 output: ?
 
-testName: initFrameworkSchema_inValidConfigDatastring (The path in the configuration JSON object where the configuration setting should be set)
-input configData: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+testName: initFrameworkSchema_inValidConfigDataInteger
+input configData: string (4567)
 output: ?
 
 testName: initFrameworkSchema_inValidConfigDataBoolean
@@ -81,7 +81,7 @@ testName: initFrameworkSchema_inValidConfigDataNaN
 input configData: NaN
 output: ?
 --------------------------------------------------------------------------------
-testName: mergeClientBusinessRules_validDataString
+testName: mergeClientBusinessRules_validDataObject
 input clientBusinessRules: object (A map of client defined business rule names and client defined business rule function calls)
 output: boolean
 
@@ -89,8 +89,8 @@ testName: mergeClientBusinessRules_inValidDataClientBusinessRulesString
 input clientBusinessRules: string (dfxg24346dfg)
 output: ?
 
-testName: mergeClientBusinessRules_inValidClientBusinessRulesstring (The path in the configuration JSON object where the configuration setting should be set)
-input clientBusinessRules: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+testName: mergeClientBusinessRules_inValidClientBusinessRulesInteger
+input clientBusinessRules: Integer (4567)
 output: ?
 
 testName: mergeClientBusinessRules_inValidClientBusinessRulesBoolean
@@ -105,16 +105,16 @@ testName: mergeClientBusinessRules_inValidClientBusinessRulesNaN
 input clientBusinessRules: NaN
 output: ?
 --------------------------------------------------------------------------------
-testName: mergeClientCommands_validDataString
-input clientCommands: string (A map of client defined command names and client defined command function calls)
+testName: mergeClientCommands_validDataObject
+input clientCommands: object (A map of client defined command names and client defined command function calls)
 output: boolean
 
 testName: mergeClientCommands_inValidDataClientCommandsString
 input clientCommands: string (dfxg24346dfg)
 output: ?
 
-testName: mergeClientCommands_inValidClientCommandsstring (The path in the configuration JSON object where the configuration setting should be set)
-input clientCommands: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+testName: mergeClientCommands_inValidClientCommandsInteger
+input clientCommands: integer (4567)
 output: ?
 
 testName: mergeClientCommands_inValidClientCommandsBoolean
@@ -137,8 +137,8 @@ testName: loadCommandAliases_inValidDataCommandAliasesPathString
 input commandAliasesPath: string (dfxg24346dfg)
 output: ?
 
-testName: loadCommandAliases_inValidCommandAliasesPathstring (The path in the configuration JSON object where the configuration setting should be set)
-input commandAliasesPath: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+testName: loadCommandAliases_inValidCommandAliasesPathInteger
+input commandAliasesPath: integer (4567)
 output: ?
 
 testName: loadCommandAliases_inValidCommandAliasesPathBoolean
@@ -161,8 +161,8 @@ testName: loadCommandWorkflows_inValidDataWorkflowPathConfigNameString
 input workflowPathConfigName: string (dfxg24346dfg)
 output: ?
 
-testName: loadCommandWorkflows_inValidWorkflowPathConfigNamestring (The path in the configuration JSON object where the configuration setting should be set)
-input workflowPathConfigName: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+testName: loadCommandWorkflows_inValidWorkflowPathConfigNameInteger
+input workflowPathConfigName: integer (4567)
 output: ?
 
 testName: loadCommandWorkflows_inValidWorkflowPathConfigNameBoolean
@@ -192,8 +192,8 @@ input inputs: string (The array of inputs) (testDataString)
 input businessRules: string (dfxg24346dfg)
 output: ?
 
-testName: executeBusinessRules_inValidInputsstring (The path in the configuration JSON object where the configuration setting should be set)
-input inputs: string (The path in the configuration JSON object where the configuration setting should be set) (4567)
+testName: executeBusinessRules_inValidInputsInteger
+input inputs: integer (4567)
 input businessRules: 123string321
 output: ?
 
@@ -202,9 +202,9 @@ input inputs: boolean (false)
 input businessRules: 123string321
 output: ?
 
-testName: executeBusinessRules_inValidBusinessRulesstring (The path in the configuration JSON object where the configuration setting should be set)
+testName: executeBusinessRules_inValidBusinessRulesInteger
 input inputs: 234string432
-input businessRules: string
+input businessRules: integer (4567)
 output: ?
 
 testName: executeBusinessRules_inValidBusinessRulesBoolean

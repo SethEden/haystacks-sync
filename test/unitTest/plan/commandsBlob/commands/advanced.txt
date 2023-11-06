@@ -132,33 +132,33 @@ input inputData: NaN
 input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
 output: ?
 --------------------------------------------------------------------------------
-testName: 1commandSequencer_validDataString
+testName: commandAliasGenerator_validDataString
 NOTE: Happy path unit test will be tested by integration test using the haystacks string workflow: TestCommandSequenceALL. 
 ("constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst")
 
-testName: 1commandSequencer_inValidDataInputDataString
+testName: commandAliasGenerator_inValidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: string (Not used for this command) (testDataString)
 output: ?
 
-testName: 1commandSequencer_inValidInputDataInteger
+testName: commandAliasGenerator_inValidInputDataInteger
 input inputData: integer (4567)
 input inputMetaData: 123string321
 output: ?
 
-testName: 1commandSequencer_inValidInputDataBoolean
+testName: commandAliasGenerator_inValidInputDataBoolean
 input inputData: boolean (false)
 input inputMetaData: 123string321
 output: ?
 
-testName: 1commandSequencer_inValidInputDataUndefined
+testName: commandAliasGenerator_inValidInputDataUndefined
 input inputData: undefined
 input inputMetaData: string (Not used for this command) (inValidDataToStoreUndefined)
 output: ?
 status: Failed
 error: TypeError: Cannot read properties of undefined (reading 'length')
 
-testName: 1commandSequencer_inValidInputDataNaN
+testName: commandAliasGenerator_inValidInputDataNaN
 input inputData: NaN
 input inputMetaData: string (Not used for this command) (inValidDataToStoreNaN)
 output: ?

@@ -38,7 +38,7 @@ const { bas, wrd } = hayConst;
 describe(tst_con.cgetXmlData, () => {
   /**
    * @function getXmlData_validDataString
-   * @description Tests the business rules function getXmlData with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -48,7 +48,7 @@ describe(tst_con.cgetXmlData, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.getXmlData(
       inputData,
       inputMetaData
@@ -60,7 +60,7 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getXmlData_inValidDataInputDataString
-   * @description Tests the business rules function getXmlData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -70,7 +70,7 @@ describe(tst_con.cgetXmlData, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getXmlData(
       inputData,
       inputMetaData
@@ -82,39 +82,39 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getXmlData_inValidDataInputMetaDataString
-   * @description Tests the business rules function getXmlData with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidDataInputMetaDataString, () => {
-      // Arrange
-      let inputData = obj_con.fileOperationsXmlPath();
-      let inputMetaData = data_con.stringRandomText;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileOperations.getXmlData(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy();
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlPath();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getXmlData_inValidInputDataInteger
-   * @description Tests the business rules function getXmlData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getXmlData(
       inputData,
       inputMetaData
@@ -126,17 +126,17 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getXmlData_inValidInputDataBoolean
-   * @description Tests the business rules function getXmlData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getXmlData(
       inputData,
       inputMetaData
@@ -148,17 +148,17 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getXmlData_inValidInputMetaDataInteger
-   * @description Tests the business rules function getXmlData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getXmlData(
       inputData,
       inputMetaData
@@ -170,17 +170,17 @@ describe(tst_con.cgetXmlData, () => {
 
   /**
    * @function getXmlData_inValidInputMetaDataBoolean
-   * @description Tests the business rules function getXmlData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getXmlData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetXmlData_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getXmlData(
       inputData,
       inputMetaData
@@ -200,7 +200,7 @@ describe(tst_con.cgetXmlData, () => {
 describe(tst_con.cgetCsvData, () => {
   /**
    * @function getCsvData_validDataString
-   * @description Tests the business rules function getCsvData with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -210,7 +210,7 @@ describe(tst_con.cgetCsvData, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.getCsvData(
       inputData,
       inputMetaData
@@ -222,7 +222,7 @@ describe(tst_con.cgetCsvData, () => {
 
   /**
    * @function getCsvData_inValidDataInputDataString
-   * @description Tests the business rules function getCsvData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -232,7 +232,7 @@ describe(tst_con.cgetCsvData, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getCsvData(
       inputData,
       inputMetaData
@@ -244,39 +244,39 @@ describe(tst_con.cgetCsvData, () => {
 
   /**
    * @function getCsvData_inValidDataInputMetaDataString
-   * @description Tests the business rules function getCsvData with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetCsvData_inValidDataInputMetaDataString, () => {
-      // Arrange
-      let inputData = obj_con.fileOperationsCsvPath();
-      let inputMetaData = data_con.stringRandomText;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileOperations.getCsvData(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy();
+    // Arrange
+    let inputData = obj_con.fileOperationsCsvPath();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.getCsvData(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getCsvData_inValidInputDataInteger
-   * @description Tests the business rules function getCsvData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetCsvData_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getCsvData(
       inputData,
       inputMetaData
@@ -288,17 +288,17 @@ describe(tst_con.cgetCsvData, () => {
 
   /**
    * @function getCsvData_inValidInputDataBoolean
-   * @description Tests the business rules function getCsvData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetCsvData_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getCsvData(
       inputData,
       inputMetaData
@@ -310,17 +310,17 @@ describe(tst_con.cgetCsvData, () => {
 
   /**
    * @function getCsvData_inValidInputMetaDataInteger
-   * @description Tests the business rules function getCsvData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetCsvData_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getCsvData(
       inputData,
       inputMetaData
@@ -332,17 +332,17 @@ describe(tst_con.cgetCsvData, () => {
 
   /**
    * @function getCsvData_inValidInputMetaDataBoolean
-   * @description Tests the business rules function getCsvData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getCsvData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetCsvData_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getCsvData(
       inputData,
       inputMetaData
@@ -356,13 +356,13 @@ describe(tst_con.cgetCsvData, () => {
 /**
  * @function getJsonData
  * @description Tests the positive and negative test cases of the getJsonData
- * @author Json Howards
+ * @author Json Howard
  * @date 2023/05/03
  */
 describe(tst_con.cgetJsonData, () => {
   /**
    * @function getJsonData_validDataString
-   * @description Tests the business rules function getJsonData with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -372,7 +372,7 @@ describe(tst_con.cgetJsonData, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.getJsonData(
       inputData,
       inputMetaData
@@ -384,7 +384,7 @@ describe(tst_con.cgetJsonData, () => {
 
   /**
    * @function getJsonData_inValidDataInputDataString
-   * @description Tests the business rules function getJsonData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid string input.
    * @result Create garbage folder
    * @author Json Howard
    * @date 2023/05/03
@@ -408,39 +408,39 @@ describe(tst_con.cgetJsonData, () => {
 
   /**
    * @function getJsonData_inValidDataInputMetaDataString
-   * @description Tests the business rules function getJsonData with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetJsonData_inValidDataInputMetaDataString, () => {
-      // Arrange
-      let inputData = obj_con.fileOperationsJsonPath();
-      let inputMetaData = data_con.stringRandomText;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileOperations.getJsonData(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy();
+    // Arrange
+    let inputData = obj_con.fileOperationsJsonPath();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.getJsonData(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getJsonData_inValidInputDataInteger
-   * @description Tests the business rules function getJsonData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetJsonData_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getJsonData(
       inputData,
       inputMetaData
@@ -452,17 +452,17 @@ describe(tst_con.cgetJsonData, () => {
 
   /**
    * @function getJsonData_inValidInputDataBoolean
-   * @description Tests the business rules function getJsonData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetJsonData_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getJsonData(
       inputData,
       inputMetaData
@@ -474,17 +474,17 @@ describe(tst_con.cgetJsonData, () => {
 
   /**
    * @function getJsonData_inValidInputMetaDataInteger
-   * @description Tests the business rules function getJsonData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetJsonData_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getJsonData(
       inputData,
       inputMetaData
@@ -496,17 +496,17 @@ describe(tst_con.cgetJsonData, () => {
 
   /**
    * @function getJsonData_inValidInputMetaDataBoolean
-   * @description Tests the business rules function getJsonData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getJsonData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetJsonData_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getJsonData(
       inputData,
       inputMetaData
@@ -526,7 +526,7 @@ describe(tst_con.cgetJsonData, () => {
 describe(tst_con.cwriteJsonData, () => {
   /**
    * @function writeJsonData_validDataString
-   * @description Tests the business rules function writeJsonData with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -536,7 +536,7 @@ describe(tst_con.cwriteJsonData, () => {
     let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.writeJsonData(
       inputData,
       inputMetaData
@@ -548,7 +548,7 @@ describe(tst_con.cwriteJsonData, () => {
 
   /**
    * @function writeJsonData_inValidDataInputDataString
-   * @description Tests the business rules function writeJsonData with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid string input.
    * @result In root path create garbage file
    * @author Json Howard
    * @date 2023/05/03
@@ -572,7 +572,7 @@ describe(tst_con.cwriteJsonData, () => {
 
   /**
    * @function writeJsonData_inValidDataInputMetaDataString
-   * @description Tests the business rules function writeJsonData with a invalid string inputMetadata.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid string inputMetadata.
    * @result In root path create garbage file
    * @author Json Howard
    * @date 2023/05/03
@@ -593,10 +593,10 @@ describe(tst_con.cwriteJsonData, () => {
     // Assert
     expect(returnData).toBe(true);
   });
-  
+
   /**
    * @function cwriteJsonData_inValidInputDataInteger
-   * @description Tests the business rules function writeJsonData with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid integer input.
    * @result In root path create garbage file
    * @author Json Howard
    * @date 2023/05/03
@@ -617,20 +617,20 @@ describe(tst_con.cwriteJsonData, () => {
     // Assert
     expect(returnData).toBe(true);
   });
-  
+
   /**
    * @function writeJsonData_inValidInputDataBoolean
-   * @description Tests the business rules function writeJsonData with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cwriteJsonData_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.writeJsonData(
       inputData,
       inputMetaData
@@ -642,17 +642,17 @@ describe(tst_con.cwriteJsonData, () => {
 
   /**
    * @function writeJsonData_inValidInputMetaDataInteger
-   * @description Tests the business rules function writeJsonData with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cwriteJsonData_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.writeJsonData(
       inputData,
       inputMetaData
@@ -664,17 +664,17 @@ describe(tst_con.cwriteJsonData, () => {
 
   /**
    * @function writeJsonData_inValidInputMetaDataBoolean
-   * @description Tests the business rules function writeJsonData with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function writeJsonData with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cwriteJsonData_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.writeJsonData(
       inputData,
       inputMetaData
@@ -694,7 +694,7 @@ describe(tst_con.cwriteJsonData, () => {
 describe(tst_con.creadDirectoryContents, () => {
   /**
    * @function readDirectoryContents_validDataString
-   * @description Tests the business rules function readDirectoryContents with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -704,7 +704,7 @@ describe(tst_con.creadDirectoryContents, () => {
     let inputMetaData = wrd.cHello + bas.cColon + wrd.cWorld;
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.readDirectoryContents(
       inputData,
       inputMetaData
@@ -716,8 +716,8 @@ describe(tst_con.creadDirectoryContents, () => {
 
   /**
    * @function readDirectoryContents_inValidDataInputDataString
-   * @description Tests the business rules function readDirectoryContents with a invalid string input.
-   * @return Create garbage folder 
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid string input.
+   * @return Create garbage folder
    * @author Json Howard
    * @date 2023/05/03
    * @NOTE Not implemented because when the test is ran the garbage folder is created.
@@ -740,39 +740,39 @@ describe(tst_con.creadDirectoryContents, () => {
 
   /**
    * @function readDirectoryContents_inValidDataInputMetaDataString
-   * @description Tests the business rules function readDirectoryContents with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectoryContents_inValidDataInputMetaDataString, () => {
-      // Arrange
-      let inputData = obj_con.fileOperationsXmlFolder();
-      let inputMetaData = data_con.stringRandomText;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileOperations.readDirectoryContents(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy();
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.readDirectoryContents(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
   });
 
   /**
    * @function readDirectoryContents_inValidInputDataInteger
-   * @description Tests the business rules function readDirectoryContents with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectoryContents_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectoryContents(
       inputData,
       inputMetaData
@@ -784,17 +784,17 @@ describe(tst_con.creadDirectoryContents, () => {
 
   /**
    * @function readDirectoryContents_inValidInputDataBoolean
-   * @description Tests the business rules function readDirectoryContents with a invalid false input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid false input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectoryContents_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectoryContents(
       inputData,
       inputMetaData
@@ -806,17 +806,17 @@ describe(tst_con.creadDirectoryContents, () => {
 
   /**
    * @function readDirectoryContents_inValidInputMetaDataInteger
-   * @description Tests the business rules function readDirectoryContents with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectoryContents_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectoryContents(
       inputData,
       inputMetaData
@@ -828,17 +828,17 @@ describe(tst_con.creadDirectoryContents, () => {
 
   /**
    * @function readDirectoryContents_inValidInputMetaDataBoolean
-   * @description Tests the business rules function readDirectoryContents with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectoryContents with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectoryContents_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectoryContents(
       inputData,
       inputMetaData
@@ -858,7 +858,7 @@ describe(tst_con.creadDirectoryContents, () => {
 describe(tst_con.cscanDirectoryContents, () => {
   /**
    * @function scanDirectoryContents_validDataString
-   * @description Tests the business rules function scanDirectoryContents with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -868,7 +868,7 @@ describe(tst_con.cscanDirectoryContents, () => {
     let inputMetaData = [true, 2];
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.scanDirectoryContents(
       inputData,
       inputMetaData
@@ -876,11 +876,11 @@ describe(tst_con.cscanDirectoryContents, () => {
 
     // Assert
     expect(returnData).toBeTruthy(); // path array
-  });    
+  });
 
   /**
    * @function scanDirectoryContents_inValidDataInputDataString
-   * @description Tests the business rules function scanDirectoryContents with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid string input.
    * @result Create garbage folder
    * @author Json Howard
    * @date 2023/05/03
@@ -903,39 +903,39 @@ describe(tst_con.cscanDirectoryContents, () => {
 
   /**
    * @function scanDirectoryContents_inValidDataInputMetaDataString
-   * @description Tests the business rules function scanDirectoryContents with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cscanDirectoryContents_inValidDataInputMetaDataString, () => {
-      // Arrange
-      let inputData = obj_con.fileOperationsXmlFolder();
-      let inputMetaData = data_con.stringRandomText;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileOperations.scanDirectoryContents(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy();
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.scanDirectoryContents(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
   });
 
   /**
    * @function scanDirectoryContents_inValidInputDataInteger
-   * @description Tests the business rules function scanDirectoryContents with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cscanDirectoryContents_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.scanDirectoryContents(
       inputData,
       inputMetaData
@@ -947,17 +947,17 @@ describe(tst_con.cscanDirectoryContents, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputDataBoolean
-   * @description Tests the business rules function scanDirectoryContents with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cscanDirectoryContents_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.scanDirectoryContents(
       inputData,
       inputMetaData
@@ -969,17 +969,17 @@ describe(tst_con.cscanDirectoryContents, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataInteger
-   * @description Tests the business rules function scanDirectoryContents with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cscanDirectoryContents_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.scanDirectoryContents(
       inputData,
       inputMetaData
@@ -991,17 +991,17 @@ describe(tst_con.cscanDirectoryContents, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataBoolean
-   * @description Tests the business rules function scanDirectoryContents with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cscanDirectoryContents_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.scanDirectoryContents(
       inputData,
       inputMetaData
@@ -1013,7 +1013,7 @@ describe(tst_con.cscanDirectoryContents, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataUndefined
-   * @description Tests the business rules function scanDirectoryContents with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1023,7 +1023,7 @@ describe(tst_con.cscanDirectoryContents, () => {
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.scanDirectoryContents(
       inputData,
       inputMetaData
@@ -1035,7 +1035,7 @@ describe(tst_con.cscanDirectoryContents, () => {
 
   /**
    * @function scanDirectoryContents_inValidInputMetaDataNaN
-   * @description Tests the business rules function scanDirectoryContents with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function scanDirectoryContents with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1045,7 +1045,7 @@ describe(tst_con.cscanDirectoryContents, () => {
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.scanDirectoryContents(
       inputData,
       inputMetaData
@@ -1053,7 +1053,7 @@ describe(tst_con.cscanDirectoryContents, () => {
 
     // Assert
     expect(returnData).toBeTruthy(); // path array
-});
+  });
 });
 
 /**
@@ -1065,7 +1065,7 @@ describe(tst_con.cscanDirectoryContents, () => {
 describe(tst_con.cgetDirectoryList, () => {
   /**
    * @function getDirectoryList_validDataString
-   * @description Tests the business rules function getDirectoryList with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1075,7 +1075,7 @@ describe(tst_con.cgetDirectoryList, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.getDirectoryList(
       inputData,
       inputMetaData
@@ -1083,11 +1083,11 @@ describe(tst_con.cgetDirectoryList, () => {
 
     // Assert
     expect(returnData).toBeTruthy(); // path array
-  });  
-  
+  });
+
   /**
    * @function getDirectoryList_inValidDataInputDataString
-   * @description Tests the business rules function getDirectoryList with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1097,7 +1097,7 @@ describe(tst_con.cgetDirectoryList, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getDirectoryList(
       inputData,
       inputMetaData
@@ -1109,39 +1109,39 @@ describe(tst_con.cgetDirectoryList, () => {
 
   /**
    * @function getDirectoryList_inValidDataInputMetaDataString
-   * @description Tests the business rules function getDirectoryList with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetDirectoryList_inValidDataInputMetaDataString, () => {
-      // Arrange
-      let inputData = obj_con.fileOperationsXmlFolder();
-      let inputMetaData = data_con.stringRandomText;
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = fileOperations.getDirectoryList(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBeTruthy();
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
+
+    // Act
+    let returnData = fileOperations.getDirectoryList(
+      inputData,
+      inputMetaData
+    );
+
+    // Assert
+    expect(returnData).toBeTruthy();
   });
 
   /**
    * @function getDirectoryList_inValidInputDataInteger
-   * @description Tests the business rules function getDirectoryList with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetDirectoryList_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getDirectoryList(
       inputData,
       inputMetaData
@@ -1153,17 +1153,17 @@ describe(tst_con.cgetDirectoryList, () => {
 
   /**
    * @function getDirectoryList_inValidInputDataBoolean
-   * @description Tests the business rules function getDirectoryList with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetDirectoryList_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getDirectoryList(
       inputData,
       inputMetaData
@@ -1175,17 +1175,17 @@ describe(tst_con.cgetDirectoryList, () => {
 
   /**
    * @function getDirectoryList_inValidInputMetaDataInteger
-   * @description Tests the business rules function getDirectoryList with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetDirectoryList_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getDirectoryList(
       inputData,
       inputMetaData
@@ -1197,17 +1197,17 @@ describe(tst_con.cgetDirectoryList, () => {
 
   /**
    * @function getDirectoryList_inValidInputMetaDataBoolean
-   * @description Tests the business rules function getDirectoryList with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function getDirectoryList with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.cgetDirectoryList_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.getDirectoryList(
       inputData,
       inputMetaData
@@ -1227,7 +1227,7 @@ describe(tst_con.cgetDirectoryList, () => {
 describe(tst_con.creadDirectorySynchronously, () => {
   /**
    * @function readDirectorySynchronously_validDataString
-   * @description Tests the business rules function readDirectorySynchronously with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1237,7 +1237,7 @@ describe(tst_con.creadDirectorySynchronously, () => {
     let inputMetaData = '';
     rulesLibrary.initRulesLibrary();
 
-    // Act      
+    // Act
     let returnData = fileOperations.readDirectorySynchronously(
       inputData,
       inputMetaData
@@ -1245,11 +1245,11 @@ describe(tst_con.creadDirectorySynchronously, () => {
 
     // Assert
     expect(returnData).toBe(); // path array
-  });  
-  
+  });
+
   /**
    * @function readDirectorySynchronously_inValidDataInputDataString
-   * @description Tests the business rules function readDirectorySynchronously with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid string input.
    * @result Create garbage folder
    * @author Json Howard
    * @date 2023/05/03
@@ -1273,39 +1273,39 @@ describe(tst_con.creadDirectorySynchronously, () => {
 
   /**
    * @function readDirectorySynchronously_inValidDataInputMetaDataString
-   * @description Tests the business rules function readDirectorySynchronously with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectorySynchronously_inValidDataInputMetaDataString, () => {
-      // Arrange
-      let inputData = obj_con.fileOperationsXmlFolder();
-      let inputMetaData = data_con.stringRandomText;
-      rulesLibrary.initRulesLibrary();
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
 
-      // Act        
-      let returnData = fileOperations.readDirectorySynchronously(
-        inputData,
-        inputMetaData
-      );
+    // Act
+    let returnData = fileOperations.readDirectorySynchronously(
+      inputData,
+      inputMetaData
+    );
 
-      // Assert
-      expect(returnData).toBe();
+    // Assert
+    expect(returnData).toBe();
   });
 
   /**
    * @function readDirectorySynchronously_inValidInputDataInteger
-   * @description Tests the business rules function readDirectorySynchronously with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectorySynchronously_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectorySynchronously(
       inputData,
       inputMetaData
@@ -1317,17 +1317,17 @@ describe(tst_con.creadDirectorySynchronously, () => {
 
   /**
    * @function readDirectorySynchronously_inValidInputDataBoolean
-   * @description Tests the business rules function readDirectorySynchronously with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectorySynchronously_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectorySynchronously(
       inputData,
       inputMetaData
@@ -1339,17 +1339,17 @@ describe(tst_con.creadDirectorySynchronously, () => {
 
   /**
    * @function readDirectorySynchronously_inValidInputMetaDataInteger
-   * @description Tests the business rules function readDirectorySynchronously with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectorySynchronously_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectorySynchronously(
       inputData,
       inputMetaData
@@ -1361,17 +1361,17 @@ describe(tst_con.creadDirectorySynchronously, () => {
 
   /**
    * @function readDirectorySynchronously_inValidInputMetaDataBoolean
-   * @description Tests the business rules function readDirectorySynchronously with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function readDirectorySynchronously with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.creadDirectorySynchronously_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act        
+    // Act
     let returnData = fileOperations.readDirectorySynchronously(
       inputData,
       inputMetaData
@@ -1391,7 +1391,7 @@ describe(tst_con.creadDirectorySynchronously, () => {
 describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_validDataString
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1407,10 +1407,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1426,10 +1426,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1445,10 +1445,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1464,10 +1464,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1483,10 +1483,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1502,10 +1502,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1521,10 +1521,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1540,10 +1540,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1559,10 +1559,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1578,10 +1578,10 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN
-   * @description Tests the business rules function copyAllFilesAndFoldersFromFolderToFolder with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyAllFilesAndFoldersFromFolderToFolder with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1608,7 +1608,7 @@ describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
 describe(tst_con.cbuildReleasePackage, () => {
   /**
    * @function buildReleasePackage_validDataString
-   * @description Tests the business rules function buildReleasePackage with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1624,10 +1624,10 @@ describe(tst_con.cbuildReleasePackage, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function buildReleasePackage_inValidDataInputDataString
-   * @description Tests the business rules function buildReleasePackage with a invalid input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1643,10 +1643,10 @@ describe(tst_con.cbuildReleasePackage, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function buildReleasePackage_inValidDataInputMetaDataString
-   * @description Tests the business rules function buildReleasePackage with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1662,10 +1662,10 @@ describe(tst_con.cbuildReleasePackage, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function buildReleasePackage_inValidInputDataInteger
-   * @description Tests the business rules function buildReleasePackage with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1681,10 +1681,10 @@ describe(tst_con.cbuildReleasePackage, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function buildReleasePackage_inValidInputDataBoolean
-   * @description Tests the business rules function buildReleasePackage with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1700,10 +1700,10 @@ describe(tst_con.cbuildReleasePackage, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function buildReleasePackage_inValidInputMetaDataInteger
-   * @description Tests the business rules function buildReleasePackage with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1719,10 +1719,10 @@ describe(tst_con.cbuildReleasePackage, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function buildReleasePackage_inValidInputMetaDataBoolean
-   * @description Tests the business rules function buildReleasePackage with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function buildReleasePackage with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1749,7 +1749,7 @@ describe(tst_con.cbuildReleasePackage, () => {
 describe(tst_con.ccreateZipArchive, () => {
   /**
    * @function createZipArchive_validDataString
-   * @description Tests the business rules function createZipArchive with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1765,10 +1765,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidDataInputDataString
-   * @description Tests the business rules function createZipArchive with a invalid input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1784,10 +1784,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidDataInputMetaDataString
-   * @description Tests the business rules function createZipArchive with a invalid inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1803,10 +1803,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidInputDataInteger
-   * @description Tests the business rules function createZipArchive with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1822,10 +1822,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidInputDataBoolean
-   * @description Tests the business rules function createZipArchive with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1841,10 +1841,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidInputMetaDataInteger
-   * @description Tests the business rules function createZipArchive with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1860,10 +1860,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidInputMetaDataBoolean
-   * @description Tests the business rules function createZipArchive with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1879,10 +1879,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidInputDataUndefined
-   * @description Tests the business rules function createZipArchive with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1898,10 +1898,10 @@ describe(tst_con.ccreateZipArchive, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function createZipArchive_inValidInputDataNaN
-   * @description Tests the business rules function createZipArchive with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function createZipArchive with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1928,7 +1928,7 @@ describe(tst_con.ccreateZipArchive, () => {
 describe(tst_con.ccleanRootPath, () => {
   /**
    * @function cleanRootPath_validDataString
-   * @description Tests the business rules function cleanRootPath with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1944,10 +1944,10 @@ describe(tst_con.ccleanRootPath, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function cleanRootPath_inValidDataInputDataString
-   * @description Tests the business rules function cleanRootPath with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1963,10 +1963,10 @@ describe(tst_con.ccleanRootPath, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function cleanRootPath_inValidDataInputMetaDataString
-   * @description Tests the business rules function cleanRootPath with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -1982,10 +1982,10 @@ describe(tst_con.ccleanRootPath, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function cleanRootPath_inValidInputDataInteger
-   * @description Tests the business rules function cleanRootPath with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2001,10 +2001,10 @@ describe(tst_con.ccleanRootPath, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function cleanRootPath_inValidInputDataBoolean
-   * @description Tests the business rules function cleanRootPath with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2020,10 +2020,10 @@ describe(tst_con.ccleanRootPath, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function cleanRootPath_inValidInputMetaDataInteger
-   * @description Tests the business rules function cleanRootPath with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2039,10 +2039,10 @@ describe(tst_con.ccleanRootPath, () => {
     // Assert
     expect(returnData).toBe();
   });
-  
+
   /**
    * @function cleanRootPath_inValidInputMetaDataBoolean
-   * @description Tests the business rules function cleanRootPath with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function cleanRootPath with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2069,7 +2069,7 @@ describe(tst_con.ccleanRootPath, () => {
 describe(tst_con.ccopyFileSync, () => {
   /**
    * @function copyFileSync_validDataString
-   * @description Tests the business rules function copyFileSync with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2079,7 +2079,7 @@ describe(tst_con.ccopyFileSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2087,11 +2087,11 @@ describe(tst_con.ccopyFileSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });    
+  });
 
   /**
    * @function copyFileSync_inValidDataInputDataString
-   * @description Tests the business rules function copyFileSync with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2101,7 +2101,7 @@ describe(tst_con.ccopyFileSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2113,7 +2113,7 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidDataInputMetaDataString
-   * @description Tests the business rules function copyFileSync with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2123,7 +2123,7 @@ describe(tst_con.ccopyFileSync, () => {
     let inputMetaData = data_con.stringRandomText;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2135,17 +2135,17 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputDataInteger
-   * @description Tests the business rules function copyFileSync with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.ccopyFileSync_inValidInputDataInteger, () => {
     // Arrange
     let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2157,17 +2157,17 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputDataBoolean
-   * @description Tests the business rules function copyFileSync with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.ccopyFileSync_inValidInputDataBoolean, () => {
     // Arrange
     let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
+    let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2179,17 +2179,17 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataInteger
-   * @description Tests the business rules function copyFileSync with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
-   */  
+   */
   test(tst_con.ccopyFileSync_inValidInputMetaDataInteger, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2201,17 +2201,17 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataBoolean
-   * @description Tests the business rules function copyFileSync with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
   test(tst_con.ccopyFileSync_inValidInputMetaDataBoolean, () => {
     // Arrange
-    let inputData = [1,2,3,4,5];
+    let inputData = [1, 2, 3, 4, 5];
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2223,7 +2223,7 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputDataUndefined
-   * @description Tests the business rules function copyFileSync with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2233,7 +2233,7 @@ describe(tst_con.ccopyFileSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2245,7 +2245,7 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputDataNaN
-   * @description Tests the business rules function copyFileSync with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2255,7 +2255,7 @@ describe(tst_con.ccopyFileSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2267,7 +2267,7 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataUndefined
-   * @description Tests the business rules function copyFileSync with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2277,7 +2277,7 @@ describe(tst_con.ccopyFileSync, () => {
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2289,7 +2289,7 @@ describe(tst_con.ccopyFileSync, () => {
 
   /**
    * @function copyFileSync_inValidInputMetaDataNaN
-   * @description Tests the business rules function copyFileSync with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFileSync with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2299,7 +2299,7 @@ describe(tst_con.ccopyFileSync, () => {
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFileSync(
       inputData,
       inputMetaData
@@ -2319,7 +2319,7 @@ describe(tst_con.ccopyFileSync, () => {
 describe(tst_con.ccopyFolderRecursiveSync, () => {
   /**
    * @function copyFolderRecursiveSync_validDataString
-   * @description Tests the business rules function copyFolderRecursiveSync with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2329,7 +2329,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2337,11 +2337,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidDataInputDataString
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid string input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2351,7 +2351,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2359,11 +2359,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidDataInputMetaDataString
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2373,7 +2373,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = wrd.cHello;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2381,11 +2381,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputDataInteger
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid integer input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2395,7 +2395,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2403,11 +2403,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputDataBoolean
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid boolean input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2417,7 +2417,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = [1, 2, 3, 4, 5];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2425,11 +2425,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataInteger
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2439,7 +2439,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = 4567;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2447,11 +2447,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataBoolean
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2461,7 +2461,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = false;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2469,11 +2469,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputDataUndefined
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid undefined input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2483,7 +2483,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2491,11 +2491,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputDataNaN
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid NaN input.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2505,7 +2505,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = [[bas.cStar + bas.cDot + bas.cStar], [bas.cStar + bas.cDot + bas.cStar]];
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2513,11 +2513,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataUndefined
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2527,7 +2527,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = undefined;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2535,11 +2535,11 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
-  
+  });
+
   /**
    * @function copyFolderRecursiveSync_inValidInputMetaDataNaN
-   * @description Tests the business rules function copyFolderRecursiveSync with a invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.fileOperations function copyFolderRecursiveSync with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2549,7 +2549,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
     let inputMetaData = NaN;
     rulesLibrary.initRulesLibrary();
 
-    // Act    
+    // Act
     let returnData = fileOperations.copyFolderRecursiveSync(
       inputData,
       inputMetaData
@@ -2557,7 +2557,7 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
     // Assert
     expect(returnData).toBe(true); // path array
-  });  
+  });
 });
 
 /**
@@ -2569,155 +2569,155 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 describe(tst_con.cappendMessageToFile, () => {
   /**
    * @function appendMessageToFile_validDataString
-   * @description Tests the business rules function appendMessageToFile with a valid input.
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
-  test(tst_con.cappendMessageToFile_validDataString, () => {
-    // Arrange
-    let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
-    let inputMetaData = wrd.cHello + wrd.cWorld;
-    rulesLibrary.initRulesLibrary();
+	test(tst_con.cappendMessageToFile_validDataString, () => {
+	  // Arrange
+	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
+	  let inputMetaData = wrd.cHello + wrd.cWorld;
+	  rulesLibrary.initRulesLibrary();
 
-    // Act    
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-    // Assert
-    expect(returnData).toBe(true); // path array
-  });    
+	  // Assert
+	  expect(returnData).toBe(true); // path array
+	});
 
-  /**
-   * @function appendMessageToFile_inValidDataInputDataString
-   * @description Tests the business rules function appendMessageToFile with a invalid string input.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
-    // Arrange
-    let inputData = data_con.stringRandomText;
-    let inputMetaData = wrd.cHello + wrd.cWorld;
-    rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
+	  // Arrange
+	  let inputData = data_con.stringRandomText;
+	  let inputMetaData = wrd.cHello + wrd.cWorld;
+	  rulesLibrary.initRulesLibrary();
 
-    // Act    
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-    // Assert
-    expect(returnData).toBe(true); // path array
-  });
+	  // Assert
+	  expect(returnData).toBe(true); // path array
+	});
 
-  /**
-   * @function appendMessageToFile_inValidDataInputMetaDataString
-   * @description Tests the business rules function appendMessageToFile with a invalid string inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
-    // Arrange
-    let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
-    let inputMetaData = data_con.stringRandomText;
-    rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
+	  // Arrange
+	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
+	  let inputMetaData = data_con.stringRandomText;
+	  rulesLibrary.initRulesLibrary();
 
-    // Act    
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-    // Assert
-    expect(returnData).toBe(true); // path array
-  });
+	  // Assert
+	  expect(returnData).toBe(true); // path array
+	});
 
-  /**
-   * @function appendMessageToFile_inValidInputDataInteger
-   * @description Tests the business rules function appendMessageToFile with a invalid integer input.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
-    rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputDataInteger, () => {
+	  // Arrange
+	  let inputData = 4567;
+	  let inputMetaData = [1, 2, 3, 4, 5];
+	  rulesLibrary.initRulesLibrary();
 
-    // Act    
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-    // Assert
-    expect(returnData).toBe(false); // path array
-  });
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-  /**
-   * @function appendMessageToFile_inValidInputDataBoolean
-   * @description Tests the business rules function appendMessageToFile with a invalid boolean input.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-    rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputDataBoolean, () => {
+	  // Arrange
+	  let inputData = false;
+	  let inputMetaData = [1, 2, 3, 4, 5];
+	  rulesLibrary.initRulesLibrary();
 
-    // Act    
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-    // Assert
-    expect(returnData).toBe(false); // path array
-  });
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-  /**
-   * @function appendMessageToFile_inValidInputMetaDataInteger
-   * @description Tests the business rules function appendMessageToFile with a invalid integer inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidInputMetaDataInteger, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = 4567;
-    rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputMetaDataInteger, () => {
+	  // Arrange
+	  let inputData = [1, 2, 3, 4, 5];
+	  let inputMetaData = 4567;
+	  rulesLibrary.initRulesLibrary();
 
-    // Act    
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-    // Assert
-    expect(returnData).toBe(false); // path array
-  });
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-  /**
-   * @function appendMessageToFile_inValidInputMetaDataBoolean
-   * @description Tests the business rules function appendMessageToFile with a invalid boolean inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/03
-   */
-  test(tst_con.cappendMessageToFile_inValidInputMetaDataBoolean, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = false;
-    rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputMetaDataBoolean, () => {
+	  // Arrange
+	  let inputData = [1, 2, 3, 4, 5];
+	  let inputMetaData = false;
+	  rulesLibrary.initRulesLibrary();
 
-    // Act    
-    let returnData = fileOperations.appendMessageToFile(
-      inputData,
-      inputMetaData
-    );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-    // Assert
-    expect(returnData).toBe(false); // path array
-  });
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 });

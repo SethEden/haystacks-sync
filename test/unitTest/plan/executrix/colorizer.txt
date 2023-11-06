@@ -429,28 +429,28 @@ input defaultColorArray: NaN
 input processAsFontSetting: boolean (A True or False value to indicate if we are processing True = font setting, False = color setting)
 output: false?
 
-testName:  aggregateStyleSetting_inValidConfigurationValueNumber
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingNumber
 input settingValue1: string (The file level setting from the configuration file)
 input settingValue2: string (The function level setting from the configuration file)
 input defaultColorArray: array<integer> (The default color value that should be used)
 input processAsFontSetting: integer (546)
 output: false?
 
-testName:  aggregateStyleSetting_inValidConfigurationValueBoolean
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingBoolean
 input settingValue1: string (The file level setting from the configuration file)
 input settingValue2: string (The function level setting from the configuration file)
 input defaultColorArray: array<integer> (The default color value that should be used)
 input processAsFontSetting: boolean (false)
 output: false?
 
-testName:  aggregateStyleSetting_inValidConfigurationValueUndefined
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingUndefined
 input settingValue1: string (The file level setting from the configuration file)
 input settingValue2: string (The function level setting from the configuration file)
 input defaultColorArray: array<integer> (The default color value that should be used)
 input processAsFontSetting: undefined
 output: false?
 
-testName:  aggregateStyleSetting_inValidConfigurationValueNaN
+testName:  aggregateStyleSetting_inValidProcessAsFontSettingNaN
 input settingValue1: string (The file level setting from the configuration file)
 input settingValue2: string (The function level setting from the configuration file)
 input defaultColorArray: array<integer> (The default color value that should be used)

@@ -8,28 +8,22 @@ input configurationName: string (The key of the configuration setting)
 input configurationValue: string|integer|boolean|double (The value of the configuration setting)
 output: string (data set from configurationNamespace and dataToMerge)
 
-testName:  setConfigurationSetting_inValidConfigurationNamespaceString
+testName:  setConfigurationSetting_validConfigurationNamespaceString
 input configurationNamespace: string (464gsdsfae8f46)
 input configurationName: string (The key of the configuration setting)
 input configurationValue: string|integer|boolean|double (The value of the configuration setting)
 output: false?
 
-testName:  setConfigurationSetting_inValidConfigurationNameString
+testName:  setConfigurationSetting_validConfigurationNameString
 input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
 input configurationName: string (464gsdsfae8f46)
 input configurationValue: string|integer|boolean|double (The value of the configuration setting)
 output: false?
 
-testName:  setConfigurationSetting_inValidConfigurationValueString
+testName:  setConfigurationSetting_validConfigurationValueString
 input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
 input configurationName: string (The key of the configuration setting)
 input configurationValue: string (464gsdsfae8f46)
-output: false?
-
-testName:  setConfigurationSetting_inValidDataToMergeString
-input configurationNamespace: string (The path in the configuration JSON object where the configuration setting should be set)
-input configurationName: string (The key of the configuration setting)
-input configurationValue: string|integer|boolean|double (The value of the configuration setting)
 output: false?
 
 testName:  setConfigurationSetting_inValidConfigurationNamespaceNumber

@@ -20,22 +20,27 @@ create: D[wrd.ccolors][sys.cColorData] =
 }
 output: [boolean, ?]
 
+N/A
 testName: convertColors_inValidDataString
 create: D[wrd.ccolors][sys.cColorData] = string (dfxg24346dfg)
-output: ?
+output: N/A
 
+N/A
 testName: convertColors_inValidInputDataInteger
 create: D[wrd.ccolors][sys.cColorData] = integer (4567)
-output: ?
+output: N/A
 
+N/A
 testName: convertColors_inValidInputDataBoolean
 create: D[wrd.ccolors][sys.cColorData] = boolean (false)
-output: ?
+output: N/A
 
+N/A
 testName: convertColors_inValidInputDataUndefined
 create: D[wrd.ccolors][sys.cColorData] = undefined
-output: ?
+output: N/A
 
+N/A
 testName: convertColors_inValidInputDataNaN
 create: D[wrd.ccolors][sys.cColorData] = NaN
-output: ?
+output: N/A

@@ -280,6 +280,7 @@ output: ?
 testName: clearScreen_validDataString
 NOTE: Setup: Validate that data is displayed in the console, if there is no data, run a command.
 Assert: Validate that the console log cache is cleared.
+NOTE: Unsure how to test this?!
 --------------------------------------------------------------------------------
 testName: help_validDataString
 input inputData: array<boolean|string|integer>

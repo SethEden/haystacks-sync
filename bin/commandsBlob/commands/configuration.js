@@ -102,10 +102,10 @@ function changeConfigurationSetting(inputData, inputMetaData) {
     // ERROR: Invalid entry, please enter a valid configuration namespace to change,
     // and a value to assign to the configuration setting.
     errorMessage = msg.cchangeConfigurationSettingMessage01 + msg.cchangeConfigurationSettingMessage02;
-    console.log(errorMessage);
+    // console.log(errorMessage);
     returnData[1] = errorMessage;
     // EXAMPLE: changeConfigurationSetting debugSetting.businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode true
-    console.log(msg.cchangeConfigurationSettingMessage03);
+    // console.log(msg.cchangeConfigurationSettingMessage03);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -130,7 +130,7 @@ function listConfigurationThemes(inputData, inputMetaData) {
   let returnData = [true, {}];
   let themesList = themeBroker.getNamedThemes();
   // themesList is:
-  console.log(msg.cthemesListIs + JSON.stringify(themesList));
+  // console.log(msg.cthemesListIs + JSON.stringify(themesList));
   returnData[1] = themesList;
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -179,19 +179,19 @@ function changeDebugConfigurationTheme(inputData, inputMetaData) {
     } else {
       // ERROR: The specified theme name was not found in the current list of supported themes.
       errorMessage = msg.cchangeDebugConfigurationThemeMessage02;
-      console.log(errorMessage);
+      // console.log(errorMessage);
       returnData[1] = errorMessage;
       // You can find the available themes at the following path location:
-      console.log(msg.cchangeDebugConfigurationThemeMessage03 +
-        configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath));
+      // console.log(msg.cchangeDebugConfigurationThemeMessage03 +
+        // configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath));
     }
   } else {
     // ERROR: Invalid entry, please enter a theme name you would like the debug settings to switch to when logging debug statements.
     errorMessage = msg.cchangeDebugConfigurationThemeMessage04
-    console.log(errorMessage);
+    // console.log(errorMessage);
     returnData[1] = errorMessage;
     // EXAMPLE: changeDebugConfigurationTheme Skywalker
-    console.log(msg.cchangeDebugConfigurationThemeMessage05);
+    // console.log(msg.cchangeDebugConfigurationThemeMessage05);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);

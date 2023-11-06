@@ -38,7 +38,7 @@ const { bas, sys, wrd, cfg } = hayConst;
 describe(tst_con.cgetNamedThemes, () => {
     /**
     * @function getNamedThemes_validData
-    * @description Tests the business rules function getNamedThemes with a valid data.
+    * @description Tests the brokers.themeBroker function getNamedThemes with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -56,7 +56,7 @@ describe(tst_con.cgetNamedThemes, () => {
 
     /**
     * @function getNamedThemes_inValidString
-    * @description Tests the business rules function getNamedThemes with a invalid string data.
+    * @description Tests the brokers.themeBroker function getNamedThemes with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -75,7 +75,7 @@ describe(tst_con.cgetNamedThemes, () => {
 
     /**
     * @function getNamedThemes_inValidNumber
-    * @description Tests the business rules function getNamedThemes with a invalid number data.
+    * @description Tests the brokers.themeBroker function getNamedThemes with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -94,7 +94,7 @@ describe(tst_con.cgetNamedThemes, () => {
 
     /**
     * @function getNamedThemes_inValidBoolean
-    * @description Tests the business rules function getNamedThemes with a invalid boolean data.
+    * @description Tests the brokers.themeBroker function getNamedThemes with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -121,7 +121,7 @@ describe(tst_con.cgetNamedThemes, () => {
 describe(tst_con.cgetNamedThemePath, () => {
     /**
     * @function getNamedThemePath_validData
-    * @description Tests the business rules function getNamedThemePath with a valid data.
+    * @description Tests the brokers.themeBroker function getNamedThemePath with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -140,7 +140,7 @@ describe(tst_con.cgetNamedThemePath, () => {
 
     /**
     * @function getNamedThemePath_inValidString
-    * @description Tests the business rules function getNamedThemePath with a invalid string data.
+    * @description Tests the brokers.themeBroker function getNamedThemePath with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -159,7 +159,7 @@ describe(tst_con.cgetNamedThemePath, () => {
 
     /**
     * @function getNamedThemePath_inValidNumber
-    * @description Tests the business rules function getNamedThemePath with a invalid integer data.
+    * @description Tests the brokers.themeBroker function getNamedThemePath with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -178,7 +178,7 @@ describe(tst_con.cgetNamedThemePath, () => {
 
     /**
     * @function getNamedThemePath_inValidBoolean
-    * @description Tests the business rules function getNamedThemePath with a invalid boolean data.
+    * @description Tests the brokers.themeBroker function getNamedThemePath with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -205,7 +205,7 @@ describe(tst_con.cgetNamedThemePath, () => {
 describe(tst_con.cloadTheme, () => {
     /**
     * @function loadTheme_validData
-    * @description Tests the business rules function loadTheme with a valid data.
+    * @description Tests the brokers.themeBroker function loadTheme with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -225,7 +225,7 @@ describe(tst_con.cloadTheme, () => {
 
     /**
     * @function loadTheme_inValidString
-    * @description Tests the business rules function loadTheme with a invalid string data.
+    * @description Tests the brokers.themeBroker function loadTheme with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     * @NOTE If this test is implemented and executed it will create a garbage folder in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
@@ -246,7 +246,7 @@ describe(tst_con.cloadTheme, () => {
 
     /**
     * @function loadTheme_inValidNumber
-    * @description Tests the business rules function loadTheme with a invalid integer data.
+    * @description Tests the brokers.themeBroker function loadTheme with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -266,7 +266,7 @@ describe(tst_con.cloadTheme, () => {
 
     /**
     * @function loadTheme_inValidBoolean
-    * @description Tests the business rules function loadTheme with a invalid boolean data.
+    * @description Tests the brokers.themeBroker function loadTheme with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -294,7 +294,7 @@ describe(tst_con.cloadTheme, () => {
 describe(tst_con.capplyTheme, () => {
     /**
     * @function applyTheme_validData
-    * @description Tests the business rules function applyTheme with a valid data.
+    * @description Tests the brokers.themeBroker function applyTheme with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -315,7 +315,7 @@ describe(tst_con.capplyTheme, () => {
 
     /**
     * @function applyTheme_inValidString
-    * @description Tests the business rules function applyTheme with a invalid string data.
+    * @description Tests the brokers.themeBroker function applyTheme with an invalid string data.
     * @result In root path create '464gsdsfae8f46' folder.
     * @author Json Howard
     * @date 2023/04/17
@@ -338,7 +338,7 @@ describe(tst_con.capplyTheme, () => {
 
     /**
     * @function applyTheme_inValidNumber
-    * @description Tests the business rules function applyTheme with a invalid integer data.
+    * @description Tests the brokers.themeBroker function applyTheme with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -359,7 +359,7 @@ describe(tst_con.capplyTheme, () => {
 
     /**
     * @function applyTheme_inValidBoolean
-    * @description Tests the business rules function applyTheme with a invalid boolean data.
+    * @description Tests the brokers.themeBroker function applyTheme with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */

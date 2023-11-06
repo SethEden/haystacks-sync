@@ -36,7 +36,7 @@ const { sys, wrd } = hayConst;
 describe(tst_con.cconvertColors, () => {
   /**
    * @function convertColors_validDataString
-   * @description Tests the business rules function convertColors with a valid input.
+   * @description Tests the commandsBlob.commands.auxiliary function convertColors with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */

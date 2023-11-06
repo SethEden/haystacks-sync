@@ -39,7 +39,7 @@ const { bas, wrd } = hayConst;
 describe(tst_con.cparseBusinessRuleArgument, () => {
   /**
    * @function parseBusinessRuleArgument_validDataString
-   * @description Tests the business rules function parseBusinessRuleArgument with a valid input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with a valid input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -61,7 +61,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_validDataArrayString
-   * @description Tests the business rules function parseBusinessRuleArgument with a array string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with a array string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -83,7 +83,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_validDataArrayInteger
-   * @description Tests the business rules function parseBusinessRuleArgument with a array integer input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with a array integer input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -105,7 +105,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_validDataArrayBoolean
-   * @description Tests the business rules function parseBusinessRuleArgument with a array boolean input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with a array boolean input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -127,7 +127,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_validDataArrayObject
-   * @description Tests the business rules function parseBusinessRuleArgument with a array object input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with a array object input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -149,7 +149,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidDataInputDataString
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -171,7 +171,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidDataInputDataString
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -193,7 +193,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputDataInteger
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid integer input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid integer input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -215,7 +215,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputDataBoolean
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid boolean input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -237,7 +237,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputMetaDataInteger
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -259,7 +259,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputMetaDataBoolean
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -281,7 +281,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputDataUndefined
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid undefined input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -303,7 +303,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputDataNaN
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid NaN input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -325,7 +325,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputMetaDataUndefined
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -347,7 +347,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 
   /**
    * @function parseBusinessRuleArgument_inValidInputMetaDataNaN
-   * @description Tests the business rules function parseBusinessRuleArgument with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseBusinessRuleArgument with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -377,7 +377,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
 describe(tst_con.canalyzeArgument, () => {
   /**
    * @function analyzeArgument_validDataString
-   * @description Tests the business rules function analyzeArgument with a valid input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeArgument with a valid input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -399,7 +399,7 @@ describe(tst_con.canalyzeArgument, () => {
 
   /**
    * @function analyzeArgument_inValidDataInputDataString
-   * @description Tests the business rules function analyzeArgument with a invalid string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeArgument with an invalid string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -421,7 +421,7 @@ describe(tst_con.canalyzeArgument, () => {
 
   /**
    * @function analyzeArgument_inValidDataInputMetaDataString
-   * @description Tests the business rules function analyzeArgument with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeArgument with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -443,7 +443,7 @@ describe(tst_con.canalyzeArgument, () => {
 
   /**
    * @function analyzeArgument_inValidInputDataInteger
-   * @description Tests the business rules function analyzeArgument with a invalid integer input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeArgument with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -465,7 +465,7 @@ describe(tst_con.canalyzeArgument, () => {
 
   /**
    * @function analyzeArgument_inValidInputDataBoolean
-   * @description Tests the business rules function analyzeArgument with a invalid boolean input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeArgument with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -487,7 +487,7 @@ describe(tst_con.canalyzeArgument, () => {
 
   /**
    * @function analyzeArgument_inValidInputMetaDataInteger
-   * @description Tests the business rules function analyzeArgument with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeArgument with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -509,7 +509,7 @@ describe(tst_con.canalyzeArgument, () => {
 
   /**
    * @function analyzeArgument_inValidInputMetaDataBoolean
-   * @description Tests the business rules function analyzeArgument with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeArgument with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -539,7 +539,7 @@ describe(tst_con.canalyzeArgument, () => {
 describe(tst_con.canalyzeForRegularExpression, () => {
   /**
    * @function analyzeForRegularExpression_validDataString
-   * @description Tests the business rules function analyzeForRegularExpression with a valid input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeForRegularExpression with a valid input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -561,7 +561,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 
   /**
    * @function analyzeForRegularExpression_inValidDataInputDataString
-   * @description Tests the business rules function analyzeForRegularExpression with a invalid string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeForRegularExpression with an invalid string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -583,7 +583,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 
   /**
    * @function analyzeForRegularExpression_inValidDataInputMetaDataString
-   * @description Tests the business rules function analyzeForRegularExpression with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeForRegularExpression with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -605,7 +605,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 
   /**
    * @function analyzeForRegularExpression_inValidInputDataInteger
-   * @description Tests the business rules function analyzeForRegularExpression with a invalid integer input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeForRegularExpression with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -627,7 +627,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 
   /**
    * @function analyzeForRegularExpression_inValidInputDataBoolean
-   * @description Tests the business rules function analyzeForRegularExpression with a invalid boolean input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeForRegularExpression with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -649,7 +649,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 
   /**
    * @function analyzeForRegularExpression_inValidInputMetaDataInteger
-   * @description Tests the business rules function analyzeForRegularExpression with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeForRegularExpression with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -671,7 +671,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 
   /**
    * @function analyzeForRegularExpression_inValidInputMetaDataBoolean
-   * @description Tests the business rules function analyzeForRegularExpression with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function analyzeForRegularExpression with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -701,7 +701,7 @@ describe(tst_con.canalyzeForRegularExpression, () => {
 describe(tst_con.cparseArgumentAsRegularExpression, () => {
   /**
    * @function parseArgumentAsRegularExpression_validDataString
-   * @description Tests the business rules function parseArgumentAsRegularExpression with a valid input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsRegularExpression with a valid input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -723,7 +723,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 
   /**
    * @function parseArgumentAsRegularExpression_inValidDataInputDataString
-   * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsRegularExpression with an invalid string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -745,7 +745,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 
   /**
    * @function parseArgumentAsRegularExpression_inValidDataInputMetaDataString
-   * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsRegularExpression with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -767,7 +767,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 
   /**
    * @function parseArgumentAsRegularExpression_inValidInputDataInteger
-   * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid integer input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsRegularExpression with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -789,7 +789,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 
   /**
    * @function parseArgumentAsRegularExpression_inValidInputDataBoolean
-   * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid boolean input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsRegularExpression with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -811,7 +811,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 
   /**
    * @function parseArgumentAsRegularExpression_inValidInputMetaDataInteger
-   * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsRegularExpression with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -833,7 +833,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 
   /**
    * @function parseArgumentAsRegularExpression_inValidInputMetaDataBoolean
-   * @description Tests the business rules function parseArgumentAsRegularExpression with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsRegularExpression with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -863,7 +863,7 @@ describe(tst_con.cparseArgumentAsRegularExpression, () => {
 describe(tst_con.cparseArgumentAsArray, () => {
   /**
    * @function parseArgumentAsArray_validDataString
-   * @description Tests the business rules function parseArgumentAsArray with a valid input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsArray with a valid input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -885,7 +885,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
 
   /**
    * @function parseArgumentAsArray_inValidDataInputDataString
-   * @description Tests the business rules function parseArgumentAsArray with a invalid string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsArray with an invalid string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -907,7 +907,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
 
   /**
    * @function parseArgumentAsArray_inValidDataInputMetaDataString
-   * @description Tests the business rules function parseArgumentAsArray with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsArray with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -929,7 +929,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
 
   /**
    * @function parseArgumentAsArray_inValidInputDataInteger
-   * @description Tests the business rules function parseArgumentAsArray with a invalid integer input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsArray with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -951,7 +951,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
 
   /**
    * @function parseArgumentAsArray_inValidInputDataBoolean
-   * @description Tests the business rules function parseArgumentAsArray with a invalid boolean input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsArray with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -973,7 +973,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
 
   /**
    * @function parseArgumentAsArray_inValidInputMetaDataInteger
-   * @description Tests the business rules function parseArgumentAsArray with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsArray with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -995,7 +995,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
 
   /**
    * @function parseArgumentAsArray_inValidInputMetaDataBoolean
-   * @description Tests the business rules function parseArgumentAsArray with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function parseArgumentAsArray with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1025,11 +1025,10 @@ describe(tst_con.cparseArgumentAsArray, () => {
 describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
   /**
    * @function removeStringLiteralTagsFromArray_validDataString
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a valid input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with a valid input.
    * @author Json Howard
    * @date 2023/05/05
-   */
-  test(tst_con.cremoveStringLiteralTagsFromArray_validDataString, () => {
+   */  test(tst_con.cremoveStringLiteralTagsFromArray_validDataString, () => {
     // Arrange
     let inputData = [wrd.chello + wrd.cworld];
     let inputMetaData = '';
@@ -1047,7 +1046,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidDataInputDataString
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid string input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid string input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1069,7 +1068,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidDataInputMetaDataString
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid string inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1091,7 +1090,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidInputDataInteger
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid integer input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1113,7 +1112,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidInputDataBoolean
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid boolean input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1135,7 +1134,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidInputMetaDataInteger
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1157,7 +1156,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidInputMetaDataBoolean
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1179,7 +1178,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidInputDataUndefined
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid NaN input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/05
    */
@@ -1201,7 +1200,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
 
   /**
    * @function removeStringLiteralTagsFromArray_inValidInputDataNaN
-   * @description Tests the business rules function removeStringLiteralTagsFromArray with a invalid NaN input.
+   * @description Tests the businessRules.rules.lexicalAnalyzer function removeStringLiteralTagsFromArray with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/05
    */

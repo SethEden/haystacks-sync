@@ -10,8 +10,9 @@
 
 // External imports
 import hayConst from '@haystacks/constants';
+import { cNation } from '@haystacks/constants/src/constants/word.constants';
 
-const {bas, num, wrd, gen, biz} = hayConst;
+const {bas, num, wrd, gen, biz, phn} = hayConst;
 
 
 export const cUndefined = bas.cUn + bas.cde + bas.cf + bas.ci + bas.cn + bas.ce + bas.cd;
@@ -300,6 +301,117 @@ export const cchangeConfigurationSetting = wrd.cchange + wrd.cConfiguration + wr
 export const cchangeDebugConfigurationTheme = wrd.cchange + wrd.cDebug + wrd.cConfiguration + wrd.cTheme; // changeDebugConfigurationTheme
 export const csaveConfiguration = wrd.csave + wrd.cConfiguration; // saveConfiguration
 export const clistConfigurationThemes = wrd.clist + wrd.cConfiguration + wrd.cThemes; // listConfigurationThemes
+
+/* constant */
+export const cconstantGenerator = wrd.cconstant + wrd.cGenerator; 
+export const cconstantsGeneratorList = wrd.cconstants + wrd.cGenerator + wrd.cList;
+export const cconstantsPatternRecognizer = wrd.cconstants + wrd.cPattern + wrd.cRecognizer;
+export const cevaluateConstant = wrd.cevaluate + wrd.cConstant;
+
+/* dataDirectorate */
+export const cprintDataHive = wrd.cprint + wrd.cData + wrd.cHive;
+export const cprintDataHiveAttributes = wrd.cprint + wrd.cData + wrd.cHive + wrd.cAttributes;
+export const cclearDataStorage = wrd.cclear + wrd.cData + wrd.cStorage;
+export const cchangeSetting = wrd.cchange + wrd.cSetting;
+
+/* integrationTests */
+export const cvalidateConstants = wrd.cvalidate + wrd.cConstants;
+export const cvalidateCommandAliases = wrd.cvalidate + wrd.cCommand + wrd.cAliases;
+export const cvalidateWorkflows = wrd.cvalidate + wrd.cWorkflows;
+
+/* performanceMetric */
+export const cbusinessRulesMetrics = wrd.cbusiness + wrd.cRules + wrd.cMetrics;
+export const ccommandMetrics = wrd.ccommand + wrd.cMetrics;
+
+/* system */
+export const cechoCommand = wrd.cecho + wrd.cCommand;
+export const cexit = wrd.cexit;
+export const cversion = wrd.cversion;
+export const cabout = wrd.cabout;
+export const cname = wrd.cname;
+export const cclearScreen = wrd.cclear + wrd.cScreen;
+export const chelp = wrd.chelp;
+export const cworkflowHelp = wrd.cworkflow + wrd.cHelp;
+
+/* chiefCommander */
+export const cloadCommandAliasesFromPath = wrd.cload + wrd.cCommand + wrd.cAliases + wrd.cFrom + wrd.cPath;
+export const cenqueueCommand = wrd.cenqueue + wrd.cCommand;
+export const cisCommandQueueEmpty = wrd.cis + wrd.cCommand + wrd.cQueue + wrd.cEmpty;
+export const cprocessCommandQueue = wrd.cprocess + wrd.cCommand + wrd.cQueue;
+
+/* chiefConfiguration */
+export const csetupConfiguration = wrd.csetup + wrd.cConfiguration;
+
+/* chiefData */
+export const csearchForUniversalDebugConfigSetting = wrd.csearch + wrd.cFor + wrd.cUniversal + wrd.cDebug + wrd.cConfig + wrd.cSetting;
+export const cdetermineThemeDebugConfigFilesToLoad = wrd.cdetermine + wrd.cTheme + wrd.cDebug + wrd.cConfig + wrd.cFiles + wrd.cTo + wrd.cLoad;
+export const cgetAndProcessCsvData = wrd.cget + wrd.cAnd + wrd.cProcess + gen.cCsv + wrd.cData;
+export const cgetAndProcessXmlData = wrd.cget + wrd.cAnd + wrd.cProcess + gen.cXml + wrd.cData;
+export const csetupAllCsvData = wrd.csetup + wrd.cAll + gen.cCsv + wrd.cData;
+export const csetupAllXmlData = wrd.csetup + wrd.cAll + gen.cXml + wrd.cData;
+export const csetupAllJsonConfigData = wrd.csetup + wrd.cAll + wrd.cAll + gen.cJson + wrd.cConfig + wrd.cData;
+
+/* chiefWorkflow */
+export const cloadCommandWorkflowsFromPath = wrd.cload + wrd.cCommand + wrd.cWorkflows + wrd.cFrom + wrd.cPath;
+
+/* warden */
+export const cprocessRootPath = wrd.cprocess + wrd.cRoot + wrd.cPath;
+export const cinitFrameworkSchema = wrd.cinitiate + wrd.cFramework + wrd.cSchema;
+export const cmergeClientBusinessRules = wrd.cmerge + wrd.cClient + wrd.cBusiness + wrd.cRules;
+export const cmergeClientCommands = wrd.cmerge + wrd.cClient + wrd.cCommands;
+export const cloadCommandAliases = wrd.cload + wrd.cCommand + wrd.cAliases;
+export const cloadCommandWorkflows = wrd.cload + wrd.cCommand + wrd.cWorkflows;
+export const cexecuteBusinessRules = wrd.cexecute + wrd.cBusiness + wrd.cRules;
+export const cconsoleLog = wrd.cconsole + wrd.cLog;
+
+/* colorizer */
+export const ccolorizeMessageSimple = wrd.ccolorize + wrd.cMessage + wrd.cSimple;
+export const ccolorizeMessage = wrd.ccolorize + wrd.cMessage;
+export const caggregateStyleSetting = wrd.caggregate + wrd.cStyle + wrd.cSetting;
+export const cgetFontStyleSettingsFromSetting = wrd.cget + wrd.cFont + wrd.cStyle + wrd.cSettings + wrd.cFrom + wrd.cSetting;
+export const cgetColorStyleSettingFromSetting = wrd.cget + wrd.cColor + wrd.cStyle + wrd.cSetting + wrd.cFrom + wrd.cSetting;
+export const cgetNamedColorData = wrd.cget + wrd.cNamed + wrd.cColor + wrd.cData;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting = wrd.cset + wrd.cUnderline + wrd.cFont + wrd.cStyle + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting = wrd.cset + wrd.cBold + wrd.cFont + wrd.cStyle + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting = wrd.cset + wrd.cFont + wrd.cForeground + wrd.cColor + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting = wrd.cset + wrd.cFont + wrd.cBackground + wrd.cColor + bas.cOn + wrd.cMessage + wrd.cComponent + wrd.cAccording + wrd.cTo + wrd.cSetting;
+export const cremoveFontStyles = wrd.cremove + wrd.cFont + wrd.cStyles;
+
+/* configurator */
+export const csetConfigurationSetting = wrd.cset + wrd.cConfiguration + wrd.cSetting;
+export const cgetConfigurationSetting = wrd.cget + wrd.cConfiguration + wrd.cSetting;
+export const cprocessConfigurationNameRules = wrd.cprocess + wrd.cConfiguration + wrd.cName + wrd.cRules;
+export const cprocessConfigurationNamespaceRules = wrd.cprocess + wrd.cConfiguration + wrd.cNamespace + wrd.cRules;
+export const cprocessConfigurationValueRules = wrd.cprocess + wrd.cConfiguration + wrd.cValue + wrd.cRules;
+
+/* loggers */
+export const cconsoleTableLog = wrd.cconsole + wrd.cTable + wrd.cLog;
+export const cconstantsValidationSummaryLog = wrd.cconstants + wrd.cValidation + wrd.cSummary + wrd.cLog;
+export const cgetLogFileNameAndPath = wrd.cget + wrd.cLog + wrd.cFile + wrd.cName + wrd.cAnd + wrd.cPath;
+export const cprintMessageToFile = wrd.cprint + wrd.cMessage + wrd.cTo + wrd.cFile;
+
+/* queue */
+export const cinitQueue = wrd.cinitiate + wrd.cQueue;
+export const cdequeue = wrd.cdequeue;
+export const cenqueue = wrd.cenqueue;
+export const cenqueueFront = wrd.cenqueue + wrd.cFront;
+export const cisEmpty = wrd.cis + wrd.cEmpty;
+export const cqueueFront = wrd.cqueue + wrd.cFront;
+export const cqueueSize = wrd.cqueue + wrd.cSize;
+export const cqueueContents = wrd.cqueue + wrd.cContents;
+export const cqueuePrint = wrd.cqueue + wrd.cPrint;
+
+/* stack */
+export const cinitStack = wrd.cinitiate + wrd.cStack;
+export const cclearStack = wrd.cclear + wrd.cStack;
+export const cpush = wrd.cpush;
+export const cpop = wrd.cpop;
+export const clength = wrd.clength;
+export const ccontains = wrd.ccontains;
+export const cprint = wrd.cprint;
+
+/* main */
+export const cinitFramework = wrd.cinitiate + wrd.cFramework;
 
 // Test names
 
@@ -2218,3 +2330,870 @@ export const cchangeDebugConfigurationTheme_inValidInputDataNaN = cchangeDebugCo
 export const csaveConfiguration_validDataString = csaveConfiguration + wrd.cvalid + wrd.cData + wrd.cString; // saveConfiguration_validDataString
 
 export const clistConfigurationThemes_validDataString = clistConfigurationThemes + wrd.cvalid + wrd.cData + wrd.cString; // listConfigurationThemes_validDataString
+
+/* constant */
+export const cconstantsGenerator_validDataString = cconstantGenerator + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsGenerator_inValidDataInputDataString = cconstantGenerator + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsGenerator_inValidDataInputMetaDataString = cconstantGenerator + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsGenerator_inValidInputDataInteger = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsGenerator_inValidInputDataBoolean = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsGenerator_inValidInputMetaDataInteger = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsGenerator_inValidInputMetaDataBoolean = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconstantsGenerator_inValidInputDataUndefined = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconstantsGenerator_inValidInputDataNaN = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconstantsGenerator_inValidInputMetaDataUndefined = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconstantsGenerator_inValidInputMetaDataNaN = cconstantGenerator + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cconstantsGeneratorList_validDataString = cconstantsGeneratorList + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsGeneratorList_inValidDataInputDataString = cconstantsGeneratorList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsGeneratorList_inValidDataInputMetaDataString = cconstantsGeneratorList + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsGeneratorList_inValidInputDataInteger = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsGeneratorList_inValidInputDataBoolean = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsGeneratorList_inValidInputMetaDataInteger = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsGeneratorList_inValidInputMetaDataBoolean = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconstantsGeneratorList_inValidInputDataUndefined = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconstantsGeneratorList_inValidInputDataNaN = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconstantsGeneratorList_inValidInputMetaDataUndefined = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconstantsGeneratorList_inValidInputMetaDataNaN = cconstantsGeneratorList + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cconstantsPatternRecognizer_validDataString = cconstantsPatternRecognizer + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsPatternRecognizer_inValidDataInputDataString = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconstantsPatternRecognizer_inValidDataInputMetaDataString = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconstantsPatternRecognizer_inValidInputDataInteger = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconstantsPatternRecognizer_inValidInputDataBoolean = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconstantsPatternRecognizer_inValidInputMetaDataInteger = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconstantsPatternRecognizer_inValidInputMetaDataBoolean = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconstantsPatternRecognizer_inValidInputDataUndefined = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconstantsPatternRecognizer_inValidInputDataNaN = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconstantsPatternRecognizer_inValidInputMetaDataUndefined = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconstantsPatternRecognizer_inValidInputMetaDataNaN = cconstantsPatternRecognizer + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cevaluateConstant_validDataString = cevaluateConstant + wrd.cvalid + wrd.cData + wrd.cString;
+export const cevaluateConstant_inValidDataInputDataString = cevaluateConstant + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cevaluateConstant_inValidDataInputMetaDataString = cevaluateConstant + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cevaluateConstant_inValidInputDataInteger = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cevaluateConstant_inValidInputDataBoolean = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cevaluateConstant_inValidInputMetaDataInteger = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cevaluateConstant_inValidInputMetaDataBoolean = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cevaluateConstant_inValidInputDataUndefined = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cevaluateConstant_inValidInputDataNaN = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cevaluateConstant_inValidInputMetaDataUndefined = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cevaluateConstant_inValidInputMetaDataNaN = cevaluateConstant + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+/* dataDirectorate */
+export const cprintDataHive_validDataString = cprintDataHive + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprintDataHive_inValidDataInputDataString = cprintDataHive + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cprintDataHive_inValidDataInputMetaDataString = cprintDataHive + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cprintDataHive_inValidInputDataInteger = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cprintDataHive_inValidInputDataBoolean = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cprintDataHive_inValidInputMetaDataInteger = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cprintDataHive_inValidInputMetaDataBoolean = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cprintDataHive_inValidInputDataUndefined = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cprintDataHive_inValidInputDataNaN = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cprintDataHive_inValidInputMetaDataUndefined = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cprintDataHive_inValidInputMetaDataNaN = cprintDataHive + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cprintDataHiveAttributes_validDataString = cprintDataHiveAttributes + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprintDataHiveAttributes_inValidDataInputDataString = cprintDataHiveAttributes + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cprintDataHiveAttributes_inValidDataInputMetaDataString = cprintDataHiveAttributes + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cprintDataHiveAttributes_inValidInputDataInteger = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cprintDataHiveAttributes_inValidInputDataBoolean = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cprintDataHiveAttributes_inValidInputMetaDataInteger = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cprintDataHiveAttributes_inValidInputMetaDataBoolean = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cprintDataHiveAttributes_inValidInputDataUndefined = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cprintDataHiveAttributes_inValidInputDataNaN = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cprintDataHiveAttributes_inValidInputMetaDataUndefined = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cprintDataHiveAttributes_inValidInputMetaDataNaN = cprintDataHiveAttributes + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cclearDataStorage_validDataString = cclearDataStorage + wrd.cvalid + wrd.cData + wrd.cString;
+export const cclearDataStorage_inValidDataInputDataString = cclearDataStorage + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cclearDataStorage_inValidDataInputMetaDataString = cclearDataStorage + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cclearDataStorage_inValidInputDataInteger = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cclearDataStorage_inValidInputDataBoolean = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cclearDataStorage_inValidInputMetaDataInteger = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cclearDataStorage_inValidInputMetaDataBoolean = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cclearDataStorage_inValidInputDataUndefined = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cclearDataStorage_inValidInputDataNaN = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cclearDataStorage_inValidInputMetaDataUndefined = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cclearDataStorage_inValidInputMetaDataNaN = cclearDataStorage + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cchangeSetting_validDataString = cchangeSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cchangeSetting_inValidDataInputDataString = cchangeSetting + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cchangeSetting_inValidDataInputMetaDataString = cchangeSetting + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cchangeSetting_inValidInputDataInteger = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cchangeSetting_inValidInputDataBoolean = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cchangeSetting_inValidInputMetaDataInteger = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cchangeSetting_inValidInputMetaDataBoolean = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cchangeSetting_inValidInputDataUndefined = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cchangeSetting_inValidInputDataNaN = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cchangeSetting_inValidInputMetaDataUndefined = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cchangeSetting_inValidInputMetaDataNaN = cchangeSetting + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+/* integrationTests */
+export const cvalidateConstants_validDataString = cvalidateConstants + wrd.cvalid + wrd.cData + wrd.cString;
+export const cvalidateConstants_inValidDataString = cvalidateConstants + wrd.cinvalid + wrd.cData + wrd.cString;
+export const cvalidateConstants_inValidDataUndefined1 = cvalidateConstants + wrd.cinvalid + wrd.cData + cUndefined + num.c1;
+export const cvalidateConstants_inValidDataUndefined2 = cvalidateConstants + wrd.cinvalid + wrd.cData + cUndefined + num.c2;
+export const cvalidateConstants_inValidDataUndefined3 = cvalidateConstants + wrd.cinvalid + wrd.cData + cUndefined + num.c3;
+export const cvalidateConstants_inValidDataNaN1 = cvalidateConstants + wrd.cinvalid + wrd.cData + cNaN + num.c1;
+export const cvalidateConstants_inValidDataNaN2 = cvalidateConstants + wrd.cinvalid + wrd.cData + cNaN + num.c2;
+export const cvalidateConstants_inValidDataNaN3 = cvalidateConstants + wrd.cinvalid + wrd.cData + cNaN + num.c3;
+
+export const cvalidateCommandAliases_validDataString = cvalidateCommandAliases + wrd.cvalid + wrd.cData + wrd.cString;
+export const cvalidateCommandAliases_inValidDataObjectDuplicate = cvalidateCommandAliases + wrd.cinvalid + wrd.cData + wrd.cObject + wrd.cDuplicate;
+export const cvalidateCommandAliases_inValidDataUndefined = cvalidateCommandAliases + wrd.cinvalid + wrd.cData + cUndefined;
+export const cvalidateCommandAliases_inValidDataNaN = cvalidateCommandAliases + wrd.cinvalid + wrd.cData + cNaN;
+
+export const cvalidateWorkflows_validDataString = cvalidateWorkflows + wrd.cvalid + wrd.cData + wrd.cString;
+export const cvalidateWorkflows_inValidDataObjectDuplicate = cvalidateWorkflows + wrd.cinvalid + wrd.cData + wrd.cObject + wrd.cDuplicate;
+export const cvalidateWorkflows_inValidDataUndefined = cvalidateWorkflows + wrd.cinvalid + wrd.cData + cUndefined;
+export const cvalidateWorkflows_inValidDataNaN = cvalidateWorkflows + wrd.cinvalid + wrd.cData + cNaN;
+
+/* performanceMetric */
+export const cbusinessRulesMetrics_validDataString = cbusinessRulesMetrics + wrd.cvalid + wrd.cData + wrd.cString;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackString = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackString = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackInteger = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const ccommandMetrics_inValidDataBusinessRulesPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackInteger = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackUndefined = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const cbusinessRulesMetrics_inValidDataBusinessRulesPerformanceTrackingStackNaN = cbusinessRulesMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackUndefined = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const ccommandMetrics_inValidDataBusinessRulesNamesPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+
+export const ccommandMetrics_validDataString = ccommandMetrics + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackString = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackString = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cString;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackInteger = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackInteger = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cInteger;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackBoolean = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + wrd.cBoolean;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackUndefined = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const ccommandMetrics_inValidDataCommandPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackUndefined = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cUndefined;
+export const ccommandMetrics_inValidDataCommandsNamesPerformanceTrackingStackNaN = ccommandMetrics + wrd.cinvalid + wrd.cData + wrd.cCommands + wrd.cNames + wrd.cPerformance + wrd.cTracking + wrd.cStack + cNaN;
+
+/* system */
+export const cechoCommand_validDataString = cechoCommand + wrd.cvalid + wrd.cData + wrd.cString;
+export const cechoCommand_inValidDataInputDataString = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cechoCommand_inValidDataInputMetaDataString = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cechoCommand_inValidInputDataInteger = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cechoCommand_inValidInputDataBoolean = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cechoCommand_inValidInputMetaDataInteger = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cechoCommand_inValidInputMetaDataBoolean = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cechoCommand_inValidInputDataUndefined = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cechoCommand_inValidInputDataNaN = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cechoCommand_inValidInputMetaDataUndefined = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cechoCommand_inValidInputMetaDataNaN = cechoCommand + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cexit_validDataString = cexit + wrd.cvalid + wrd.cData + wrd.cString;
+export const cexit_inValidDataInputDataString = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cexit_inValidDataInputMetaDataString = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cexit_inValidInputDataInteger = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cexit_inValidInputDataBoolean = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cexit_inValidInputMetaDataInteger = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cexit_inValidInputMetaDataBoolean = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cexit_inValidInputDataUndefined = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cexit_inValidInputDataNaN = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cexit_inValidInputMetaDataUndefined = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cexit_inValidInputMetaDataNaN = cexit + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cversion_validDataString = cversion + wrd.cvalid + wrd.cData + wrd.cString;
+export const cversion_inValidDataInputDataString = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cversion_inValidDataInputMetaDataString = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cversion_inValidInputDataInteger = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cversion_inValidInputDataBoolean = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cversion_inValidInputMetaDataInteger = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cversion_inValidInputMetaDataBoolean = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cversion_inValidInputDataUndefined = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cversion_inValidInputDataNaN = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cversion_inValidInputMetaDataUndefined = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cversion_inValidInputMetaDataNaN = cversion + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cabout_validDataString = cabout + wrd.cvalid + wrd.cData + wrd.cString;
+export const cabout_inValidDataInputDataString = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cabout_inValidDataInputMetaDataString = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cabout_inValidInputDataInteger = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cabout_inValidInputDataBoolean = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cabout_inValidInputMetaDataInteger = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cabout_inValidInputMetaDataBoolean = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cabout_inValidInputDataUndefined = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cabout_inValidInputDataNaN = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cabout_inValidInputMetaDataUndefined = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cabout_inValidInputMetaDataNaN = cabout + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cname_validDataString = cname + wrd.cvalid + wrd.cData + wrd.cString;
+export const cname_inValidDataInputDataString = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cname_inValidDataInputMetaDataString = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cname_inValidInputDataInteger = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cname_inValidInputDataBoolean = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cname_inValidInputMetaDataInteger = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cname_inValidInputMetaDataBoolean = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cname_inValidInputDataUndefined = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cname_inValidInputDataNaN = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cname_inValidInputMetaDataUndefined = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cname_inValidInputMetaDataNaN = cname + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cclearScreen_validDataString = cclearScreen + wrd.cvalid + wrd.cData + wrd.cString;
+
+export const chelp_validDataString = chelp + wrd.cvalid + wrd.cData + wrd.cString;
+export const chelp_inValidDataInputDataString = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const chelp_inValidDataInputMetaDataString = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const chelp_inValidInputDataInteger = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const chelp_inValidInputDataBoolean = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const chelp_inValidInputMetaDataInteger = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const chelp_inValidInputMetaDataBoolean = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const chelp_inValidInputDataUndefined = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const chelp_inValidInputDataNaN = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const chelp_inValidInputMetaDataUndefined = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const chelp_inValidInputMetaDataNaN = chelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+export const cworkflowHelp_validDataString = cworkflowHelp + wrd.cvalid + wrd.cData + wrd.cString;
+export const cworkflowHelp_inValidDataInputDataString = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cworkflowHelp_inValidDataInputMetaDataString = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cworkflowHelp_inValidInputDataInteger = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cworkflowHelp_inValidInputDataBoolean = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cworkflowHelp_inValidInputMetaDataInteger = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cworkflowHelp_inValidInputMetaDataBoolean = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cworkflowHelp_inValidInputDataUndefined = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cUndefined;
+export const cworkflowHelp_inValidInputDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + cNaN;
+export const cworkflowHelp_inValidInputMetaDataUndefined = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cworkflowHelp_inValidInputMetaDataNaN = cworkflowHelp + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+/* chiefCommander */
+export const cbootStrapCommands_validDataString = cbootStrapCommands + wrd.cvalid + wrd.cData + wrd.cString;
+
+export const caddClientCommands_validDataString = caddClientCommands + wrd.cvalid + wrd.cData + wrd.cString;
+export const caddClientCommands_inValidDataClientCommandsString = caddClientCommands + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cCommands + wrd.cString;
+export const caddClientCommands_inValidClientCommandsInteger = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cInteger;
+export const caddClientCommands_inValidClientCommandsBoolean = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cBoolean;
+export const caddClientCommands_inValidClientCommandsUndefined = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cUndefined;
+export const caddClientCommands_inValidClientCommandsNaN = caddClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cNaN;
+
+export const cloadCommandAliasesFromPath_validDataString = cloadCommandAliasesFromPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandAliasesFromPath_inValidDataCommandAliasesFilePathConfigurationNameString = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const cloadCommandAliasesFromPath_inValidDataContextNameString = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameInteger = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameBoolean = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const cloadCommandAliasesFromPath_inValidContextNameInteger = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cInteger;
+export const cloadCommandAliasesFromPath_inValidContextNameBoolean = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameUndefined = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cUndefined;
+export const cloadCommandAliasesFromPath_inValidCommandAliasesFilePathConfigurationNameNaN = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
+export const cloadCommandAliasesFromPath_inValidContextNameUndefined = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + cUndefined;
+export const cloadCommandAliasesFromPath_inValidContextNameNaN = cloadCommandAliasesFromPath + wrd.cinvalid + wrd.cContext + wrd.cName + cNaN;
+
+export const cenqueueCommand_validDataString = cenqueueCommand + wrd.cvalid + wrd.cData + wrd.cString;
+export const cenqueueCommand_inValidCommandInteger = cenqueueCommand + wrd.cinvalid + wrd.cCommand + wrd.cInteger;
+export const cenqueueCommand_inValidCommandBoolean = cenqueueCommand + wrd.cinvalid + wrd.cCommand + wrd.cBoolean;
+export const cenqueueCommand_inValidCommandUndefined = cenqueueCommand + wrd.cinvalid + wrd.cCommand + cUndefined;
+export const cenqueueCommand_inValidCommandNaN = cenqueueCommand + wrd.cinvalid + wrd.cCommand + cNaN;
+
+export const cisCommandQueueEmpty_validDataFalse = cisCommandQueueEmpty + wrd.cvalid + wrd.cData + wrd.cFalse;
+export const cisCommandQueueEmpty_validDataTrue = cisCommandQueueEmpty + wrd.cvalid + wrd.cData + wrd.cTrue;
+
+/* chiefConfiguration */
+export const csetupConfiguration_validDataString = csetupConfiguration + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetupConfiguration_inValidDataAppConfigPathString = csetupConfiguration + wrd.cinvalid + wrd.cData + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cString;
+export const csetupConfiguration_inValidDataFrameworkConfigPathString = csetupConfiguration + wrd.cinvalid + wrd.cData + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cString;
+export const csetupConfiguration_inValidAppConfigPathInteger = csetupConfiguration + wrd.cinvalid + wrd.cData + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cInteger;
+export const csetupConfiguration_inValidAppConfigPathBoolean = csetupConfiguration + wrd.cinvalid + wrd.cData + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cBoolean;
+export const csetupConfiguration_inValidFrameworkConfigPathInteger = csetupConfiguration + wrd.cinvalid + wrd.cData + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cInteger;
+export const csetupConfiguration_inValidFrameworkConfigPathBoolean = csetupConfiguration + wrd.cinvalid + wrd.cData + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cBoolean;
+export const csetupConfiguration_inValidAppConfigPathUndefined = csetupConfiguration + wrd.cinvalid + wrd.cData + phn.cApp + wrd.cConfig + wrd.cPath + cUndefined;
+export const csetupConfiguration_inValidAppConfigPathNaN = csetupConfiguration + wrd.cinvalid + wrd.cData + phn.cApp + wrd.cConfig + wrd.cPath + cNaN;
+export const csetupConfiguration_inValidFrameworkConfigPathUndefined = csetupConfiguration + wrd.cinvalid + wrd.cData + wrd.cFramework + wrd.cConfig + wrd.cPath + cUndefined;
+export const csetupConfiguration_inValidFrameworkConfigPathNaN = csetupConfiguration + wrd.cinvalid + wrd.cData + wrd.cFramework + wrd.cConfig + wrd.cPath + cNaN;
+
+/* chiefData */
+export const csearchForUniversalDebugConfigSetting_validDataString = csearchForUniversalDebugConfigSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const csearchForUniversalDebugConfigSetting_inValidDataAppConfigPathNameString = csearchForUniversalDebugConfigSetting + wrd.cinvalid + wrd.cData + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cString;
+export const csearchForUniversalDebugConfigSetting_inValidDataFrameworkConfigPathNameString = csearchForUniversalDebugConfigSetting + wrd.cinvalid + wrd.cData + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cString;
+export const csearchForUniversalDebugConfigSetting_inValidAppConfigPathNameInteger = csearchForUniversalDebugConfigSetting + wrd.cinvalid + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cInteger;
+export const csearchForUniversalDebugConfigSetting_inValidAppConfigPathNameBoolean = csearchForUniversalDebugConfigSetting + wrd.cinvalid + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cBoolean;
+export const csearchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameInteger = csearchForUniversalDebugConfigSetting + wrd.cinvalid + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cInteger;
+export const csearchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameBoolean = csearchForUniversalDebugConfigSetting + wrd.cinvalid + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cBoolean;
+export const csearchForUniversalDebugConfigSetting_inValidAppConfigPathNameUndefined = csearchForUniversalDebugConfigSetting + wrd.cinvalid + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cName + cUndefined;
+export const csearchForUniversalDebugConfigSetting_inValidAppConfigPathNameNaN = csearchForUniversalDebugConfigSetting + wrd.cinvalid + phn.cApp + wrd.cConfig + wrd.cPath + wrd.cName + cNaN;
+export const csearchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameUndefined = csearchForUniversalDebugConfigSetting + wrd.cinvalid + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cName + cUndefined;
+export const csearchForUniversalDebugConfigSetting_inValidFrameworkConfigPathNameNaN = csearchForUniversalDebugConfigSetting + wrd.cinvalid + wrd.cFramework + wrd.cConfig + wrd.cPath + wrd.cName + cNaN;
+
+export const cdetermineThemeDebugConfigFilesToLoad_validDataString = cdetermineThemeDebugConfigFilesToLoad + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdetermineThemeDebugConfigFilesToLoad_inValidDataThemeConfigPathNameString = cdetermineThemeDebugConfigFilesToLoad + wrd.cinvalid + wrd.cData + wrd.cTheme + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cString;
+export const cdetermineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameInteger = cdetermineThemeDebugConfigFilesToLoad + wrd.cinvalid + wrd.cTheme + wrd.cConfig + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cInteger;
+export const cdetermineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameBoolean = cdetermineThemeDebugConfigFilesToLoad + wrd.cinvalid + wrd.cTheme + wrd.cConfig + wrd.cConfig + wrd.cPath + wrd.cName + wrd.cBoolean;
+export const cdetermineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameUndefined = cdetermineThemeDebugConfigFilesToLoad + wrd.cinvalid + wrd.cTheme + wrd.cConfig + wrd.cConfig + wrd.cPath + wrd.cName + cUndefined;
+export const cdetermineThemeDebugConfigFilesToLoad_inValidThemeConfigPathNameNaN = cdetermineThemeDebugConfigFilesToLoad + wrd.cinvalid + wrd.cTheme + wrd.cConfig + wrd.cConfig + wrd.cPath + wrd.cName + cNaN;
+
+export const cgetAndProcessCsvData_validDataString = cgetAndProcessCsvData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetAndProcessCsvData_inValidDataPathAndFilenameString = cgetAndProcessCsvData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cAnd + wrd.cFilename + wrd.cString;
+export const cgetAndProcessCsvData_inValidDataContextNameString = cgetAndProcessCsvData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const cgetAndProcessCsvData_inValidPathAndFilenameInteger = cgetAndProcessCsvData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + wrd.cInteger;
+export const cgetAndProcessCsvData_inValidPathAndFilenameBoolean = cgetAndProcessCsvData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + wrd.cBoolean;
+export const cgetAndProcessCsvData_inValidContextNameInteger = cgetAndProcessCsvData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cInteger;
+export const cgetAndProcessCsvData_inValidContextNameBoolean = cgetAndProcessCsvData + wrd.cinvalid + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const cgetAndProcessCsvData_inValidPathAndFilenameUndefined = cgetAndProcessCsvData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + cUndefined;
+export const cgetAndProcessCsvData_inValidPathAndFilenameNaN = cgetAndProcessCsvData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + cNaN;
+export const cgetAndProcessCsvData_inValidContextNameUndefined = cgetAndProcessCsvData + wrd.cinvalid + wrd.cContext + wrd.cName + cUndefined;
+export const cgetAndProcessCsvData_inValidContextNameNaN = cgetAndProcessCsvData + wrd.cinvalid + wrd.cContext + wrd.cName + cNaN;
+
+export const cgetAndProcessXmlData_validDataString = cgetAndProcessXmlData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetAndProcessXmlData_inValidDataPathAndFilenameString = cgetAndProcessXmlData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cAnd + wrd.cFilename + wrd.cString;
+export const cgetAndProcessXmlData_inValidPathAndFilenameInteger = cgetAndProcessXmlData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + wrd.cInteger;
+export const cgetAndProcessXmlData_inValidPathAndFilenameBoolean = cgetAndProcessXmlData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + wrd.cBoolean;
+export const cgetAndProcessXmlData_inValidPathAndFilenameUndefined = cgetAndProcessXmlData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + cUndefined;
+export const cgetAndProcessXmlData_inValidPathAndFilenameNaN = cgetAndProcessXmlData + wrd.cinvalid + wrd.cPath + wrd.cAnd + wrd.cFilename + cNaN;
+
+export const csetupAllCsvData_validDataString = csetupAllCsvData + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetupAllCsvData_inValidDataDataPathConfigurationNameString = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const csetupAllCsvData_inValidDataContextNameString = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const csetupAllCsvData_inValidDataPathConfigurationNameInteger = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const csetupAllCsvData_inValidDataPathConfigurationNameBoolean = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const csetupAllCsvData_inValidContextNameInteger = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cInteger;
+export const csetupAllCsvData_inValidContextNameBoolean = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const csetupAllCsvData_inValidDataPathConfigurationNameUndefined = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + cUndefined;
+export const csetupAllCsvData_inValidDataPathConfigurationNameNaN = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
+export const csetupAllCsvData_inValidContextNameUndefined = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cUndefined;
+export const csetupAllCsvData_inValidContextNameNaN = csetupAllCsvData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cNaN;
+
+export const csetupAllXmlData_validDataString = csetupAllXmlData + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetupAllXmlData_inValidDataDataPathConfigurationNameString = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const csetupAllXmlData_inValidDataContextNameString = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const csetupAllXmlData_inValidDataPathConfigurationNameInteger = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const csetupAllXmlData_inValidDataPathConfigurationNameBoolean = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const csetupAllXmlData_inValidContextNameInteger = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cInteger;
+export const csetupAllXmlData_inValidContextNameBoolean = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const csetupAllXmlData_inValidDataPathConfigurationNameUndefined = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + cUndefined;
+export const csetupAllXmlData_inValidDataPathConfigurationNameNaN = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
+export const csetupAllXmlData_inValidContextNameUndefined = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cUndefined;
+export const csetupAllXmlData_inValidContextNameNaN = csetupAllXmlData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cNaN;
+
+export const csetupAllJsonConfigData_validDataString = csetupAllJsonConfigData + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetupAllJsonConfigData_inValidDataPathConfigurationNameString = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const csetupAllJsonConfigData_inValidDataContextNameString = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const csetupAllJsonConfigData_inValidDataPathConfigurationNameInteger = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const csetupAllJsonConfigData_inValidDataPathConfigurationNameBoolean = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const csetupAllJsonConfigData_inValidContextNameInteger = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cInteger;
+export const csetupAllJsonConfigData_inValidContextNameBoolean = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const csetupAllJsonConfigData_inValidDataPathConfigurationNameUndefined = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + cUndefined;
+export const csetupAllJsonConfigData_inValidDataPathConfigurationNameNaN = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
+export const csetupAllJsonConfigData_inValidContextNameUndefined = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cUndefined;
+export const csetupAllJsonConfigData_inValidContextNameNaN = csetupAllJsonConfigData + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cNaN;
+
+export const caddConstantsValidationData_validDataString = caddConstantsValidationData + wrd.cvalid + wrd.cData + wrd.cString;
+export const caddConstantsValidationData_inValidDataArrayValidationDataString = caddConstantsValidationData + wrd.cinvalid + wrd.cData + wrd.cArray + wrd.cValidation + wrd.cData + wrd.cString;
+export const caddConstantsValidationData_inValidArrayValidationDataInteger = caddConstantsValidationData + wrd.cinvalid + wrd.cArray + wrd.cValidation + wrd.cData + wrd.cInteger;
+export const caddConstantsValidationData_inValidArrayValidationDataBoolean = caddConstantsValidationData + wrd.cinvalid + wrd.cArray + wrd.cValidation + wrd.cData + wrd.cBoolean;
+export const caddConstantsValidationData_inValidArrayValidationDataUndefined = caddConstantsValidationData + wrd.cinvalid + wrd.cArray + wrd.cValidation + wrd.cData + cUndefined;
+export const caddConstantsValidationData_inValidArrayValidationDataNaN = caddConstantsValidationData + wrd.cinvalid + wrd.cArray + wrd.cValidation + wrd.cData + cNaN;
+
+/* chiefWorkflow */
+export const cloadCommandWorkflowsFromPath_validDataString = cloadCommandWorkflowsFromPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandWorkflowsFromPath_inValidDataCommandWorkflowFilePathConfigurationNameString = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const cloadCommandWorkflowsFromPath_inValidDataContextNameString = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cString;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameInteger = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameBoolean = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const cloadCommandWorkflowsFromPath_inValidContextNameInteger = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cInteger;
+export const cloadCommandWorkflowsFromPath_inValidContextNameBoolean = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + wrd.cBoolean;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameUndefined = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cUndefined;
+export const cloadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameNaN = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cWorkflow + wrd.cFile + wrd.cPath + wrd.cConfiguration + wrd.cName + cNaN;
+export const cloadCommandWorkflowsFromPath_inValidContextNameUndefined = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cUndefined;
+export const cloadCommandWorkflowsFromPath_inValidContextNameNaN = cloadCommandWorkflowsFromPath + wrd.cinvalid + wrd.cData + wrd.cContext + wrd.cName + cNaN;
+
+/* warden */
+export const cprocessRootPath_validDataString = cprocessRootPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessRootPath_inValidDataInputPathString = cprocessRootPath + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cPath + wrd.cString;
+export const cprocessRootPath_inValidDataActualFrameworkNameString = cprocessRootPath + wrd.cinvalid + wrd.cData + wrd.cActual  + wrd.cFramework + wrd.cName + wrd.cString;
+export const cprocessRootPath_inValidInputPathInteger = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + wrd.cInteger;
+export const cprocessRootPath_inValidInputPathBoolean = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + wrd.cBoolean;
+export const cprocessRootPath_inValidActualFrameworkNameInteger = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + wrd.cInteger;
+export const cprocessRootPath_inValidActualFrameworkNameBoolean = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + wrd.cBoolean;
+export const cprocessRootPath_inValidInputPathUndefined = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + cUndefined;
+export const cprocessRootPath_inValidInputPathNaN = cprocessRootPath + wrd.cinvalid + wrd.cInput + wrd.cPath + cNaN;
+export const cprocessRootPath_inValidActualFrameworkNameUndefined = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + cUndefined;
+export const cprocessRootPath_inValidActualFrameworkNameNaN = cprocessRootPath + wrd.cinvalid + wrd.cActual  + wrd.cFramework + wrd.cName + cNaN;
+
+export const cinitFrameworkSchema_validDataObject = cinitFrameworkSchema + wrd.cvalid + wrd.cData + wrd.cObject;
+export const cinitFrameworkSchema_inValidConfigDataString = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cString;
+export const cinitFrameworkSchema_inValidConfigDataInteger = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cInteger;
+export const cinitFrameworkSchema_inValidConfigDataBoolean = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + wrd.cBoolean;
+export const cinitFrameworkSchema_inValidConfigDataUndefined = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + cUndefined;
+export const cinitFrameworkSchema_inValidConfigDataNaN = cinitFrameworkSchema + wrd.cinvalid + wrd.cConfig + wrd.cData + cNaN;
+
+export const cmergeClientBusinessRules_validDataObject = cmergeClientBusinessRules + wrd.cvalid + wrd.cData + wrd.cObject;
+export const cmergeClientBusinessRules_inValidDataClientBusinessRulesString = cmergeClientBusinessRules + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cString;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesInteger = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cInteger;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesBoolean = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + wrd.cBoolean;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesUndefined = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + cUndefined;
+export const cmergeClientBusinessRules_inValidClientBusinessRulesNaN = cmergeClientBusinessRules + wrd.cinvalid + wrd.cClient + wrd.cBusiness + wrd.cRules + cNaN;
+
+export const cmergeClientCommands_validDataObject = cmergeClientCommands + wrd.cvalid + wrd.cData + wrd.cObject;
+export const cmergeClientCommands_inValidDataClientCommandsString = cmergeClientCommands + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cCommands + wrd.cString;
+export const cmergeClientCommands_inValidClientCommandsInteger = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cInteger;
+export const cmergeClientCommands_inValidClientCommandsBoolean = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + wrd.cBoolean;
+export const cmergeClientCommands_inValidClientCommandsUndefined = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cUndefined;
+export const cmergeClientCommands_inValidClientCommandsNaN = cmergeClientCommands + wrd.cinvalid + wrd.cClient + wrd.cCommands + cNaN;
+
+export const cloadCommandAliases_validDataString = cloadCommandAliases + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandAliases_inValidDataCommandAliasesPathString = cloadCommandAliases + wrd.cinvalid + wrd.cData + wrd.cCommand + wrd.cAliases + wrd.cPath + wrd.cString;
+export const cloadCommandAliases_inValidCommandAliasesPathInteger = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + wrd.cInteger;
+export const cloadCommandAliases_inValidCommandAliasesPathBoolean = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + wrd.cBoolean;
+export const cloadCommandAliases_inValidCommandAliasesPathUndefined = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + cUndefined;
+export const cloadCommandAliases_inValidCommandAliasesPathNaN = cloadCommandAliases + wrd.cinvalid + wrd.cCommand + wrd.cAliases + wrd.cPath + cNaN;
+
+export const cloadCommandWorkflows_validDataString = cloadCommandWorkflows + wrd.cvalid + wrd.cData + wrd.cString;
+export const cloadCommandWorkflows_inValidDataWorkflowPathConfigNameString = cloadCommandWorkflows + wrd.cinvalid + wrd.cData + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + wrd.cString;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameInteger = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + wrd.cInteger;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameBoolean = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + wrd.cBoolean;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameUndefined = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + cUndefined;
+export const cloadCommandWorkflows_inValidWorkflowPathConfigNameNaN = cloadCommandWorkflows + wrd.cinvalid + wrd.cWorkflow + wrd.cPath + wrd.cConfig + wrd.cName + cNaN;
+
+export const cexecuteBusinessRules_validDataString = cexecuteBusinessRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cexecuteBusinessRules_inValidDataInputsString = cexecuteBusinessRules + wrd.cinvalid + wrd.cData + wrd.cInputs + wrd.cString;
+export const cexecuteBusinessRules_inValidDataBusinessRulesString = cexecuteBusinessRules + wrd.cinvalid + wrd.cData + wrd.cBusiness + wrd.cRules + wrd.cString;
+export const cexecuteBusinessRules_inValidInputsInteger = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + wrd.cInteger;
+export const cexecuteBusinessRules_inValidInputsBoolean = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + wrd.cBoolean;
+export const cexecuteBusinessRules_inValidBusinessRulesInteger = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + wrd.cInteger;
+export const cexecuteBusinessRules_inValidBusinessRulesBoolean = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + wrd.cBoolean;
+export const cexecuteBusinessRules_inValidInputsUndefined = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + cUndefined;
+export const cexecuteBusinessRules_inValidInputsNaN = cexecuteBusinessRules + wrd.cinvalid + wrd.cInputs + cNaN;
+export const cexecuteBusinessRules_inValidBusinessRulesUndefined = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + cUndefined;
+export const cexecuteBusinessRules_inValidBusinessRulesNaN = cexecuteBusinessRules + wrd.cinvalid + wrd.cBusiness + wrd.cRules + cNaN;
+
+export const cconsoleLog_validDataString = cconsoleLog + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconsoleLog_inValidDataInputDataString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cData + wrd.cString;
+export const cconsoleLog_inValidDataInputMetaDataString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cString;
+export const cconsoleLog_inValidInputDataInteger = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cInteger;
+export const cconsoleLog_inValidInputDataBoolean = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + wrd.cBoolean;
+export const cconsoleLog_inValidInputMetaDataInteger = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cInteger;
+export const cconsoleLog_inValidInputMetaDataBoolean = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + wrd.cBoolean;
+export const cconsoleLog_inValidInputDataUndefined = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + cUndefined;
+export const cconsoleLog_inValidInputDataNaN = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN;
+export const cconsoleLog_inValidInputMetaDataUndefined = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cUndefined;
+export const cconsoleLog_inValidInputMetaDataNaN = cconsoleLog + wrd.cinvalid + wrd.cInput + wrd.cMeta + wrd.cData + cNaN;
+
+/* colorizer */
+export const ccolorizeMessageSimple_validData = ccolorizeMessageSimple + wrd.cvalid + wrd.cData;
+export const ccolorizeMessageSimple_inValidMessageString = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + wrd.cString;
+export const ccolorizeMessageSimple_inValidColorArrayString = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + wrd.cString;
+export const ccolorizeMessageSimple_inValidIsForegroundString = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + wrd.cString;
+export const ccolorizeMessageSimple_inValidMessageNumber = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + wrd.cNumber;
+export const ccolorizeMessageSimple_inValidMessageBoolean = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const ccolorizeMessageSimple_inValidMessageUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const ccolorizeMessageSimple_inValidMessageNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cMessage + cNaN;
+export const ccolorizeMessageSimple_inValidColorArrayNumber = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + wrd.cNumber;
+export const ccolorizeMessageSimple_inValidColorArrayBoolean = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + wrd.cBoolean;
+export const ccolorizeMessageSimple_inValidColorArrayUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + cUndefined;
+export const ccolorizeMessageSimple_inValidColorArrayNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cColor + wrd.cArray + cNaN;
+export const ccolorizeMessageSimple_inValidIsForegroundNumber = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + wrd.cNumber;
+export const ccolorizeMessageSimple_inValidIsForegroundBoolean = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + wrd.cBoolean;
+export const ccolorizeMessageSimple_inValidIsForegroundUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + cUndefined;
+export const ccolorizeMessageSimple_inValidIsForegroundNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cForeground + cNaN;
+export const ccolorizeMessageSimple_inValidAllUndefined = ccolorizeMessageSimple + wrd.cinvalid + wrd.cAll + cUndefined;
+export const ccolorizeMessageSimple_inValidAllNaN = ccolorizeMessageSimple + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const ccolorizeMessage_validData = ccolorizeMessage + wrd.cvalid + wrd.cData;
+export const ccolorizeMessage_inValidMessageString = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + wrd.cString;
+export const ccolorizeMessage_inValidClassNameString = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + wrd.cString;
+export const ccolorizeMessage_inValidFunctionNameString = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + wrd.cString;
+export const ccolorizeMessage_inValidFlatMessageLogString = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + wrd.cString;
+export const ccolorizeMessage_inValidMessageNumber = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + wrd.cNumber;
+export const ccolorizeMessage_inValidMessageBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const ccolorizeMessage_inValidMessageUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const ccolorizeMessage_inValidMessageNaN = ccolorizeMessage + wrd.cinvalid + wrd.cMessage + cNaN;
+export const ccolorizeMessage_inValidClassNameNumber = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + wrd.cNumber;
+export const ccolorizeMessage_inValidClassNameBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + wrd.cBoolean;
+export const ccolorizeMessage_inValidClassNameUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + cUndefined;
+export const ccolorizeMessage_inValidClassNameNaN = ccolorizeMessage + wrd.cinvalid + wrd.cClass + wrd.cName + cNaN;
+export const ccolorizeMessage_inValidFunctionNameNumber = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + wrd.cNumber;
+export const ccolorizeMessage_inValidFunctionNameBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + wrd.cBoolean;
+export const ccolorizeMessage_inValidFunctionNameUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + cUndefined;
+export const ccolorizeMessage_inValidFunctionNameNaN = ccolorizeMessage + wrd.cinvalid + wrd.cFunction + wrd.cName + cNaN;
+export const ccolorizeMessage_inValidFlatMessageLogNumber = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + wrd.cNumber;
+export const ccolorizeMessage_inValidFlatMessageLogBoolean = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + wrd.cBoolean;
+export const ccolorizeMessage_inValidFlatMessageLogUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + cUndefined;
+export const ccolorizeMessage_inValidFlatMessageLogNaN = ccolorizeMessage + wrd.cinvalid + wrd.cFlat + wrd.cMessage + wrd.cLog + cNaN;
+export const ccolorizeMessage_inValidAllUndefined = ccolorizeMessage + wrd.cinvalid + wrd.cAll + cUndefined;
+export const ccolorizeMessage_inValidAllNaN = ccolorizeMessage + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const caggregateStyleSetting_validData = caggregateStyleSetting + wrd.cvalid + wrd.cData;
+export const caggregateStyleSetting_inValidConfigurationNamespaceString = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cString;
+export const caggregateStyleSetting_inValidConfigurationNameString = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const caggregateStyleSetting_inValidConfigurationValueString = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cString;
+export const caggregateStyleSetting_inValidConfigurationNamespaceNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cNumber;
+export const caggregateStyleSetting_inValidConfigurationNamespaceBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cBoolean;
+export const caggregateStyleSetting_inValidConfigurationNamespaceUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cUndefined;
+export const caggregateStyleSetting_inValidConfigurationNamespaceNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cNaN;
+export const caggregateStyleSetting_inValidConfigurationNameNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cNumber;
+export const caggregateStyleSetting_inValidConfigurationNameBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const caggregateStyleSetting_inValidConfigurationNameUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cUndefined;
+export const caggregateStyleSetting_inValidConfigurationNameNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cNaN;
+export const caggregateStyleSetting_inValidConfigurationValueNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cNumber;
+export const caggregateStyleSetting_inValidConfigurationValueBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cBoolean;
+export const caggregateStyleSetting_inValidConfigurationValueUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cUndefined;
+export const caggregateStyleSetting_inValidConfigurationValueNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cNaN;
+export const caggregateStyleSetting_inValidProcessAsFontSettingNumber = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + wrd.cNumber;
+export const caggregateStyleSetting_inValidProcessAsFontSettingBoolean = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + wrd.cBoolean;
+export const caggregateStyleSetting_inValidProcessAsFontSettingUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + cUndefined;
+export const caggregateStyleSetting_inValidProcessAsFontSettingNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cProcess + wrd.cAs + wrd.cFont + wrd.cSetting + cNaN;
+export const caggregateStyleSetting_inValidAllUndefined = caggregateStyleSetting + wrd.cinvalid + wrd.cAll + cUndefined;
+export const caggregateStyleSetting_inValidAllNaN = caggregateStyleSetting + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const cgetFontStyleSettingsFromSetting_validDataString = cgetFontStyleSettingsFromSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetFontStyleSettingsFromSetting_inValidDataSettingValueString = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cData + wrd.cSetting + wrd.cValue + wrd.cString;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueInteger = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueBoolean = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueUndefined = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + cUndefined;
+export const cgetFontStyleSettingsFromSetting_inValidSettingValueNaN = cgetFontStyleSettingsFromSetting + wrd.cinvalid + wrd.cSetting + wrd.cValue + cNaN;
+
+export const cgetColorStyleSettingFromSetting_validDataString = cgetColorStyleSettingFromSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetColorStyleSettingFromSetting_inValidDataColorNameString = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cData + wrd.cColor + wrd.cName + wrd.cString;
+export const cgetColorStyleSettingFromSetting_inValidDataDefaultColorArrayString = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cData + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cString;
+export const cgetColorStyleSettingFromSetting_inValidColorNameInteger = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + wrd.cInteger;
+export const cgetColorStyleSettingFromSetting_inValidColorNameBoolean = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + wrd.cBoolean;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayInteger = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cInteger;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayBoolean = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cBoolean;
+export const cgetColorStyleSettingFromSetting_inValidColorNameUndefined = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + cUndefined;
+export const cgetColorStyleSettingFromSetting_inValidColorNameNaN = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cColor + wrd.cName + cNaN;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayUndefined = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined;
+export const cgetColorStyleSettingFromSetting_inValidDefaultColorArrayNaN = cgetColorStyleSettingFromSetting + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined;
+
+export const cgetNamedColorData_validDataString = cgetNamedColorData + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetNamedColorData_inValidDataColorNameString = cgetNamedColorData + wrd.cinvalid + wrd.cData + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cString;
+export const cgetNamedColorData_inValidDataDefaultColorArrayString = cgetNamedColorData + wrd.cinvalid + wrd.cData + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cString;  
+export const cgetNamedColorData_inValidColorNameInteger = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cInteger;
+export const cgetNamedColorData_inValidColorNameBoolean = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cBoolean;
+export const cgetNamedColorData_inValidDefaultColorArrayInteger = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cInteger;  
+export const cgetNamedColorData_inValidDefaultColorArrayBoolean = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + wrd.cBoolean; 
+export const cgetNamedColorData_inValidColorNameUndefined = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined;
+export const cgetNamedColorData_inValidColorNameNaN = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cNaN;
+export const cgetNamedColorData_inValidDefaultColorArrayUndefined = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cUndefined; 
+export const cgetNamedColorData_inValidDefaultColorArrayNaN = cgetNamedColorData + wrd.cinvalid + wrd.cDefault + wrd.cColor + wrd.cArray + cNaN; 
+
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_validDataString = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataUnderlineSettingValueString = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cUnderline + wrd.cSetting + wrd.cValue + wrd.cString;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueInteger = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueBoolean = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueUndefined = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueNaN = csetUnderlineFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cUnderline + wrd.cSetting + wrd.cValue + cNaN;
+
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_validDataString = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cSetting;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataBoldSettingValueString = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cBold + wrd.cSetting + wrd.cValue + wrd.cString;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueInteger = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueBoolean = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueUndefined = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueNaN = csetBoldFontStyleOnMessageComponentAccordingToSetting + wrd.cinvalid  + wrd.cBold + wrd.cSetting + wrd.cValue + cNaN;
+
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_validDataString = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cString;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN = csetFontForegroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cNaN;
+
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_validDataString = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cComponent + wrd.cString;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cData + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cSetting;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cInteger;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + wrd.cBoolean;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cInteger;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + wrd.cBoolean;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cUndefined;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cMessage + wrd.cComponent + cNaN;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cUndefined;
+export const csetFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN = csetFontBackgroundColorOnMessageComponentAccordingToSetting + wrd.cinvalid + wrd.cColor + wrd.cSetting + wrd.cValue + cNaN;
+
+export const cremoveFontStyles_validDataString = cremoveFontStyles + wrd.cvalid + wrd.cData + wrd.cString;
+export const cremoveFontStyles_inValidDataMessageString = cremoveFontStyles + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cremoveFontStyles_inValidMessageInteger = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cremoveFontStyles_inValidMessageBoolean = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const cremoveFontStyles_inValidMessageUndefined = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cremoveFontStyles_inValidMessageNaN = cremoveFontStyles + wrd.cinvalid + wrd.cMessage + cNaN;
+
+/* configurator */
+export const csetConfigurationSetting_validData = csetConfigurationSetting + wrd.cvalid + wrd.cData;
+export const csetConfigurationSetting_validConfigurationNamespaceString = csetConfigurationSetting + wrd.cvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cString;
+export const csetConfigurationSetting_validConfigurationNameString = csetConfigurationSetting + wrd.cvalid + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const csetConfigurationSetting_validConfigurationValueString = csetConfigurationSetting + wrd.cvalid + wrd.cConfiguration + wrd.cValue + wrd.cString;
+export const csetConfigurationSetting_inValidConfigurationNamespaceNumber = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cNumber;
+export const csetConfigurationSetting_inValidConfigurationNamespaceBoolean = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + wrd.cBoolean;
+export const csetConfigurationSetting_inValidConfigurationNamespaceUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cUndefined;
+export const csetConfigurationSetting_inValidConfigurationNamespaceNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cNamespace + cNaN;
+export const csetConfigurationSetting_inValidConfigurationNameNumber = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cNumber;
+export const csetConfigurationSetting_inValidConfigurationNameBoolean = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const csetConfigurationSetting_inValidConfigurationNameUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cUndefined;
+export const csetConfigurationSetting_inValidConfigurationNameNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cName + cNaN;
+export const csetConfigurationSetting_inValidConfigurationValueNumber = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cNumber;
+export const csetConfigurationSetting_inValidConfigurationValueBoolean = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + wrd.cBoolean;
+export const csetConfigurationSetting_inValidConfigurationValueUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cUndefined;
+export const csetConfigurationSetting_inValidConfigurationValueNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cConfiguration + wrd.cValue + cNaN;
+export const csetConfigurationSetting_inValidAllUndefined = csetConfigurationSetting + wrd.cinvalid + wrd.cAll + cUndefined;
+export const csetConfigurationSetting_inValidAllNaN = csetConfigurationSetting + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const cgetConfigurationSetting_validDataString = cgetConfigurationSetting + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetConfigurationSetting_inValidDataConfigurationNamespaceString = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + wrd.cString;
+export const cgetConfigurationSetting_inValidDataConfigurationNameString = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + wrd.cString;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceInteger = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + wrd.cInteger;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceBoolean = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + wrd.cBoolean;
+export const cgetConfigurationSetting_inValidConfigurationNameInteger = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + wrd.cInteger;
+export const cgetConfigurationSetting_inValidConfigurationNameBoolean = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + wrd.cBoolean;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceUndefined = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + cUndefined;
+export const cgetConfigurationSetting_inValidConfigurationNamespaceNaN = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cNamespace + cNaN;
+export const cgetConfigurationSetting_inValidConfigurationNameUndefined = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + cUndefined;
+export const cgetConfigurationSetting_inValidConfigurationNameNaN = cgetConfigurationSetting + wrd.cinvalid + wrd.cData + wrd.cConfiguration + wrd.cName + cNaN;
+
+export const cprocessConfigurationNameRules_validDataString = cprocessConfigurationNameRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessConfigurationNameRules_inValidDataFullyQualifiedNameString = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cData + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cString;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameInteger = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cInteger;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameBoolean = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cBoolean;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameUndefined = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cUndefined;
+export const cprocessConfigurationNameRules_inValidFullyQualifiedNameNaN = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cNaN;
+
+export const cprocessConfigurationNamespaceRules_validDataString = cprocessConfigurationNameRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessConfigurationNamespaceRules_inValidDataFullyQualifiedNameString = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cData + wrd.cFully + wrd.cQualified + wrd.cString;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameInteger = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cInteger;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameBoolean = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + wrd.cBoolean;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameUndefined = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cUndefined;
+export const cprocessConfigurationNamespaceRules_inValidFullyQualifiedNameNaN = cprocessConfigurationNameRules + wrd.cinvalid + wrd.cFully + wrd.cQualified + wrd.cName + cNaN;
+
+export const cprocessConfigurationValueRules_validDataString = cprocessConfigurationValueRules + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprocessConfigurationValueRules_inValidDataNameString = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cData + wrd.cName + wrd.cString;
+export const cprocessConfigurationValueRules_inValidDataValueString = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const cprocessConfigurationValueRules_inValidNameInteger = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + wrd.cInteger;
+export const cprocessConfigurationValueRules_inValidNameBoolean = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + wrd.cBoolean;
+export const cprocessConfigurationValueRules_inValidValueInteger = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const cprocessConfigurationValueRules_inValidValueBoolean = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const cprocessConfigurationValueRules_inValidNameUndefined = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + cUndefined;
+export const cprocessConfigurationValueRules_inValidNameNaN = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cName + cNaN;
+export const cprocessConfigurationValueRules_inValidValueUndefined = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + cUndefined;
+export const cprocessConfigurationValueRules_inValidValueNaN = cprocessConfigurationValueRules + wrd.cinvalid + wrd.cValue + cNaN;
+
+/* loggers */
+export const cconsoleLog_inValidDataClassPathString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cClass + wrd.cPath + wrd.cString;
+export const cconsoleLog_inValidDataMessageString = cconsoleLog + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cconsoleLog_inValidClassPathInteger = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cInteger;
+export const cconsoleLog_inValidClassPathBoolean = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cBoolean;
+export const cconsoleLog_inValidMessageInteger = cconsoleLog + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cconsoleLog_inValidMessageBoolean = cconsoleLog + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cconsoleLog_inValidClassPathUndefined = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cUndefined;
+export const cconsoleLog_inValidClassPathNaN = cconsoleLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cNaN;
+export const cconsoleLog_inValidMessageUndefined = cconsoleLog + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cconsoleLog_inValidMessageNaN = cconsoleLog + wrd.cinvalid + wrd.cMessage + cNaN;
+
+export const cconsoleTableLog_validData = cconsoleTableLog + wrd.cvalid + wrd.cData;
+export const cconsoleTableLog_inValidClassPathString = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cString;
+export const cconsoleTableLog_inValidTableDataString = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + wrd.cString;
+export const cconsoleTableLog_inValidColumnNamesString = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + wrd.cString;
+export const cconsoleTableLog_inValidClassPathNumber = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cNumber;
+export const cconsoleTableLog_inValidClassPathBoolean = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + wrd.cBoolean;
+export const cconsoleTableLog_inValidClassPathUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cUndefined;
+export const cconsoleTableLog_inValidClassPathNaN = cconsoleTableLog + wrd.cinvalid + wrd.cClass + wrd.cPath + cNaN;
+export const cconsoleTableLog_inValidTableDataNumber = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + wrd.cNumber;
+export const cconsoleTableLog_inValidTableDataBoolean = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + wrd.cBoolean;
+export const cconsoleTableLog_inValidTableDataUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + cUndefined;
+export const cconsoleTableLog_inValidTableDataNaN = cconsoleTableLog + wrd.cinvalid + wrd.cTable + wrd.cData + cNaN;
+export const cconsoleTableLog_inValidColumnNamesNumber = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + wrd.cNumber;
+export const cconsoleTableLog_inValidColumnNamesBoolean = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + wrd.cBoolean;
+export const cconsoleTableLog_inValidColumnNamesUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + cUndefined;
+export const cconsoleTableLog_inValidColumnNamesNaN = cconsoleTableLog + wrd.cinvalid + wrd.cColumn + wrd.cNames + cNaN;
+export const cconsoleTableLog_inValidAllUndefined = cconsoleTableLog + wrd.cinvalid + wrd.cAll + cUndefined;
+export const cconsoleTableLog_inValidAllNaN = cconsoleTableLog + wrd.cinvalid + wrd.cAll + cNaN;
+
+export const cconstantsValidationSummaryLog_validDataString = cconstantsValidationSummaryLog + wrd.cvalid + wrd.cData + wrd.cString;
+export const cconstantsValidationSummaryLog_inValidDataMessageString = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cconstantsValidationSummaryLog_inValidDataPassFailString = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cData + wrd.cPass + wrd.cFail + wrd.cString;
+export const cconstantsValidationSummaryLog_inValidMessageInteger = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cconstantsValidationSummaryLog_inValidMessageBoolean = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const cconstantsValidationSummaryLog_inValidPassFailInteger = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + wrd.cInteger;
+export const cconstantsValidationSummaryLog_inValidPassFailBoolean = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + wrd.cBoolean;
+export const cconstantsValidationSummaryLog_inValidMessageUndefined = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cconstantsValidationSummaryLog_inValidMessageNaN = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cMessage + cNaN;
+export const cconstantsValidationSummaryLog_inValidPassFailUndefined = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + cUndefined;
+export const cconstantsValidationSummaryLog_inValidPassFailNaN = cconstantsValidationSummaryLog + wrd.cinvalid + wrd.cPass + wrd.cFail + cNaN;
+
+export const cgetLogFileNameAndPath_validDataString = cgetLogFileNameAndPath + wrd.cvalid + wrd.cData + wrd.cString;
+export const cgetLogFileNameAndPath_inValidDataClientRootPathString = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cRoot + wrd.cPath + wrd.cString;
+export const cgetLogFileNameAndPath_inValidDataLogFileNameString = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cData + wrd.cLog + wrd.cFile + wrd.cName + wrd.cString;
+export const cgetLogFileNameAndPath_inValidClientRootPathInteger = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + wrd.cInteger;
+export const cgetLogFileNameAndPath_inValidClientRootPathBoolean = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + wrd.cBoolean;
+export const cgetLogFileNameAndPath_inValidLogFileNameInteger = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + wrd.cInteger;
+export const cgetLogFileNameAndPath_inValidLogFileNameBoolean = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + wrd.cBoolean;
+export const cgetLogFileNameAndPath_inValidClientRootPathUndefined = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + cUndefined;
+export const cgetLogFileNameAndPath_inValidClientRootPathNaN = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cClient + wrd.cRoot + wrd.cPath + cNaN;
+export const cgetLogFileNameAndPath_inValidLogFileNameUndefined = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + cUndefined;
+export const cgetLogFileNameAndPath_inValidLogFileNameNaN = cgetLogFileNameAndPath + wrd.cinvalid + wrd.cLog + wrd.cFile + wrd.cName + cNaN;
+
+export const cprintMessageToFile_validDataString = cprintMessageToFile + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprintMessageToFile_inValidDataFileString = cprintMessageToFile + wrd.cinvalid + wrd.cData + wrd.cFile + wrd.cString;
+export const cprintMessageToFile_inValidDataMessageString = cprintMessageToFile + wrd.cinvalid + wrd.cData + wrd.cMessage + wrd.cString;
+export const cprintMessageToFile_inValidFileInteger = cprintMessageToFile + wrd.cinvalid + wrd.cFile + wrd.cInteger;
+export const cprintMessageToFile_inValidFileBoolean = cprintMessageToFile + wrd.cinvalid + wrd.cFile + wrd.cBoolean;
+export const cprintMessageToFile_inValidMessageInteger = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + wrd.cInteger;
+export const cprintMessageToFile_inValidMessageBoolean = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + wrd.cBoolean;
+export const cprintMessageToFile_inValidFileUndefined = cprintMessageToFile + wrd.cinvalid + wrd.cFile + cUndefined;
+export const cprintMessageToFile_inValidFileNaN = cprintMessageToFile + wrd.cinvalid + wrd.cFile + cNaN;
+export const cprintMessageToFile_inValidMessageUndefined = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + cUndefined;
+export const cprintMessageToFile_inValidMessageNaN = cprintMessageToFile + wrd.cinvalid + wrd.cMessage + cNaN;
+
+/* queue */
+export const cinitQueue_validDataString = cinitQueue + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitQueue_inValidDataQueueNameSpaceString = cinitQueue + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cinitQueue_inValidQueueNameSpaceInteger = cinitQueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cinitQueue_inValidQueueNameSpaceBoolean = cinitQueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cinitQueue_inValidQueueNameSpaceUndefined = cinitQueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cinitQueue_inValidQueueNameSpaceNaN = cinitQueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+export const cdequeue_validDataStringcinitQueue = cdequeue + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdequeue_inValidDataQueueNameSpaceStringcinitQueue = cdequeue + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cdequeue_inValidQueueNameSpaceIntegercinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cdequeue_inValidQueueNameSpaceBooleancinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cdequeue_inValidQueueNameSpaceUndefinedcinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cdequeue_inValidQueueNameSpaceNaNcinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+export const cenqueue_validDataString = cenqueue + wrd.cvalid + wrd.cData + wrd.cString;
+export const cenqueue_inValidDataQueueNameSpaceString = cenqueue + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cenqueue_inValidDataValueString = cenqueue + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const cenqueue_inValidQueueNameSpaceInteger = cenqueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cenqueue_inValidQueueNameSpaceBoolean = cenqueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cenqueue_inValidValueInteger = cenqueue + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const cenqueue_inValidValueBoolean = cenqueue + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const cenqueue_inValidQueueNameSpaceUndefined = cenqueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cenqueue_inValidQueueNameSpaceNaN = cenqueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+export const cenqueue_inValidValueUndefined = cenqueue + wrd.cinvalid + wrd.cValue + cUndefined;
+export const cenqueue_inValidValueNaN = cenqueue + wrd.cinvalid + wrd.cValue + cNaN;
+
+export const cenqueueFront_validDataString = cenqueueFront + wrd.cvalid + wrd.cData + wrd.cString;
+export const cenqueueFront_inValidDataQueueNameSpaceString = cenqueueFront + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cenqueueFront_inValidDataValueString = cenqueueFront + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const cenqueueFront_inValidQueueNameSpaceInteger = cenqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cenqueueFront_inValidQueueNameSpaceBoolean = cenqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cenqueueFront_inValidValueInteger = cenqueueFront + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const cenqueueFront_inValidValueBoolean = cenqueueFront + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const cenqueueFront_inValidQueueNameSpaceUndefined = cenqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cenqueueFront_inValidQueueNameSpaceNaN = cenqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+export const cenqueueFront_inValidValueUndefined = cenqueueFront + wrd.cinvalid + wrd.cValue + cUndefined;
+export const cenqueueFront_inValidValueNaN = cenqueueFront + wrd.cinvalid + wrd.cValue + cNaN;
+
+export const cisEmpty_validDataString = cisEmpty + wrd.cvalid + wrd.cData + wrd.cString;
+export const cisEmpty_inValidDataQueueNameSpaceString = cisEmpty + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cisEmpty_inValidQueueNameSpaceInteger = cisEmpty + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cisEmpty_inValidQueueNameSpaceBoolean = cisEmpty + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cisEmpty_inValidQueueNameSpaceUndefined = cisEmpty + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cisEmpty_inValidQueueNameSpaceNaN = cisEmpty + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+export const cqueueFront_validDataString = cqueueFront + wrd.cvalid + wrd.cData + wrd.cString;
+export const cqueueFront_inValidDataQueueNameSpaceString = cqueueFront + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cqueueFront_inValidQueueNameSpaceInteger = cqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cqueueFront_inValidQueueNameSpaceBoolean = cqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cqueueFront_inValidQueueNameSpaceUndefined = cqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cqueueFront_inValidQueueNameSpaceNaN = cqueueFront + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+export const cqueueSize_validDataString = cqueueSize + wrd.cvalid + wrd.cData + wrd.cString;
+export const cqueueSize_inValidDataQueueNameSpaceString = cqueueSize + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cqueueSize_inValidQueueNameSpaceInteger = cqueueSize + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cqueueSize_inValidQueueNameSpaceBoolean = cqueueSize + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cqueueSize_inValidQueueNameSpaceUndefined = cqueueSize + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cqueueSize_inValidQueueNameSpaceNaN = cqueueSize + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+export const cqueueContents_validDataString = cqueueContents + wrd.cvalid + wrd.cData + wrd.cString;
+export const cqueueContents_inValidDataQueueNameSpaceString = cqueueContents + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cqueueContents_inValidQueueNameSpaceInteger = cqueueContents + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cqueueContents_inValidQueueNameSpaceBoolean = cqueueContents + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cqueueContents_inValidQueueNameSpaceUndefined = cqueueContents + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cqueueContents_inValidQueueNameSpaceNaN = cqueueContents + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+export const cqueuePrint_validDataString = cqueuePrint + wrd.cvalid + wrd.cData + wrd.cString;
+export const cqueuePrint_inValidDataQueueNameSpaceString = cqueuePrint + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cqueuePrint_inValidQueueNameSpaceInteger = cqueuePrint + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cqueuePrint_inValidQueueNameSpaceBoolean = cqueuePrint + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cqueuePrint_inValidQueueNameSpaceUndefined = cqueuePrint + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cqueuePrint_inValidQueueNameSpaceNaN = cqueuePrint + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+/* stack */
+export const cinitStack_validDataString = cinitStack + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitStack_inValidDataStackNameSpaceString = cinitStack + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cinitStack_inValidStackNameSpaceInteger = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cinitStack_inValidStackNameSpaceBoolean = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cinitStack_inValidStackNameSpaceUndefined = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cinitStack_inValidStackNameSpaceNaN = cinitStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const cclearStack_validDataString = cclearStack + wrd.cvalid + wrd.cData + wrd.cString;
+export const cclearStack_inValidDataStackNameSpaceString = cclearStack + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cclearStack_inValidStackNameSpaceInteger = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cclearStack_inValidStackNameSpaceBoolean = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cclearStack_inValidStackNameSpaceUndefined = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cclearStack_inValidStackNameSpaceNaN = cclearStack + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const cpush_validDataString = cpush + wrd.cvalid + wrd.cData + wrd.cString;
+export const cpush_inValidDataStackNameSpaceString = cpush + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cpush_inValidDataValueString = cpush + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const cpush_inValidStackNameSpaceInteger = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cpush_inValidStackNameSpaceBoolean = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cpush_inValidValueInteger = cpush + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const cpush_inValidValueBoolean = cpush + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const cpush_inValidStackNameSpaceUndefined = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cpush_inValidStackNameSpaceNaN = cpush + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNation;
+export const cpush_inValidValueUndefined = cpush + wrd.cinvalid + wrd.cValue + cUndefined;
+export const cpush_inValidValueNaN = cpush + wrd.cinvalid + wrd.cValue + cNaN;
+
+export const cpop_validDataString = cpop + wrd.cvalid + wrd.cData + wrd.cString;
+export const cpop_inValidDataStackNameSpaceString = cpop + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cpop_inValidStackNameSpaceInteger = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cpop_inValidStackNameSpaceBoolean = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cpop_inValidStackNameSpaceUndefined = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cpop_inValidStackNameSpaceNaN = cpop + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const cisEmpty_inValidDataStackNameSpaceString = cisEmpty + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cisEmpty_inValidStackNameSpaceInteger = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cisEmpty_inValidStackNameSpaceBoolean = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cisEmpty_inValidStackNameSpaceUndefined = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cisEmpty_inValidStackNameSpaceNaN = cisEmpty + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const clength_validDataString = clength + wrd.cvalid + wrd.cData + wrd.cString;
+export const clength_inValidDataStackNameSpaceString = clength + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const clength_inValidStackNameSpaceInteger = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const clength_inValidStackNameSpaceBoolean = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const clength_inValidStackNameSpaceUndefined = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const clength_inValidStackNameSpaceNaN = clength + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+export const ccontains_validDataString = ccontains + wrd.cvalid + wrd.cData + wrd.cString;
+export const ccontains_inValidDataStackNameSpaceString = ccontains + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const ccontains_inValidDataValueString = ccontains + wrd.cinvalid + wrd.cData + wrd.cValue + wrd.cString;
+export const ccontains_inValidStackNameSpaceInteger = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const ccontains_inValidStackNameSpaceBoolean = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const ccontains_inValidValueInteger = ccontains + wrd.cinvalid + wrd.cValue + wrd.cInteger;
+export const ccontains_inValidValueBoolean = ccontains + wrd.cinvalid + wrd.cValue + wrd.cBoolean;
+export const ccontains_inValidStackNameSpaceUndefined = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const ccontains_inValidStackNameSpaceNaN = ccontains + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNation;
+export const ccontains_inValidValueUndefined = ccontains + wrd.cinvalid + wrd.cValue + cUndefined;
+export const ccontains_inValidValueNaN = ccontains + wrd.cinvalid + wrd.cValue + cNaN;
+
+export const cprint_validDataString = cprint + wrd.cvalid + wrd.cData + wrd.cString;
+export const cprint_inValidDataStackNameSpaceString = cprint + wrd.cinvalid + wrd.cData + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cString;
+export const cprint_inValidStackNameSpaceInteger = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cprint_inValidStackNameSpaceBoolean = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cprint_inValidStackNameSpaceUndefined = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cUndefined;
+export const cprint_inValidStackNameSpaceNaN = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
+
+/* main */
+export const cinitFramework_validDataString = cinitFramework + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitFramework_inValidDataClientConfigurationString = cinitFramework + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cConfiguration + wrd.cString;
+export const cinitFramework_inValidClientConfigurationInteger = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cInteger;
+export const cinitFramework_inValidClientConfigurationBoolean = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cBoolean;
+export const cinitFramework_inValidClientConfigurationUndefined = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + cUndefined;
+export const cinitFramework_inValidClientConfigurationNaN = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + cNaN;
