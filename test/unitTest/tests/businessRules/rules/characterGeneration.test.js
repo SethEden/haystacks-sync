@@ -849,13 +849,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
    * @author Json Howard
    * @date 2023/05/03
    */
-	describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter, () => {
-	/**
-	 * ?????
-	 * Why was this test commented out???
-	 * Why was the header removed from this test???
-	 */
-	 test(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
+	test(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString, () => {
 		// Arrange
 		let inputData = wrd.chello + bas.cUnderscore + wrd.cWorld;
 		let inputMetaData = '';
