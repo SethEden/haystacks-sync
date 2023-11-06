@@ -276,11 +276,18 @@ test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
 
 /**
  * @function stringToDataType
- * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with a valid input.
+ * @description Tests the positive and negative test cases of the stringToDataType
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cstringToDataType, () => {
+  /**
+   * @function stringToDataType_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cstringToDataType_validDataString, () => {
+	test(tst_con.cstringToDataType_validDataString, () => {
     // Arrange
     let inputData = num.c5;
     let inputMetaData = '';
@@ -431,41 +438,41 @@ test(tst_con.cparseSystemRootPath_inValidInputDataNaN, () => {
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cstringToDataType_inValidInputDataUndefined, () => {
-    // Arrange
-    let inputData = undefined;
-    let inputMetaData = '';
+	test(tst_con.cstringToDataType_inValidInputDataUndefined, () => {
+		// Arrange
+		let inputData = undefined;
+		let inputMetaData = '';
 
-    // Act
-    let returnData = stringParsingUtilities.stringToDataType(
-      inputData,
-      inputMetaData
-    );
+		// Act
+		let returnData = stringParsingUtilities.stringToDataType(
+		  inputData,
+		  inputMetaData
+		);
 
-    // Assert
-    expect(returnData).toBe(false);
-});
+		// Assert
+		expect(returnData).toBe(false);
+	});
 
-/**
- * @function stringToDataType_inValidInputDataNaN
- * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid NaN input.
- * @author Json Howard
- * @date 2023/05/06
- */
-test(tst_con.cstringToDataType_inValidInputDataNaN, () => {
-    // Arrange
-    let inputData = NaN;
-    let inputMetaData = '';
+	/**
+	 * @function stringToDataType_inValidInputDataNaN
+	 * @description Tests the businessRules.rules.stringParsingUtilities function stringToDataType with invalid NaN input.
+	 * @author Json Howard
+	 * @date 2023/05/06
+	 */
+	test(tst_con.cstringToDataType_inValidInputDataNaN, () => {
+		// Arrange
+		let inputData = NaN;
+		let inputMetaData = '';
 
-    // Act
-    let returnData = stringParsingUtilities.stringToDataType(
-      inputData,
-      inputMetaData
-    );
+		// Act
+		let returnData = stringParsingUtilities.stringToDataType(
+		  inputData,
+		  inputMetaData
+		);
 
-    // Assert
-    expect(returnData).toBe(false);
-});
+		// Assert
+		expect(returnData).toBe(false);
+	});
 
   /**
    * @function stringToDataType_inValidInputMetaDataUndefined
@@ -514,11 +521,18 @@ test(tst_con.cstringToDataType_inValidInputDataNaN, () => {
 
 /**
  * @function stringToBoolean
- * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with a valid input.
+ * @description Tests the positive and negative test cases of the stringToBoolean
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cstringToBoolean, () => {
+  /**
+   * @function stringToBoolean_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cstringToBoolean_validDataString, () => {
+	test(tst_con.cstringToBoolean_validDataString, () => {
     // Arrange
     let inputData = gen.ctrue;
     let inputMetaData = '';
@@ -670,40 +684,40 @@ test(tst_con.cstringToDataType_inValidInputDataNaN, () => {
    * @date 2023/05/06
    */
   test(tst_con.cstringToBoolean_inValidInputDataUndefined, () => {
-    // Arrange
-    let inputData = undefined;
-    let inputMetaData = '';
+		// Arrange
+		let inputData = undefined;
+		let inputMetaData = '';
 
-    // Act
-    let returnData = stringParsingUtilities.stringToBoolean(
-      inputData,
-      inputMetaData
-    );
+		// Act
+		let returnData = stringParsingUtilities.stringToBoolean(
+		  inputData,
+		  inputMetaData
+		);
 
-    // Assert
-    expect(returnData).toBe(false);
-});
+		// Assert
+		expect(returnData).toBe(false);
+	});
 
-/**
- * @function stringToBoolean_inValidInputDataNaN
- * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid NaN input.
- * @author Json Howard
- * @date 2023/05/06
- */
-test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
-    // Arrange
-    let inputData = NaN;
-    let inputMetaData = '';
+	/**
+	 * @function stringToBoolean_inValidInputDataNaN
+	 * @description Tests the businessRules.rules.stringParsingUtilities function stringToBoolean with invalid NaN input.
+	 * @author Json Howard
+	 * @date 2023/05/06
+	 */
+	test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
+		// Arrange
+		let inputData = NaN;
+		let inputMetaData = '';
 
-    // Act
-    let returnData = stringParsingUtilities.stringToBoolean(
-      inputData,
-      inputMetaData
-    );
+		// Act
+		let returnData = stringParsingUtilities.stringToBoolean(
+		  inputData,
+		  inputMetaData
+		);
 
-    // Assert
-    expect(returnData).toBe(false);
-});
+		// Assert
+		expect(returnData).toBe(false);
+	});
 
   /**
    * @function stringToBoolean_inValidInputMetaDataUndefined
@@ -752,11 +766,18 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function determineObjectDataType
- * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with a valid input.
+ * @description Tests the positive and negative test cases of the determineObjectDataType
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cdetermineObjectDataType, () => {
+  /**
+   * @function determineObjectDataType_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function determineObjectDataType with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cdetermineObjectDataType_validDataString, () => {
+	test(tst_con.cdetermineObjectDataType_validDataString, () => {
     // Arrange
     let inputData = gen.ctrue;
     let inputMetaData = '';
@@ -990,11 +1011,18 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function isBoolean
- * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with a valid input.
+ * @description Tests the positive and negative test cases of the isBoolean
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cisBoolean, () => {
+  /**
+   * @function isBoolean_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function isBoolean with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cisBoolean_validDataString, () => {
+	test(tst_con.cisBoolean_validDataString, () => {
     // Arrange
     let inputData = gen.ctrue;
     let inputMetaData = '';
@@ -1228,11 +1256,18 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function isInteger
- * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with a valid input.
+ * @description Tests the positive and negative test cases of the isInteger
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cisInteger, () => {
+  /**
+   * @function isInteger_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function isInteger with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cisInteger_validDataString, () => {
+	test(tst_con.cisInteger_validDataString, () => {
     // Arrange
     let inputData = num.c5;
     let inputMetaData = '';
@@ -1466,11 +1501,18 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function isFloat
- * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with a valid input.
+ * @description Tests the positive and negative test cases of the isFloat
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cisFloat, () => {
+  /**
+   * @function isFloat_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function isFloat with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cisFloat_validDataString, () => {
+	test(tst_con.cisFloat_validDataString, () => {
     // Arrange
     let inputData = num.c5 + bas.cDot + num.c5;
     let inputMetaData = '';
@@ -1704,11 +1746,18 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function isString
- * @description Tests the businessRules.rules.stringParsingUtilities function isString with a valid input.
+ * @description Tests the positive and negative test cases of the isString
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cisString, () => {
+  /**
+   * @function isString_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function isString with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cisString_validDataString, () => {
+	test(tst_con.cisString_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = '';
@@ -1942,11 +1991,18 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function replaceDoublePercentWithMessage
- * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with a valid input.
+ * @description Tests the positive and negative test cases of the replaceDoublePercentWithMessage
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.creplaceDoublePercentWithMessage, () => {
+  /**
+   * @function replaceDoublePercentWithMessage_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function replaceDoublePercentWithMessage with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.creplaceDoublePercentWithMessage_validDataString, () => {
+	test(tst_con.creplaceDoublePercentWithMessage_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cDoublePercent;
     let inputMetaData = wrd.cWorld;
@@ -2180,11 +2236,18 @@ test(tst_con.cstringToBoolean_inValidInputDataNaN, () => {
 
 /**
  * @function utilitiesReplaceCharacterWithCharacter
- * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with a valid input.
+ * @description Tests the positive and negative test cases of the utilitiesReplaceCharacterWithCharacter
+ * @author Json Howard
+ * @date 2023/05/06
+ */
+describe(tst_con.cutilitiesReplaceCharacterWithCharacter, () => {
+  /**
+   * @function utilitiesReplaceCharacterWithCharacter_validDataString
+   * @description Tests the businessRules.rules.stringParsingUtilities function utilitiesReplaceCharacterWithCharacter with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
-  test(tst_con.cutilitiesReplaceCharacterWithCharacter_validDataString, () => {
+	test(tst_con.cutilitiesReplaceCharacterWithCharacter_validDataString, () => {
     // Arrange
     let inputData = wrd.cHello + bas.cPercent;
     let inputMetaData = [bas.cPercent, wrd.cWorld];

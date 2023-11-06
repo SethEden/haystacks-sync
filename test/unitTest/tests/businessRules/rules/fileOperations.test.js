@@ -2562,155 +2562,162 @@ describe(tst_con.ccopyFolderRecursiveSync, () => {
 
 /**
  * @function appendMessageToFile
- * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a valid input.
+ * @description Tests the positive and negative test cases of the appendMessageToFile
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.cappendMessageToFile, () => {
+  /**
+   * @function appendMessageToFile_validDataString
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
-test(tst_con.cappendMessageToFile_validDataString, () => {
-  // Arrange
-  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
-  let inputMetaData = wrd.cHello + wrd.cWorld;
-  rulesLibrary.initRulesLibrary();
+	test(tst_con.cappendMessageToFile_validDataString, () => {
+	  // Arrange
+	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
+	  let inputMetaData = wrd.cHello + wrd.cWorld;
+	  rulesLibrary.initRulesLibrary();
 
-  // Act
-  let returnData = fileOperations.appendMessageToFile(
-    inputData,
-    inputMetaData
-  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-  // Assert
-  expect(returnData).toBe(true); // path array
-});
+	  // Assert
+	  expect(returnData).toBe(true); // path array
+	});
 
-/**
- * @function appendMessageToFile_inValidDataInputDataString
- * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
-  // Arrange
-  let inputData = data_con.stringRandomText;
-  let inputMetaData = wrd.cHello + wrd.cWorld;
-  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
+	  // Arrange
+	  let inputData = data_con.stringRandomText;
+	  let inputMetaData = wrd.cHello + wrd.cWorld;
+	  rulesLibrary.initRulesLibrary();
 
-  // Act
-  let returnData = fileOperations.appendMessageToFile(
-    inputData,
-    inputMetaData
-  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-  // Assert
-  expect(returnData).toBe(true); // path array
-});
+	  // Assert
+	  expect(returnData).toBe(true); // path array
+	});
 
-/**
- * @function appendMessageToFile_inValidDataInputMetaDataString
- * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
-  // Arrange
-  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
-  let inputMetaData = data_con.stringRandomText;
-  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
+	  // Arrange
+	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
+	  let inputMetaData = data_con.stringRandomText;
+	  rulesLibrary.initRulesLibrary();
 
-  // Act
-  let returnData = fileOperations.appendMessageToFile(
-    inputData,
-    inputMetaData
-  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-  // Assert
-  expect(returnData).toBe(true); // path array
-});
+	  // Assert
+	  expect(returnData).toBe(true); // path array
+	});
 
-/**
- * @function appendMessageToFile_inValidInputDataInteger
- * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cappendMessageToFile_inValidInputDataInteger, () => {
-  // Arrange
-  let inputData = 4567;
-  let inputMetaData = [1, 2, 3, 4, 5];
-  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputDataInteger, () => {
+	  // Arrange
+	  let inputData = 4567;
+	  let inputMetaData = [1, 2, 3, 4, 5];
+	  rulesLibrary.initRulesLibrary();
 
-  // Act
-  let returnData = fileOperations.appendMessageToFile(
-    inputData,
-    inputMetaData
-  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-  // Assert
-  expect(returnData).toBe(false); // path array
-});
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-/**
- * @function appendMessageToFile_inValidInputDataBoolean
- * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cappendMessageToFile_inValidInputDataBoolean, () => {
-  // Arrange
-  let inputData = false;
-  let inputMetaData = [1, 2, 3, 4, 5];
-  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputDataBoolean, () => {
+	  // Arrange
+	  let inputData = false;
+	  let inputMetaData = [1, 2, 3, 4, 5];
+	  rulesLibrary.initRulesLibrary();
 
-  // Act
-  let returnData = fileOperations.appendMessageToFile(
-    inputData,
-    inputMetaData
-  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-  // Assert
-  expect(returnData).toBe(false); // path array
-});
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-/**
- * @function appendMessageToFile_inValidInputMetaDataInteger
- * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cappendMessageToFile_inValidInputMetaDataInteger, () => {
-  // Arrange
-  let inputData = [1, 2, 3, 4, 5];
-  let inputMetaData = 4567;
-  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputMetaDataInteger, () => {
+	  // Arrange
+	  let inputData = [1, 2, 3, 4, 5];
+	  let inputMetaData = 4567;
+	  rulesLibrary.initRulesLibrary();
 
-  // Act
-  let returnData = fileOperations.appendMessageToFile(
-    inputData,
-    inputMetaData
-  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-  // Assert
-  expect(returnData).toBe(false); // path array
-});
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-/**
- * @function appendMessageToFile_inValidInputMetaDataBoolean
- * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cappendMessageToFile_inValidInputMetaDataBoolean, () => {
-  // Arrange
-  let inputData = [1, 2, 3, 4, 5];
-  let inputMetaData = false;
-  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputMetaDataBoolean, () => {
+	  // Arrange
+	  let inputData = [1, 2, 3, 4, 5];
+	  let inputMetaData = false;
+	  rulesLibrary.initRulesLibrary();
 
-  // Act
-  let returnData = fileOperations.appendMessageToFile(
-    inputData,
-    inputMetaData
-  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-  // Assert
-  expect(returnData).toBe(false); // path array
-});
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 });

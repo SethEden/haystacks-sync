@@ -2308,631 +2308,666 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 
 /**
  * @function randomlyGenerateMixedCaseAlphabeticCharacter
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with a valid input.
+ * @description Tests the positive and negative test cases of the randomlyGenerateMixedCaseAlphabeticCharacter
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
+  /**
+   * @function randomlyGenerateMixedCaseAlphabeticCharacter_validDataString
+   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+	test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_validDataString, () => {
+		// Arrange
+		let inputData = '';
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
+
+		// Act
+		let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
+			inputData,
+			inputMetaData
+		);
+
+		// Assert
+		expect(returnData).toBeDefined(); // a-z random
+	});
+
+	/**
+	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
-test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_validDataString, () => {
-	// Arrange
-	let inputData = '';
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputDataString, () => {
+		// Arrange
+		let inputData = data_con.stringRandomText;
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // a-z random
-});
+		// Assert
+		expect(returnData).toBeDefined(); // true or false
+	});
 
-/**
- * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputDataString
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid string input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputDataString, () => {
-	// Arrange
-	let inputData = data_con.stringRandomText;
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputMetaDataString, () => {
+		// Arrange
+		let inputData = '';
+		let inputMetaData = data_con.stringRandomText;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // true or false
-});
+		// Assert
+		expect(returnData).toBeDefined(); // true or false
+	});
 
-/**
- * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputMetaDataString
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid string inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputMetaDataString, () => {
-	// Arrange
-	let inputData = '';
-	let inputMetaData = data_con.stringRandomText;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataInteger, () => {
+		// Arrange
+		let inputData = 4567;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // true or false
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataInteger
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid integer input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataInteger, () => {
-	// Arrange
-	let inputData = 4567;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataBoolean, () => {
+		// Arrange
+		let inputData = false;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid boolean input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataBoolean, () => {
-	// Arrange
-	let inputData = false;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataInteger, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = 4567;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataInteger
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid integer inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataInteger, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = 4567;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataBoolean, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = false;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
-
-/**
- * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid boolean inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataBoolean, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = false;
-	rulesLibrary.initRulesLibrary();
-
-	// Act
-	let returnData = characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter(
-		inputData,
-		inputMetaData
-	);
-
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 });
 
 /**
  * @function randomlyGenerateLowerCaseLetter
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with a valid input.
+ * @description Tests the positive and negative test cases of the randomlyGenerateLowerCaseLetter
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
+  /**
+   * @function randomlyGenerateLowerCaseLetter_validDataString
+   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+	test(tst_con.crandomlyGenerateLowerCaseLetter_validDataString, () => {
+		// Arrange
+		let inputData = '';
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
+
+		// Act
+		let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
+
+		// Assert
+		expect(returnData).toBeDefined(); // a-z random
+	});
+
+	/**
+	 * @function randomlyGenerateLowerCaseLetter_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
-test(tst_con.crandomlyGenerateLowerCaseLetter_validDataString, () => {
-	// Arrange
-	let inputData = '';
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	test(tst_con.crandomlyGenerateLowerCaseLetter_inValidDataInputDataString, () => {
+		// Arrange
+		let inputData = data_con.stringRandomText;
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // a-z random
-});
+		// Assert
+		expect(returnData).toBeDefined(); // true or false
+	});
 
-/**
- * @function randomlyGenerateLowerCaseLetter_inValidDataInputDataString
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid string input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateLowerCaseLetter_inValidDataInputDataString, () => {
-	// Arrange
-	let inputData = data_con.stringRandomText;
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateLowerCaseLetter_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateLowerCaseLetter_inValidDataInputMetaDataString, () => {
+		// Arrange
+		let inputData = '';
+		let inputMetaData = data_con.stringRandomText;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // true or false
-});
+		// Assert
+		expect(returnData).toBeDefined(); // true or false
+	});
 
-/**
- * @function randomlyGenerateLowerCaseLetter_inValidDataInputMetaDataString
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid string inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateLowerCaseLetter_inValidDataInputMetaDataString, () => {
-	// Arrange
-	let inputData = '';
-	let inputMetaData = data_con.stringRandomText;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateLowerCaseLetter_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputDataInteger, () => {
+		// Arrange
+		let inputData = 4567;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // true or false
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateLowerCaseLetter_inValidInputDataInteger
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid integer input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputDataInteger, () => {
-	// Arrange
-	let inputData = 4567;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateLowerCaseLetter_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputDataBoolean, () => {
+		// Arrange
+		let inputData = false;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateLowerCaseLetter_inValidInputDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid boolean input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputDataBoolean, () => {
-	// Arrange
-	let inputData = false;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateLowerCaseLetter_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputMetaDataInteger, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = 4567;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateLowerCaseLetter_inValidInputMetaDataInteger
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid integer inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputMetaDataInteger, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = 4567;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateLowerCaseLetter_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputMetaDataBoolean, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = false;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
-
-/**
- * @function randomlyGenerateLowerCaseLetter_inValidInputMetaDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid boolean inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateLowerCaseLetter_inValidInputMetaDataBoolean, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = false;
-	rulesLibrary.initRulesLibrary();
-
-	// Act
-	let returnData = characterGeneration.randomlyGenerateLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
-
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 });
 
 /**
  * @function randomlyGenerateUpperCaseLetter
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with a valid input.
+ * @description Tests the positive and negative test cases of the randomlyGenerateUpperCaseLetter
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
+  /**
+   * @function randomlyGenerateUpperCaseLetter_validDataString
+   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+	test(tst_con.crandomlyGenerateUpperCaseLetter_validDataString, () => {
+		// Arrange
+		let inputData = '';
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
+
+		// Act
+		let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
+
+		// Assert
+		expect(returnData).toBeDefined(); // a-z random
+	});
+
+	/**
+	 * @function randomlyGenerateUpperCaseLetter_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
-test(tst_con.crandomlyGenerateUpperCaseLetter_validDataString, () => {
-	// Arrange
-	let inputData = '';
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	test(tst_con.crandomlyGenerateUpperCaseLetter_inValidDataInputDataString, () => {
+		// Arrange
+		let inputData = data_con.stringRandomText;
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // a-z random
-});
+		// Assert
+		expect(returnData).toBeDefined(); // true or false
+	});
 
-/**
- * @function randomlyGenerateUpperCaseLetter_inValidDataInputDataString
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid string input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateUpperCaseLetter_inValidDataInputDataString, () => {
-	// Arrange
-	let inputData = data_con.stringRandomText;
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateUpperCaseLetter_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateUpperCaseLetter_inValidDataInputMetaDataString, () => {
+		// Arrange
+		let inputData = '';
+		let inputMetaData = data_con.stringRandomText;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // true or false
-});
+		// Assert
+		expect(returnData).toBeDefined(); // true or false
+	});
 
-/**
- * @function randomlyGenerateUpperCaseLetter_inValidDataInputMetaDataString
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid string inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateUpperCaseLetter_inValidDataInputMetaDataString, () => {
-	// Arrange
-	let inputData = '';
-	let inputMetaData = data_con.stringRandomText;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateUpperCaseLetter_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputDataInteger, () => {
+		// Arrange
+		let inputData = 4567;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined(); // true or false
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateUpperCaseLetter_inValidInputDataInteger
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid integer input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputDataInteger, () => {
-	// Arrange
-	let inputData = 4567;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateUpperCaseLetter_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputDataBoolean, () => {
+		// Arrange
+		let inputData = false;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateUpperCaseLetter_inValidInputDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid boolean input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputDataBoolean, () => {
-	// Arrange
-	let inputData = false;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateUpperCaseLetter_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputMetaDataInteger, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = 4567;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 
-/**
- * @function randomlyGenerateUpperCaseLetter_inValidInputMetaDataInteger
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid integer inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputMetaDataInteger, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = 4567;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function randomlyGenerateUpperCaseLetter_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputMetaDataBoolean, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = false;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBeDefined();
-});
-
-/**
- * @function randomlyGenerateUpperCaseLetter_inValidInputMetaDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid boolean inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.crandomlyGenerateUpperCaseLetter_inValidInputMetaDataBoolean, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = false;
-	rulesLibrary.initRulesLibrary();
-
-	// Act
-	let returnData = characterGeneration.randomlyGenerateUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
-
-	// Assert
-	expect(returnData).toBeDefined();
-});
+		// Assert
+		expect(returnData).toBeDefined();
+	});
 });
 
 /**
  * @function convertNumberToUpperCaseLetter
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with a valid input.
+ * @description Tests the positive and negative test cases of the convertNumberToUpperCaseLetter
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
+  /**
+   * @function convertNumberToUpperCaseLetter_validDataString
+   * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+	test(tst_con.cconvertNumberToUpperCaseLetter_validDataString, () => {
+		// Arrange
+		let inputData = num.c1;
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
+
+		// Act
+		let returnData = characterGeneration.convertNumberToUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
+
+		// Assert
+		expect(returnData).toBe('A'); // a-z random
+	});
+
+	/**
+	 * @function convertNumberToUpperCaseLetter_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
-test(tst_con.cconvertNumberToUpperCaseLetter_validDataString, () => {
-	// Arrange
-	let inputData = num.c1;
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	test(tst_con.cconvertNumberToUpperCaseLetter_inValidDataInputDataString, () => {
+		// Arrange
+		let inputData = data_con.stringRandomText;
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('A'); // a-z random
-});
+		// Assert
+		expect(returnData).toBe('');
+	});
 
-/**
- * @function convertNumberToUpperCaseLetter_inValidDataInputDataString
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid string input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToUpperCaseLetter_inValidDataInputDataString, () => {
-	// Arrange
-	let inputData = data_con.stringRandomText;
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToUpperCaseLetter_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToUpperCaseLetter_inValidDataInputMetaDataString, () => {
+		// Arrange
+		let inputData = num.c1;
+		let inputMetaData = data_con.stringRandomText;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('');
-});
+		// Assert
+		expect(returnData).toBe('A');
+	});
 
-/**
- * @function convertNumberToUpperCaseLetter_inValidDataInputMetaDataString
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid string inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToUpperCaseLetter_inValidDataInputMetaDataString, () => {
-	// Arrange
-	let inputData = num.c1;
-	let inputMetaData = data_con.stringRandomText;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToUpperCaseLetter_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputDataInteger, () => {
+		// Arrange
+		let inputData = 4567;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('A');
-});
+		// Assert
+		expect(returnData).toBe('');
+	});
 
-/**
- * @function convertNumberToUpperCaseLetter_inValidInputDataInteger
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid integer input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputDataInteger, () => {
-	// Arrange
-	let inputData = 4567;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToUpperCaseLetter_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputDataBoolean, () => {
+		// Arrange
+		let inputData = false;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('');
-});
+		// Assert
+		expect(returnData).toBe('');
+	});
 
-/**
- * @function convertNumberToUpperCaseLetter_inValidInputDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid boolean input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputDataBoolean, () => {
-	// Arrange
-	let inputData = false;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToUpperCaseLetter_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputMetaDataInteger, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = 4567;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('');
-});
+		// Assert
+		expect(returnData).toBe('A');
+	});
 
-/**
- * @function convertNumberToUpperCaseLetter_inValidInputMetaDataInteger
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid integer inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputMetaDataInteger, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = 4567;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToUpperCaseLetter_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputMetaDataBoolean, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = false;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToUpperCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('A');
-});
-
-/**
- * @function convertNumberToUpperCaseLetter_inValidInputMetaDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid boolean inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToUpperCaseLetter_inValidInputMetaDataBoolean, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = false;
-	rulesLibrary.initRulesLibrary();
-
-	// Act
-	let returnData = characterGeneration.convertNumberToUpperCaseLetter(
-		inputData,
-		inputMetaData
-	);
-
-	// Assert
-	expect(returnData).toBe('A');
-});
+		// Assert
+		expect(returnData).toBe('A');
+	});
 });
 
 /**
  * @function convertNumberToLowerCaseLetter
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with a valid input.
-	 * @author Json Howard
-	 * @date 2023/05/03
-	 */
-test(tst_con.cconvertNumberToLowerCaseLetter_validDataString, () => {
+ * @description Tests the positive and negative test cases of the convertNumberToLowerCaseLetter
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
+  /**
+   * @function convertNumberToLowerCaseLetter_validDataString
+   * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with a valid string input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+	test(tst_con.cconvertNumberToLowerCaseLetter_validDataString, () => {
 	// Arrange
 	let inputData = num.c1;
 	let inputMetaData = '';
@@ -2948,135 +2983,135 @@ test(tst_con.cconvertNumberToLowerCaseLetter_validDataString, () => {
 	expect(returnData).toBe('a'); // a-z random
 });
 
-/**
- * @function convertNumberToLowerCaseLetter_inValidDataInputDataString
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid string input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToLowerCaseLetter_inValidDataInputDataString, () => {
-	// Arrange
-	let inputData = data_con.stringRandomText;
-	let inputMetaData = '';
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToLowerCaseLetter_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid string input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToLowerCaseLetter_inValidDataInputDataString, () => {
+		// Arrange
+		let inputData = data_con.stringRandomText;
+		let inputMetaData = '';
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('');
-});
+		// Assert
+		expect(returnData).toBe('');
+	});
 
-/**
- * @function convertNumberToLowerCaseLetter_inValidDataInputMetaDataString
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid string inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToLowerCaseLetter_inValidDataInputMetaDataString, () => {
-	// Arrange
-	let inputData = num.c1;
-	let inputMetaData = data_con.stringRandomText;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToLowerCaseLetter_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToLowerCaseLetter_inValidDataInputMetaDataString, () => {
+		// Arrange
+		let inputData = num.c1;
+		let inputMetaData = data_con.stringRandomText;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('a');
-});
+		// Assert
+		expect(returnData).toBe('a');
+	});
 
-/**
- * @function convertNumberToLowerCaseLetter_inValidInputDataInteger
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid integer input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputDataInteger, () => {
-	// Arrange
-	let inputData = 4567;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToLowerCaseLetter_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputDataInteger, () => {
+		// Arrange
+		let inputData = 4567;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('');
-});
+		// Assert
+		expect(returnData).toBe('');
+	});
 
-/**
- * @function convertNumberToLowerCaseLetter_inValidInputDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid boolean input.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputDataBoolean, () => {
-	// Arrange
-	let inputData = false;
-	let inputMetaData = [1, 2, 3, 4, 5];
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToLowerCaseLetter_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputDataBoolean, () => {
+		// Arrange
+		let inputData = false;
+		let inputMetaData = [1, 2, 3, 4, 5];
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('');
-});
+		// Assert
+		expect(returnData).toBe('');
+	});
 
-/**
- * @function convertNumberToLowerCaseLetter_inValidInputMetaDataInteger
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid integer inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputMetaDataInteger, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = 4567;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToLowerCaseLetter_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputMetaDataInteger, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = 4567;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('a');
-});
+		// Assert
+		expect(returnData).toBe('a');
+	});
 
-/**
- * @function convertNumberToLowerCaseLetter_inValidInputMetaDataBoolean
- * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid boolean inputMetaData.
- * @author Json Howard
- * @date 2023/05/03
- */
-test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputMetaDataBoolean, () => {
-	// Arrange
-	let inputData = [1, 2, 3, 4, 5];
-	let inputMetaData = false;
-	rulesLibrary.initRulesLibrary();
+	/**
+	 * @function convertNumberToLowerCaseLetter_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cconvertNumberToLowerCaseLetter_inValidInputMetaDataBoolean, () => {
+		// Arrange
+		let inputData = [1, 2, 3, 4, 5];
+		let inputMetaData = false;
+		rulesLibrary.initRulesLibrary();
 
-	// Act
-	let returnData = characterGeneration.convertNumberToLowerCaseLetter(
-		inputData,
-		inputMetaData
-	);
+		// Act
+		let returnData = characterGeneration.convertNumberToLowerCaseLetter(
+			inputData,
+			inputMetaData
+		);
 
-	// Assert
-	expect(returnData).toBe('a');
-});
+		// Assert
+		expect(returnData).toBe('a');
+	});
 });

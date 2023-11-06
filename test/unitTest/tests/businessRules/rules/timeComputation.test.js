@@ -277,11 +277,18 @@ describe(tst_con.cgetNowMoment, () => {
 
 /**
  * @function computeDeltaTime
- * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with a valid input.
+ * @description Tests the positive and negative test cases of the computeDeltaTime
+ * @author Json Howard
+ * @date 2023/05/08
+ */
+describe(tst_con.ccomputeDeltaTime, () => {
+  /**
+   * @function computeDeltaTime_validDataString
+   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
-  test(tst_con.ccomputeDeltaTime_validDataString, () => {
+	test(tst_con.ccomputeDeltaTime_validDataString, () => {
     // Arrange
     let inputData = tim_con.stringRandomDate;
     let inputMetaData = tim_con.stringRandomDate1;
@@ -510,6 +517,7 @@ describe(tst_con.cgetNowMoment, () => {
     // Assert
     expect(returnData).toBe(NaN);
   });
+});
 
 /**
  * @function reformatDeltaTime

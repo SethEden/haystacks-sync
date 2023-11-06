@@ -768,7 +768,7 @@ describe(tst_con.ccountCamelCaseWords, () => {
   
       // Assert
       expect(returnData).toBe(0);
-  });
+	  });
 
     /**
      * @function countCamelCaseWords_inValidInputDataBoolean
@@ -917,20 +917,20 @@ describe(tst_con.cdoesStringContainAcronym, () => {
      * @date 2023/05/02
      */
     test(tst_con.cdoesStringContainAcronym_inValidInputDataInteger, () => {
-      // Arrange
-      let inputData = 4567;
-      let inputMetaData = [1,2,3,4,5];
-      rulesLibrary.initRulesLibrary();
-  
-      // Act        
-      let returnData = wordStringParsing.doesStringContainAcronym(
-        inputData,
-        inputMetaData
-      );
-  
-      // Assert
-      expect(returnData).toBe(false);
-  });
+		  // Arrange
+		  let inputData = 4567;
+		  let inputMetaData = [1,2,3,4,5];
+		  rulesLibrary.initRulesLibrary();
+	  
+		  // Act        
+		  let returnData = wordStringParsing.doesStringContainAcronym(
+			inputData,
+			inputMetaData
+		  );
+	  
+		  // Assert
+		  expect(returnData).toBe(false);
+	  });
 
     /**
      * @function doesStringContainAcronym_inValidInputDataBoolean
