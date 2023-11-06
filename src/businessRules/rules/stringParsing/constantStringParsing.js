@@ -48,16 +48,32 @@ function validateConstantsDataValidation(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   let foundAFailure = false;
+  let processed = false;
   if (inputData && inputMetaData) {
-    const liner = new lineByLine(inputData);
-    let line;
+    // Scanning constants phase 1 validation data for file:
+    console.log(msg.cScanningConstantsValidationPhase1Message + inputData);
+    let inputFilePath = path.resolve(inputData);
+    const fileContents = ruleParsing.processRulesInternal([inputFilePath, ''], [biz.cloadAsciiFileFromPath]);
+    // fileContents are:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cfileContentsAre + JSON.stringify(fileContents));
+    const fileContentsLineArray = fileContents.split(/\r?\n/);
+    
     let colorizeLogsEnabled = configurator.getConfigurationSetting(wrd.csystem, cfg.cenableColorizedConsoleLogs);
-
-    while (line === liner.next()) {
-      if (line) {
+    // BEGIN processing all lines from file: 
+    loggers.consoleLog(namespacePrefix + functionName, msg.cBeginProcessingAllLinesFromFile + inputData);
+    for (const lineKey in fileContentsLineArray) {
+      // BEGIN processing a line
+      loggers.consoleLog(namespacePrefix + functionName, msg.cBeginProcessingLine);
+      // line is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.clineIs + JSON.stringify(lineKey));
+      if (lineKey) {
+        processed = true;
+        // constants LineKey is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.cconstantsLineKeyIs + lineKey.toString(gen.cascii));
+        
+        let lineInCode = fileContentsLineArray[lineKey];
         // constants line is:
-        loggers.consoleLog(namespacePrefix + functionName, msg.cconstantsLineIs + line.toString(gen.cascii));
-        let lineInCode = line.toString(gen.cascii);
+        loggers.consoleLog(namespacePrefix + functionName, msg.cconstantsLineIs + lineInCode);
         let foundConstant = false;
         if (lineInCode.includes(sys.cexportconst) === true) {
           let lineArray = lineInCode.split(bas.cSpace);
@@ -100,11 +116,17 @@ function validateConstantsDataValidation(inputData, inputMetaData) {
       } else {
         // ERROR: line is null or undefined:
         // file is:
-        console.log(msg.cErrorLineIsNullOrUndefined + line + msg.cSpaceFileIs + inputData);
-      }      
-    } // End-while (line = liner.next())
+        console.log(msg.cErrorLineIsNullOrUndefined + lineKey + msg.cSpaceFileIs + inputData);
+      }   
+      // END processing a line
+      loggers.consoleLog(namespacePrefix + functionName, msg.cEndProcessingLine);
+    } // End-for (const line in fileContentsLineArray)
+    // END processing all lines from file: 
+    loggers.consoleLog(namespacePrefix + functionName, msg.cEndProcessingAllLinesFromFile + inputData);
   } // End-if (inputData && inputMetaData)
-  if (foundAFailure === false) {
+  if (foundAFailure === false && processed === true) {
+    // Make sure we didn't find a failure, and we also actually did some processing of the data file.
+    // Otherwise this could just fall through and never read the file, but still return true.
     returnData = true;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
