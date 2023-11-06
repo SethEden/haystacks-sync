@@ -17,13 +17,13 @@ import hayConst from '@haystacks/constants';
 const {bas, num, wrd, gen, biz} = hayconst;
 
 /**
- * @function wordConstantsValidation
- * @description Initializes the word 1 constants validation data objects array.
+ * @function testConstantsValidation
+ * @description Initializes the test 1 constants validation data objects array.
  * @return {void}
  * @author Json Howard
  * @date 2023/08/10
  */
-wordConstantsValidation = [
+export const testConstantsValidation = [
     // Describe words
 
     // commandBroker words
