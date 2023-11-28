@@ -44,7 +44,7 @@ const { sys, wrd, cfg } = hayConst;
 describe(tst_con.cgetWorkflow, () => {
     /**
     * @function getWorkflow_validData
-    * @description Tests the brokers.workflowBroker function getWorkflow with valid data.
+    * @description Tests the brokers.workflowBroker.getWorkflow function, with valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -64,7 +64,7 @@ describe(tst_con.cgetWorkflow, () => {
 
     /**
     * @function getWorkflow_inValidString
-    * @description Tests the brokers.workflowBroker function getWorkflow with an invalid string data.
+    * @description Tests the brokers.workflowBroker.getWorkflow function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -84,7 +84,7 @@ describe(tst_con.cgetWorkflow, () => {
 
     /**
     * @function getWorkflow_inValidNumber
-    * @description Tests the brokers.workflowBroker function getWorkflow with an invalid number data.
+    * @description Tests the brokers.workflowBroker.getWorkflow function, with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -104,7 +104,7 @@ describe(tst_con.cgetWorkflow, () => {
 
     /**
     * @function getWorkflow_inValidBoolean
-    * @description Tests the brokers.workflowBroker function getWorkflow with an invalid boolean data.
+    * @description Tests the brokers.workflowBroker.getWorkflow function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -132,7 +132,7 @@ describe(tst_con.cgetWorkflow, () => {
 describe(tst_con.cdoesWorkflowExist, () => {
     /**
     * @function doesWorkflowExist_validData
-    * @description Tests the brokers.workflowBroker function doesWorkflowExist with a valid data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExist function, with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -152,7 +152,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 
     /**
     * @function doesWorkflowExist_inValidString
-    * @description Tests the brokers.workflowBroker function doesWorkflowExist with an invalid string data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExist function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -172,7 +172,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 
     /**
     * @function doesWorkflowExist_inValidNumber
-    * @description Tests the brokers.workflowBroker function doesWorkflowExist with an invalid number data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExist function, with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -192,7 +192,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 
     /**
     * @function doesWorkflowExist_inValidBoolean
-    * @description Tests the brokers.workflowBroker function doesWorkflowExist with an invalid boolean data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExist function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -220,7 +220,7 @@ describe(tst_con.cdoesWorkflowExist, () => {
 describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
     /**
     * @function doesWorkflowExistInWorkflowData_validData
-    * @description Tests the brokers.workflowBroker function doesWorkflowExistInWorkflowData with a valid data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExistInWorkflowData function, with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -240,7 +240,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
     /**
     * @function doesWorkflowExistInWorkflowData_inValidWorkflowDataString
-    * @description Tests the brokers.workflowBroker function doesWorkflowExistInWorkflowData with an invalid string workflow data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExistInWorkflowData function, with an invalid string workflow data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -261,7 +261,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
     /**
     * @function doesWorkflowExistInWorkflowData_inValidWorkflowNameString
-    * @description Tests the brokers.workflowBroker function doesWorkflowExistInWorkflowData with an invalid string workflowName data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExistInWorkflowData function, with an invalid string workflowName data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -281,7 +281,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
     /**
     * @function doesWorkflowExistInWorkflowData_inValidNumber
-    * @description Tests the brokers.workflowBroker function doesWorkflowExistInWorkflowData with an invalid number data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExistInWorkflowData function, with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -302,7 +302,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 
     /**
     * @function doesWorkflowExistInWorkflowData_inValidBoolean
-    * @description Tests the brokers.workflowBroker function doesWorkflowExistInWorkflowData with an invalid boolean data.
+    * @description Tests the brokers.workflowBroker.doesWorkflowExistInWorkflowData function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -331,7 +331,7 @@ describe(tst_con.cdoesWorkflowExistInWorkflowData, () => {
 describe(tst_con.csearchWorkflow, () => {
     /**
     * @function searchWorkflow_validData
-    * @description Tests the brokers.workflowBroker function searchWorkflow with a valid data.
+    * @description Tests the brokers.workflowBroker.searchWorkflow function, with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -351,7 +351,7 @@ describe(tst_con.csearchWorkflow, () => {
 
     /**
     * @function searchWorkflow_inValidWorkflowDataString
-    * @description Tests the brokers.workflowBroker function searchWorkflow with an invalid string workflow data.
+    * @description Tests the brokers.workflowBroker.searchWorkflow function, with an invalid string workflow data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -371,7 +371,7 @@ describe(tst_con.csearchWorkflow, () => {
 
     /**
     * @function searchWorkflow_inValidWorkflowNameString
-    * @description Tests the brokers.workflowBroker function searchWorkflow with an invalid string workflow name data.
+    * @description Tests the brokers.workflowBroker.searchWorkflow function, with an invalid string workflow name data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -391,7 +391,7 @@ describe(tst_con.csearchWorkflow, () => {
 
     /**
     * @function searchWorkflow_inValidNumber
-    * @description Tests the brokers.workflowBroker function searchWorkflow with an invalid number data.
+    * @description Tests the brokers.workflowBroker.searchWorkflow function, with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -411,7 +411,7 @@ describe(tst_con.csearchWorkflow, () => {
 
     /**
     * @function searchWorkflow_inValidBoolean
-    * @description Tests the brokers.workflowBroker function searchWorkflow with an invalid boolean data.
+    * @description Tests the brokers.workflowBroker.searchWorkflow function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -439,7 +439,7 @@ describe(tst_con.csearchWorkflow, () => {
 describe(tst_con.cgetAllWorkflows, () => {
     /**
     * @function getAllWorkflows_validData
-    * @description Tests the brokers.workflowBroker function getAllWorkflows with a valid data.
+    * @description Tests the brokers.workflowBroker.getAllWorkflows function, with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -458,7 +458,7 @@ describe(tst_con.cgetAllWorkflows, () => {
 
     /**
     * @function getAllWorkflows_inValidString
-    * @description Tests the brokers.workflowBroker function getAllWorkflows with an invalid string data.
+    * @description Tests the brokers.workflowBroker.getAllWorkflows function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -477,7 +477,7 @@ describe(tst_con.cgetAllWorkflows, () => {
 
     /**
     * @function getAllWorkflows_inValidNumber
-    * @description Tests the brokers.workflowBroker function getAllWorkflows with an invalid number data.
+    * @description Tests the brokers.workflowBroker.getAllWorkflows function, with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -496,7 +496,7 @@ describe(tst_con.cgetAllWorkflows, () => {
 
     /**
     * @function getAllWorkflows_inValidBoolean
-    * @description Tests the brokers.workflowBroker function getAllWorkflows with an invalid boolean data.
+    * @description Tests the brokers.workflowBroker.getAllWorkflows function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -523,7 +523,7 @@ describe(tst_con.cgetAllWorkflows, () => {
 describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
     /**
     * @function getWorkflowNamespaceDataObject_validData
-    * @description Tests the brokers.workflowBroker function getWorkflowNamespaceDataObject with a valid data.
+    * @description Tests the brokers.workflowBroker.getWorkflowNamespaceDataObject function, with a valid data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -543,7 +543,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
     /**
     * @function getWorkflowNamespaceDataObject_inValidWorkflowDataStructureString
-    * @description Tests the brokers.workflowBroker function getWorkflowNamespaceDataObject with an invalid string data.
+    * @description Tests the brokers.workflowBroker.getWorkflowNamespaceDataObject function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -563,7 +563,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
     /**
     * @function getWorkflowNamespaceDataObject_inValidNamespaceToFindString
-    * @description Tests the brokers.workflowBroker function getWorkflowNamespaceDataObject with an invalid string namespaceToFind data.
+    * @description Tests the brokers.workflowBroker.getWorkflowNamespaceDataObject function, with an invalid string namespaceToFind data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -583,7 +583,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
     /**
     * @function getWorkflowNamespaceDataObject_inValidNumber
-    * @description Tests the brokers.workflowBroker function getWorkflowNamespaceDataObject with an invalid number data.
+    * @description Tests the brokers.workflowBroker.getWorkflowNamespaceDataObject function, with an invalid number data.
     * @author Json Howard
     * @date 2023/04/17
     */
@@ -603,7 +603,7 @@ describe(tst_con.cgetWorkflowNamespaceDataObject, () => {
 
     /**
     * @function getWorkflowNamespaceDataObject_inValidBoolean
-    * @description Tests the brokers.workflowBroker function getWorkflowNamespaceDataObject with an invalid boolean data.
+    * @description Tests the brokers.workflowBroker.getWorkflowNamespaceDataObject function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/17
     */
