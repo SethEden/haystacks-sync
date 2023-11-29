@@ -40,7 +40,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     /**
      * @function loadCommandWorkflowsFromPath_validDataString
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a valid input.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -58,7 +58,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidDataCommandWorkflowFilePathConfigurationNameString
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid commandWorkflowFilePathConfigurationName string.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid commandWorkflowFilePathConfigurationName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -76,7 +76,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidDataContextNameString
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid contextName string.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid contextName string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -94,7 +94,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameInteger
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid commandWorkflowFilePathConfigurationName integer.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid commandWorkflowFilePathConfigurationName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -112,7 +112,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameBoolean
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid commandWorkflowFilePathConfigurationName boolean.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid commandWorkflowFilePathConfigurationName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -130,7 +130,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidContextNameInteger
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid contextName integer.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid contextName integer.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -148,7 +148,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidContextNameBoolean
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid contextName boolean.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid contextName boolean.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -166,7 +166,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameUndefined
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid commandWorkflowFilePathConfigurationName undefined.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid commandWorkflowFilePathConfigurationName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -184,7 +184,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidCommandWorkflowFilePathConfigurationNameNaN
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid commandWorkflowFilePathConfigurationName NaN.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid commandWorkflowFilePathConfigurationName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -202,7 +202,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidContextNameUndefined
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid contextName undefined.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid contextName undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -220,7 +220,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
     
     /**
      * @function loadCommandWorkflowsFromPath_inValidContextNameNaN
-     * @description Tests the controllers.chiefWorkflow function loadCommandWorkflowsFromPath with a invalid contextName NaN.
+     * @description Tests the controllers.chiefWorkflow.loadCommandWorkflowsFromPath function, with a invalid contextName NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
