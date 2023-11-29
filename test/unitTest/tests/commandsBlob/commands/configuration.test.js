@@ -43,7 +43,7 @@ const { bas, cfg, phn, wrd, gen } = hayConst;
 describe(tst_con.csaveConfiguration, () => {
   /**
    * @function saveConfiguration_validDataString
-   * @description Tests the commandsBlob.commands.configuration function saveConfiguration with a valid input.
+   * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -67,7 +67,7 @@ describe(tst_con.csaveConfiguration, () => {
   
   /**
    * @function saveConfiguration_inValidInputMetaDataUndefined
-   * @description Tests the commandsBlob.commands.configuration function saveConfiguration with an invalid input undefined.
+   * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with an invalid input undefined.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -91,7 +91,7 @@ describe(tst_con.csaveConfiguration, () => {
   
   /**
    * @function saveConfiguration_inValidInputMetaDataNaN
-   * @description Tests the commandsBlob.commands.configuration function saveConfiguration with a valid input.
+   * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -123,7 +123,7 @@ describe(tst_con.csaveConfiguration, () => {
 describe(tst_con.cchangeConfigurationSetting, () => {
   /**
    * @function changeConfigurationSetting_validDataString
-   * @description Tests the commandsBlob.commands.configuration function changeConfigurationSetting with a valid input.
+   * @description Tests the commandsBlob.commands.configuration.changeConfigurationSetting function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -145,7 +145,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidDataInputDataString
-   * @description Tests the commandsBlob.commands.configuration function changeConfigurationSetting with an invalid string input.
+   * @description Tests the commandsBlob.commands.configuration.changeConfigurationSetting function, with an invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -167,7 +167,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataInteger
-   * @description Tests the commandsBlob.commands.configuration function changeConfigurationSetting with an invalid integer input.
+   * @description Tests the commandsBlob.commands.configuration.changeConfigurationSetting function, with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -189,7 +189,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataBoolean
-   * @description Tests the commandsBlob.commands.configuration function changeConfigurationSetting with an invalid boolean input.
+   * @description Tests the commandsBlob.commands.configuration.changeConfigurationSetting function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -211,7 +211,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataUndefined
-   * @description Tests the commandsBlob.commands.configuration function changeConfigurationSetting with an invalid undefined input.
+   * @description Tests the commandsBlob.commands.configuration.changeConfigurationSetting function, with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -233,7 +233,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 
   /**
    * @function changeConfigurationSetting_inValidInputDataNaN
-   * @description Tests the commandsBlob.commands.configuration function changeConfigurationSetting with an invalid NaN input.
+   * @description Tests the commandsBlob.commands.configuration.changeConfigurationSetting function, with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -295,7 +295,7 @@ describe(tst_con.cchangeConfigurationSetting, () => {
 describe(tst_con.cchangeDebugConfigurationTheme, () => {
   /**
    * @function changeDebugConfigurationTheme_validDataString
-   * @description Tests the commandsBlob.commands.configuration function changeDebugConfigurationTheme with a valid input.
+   * @description Tests the commandsBlob.commands.configuration.changeDebugConfigurationTheme function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -318,7 +318,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
      * @function changeDebugConfigurationTheme_inValidDataInputDataString
-     * @description Tests the commandsBlob.commands.configuration function changeDebugConfigurationTheme with an invalid string input.
+     * @description Tests the commandsBlob.commands.configuration.changeDebugConfigurationTheme function, with an invalid string input.
      * @author Json Howard
      * @date 2023/05/08
      */
@@ -341,7 +341,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataInteger
-   * @description Tests the commandsBlob.commands.configuration function changeDebugConfigurationTheme with an invalid integer input.
+   * @description Tests the commandsBlob.commands.configuration.changeDebugConfigurationTheme function, with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -364,7 +364,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataBoolean
-   * @description Tests the commandsBlob.commands.configuration function changeDebugConfigurationTheme with an invalid boolean input.
+   * @description Tests the commandsBlob.commands.configuration.changeDebugConfigurationTheme function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -387,7 +387,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataUndefined
-   * @description Tests the commandsBlob.commands.configuration function changeDebugConfigurationTheme with an invalid undefined input.
+   * @description Tests the commandsBlob.commands.configuration.changeDebugConfigurationTheme function, with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -410,7 +410,7 @@ describe(tst_con.cchangeDebugConfigurationTheme, () => {
 
   /**
    * @function changeDebugConfigurationTheme_inValidInputDataNaN
-   * @description Tests the commandsBlob.commands.configuration function changeDebugConfigurationTheme with an invalid NaN input.
+   * @description Tests the commandsBlob.commands.configuration.changeDebugConfigurationTheme function, with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */

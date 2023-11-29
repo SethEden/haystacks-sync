@@ -42,7 +42,7 @@ const { sys, wrd } = hayConst;
 describe(tst_con.cvalidateConstants, () => {
     /**
      * @function validateConstants_validDataString
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a valid input.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -63,7 +63,7 @@ describe(tst_con.cvalidateConstants, () => {
     
     /**
      * @function validateConstants_inValidDataString
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a invalid input string.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a invalid input string.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -84,7 +84,7 @@ describe(tst_con.cvalidateConstants, () => {
     
     /**
      * @function validateConstants_inValidDataUndefined1
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -105,7 +105,7 @@ describe(tst_con.cvalidateConstants, () => {
     
     /**
      * @function validateConstants_inValidDataUndefined2
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -126,7 +126,7 @@ describe(tst_con.cvalidateConstants, () => {
     
     /**
      * @function validateConstants_inValidDataUndefined3
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -147,7 +147,7 @@ describe(tst_con.cvalidateConstants, () => {
     
     /**
      * @function validateConstants_inValidDataNaN1
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a valid input.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -168,7 +168,7 @@ describe(tst_con.cvalidateConstants, () => {
     
     /**
      * @function validateConstants_inValidDataNaN2
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a valid input.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -189,7 +189,7 @@ describe(tst_con.cvalidateConstants, () => {
     
     /**
      * @function validateConstants_inValidDataNaN3
-     * @description Tests the commandsBlob.commands.integrationTests function validateConstants with a valid input.
+     * @description Tests the commandsBlob.commands.integrationTests.validateConstants function, with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -218,7 +218,7 @@ describe(tst_con.cvalidateConstants, () => {
 describe(tst_con.cvalidateCommandAliases, () => {
     /**
      * @function validateCommandAliases_validDataString
-     * @description Tests the commandsBlob.commands.integrationTests function validateCommandAliases with a valid input.
+     * @description Tests the commandsBlob.commands.integrationTests.validateCommandAliases function, with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -237,7 +237,7 @@ describe(tst_con.cvalidateCommandAliases, () => {
     
     /**
      * @function validateCommandAliases_inValidDataObjectDuplicate
-     * @description Tests the commandsBlob.commands.integrationTests function validateCommandAliases with a invalid input duplicated.
+     * @description Tests the commandsBlob.commands.integrationTests.validateCommandAliases function, with a invalid input duplicated.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -256,7 +256,7 @@ describe(tst_con.cvalidateCommandAliases, () => {
     
     /**
      * @function validateCommandAliases_inValidDataUndefined
-     * @description Tests the commandsBlob.commands.integrationTests function validateCommandAliases with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.integrationTests.validateCommandAliases function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -275,7 +275,7 @@ describe(tst_con.cvalidateCommandAliases, () => {
     
     /**
      * @function validateCommandAliases_inValidDataNaN
-     * @description Tests the commandsBlob.commands.integrationTests function validateCommandAliases with a valid input NaN.
+     * @description Tests the commandsBlob.commands.integrationTests.validateCommandAliases function, with a valid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -302,7 +302,7 @@ describe(tst_con.cvalidateCommandAliases, () => {
 describe(tst_con.cvalidateWorkflows, () => {
     /**
      * @function validateWorkflows_validDataString
-     * @description Tests the commandsBlob.commands.integrationTests function validateWorkflows with a valid input.
+     * @description Tests the commandsBlob.commands.integrationTests.validateWorkflows function, with a valid input.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -321,7 +321,7 @@ describe(tst_con.cvalidateWorkflows, () => {
 
     /**
      * @function validateWorkflows_inValidDataObjectDuplicate
-     * @description Tests the commandsBlob.commands.integrationTests function validateWorkflows with a invalid input duplicated.
+     * @description Tests the commandsBlob.commands.integrationTests.validateWorkflows function, with a invalid input duplicated.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -340,7 +340,7 @@ describe(tst_con.cvalidateWorkflows, () => {
 
     /**
      * @function validateWorkflows_inValidDataUndefined
-     * @description Tests the commandsBlob.commands.integrationTests function validateWorkflows with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.integrationTests.validateWorkflows function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/22
      */
@@ -359,7 +359,7 @@ describe(tst_con.cvalidateWorkflows, () => {
 
     /**
      * @function validateWorkflows_inValidDataNaN
-     * @description Tests the commandsBlob.commands.integrationTests function validateWorkflows with a invalid input NaN.
+     * @description Tests the commandsBlob.commands.integrationTests.validateWorkflows function, with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/22
      */

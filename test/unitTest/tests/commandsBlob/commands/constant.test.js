@@ -39,7 +39,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.cconstantGenerator, () => {
     /**
      * @function constantsGenerator_validDataString
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a valid input.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -57,7 +57,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidDataInputDataString
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid input string.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -75,7 +75,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidDataInputMetaDataString
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid inputMetaData string.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -93,7 +93,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputDataInteger
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid input integer.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -111,7 +111,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputDataBoolean
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid input boolean.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -129,7 +129,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputMetaDataInteger
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -147,7 +147,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputMetaDataBoolean
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -165,7 +165,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputDataUndefined
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -183,7 +183,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputDataNaN
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid input NaN.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -201,7 +201,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputMetaDataUndefined
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -219,7 +219,7 @@ describe(tst_con.cconstantGenerator, () => {
     
     /**
      * @function constantsGenerator_inValidInputMetaDataNaN
-     * @description Tests the commandsBlob.commands.constant function constantGenerator with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob.commands.constant.constantGenerator function, with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -245,7 +245,7 @@ describe(tst_con.cconstantGenerator, () => {
 describe(tst_con.cconstantsGeneratorList, () => {
     /**
      * @function constantsGeneratorList_validDataString
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a valid input.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -263,7 +263,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidDataInputDataString
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid input string.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -281,7 +281,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidDataInputMetaDataString
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid inputMetaData string.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -299,7 +299,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputDataInteger
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid input integer.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -317,7 +317,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputDataBoolean
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid input boolean.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -335,7 +335,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputMetaDataInteger
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -353,7 +353,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputMetaDataBoolean
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -371,7 +371,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputDataUndefined
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -389,7 +389,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputDataNaN
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid input NaN.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -407,7 +407,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputMetaDataUndefined
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -425,7 +425,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
     
     /**
      * @function constantsGeneratorList_inValidInputMetaDataNaN
-     * @description Tests the commandsBlob.commands.constant function constantsGeneratorList with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob.commands.constant.constantsGeneratorList function, with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -451,7 +451,7 @@ describe(tst_con.cconstantsGeneratorList, () => {
 describe(tst_con.cconstantsPatternRecognizer, () => {
     /**
      * @function constantsPatternRecognizer_validDataString
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a valid input.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -469,7 +469,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidDataInputDataString
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid input string.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -487,7 +487,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidDataInputMetaDataString
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid inputMetaData string.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -505,7 +505,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputDataInteger
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid input integer.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -523,7 +523,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputDataBoolean
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid input boolean.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -541,7 +541,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputMetaDataInteger
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -559,7 +559,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputMetaDataBoolean
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -577,7 +577,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputDataUndefined
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -595,7 +595,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputDataNaN
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid input NaN.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -613,7 +613,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputMetaDataUndefined
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -631,7 +631,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
     
     /**
      * @function constantsPatternRecognizer_inValidInputMetaDataNaN
-     * @description Tests the commandsBlob.commands.constant function constantsPatternRecognizer with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob.commands.constant.constantsPatternRecognizer function, with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -657,7 +657,7 @@ describe(tst_con.cconstantsPatternRecognizer, () => {
 describe(tst_con.cevaluateConstant, () => {
     /**
      * @function evaluateConstant_validDataString
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a valid input.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -675,7 +675,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidDataInputDataString
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid input string.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -693,7 +693,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidDataInputMetaDataString
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid inputMetaData string.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -711,7 +711,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputDataInteger
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid input integer.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -729,7 +729,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputDataBoolean
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid input boolean.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -747,7 +747,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputMetaDataInteger
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -765,7 +765,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputMetaDataBoolean
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -783,7 +783,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputDataUndefined
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -801,7 +801,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputDataNaN
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid input NaN.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -819,7 +819,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputMetaDataUndefined
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -837,7 +837,7 @@ describe(tst_con.cevaluateConstant, () => {
     
     /**
      * @function evaluateConstant_inValidInputMetaDataNaN
-     * @description Tests the commandsBlob.commands.constant function evaluateConstant with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob.commands.constant.evaluateConstant function, with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
