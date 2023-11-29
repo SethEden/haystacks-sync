@@ -37,7 +37,7 @@ const { num } = hayConst;
 describe(tst_con.chex2rgbConversion, () => {
   /**
    * @function hex2rgbConversion_validDataString
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with a valid input.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -59,7 +59,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
   /**
    * @function hex2rgbConversion_inValidDataInputDataString
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid string input.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -81,7 +81,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
   /**
    * @function hex2rgbConversion_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid string inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -103,7 +103,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
   /**
    * @function hex2rgbConversion_inValidInputDataInteger
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid integer input.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -125,7 +125,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
   /**
    * @function hex2rgbConversion_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid boolean input.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -147,7 +147,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
   /**
    * @function hex2rgbConversion_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -169,7 +169,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
   /**
    * @function hex2rgbConversion_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -191,7 +191,7 @@ describe(tst_con.chex2rgbConversion, () => {
   
   /**
    * @function hex2rgbConversion_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid undefined input.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -213,7 +213,7 @@ describe(tst_con.chex2rgbConversion, () => {
 
   /**
    * @function hex2rgbConversion_inValidInputDataNaN
-   * @description Tests the businessRules.rules.mathOperations function hex2rgbConversion with invalid NaN input.
+   * @description Tests the businessRules.rules.mathOperations.hex2rgbConversion function, with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -243,7 +243,7 @@ describe(tst_con.chex2rgbConversion, () => {
 describe(tst_con.cisOdd, () => {
   /**
    * @function isOdd_validDataString
-   * @description Tests the businessRules.rules.mathOperations function isOdd with a valid input.
+   * @description Tests the businessRules.rules.mathOperations.isOdd function, with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -265,7 +265,7 @@ describe(tst_con.cisOdd, () => {
 
   /**
    * @function isOdd_inValidDataInputDataString
-   * @description Tests the businessRules.rules.mathOperations function isOdd with invalid string input.
+   * @description Tests the businessRules.rules.mathOperations.isOdd function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -287,7 +287,7 @@ describe(tst_con.cisOdd, () => {
 
   /**
    * @function isOdd_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.mathOperations function isOdd with invalid string inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.isOdd function, with invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -309,7 +309,7 @@ describe(tst_con.cisOdd, () => {
 
   /**
    * @function isOdd_inValidInputDataInteger
-   * @description Tests the businessRules.rules.mathOperations function isOdd with invalid integer input.
+   * @description Tests the businessRules.rules.mathOperations.isOdd function, with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -331,7 +331,7 @@ describe(tst_con.cisOdd, () => {
 
   /**
    * @function isOdd_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.mathOperations function isOdd with invalid boolean input.
+   * @description Tests the businessRules.rules.mathOperations.isOdd function, with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -353,7 +353,7 @@ describe(tst_con.cisOdd, () => {
 
   /**
    * @function isOdd_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.mathOperations function isOdd with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.isOdd function, with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -375,7 +375,7 @@ describe(tst_con.cisOdd, () => {
 
   /**
    * @function isOdd_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.mathOperations function isOdd with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.isOdd function, with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -405,7 +405,7 @@ describe(tst_con.cisOdd, () => {
 describe(tst_con.cisEven, () => {
   /**
    * @function isEven_validDataString
-   * @description Tests the businessRules.rules.mathOperations function isEven with a valid input.
+   * @description Tests the businessRules.rules.mathOperations.isEven function, with a valid input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -427,7 +427,7 @@ describe(tst_con.cisEven, () => {
 
   /**
    * @function isEven_inValidDataInputDataString
-   * @description Tests the businessRules.rules.mathOperations function isEven with invalid string input.
+   * @description Tests the businessRules.rules.mathOperations.isEven function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -449,7 +449,7 @@ describe(tst_con.cisEven, () => {
 
   /**
    * @function isEven_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.mathOperations function isEven with invalid string input.
+   * @description Tests the businessRules.rules.mathOperations.isEven function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -471,7 +471,7 @@ describe(tst_con.cisEven, () => {
 
   /**
    * @function isEven_inValidInputDataInteger
-   * @description Tests the businessRules.rules.mathOperations function isEven with invalid integer input.
+   * @description Tests the businessRules.rules.mathOperations.isEven function, with invalid integer input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -493,7 +493,7 @@ describe(tst_con.cisEven, () => {
 
   /**
    * @function isEven_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.mathOperations function isEven with invalid boolean input.
+   * @description Tests the businessRules.rules.mathOperations.isEven function, with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -515,7 +515,7 @@ describe(tst_con.cisEven, () => {
 
   /**
    * @function isEven_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.mathOperations function isEven with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.isEven function, with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */
@@ -537,7 +537,7 @@ describe(tst_con.cisEven, () => {
 
   /**
    * @function isEven_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.mathOperations function isEven with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.mathOperations.isEven function, with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/06
    */

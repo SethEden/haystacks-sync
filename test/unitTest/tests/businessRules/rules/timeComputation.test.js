@@ -40,7 +40,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.cgetNowMoment, () => {
   /**
    * @function getNowMoment_validDataString
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with a valid input.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -61,7 +61,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidDataInputDataString
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid string input.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -83,7 +83,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid string input.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -104,7 +104,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputDataInteger
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid integer input.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -125,7 +125,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid boolean input.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -146,7 +146,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -168,7 +168,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -190,7 +190,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid undefined input.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -211,7 +211,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputDataNaN
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid NaN input.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -232,7 +232,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -254,7 +254,7 @@ describe(tst_con.cgetNowMoment, () => {
 
   /**
    * @function getNowMoment_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.timeComputation function getNowMoment with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.getNowMoment function, with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -284,7 +284,7 @@ describe(tst_con.cgetNowMoment, () => {
 describe(tst_con.ccomputeDeltaTime, () => {
   /**
    * @function computeDeltaTime_validDataString
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with a valid input.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -305,7 +305,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidDataInputDataString
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid string input.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -327,7 +327,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid string input.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -348,7 +348,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputDataInteger
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid integer input.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -369,7 +369,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid boolean input.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -390,7 +390,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -412,7 +412,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -434,7 +434,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid undefined input.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -455,7 +455,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputDataNaN
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid NaN input.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -476,7 +476,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -498,7 +498,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 
   /**
    * @function computeDeltaTime_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.timeComputation function computeDeltaTime with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.computeDeltaTime function, with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -527,7 +527,7 @@ describe(tst_con.ccomputeDeltaTime, () => {
 describe(tst_con.creformatDeltaTime, () => {
   /**
    * @function reformatDeltaTime_validDataString
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with a valid input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -548,7 +548,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_validInputDataInteger
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with a valid integer input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with a valid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -569,7 +569,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_validInputDataStringInteger
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with a valid string integer input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with a valid string integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -590,7 +590,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_validInputDataIntegerString
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with a integer string valid input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with a integer string valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -611,7 +611,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidDataInputDataString
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid string input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -632,7 +632,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -653,7 +653,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputDataInteger
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid integer input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -674,7 +674,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid boolean input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -695,7 +695,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -716,7 +716,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -737,7 +737,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid undefined input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -758,7 +758,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputDataNaN
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid NaN input.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -779,7 +779,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -800,7 +800,7 @@ describe(tst_con.creformatDeltaTime, () => {
   
   /**
    * @function reformatDeltaTime_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.timeComputation function reformatDeltaTime with an invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.reformatDeltaTime function, with an invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -829,7 +829,7 @@ describe(tst_con.creformatDeltaTime, () => {
 describe(tst_con.csleep, () => {
   /**
    * @function sleep_validDataString
-   * @description Tests the businessRules.rules.timeComputation function sleep with a valid input.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with a valid input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -850,7 +850,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidDataInputDataString
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid string input.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -872,7 +872,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid string input.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid string input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -893,7 +893,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputDataInteger
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid integer input.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid integer input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -914,7 +914,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid boolean input.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid boolean input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -935,7 +935,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -957,7 +957,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -979,7 +979,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid undefined input.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid undefined input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1000,7 +1000,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputDataNaN
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid NaN input.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid NaN input.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1021,7 +1021,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputMetaDataUndefined
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid undefined inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid undefined inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
@@ -1043,7 +1043,7 @@ describe(tst_con.csleep, () => {
 
   /**
    * @function sleep_inValidInputMetaDataNaN
-   * @description Tests the businessRules.rules.timeComputation function sleep with invalid NaN inputMetaData.
+   * @description Tests the businessRules.rules.timeComputation.sleep function, with invalid NaN inputMetaData.
    * @author Json Howard
    * @date 2023/05/08
    */
