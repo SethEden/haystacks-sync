@@ -39,7 +39,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.cinitQueue, () => {
     /**
      * @function initQueue_validDataString
-     * @description Tests the structures.queue function initQueue with a valid input.
+     * @description Tests the structures.queue.initQueue function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -56,7 +56,7 @@ describe(tst_con.cinitQueue, () => {
     
     /**
      * @function initQueue_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function initQueue with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.initQueue function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -73,7 +73,7 @@ describe(tst_con.cinitQueue, () => {
     
     /**
      * @function initQueue_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function initQueue with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.initQueue function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -90,7 +90,7 @@ describe(tst_con.cinitQueue, () => {
     
     /**
      * @function initQueue_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function initQueue with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.initQueue function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -107,7 +107,7 @@ describe(tst_con.cinitQueue, () => {
     
     /**
      * @function initQueue_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function initQueue with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.initQueue function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -124,7 +124,7 @@ describe(tst_con.cinitQueue, () => {
     
     /**
      * @function initQueue_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function initQueue with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.initQueue function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -149,7 +149,7 @@ describe(tst_con.cinitQueue, () => {
 describe(tst_con.cdequeue, () => {
     /**
      * @function dequeue_validDataString
-     * @description Tests the structures.queue function dequeue with a valid input.
+     * @description Tests the structures.queue.dequeue function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -166,7 +166,7 @@ describe(tst_con.cdequeue, () => {
     
     /**
      * @function dequeue_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function dequeue with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.dequeue function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -183,7 +183,7 @@ describe(tst_con.cdequeue, () => {
     
     /**
      * @function dequeue_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function dequeue with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.dequeue function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -200,7 +200,7 @@ describe(tst_con.cdequeue, () => {
     
     /**
      * @function dequeue_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function dequeue with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.dequeue function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -217,7 +217,7 @@ describe(tst_con.cdequeue, () => {
     
     /**
      * @function dequeue_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function dequeue with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.dequeue function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -234,7 +234,7 @@ describe(tst_con.cdequeue, () => {
     
     /**
      * @function dequeue_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function dequeue with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.dequeue function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -259,7 +259,7 @@ describe(tst_con.cdequeue, () => {
 describe(tst_con.cenqueue, () => {
     /**
      * @function enqueue_validDataString
-     * @description Tests the structures.queue function enqueue with a valid input.
+     * @description Tests the structures.queue.enqueue function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -277,7 +277,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function enqueue with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.enqueue function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -295,7 +295,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidDataValueString
-     * @description Tests the structures.queue function enqueue with a invalid value string.
+     * @description Tests the structures.queue.enqueue function, with a invalid value string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -313,7 +313,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function enqueue with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.enqueue function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -331,7 +331,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function enqueue with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.enqueue function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -349,7 +349,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidValueInteger
-     * @description Tests the structures.queue function enqueue with a invalid value integer.
+     * @description Tests the structures.queue.enqueue function, with a invalid value integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -367,7 +367,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidValueBoolean
-     * @description Tests the structures.queue function enqueue with a invalid value boolean.
+     * @description Tests the structures.queue.enqueue function, with a invalid value boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -385,7 +385,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function enqueue with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.enqueue function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -403,7 +403,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function enqueue with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.enqueue function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -421,7 +421,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidValueUndefined
-     * @description Tests the structures.queue function enqueue with a invalid value undefined.
+     * @description Tests the structures.queue.enqueue function, with a invalid value undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -439,7 +439,7 @@ describe(tst_con.cenqueue, () => {
     
     /**
      * @function enqueue_inValidValueNaN
-     * @description Tests the structures.queue function enqueue with a invalid value NaN.
+     * @description Tests the structures.queue.enqueue function, with a invalid value NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -465,7 +465,7 @@ describe(tst_con.cenqueue, () => {
 describe(tst_con.cenqueueFront, () => {
     /**
      * @function enqueueFront_validDataString
-     * @description Tests the structures.queue function enqueueFront with a valid input.
+     * @description Tests the structures.queue.enqueue function,Front with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -483,7 +483,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function enqueueFront with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -501,7 +501,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidDataValueString
-     * @description Tests the structures.queue function enqueueFront with a invalid value string.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid value string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -519,7 +519,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function enqueueFront with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -537,7 +537,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function enqueueFront with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -555,7 +555,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidValueInteger
-     * @description Tests the structures.queue function enqueueFront with a invalid value integer.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid value integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -573,7 +573,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidValueBoolean
-     * @description Tests the structures.queue function enqueueFront with a invalid value boolean.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid value boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -591,7 +591,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function enqueueFront with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -609,7 +609,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function enqueueFront with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -627,7 +627,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidValueUndefined
-     * @description Tests the structures.queue function enqueueFront with a invalid value undefined.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid value undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -645,7 +645,7 @@ describe(tst_con.cenqueueFront, () => {
     
     /**
      * @function enqueueFront_inValidValueNaN
-     * @description Tests the structures.queue function enqueueFront with a invalid NaN.
+     * @description Tests the structures.queue.enqueue function,Front with a invalid NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -671,7 +671,7 @@ describe(tst_con.cenqueueFront, () => {
 describe(tst_con.cisEmpty, () => {
     /**
      * @function isEmpty_validDataString
-     * @description Tests the structures.queue function isEmpty with a valid input.
+     * @description Tests the structures.queue.isEmpty function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -688,7 +688,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function isEmpty with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.isEmpty function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -705,7 +705,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function isEmpty with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.isEmpty function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -722,7 +722,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function isEmpty with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.isEmpty function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -739,7 +739,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function isEmpty with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.isEmpty function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -756,7 +756,7 @@ describe(tst_con.cisEmpty, () => {
     
     /**
      * @function isEmpty_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function isEmpty with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.isEmpty function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -781,7 +781,7 @@ describe(tst_con.cisEmpty, () => {
 describe(tst_con.cqueueFront, () => {
     /**
      * @function queueFront_validDataString
-     * @description Tests the structures.queue function queueFront with a valid input.
+     * @description Tests the structures.queue.queueFront function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -798,7 +798,7 @@ describe(tst_con.cqueueFront, () => {
     
     /**
      * @function queueFront_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function queueFront with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.queueFront function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -815,7 +815,7 @@ describe(tst_con.cqueueFront, () => {
     
     /**
      * @function queueFront_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function queueFront with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.queueFront function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -832,7 +832,7 @@ describe(tst_con.cqueueFront, () => {
     
     /**
      * @function queueFront_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function queueFront with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.queueFront function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -849,7 +849,7 @@ describe(tst_con.cqueueFront, () => {
     
     /**
      * @function queueFront_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function queueFront with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.queueFront function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -866,7 +866,7 @@ describe(tst_con.cqueueFront, () => {
     
     /**
      * @function queueFront_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function queueFront with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.queueFront function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -891,7 +891,7 @@ describe(tst_con.cqueueFront, () => {
 describe(tst_con.cqueueSize, () => {
     /**
      * @function queueSize_validDataString
-     * @description Tests the structures.queue function queueSize with a valid input.
+     * @description Tests the structures.queue.queueSize function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -908,7 +908,7 @@ describe(tst_con.cqueueSize, () => {
     
     /**
      * @function queueSize_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function queueSize with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.queueSize function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -925,7 +925,7 @@ describe(tst_con.cqueueSize, () => {
     
     /**
      * @function queueSize_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function queueSize with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.queueSize function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -942,7 +942,7 @@ describe(tst_con.cqueueSize, () => {
     
     /**
      * @function queueSize_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function queueSize with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.queueSize function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -959,7 +959,7 @@ describe(tst_con.cqueueSize, () => {
     
     /**
      * @function queueSize_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function queueSize with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.queueSize function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -976,7 +976,7 @@ describe(tst_con.cqueueSize, () => {
     
     /**
      * @function queueSize_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function queueSize with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.queueSize function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1001,7 +1001,7 @@ describe(tst_con.cqueueSize, () => {
 describe(tst_con.cqueueContents, () => {
     /**
      * @function queueContents_validDataString
-     * @description Tests the structures.queue function queueContents with a valid input.
+     * @description Tests the structures.queue.queueContents function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1018,7 +1018,7 @@ describe(tst_con.cqueueContents, () => {
     
     /**
      * @function queueContents_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function queueContents with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.queueContents function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1035,7 +1035,7 @@ describe(tst_con.cqueueContents, () => {
     
     /**
      * @function queueContents_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function queueContents with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.queueContents function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1052,7 +1052,7 @@ describe(tst_con.cqueueContents, () => {
     
     /**
      * @function queueContents_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function queueContents with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.queueContents function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1069,7 +1069,7 @@ describe(tst_con.cqueueContents, () => {
     
     /**
      * @function queueContents_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function queueContents with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.queueContents function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1086,7 +1086,7 @@ describe(tst_con.cqueueContents, () => {
     
     /**
      * @function queueContents_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function queueContents with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.queueContents function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1111,7 +1111,7 @@ describe(tst_con.cqueueContents, () => {
 describe(tst_con.cqueuePrint, () => {
     /**
      * @function queuePrint_validDataString
-     * @description Tests the structures.queue function queuePrint with a valid input.
+     * @description Tests the structures.queue.queuePrint function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1128,7 +1128,7 @@ describe(tst_con.cqueuePrint, () => {
     
     /**
      * @function queuePrint_inValidDataQueueNameSpaceString
-     * @description Tests the structures.queue function queuePrint with a invalid queueNameSpace string.
+     * @description Tests the structures.queue.queuePrint function, with a invalid queueNameSpace string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1145,7 +1145,7 @@ describe(tst_con.cqueuePrint, () => {
     
     /**
      * @function queuePrint_inValidQueueNameSpaceInteger
-     * @description Tests the structures.queue function queuePrint with a invalid queueNameSpace integer.
+     * @description Tests the structures.queue.queuePrint function, with a invalid queueNameSpace integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1162,7 +1162,7 @@ describe(tst_con.cqueuePrint, () => {
     
     /**
      * @function queuePrint_inValidQueueNameSpaceBoolean
-     * @description Tests the structures.queue function queuePrint with a invalid queueNameSpace boolean.
+     * @description Tests the structures.queue.queuePrint function, with a invalid queueNameSpace boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1179,7 +1179,7 @@ describe(tst_con.cqueuePrint, () => {
     
     /**
      * @function queuePrint_inValidQueueNameSpaceUndefined
-     * @description Tests the structures.queue function queuePrint with a invalid queueNameSpace undefined.
+     * @description Tests the structures.queue.queuePrint function, with a invalid queueNameSpace undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -1196,7 +1196,7 @@ describe(tst_con.cqueuePrint, () => {
     
     /**
      * @function queuePrint_inValidQueueNameSpaceNaN
-     * @description Tests the structures.queue function queuePrint with a invalid queueNameSpace NaN.
+     * @description Tests the structures.queue.queuePrint function, with a invalid queueNameSpace NaN.
      * @author Json Howard
      * @date 2023/09/05
      */

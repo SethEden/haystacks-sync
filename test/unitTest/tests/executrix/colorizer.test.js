@@ -40,7 +40,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.ccolorizeMessageSimple, () => {
     /**
      * @function colorizeMessageSimple_validData
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a valid input.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -59,7 +59,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidMessageString
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid message string.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid message string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -78,7 +78,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidColorArrayString
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid colorArray string.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid colorArray string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -97,7 +97,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidIsForegroundString
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid isForeground string.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid isForeground string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -116,7 +116,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidMessageNumber
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid message number.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid message number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -135,7 +135,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidMessageBoolean
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid message boolean.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid message boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -154,7 +154,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidMessageUndefined
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid message undefined.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid message undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -173,7 +173,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidMessageNaN
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid message NaN.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid message NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -192,7 +192,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidColorArrayNumber
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid colorArray number.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid colorArray number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -211,7 +211,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidColorArrayBoolean
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid colorArray boolean.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid colorArray boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -230,7 +230,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidColorArrayUndefined
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid colorArray undefined.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid colorArray undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -249,7 +249,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidColorArrayNaN
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid colorArray NaN.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid colorArray NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -268,7 +268,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidIsForegroundNumber
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid isForeground number.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid isForeground number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -287,7 +287,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidIsForegroundBoolean
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid isForeground boolean.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid isForeground boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -306,7 +306,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidIsForegroundUndefined
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid isForeground undefined.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid isForeground undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -325,7 +325,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidIsForegroundNaN
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid isForeground NaN.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid isForeground NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -344,7 +344,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidAllUndefined
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid all undefined.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid all undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -363,7 +363,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
     
     /**
      * @function colorizeMessageSimple_inValidAllNaN
-     * @description Tests the executrix.colorizer function colorizeMessageSimple with a invalid all NaN.
+     * @description Tests the executrix.colorizer.colorizeMessageSimple function, with a invalid all NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -391,7 +391,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
 describe(tst_con.ccolorizeMessage, () => {
     /**
      * @function colorizeMessage_validData
-     * @description Tests the executrix.colorizer function colorizeMessage with a valid input.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -413,7 +413,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidMessageString
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid message string.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid message string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -435,7 +435,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidClassNameString
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid className string.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid className string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -457,7 +457,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFunctionNameString
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid functionName string.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid functionName string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -479,7 +479,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFlatMessageLogString
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid messageLog string.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid messageLog string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -501,7 +501,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidMessageNumber
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid message number.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid message number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -523,7 +523,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidMessageBoolean
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid message boolean.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid message boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -545,7 +545,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidMessageUndefined
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid message undefined.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid message undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -567,7 +567,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidMessageNaN
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid message NaN.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid message NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -589,7 +589,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidClassNameNumber
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid className number.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid className number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -611,7 +611,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidClassNameBoolean
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid className boolean.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid className boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -633,7 +633,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidClassNameUndefined
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid className undefined.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid className undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -655,7 +655,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidClassNameNaN
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid className NaN.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid className NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -677,7 +677,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFunctionNameNumber
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid functionName number.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid functionName number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -699,7 +699,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFunctionNameBoolean
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid functionName boolean.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid functionName boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -721,7 +721,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFunctionNameUndefined
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid functionName undefined.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid functionName undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -743,7 +743,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFunctionNameNaN
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid functionName NaN.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid functionName NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -765,7 +765,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFlatMessageLogNumber
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid flatMessageLog number.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid flatMessageLog number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -787,7 +787,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFlatMessageLogBoolean
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid flatMessageLog boolean.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid flatMessageLog boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -809,7 +809,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFlatMessageLogUndefined
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid flatMessageLog undefined.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid flatMessageLog undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -831,7 +831,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidFlatMessageLogNaN
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid flatMessageLog NaN.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid flatMessageLog NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -853,7 +853,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidAllUndefined
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid all undefined.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid all undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -875,7 +875,7 @@ describe(tst_con.ccolorizeMessage, () => {
     
     /**
      * @function colorizeMessage_inValidAllNaN
-     * @description Tests the executrix.colorizer function colorizeMessage with a invalid all NaN.
+     * @description Tests the executrix.colorizer.colorizeMessage function, with a invalid all NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -905,7 +905,7 @@ describe(tst_con.ccolorizeMessage, () => {
 describe(tst_con.caggregateStyleSetting, () => {
     /**
      * @function aggregateStyleSetting_validData
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a valid input.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -925,7 +925,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNamespaceString
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationNamespace string.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationNamespace string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -945,7 +945,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNameString
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationName string.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationName string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -965,7 +965,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationValueString
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationValue string.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationValue string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -985,7 +985,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNamespaceNumber
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationNamespace number.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationNamespace number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1005,7 +1005,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNamespaceBoolean
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationNamespace boolean.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationNamespace boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1025,7 +1025,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNamespaceUndefined
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationNamespace undefined.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationNamespace undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1045,7 +1045,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNamespaceNaN
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationNamespace NaN.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationNamespace NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1065,7 +1065,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNameNumber
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationName number.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationName number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1085,7 +1085,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNameBoolean
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationName boolean.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationName boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1105,7 +1105,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNameUndefined
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationName undefined.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationName undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1125,7 +1125,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationNameNaN
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationName NaN.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationName NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1145,7 +1145,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationValueNumber
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationValue number.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationValue number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1165,7 +1165,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationValueBoolean
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationValue boolean.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationValue boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1185,7 +1185,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationValueUndefined
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationValue undefined.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationValue undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1205,7 +1205,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidConfigurationValueNaN
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid configurationValue NaN.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid configurationValue NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1225,7 +1225,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidProcessAsFontSettingNumber
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid processAsFontSetting number.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid processAsFontSetting number.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1245,7 +1245,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidProcessAsFontSettingBoolean
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid processAsFontSetting boolean.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid processAsFontSetting boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1265,7 +1265,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidProcessAsFontSettingUndefined
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid processAsFontSetting undefined.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid processAsFontSetting undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1285,7 +1285,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidProcessAsFontSettingNaN
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid processAsFontSetting NaN.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid processAsFontSetting NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1305,7 +1305,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidAllUndefined
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid all undefined.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid all undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1325,7 +1325,7 @@ describe(tst_con.caggregateStyleSetting, () => {
     
     /**
      * @function aggregateStyleSetting_inValidAllNaN
-     * @description Tests the executrix.colorizer function aggregateStyleSetting with a invalid all NaN.
+     * @description Tests the executrix.colorizer.aggregateStyleSetting function, with a invalid all NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1354,7 +1354,7 @@ describe(tst_con.caggregateStyleSetting, () => {
 describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     /**
      * @function getFontStyleSettingsFromSetting_validDataString
-     * @description Tests the executrix.colorizer function getFontStyleSettingsFromSetting with a valid input.
+     * @description Tests the executrix.colorizer.getFontStyleSettingsFromSetting function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1371,7 +1371,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     
     /**
      * @function getFontStyleSettingsFromSetting_inValidDataSettingValueString
-     * @description Tests the executrix.colorizer function getFontStyleSettingsFromSetting with a invalid settingValue string.
+     * @description Tests the executrix.colorizer.getFontStyleSettingsFromSetting function, with a invalid settingValue string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1388,7 +1388,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     
     /**
      * @function getFontStyleSettingsFromSetting_inValidSettingValueInteger
-     * @description Tests the executrix.colorizer function getFontStyleSettingsFromSetting with a invalid settingValue integer.
+     * @description Tests the executrix.colorizer.getFontStyleSettingsFromSetting function, with a invalid settingValue integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1405,7 +1405,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     
     /**
      * @function getFontStyleSettingsFromSetting_inValidSettingValueBoolean
-     * @description Tests the executrix.colorizer function getFontStyleSettingsFromSetting with a invalid settingValue boolean.
+     * @description Tests the executrix.colorizer.getFontStyleSettingsFromSetting function, with a invalid settingValue boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1422,7 +1422,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     
     /**
      * @function getFontStyleSettingsFromSetting_inValidSettingValueUndefined
-     * @description Tests the executrix.colorizer function getFontStyleSettingsFromSetting with a invalid settingValue undefined.
+     * @description Tests the executrix.colorizer.getFontStyleSettingsFromSetting function, with a invalid settingValue undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1439,7 +1439,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     
     /**
      * @function getFontStyleSettingsFromSetting_inValidSettingValueNaN
-     * @description Tests the executrix.colorizer function getFontStyleSettingsFromSetting with a invalid settingValue NaN.
+     * @description Tests the executrix.colorizer.getFontStyleSettingsFromSetting function, with a invalid settingValue NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1464,7 +1464,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
 describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     /**
      * @function getColorStyleSettingFromSetting_validDataString
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a valid input.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1482,7 +1482,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidDataColorNameString
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid colorName string.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid colorName string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1500,7 +1500,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidDataDefaultColorArrayString
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid defaultColorArray string.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid defaultColorArray string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1518,7 +1518,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidColorNameInteger
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid colorName integer.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid colorName integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1536,7 +1536,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidColorNameBoolean
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid colorName boolean.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid colorName boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1554,7 +1554,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidDefaultColorArrayInteger
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid defaultColorArray integer.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid defaultColorArray integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1572,7 +1572,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidDefaultColorArrayBoolean
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid defaultColorArray boolean.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid defaultColorArray boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1590,7 +1590,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidColorNameUndefined
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid colorName undefined.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid colorName undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1608,7 +1608,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidColorNameNaN
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid colorName NaN.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid colorName NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1626,7 +1626,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidDefaultColorArrayUndefined
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid defaultColorArray undefined.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid defaultColorArray undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1644,7 +1644,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     
     /**
      * @function getColorStyleSettingFromSetting_inValidDefaultColorArrayNaN
-     * @description Tests the executrix.colorizer function getColorStyleSettingFromSetting with a invalid defaultColorArray NaN.
+     * @description Tests the executrix.colorizer.getColorStyleSettingFromSetting function, with a invalid defaultColorArray NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1670,7 +1670,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
 describe(tst_con.cgetNamedColorData, () => {
     /**
      * @function getNamedColorData_validDataString
-     * @description Tests the executrix.colorizer function getNamedColorData with a valid input.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1688,7 +1688,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidDataColorNameString
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid colorName string.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid colorName string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1706,7 +1706,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidDataDefaultColorArrayString
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid defaultColorArray string.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid defaultColorArray string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1724,7 +1724,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidColorNameInteger
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid colorName integer.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid colorName integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1742,7 +1742,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidColorNameBoolean
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid colorName boolean.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid colorName boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1760,7 +1760,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidDefaultColorArrayInteger
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid defaultColorArray integer.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid defaultColorArray integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1778,7 +1778,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidDefaultColorArrayBoolean
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid defaultColorArray boolean.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid defaultColorArray boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1796,7 +1796,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidColorNameUndefined
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid colorName undefined.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid colorName undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1814,7 +1814,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidColorNameNaN
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid colorName NaN.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid colorName NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1832,7 +1832,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidDefaultColorArrayUndefined
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid defaultColorArray undefined.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid defaultColorArray undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1850,7 +1850,7 @@ describe(tst_con.cgetNamedColorData, () => {
     
     /**
      * @function getNamedColorData_inValidDefaultColorArrayNaN
-     * @description Tests the executrix.colorizer function getNamedColorData with a invalid defaultColorArray NaN.
+     * @description Tests the executrix.colorizer.getNamedColorData function, with a invalid defaultColorArray NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1876,7 +1876,7 @@ describe(tst_con.cgetNamedColorData, () => {
 describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () => {
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_validDataString
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a valid input.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1894,7 +1894,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent string.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1912,7 +1912,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidDataUnderlineSettingValueString
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid underlineSettingValue string.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid underlineSettingValue string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1930,7 +1930,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent integer.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1948,7 +1948,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent boolean.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1966,7 +1966,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueInteger
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid underlineSettingValue integer.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid underlineSettingValue integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1984,7 +1984,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueBoolean
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid underlineSettingValue boolean.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid underlineSettingValue boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2002,7 +2002,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent undefined.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2020,7 +2020,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent NaN.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2038,7 +2038,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueUndefined
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid underlineSettingValue undefined.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid underlineSettingValue undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2056,7 +2056,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
     
     /**
      * @function setUnderlineFontStyleOnMessageComponentAccordingToSetting_inValidUnderlineSettingValueNaN
-     * @description Tests the executrix.colorizer function setUnderlineFontStyleOnMessageComponentAccordingToSetting with a invalid underlineSettingValue NaN.
+     * @description Tests the executrix.colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting function, with a invalid underlineSettingValue NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2082,7 +2082,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
 describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_validDataString
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a valid input.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2100,7 +2100,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent string.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2118,7 +2118,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidDataBoldSettingValueString
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid boldSettingValue string.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid boldSettingValue string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2136,7 +2136,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent integer.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2154,7 +2154,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent boolean.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2172,7 +2172,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueInteger
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid boldSettingValue integer.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid boldSettingValue integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2190,7 +2190,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueBoolean
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid boldSttingValue boolean.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid boldSttingValue boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2208,7 +2208,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent undefined.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2226,7 +2226,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid messageComponent NaN.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid messageComponent NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2244,7 +2244,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueUndefined
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid boldSettingValue undefined.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid boldSettingValue undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2262,7 +2262,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
     
     /**
      * @function setBoldFontStyleOnMessageComponentAccordingToSetting_inValidBoldSettingValueNaN
-     * @description Tests the executrix.colorizer function setBoldFontStyleOnMessageComponentAccordingToSetting with a invalid boldSettingValue NaN.
+     * @description Tests the executrix.colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting function, with a invalid boldSettingValue NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2288,7 +2288,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
 describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, () => {
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_validDataString
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a valid input.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2306,7 +2306,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent string.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2324,7 +2324,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue string.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2342,7 +2342,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent integer.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2360,7 +2360,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent boolean.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2378,7 +2378,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue integer.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2396,7 +2396,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue boolean.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2414,7 +2414,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent undefined.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2432,7 +2432,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent NaN.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2450,7 +2450,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue undefined.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2468,7 +2468,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontForegroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN
-     * @description Tests the executrix.colorizer function setFontForegroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue NaN.
+     * @description Tests the executrix.colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2494,7 +2494,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
 describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, () => {
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_validDataString
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a valid input.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2512,7 +2512,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataMessageComponentString
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent string.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2530,7 +2530,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidDataColorSettingValueString
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue string.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2548,7 +2548,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentInteger
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent integer.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2566,7 +2566,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentBoolean
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent boolean.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2584,7 +2584,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueInteger
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue integer.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2602,7 +2602,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueBoolean
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue boolean.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2620,7 +2620,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentUndefined
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent undefined.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2638,7 +2638,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidMessageComponentNaN
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid messageComponent NaN.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid messageComponent NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2656,7 +2656,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
     
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueUndefined
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue undefined.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2674,7 +2674,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
 
     /**
      * @function setFontBackgroundColorOnMessageComponentAccordingToSetting_inValidColorSettingValueNaN
-     * @description Tests the executrix.colorizer function setFontBackgroundColorOnMessageComponentAccordingToSetting with a invalid colorSettingValue NaN.
+     * @description Tests the executrix.colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting function, with a invalid colorSettingValue NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2700,7 +2700,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
 describe(tst_con.cremoveFontStyles, () => {
     /**
      * @function removeFontStyles_validDataString
-     * @description Tests the executrix.colorizer function removeFontStyles with a valid input.
+     * @description Tests the executrix.colorizer.removeFontStyles function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2717,7 +2717,7 @@ describe(tst_con.cremoveFontStyles, () => {
     
     /**
      * @function removeFontStyles_inValidDataMessageString
-     * @description Tests the executrix.colorizer function removeFontStyles with a invalid message string.
+     * @description Tests the executrix.colorizer.removeFontStyles function, with a invalid message string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2734,7 +2734,7 @@ describe(tst_con.cremoveFontStyles, () => {
     
     /**
      * @function removeFontStyles_inValidMessageInteger
-     * @description Tests the executrix.colorizer function removeFontStyles with a invalid message integer.
+     * @description Tests the executrix.colorizer.removeFontStyles function, with a invalid message integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2751,7 +2751,7 @@ describe(tst_con.cremoveFontStyles, () => {
     
     /**
      * @function removeFontStyles_inValidMessageBoolean
-     * @description Tests the executrix.colorizer function removeFontStyles with a invalid message boolean.
+     * @description Tests the executrix.colorizer.removeFontStyles function, with a invalid message boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2768,7 +2768,7 @@ describe(tst_con.cremoveFontStyles, () => {
     
     /**
      * @function removeFontStyles_inValidMessageUndefined
-     * @description Tests the executrix.colorizer function removeFontStyles with a invalid message undefined.
+     * @description Tests the executrix.colorizer.removeFontStyles function, with a invalid message undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -2785,7 +2785,7 @@ describe(tst_con.cremoveFontStyles, () => {
     
     /**
      * @function removeFontStyles_inValidMessageNaN
-     * @description Tests the executrix.colorizer function removeFontStyles with a invalid message NaN.
+     * @description Tests the executrix.colorizer.removeFontStyles function, with a invalid message NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
