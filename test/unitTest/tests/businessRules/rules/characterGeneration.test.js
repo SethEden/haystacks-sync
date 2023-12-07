@@ -35,7 +35,7 @@ const { bas, wrd, num } = hayConst;
 describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseLetterOrSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -57,7 +57,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseLetterOrSpecialCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -79,7 +79,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseLetterOrSpecialCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -101,7 +101,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseLetterOrSpecialCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -123,7 +123,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseLetterOrSpecialCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -145,7 +145,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseLetterOrSpecialCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -167,7 +167,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseLetterOrSpecialCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseLetterOrSpecialCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -197,7 +197,7 @@ describe(tst_con.crandomlyGenerateMixedCaseLetterOrSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -219,7 +219,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -241,7 +241,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -263,7 +263,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -285,7 +285,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -307,7 +307,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -329,7 +329,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetterOrSpecialCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetterOrSpecialCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -359,7 +359,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetterOrSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -381,7 +381,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -403,7 +403,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -425,7 +425,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -447,7 +447,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -469,7 +469,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -491,7 +491,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetterOrSpecialCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetterOrSpecialCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetterOrSpecialCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -521,7 +521,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetterOrSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -543,7 +543,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -565,7 +565,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -587,7 +587,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -609,7 +609,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -631,7 +631,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -653,7 +653,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -683,7 +683,7 @@ describe(tst_con.crandomlyGenerateEitherMixedCaseLetterOrNumberOrSpecialCharacte
 describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter, () => {
   /**
    * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_validDataString
-   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with a valid input.
+   * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter function, with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -705,7 +705,7 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -727,7 +727,7 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -749,7 +749,7 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -771,7 +771,7 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -793,7 +793,7 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -815,7 +815,7 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -845,7 +845,7 @@ describe(tst_con.crandomlyGenerateEitherUpperCaseLetterOrNumberOrSpecialCharacte
 describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter, () => {
   /**
    * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_validDataString
-   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with a valid input.
+   * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter function, with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -867,7 +867,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -889,7 +889,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -911,7 +911,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -933,7 +933,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -955,7 +955,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -977,7 +977,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 
 	/**
 	 * @function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1007,7 +1007,7 @@ describe(tst_con.crandomlyGenerateEitherLowerCaseLetterOrNumberOrSpecialCharacte
 describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1029,7 +1029,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1051,7 +1051,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1073,7 +1073,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1095,7 +1095,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1117,7 +1117,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1139,7 +1139,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphaNumericCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphaNumericCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphaNumericCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1169,7 +1169,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphaNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1191,7 +1191,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1213,7 +1213,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1235,7 +1235,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1257,7 +1257,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1279,7 +1279,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1301,7 +1301,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseAlphaNumericCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseAlphaNumericCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseAlphaNumericCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1331,7 +1331,7 @@ describe(tst_con.crandomlyGenerateUpperCaseAlphaNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1353,7 +1353,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1375,7 +1375,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1397,7 +1397,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1419,7 +1419,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1441,7 +1441,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1463,7 +1463,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseAlphaNumericCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseAlphaNumericCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseAlphaNumericCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1493,7 +1493,7 @@ describe(tst_con.crandomlyGenerateLowerCaseAlphaNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 	/**
 	 * @function randomlyGenerateNumericCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumericCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1515,7 +1515,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateNumericCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumericCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1537,7 +1537,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateNumericCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumericCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1559,7 +1559,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateNumericCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumericCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1581,7 +1581,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateNumericCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumericCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1603,7 +1603,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateNumericCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumericCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1625,7 +1625,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateNumericCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumericCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumericCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1655,7 +1655,7 @@ describe(tst_con.crandomlyGenerateNumericCharacter, () => {
 describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 	/**
 	 * @function randomlyGenerateSpecialCharacter_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateSpecialCharacter function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1677,7 +1677,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateSpecialCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateSpecialCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1699,7 +1699,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateSpecialCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateSpecialCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1721,7 +1721,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateSpecialCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateSpecialCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1743,7 +1743,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateSpecialCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateSpecialCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1765,7 +1765,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateSpecialCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateSpecialCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1787,7 +1787,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateSpecialCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateSpecialCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateSpecialCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1817,7 +1817,7 @@ describe(tst_con.crandomlyGenerateSpecialCharacter, () => {
 describe(tst_con.crandomlyGenerateNumberInRange, () => {
 	/**
 	 * @function randomlyGenerateNumberInRange_validDataStringTrueTrue
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with a valid inputMeta true, true.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with a valid inputMeta true, true.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1839,7 +1839,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_validDataStringTrueFalse
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with a valid inputMeta true, false.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with a valid inputMeta true, false.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1861,7 +1861,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_validDataStringFalseTrue
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with a valid inputMeta false, true.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with a valid inputMeta false, true.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1883,7 +1883,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_validDataStringFalseFalse
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with a valid inputMeta false, false.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with a valid inputMeta false, false.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1905,7 +1905,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_validDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1927,7 +1927,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1949,7 +1949,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1971,7 +1971,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -1993,7 +1993,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2015,7 +2015,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2037,7 +2037,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2059,7 +2059,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputDataUndefined
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid undefined input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid undefined input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2081,7 +2081,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputDataNaN
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid NaN input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid NaN input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2103,7 +2103,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputMetaDataUndefined
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid undefined inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid undefined inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2125,7 +2125,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 
 	/**
 	 * @function randomlyGenerateNumberInRange_inValidInputMetaDataNaN
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateNumberInRange with an invalid NaN inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateNumberInRange function, with an invalid NaN inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2155,7 +2155,7 @@ describe(tst_con.crandomlyGenerateNumberInRange, () => {
 describe(tst_con.crandomlyGenerateBooleanValue, () => {
 	/**
 	 * @function randomlyGenerateBooleanValue_validDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with a valid input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateBooleanValue function, with a valid input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2177,7 +2177,7 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 
 	/**
 	 * @function randomlyGenerateBooleanValue_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateBooleanValue function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2199,7 +2199,7 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 
 	/**
 	 * @function randomlyGenerateBooleanValue_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateBooleanValue function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2221,7 +2221,7 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 
 	/**
 	 * @function randomlyGenerateBooleanValue_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateBooleanValue function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2243,7 +2243,7 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 
 	/**
 	 * @function randomlyGenerateBooleanValue_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateBooleanValue function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2265,7 +2265,7 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 
 	/**
 	 * @function randomlyGenerateBooleanValue_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateBooleanValue function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2287,7 +2287,7 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 
 	/**
 	 * @function randomlyGenerateBooleanValue_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateBooleanValue with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateBooleanValue function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2317,7 +2317,7 @@ describe(tst_con.crandomlyGenerateBooleanValue, () => {
 describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
   /**
    * @function randomlyGenerateMixedCaseAlphabeticCharacter_validDataString
-   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with a valid input.
+   * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter function, with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2339,7 +2339,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2361,7 +2361,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2383,7 +2383,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2405,7 +2405,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2427,7 +2427,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2449,7 +2449,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
 
 	/**
 	 * @function randomlyGenerateMixedCaseAlphabeticCharacter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateMixedCaseAlphabeticCharacter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateMixedCaseAlphabeticCharacter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2479,7 +2479,7 @@ describe(tst_con.crandomlyGenerateMixedCaseAlphabeticCharacter, () => {
 describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
   /**
    * @function randomlyGenerateLowerCaseLetter_validDataString
-   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with a valid input.
+   * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetter function, with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2501,7 +2501,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2523,7 +2523,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2545,7 +2545,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2567,7 +2567,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2589,7 +2589,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2611,7 +2611,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateLowerCaseLetter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateLowerCaseLetter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateLowerCaseLetter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2641,7 +2641,7 @@ describe(tst_con.crandomlyGenerateLowerCaseLetter, () => {
 describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
   /**
    * @function randomlyGenerateUpperCaseLetter_validDataString
-   * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with a valid input.
+   * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetter function, with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2663,7 +2663,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2685,7 +2685,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2707,7 +2707,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2729,7 +2729,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2751,7 +2751,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2773,7 +2773,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
 
 	/**
 	 * @function randomlyGenerateUpperCaseLetter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function randomlyGenerateUpperCaseLetter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.randomlyGenerateUpperCaseLetter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2803,7 +2803,7 @@ describe(tst_con.crandomlyGenerateUpperCaseLetter, () => {
 describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
   /**
    * @function convertNumberToUpperCaseLetter_validDataString
-   * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with a valid input.
+   * @description Tests the businessRules.rules.characterGeneration.convertNumberToUpperCaseLetter function, with a valid input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2825,7 +2825,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToUpperCaseLetter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToUpperCaseLetter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2847,7 +2847,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToUpperCaseLetter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToUpperCaseLetter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2869,7 +2869,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToUpperCaseLetter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToUpperCaseLetter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2891,7 +2891,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToUpperCaseLetter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToUpperCaseLetter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2913,7 +2913,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToUpperCaseLetter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToUpperCaseLetter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2935,7 +2935,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToUpperCaseLetter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToUpperCaseLetter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToUpperCaseLetter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -2965,7 +2965,7 @@ describe(tst_con.cconvertNumberToUpperCaseLetter, () => {
 describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
   /**
    * @function convertNumberToLowerCaseLetter_validDataString
-   * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with a valid string input.
+   * @description Tests the businessRules.rules.characterGeneration.convertNumberToLowerCaseLetter function, with a valid string input.
    * @author Json Howard
    * @date 2023/05/03
    */
@@ -2987,7 +2987,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToLowerCaseLetter_inValidDataInputDataString
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid string input.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToLowerCaseLetter function, with an invalid string input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -3009,7 +3009,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToLowerCaseLetter_inValidDataInputMetaDataString
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid string inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToLowerCaseLetter function, with an invalid string inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -3031,7 +3031,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToLowerCaseLetter_inValidInputDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid integer input.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToLowerCaseLetter function, with an invalid integer input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -3053,7 +3053,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToLowerCaseLetter_inValidInputDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid boolean input.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToLowerCaseLetter function, with an invalid boolean input.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -3075,7 +3075,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToLowerCaseLetter_inValidInputMetaDataInteger
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid integer inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToLowerCaseLetter function, with an invalid integer inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */
@@ -3097,7 +3097,7 @@ describe(tst_con.cconvertNumberToLowerCaseLetter, () => {
 
 	/**
 	 * @function convertNumberToLowerCaseLetter_inValidInputMetaDataBoolean
-	 * @description Tests the businessRules.rules.characterGeneration function convertNumberToLowerCaseLetter with an invalid boolean inputMetaData.
+	 * @description Tests the businessRules.rules.characterGeneration.convertNumberToLowerCaseLetter function, with an invalid boolean inputMetaData.
 	 * @author Json Howard
 	 * @date 2023/05/03
 	 */

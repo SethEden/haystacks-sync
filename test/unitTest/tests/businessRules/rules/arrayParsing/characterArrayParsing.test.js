@@ -36,7 +36,7 @@ const {bas, wrd, num} = hayConst;
 describe(tst_con.creplaceCharacterWithCharacter, () => {
     /**
     * @function replaceCharacterWithCharacter_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterWithCharacter with a valid string input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterWithCharacter function, with a valid string input.
     * @author Json Howard
     * @date 2023/04/06
     */
@@ -54,7 +54,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 
     /**
     * @function replaceCharacterWithCharacter_validDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterWithCharacter with a valid string input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterWithCharacter function, with a valid string input.
     * @author Json Howard
     * @date 2023/04/06
     */
@@ -72,7 +72,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 
     /**
     * @function replaceCharacterWithCharacter_validDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterWithCharacter with a valid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterWithCharacter function, with a valid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -90,7 +90,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 
     /**
     * @function replaceCharacterWithCharacter_inValidDataStorageInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterWithCharacter with an invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterWithCharacter function, with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -108,7 +108,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 
     /**
     * @function replaceCharacterWithCharacter_inValidDataStorageInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterWithCharacter with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterWithCharacter function, with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -126,7 +126,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 
     /**
     * @function replaceCharacterWithCharacter_inValidInputMetaDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterWithCharacter with an invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterWithCharacter function, with an invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -144,7 +144,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 
     /**
     * @function replaceCharacterWithCharacter_inValidInputMetaDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterWithCharacter with an invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterWithCharacter function, with an invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -170,7 +170,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 describe(tst_con.cdoesArrayContainCharacter, () => {
     /**
     * @function doesArrayContainCharacter_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid string input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid string input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -188,7 +188,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid string input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid string input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -206,7 +206,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid integer input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid integer input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -224,7 +224,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid boolean input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid boolean input.
     * @author Json Howard
     * @date 2023/04/11
     */
@@ -242,7 +242,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputDataObject
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid object input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid object input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -260,7 +260,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -278,7 +278,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -296,7 +296,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -314,7 +314,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_validDataInputMetaDataObject
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with a valid object inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with a valid object inputMetaData.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -332,7 +332,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with an invalid undefined input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with an invalid undefined input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -350,7 +350,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with an invalid NaN input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with an invalid NaN input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -368,7 +368,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_inValidInputMetaDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with an invalid undefined input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with an invalid undefined input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -386,7 +386,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 
     /**
     * @function doesArrayContainCharacter_inValidInputMetaDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function doesArrayContainCharacter with an invalid NaN input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.doesArrayContainCharacter function, with an invalid NaN input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -412,7 +412,7 @@ describe(tst_con.cdoesArrayContainCharacter, () => {
 describe(tst_con.cremoveCharacterFromArray, () => {
     /**
     * @function removeCharacterFromArray_validDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with a valid string input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with a valid string input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -430,7 +430,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
      * @function removeCharacterFromArray_validDataInputDataInteger
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with a valid integer inputData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with a valid integer inputData.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -448,7 +448,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
      * @function removeCharacterFromArray_validDataInputDataBoolean
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with an invalid boolean inputData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with an invalid boolean inputData.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -466,7 +466,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
      * @function removeCharacterFromArray_validDataInputDataObject
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with an invalid object inputData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with an invalid object inputData.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -484,7 +484,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
     * @function removeCharacterFromArray_validDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with a valid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with a valid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/11
     */
@@ -502,7 +502,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
     
     /**
     * @function removeCharacterFromArray_validDataInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with a valid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with a valid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/11
     */
@@ -520,7 +520,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
     * @function removeCharacterFromArray_validDataInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with a valid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with a valid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/11
     */
@@ -538,7 +538,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
     * @function removeCharacterFromArray_validDataInputMetaDataObject
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with a valid object inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with a valid object inputMetaData.
     * @author Json Howard
     * @date 2023/04/11
     */
@@ -556,7 +556,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
     * @function removeCharacterFromArray_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with an invalid undefined input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with an invalid undefined input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -574,7 +574,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
      * @function removeCharacterFromArray_inValidInputDataNaN
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with an invalid NaN input.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with an invalid NaN input.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -592,7 +592,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
      * @function removeCharacterFromArray_inValidInputMetaDataUndefined
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with an invalid undefined inputMetaData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with an invalid undefined inputMetaData.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -610,7 +610,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 
     /**
      * @function removeCharacterFromArray_inValidInputMetaDataNaN
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function removeCharacterFromArray with an invalid NaN inputMetaData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.removeCharacterFromArray function, with an invalid NaN inputMetaData.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -636,7 +636,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
 describe(tst_con.creplaceCharacterAtIndex, () => {
     /**
     * @function replaceCharacterAtIndex_validDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterAtIndex with a valid string input.
+    * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterAtIndex function, with a valid string input.
     * @author Json Howard
     * @date 2023/04/09
     */
@@ -654,7 +654,7 @@ describe(tst_con.creplaceCharacterAtIndex, () => {
 
     /**
      * @function replaceCharacterAtIndex_validDataInputMetaDataString
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterAtIndex with a valid string inputMetaData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterAtIndex function, with a valid string inputMetaData.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -672,7 +672,7 @@ describe(tst_con.creplaceCharacterAtIndex, () => {
 
     /**
      * @function replaceCharacterAtIndex_inValidInputMetaDataUndefined
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterAtIndex with an invalid undefiend inputMetaData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterAtIndex function, with an invalid undefiend inputMetaData.
      * @author Json Howard
      * @date 2023/04/09
      */
@@ -690,7 +690,7 @@ describe(tst_con.creplaceCharacterAtIndex, () => {
     
     /**
      * @function replaceCharacterAtIndex_inValidInputMetaDataNaN
-     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing function replaceCharacterAtIndex with an invalid undefiend inputMetaData.
+     * @description Tests the businessRules.rules.arrayParsing.characterArrayParsing.replaceCharacterAtIndex function, with an invalid undefiend inputMetaData.
      * @author Json Howard
      * @date 2023/04/09
      */

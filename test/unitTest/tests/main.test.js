@@ -38,7 +38,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.cinitFramework, () => {
     /**
      * @function initFramework_validDataString
-     * @description Tests the main function initFramework with a valid input.
+     * @description Tests the main.initFramework function, with a valid input.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -55,7 +55,7 @@ describe(tst_con.cinitFramework, () => {
     
     /**
      * @function initFramework_inValidDataClientConfigurationString
-     * @description Tests the main function initFramework with a invalid clientConfiguration string.
+     * @description Tests the main.initFramework function, with a invalid clientConfiguration string.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -72,7 +72,7 @@ describe(tst_con.cinitFramework, () => {
     
     /**
      * @function initFramework_inValidClientConfigurationInteger
-     * @description Tests the main function initFramework with a invalid clientConfiguration integer.
+     * @description Tests the main.initFramework function, with a invalid clientConfiguration integer.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -89,7 +89,7 @@ describe(tst_con.cinitFramework, () => {
     
     /**
      * @function initFramework_inValidClientConfigurationBoolean
-     * @description Tests the main function initFramework with a invalid clientConfiguration boolean.
+     * @description Tests the main.initFramework function, with a invalid clientConfiguration boolean.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -106,7 +106,7 @@ describe(tst_con.cinitFramework, () => {
     
     /**
      * @function initFramework_inValidClientConfigurationUndefined
-     * @description Tests the main function initFramework with a invalid clientConfiguration undefined.
+     * @description Tests the main.initFramework function, with a invalid clientConfiguration undefined.
      * @author Json Howard
      * @date 2023/09/05
      */
@@ -123,7 +123,7 @@ describe(tst_con.cinitFramework, () => {
     
     /**
      * @function initFramework_inValidClientConfigurationNaN
-     * @description Tests the main function initFramework with a invalid clientConfiguration NaN.
+     * @description Tests the main.initFramework function, with a invalid clientConfiguration NaN.
      * @author Json Howard
      * @date 2023/09/05
      */

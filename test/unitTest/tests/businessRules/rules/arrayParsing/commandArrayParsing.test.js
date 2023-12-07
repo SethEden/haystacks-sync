@@ -38,7 +38,7 @@ const { wrd } = hayConst;
 describe(tst_con.csolveLehmerCode, () => {
     /**
     * @function solveLehmerCode_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -57,7 +57,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -76,7 +76,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -95,7 +95,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -114,7 +114,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -133,7 +133,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -152,7 +152,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -171,7 +171,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -190,7 +190,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -209,7 +209,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputMetaDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -228,7 +228,7 @@ describe(tst_con.csolveLehmerCode, () => {
 
     /**
     * @function solveLehmerCode_inValidInputMetaDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function solveLehmerCode with an invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.solveLehmerCode function, with an invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -255,7 +255,7 @@ describe(tst_con.csolveLehmerCode, () => {
 describe(tst_con.crecursiveArrayExpansion, () => {
     /**
     * @function recursiveArrayExpansion_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -273,7 +273,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -291,7 +291,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -309,7 +309,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -327,7 +327,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -345,7 +345,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -363,7 +363,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -381,7 +381,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -399,7 +399,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -417,7 +417,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputMetaDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -435,7 +435,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 
     /**
     * @function recursiveArrayExpansion_inValidInputMetaDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function recursiveArrayExpansion with an invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.recursiveArrayExpansion function, with an invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -461,7 +461,7 @@ describe(tst_con.crecursiveArrayExpansion, () => {
 describe(tst_con.cgetLehmerCodeValue, () => {
     /**
     * @function getLehmerCodeValue_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -479,7 +479,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -497,7 +497,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -515,7 +515,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -533,7 +533,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -551,7 +551,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -569,7 +569,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -587,7 +587,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid undefiend data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid undefiend data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -605,7 +605,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -623,7 +623,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputMetaDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid undefined inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid undefined inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -641,7 +641,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 
     /**
     * @function getLehmerCodeValue_inValidInputMetaDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function getLehmerCodeValue with an invalid NaN inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.getLehmerCodeValue function, with an invalid NaN inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -667,7 +667,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
 describe(tst_con.cgenerateCommandAliases, () => {
     /**
     * @function generateCommandAliases_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -685,7 +685,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -703,7 +703,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -721,7 +721,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -739,7 +739,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -757,7 +757,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -775,7 +775,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
     
     /**
     * @function generateCommandAliases_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -793,7 +793,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid undefined data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid undefined data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -811,7 +811,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 
     /**
     * @function generateCommandAliases_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function generateCommandAliases with an invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.generateCommandAliases function, with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -837,7 +837,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
 describe(tst_con.caggregateCommandArguments, () => {
     /**
     * @function aggregateCommandArguments_validDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with a valid data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with a valid data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -855,7 +855,7 @@ describe(tst_con.caggregateCommandArguments, () => {
 
     /**
     * @function aggregateCommandArguments_inValidDataInputDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid string data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid string data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -873,7 +873,7 @@ describe(tst_con.caggregateCommandArguments, () => {
     
     /**
     * @function aggregateCommandArguments_inValidDataInputMetaDataString
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid string inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid string inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -891,7 +891,7 @@ describe(tst_con.caggregateCommandArguments, () => {
     
     /**
     * @function aggregateCommandArguments_inValidInputDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid integer data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid integer data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -909,7 +909,7 @@ describe(tst_con.caggregateCommandArguments, () => {
     
     /**
     * @function aggregateCommandArguments_inValidInputDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid boolean data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid boolean data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -927,7 +927,7 @@ describe(tst_con.caggregateCommandArguments, () => {
 
     /**
     * @function aggregateCommandArguments_inValidInputMetaDataInteger
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid integer inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid integer inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -945,7 +945,7 @@ describe(tst_con.caggregateCommandArguments, () => {
 
     /**
     * @function aggregateCommandArguments_inValidInputMetaDataBoolean
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid boolean inputMetaData.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid boolean inputMetaData.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -963,7 +963,7 @@ describe(tst_con.caggregateCommandArguments, () => {
     
     /**
     * @function aggregateCommandArguments_inValidInputDataUndefined
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid undefiend data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid undefiend data.
     * @author Json Howard
     * @date 2023/04/19
     */
@@ -981,7 +981,7 @@ describe(tst_con.caggregateCommandArguments, () => {
     
     /**
     * @function aggregateCommandArguments_inValidInputDataNaN
-    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing function aggregateCommandArguments with an invalid NaN data.
+    * @description Tests the businessRules.rules.arrayParsing.commandArrayParsing.aggregateCommandArguments function, with an invalid NaN data.
     * @author Json Howard
     * @date 2023/04/19
     */
