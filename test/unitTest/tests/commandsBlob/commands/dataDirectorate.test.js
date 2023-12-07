@@ -245,7 +245,7 @@ describe(tst_con.cprintDataHive, () => {
 describe(tst_con.cprintDataHiveAttributes, () => {
     /**
      * @function printDataHiveAttributes_validDataString
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a valid input.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a valid input.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -263,7 +263,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidDataInputDataString
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid input string.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid input string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -281,7 +281,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidDataInputMetaDataString
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid inputMetaData string.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -299,7 +299,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataInteger
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid input integer.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -317,7 +317,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataBoolean
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid input boolean.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -335,7 +335,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataInteger
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid inputMetaData integer.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -353,7 +353,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataBoolean
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid inputMetaData boolean.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -371,7 +371,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataUndefined
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid input undefined.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -389,7 +389,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputDataNaN
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid input NaN.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -407,7 +407,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataUndefined
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid inputMetaData undefined.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/18
      */
@@ -425,7 +425,7 @@ describe(tst_con.cprintDataHiveAttributes, () => {
     
     /**
      * @function printDataHiveAttributes_inValidInputMetaDataNaN
-     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHive function,Attributes with a invalid inputMetaData NaN.
+     * @description Tests the commandsBlob.commands.dataDirectorate.printDataHiveAttributes function, with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/18
      */
