@@ -42,7 +42,7 @@ const { wrd, num } = hayConst;
 describe(tst_con.cprocessRootPath, () => {
     /**
      * @function processRootPath_validDataString
-     * @description Tests the controllers.warden function processRootPath with a valid input.
+     * @description Tests the controllers.warden.processRootPath function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -60,7 +60,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidDataInputPathString
-     * @description Tests the controllers.warden function processRootPath with a invalid inputPath string.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid inputPath string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -78,7 +78,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidDataActualFrameworkNameString
-     * @description Tests the controllers.warden function processRootPath with a invalid actualFrameworkName string.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid actualFrameworkName string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -96,7 +96,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidInputPathInteger
-     * @description Tests the controllers.warden function processRootPath with a valid inputPath Integer.
+     * @description Tests the controllers.warden.processRootPath function, with a valid inputPath Integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -114,7 +114,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidInputPathBoolean
-     * @description Tests the controllers.warden function processRootPath with a invalid inputPath boolean.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid inputPath boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -132,7 +132,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidActualFrameworkNameInteger
-     * @description Tests the controllers.warden function processRootPath with a invalid actualFrameworkName integer.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid actualFrameworkName integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -150,7 +150,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidActualFrameworkNameBoolean
-     * @description Tests the controllers.warden function processRootPath with a invalid actualFrameworkName boolean.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid actualFrameworkName boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -168,7 +168,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidInputPathUndefined
-     * @description Tests the controllers.warden function processRootPath with a invalid inputPath undefined.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid inputPath undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -186,7 +186,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidInputPathNaN
-     * @description Tests the controllers.warden function processRootPath with a invalid inputPath NaN.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid inputPath NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -204,7 +204,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidActualFrameworkNameUndefined
-     * @description Tests the controllers.warden function processRootPath with a invalid actualFrameworkName undefined.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid actualFrameworkName undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -222,7 +222,7 @@ describe(tst_con.cprocessRootPath, () => {
     
     /**
      * @function processRootPath_inValidActualFrameworkNameNaN
-     * @description Tests the controllers.warden function processRootPath with a invalid actualFrameworkName NaN.
+     * @description Tests the controllers.warden.processRootPath function, with a invalid actualFrameworkName NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -248,7 +248,7 @@ describe(tst_con.cprocessRootPath, () => {
 describe(tst_con.cinitFrameworkSchema, () => {
     /**
      * @function initFrameworkSchema_validDataObject
-     * @description Tests the controllers.warden function initFrameworkSchema with a valid input object.
+     * @description Tests the controllers.warden.initFrameworkSchema function, with a valid input object.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -265,7 +265,7 @@ describe(tst_con.cinitFrameworkSchema, () => {
     
     /**
      * @function initFrameworkSchema_inValidConfigDataString
-     * @description Tests the controllers.warden function initFrameworkSchema with a invalid configData string.
+     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -282,7 +282,7 @@ describe(tst_con.cinitFrameworkSchema, () => {
     
     /**
      * @function initFrameworkSchema_inValidConfigDataInteger
-     * @description Tests the controllers.warden function initFrameworkSchema with a invalid configData integer.
+     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -299,7 +299,7 @@ describe(tst_con.cinitFrameworkSchema, () => {
     
     /**
      * @function initFrameworkSchema_inValidConfigDataBoolean
-     * @description Tests the controllers.warden function initFrameworkSchema with a invalid configData boolean.
+     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -316,7 +316,7 @@ describe(tst_con.cinitFrameworkSchema, () => {
     
     /**
      * @function initFrameworkSchema_inValidConfigDataUndefined
-     * @description Tests the controllers.warden function initFrameworkSchema with a invalid configData undefined.
+     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -333,7 +333,7 @@ describe(tst_con.cinitFrameworkSchema, () => {
     
     /**
      * @function initFrameworkSchema_inValidConfigDataNaN
-     * @description Tests the controllers.warden function initFrameworkSchema with a invalid configData NaN.
+     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -358,7 +358,7 @@ describe(tst_con.cinitFrameworkSchema, () => {
 describe(tst_con.cmergeClientBusinessRules, () => {
     /**
      * @function mergeClientBusinessRules_validDataObject
-     * @description Tests the controllers.warden function mergeClientBusinessRules with a valid input.
+     * @description Tests the controllers.warden.mergeClientBusinessRules function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -375,7 +375,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
     
     /**
      * @function mergeClientBusinessRules_inValidDataClientBusinessRulesString
-     * @description Tests the controllers.warden function mergeClientBusinessRules with a invalid clientBusinessRules string.
+     * @description Tests the controllers.warden.mergeClientBusinessRules function, with a invalid clientBusinessRules string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -392,7 +392,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
     
     /**
      * @function mergeClientBusinessRules_inValidClientBusinessRulesInteger
-     * @description Tests the controllers.warden function mergeClientBusinessRules with a valid clientBusinessRules integer.
+     * @description Tests the controllers.warden.mergeClientBusinessRules function, with a valid clientBusinessRules integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -409,7 +409,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
     
     /**
      * @function mergeClientBusinessRules_inValidClientBusinessRulesBoolean
-     * @description Tests the controllers.warden function mergeClientBusinessRules with a invalid clientBusinessRules boolean.
+     * @description Tests the controllers.warden.mergeClientBusinessRules function, with a invalid clientBusinessRules boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -426,7 +426,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
     
     /**
      * @function mergeClientBusinessRules_inValidClientBusinessRulesUndefined
-     * @description Tests the controllers.warden function mergeClientBusinessRules with a invalid clientBusinessRules undefined.
+     * @description Tests the controllers.warden.mergeClientBusinessRules function, with a invalid clientBusinessRules undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -443,7 +443,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
     
     /**
      * @function mergeClientBusinessRules_inValidClientBusinessRulesNaN
-     * @description Tests the controllers.warden function mergeClientBusinessRules with a invalid clientBusinessRules NaN.
+     * @description Tests the controllers.warden.mergeClientBusinessRules function, with a invalid clientBusinessRules NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -468,7 +468,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
 describe(tst_con.cmergeClientCommands, () => {
     /**
      * @function mergeClientCommands_validDataObject
-     * @description Tests the controllers.warden function mergeClientCommands with a valid input.
+     * @description Tests the controllers.warden.mergeClientCommands function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -485,7 +485,7 @@ describe(tst_con.cmergeClientCommands, () => {
     
     /**
      * @function mergeClientCommands_inValidDataClientCommandsString
-     * @description Tests the controllers.warden function mergeClientCommands with a invalid clientCommands string.
+     * @description Tests the controllers.warden.mergeClientCommands function, with a invalid clientCommands string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -502,7 +502,7 @@ describe(tst_con.cmergeClientCommands, () => {
     
     /**
      * @function mergeClientCommands_inValidClientCommandsInteger
-     * @description Tests the controllers.warden function mergeClientCommands with a invalid clientCommands Integer.
+     * @description Tests the controllers.warden.mergeClientCommands function, with a invalid clientCommands Integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -519,7 +519,7 @@ describe(tst_con.cmergeClientCommands, () => {
     
     /**
      * @function mergeClientCommands_inValidClientCommandsBoolean
-     * @description Tests the controllers.warden function mergeClientCommands with a invalid clientCommands boolean.
+     * @description Tests the controllers.warden.mergeClientCommands function, with a invalid clientCommands boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -536,7 +536,7 @@ describe(tst_con.cmergeClientCommands, () => {
     
     /**
      * @function mergeClientCommands_inValidClientCommandsUndefined
-     * @description Tests the controllers.warden function mergeClientCommands with a invalid clientCommands undefined.
+     * @description Tests the controllers.warden.mergeClientCommands function, with a invalid clientCommands undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -553,7 +553,7 @@ describe(tst_con.cmergeClientCommands, () => {
     
     /**
      * @function mergeClientCommands_inValidClientCommandsNaN
-     * @description Tests the controllers.warden function mergeClientCommands with a invalid clientCommands NaN.
+     * @description Tests the controllers.warden.mergeClientCommands function, with a invalid clientCommands NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -578,7 +578,7 @@ describe(tst_con.cmergeClientCommands, () => {
 describe(tst_con.cloadCommandAliases, () => {
     /**
      * @function loadCommandAliases_validDataString
-     * @description Tests the controllers.warden function loadCommandAliases with a valid input.
+     * @description Tests the controllers.warden.loadCommandAliases function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -595,7 +595,7 @@ describe(tst_con.cloadCommandAliases, () => {
     
     /**
      * @function loadCommandAliases_inValidDataCommandAliasesPathString
-     * @description Tests the controllers.warden function loadCommandAliases with a invalid commandAliasesPath string.
+     * @description Tests the controllers.warden.loadCommandAliases function, with a invalid commandAliasesPath string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -612,7 +612,7 @@ describe(tst_con.cloadCommandAliases, () => {
     
     /**
      * @function loadCommandAliases_inValidCommandAliasesPathInteger
-     * @description Tests the controllers.warden function loadCommandAliases with a invalid commandAliasesPath Integer.
+     * @description Tests the controllers.warden.loadCommandAliases function, with a invalid commandAliasesPath Integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -629,7 +629,7 @@ describe(tst_con.cloadCommandAliases, () => {
     
     /**
      * @function loadCommandAliases_inValidCommandAliasesPathBoolean
-     * @description Tests the controllers.warden function loadCommandAliases with a invalid commandAliasesPath boolean.
+     * @description Tests the controllers.warden.loadCommandAliases function, with a invalid commandAliasesPath boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -646,7 +646,7 @@ describe(tst_con.cloadCommandAliases, () => {
     
     /**
      * @function loadCommandAliases_inValidCommandAliasesPathUndefined
-     * @description Tests the controllers.warden function loadCommandAliases with a invalid commandAliasesPath undefined.
+     * @description Tests the controllers.warden.loadCommandAliases function, with a invalid commandAliasesPath undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -663,7 +663,7 @@ describe(tst_con.cloadCommandAliases, () => {
     
     /**
      * @function loadCommandAliases_inValidCommandAliasesPathNaN
-     * @description Tests the controllers.warden function loadCommandAliases with a invalid commandAliasesPath NaN.
+     * @description Tests the controllers.warden.loadCommandAliases function, with a invalid commandAliasesPath NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -688,7 +688,7 @@ describe(tst_con.cloadCommandAliases, () => {
 describe(tst_con.cloadCommandWorkflows, () => {
     /**
      * @function loadCommandWorkflows_validDataString
-     * @description Tests the controllers.warden function loadCommandWorkflows with a valid input.
+     * @description Tests the controllers.warden.loadCommandWorkflows function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -705,7 +705,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
     
     /**
      * @function loadCommandWorkflows_inValidDataWorkflowPathConfigNameString
-     * @description Tests the controllers.warden function loadCommandWorkflows with a invalid workflowPathConfigName string.
+     * @description Tests the controllers.warden.loadCommandWorkflows function, with a invalid workflowPathConfigName string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -722,7 +722,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
     
     /**
      * @function loadCommandWorkflows_inValidWorkflowPathConfigNameInteger
-     * @description Tests the controllers.warden function loadCommandWorkflows with a invalid workflowPathConfigName integer.
+     * @description Tests the controllers.warden.loadCommandWorkflows function, with a invalid workflowPathConfigName integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -739,7 +739,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
     
     /**
      * @function loadCommandWorkflows_inValidWorkflowPathConfigNameBoolean
-     * @description Tests the controllers.warden function loadCommandWorkflows with a invalid workflowPathConfigName boolean.
+     * @description Tests the controllers.warden.loadCommandWorkflows function, with a invalid workflowPathConfigName boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -756,7 +756,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
     
     /**
      * @function loadCommandWorkflows_inValidWorkflowPathConfigNameUndefined
-     * @description Tests the controllers.warden function loadCommandWorkflows with a invalid workflowPathConfigName undefined.
+     * @description Tests the controllers.warden.loadCommandWorkflows function, with a invalid workflowPathConfigName undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -773,7 +773,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
     
     /**
      * @function loadCommandWorkflows_inValidWorkflowPathConfigNameNaN
-     * @description Tests the controllers.warden function loadCommandWorkflows with a invalid workflowPathConfigName NaN.
+     * @description Tests the controllers.warden.loadCommandWorkflows function, with a invalid workflowPathConfigName NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -798,7 +798,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
 describe(tst_con.cexecuteBusinessRules, () => {
     /**
      * @function executeBusinessRules_validDataString
-     * @description Tests the controllers.warden function executeBusinessRules with a valid input.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -816,7 +816,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidDataInputsString
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid inputs string.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid inputs string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -834,7 +834,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidDataBusinessRulesString
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid businessRules string.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid businessRules string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -852,7 +852,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidInputsInteger
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid inputs integer.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid inputs integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -870,7 +870,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidInputsBoolean
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid inputs boolean.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid inputs boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -888,7 +888,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidBusinessRulesInteger
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid businessRules integer.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid businessRules integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -906,7 +906,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidBusinessRulesBoolean
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid businessRules boolean.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid businessRules boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -924,7 +924,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidInputsUndefined
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid inputs undefined.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid inputs undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -942,7 +942,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidInputsNaN
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid inputs NaN.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid inputs NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -960,7 +960,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidBusinessRulesUndefined
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid businessRules undefined.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid businessRules undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -978,7 +978,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
     
     /**
      * @function executeBusinessRules_inValidBusinessRulesNaN
-     * @description Tests the controllers.warden function executeBusinessRules with a invalid businessRules NaN.
+     * @description Tests the controllers.warden.executeBusinessRules function, with a invalid businessRules NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1004,7 +1004,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
 describe(tst_con.cconsoleLog, () => {
     /**
      * @function consoleLog_validDataString
-     * @description Tests the controllers.warden function consoleLog with a valid input.
+     * @description Tests the controllers.warden.consoleLog function, with a valid input.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1022,7 +1022,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidDataInputDataString
-     * @description Tests the controllers.warden function consoleLog with a invalid inputs string.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid inputs string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1040,7 +1040,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidDataInputMetaDataString
-     * @description Tests the controllers.warden function consoleLog with a invalid inputMetaData string.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid inputMetaData string.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1058,7 +1058,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputDataInteger
-     * @description Tests the controllers.warden function consoleLog with a invalid input integer.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid input integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1076,7 +1076,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputDataBoolean
-     * @description Tests the controllers.warden function consoleLog with a invalid input boolean.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid input boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1094,7 +1094,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputMetaDataInteger
-     * @description Tests the controllers.warden function consoleLog with a invalid inputMetaData integer.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid inputMetaData integer.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1112,7 +1112,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputMetaDataBoolean
-     * @description Tests the controllers.warden function consoleLog with a invalid inputMetaData boolean.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid inputMetaData boolean.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1130,7 +1130,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputDataUndefined
-     * @description Tests the controllers.warden function consoleLog with a invalid input undefined.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid input undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1148,7 +1148,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputDataNaN
-     * @description Tests the controllers.warden function consoleLog with a invalid input NaN.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid input NaN.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1166,7 +1166,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputMetaDataUndefined
-     * @description Tests the controllers.warden function consoleLog with a invalid inputMetaData undefined.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid inputMetaData undefined.
      * @author Json Howard
      * @date 2023/08/29
      */
@@ -1184,7 +1184,7 @@ describe(tst_con.cconsoleLog, () => {
     
     /**
      * @function consoleLog_inValidInputMetaDataNaN
-     * @description Tests the controllers.warden function consoleLog with a invalid inputMetaData NaN.
+     * @description Tests the controllers.warden.consoleLog function, with a invalid inputMetaData NaN.
      * @author Json Howard
      * @date 2023/08/29
      */

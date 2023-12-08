@@ -39,7 +39,7 @@ const { bas, wrd } = hayConst;
 describe(tst_con.cgetAttributeName, () => {
   /**
    * @function getAttributeName_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeName function, with a valid input.
    * @author Json Howard
    * @date 2023/04/27
    */
@@ -61,7 +61,7 @@ describe(tst_con.cgetAttributeName, () => {
   
   /**
    * @function getAttributeName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeName with an invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeName function, with an invalid string input.
    * @author Json Howard
    * @date 2023/04/27
    */
@@ -83,7 +83,7 @@ describe(tst_con.cgetAttributeName, () => {
 
   /**
    * @function getAttributeName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeName with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeName function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/27
    */
@@ -105,7 +105,7 @@ describe(tst_con.cgetAttributeName, () => {
 
   /**
    * @function getAttributeName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeName with an invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeName function, with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/27
    */
@@ -126,7 +126,7 @@ describe(tst_con.cgetAttributeName, () => {
 
   /**
    * @function getAttributeName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeName with an invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeName function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/27
    */
@@ -147,7 +147,7 @@ describe(tst_con.cgetAttributeName, () => {
 
   /**
    * @function getAttributeName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeName with an invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeName function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/27
    */
@@ -168,7 +168,7 @@ describe(tst_con.cgetAttributeName, () => {
 
   /**
    * @function getAttributeName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeName with an invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeName function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/27
    */
@@ -197,7 +197,7 @@ describe(tst_con.cgetAttributeName, () => {
 describe(tst_con.cgetAttributeValue, () => {
     /**
      * @function getAttributeValue_validDataString
-     * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeValue with a valid input.
+     * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeValue function, with a valid input.
      * @author Json Howard
      * @date 2023/04/28
      */
@@ -218,7 +218,7 @@ describe(tst_con.cgetAttributeValue, () => {
 
     /**
      * @function getAttributeValue_inValidDataInputDataString
-     * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeValue with an invalid inputData.
+     * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeValue function, with an invalid inputData.
      * @author Json Howard
      * @date 2023/04/28
      */
@@ -239,7 +239,7 @@ describe(tst_con.cgetAttributeValue, () => {
 
     /**
      * @function getAttributeValue_inValidDataInputMetaDataString
-     * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeValue with an invalid inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeValue function, with an invalid inputMetaData.
      * @author Json Howard
      * @date 2023/04/28
      */
@@ -260,7 +260,7 @@ describe(tst_con.cgetAttributeValue, () => {
 
       /**
      * @function getAttributeValue_inValidInputDataInteger
-     * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeValue with an invalid integer inputData.
+     * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeValue function, with an invalid integer inputData.
      * @author Json Howard
      * @date 2023/04/28
      */
@@ -281,7 +281,7 @@ describe(tst_con.cgetAttributeValue, () => {
 
     /**
      * @function getAttributeValue_inValidInputDataBoolean
-     * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeValue with an invalid boolean inputData.
+     * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeValue function, with an invalid boolean inputData.
      * @author Json Howard
      * @date 2023/04/28
      */
@@ -302,7 +302,7 @@ describe(tst_con.cgetAttributeValue, () => {
 
     /**
      * @function getAttributeValue_inValidInputMetaDataInteger
-     * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeValue with an invalid integer inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeValue function, with an invalid integer inputMetaData.
      * @author Json Howard
      * @date 2023/04/28
      */
@@ -323,7 +323,7 @@ describe(tst_con.cgetAttributeValue, () => {
 
     /**
      * @function getAttributeValue_inValidInputMetaDataBoolean
-     * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getAttributeValue with an invalid boolean inputMetaData.
+     * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getAttributeValue function, with an invalid boolean inputMetaData.
      * @author Json Howard
      * @date 2023/04/28
      */
@@ -352,7 +352,7 @@ describe(tst_con.cgetAttributeValue, () => {
 describe(tst_con.cgetValueFromAssignmentOperationString, () => {
   /**
    * @function getValueFromAssignmentOperationString_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getValueFromAssignmentOperationString with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getValueFromAssignmentOperationString function, with a valid input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -373,7 +373,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 
   /**
    * @function getValueFromAssignmentOperationString_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getValueFromAssignmentOperationString with an invalid string inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getValueFromAssignmentOperationString function, with an invalid string inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -394,7 +394,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 
   /**
    * @function getValueFromAssignmentOperationString_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getValueFromAssignmentOperationString with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getValueFromAssignmentOperationString function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -415,7 +415,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 
   /**
    * @function getValueFromAssignmentOperationString_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getValueFromAssignmentOperationString with an invalid integer inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getValueFromAssignmentOperationString function, with an invalid integer inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -436,7 +436,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 
   /**
    * @function getValueFromAssignmentOperationString_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getValueFromAssignmentOperationString with an invalid boolean inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getValueFromAssignmentOperationString function, with an invalid boolean inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -457,7 +457,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 
   /**
    * @function getValueFromAssignmentOperationString_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getValueFromAssignmentOperationString with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getValueFromAssignmentOperationString function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -478,7 +478,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 
   /**
    * @function getValueFromAssignmentOperationString_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getValueFromAssignmentOperationString with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getValueFromAssignmentOperationString function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -507,7 +507,7 @@ describe(tst_con.cgetValueFromAssignmentOperationString, () => {
 describe(tst_con.cgetDataCategoryFromDataContextName, () => {
   /**
    * @function getDataCategoryFromDataContextName_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryFromDataContextName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryFromDataContextName function, with a valid input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -528,7 +528,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 
   /**
    * @function getDataCategoryFromDataContextName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryFromDataContextName with an invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryFromDataContextName function, with an invalid string input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -549,7 +549,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 
   /**
    * @function getDataCategoryFromDataContextName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryFromDataContextName with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryFromDataContextName function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -570,7 +570,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 
   /**
    * @function getDataCategoryFromDataContextName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryFromDataContextName with an invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryFromDataContextName function, with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -591,7 +591,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 
   /**
    * @function getDataCategoryFromDataContextName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryFromDataContextName with an invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryFromDataContextName function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -612,7 +612,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 
   /**
    * @function getDataCategoryFromDataContextName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryFromDataContextName with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryFromDataContextName function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -633,7 +633,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 
   /**
    * @function getDataCategoryFromDataContextName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryFromDataContextName with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryFromDataContextName function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -662,7 +662,7 @@ describe(tst_con.cgetDataCategoryFromDataContextName, () => {
 describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
   /**
    * @function getDataCategoryDetailNameFromDataContextName_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryDetailNameFromDataContextName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryDetailNameFromDataContextName function, with a valid input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -683,7 +683,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
 
   /**
    * @function getDataCategoryDetailNameFromDataContextName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryDetailNameFromDataContextName with an invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryDetailNameFromDataContextName function, with an invalid string input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -704,7 +704,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
   
   /**
    * @function getDataCategoryDetailNameFromDataContextName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryDetailNameFromDataContextName with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryDetailNameFromDataContextName function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -725,7 +725,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
 
   /**
    * @function getDataCategoryDetailNameFromDataContextName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryDetailNameFromDataContextName with an invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryDetailNameFromDataContextName function, with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -746,7 +746,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
 
   /**
    * @function getDataCategoryDetailNameFromDataContextName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryDetailNameFromDataContextName with an invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryDetailNameFromDataContextName function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -767,7 +767,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
 
   /**
    * @function getDataCategoryDetailNameFromDataContextName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryDetailNameFromDataContextName with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryDetailNameFromDataContextName function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -788,7 +788,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
 
   /**
    * @function getDataCategoryDetailNameFromDataContextName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getDataCategoryDetailNameFromDataContextName with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getDataCategoryDetailNameFromDataContextName function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -817,7 +817,7 @@ describe(tst_con.cgetDataCategoryDetailNameFromDataContextName, () => {
 describe(tst_con.cgetKeywordNameFromDataContextName, () => {
   /**
    * @function getKeywordNameFromDataContextName_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getKeywordNameFromDataContextName with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getKeywordNameFromDataContextName function, with a valid input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -838,7 +838,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 
   /**
    * @function getKeywordNameFromDataContextName_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getKeywordNameFromDataContextName with an invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getKeywordNameFromDataContextName function, with an invalid string input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -859,7 +859,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 
   /**
    * @function getKeywordNameFromDataContextName_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getKeywordNameFromDataContextName with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getKeywordNameFromDataContextName function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -880,7 +880,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 
   /**
    * @function getKeywordNameFromDataContextName_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getKeywordNameFromDataContextName with an invalid integer inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getKeywordNameFromDataContextName function, with an invalid integer inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -901,7 +901,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 
   /**
    * @function getKeywordNameFromDataContextName_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getKeywordNameFromDataContextName with an invalid string inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getKeywordNameFromDataContextName function, with an invalid string inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -922,7 +922,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 
   /**
    * @function getKeywordNameFromDataContextName_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getKeywordNameFromDataContextName with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getKeywordNameFromDataContextName function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -943,7 +943,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 
   /**
    * @function getKeywordNameFromDataContextName_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getKeywordNameFromDataContextName with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getKeywordNameFromDataContextName function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -972,7 +972,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
 describe(tst_con.cloadDataFile, () => {
   /**
    * @function loadDataFile_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function loadDataFile with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.loadDataFile function, with a valid input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -994,7 +994,7 @@ describe(tst_con.cloadDataFile, () => {
 
   /**
    * @function loadDataFile_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function loadDataFile with an invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.loadDataFile function, with an invalid string input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1016,7 +1016,7 @@ describe(tst_con.cloadDataFile, () => {
 
   /**
    * @function loadDataFile_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function loadDataFile with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.loadDataFile function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1038,7 +1038,7 @@ describe(tst_con.cloadDataFile, () => {
 
   /**
    * @function loadDataFile_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function loadDataFile with an invalid integer inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.loadDataFile function, with an invalid integer inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1060,7 +1060,7 @@ describe(tst_con.cloadDataFile, () => {
 
   /**
    * @function loadDataFile_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function loadDataFile with an invalid boolean inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.loadDataFile function, with an invalid boolean inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1082,7 +1082,7 @@ describe(tst_con.cloadDataFile, () => {
 
   /**
    * @function loadDataFile_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function loadDataFile with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.loadDataFile function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1104,7 +1104,7 @@ describe(tst_con.cloadDataFile, () => {
 
   /**
    * @function loadDataFile_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function loadDataFile with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.loadDataFile function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1134,7 +1134,7 @@ describe(tst_con.cloadDataFile, () => {
 describe(tst_con.csaveDataFile, () => {
   /**
    * @function saveDataFile_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function saveDataFile with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.saveDataFile function, with a valid input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1155,7 +1155,7 @@ describe(tst_con.csaveDataFile, () => {
  
   /**
    * @function saveDataFile_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function saveDataFile with an invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.saveDataFile function, with an invalid string input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1176,7 +1176,7 @@ describe(tst_con.csaveDataFile, () => {
 
   /**
    * @function saveDataFile_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function saveDataFile with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.saveDataFile function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1197,7 +1197,7 @@ describe(tst_con.csaveDataFile, () => {
 
   /**
    * @function saveDataFile_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function saveDataFile with an invalid integer inputData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.saveDataFile function, with an invalid integer inputData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1218,7 +1218,7 @@ describe(tst_con.csaveDataFile, () => {
 
   /**
    * @function saveDataFile_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function saveDataFile with an invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.saveDataFile function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1239,7 +1239,7 @@ describe(tst_con.csaveDataFile, () => {
 
   /**
    * @function saveDataFile_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function saveDataFile with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.saveDataFile function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1260,7 +1260,7 @@ describe(tst_con.csaveDataFile, () => {
 
   /**
    * @function saveDataFile_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function saveDataFile with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.saveDataFile function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1289,7 +1289,7 @@ describe(tst_con.csaveDataFile, () => {
 describe(tst_con.cgetUserNameFromEmail, () => {
   /**
    * @function getUserNameFromEmail_validDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getUserNameFromEmail with a valid input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getUserNameFromEmail function, with a valid input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1310,7 +1310,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
 
   /**
    * @function getUserNameFromEmail_inValidDataInputDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getUserNameFromEmail with an invalid string input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getUserNameFromEmail function, with an invalid string input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1331,7 +1331,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
 
   /**
    * @function getUserNameFromEmail_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getUserNameFromEmail with an invalid string inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getUserNameFromEmail function, with an invalid string inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1352,7 +1352,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
 
   /**
    * @function getUserNameFromEmail_inValidInputDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getUserNameFromEmail with an invalid integer input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getUserNameFromEmail function, with an invalid integer input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1373,7 +1373,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
 
   /**
    * @function getUserNameFromEmail_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getUserNameFromEmail with an invalid boolean input.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getUserNameFromEmail function, with an invalid boolean input.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1394,7 +1394,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
 
   /**
    * @function getUserNameFromEmail_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getUserNameFromEmail with an invalid integer inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getUserNameFromEmail function, with an invalid integer inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
@@ -1415,7 +1415,7 @@ describe(tst_con.cgetUserNameFromEmail, () => {
 
   /**
    * @function getUserNameFromEmail_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.stringParsing.dataStringParsing function getUserNameFromEmail with an invalid boolean inputMetaData.
+   * @description Tests the businessRules.rules.stringParsing.dataStringParsing.getUserNameFromEmail function, with an invalid boolean inputMetaData.
    * @author Json Howard
    * @date 2023/04/28
    */
