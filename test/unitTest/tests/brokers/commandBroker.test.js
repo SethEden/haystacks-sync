@@ -26,10 +26,10 @@ import { describe, expect } from '@jest/globals';
 
 const { bas, wrd, num } = hayConst;
 
-// bootStrapCommands has no inputs, but it defines one inputData
 /**
  * @function bootStrapCommands
  * @description Tests the positive and negative test cases of the bootStrapCommands function.
+ * @note bootStrapCommands has no inputs, but it defines one inputData
  * @author Json Howard
  * @date 2023/04/13
  */
@@ -115,10 +115,10 @@ describe(tst_con.cbootStrapCommands, () => {
     });
 });
 
-// obj_con.JsonObjectArrayOfStrings_01 value type is not valid, it should be object not array
 /**
  * @function addClientCommands
  * @description Tests the positive and negative test cases of the addClientCommands function.
+ * @note obj_con.JsonObjectArrayOfStrings_01 value type is not valid, it should be object not array
  * @author Json Howard
  * @date 2023/04/13
  */
