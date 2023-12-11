@@ -212,6 +212,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
         expect(returnData).toBe(true);
     });
 });
+
 /**
  * @function loadAllCsvData
  * @description Tests the positive and negative test cases of the loadAllCsvData function.
@@ -625,6 +626,11 @@ describe(tst_con.cprocessCsvData, () => {
 });
 
 /**
+ * @note processXmlData UnitTest is missing.
+ * @note processXmlLeafNode UnitTest is missing.
+ */
+ 
+/**
  * @function preprocessJsonFile
  * @description Tests the positive and negative test cases of the preprocessJsonFile function.
  * @author Json Howard
@@ -804,6 +810,7 @@ describe(tst_con.cwriteJsonDataToFile, () => {
  * @description Tests the positive and negative test cases of the setupDataStorage function.
  * @author Json Howard
  * @date 2023/04/17
+ * @note setupDataStorage function doesn't have any inputs, but inputData is defined in this unitTest function.
  */
 describe(tst_con.csetupDataStorage, () => {
     /**
@@ -1225,6 +1232,7 @@ describe(tst_con.cclearData, () => {
  * @description Tests the positive and negative test cases of the initializeConstantsValidationData function.
  * @author Json Howard
  * @date 2023/04/17
+ * @note initializeConstantsValidationData function doesn't have any inputs, but inputData is defined in this unitTest function.
  */
 describe(tst_con.cinitializeConstantsValidationData, () => {
     /**
@@ -1552,3 +1560,13 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
         expect(D[sys.cConstantsValidationData][contextName]).toBeTruthy();
     });
 });
+
+/**
+ * @note getDataCategoryFromContextName function is not defined.
+ * @note getDataCategoryDetailNameFromContextName function is not defined.
+ * @note extractDataFromPapaParseObject function is not defined.
+ * @note determineMergeTarget function is not defined.
+ * @note mergeData function is not defined.
+ * @note getDataElement function is not defined.
+ * @note getDataElementCount function is not defined.
+ */
