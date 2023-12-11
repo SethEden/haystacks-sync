@@ -32,6 +32,7 @@ const { sys, wrd, biz } = hayConst;
  * @description Tests the positive and negative test cases of the bootStrapBusinessRules function.
  * @author Json Howard
  * @date 2023/04/17
+ * @note bootStrapBusinessRules doesn't have any inputs, but inputData is defined in this unitTest function.
  */
 describe(tst_con.cbootStrapBusinessRules, () => {
     /**
