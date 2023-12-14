@@ -392,7 +392,8 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
     * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing.validatePatternsThatNeedImplementation function, with a valid data.
     * @author Json Howard
     * @date 2023/04/19
-    */    test(tst_con.cvalidatePatternsThatNeedImplementation_validDataString, () => {
+    */    
+   test(tst_con.cvalidatePatternsThatNeedImplementation_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = '';

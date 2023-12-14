@@ -826,7 +826,8 @@ describe(tst_con.cascertainMatchingElements, () => {
     * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing.ascertainMatchingElements function, with a valid data.
     * @author Json Howard
     * @date 2023/04/21
-    */    test(tst_con.cascertainMatchingElements_validDataString, () => {
+    */    
+   test(tst_con.cascertainMatchingElements_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = obj_con.StringsArray_01;
