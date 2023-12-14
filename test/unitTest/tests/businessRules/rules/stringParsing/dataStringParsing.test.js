@@ -968,6 +968,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
  * @description Tests the positive and negative test cases of the loadDataFile
  * @author Json Howard
  * @date 2023/04/28
+ * @note returnData should be boolean
  */
 describe(tst_con.cloadDataFile, () => {
   /**
