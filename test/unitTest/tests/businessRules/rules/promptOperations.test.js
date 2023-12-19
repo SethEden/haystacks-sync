@@ -31,6 +31,7 @@ const { wrd } = hayConst;
  * @author Json Howard
  * @date 2023/05/06
  * @NOTE Not implemented because we need to experiment with the way to capture the data that is sent to the console
+ * @note inputMetaData is not defined in prompt function.
  */
 describe(tst_con.cprompt, () => {
   /**

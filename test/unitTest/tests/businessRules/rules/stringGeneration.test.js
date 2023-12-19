@@ -520,6 +520,7 @@ describe(tst_con.cgenerateRandomLowerCaseTextByLength, () => {
  * @description Tests the positive and negative test cases of the generateRandomMixedCaseTextWithSpecialCharactersByLength
  * @author Json Howard
  * @date 2023/05/06
+ * @note inputMetaData should be defined as The ist of special characters that should be used during the generation process.
  */
 describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () => {
     /**
@@ -682,6 +683,7 @@ describe(tst_con.cgenerateRandomMixedCaseTextWithSpecialCharactersByLength, () =
  * @description Tests the positive and negative test cases of the generateRandomUpperCaseTextWithSpecialCharactersByLength
  * @author Json Howard
  * @date 2023/05/06
+ * @note inputMetaData should be defined as The ist of special characters that should be used during the generation process.
  */
 describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () => {
     /**
@@ -844,6 +846,7 @@ describe(tst_con.cgenerateRandomUpperCaseTextWithSpecialCharactersByLength, () =
  * @description Tests the positive and negative test cases of the generateRandomLowerCaseTextWithSpecialCharactersByLength
  * @author Json Howard
  * @date 2023/05/06
+ * @note inputMetaData should be defined as The ist of special characters that should be used during the generation process.
  */
 describe(tst_con.cgenerateRandomLowerCaseTextWithSpecialCharactersByLength, () => {
     /**
@@ -1654,6 +1657,7 @@ describe(tst_con.cgenerateRandomNumericCodeByLength, () => {
  * @description Tests the positive and negative test cases of the generateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength
  * @author Json Howard
  * @date 2023/05/06
+ * @note inputMetaData should be defined as the list of special characters that should be used during the generation process.
  */
 describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
   /**
@@ -1816,6 +1820,7 @@ describe(tst_con.cgenerateRandomMixedCaseAlphaNumericCodeWithSpecialCharactersBy
  * @description Tests the positive and negative test cases of the generateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength
  * @author Json Howard
  * @date 2023/05/08
+ * @note inputMetaData should be defined as the list of special characters that should be used during the generation process.
  */
 describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
   /**
@@ -1978,6 +1983,7 @@ describe(tst_con.cgenerateRandomUpperCaseAlphaNumericCodeWithSpecialCharactersBy
  * @description Tests the positive and negative test cases of the generateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength
  * @author Json Howard
  * @date 2023/05/08
+ * @note inputMetaData should be defined as the list of special characters that should be used during the generation process.
  */
 describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersByLength, () => {
   /**
@@ -2140,6 +2146,7 @@ describe(tst_con.cgenerateRandomLowerCaseAlphaNumericCodeWithSpecialCharactersBy
  * @description Tests the positive and negative test cases of the generateRandomSpecialCharacterCodeByLength
  * @author Json Howard
  * @date 2023/05/08
+ * @note inputMetaData should be defined as the list of special characters that should be used during the generation process.
  */
 describe(tst_con.cgenerateRandomSpecialCharacterCodeByLength, () => {
   /**
@@ -2793,6 +2800,13 @@ describe(tst_con.cgenerateInvalidEmail, () => {
     expect(returnData).toBeDefined();
   });
 });
+
+/**
+ * @note generateValidEmailWithSpecificSuffixAndDomainName is not defined.
+ * @note generateRandomValidEmail is not defined.
+ * @note generateInvalidEmailWithSpecificSuffixAndDomainName is not defined.
+ * @note generateRandomInvalidEmail is not defined.
+ */
 
 /**
  * @function generateRandomBrightColor

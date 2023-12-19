@@ -1028,7 +1028,8 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
    * @description Tests the businessRules.rules.lexicalAnalyzer.removeStringLiteralTagsFromArray function, with a valid input.
    * @author Json Howard
    * @date 2023/05/05
-   */  test(tst_con.cremoveStringLiteralTagsFromArray_validDataString, () => {
+   */  
+  test(tst_con.cremoveStringLiteralTagsFromArray_validDataString, () => {
     // Arrange
     let inputData = [wrd.chello + wrd.cworld];
     let inputMetaData = '';

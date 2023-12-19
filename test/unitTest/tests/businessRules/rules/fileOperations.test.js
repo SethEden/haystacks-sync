@@ -686,10 +686,15 @@ describe(tst_con.cwriteJsonData, () => {
 });
 
 /**
+ * @note loadAsciiFileFromPath unitTest function is not defined.
+ */
+
+/**
  * @function readDirectoryContents
  * @description Tests the positive and negative test cases of the readDirectoryContents
  * @author Json Howard
  * @date 2023/05/03
+ * @note inputMetaData is not used on this readDirectoryContents function.
  */
 describe(tst_con.creadDirectoryContents, () => {
   /**
@@ -1924,6 +1929,7 @@ describe(tst_con.ccreateZipArchive, () => {
  * @description Tests the positive and negative test cases of the cleanRootPath
  * @author Json Howard
  * @date 2023/05/03
+ * @note inputData and inputMetaData are not defined in that cleanRootPath function.
  */
 describe(tst_con.ccleanRootPath, () => {
   /**
