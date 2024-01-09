@@ -39,6 +39,7 @@ const { bas, cfg, phn, wrd, gen } = hayConst;
  * @description Tests the positive and negative test cases of the saveConfiguration
  * @author Json Howard
  * @date 2023/05/08
+ * @note inputData is not used for this function.
  */
 describe(tst_con.csaveConfiguration, () => {
   /**
@@ -254,37 +255,37 @@ describe(tst_con.cchangeConfigurationSetting, () => {
   });
 });
 
-// /**
-//  * @function listConfigurationThemes
-//  * @description Tests the positive and negative test cases of the listConfigurationThemes
-//  * @author Json Howard
-//  * @date 2023/05/08
-//  * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
-//  */
-// describe(tst_con.clistConfigurationThemes, () => {
-//   /**
-//    * @function listConfigurationThemes_validDataString
-//    * @description Tests the commandsBlob.commands.configuration function listConfigurationThemes with a valid input.
-//    * @author Json Howard
-//    * @date 2023/05/08
-//    * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
-//    */
-//   test(tst_con.clistConfigurationThemes_validDataString, () => {
-//     // Arrange
-//     let inputData = '';
-//     let inputMetaData = '';
-//     rulesLibrary.initRulesLibrary();
+/**
+ * @function listConfigurationThemes
+ * @description Tests the positive and negative test cases of the listConfigurationThemes
+ * @author Json Howard
+ * @date 2023/05/08
+ * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+ */
+describe(tst_con.clistConfigurationThemes, () => {
+  /**
+   * @function listConfigurationThemes_validDataString
+   * @description Tests the commandsBlob.commands.configuration function listConfigurationThemes with a valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+   */
+  test(tst_con.clistConfigurationThemes_validDataString, () => {
+    // Arrange
+    let inputData = '';
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-//     // Act    
-//     let returnData = configuration.listConfigurationThemes(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act    
+    let returnData = configuration.listConfigurationThemes(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy(); //[true, true]
-//   });
-// });
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, true]
+  });
+});
 
 /**
  * @function changeDebugConfigurationTheme

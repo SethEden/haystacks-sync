@@ -241,6 +241,7 @@ describe(tst_con.cechoCommand, () => {
  * @description Tests the positive and negative test cases of the exit
  * @author Json Howard
  * @date 2023/08/22
+ * @note inputData is not used for this function
 */
 describe(tst_con.cexit, () => {
     /**
@@ -1066,6 +1067,7 @@ describe(tst_con.cname, () => {
  * @author Seth Hollingsead
  * @date 2023/09/19
  * @NOTE Unsure how to test this?!
+ * @note inputData and inputMetaData are not used for this function.
  */
 describe(tst_con.cclearScreen, () => {
     /**

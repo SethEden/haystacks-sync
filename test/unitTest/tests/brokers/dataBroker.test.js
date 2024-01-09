@@ -26,7 +26,7 @@ import { basePath } from '../utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { sys, wrd, num, bas, gen } = hayConst;
 

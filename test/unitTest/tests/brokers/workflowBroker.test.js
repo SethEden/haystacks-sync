@@ -31,7 +31,7 @@ import * as tst_con from '../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { sys, wrd, cfg } = hayConst;
 

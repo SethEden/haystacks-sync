@@ -35,6 +35,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the printDataHive
  * @author Json Howard
  * @date 2023/08/18
+ * @note inputData type should be array<boolean|string|integer>
 */
 describe(tst_con.cprintDataHive, () => {
     /**
