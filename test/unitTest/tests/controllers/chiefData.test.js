@@ -1282,6 +1282,9 @@ describe(tst_con.csetupAllJsonConfigData, () => {
 });
 
 /**
+ * @note initializeConstantsValidationData is not exist.
+ */
+/**
  * @function addConstantsValidationData
  * @description Tests the positive and negative test cases of the addConstantsValidationData
  * @author Json Howard

@@ -236,3 +236,8 @@ describe(tst_con.csetupConfiguration, () => {
         expect(returnData).toBeTruthy();
     });
 });
+
+/**
+ * @note setupConfiguration is not exist.
+ * @note parseLoadedConfigurationData is not exist.
+ */

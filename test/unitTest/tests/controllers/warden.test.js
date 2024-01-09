@@ -794,6 +794,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
  * @description Tests the positive and negative test cases of the executeBusinessRules
  * @author Json Howard
  * @date 2023/08/29
+ * @note inputs and businessRules should be array.
 */
 describe(tst_con.cexecuteBusinessRules, () => {
     /**
@@ -994,6 +995,13 @@ describe(tst_con.cexecuteBusinessRules, () => {
         expect(returnData).toBeTruthy();
     });
 });
+
+/**
+ * @note enqueueCommand
+ * @note processCommandQueue
+ * @note setConfigurationSetting
+ * @note getConfigurationSetting
+ */
 
 /**
  * @function consoleLog

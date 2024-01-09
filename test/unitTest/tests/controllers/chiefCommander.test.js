@@ -376,6 +376,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
  * @description Tests the positive and negative test cases of the enqueueCommand
  * @author Json Howard
  * @date 2023/08/22
+ * @note command should be string.
 */
 describe(tst_con.cenqueueCommand, () => {
     /**
