@@ -255,6 +255,7 @@ describe(tst_con.cdequeue, () => {
  * @description Tests the positive and negative test cases of the enqueue
  * @author Json Howard
  * @date 2023/09/05
+ * @note value should be string.
 */
 describe(tst_con.cenqueue, () => {
     /**
@@ -1107,6 +1108,7 @@ describe(tst_con.cqueueContents, () => {
  * @description Tests the positive and negative test cases of the queuePrint
  * @author Json Howard
  * @date 2023/09/05
+ * @note queue.queuePrint is void function, can't get returnData.
 */
 describe(tst_con.cqueuePrint, () => {
     /**

@@ -36,6 +36,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the initStack
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.initStack is void function, can't get returnData.
 */
 describe(tst_con.cinitStack, () => {
     /**
@@ -146,6 +147,7 @@ describe(tst_con.cinitStack, () => {
  * @description Tests the positive and negative test cases of the clearStack
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.clearStack is void function, can't get returnData.
 */
 describe(tst_con.cclearStack, () => {
     /**
@@ -256,6 +258,7 @@ describe(tst_con.cclearStack, () => {
  * @description Tests the positive and negative test cases of the push
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.push is void function, can't get returnData.
 */
 describe(tst_con.cpush, () => {
     /**
@@ -998,6 +1001,7 @@ describe(tst_con.ccontains, () => {
  * @description Tests the positive and negative test cases of the print
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.print is void function, can't get returnData.
 */
 describe(tst_con.cprint, () => {
     /**
