@@ -34,6 +34,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the initFramework
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.initFramework is void function, can't get returnData.
 */
 describe(tst_con.cinitFramework, () => {
     /**
@@ -138,3 +139,18 @@ describe(tst_con.cinitFramework, () => {
         expect(returnData).toBeTruthy();
     });
 });
+/**
+ * @note mergeClientBusinessRules is not exits.
+ * @note mergeClientCommands is not exits.
+ * @note loadCommandAliases is not exits.
+ * @note loadCommandWorkflows is not exits.
+ * @note executeBusinessRules is not exits.
+ * @note enqueueCommand is not exits.
+ * @note isCommandQueueEmpty is not exits.
+ * @note processCommandQueue is not exits.
+ * @note setConfigurationSetting is not exits.
+ * @note getConfigurationSetting is not exits.
+ * @note consoleLog is not exits.
+ */
+
+
