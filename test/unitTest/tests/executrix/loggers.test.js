@@ -37,6 +37,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the consoleLog
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.consoleLog is void function, can't get returnData.
 */
 describe(tst_con.cconsoleLog, () => {
     /**
@@ -243,6 +244,7 @@ describe(tst_con.cconsoleLog, () => {
  * @description Tests the positive and negative test cases of the consoleTableLog
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.consoleTableLog is void function, can't get returnData.
 */
 describe(tst_con.cconsoleTableLog, () => {
     /**
@@ -593,6 +595,7 @@ describe(tst_con.cconsoleTableLog, () => {
  * @description Tests the positive and negative test cases of the constantsValidationSummaryLog
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.constantsValidationSummaryLog is void function, can't get returnData.
 */
 describe(tst_con.cconstantsValidationSummaryLog, () => {
     /**
@@ -793,6 +796,12 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         expect(returnData).toBeTruthy();
     });
 });
+
+/**
+ * @note consoleLogProcess is not exist.
+ * @note validMessage is not exist.
+ * @note parseClassPath is not exit.
+ */
 
 /**
  * @function getLogFileNameAndPath
@@ -1005,6 +1014,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
  * @description Tests the positive and negative test cases of the printMessageToFile
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.printMessageToFile is void function, can't get returnData.
 */
 describe(tst_con.cprintMessageToFile, () => {
     /**

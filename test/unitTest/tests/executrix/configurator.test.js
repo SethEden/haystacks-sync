@@ -1012,3 +1012,8 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         expect(returnData).toBeTruthy();
     });
 });
+
+/**
+ * @note getParentConfigurationNamespaceObject is not exist.
+ * @note getConfigurationNamespaceObject is not exist.
+ */

@@ -35,6 +35,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the colorizeMessageSimple
  * @author Json Howard
  * @date 2023/08/29
+ * @note colorArray should be array<integers>
 */
 
 describe(tst_con.ccolorizeMessageSimple, () => {
@@ -901,6 +902,7 @@ describe(tst_con.ccolorizeMessage, () => {
  * @description Tests the positive and negative test cases of the aggregateStyleSetting
  * @author Json Howard
  * @date 2023/08/29
+ * @note defaultColorArray should be array<integer>
 */
 describe(tst_con.caggregateStyleSetting, () => {
     /**
@@ -1350,7 +1352,6 @@ describe(tst_con.caggregateStyleSetting, () => {
  * @author Json Howard
  * @date 2023/08/29
 */
-
 describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     /**
      * @function getFontStyleSettingsFromSetting_validDataString
@@ -1460,6 +1461,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
  * @description Tests the positive and negative test cases of the getColorStyleSettingFromSetting
  * @author Json Howard
  * @date 2023/08/29
+ * @note defaultColorArray should be array<integer>
 */
 describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     /**
@@ -1666,6 +1668,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
  * @description Tests the positive and negative test cases of the getNamedColorData
  * @author Json Howard
  * @date 2023/08/29
+ * @note defaultColorArray should be array<integer>
 */
 describe(tst_con.cgetNamedColorData, () => {
     /**
