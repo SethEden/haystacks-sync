@@ -156,7 +156,7 @@ function getAllWorkflows(workflowDataStructure) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cworkflowDataStructureIs + JSON.stringify(workflowDataStructure));
   let allWorkflows = false;
   let internalWorkflowDataStructure;
-  if (workflowDataStructure === undefined) {
+  if (workflowDataStructure === undefined && D[sys.cCommandWorkflows]) {
     internalWorkflowDataStructure = JSON.parse(JSON.stringify(D[sys.cCommandWorkflows]));
   } else {
     internalWorkflowDataStructure = JSON.parse(JSON.stringify(workflowDataStructure));

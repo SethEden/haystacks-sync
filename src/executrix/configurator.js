@@ -45,9 +45,11 @@ function setConfigurationSetting(configurationNamespace, configurationName, conf
   // console.log(`configurationNamespace is: ${configurationNamespace}`);
   // console.log(`configurationName is: ${configurationName}`);
   // console.log(`configurationValue is: ${configurationValue}`);
-  let namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
-  if (namespaceConfigObject) {
-    namespaceConfigObject[`${configurationNamespace}.${configurationName}`] = configurationValue;
+  if (typeof configurationNamespace === wrd.cString) {
+    let namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
+    if (namespaceConfigObject) {
+      namespaceConfigObject[`${configurationNamespace}.${configurationName}`] = configurationValue;
+    }
   }
   // console.log(`END ${namespacePrefix}${functionName} function`);
 }
@@ -70,7 +72,8 @@ function getConfigurationSetting(configurationNamespace, configurationName) {
   // console.log(`configurationName is: ${configurationName}`);
   let returnConfigurationValue;
   let namespaceConfigObject = undefined;
-  namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
+  if (typeof configurationNamespace === wrd.cString)
+    namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
   if (namespaceConfigObject) {
     if (configurationName) {
       if (configurationName.includes(bas.cAt) && configurationName.indexOf(bas.cAt) === 0) {
@@ -101,8 +104,10 @@ function processConfigurationNameRules(fullyQualifiedName) {
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
   // console.log(`fullyQualifiedName is: ${fullyQualifiedName}`);
   let returnValue;
-  let fullyQualifiedNameArray = fullyQualifiedName.split(bas.cDot);
-  returnValue = fullyQualifiedNameArray[fullyQualifiedNameArray.length - 1];
+  if (typeof fullyQualifiedName === wrd.cString) {
+    let fullyQualifiedNameArray = fullyQualifiedName.split(bas.cDot);
+    returnValue = fullyQualifiedNameArray[fullyQualifiedNameArray.length - 1];
+  }
   // console.log(`returnValue is: ${returnValue}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return returnValue;

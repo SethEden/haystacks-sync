@@ -17,7 +17,7 @@
 
 // Internal imports
 import characterArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/characterArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 

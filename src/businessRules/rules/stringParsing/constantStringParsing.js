@@ -49,7 +49,7 @@ function validateConstantsDataValidation(inputData, inputMetaData) {
   let returnData = false;
   let foundAFailure = false;
   let processed = false;
-  if (inputData && inputMetaData) {
+  if (inputData && typeof inputData === wrd.cString && inputMetaData) {
     // Scanning constants phase 1 validation data for file:
     console.log(msg.cScanningConstantsValidationPhase1Message + inputData);
     let inputFilePath = path.resolve(inputData);
@@ -182,7 +182,7 @@ function determineSuggestedConstantsValidationLineOfCode(inputData, inputMetaDat
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData && inputMetaData) {
+  if (inputData && typeof inputData === wrd.cString && inputMetaData) {
     // Input: cZZTopInternationalSuccess
     // Output: {Name: 'cZZTopInternationalSuccess', Actual: wrd.cZZTopInternationalSuccess, Expected: 'ZZTopInternationalSuccess'}
     if (inputData.charAt(0) === bas.cc) {
@@ -570,7 +570,7 @@ function constantsOptimizedFulfillmentSystem(inputData, inputMetaData) {
   let returnData = '';
   let constantType = '';
   let constantName = '';
-  if (inputData) {
+  if (inputData && typeof inputData == wrd.cString) {
     if (doesConstantExist(inputData, '') === false) {
       returnData = constantsOptimizedFulfillmentSystem(inputData.substring(0, inputData.length - 1), inputMetaData);
     } else {

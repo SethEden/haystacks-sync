@@ -43,7 +43,8 @@ function getNamedThemes() {
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   let themesNames = [];
   let frameworkThemesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath);
-  frameworkThemesPath = path.resolve(frameworkThemesPath);
+  if (typeof frameworkThemesPath === wrd.cString)
+    frameworkThemesPath = path.resolve(frameworkThemesPath);
   themesNames = ruleBroker.processRules([frameworkThemesPath, ''], [biz.cgetDirectoryList]);
   // themesNames is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cthemesNamesIs + JSON.stringify(themesNames));
@@ -70,13 +71,17 @@ function getNamedThemePath(themeName) {
   let themePath = false;
   let frameworkThemesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath);
   frameworkThemesPath = path.resolve(frameworkThemesPath);
-  for (const element of themesNames) {
-    if (element.toUpperCase() === themeName.toUpperCase()) {
-      themePath = frameworkThemesPath + bas.cDoubleForwardSlash + element + bas.cDoubleForwardSlash;
-      themePath = path.resolve(themePath);
-      break;
-    }
-  } // End-for (const element of themesNames)
+  if (Array.isArray(themesNames)) {
+    for (const element of themesNames) {
+      if (typeof themeName === wrd.cString) {
+        if (element.toUpperCase() === themeName.toUpperCase()) {
+          themePath = frameworkThemesPath + bas.cDoubleForwardSlash + element + bas.cDoubleForwardSlash;
+          themePath = path.resolve(themePath);
+          break;
+        }
+      }
+    } // End-for (const element of themesNames)
+  }
   // themePath is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cthemePathIs + themePath);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);

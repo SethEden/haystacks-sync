@@ -280,30 +280,32 @@ function loadAllJsonData(filesToLoad, contextName) {
 
   // Before we load all configuration data we need to FIRST load all the system configuration settings.
   // There will be a system configuration setting that will tell us if we need to load the debug settings or not.
-  for (const element1 of filesToLoad) {
-    let fileToLoad = element1;
-    // console.log('fileToLoad is: ' + fileToLoad);
-    if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName)) {
-      let dataFile = preprocessJsonFile(fileToLoad);
+  if (Array.isArray(filesToLoad)) {
+    for (const element1 of filesToLoad) {
+      let fileToLoad = element1;
+      // console.log('fileToLoad is: ' + fileToLoad);
+      if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName)) {
+        let dataFile = preprocessJsonFile(fileToLoad);
 
-      // NOTE: In this case we have just loaded either the framework configuration data or the application configuration data,
-      // and nothing else. So we can just assign the data to the multiMergedData.
-      // We will need to merge all the other files,
-      // but there will be a setting here we should examine to determine if the rest of the data should even be load or not.
-      // We will have a new setting that determines if all the extra debug settings should be loaded or not.
-      // This way the application performance can be seriously optimized to greater levels of lean performance.
-      // Adding all that extra debugging configuration settings can affect load times, and application performance to a much lesser degree.
-      multiMergedData[wrd.csystem] = {};
-      multiMergedData[wrd.csystem] = dataFile;
-      foundSystemData = true;
-    } // End-if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName))
-    if (foundSystemData === true) {
-      break;
-    }
-  } // End-for (const element of filesToLoad)
+        // NOTE: In this case we have just loaded either the framework configuration data or the application configuration data,
+        // and nothing else. So we can just assign the data to the multiMergedData.
+        // We will need to merge all the other files,
+        // but there will be a setting here we should examine to determine if the rest of the data should even be load or not.
+        // We will have a new setting that determines if all the extra debug settings should be loaded or not.
+        // This way the application performance can be seriously optimized to greater levels of lean performance.
+        // Adding all that extra debugging configuration settings can affect load times, and application performance to a much lesser degree.
+        multiMergedData[wrd.csystem] = {};
+        multiMergedData[wrd.csystem] = dataFile;
+        foundSystemData = true;
+      } // End-if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName))
+      if (foundSystemData === true) {
+        break;
+      }
+    } // End-for (const element of filesToLoad)
+  }
 
   // Now we need to determine if we should load the rest of the data.
-  if (configurator.getConfigurationSetting(wrd.csystem, cfg.cdebugSettings) === true) {
+  if (configurator.getConfigurationSetting(wrd.csystem, cfg.cdebugSettings) === true && Array.isArray(filesToLoad)) {
     for (const element2 of filesToLoad) {
       let fileToLoad = element2;
       if (!fileToLoad.includes(systemConfigFileName) && !fileToLoad.includes(applicationConfigFileName)

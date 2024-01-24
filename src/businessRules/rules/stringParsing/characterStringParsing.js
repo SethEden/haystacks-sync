@@ -398,7 +398,7 @@ function isFirstCharacterLowerCase(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cString) {
     returnData = gen.cLowerCaseEnglishAlphabet.includes(inputData.charAt(0));
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);

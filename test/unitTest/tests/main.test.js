@@ -13,7 +13,7 @@
  * @requires module:testData/stringParsingUtilities
  * @requires module:testData/main
  * @requires module:test.constants
- * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
+ * @requires {@link https://www.npmjs.com/package/@haymains/constants|@haymains/constants}
  * @requires {@link https://www.npmjs.com/package/jest|jest}
  * @author Json Howard
  * @date 2023/09/05
@@ -21,7 +21,8 @@
  */
 
 // Internal imports
-import * as tst_con from '../constants/test.constants.js';
+import main from '../../../src/main.js';
+import * as tst_con from './constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -34,7 +35,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the initFramework
  * @author Json Howard
  * @date 2023/09/05
- * @note stack.initFramework is void function, can't get returnData.
+ * @note main.initFramework is void function, can't get returnData.
 */
 describe(tst_con.cinitFramework, () => {
     /**
@@ -48,7 +49,7 @@ describe(tst_con.cinitFramework, () => {
         let clientConfiguration = wrd.cHello;
 
         // Act
-        let returnData = stack.initFramework(clientConfiguration);
+        let returnData = main.initFramework(clientConfiguration);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -65,7 +66,7 @@ describe(tst_con.cinitFramework, () => {
         let clientConfiguration = "";
 
         // Act
-        let returnData = stack.initFramework(clientConfiguration);
+        let returnData = main.initFramework(clientConfiguration);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -82,7 +83,7 @@ describe(tst_con.cinitFramework, () => {
         let clientConfiguration = num.c123;
 
         // Act
-        let returnData = stack.initFramework(clientConfiguration);
+        let returnData = main.initFramework(clientConfiguration);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -99,7 +100,7 @@ describe(tst_con.cinitFramework, () => {
         let clientConfiguration = false;
 
         // Act
-        let returnData = stack.initFramework(clientConfiguration);
+        let returnData = main.initFramework(clientConfiguration);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -116,7 +117,7 @@ describe(tst_con.cinitFramework, () => {
         let clientConfiguration = undefined;
 
         // Act
-        let returnData = stack.initFramework(clientConfiguration);
+        let returnData = main.initFramework(clientConfiguration);
 
         // Assert
         expect(returnData).toBeTruthy();
@@ -133,7 +134,7 @@ describe(tst_con.cinitFramework, () => {
         let clientConfiguration = NaN;
 
         // Act
-        let returnData = stack.initFramework(clientConfiguration);
+        let returnData = main.initFramework(clientConfiguration);
 
         // Assert
         expect(returnData).toBeTruthy();

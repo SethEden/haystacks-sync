@@ -261,7 +261,9 @@ function scanDirectoryContents(inputData, inputMetaData) {
   // filesLimit is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cfilesLimitIs + filesLimit);
   let filesFound = [];
-  let directory = path.resolve(inputData);
+  let directory = '';
+  if (typeof inputData === wrd.cString)
+    directory = path.resolve(inputData);
   enableFilesListLimit = enableLimit;
   filesListLimit = filesLimit;
   readDirectorySynchronously(directory, '');

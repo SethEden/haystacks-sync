@@ -394,7 +394,8 @@ function utilitiesReplaceCharacterWithCharacter(inputData, inputMetaData) {
     if (Array.isArray(inputData) === true) {
       inputData = inputData[0];
     }
-    returnData = inputData.replaceAll(character2Find, character2Replace);
+    if (typeof inputData === wrd.cString)
+      returnData = inputData.replaceAll(character2Find, character2Replace);
   }
   // console.log(`returnData is: ${JSON.stringify(returnData)}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);

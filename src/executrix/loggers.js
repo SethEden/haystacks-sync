@@ -115,7 +115,8 @@ function consoleTableLog(classPath, tableData, columnNames) {
   // console.log(`classPath is: ${classPath}`);
   // console.log(`tableData is: ${JSON.stringify(tableData)}`);
   // console.log(`columnNames is: ${JSON.stringify(columnNames)}`);
-  console.table(tableData, columnNames);
+  if (Array.isArray(tableData) && Array.isArray(columnNames))
+    console.table(tableData, columnNames);
   // console.log(`END ${namespacePrefix}${functionName} function`);
 }
 
@@ -355,28 +356,30 @@ function printMessageToFile(file, message) {
   // console.log(`file is: ${file}`);
   // console.log(`message is: ${message}`);
   let dateTimeStamp = '';
-  if (!file.includes('undefined')) { // NOTE: This usage of the string undefined, must be hard-coded here.
-    // '!file.includes(undefined)'
-    // console.log(msg.cprintMessageToFile01);
-    if (configurator.getConfigurationSetting(wrd.csystem, cfg.clogFileEnabled) === true) {
-      // console.log('LogFileEnabled = true');
-      if (message) {
-        message = colorizer.removeFontStyles(message);
+  if (typeof file === wrd.cString) {
+    if (!file.includes('undefined')) { // NOTE: This usage of the string undefined, must be hard-coded here.
+      // '!file.includes(undefined)'
+      // console.log(msg.cprintMessageToFile01);
+      if (configurator.getConfigurationSetting(wrd.csystem, cfg.clogFileEnabled) === true) {
+        // console.log('LogFileEnabled = true');
+        if (message) {
+          message = colorizer.removeFontStyles(message);
+        }
+        if (configurator.getConfigurationSetting(wrd.csystem, cfg.cincludeDateTimeStampInLogFiles) === true) {
+          // Individual messages need to have a time stamp on them. So lets sign the message with a time stamp.
+          dateTimeStamp = ruleBroker.processRules([gen.cYYYY_MM_DD_HH_mm_ss_SSS, ''], [biz.cgetNowMoment]);
+          // console.log(`dateTimeStamp is: ${dateTimeStamp}`);
+          message = `${dateTimeStamp}: ${message}`;
+        }
+        ruleBroker.processRules([file, message], [biz.cappendMessageToFile]);
+      } else {
+        // 'ERROR: Failure to log to file: '
+        console.log(msg.cprintMessageToFile02 + file);
       }
-      if (configurator.getConfigurationSetting(wrd.csystem, cfg.cincludeDateTimeStampInLogFiles) === true) {
-        // Individual messages need to have a time stamp on them. So lets sign the message with a time stamp.
-        dateTimeStamp = ruleBroker.processRules([gen.cYYYY_MM_DD_HH_mm_ss_SSS, ''], [biz.cgetNowMoment]);
-        // console.log(`dateTimeStamp is: ${dateTimeStamp}`);
-        message = `${dateTimeStamp}: ${message}`;
-      }
-      ruleBroker.processRules([file, message], [biz.cappendMessageToFile]);
     } else {
-      // 'ERROR: Failure to log to file: '
-      console.log(msg.cprintMessageToFile02 + file);
+      // 'ERROR: Log File includes undefined.'
+      console.log(msg.cprintMessageToFile03);
     }
-  } else {
-    // 'ERROR: Log File includes undefined.'
-    console.log(msg.cprintMessageToFile03);
   }
   // console.log(`END ${namespacePrefix}${functionName} function`);
 }

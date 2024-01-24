@@ -81,9 +81,11 @@ function determineThemeDebugConfigFilesToLoad(themeConfigPathName) {
   let themeConfigFilesToLoad = false;
   if (themeConfigPathName) {
     let themeConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, themeConfigPathName);
-    themeConfigDataPath = path.resolve(themeConfigDataPath);
-    themeConfigFilesToLoad = dataBroker.scanDataPath(themeConfigDataPath);
-    configurator.setConfigurationSetting(wrd.csystem, cfg.cthemeConfigFiles, themeConfigFilesToLoad);
+    if (typeof themeConfigDataPath === wrd.cString) {
+      themeConfigDataPath = path.resolve(themeConfigDataPath);
+      themeConfigFilesToLoad = dataBroker.scanDataPath(themeConfigDataPath);
+      configurator.setConfigurationSetting(wrd.csystem, cfg.cthemeConfigFiles, themeConfigFilesToLoad);
+    }
   } // End-if (themeConfigPathName)
   // themeConfigFilesToLoad is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cthemeConfigFilesToLoadIs + JSON.stringify(themeConfigFilesToLoad));
@@ -156,7 +158,8 @@ function setupAllCsvData(dataPathConfigurationName, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   let loadedAndMergedDataAllFiles = {};
   let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
-  dataPath = path.resolve(dataPath);
+  if (typeof dataPath === wrd.cString)
+    dataPath = path.resolve(dataPath);
   // dataPath is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
   let filesToLoad = dataBroker.scanDataPath(dataPath);
@@ -187,16 +190,18 @@ function setupAllXmlData(dataPathConfigurationName, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   let loadedAndMergedDataAllFiles = {};
   let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
-  dataPath = path.resolve(dataPath);
-  // dataPath is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
-  let filesToLoad = dataBroker.scanDataPath(dataPath);
-  // filesToLoad is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
-  loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
-  // loadedAndMergedDataAllFiles is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
-  loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  if (typeof dataPath === wrd.cString) {
+    dataPath = path.resolve(dataPath);
+    // dataPath is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
+    let filesToLoad = dataBroker.scanDataPath(dataPath);
+    // filesToLoad is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
+    loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
+    // loadedAndMergedDataAllFiles is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
+    loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  }
   return loadedAndMergedDataAllFiles;
 }
 

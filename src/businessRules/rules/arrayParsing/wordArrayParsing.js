@@ -43,7 +43,8 @@ function convertCamelCaseStringToArray(inputData, inputMetaData) {
   let returnData;
   let caps = [];
   for (let i = 1; i < inputData.length; i++) {
-    if (gen.cUpperCaseEnglishAlphabet.includes(inputData.charAt(i))) { caps.push(i); }
+    if (typeof inputData === wrd.cString)
+      if (gen.cUpperCaseEnglishAlphabet.includes(inputData.charAt(i))) { caps.push(i); }
   } // End-for (let i = 1; i < inputData.length; i++)
   if (caps.length > 0) {
     let last = 0;

@@ -112,7 +112,7 @@ const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + 
       loggers.consoleLog(namespacePrefix + functionName, msg.carrayInputObjectIsNotAnArray);
     } else {
       // eslint-disable-next-line no-extra-boolean-cast
-      if (!!array.find(i => inputMetaData(i, value))) {
+      if ((inputMetaData instanceof Function) && !!array.find(i => inputMetaData(i, value))) {
         // The value was found in the array.
         loggers.consoleLog(namespacePrefix + functionName, msg.cTheValueWasFoundInTheArray);
         returnData = true;

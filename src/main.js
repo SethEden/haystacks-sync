@@ -73,7 +73,8 @@ function initFramework(clientConfiguration) {
  frameworkCommandAliasesPath = frameworkCodeRootPath + sys.cframeworkResourcesCommandAliasesPath;
  frameworkWorkflowsPath = frameworkCodeRootPath + sys.cframeworkResourcesWorkflowsPath;
 
- clientConfiguration[cfg.cframeworkRootPath] = path.resolve(frameworkRootPath);
+ if (typeof frameworkRootPath === wrd.cString)
+   clientConfiguration[cfg.cframeworkRootPath] = path.resolve(frameworkRootPath);
  clientConfiguration[cfg.cframeworkConstantsPath] = hayConst.constantsPath; // frameworkCodeRootPath + sys.cframeworkConstantsPath;
  clientConfiguration[cfg.cappConfigPath] = clientConfiguration[cfg.cappConfigReferencePath];
  clientConfiguration[cfg.cframeworkResourcesPath] = frameworkCodeRootPath + sys.cframeworkResourcesPath;

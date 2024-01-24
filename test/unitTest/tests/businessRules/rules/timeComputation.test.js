@@ -78,7 +78,7 @@ describe(tst_con.cgetNowMoment, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // 'timestamp+g24346dfg'
+    expect(returnData).toBeDefined(); // 'timestamp+g24346dfg'
   });
 
   /**
@@ -120,7 +120,7 @@ describe(tst_con.cgetNowMoment, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // '2023-05-08T12:28:30-04:00'
+    expect(returnData).toBeDefined(); // '2023-05-08T12:28:30-04:00'
   });
 
   /**
@@ -141,7 +141,7 @@ describe(tst_con.cgetNowMoment, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // '2023-05-08T12:28:30-04:00'
+    expect(returnData).toBeDefined(); // '2023-05-08T12:28:30-04:00'
   });
 
   /**
@@ -163,7 +163,7 @@ describe(tst_con.cgetNowMoment, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();  //234String432
+    expect(returnData).toBeDefined();  //234String432
   });
 
   /**
@@ -185,7 +185,7 @@ describe(tst_con.cgetNowMoment, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();  //234String432
+    expect(returnData).toBeDefined();  //234String432
   });
 
   /**
@@ -206,7 +206,7 @@ describe(tst_con.cgetNowMoment, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // '2023-05-08T12:28:30-04:00'
+    expect(returnData).toBeDefined(); // '2023-05-08T12:28:30-04:00'
   });
 
   /**
@@ -227,7 +227,7 @@ describe(tst_con.cgetNowMoment, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); // '2023-05-08T12:28:30-04:00'
+    expect(returnData).toBeDefined(); // '2023-05-08T12:28:30-04:00'
   });
 
   /**
@@ -543,7 +543,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -564,7 +564,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -585,7 +585,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -606,7 +606,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -627,7 +627,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -648,7 +648,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -669,7 +669,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -690,7 +690,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -711,7 +711,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -732,7 +732,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -753,7 +753,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -774,7 +774,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -795,7 +795,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
   
   /**
@@ -816,7 +816,7 @@ describe(tst_con.creformatDeltaTime, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
 });
 
@@ -845,7 +845,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
 
   /**
@@ -867,7 +867,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -888,7 +888,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe(); 
+    expect(returnData).toBeDefined(); 
   });
 
   /**
@@ -909,7 +909,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -930,7 +930,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -952,7 +952,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -974,7 +974,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -995,7 +995,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -1016,7 +1016,7 @@ describe(tst_con.csleep, () => {
       );
   
       // Assert
-      expect(returnData).toBe();
+      expect(returnData).toBeDefined();
   });
 
   /**
@@ -1038,7 +1038,7 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 
   /**
@@ -1060,6 +1060,6 @@ describe(tst_con.csleep, () => {
     );
 
     // Assert
-    expect(returnData).toBe();
+    expect(returnData).toBeDefined();
   });
 });

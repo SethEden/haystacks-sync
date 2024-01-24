@@ -206,24 +206,26 @@ function parseArgumentAsRegularExpression(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = [];
   let regExValue, regExFlags;
-  let regExArray = inputData.split(bas.cColon);
-  for (let k = 0; k < regExArray.length; k++) {
-    if (regExArray[k] === wrd.cregEx || regExArray[k] === wrd.cRegEx) {
-      k++;
-      // regular expression is:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cregularExpressionIs + regExArray[k]);
-      regExValue = regExArray[k];
-      // regExValue is:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cregExValueIs + regExValue);
-    } else if (regExArray[k] === wrd.cflags || regExArray[k] === wrd.cFlags) {
-      k++;
-      // regular expression flags are:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cregularExpressionFlagsAre + regExArray[k]);
-      regExFlags = regExArray[k];
-      // regExFlags is:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cregExFlagsIs + regExFlags);
-    }
-  } // End-for (let k = 0; k < regExArray.length; k++)
+  if (typeof inputData === wrd.cString) {
+    let regExArray = inputData.split(bas.cColon);
+    for (let k = 0; k < regExArray.length; k++) {
+      if (regExArray[k] === wrd.cregEx || regExArray[k] === wrd.cRegEx) {
+        k++;
+        // regular expression is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.cregularExpressionIs + regExArray[k]);
+        regExValue = regExArray[k];
+        // regExValue is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.cregExValueIs + regExValue);
+      } else if (regExArray[k] === wrd.cflags || regExArray[k] === wrd.cFlags) {
+        k++;
+        // regular expression flags are:
+        loggers.consoleLog(namespacePrefix + functionName, msg.cregularExpressionFlagsAre + regExArray[k]);
+        regExFlags = regExArray[k];
+        // regExFlags is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.cregExFlagsIs + regExFlags);
+      }
+    } // End-for (let k = 0; k < regExArray.length; k++)
+  }
   let regularExpression;
   if (regExValue !== undefined && regExFlags === undefined) {
     regularExpression = new RegExp(regExValue);

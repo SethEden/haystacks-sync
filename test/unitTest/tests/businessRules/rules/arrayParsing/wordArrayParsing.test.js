@@ -19,7 +19,7 @@
 // Internal imports
 import wordArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/wordArrayParsing.js';
 import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/wordArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 

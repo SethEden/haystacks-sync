@@ -23,12 +23,14 @@
 // Internal imports
 import dataDirectorate from '../../../../../src/commandsBlob/commands/dataDirectorate.js';
 import * as tst_con from '../../constants/test.constants.js';
+import D from '../../../../../src/structures/data.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
+import dataBroker from '../../../../../src/brokers/dataBroker.js';
 
-const { wrd, num } = hayConst;
+const { wrd, num, sys } = hayConst;
 
 /**
  * @function printDataHive
@@ -622,6 +624,7 @@ describe(tst_con.cclearDataStorage, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = undefined;
+        dataBroker.setupDataStorage();
 
         // Act
         let returnData = dataDirectorate.clearDataStorage(inputData, inputMetaData);

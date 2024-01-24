@@ -86,7 +86,9 @@ function reformatDeltaTime(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  returnData = moment.duration(inputData).format(inputMetaData);
+  if (Number.isInteger(inputData)) {
+    returnData = moment.duration(inputData).format(inputMetaData);
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
