@@ -106,52 +106,54 @@ function analyzeArgument(inputData, inputMetaData) {
   let tertiaryCommandArgsDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.ctertiaryCommandDelimiter);
   let argsArrayContainsOpenBracket = ruleParsing.processRulesInternal([bas.cOpenBracket, inputData], argsArrayContainsCharacterRule);
   let argsArrayContainsCloseBracket = ruleParsing.processRulesInternal([bas.cCloseBracket, inputData], argsArrayContainsCharacterRule);
-  if (inputData.includes(secondaryCommandArgsDelimiter) === true ||
-  inputData.includes(tertiaryCommandArgsDelimiter) === true) {
-    // Check if there are brackets or no brackets.
-    loggers.consoleLog(namespacePrefix + functionName, msg.cCheckIfThereAreBracketsOrNoBrackets);
-    if (argsArrayContainsOpenBracket === false || argsArrayContainsCloseBracket === false) {
-      // Brackets were not found
-      loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsWereNotFound);
-      // Check if there is a regular expression or not.
-      loggers.consoleLog(namespacePrefix + functionName, msg.cCheckIfThereIsRegularExpressionOrNot);
-      if (analyzeForRegularExpression(inputData, '') === true) {
-        // A regular expression was found!
-        loggers.consoleLog(namespacePrefix + functionName, msg.cRegularExpressionWasFound);
-        returnData = parseArgumentAsRegularExpression(inputData, '');
-      } else { // No regular expression, just return the argument as it was passed in, no additional processing required.
-        // No RegExp found!
-        loggers.consoleLog(namespacePrefix + functionName, msg.cNoRegExpFound);
-        returnData = inputData;
+  if (typeof inputData === wrd.cString) {
+    if (inputData.includes(secondaryCommandArgsDelimiter) === true ||
+    inputData.includes(tertiaryCommandArgsDelimiter) === true) {
+      // Check if there are brackets or no brackets.
+      loggers.consoleLog(namespacePrefix + functionName, msg.cCheckIfThereAreBracketsOrNoBrackets);
+      if (argsArrayContainsOpenBracket === false || argsArrayContainsCloseBracket === false) {
+        // Brackets were not found
+        loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsWereNotFound);
+        // Check if there is a regular expression or not.
+        loggers.consoleLog(namespacePrefix + functionName, msg.cCheckIfThereIsRegularExpressionOrNot);
+        if (analyzeForRegularExpression(inputData, '') === true) {
+          // A regular expression was found!
+          loggers.consoleLog(namespacePrefix + functionName, msg.cRegularExpressionWasFound);
+          returnData = parseArgumentAsRegularExpression(inputData, '');
+        } else { // No regular expression, just return the argument as it was passed in, no additional processing required.
+          // No RegExp found!
+          loggers.consoleLog(namespacePrefix + functionName, msg.cNoRegExpFound);
+          returnData = inputData;
+        }
+      } else {
+        // There are Brackets, so treat the argument as an array.
+        // Brackets ARE found!
+        loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsAreFound);
+        returnData = parseArgumentAsArray(inputData, '');
       }
-    } else {
-      // There are Brackets, so treat the argument as an array.
-      // Brackets ARE found!
-      loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsAreFound);
-      returnData = parseArgumentAsArray(inputData, '');
-    }
-  } else { // The inputData does not contain a secondaryCommandArgsDelimiter
-    // NO secondary command argument delimiters.
-    loggers.consoleLog(namespacePrefix + functionName, msg.cNoSecondaryCommandArgumentDelimiters);
-    if (argsArrayContainsOpenBracket === false || argsArrayContainsCloseBracket === false) {
-      // Brackets were not found
-      loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsWereNotFound);
-      // Check if there is a Regular Expression or not.
-      loggers.consoleLog(namespacePrefix + functionName, msg.cCheckIfThereIsRegularExpressionOrNot);
-      if (analyzeForRegularExpression(inputData, '') === true) {
-        // A regular expression was found!
-        loggers.consoleLog(namespacePrefix + functionName, msg.cRegularExpressionWasFound);
-        returnData = parseArgumentAsRegularExpression(inputData, '');
-      } else { // No regular expression, just return the argument as it was passed in, no additional processing required.
-        // NO RegExp found!
-        loggers.consoleLog(namespacePrefix + functionName, msg.cNoRegExpFound);
-        returnData = inputData;
+    } else { // The inputData does not contain a secondaryCommandArgsDelimiter
+      // NO secondary command argument delimiters.
+      loggers.consoleLog(namespacePrefix + functionName, msg.cNoSecondaryCommandArgumentDelimiters);
+      if (argsArrayContainsOpenBracket === false || argsArrayContainsCloseBracket === false) {
+        // Brackets were not found
+        loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsWereNotFound);
+        // Check if there is a Regular Expression or not.
+        loggers.consoleLog(namespacePrefix + functionName, msg.cCheckIfThereIsRegularExpressionOrNot);
+        if (analyzeForRegularExpression(inputData, '') === true) {
+          // A regular expression was found!
+          loggers.consoleLog(namespacePrefix + functionName, msg.cRegularExpressionWasFound);
+          returnData = parseArgumentAsRegularExpression(inputData, '');
+        } else { // No regular expression, just return the argument as it was passed in, no additional processing required.
+          // NO RegExp found!
+          loggers.consoleLog(namespacePrefix + functionName, msg.cNoRegExpFound);
+          returnData = inputData;
+        }
+      } else {
+        // There are Brackets, so treat the argument as an array.
+        // Brackets ARE found!
+        loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsAreFound);
+        returnData = parseArgumentAsArray(inputData, '');
       }
-    } else {
-      // There are Brackets, so treat the argument as an array.
-      // Brackets ARE found!
-      loggers.consoleLog(namespacePrefix + functionName, msg.cBracketsAreFound);
-      returnData = parseArgumentAsArray(inputData, '');
     }
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
@@ -272,8 +274,10 @@ function parseArgumentAsArray(inputData, inputMetaData) {
     argsArrayContainsCloseBracket = ruleParsing.processRulesInternal([bas.cCloseBracket, argumentValue], argsArrayContainsCharacterRule);
     isArray = true;
   } else {
-    argsArrayContainsOpenBracket = argumentValue.includes(bas.cOpenBracket);
-    argsArrayContainsCloseBracket = argumentValue.includes(bas.cCloseBracket);
+    if (typeof argumentValue === wrd.cString) {
+      argsArrayContainsOpenBracket = argumentValue.includes(bas.cOpenBracket);
+      argsArrayContainsCloseBracket = argumentValue.includes(bas.cCloseBracket);
+    }
     isArray = false;
   }
 

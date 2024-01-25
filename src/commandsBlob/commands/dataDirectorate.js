@@ -80,20 +80,22 @@ function printDataHive(inputData, inputMetaData) {
     }
     returnData[1] = leafDataHiveElement;
   } else {
-    if (D[inputData[1]] !== undefined) {
-      // contents are:
-      console.log(inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
-      if (printDataHiveToLogFileConfigSetting === true) {
-        loggers.printMessageToFile(logFilePathAndName, inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
+    if (inputData[1]) {
+      if (D[inputData[1]] !== undefined) {
+        // contents are:
+        console.log(inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
+        if (printDataHiveToLogFileConfigSetting === true) {
+          loggers.printMessageToFile(logFilePathAndName, inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
+        }
+        returnData[1] = D[inputData[1]];
+      } else {
+        // contents of D are:
+        console.log(msg.ccontentsOfDare + JSON.stringify(D));
+        if (printDataHiveToLogFileConfigSetting === true) {
+          loggers.printMessageToFile(logFilePathAndName, msg.ccontentsOfDare + JSON.stringify(D));
+        }
+        returnData[1] = D;
       }
-      returnData[1] = D[inputData[1]];
-    } else {
-      // contents of D are:
-      console.log(msg.ccontentsOfDare + JSON.stringify(D));
-      if (printDataHiveToLogFileConfigSetting === true) {
-        loggers.printMessageToFile(logFilePathAndName, msg.ccontentsOfDare + JSON.stringify(D));
-      }
-      returnData[1] = D;
     }
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));

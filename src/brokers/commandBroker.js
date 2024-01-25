@@ -230,7 +230,7 @@ function searchCommandAlias(commandAliasData, commandAliasName) {
   // commandAliasName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasNameIs + commandAliasName);
   let commandAliasObject = false;
-  if (typeof commandAliasData === wrd.cobject) {
+  if (typeof commandAliasData === wrd.cobject && typeof commandAliasName === wrd.cString) {
     for (let commandAliasEntity in commandAliasData) {
       // commandAliasEntity is:
       loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasEntityIs + JSON.stringify(commandAliasEntity));

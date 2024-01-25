@@ -127,19 +127,21 @@ function processConfigurationNamespaceRules(fullyQualifiedName) {
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
   // console.log(`fullyQualifiedName is: ${fullyQualifiedName}`);
   let returnValue;
-  returnValue = fullyQualifiedName.substr(0, fullyQualifiedName.lastIndexOf(bas.cDot));
-  // console.log('returnValue is: ' + returnValue);
-  if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles)) {
-    // console.log('contains debugFunctions or debugFiles');
-    // We need to strip off the "debugFunctions" & "debugFiles" prefixes along with the pipe that delimits them.
-    // At some point we might need these separate designations, like for the colorizer logic, but for now,
-    // until there is a business need I will keep them unified.
-    // Everything to the right all falls under the designation of "debugSettings"
-    // so that as the base for the namespace tree should work perfectly.
-    let parsedDebugSettingsNamespace = returnValue.split(bas.cPipe);
-    // console.log('parsedDebugSettingsNamespace is: ' + parsedDebugSettingsNamespace);
-    returnValue = parsedDebugSettingsNamespace[1];
-  } // End-if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles))
+  if (typeof fullyQualifiedName === wrd.cString) {
+    returnValue = fullyQualifiedName.substr(0, fullyQualifiedName.lastIndexOf(bas.cDot));
+    // console.log('returnValue is: ' + returnValue);
+    if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles)) {
+      // console.log('contains debugFunctions or debugFiles');
+      // We need to strip off the "debugFunctions" & "debugFiles" prefixes along with the pipe that delimits them.
+      // At some point we might need these separate designations, like for the colorizer logic, but for now,
+      // until there is a business need I will keep them unified.
+      // Everything to the right all falls under the designation of "debugSettings"
+      // so that as the base for the namespace tree should work perfectly.
+      let parsedDebugSettingsNamespace = returnValue.split(bas.cPipe);
+      // console.log('parsedDebugSettingsNamespace is: ' + parsedDebugSettingsNamespace);
+      returnValue = parsedDebugSettingsNamespace[1];
+    } // End-if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles))
+  }
   // console.log(`returnValue is: ${returnValue}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return returnValue;

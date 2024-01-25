@@ -194,22 +194,24 @@ function getLehmerCodeValue(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = '';
-  if (inputData) {
+  if (inputData && Array.isArray(inputData)) {
     let lengthOfInputData = inputData.length;
     for (let i = 0; i < lengthOfInputData; i++) {
       // BEGIN i-th iteration:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_ithIteration + i);
-      let lookupIndex = inputData[i];
-      // lookupIndex is:
-      loggers.consoleLog(namespacePrefix + functionName, msg.clookupIndexIs + lookupIndex);
-      let lookupValue = inputMetaData[i][lookupIndex];
-      // lookupValue is:
-      loggers.consoleLog(namespacePrefix + functionName, msg.clookupValueIs + lookupValue);
-      returnData = returnData + lookupValue;
-      // returnData is:
-      loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
-      // END i-th iteration:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cEND_ithIteration + i);
+      if (Array.isArray(inputMetaData[i])) {
+        loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_ithIteration + i);
+        let lookupIndex = inputData[i];
+        // lookupIndex is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.clookupIndexIs + lookupIndex);
+        let lookupValue = inputMetaData[i][lookupIndex];
+        // lookupValue is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.clookupValueIs + lookupValue);
+        returnData = returnData + lookupValue;
+        // returnData is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
+        // END i-th iteration:
+        loggers.consoleLog(namespacePrefix + functionName, msg.cEND_ithIteration + i);
+      }
     } // End-for (let i = 0; i < lengthOfInputData; i++)
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);

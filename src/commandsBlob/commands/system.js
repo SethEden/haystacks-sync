@@ -51,7 +51,7 @@ function echoCommand(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = [true, ''];
   let errorMessage = '';
-  if (inputData) {
+  if (inputData && Array.isArray(inputData)) {
     inputData.shift();
     console.log(inputData.join(bas.cSpace));
     returnData[1] = inputData.join(bas.cSpace);
@@ -108,7 +108,7 @@ function version(inputData, inputMetaData) {
   let returnData = [true, ''];
   let configVersion = '';
   let appContext = '';
-  if (inputData.length === 2) {
+  if (Array.isArray(inputData) && inputData.length === 2) {
      appContext = inputData[1];
      if (appContext.toUpperCase() === wrd.cAPPLICATION) {
         configVersion = configurator.getConfigurationSetting(wrd.csystem, sys.cApplicationVersionNumber);
@@ -147,7 +147,7 @@ function about(inputData, inputMetaData) {
   let returnData = [true, ''];
   let configDescription = '';
   let appContext = '';
-  if (inputData.length === 2) {
+  if (Array.isArray(inputData) && inputData.length === 2) {
     appContext = inputData[1];
     if (appContext.toUpperCase() === wrd.cAPPLICATION) {
       configDescription = configurator.getConfigurationSetting(wrd.csystem, sys.cApplicationDescription);
@@ -192,13 +192,15 @@ function name(inputData, inputMetaData) {
   let figletFont = '';
   let appContext = '';
   let useFancyFont = false;
-  if (inputData.length === 2) {
-    appContext = inputData[1];
-  } // End-if (inputData.length === 2)
-  if (inputData.length === 3) {
-    appContext = inputData[1];
-    useFancyFont = ruleBroker.processRules([inputData[2], ''], [biz.cstringToDataType]);
-  } // End-if (inputData.length === 3)
+  if (Array.isArray(inputData)) {
+    if (inputData.length === 2) {
+      appContext = inputData[1];
+    } // End-if (inputData.length === 2)
+    if (inputData.length === 3) {
+      appContext = inputData[1];
+      useFancyFont = ruleBroker.processRules([inputData[2], ''], [biz.cstringToDataType]);
+    } // End-if (inputData.length === 3)
+  }
   if (appContext !== '') {
     if (appContext.toUpperCase() === wrd.cAPPLICATION) {
       reportedName = configurator.getConfigurationSetting(wrd.csystem, sys.cApplicationName);
@@ -267,7 +269,7 @@ function help(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   let returnData = [true, []];
   let errorMessage = '';
-  if (inputData.length > 1) {
+  if (Array.isArray(inputData) && inputData.length > 1) {
     // calling getCommandNamespaceDataObject() function,
     // because the user entered some namespace we should look for!
     let namespaceCommandsData = commandBroker.getCommandNamespaceDataObject(undefined, inputData[1]);

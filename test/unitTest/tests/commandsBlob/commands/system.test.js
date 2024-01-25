@@ -28,7 +28,7 @@ import * as tst_con from '../../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { wrd, num } = hayConst;
+const { wrd, num, sys } = hayConst;
 
 /**
  * @function echoCommand
@@ -1107,6 +1107,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1125,6 +1126,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1143,6 +1145,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = wrd.cHello;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1161,6 +1164,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = num.c123;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1179,6 +1183,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1197,6 +1202,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = num.c123;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1215,6 +1221,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = false;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1233,6 +1240,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1251,6 +1259,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1269,6 +1278,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = undefined;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1287,6 +1297,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = NaN;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
