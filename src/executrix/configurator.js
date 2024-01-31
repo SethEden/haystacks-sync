@@ -20,7 +20,7 @@ import D from '../structures/data.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, biz, cfg, wrd} = hayConst;
+const { bas, biz, cfg, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // executrix.configurator.
 // eslint-disable-next-line no-unused-vars
@@ -45,11 +45,9 @@ function setConfigurationSetting(configurationNamespace, configurationName, conf
   // console.log(`configurationNamespace is: ${configurationNamespace}`);
   // console.log(`configurationName is: ${configurationName}`);
   // console.log(`configurationValue is: ${configurationValue}`);
-  if (typeof configurationNamespace === wrd.cString) {
-    let namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
-    if (namespaceConfigObject) {
-      namespaceConfigObject[`${configurationNamespace}.${configurationName}`] = configurationValue;
-    }
+  let namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
+  if (namespaceConfigObject) {
+    namespaceConfigObject[`${configurationNamespace}.${configurationName}`] = configurationValue;
   }
   // console.log(`END ${namespacePrefix}${functionName} function`);
 }
@@ -72,8 +70,7 @@ function getConfigurationSetting(configurationNamespace, configurationName) {
   // console.log(`configurationName is: ${configurationName}`);
   let returnConfigurationValue;
   let namespaceConfigObject = undefined;
-  if (typeof configurationNamespace === wrd.cString)
-    namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
+  namespaceConfigObject = getConfigurationNamespaceObject(configurationNamespace.split(bas.cDot));
   if (namespaceConfigObject) {
     if (configurationName) {
       if (configurationName.includes(bas.cAt) && configurationName.indexOf(bas.cAt) === 0) {
@@ -104,10 +101,8 @@ function processConfigurationNameRules(fullyQualifiedName) {
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
   // console.log(`fullyQualifiedName is: ${fullyQualifiedName}`);
   let returnValue;
-  if (typeof fullyQualifiedName === wrd.cString) {
-    let fullyQualifiedNameArray = fullyQualifiedName.split(bas.cDot);
-    returnValue = fullyQualifiedNameArray[fullyQualifiedNameArray.length - 1];
-  }
+  let fullyQualifiedNameArray = fullyQualifiedName.split(bas.cDot);
+  returnValue = fullyQualifiedNameArray[fullyQualifiedNameArray.length - 1];
   // console.log(`returnValue is: ${returnValue}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return returnValue;
@@ -127,21 +122,19 @@ function processConfigurationNamespaceRules(fullyQualifiedName) {
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
   // console.log(`fullyQualifiedName is: ${fullyQualifiedName}`);
   let returnValue;
-  if (typeof fullyQualifiedName === wrd.cString) {
-    returnValue = fullyQualifiedName.substr(0, fullyQualifiedName.lastIndexOf(bas.cDot));
-    // console.log('returnValue is: ' + returnValue);
-    if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles)) {
-      // console.log('contains debugFunctions or debugFiles');
-      // We need to strip off the "debugFunctions" & "debugFiles" prefixes along with the pipe that delimits them.
-      // At some point we might need these separate designations, like for the colorizer logic, but for now,
-      // until there is a business need I will keep them unified.
-      // Everything to the right all falls under the designation of "debugSettings"
-      // so that as the base for the namespace tree should work perfectly.
-      let parsedDebugSettingsNamespace = returnValue.split(bas.cPipe);
-      // console.log('parsedDebugSettingsNamespace is: ' + parsedDebugSettingsNamespace);
-      returnValue = parsedDebugSettingsNamespace[1];
-    } // End-if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles))
-  }
+  returnValue = fullyQualifiedName.substr(0, fullyQualifiedName.lastIndexOf(bas.cDot));
+  // console.log('returnValue is: ' + returnValue);
+  if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles)) {
+    // console.log('contains debugFunctions or debugFiles');
+    // We need to strip off the "debugFunctions" & "debugFiles" prefixes along with the pipe that delimits them.
+    // At some point we might need these separate designations, like for the colorizer logic, but for now,
+    // until there is a business need I will keep them unified.
+    // Everything to the right all falls under the designation of "debugSettings"
+    // so that as the base for the namespace tree should work perfectly.
+    let parsedDebugSettingsNamespace = returnValue.split(bas.cPipe);
+    // console.log('parsedDebugSettingsNamespace is: ' + parsedDebugSettingsNamespace);
+    returnValue = parsedDebugSettingsNamespace[1];
+  } // End-if (returnValue.includes(cfg.cdebugFunctions) || returnValue.includes(cfg.cdebugFiles))
   // console.log(`returnValue is: ${returnValue}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return returnValue;

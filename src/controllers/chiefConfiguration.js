@@ -56,11 +56,9 @@ function setupConfiguration(appConfigPath, frameworkConfigPath) {
   configurator.setConfigurationSetting(wrd.csystem, sys.cframeworkConfigPath, frameworkConfigPath);
   let allAppConfigData = {};
   let allFrameworkConfigData = {};
-  if (Array.isArray(sys.cappConfigPath) && Array.isArray(sys.cframeworkConfigPath)) {
-    chiefData.searchForUniversalDebugConfigSetting(
-      sys.cappConfigPath, sys.cframeworkConfigPath
-    );
-  }
+  chiefData.searchForUniversalDebugConfigSetting(
+    sys.cappConfigPath, sys.cframeworkConfigPath
+  );
   allFrameworkConfigData = chiefData.setupAllJsonConfigData(sys.cframeworkConfigPath, wrd.cconfiguration);
   allAppConfigData = chiefData.setupAllJsonConfigData(sys.cappConfigPath, wrd.cconfiguration);
   parseLoadedConfigurationData(allFrameworkConfigData);

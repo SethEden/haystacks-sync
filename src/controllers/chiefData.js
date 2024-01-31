@@ -21,7 +21,7 @@ import loggers from '../executrix/loggers.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, cfg, msg, sys, wrd} = hayConst;
+const { bas, cfg, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // controllers.chiefData.
 const namespacePrefix = wrd.ccontrollers + bas.cDot + baseFileName + bas.cDot;
@@ -81,11 +81,9 @@ function determineThemeDebugConfigFilesToLoad(themeConfigPathName) {
   let themeConfigFilesToLoad = false;
   if (themeConfigPathName) {
     let themeConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, themeConfigPathName);
-    if (typeof themeConfigDataPath === wrd.cString) {
-      themeConfigDataPath = path.resolve(themeConfigDataPath);
-      themeConfigFilesToLoad = dataBroker.scanDataPath(themeConfigDataPath);
-      configurator.setConfigurationSetting(wrd.csystem, cfg.cthemeConfigFiles, themeConfigFilesToLoad);
-    }
+    themeConfigDataPath = path.resolve(themeConfigDataPath);
+    themeConfigFilesToLoad = dataBroker.scanDataPath(themeConfigDataPath);
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cthemeConfigFiles, themeConfigFilesToLoad);
   } // End-if (themeConfigPathName)
   // themeConfigFilesToLoad is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cthemeConfigFilesToLoadIs + JSON.stringify(themeConfigFilesToLoad));
@@ -109,7 +107,7 @@ function getAndProcessCsvData(pathAndFilename, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cpathAndFilenameIs + pathAndFilename);
   // contextName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
-  pathAndFilename =path.resolve(pathAndFilename);
+  pathAndFilename = path.resolve(pathAndFilename);
   let loadedData = dataBroker.getCsvData(pathAndFilename);
   // Now pre-process the data into a usable format, string-numbers to actual numbers, string-booleans to actual booleans, etc...
   let allLoadedData = dataBroker.getAndProcessCsvData(loadedData, contextName);
@@ -158,8 +156,7 @@ function setupAllCsvData(dataPathConfigurationName, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   let loadedAndMergedDataAllFiles = {};
   let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
-  if (typeof dataPath === wrd.cString)
-    dataPath = path.resolve(dataPath);
+  dataPath = path.resolve(dataPath);
   // dataPath is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
   let filesToLoad = dataBroker.scanDataPath(dataPath);
@@ -190,18 +187,16 @@ function setupAllXmlData(dataPathConfigurationName, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   let loadedAndMergedDataAllFiles = {};
   let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
-  if (typeof dataPath === wrd.cString) {
-    dataPath = path.resolve(dataPath);
-    // dataPath is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
-    let filesToLoad = dataBroker.scanDataPath(dataPath);
-    // filesToLoad is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
-    loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
-    // loadedAndMergedDataAllFiles is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
-    loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
-  }
+  dataPath = path.resolve(dataPath);
+  // dataPath is:
+  loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
+  let filesToLoad = dataBroker.scanDataPath(dataPath);
+  // filesToLoad is:
+  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
+  loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
+  // loadedAndMergedDataAllFiles is:
+  loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
+  loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return loadedAndMergedDataAllFiles;
 }
 

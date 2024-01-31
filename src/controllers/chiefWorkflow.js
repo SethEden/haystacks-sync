@@ -55,14 +55,14 @@ function loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, 
   if (D[sys.cCommandWorkflows] === undefined) { // Make sure we only do this if it's undefined, otherwise we might wipe out previously loaded data.
     D[sys.cCommandWorkflows] = {};
     D[sys.cCommandWorkflows][sys.cFramework] = allCommandWorkflowsData;
-  } else if (typeof contextName === wrd.cString && contextName.toUpperCase() === wrd.cAPPLICATION) {
+  } else if (contextName.toUpperCase() === wrd.cAPPLICATION) {
     // for (let i = 0; i < allCommandWorkflowsData[sys.cCommandWorkflows][wrd.cWorkflows].length; i++) {
       // D[sys.cCommandWorkflows][wrd.cWorkflows].push(allCommandWorkflowsData[sys.cCommandWorkflows][wrd.cWorkflows][i]);
       // Object.assign(D[sys.cCommandWorkflows][wrd.cWorkflows], allCommandWorkflowsData[sys.cCommandWorkflows][wrd.cWorkflows]);
       // D[sys.cCommandWorkflows] = ruleBroker.processRules([D[sys.cCommandWorkflows], allCommandWorkflowsData], [biz.cobjectDeepMerge]);
       D[sys.cCommandWorkflows][wrd.cApplication] = allCommandWorkflowsData;
     // }
-  } else if (typeof contextName === wrd.cString && contextName.toUpperCase().includes(wrd.cPLUGIN)) {
+  } else if (contextName.toUpperCase().includes(wrd.cPLUGIN)) {
     // TODO: Split the contextName by the "." so we can get a namespace and use that to define where the plugin workflow data should go.
     // Also make sure the data hasn't been loaded to the same plugin name already!
     // D[sys.cCommandWorkflows][wrd.cPlugins][commandWorkflowFilePathConfigurationName] = allCommandWorkflowsData;

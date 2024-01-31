@@ -18,7 +18,7 @@
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, gen, sys, wrd} = hayConst;
+const { bas, gen, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.stringParsingUtilities.
 const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + baseFileName + bas.cDot;
@@ -118,7 +118,7 @@ function stringToDataType(inputData, inputMetaData) {
       default: // We don't know what kind of object this is, better just return it the way it is.
         returnData = inputData;
         break;
-     } // End-switch (dataType)
+    } // End-switch (dataType)
   } // End-if (inputData)
   // console.log(`returnData is: ${JSON.stringify(returnData)}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
@@ -160,10 +160,10 @@ function stringToBoolean(inputData, inputMetaData) {
           break;
       } // End-switch (inputData.toLowerCase().trim())
     }
- } // End-if (inputData)
- // console.log(`returnData is: ${JSON.stringify(returnData)}`);
- // console.log(`END ${namespacePrefix}${functionName} function`);
- return returnData;
+  } // End-if (inputData)
+  // console.log(`returnData is: ${JSON.stringify(returnData)}`);
+  // console.log(`END ${namespacePrefix}${functionName} function`);
+  return returnData;
 }
 
 /**
@@ -228,7 +228,7 @@ function isBoolean(inputData, inputMetaData) {
     } else {
       inputData = inputData.toLowerCase().trim();
       if (inputData === gen.ctrue || inputData === bas.ct || inputData === bas.cy || inputData === gen.cyes || inputData === bas.con ||
-      inputData === gen.cfalse || inputData === bas.cf || inputData === bas.cn || inputData === bas.cno || inputData === gen.coff) {
+        inputData === gen.cfalse || inputData === bas.cf || inputData === bas.cn || inputData === bas.cno || inputData === gen.coff) {
         returnData = true;
       } else {
         returnData = false;
@@ -324,7 +324,7 @@ function isString(inputData, inputMetaData) {
   let returnData = false;
   if (inputData) {
     if (isBoolean(inputData, '') === false && isInteger(inputData, '') === false && isFloat(inputData, '') === false &&
-    (typeof inputData === wrd.cstring || inputData instanceof String)) {
+      (typeof inputData === wrd.cstring || inputData instanceof String)) {
       returnData = true; // If it's not a Boolean, and not an Integer, and not a Float, then it must be a string,
       // especially given the type of the variable is a string!
     } else { // Else clause is redundant, but kept here for code completeness.
@@ -394,8 +394,7 @@ function utilitiesReplaceCharacterWithCharacter(inputData, inputMetaData) {
     if (Array.isArray(inputData) === true) {
       inputData = inputData[0];
     }
-    if (typeof inputData === wrd.cString)
-      returnData = inputData.replaceAll(character2Find, character2Replace);
+    returnData = inputData.replaceAll(character2Find, character2Replace);
   }
   // console.log(`returnData is: ${JSON.stringify(returnData)}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);

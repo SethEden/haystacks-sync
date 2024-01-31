@@ -18,7 +18,7 @@ import loggers from '../../../executrix/loggers.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, biz, gen, msg, sys, wrd} = hayConst;
+const { bas, biz, gen, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.arrayParsing.wordArrayParsing.
 const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.carray + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -43,8 +43,7 @@ function convertCamelCaseStringToArray(inputData, inputMetaData) {
   let returnData;
   let caps = [];
   for (let i = 1; i < inputData.length; i++) {
-    if (typeof inputData === wrd.cString)
-      if (gen.cUpperCaseEnglishAlphabet.includes(inputData.charAt(i))) { caps.push(i); }
+    if (gen.cUpperCaseEnglishAlphabet.includes(inputData.charAt(i))) { caps.push(i); }
   } // End-for (let i = 1; i < inputData.length; i++)
   if (caps.length > 0) {
     let last = 0;
@@ -79,7 +78,7 @@ function getWordsArrayFromString(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData;
-  if (inputData && typeof inputData === wrd.cString) {
+  if (inputData) {
     let wordCount = ruleParsing.processRulesInternal([inputData, ''], [biz.cgetWordCountInString]);
     // wordCount is:
     loggers.consoleLog(namespacePrefix + functionName, msg.cwordCountIs + wordCount);

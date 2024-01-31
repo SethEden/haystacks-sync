@@ -88,9 +88,9 @@ function loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, con
   if (D[sys.cCommandsAliases] === undefined) { // Make sure we only do this if it's undefined, otherwise we might wipe out previously loaded data.
     D[sys.cCommandsAliases] = {};
     D[sys.cCommandsAliases][sys.cFramework] = allCommandAliasesData;
-  } else if (typeof contextName === wrd.cString && contextName.toUpperCase() === wrd.cAPPLICATION) {
+  } else if (contextName.toUpperCase() === wrd.cAPPLICATION) {
     D[sys.cCommandsAliases][wrd.cApplication] = allCommandAliasesData;
-  } else if (typeof contextName === wrd.cString && contextName.toUpperCase().includes(wrd.cPLUGIN)) {
+  } else if (contextName.toUpperCase().includes(wrd.cPLUGIN)) {
     // TODO: Split the contextName by the "." so we can get a namespace and use that to define where the plugin workflow data should go.
     // Also make sure the data hasn't been loaded to the same plugin name already!
     // D[sys.cCommandsAliases][wrd.cPlugins][commandsAliasesFilePathConfigurationName] = allCommandAliasesData;

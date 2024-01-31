@@ -71,7 +71,7 @@ function getFileExtension(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && typeof inputData === wrd.cString) {
+  if (inputData) {
     returnData = path.extname(inputData);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -95,7 +95,7 @@ function removeDotFromFileExtension(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && typeof inputData === wrd.cString) {
+  if (inputData) {
     returnData = inputData.substring(1);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -119,7 +119,7 @@ function removeFileExtensionFromFileName(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && typeof inputData === wrd.cString) {
+  if (inputData) {
     returnData = inputData.replace(/\.[^/.]+$/, '');
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -142,7 +142,7 @@ function ascertainMatchingFilenames(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && inputMetaData && typeof inputData === wrd.cString && typeof inputMetaData === wrd.cString) {
+  if (inputData && inputMetaData) {
     if (path.basename(inputData) === path.basename(inputMetaData)) {
       // Filenames match
       loggers.consoleLog(namespacePrefix + functionName, msg.cFilenamesMatch);
@@ -254,7 +254,7 @@ function getFirstTopLevelFolderFromPath(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData && typeof inputData === wrd.cString) {
+  if (inputData) {
     let pathArray;
     if (inputData.includes(bas.cForwardSlash) === true) {
       pathArray = inputData.split(bas.cForwardSlash);

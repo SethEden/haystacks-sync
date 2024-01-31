@@ -26,7 +26,7 @@ import loggers from '../executrix/loggers.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, biz, cfg, msg, sys, wrd} = hayConst;
+const { bas, biz, cfg, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // brokers.themeBroker.
 const namespacePrefix = wrd.cbrokers + bas.cDot + baseFileName + bas.cDot;
@@ -43,8 +43,7 @@ function getNamedThemes() {
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   let themesNames = [];
   let frameworkThemesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath);
-  if (typeof frameworkThemesPath === wrd.cString)
-    frameworkThemesPath = path.resolve(frameworkThemesPath);
+  frameworkThemesPath = path.resolve(frameworkThemesPath);
   themesNames = ruleBroker.processRules([frameworkThemesPath, ''], [biz.cgetDirectoryList]);
   // themesNames is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cthemesNamesIs + JSON.stringify(themesNames));
@@ -73,12 +72,10 @@ function getNamedThemePath(themeName) {
   frameworkThemesPath = path.resolve(frameworkThemesPath);
   if (Array.isArray(themesNames)) {
     for (const element of themesNames) {
-      if (typeof themeName === wrd.cString) {
-        if (element.toUpperCase() === themeName.toUpperCase()) {
-          themePath = frameworkThemesPath + bas.cDoubleForwardSlash + element + bas.cDoubleForwardSlash;
-          themePath = path.resolve(themePath);
-          break;
-        }
+      if (element.toUpperCase() === themeName.toUpperCase()) {
+        themePath = frameworkThemesPath + bas.cDoubleForwardSlash + element + bas.cDoubleForwardSlash;
+        themePath = path.resolve(themePath);
+        break;
       }
     } // End-for (const element of themesNames)
   }

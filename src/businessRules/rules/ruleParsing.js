@@ -74,7 +74,7 @@ function doesRuleExist(inputData, inputMetaData) {
   // console.log(`inputData is: ${inputData}`);
   // console.log(`inputMetaData is: ${inputMetaData}`);
   let returnData = false;
-  if (inputData && typeof inputData === wrd.cString) {
+  if (inputData) {
     if (D[sys.cbusinessRules][inputData]) {
       returnData = true;
     }

@@ -22,7 +22,7 @@ import loggers from '../../../executrix/loggers.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, biz, cfg, gen, msg, sys, wrd} = hayConst;
+const { bas, biz, cfg, gen, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.stringParsing.characterStringParsing.
 const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + wrd.cstring + wrd.cParsing + bas.cDot + baseFileName + bas.cDot;
@@ -398,9 +398,7 @@ function isFirstCharacterLowerCase(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && typeof inputData === wrd.cString) {
-    returnData = gen.cLowerCaseEnglishAlphabet.includes(inputData.charAt(0));
-  }
+  returnData = gen.cLowerCaseEnglishAlphabet.includes(inputData.charAt(0));
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;

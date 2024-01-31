@@ -32,7 +32,7 @@ import papa from 'papaparse';
 import xml2js from 'xml2js';
 import path from 'path';
 
-const {bas, biz, cfg, gen, msg, sys, wrd} = hayConst;
+const { bas, biz, cfg, gen, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.fileOperations.
 const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + baseFileName + bas.cDot;
@@ -68,16 +68,16 @@ function getXmlData(inputData, inputMetaData) {
   let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
   let xml;
   xml2js.parseString(data,
-  function(err, result) {
-    if (err) {
-      // ERROR:
-      returnData = console.log(sys.cERROR_Colon + err);
-      loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
-      loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
-      return returnData;
-    } // End-if (err)
-    xml = result;
-  });
+    function (err, result) {
+      if (err) {
+        // ERROR:
+        returnData = console.log(sys.cERROR_Colon + err);
+        loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
+        loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+        return returnData;
+      } // End-if (err)
+      xml = result;
+    });
   returnData = xml;
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -262,8 +262,7 @@ function scanDirectoryContents(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cfilesLimitIs + filesLimit);
   let filesFound = [];
   let directory = '';
-  if (typeof inputData === wrd.cString)
-    directory = path.resolve(inputData);
+  directory = path.resolve(inputData);
   enableFilesListLimit = enableLimit;
   filesListLimit = filesLimit;
   readDirectorySynchronously(directory, '');
@@ -505,11 +504,11 @@ function createZipArchive(inputData, inputMetaData) {
   let returnData = false;
   let zip = new admZip();
   try {
-      zip.addLocalFolder(inputData);
-      zip.writeZip(inputMetaData);
-      // Done writing the zip file:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cDoneWritingTheZipFile + inputMetaData);
-      returnData = true;
+    zip.addLocalFolder(inputData);
+    zip.writeZip(inputMetaData);
+    // Done writing the zip file:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cDoneWritingTheZipFile + inputMetaData);
+    returnData = true;
   } catch (err) {
     // ERROR: Zip package release failed
     console.log(msg.cErrorZipPackageReleaseFailed);
@@ -706,7 +705,7 @@ function copyFolderRecursiveSync(inputData, inputMetaData) {
   try {
     if (fs.lstatSync(source).isDirectory()) {
       files = fs.readdirSync(source);
-      files.forEach(function(file) {
+      files.forEach(function (file) {
         let currentSource = path.join(source, file);
         if (fs.lstatSync(currentSource).isDirectory()) {
           successfulCopy = copyFolderRecursiveSync([currentSource, targetFolder], inputMetaData);
