@@ -137,9 +137,17 @@ function getJsonData(inputData, inputMetaData) {
   // console.log(`inputMetaData is: ${inputMetaData}`);
   // Make sure to resolve the path on the local system,
   // just in case there are issues with the OS that the code is running on.
-  let pathAndFilename = path.resolve(inputData);
-  let rawData = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
-  let returnData = JSON.parse(rawData);
+  let returnData;
+  if (typeof inputData === wrd.cstring) {
+    let pathAndFilename = path.resolve(inputData);
+    let rawData = {};
+    try {
+      rawData = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
+      returnData = JSON.parse(rawData);
+    } catch(e) {
+      console.log('file load error!');
+    }
+  }
   // console.log(`DONE loading data from: ${inputData}`);
   // console.log(msg.creturnDataIs + JSON.stringify(returnData));
   // console.log(`END ${namespacePrefix}${functionName} function`);
