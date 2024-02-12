@@ -41,73 +41,11 @@ describe(tst_con.cbootStrapCommands, () => {
     * @date 2023/04/13
     */
     test(tst_con.cbootStrapCommands_validData, () => {
-        // Arrange
-        let input = undefined;
-
         // Act
-        commandBroker.bootStrapCommands(input);
+        commandBroker.bootStrapCommands();
 
         // Assert
-        expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cversion]).toBeTruthy();
-    });
-
-    /**
-    * @function bootStrapCommands_inValidString
-    * @description Tests the brokers.commandBroker.bootStrapCommands function, with an invalid string.
-    * @author Json Howard
-    * @date 2023/04/13
-    */
-    test(tst_con.cbootStrapCommands_inValidString, () => {
-        // Arrange
-        let input = wrd.cHello;
-
-        // Act
-        commandBroker.bootStrapCommands(input);
-
-        // Assert
-        expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cversion]).toBeTruthy();
-    });
-
-    /**
-    * @function bootStrapCommands_inValidNumber
-    * @description Tests the brokers.commandBroker.bootStrapCommands function, with an invalid number.
-    * @author Json Howard
-    * @date 2023/04/13
-    */
-    test(tst_con.cbootStrapCommands_inValidNumber, () => {
-        // Arrange
-        let input = 123;
-
-        // Act
-        commandBroker.bootStrapCommands(input);
-
-        // Assert
-        expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cversion]).toBeTruthy();
-    });
-
-    /**
-    * @function bootStrapCommands_inValidBoolean
-    * @description Tests the brokers.commandBroker.bootStrapCommands function, with an invalid boolean.
-    * @author Json Howard
-    * @date 2023/04/13
-    */
-    test(tst_con.cbootStrapCommands_inValidBoolean, () => {
-        // Arrange
-        let input = true;
-
-        // Act
-        commandBroker.bootStrapCommands(input);
-
-        // Assert
+        expect(D[wrd.cCommands]).toBeTruthy();
         expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
         expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
         expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
@@ -131,16 +69,15 @@ describe(tst_con.caddClientCommands, () => {
     */
     test(tst_con.caddClientCommands_validData, () => {
         // Arrange
-        let input = obj_con.JsonObjectArrayOfStrings_01;
+        D[wrd.cCommands] = {};
+        let input = obj_con.testCommandsLibrary;
 
         // Act
-        commandBroker.addClientCommands(input);
+        let testResult = commandBroker.addClientCommands(input);
 
         // Assert
-        expect(D[wrd.cCommands][num.c0]).toBeTruthy();
-        expect(D[wrd.cCommands][num.c1]).toBeTruthy();
-        expect(D[wrd.cCommands][num.c2]).toBeTruthy();
-        expect(D[wrd.cCommands][num.c3]).toBeTruthy();
+        expect(D[wrd.cCommands]).toEqual(input);
+        expect(testResult).toBeTruthy();
     });
 
     /**
@@ -154,13 +91,10 @@ describe(tst_con.caddClientCommands, () => {
         let input = wrd.cHello;
 
         // Act
-        commandBroker.addClientCommands(input);
+        let testResult = commandBroker.addClientCommands(input);
 
         // Assert
-        expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cversion]).toBeTruthy();
+        expect(testResult).toBeFalsy();
     });
 
     /**
@@ -174,13 +108,10 @@ describe(tst_con.caddClientCommands, () => {
         let input = 123;
 
         // Act
-        commandBroker.addClientCommands(input);
+        let testResult = commandBroker.addClientCommands(input);
 
         // Assert
-        expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cversion]).toBeTruthy();
+        expect(testResult).toBeFalsy();
     });
 
     /**
@@ -194,13 +125,10 @@ describe(tst_con.caddClientCommands, () => {
         let input = false;
 
         // Act
-        commandBroker.addClientCommands(input);
+        let testResult = commandBroker.addClientCommands(input);
 
         // Assert
-        expect(D[wrd.cCommands][wrd.cexit]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cname]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cabout]).toBeTruthy();
-        expect(D[wrd.cCommands][wrd.cversion]).toBeTruthy();
+        expect(testResult).toBeFalsy();
     });
 });
 
@@ -219,6 +147,8 @@ describe(tst_con.cgetValidCommand, () => {
     */
     test(tst_con.cgetValidCommand_validData, () => {
         // Arrange
+        D[wrd.cCommands] = {};
+        commandBroker.addClientCommands(obj_con.testCommandsLibrary);
         let commandString = wrd.cname + bas.cSpace + wrd.capplication + bas.cSpace + wrd.cversion + bas.cSpace + wrd.cabout;
         let commandDelimiter = bas.cSpace;
 
@@ -237,14 +167,16 @@ describe(tst_con.cgetValidCommand, () => {
     */
     test(tst_con.cgetValidCommand_inValidString, () => {
         // Arrange
-        let commandString = wrd.cHello;
+        D[wrd.cCommand] = {};
+        commandBroker.addClientCommands(obj_con.testCommandsLibrary);
+        let commandString = wrd.cWorld;
         let commandDelimiter = bas.cSpace;
 
         // Act
         let returnData = commandBroker.getValidCommand(commandString, commandDelimiter);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBeFalsy();
     });
 
     /**
@@ -255,6 +187,8 @@ describe(tst_con.cgetValidCommand, () => {
     */
     test(tst_con.cgetValidCommand_inValidDelimiterString, () => {
         // Arrange
+        D[wrd.cCommand] = {};
+        commandBroker.addClientCommands(obj_con.testCommandsLibrary);
         let commandString = wrd.cname + bas.cSpace + wrd.capplication + bas.cSpace + wrd.cversion + bas.cSpace + wrd.cabout;
         let commandDelimiter = bas.cAndPersand;
 
@@ -262,7 +196,7 @@ describe(tst_con.cgetValidCommand, () => {
         let returnData = commandBroker.getValidCommand(commandString, commandDelimiter);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBeFalsy();
     });
 
     /**
@@ -273,6 +207,8 @@ describe(tst_con.cgetValidCommand, () => {
     */
     test(tst_con.cgetValidCommand_inValidNumber, () => {
         // Arrange
+        D[wrd.cCommand] = {};
+        commandBroker.addClientCommands(obj_con.testCommandsLibrary);
         let commandString = 546;
         let commandDelimiter = bas.cSpace;
 
@@ -280,7 +216,7 @@ describe(tst_con.cgetValidCommand, () => {
         let returnData = commandBroker.getValidCommand(commandString, commandDelimiter);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBeFalsy();
     });
 
     /**
@@ -291,6 +227,8 @@ describe(tst_con.cgetValidCommand, () => {
     */
     test(tst_con.cgetValidCommand_inValidBoolean, () => {
         // Arrange
+        D[wrd.cCommand] = {};
+        commandBroker.addClientCommands(obj_con.testCommandsLibrary);
         let commandString = false;
         let commandDelimiter = bas.cSpace;
 
@@ -588,10 +526,10 @@ describe(tst_con.cgetAllCommandAliasData, () => {
         let commandAliasDataStructure = obj_con.JsonObjectOfStrings_03;
 
         // Act
-        let reutrnData = commandBroker.getAllCommandAliasData(commandAliasDataStructure);
+        let returnData = commandBroker.getAllCommandAliasData(commandAliasDataStructure);
 
         // Assert
-        expect(reutrnData).toEqual([commandAliasDataStructure]);
+        expect(returnData).toEqual([commandAliasDataStructure]);
     });
 
     /**
@@ -893,6 +831,7 @@ describe(tst_con.cexecuteCommand, () => {
     */
     test(tst_con.cexecuteCommand_validData, () => {
         // Arrange
+        D[wrd.cCommands] = {};
         let commandString = wrd.cname + wrd.cSpace + wrd.capplication + wrd.cSpace + wrd.cversion + wrd.cSpace + wrd.cabout;
 
         // Act

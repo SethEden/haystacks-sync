@@ -54,7 +54,7 @@ function bootStrapCommands() {
 /**
  * @function addClientCommands
  * @description Merges client defined commands with the system defined commands.
- * @param {array<object>} clientCommands The client rules that should be merged with the system rules.
+ * @param {object} clientCommands The client rules that should be merged with the system rules.
  * @return {void}
  * @author Seth Hollingsead
  * @date 2022/02/02
@@ -62,13 +62,20 @@ function bootStrapCommands() {
 function addClientCommands(clientCommands) {
   let functionName = addClientCommands.name;
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
+  loggers.consoleLog(namespacePrefix + functionName, msg.cclientCommandsAre + JSON.stringify(clientCommands));
+  let returnData = false;
   // Object.assign(D[wrd.cCommands], clientCommands);
   // D[wrd.cCommands] = {...D[wrd.cCommands], Object.keys(clientCommands): clientCommands[Object.keys(clientCommands)]};
-  for (const [key, value] of Object.entries(clientCommands)) {
-    // console.log('%%%%%%%%%%%%%%%%%% ---- >>>>>>>>> key is: ' + key);
-    D[wrd.cCommands] = { ...D[wrd.cCommands], [`${key}`]: value };
-  } // End-for (const [key, value] of Object.entries(clientCommands))
+  if (typeof clientCommands === wrd.cobject) {
+    for (const [key, value] of Object.entries(clientCommands)) {
+      // console.log('%%%%%%%%%%%%%%%%%% ---- >>>>>>>>> key is: ' + key);
+      D[wrd.cCommands] = { ...D[wrd.cCommands], [`${key}`]: value };
+    } // End-for (const [key, value] of Object.entries(clientCommands))
+    returnData = true;
+  }
+  loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  return returnData;
 }
 
 /**
@@ -96,7 +103,7 @@ function getValidCommand(commandString, commandDelimiter) {
   if (commandDelimiter === null || commandDelimiter !== commandDelimiter || commandDelimiter === undefined) {
     commandArgsDelimiter = bas.cSpace;
   }
-  if (commandString && commandString.includes(commandArgsDelimiter) === true) {
+  if (commandString && typeof commandString === wrd.cstring && commandString.includes(commandArgsDelimiter) === true) {
     commandArgs = commandString.split(commandArgsDelimiter);
     commandToExecute = commandArgs[0];
   } else {
@@ -160,7 +167,7 @@ function countMatchingCommandAlias(commandAliasData, commandAliasName) {
   // commandAliasName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasNameIs + commandAliasName);
   let commandAliasCount = 0;
-  if (typeof commandAliasData === wrd.cobject) {
+  if (typeof commandAliasData === wrd.cobject && typeof commandAliasName === wrd.cstring ) {
     for (let commandAliasEntity in commandAliasData) {
       // commandAliasEntity is:
       loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasEntityIs + JSON.stringify(commandAliasEntity));
@@ -226,7 +233,7 @@ function searchCommandAlias(commandAliasData, commandAliasName) {
   // commandAliasName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasNameIs + commandAliasName);
   let commandAliasObject = false;
-  if (typeof commandAliasData === wrd.cobject) {
+  if (typeof commandAliasData === wrd.cobject && typeof commandAliasName === wrd.cstring) {
     for (let commandAliasEntity in commandAliasData) {
       // commandAliasEntity is:
       loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasEntityIs + JSON.stringify(commandAliasEntity));
@@ -323,7 +330,8 @@ function getAllCommandAliasData(commandAliasDataStructure) {
         if (allCommandAliasesTemp === false) {
           // The recursive call returned false, so push the current entity to the output array!
           loggers.consoleLog(namespacePrefix + functionName, msg.cgetAllCommandAliasDataMessage02);
-          allCommandsData.push(internalCommandAliasDataStructure);
+          if (Array.isArray(allCommandsData))
+            allCommandsData.push(internalCommandAliasDataStructure);
           // allCommandsData after pushing to the array is:
           loggers.consoleLog(namespacePrefix + functionName, msg.callCommandsDataAfterPushingToTheArrayIs + JSON.stringify(allCommandsData));
           break;
@@ -414,7 +422,7 @@ function getCommandArgs(commandString, commandDelimiter) {
   if (commandDelimiter === null || commandDelimiter !== commandDelimiter || commandDelimiter === undefined) {
     commandArgsDelimiter = bas.cSpace;
   }
-  if (commandString.includes(commandArgsDelimiter) === true) {
+  if (typeof commandString === wrd.cstring && commandString.includes(commandArgsDelimiter) === true) {
     // NOTE: All commands that enqueue or execute commands need to pass through this function.
     // There is a case where the user might pass a string with spaces or other code/syntax.
     // So we need to split first by single character string delimiters and parse the

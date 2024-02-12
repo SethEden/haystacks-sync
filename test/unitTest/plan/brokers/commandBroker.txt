@@ -8,14 +8,17 @@ output: ?
 testName: bootStrapCommands_inValidString
 input: string (464gsdsfae8f46)
 output: ?
+note: deleted this one. input is not neccessary.
 
 testName: bootStrapCommands_inValidNumber
 input: integer (546)
 output: ?
+note: deleted this one. input is not neccessary.
 
 testName: bootStrapCommands_inValidBoolean
 input: boolean (false)
 output: ?
+note: deleted this one. input is not neccessary.
 --------------------------------------------------------------------------------
 testName: addClientCommands_validData
 input: array<object>
