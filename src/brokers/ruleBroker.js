@@ -97,7 +97,8 @@ function processRules(inputs, rulesToExecute) {
         // console.log(`key is: ${key}`);
         let value = rulesToExecute[key];
         // console.log(`value is: ${value}`);
-        returnData = D[sys.cbusinessRules][value](returnData, inputMetaData);
+        if (typeof D[sys.cbusinessRules][value] === wrd.cfunction)
+          returnData = D[sys.cbusinessRules][value](returnData, inputMetaData);
       } // End-if (rulesToExecute.hasOwnProperty(rule))
     } // End-for (let rule in rulesToExecute)
   } else {
