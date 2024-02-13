@@ -81,7 +81,8 @@ function determineThemeDebugConfigFilesToLoad(themeConfigPathName) {
   let themeConfigFilesToLoad = false;
   if (themeConfigPathName) {
     let themeConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, themeConfigPathName);
-    themeConfigDataPath = path.resolve(themeConfigDataPath);
+    if (typeof themeConfigDataPath === wrd.cstring)
+      themeConfigDataPath = path.resolve(themeConfigDataPath);
     themeConfigFilesToLoad = dataBroker.scanDataPath(themeConfigDataPath);
     configurator.setConfigurationSetting(wrd.csystem, cfg.cthemeConfigFiles, themeConfigFilesToLoad);
   } // End-if (themeConfigPathName)

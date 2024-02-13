@@ -72,7 +72,7 @@ function getNamedThemePath(themeName) {
   frameworkThemesPath = path.resolve(frameworkThemesPath);
   if (Array.isArray(themesNames)) {
     for (const element of themesNames) {
-      if (element.toUpperCase() === themeName.toUpperCase()) {
+      if (typeof themeName === wrd.cstring && element.toUpperCase() === themeName.toUpperCase()) {
         themePath = frameworkThemesPath + bas.cDoubleForwardSlash + element + bas.cDoubleForwardSlash;
         themePath = path.resolve(themePath);
         break;
