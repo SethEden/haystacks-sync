@@ -41,7 +41,7 @@ function solveLehmerCode(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = '';
-  if (inputData) {
+  if (Array.isArray(inputData) && Array.isArray(inputMetaData)) {
     // [["Wondr","Wundr","Wndr","Wonder"],["Wman","Wmn","Womn","Woman"],["Amzing","Amzng","Amazing"]]
     // [3,3,2]
     //
@@ -194,11 +194,11 @@ function getLehmerCodeValue(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = '';
-  if (inputData && Array.isArray(inputData)) {
+  if (inputData && Array.isArray(inputData) && inputMetaData && Array.isArray(inputMetaData)) {
     let lengthOfInputData = inputData.length;
     for (let i = 0; i < lengthOfInputData; i++) {
       // BEGIN i-th iteration:
-      if (Array.isArray(inputMetaData[i])) {
+      if (inputMetaData[i] && Array.isArray(inputMetaData[i])) {
         loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_ithIteration + i);
         let lookupIndex = inputData[i];
         // lookupIndex is:
@@ -235,7 +235,7 @@ function generateCommandAliases(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cobject) {
     // {"wonder":"wondr,wundr,wndr","Woman":"wman,wmn,womn","Amazing":"amzing,amzng"}
     //
     // {
@@ -328,9 +328,10 @@ function aggregateCommandArguments(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && Array.isArray(inputData)) {
     if (inputData.length > 3) {
       for (let i = 2; i < inputData.length; i++) {
+        if (typeof inputData[i] !== wrd.cstring) break;
         // BEGIN i-th iteration:
         loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_ithIteration + i);
         if (i === 2) {
