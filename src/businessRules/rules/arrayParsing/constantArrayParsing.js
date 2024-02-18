@@ -46,6 +46,9 @@ function getLengthOfLongestStringInArray(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = 0;
   if (inputData && Array.isArray(inputData) && inputData.length > 0) {
+    for (let i = 0; i < inputData.length ; i ++) 
+      if (typeof inputData[i] !== wrd.cstring)
+        return returnData;
     returnData = math.max(...(inputData.map(el => el.length)));
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -70,7 +73,7 @@ function searchForPatternsInStringArray(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && inputData.length > 0) {
+  if (inputData && Array.isArray(inputData) && inputData.length > 0) {
     returnData = []; // Reset it to an empty array, the input data has something n it so we should be able to process it.
     let maxStringLength = getLengthOfLongestStringInArray(inputData, '') - 1;
     // maxStringLength is:
@@ -82,7 +85,7 @@ function searchForPatternsInStringArray(inputData, inputMetaData) {
       let currentMasterStringArrayElement = inputData[a];
       // currentMasterStringArrayElement is:
       loggers.consoleLog(namespacePrefix + functionName, msg.ccurrentMasterStringArrayElementIs + currentMasterStringArrayElement);
-      if (currentMasterStringArrayElement.includes(bas.cSpace) === false) {
+      if (typeof currentMasterStringArrayElement === wrd.cstring && currentMasterStringArrayElement.includes(bas.cSpace) === false) {
         // currentMasterStringArrayElement does not contain a space character
         loggers.consoleLog(namespacePrefix + functionName, msg.cSearchForPatternsInStringArrayMessage1);
         // NOTE: All of the other loggers.consoleLog below this are not actually getting called for some reason.
