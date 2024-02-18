@@ -104,7 +104,7 @@ function mapWordToCamelCaseWord(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = inputData.replace(/^./, character => character.toUpperCase());
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -413,7 +413,7 @@ function aggregateNumericalDifferenceBetweenTwoStrings(inputData, inputMetaData)
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = -1;
-  if (inputData && inputMetaData) {
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring && typeof inputMetaData === wrd.cstring) {
     // Convert the input strings to lower case and clean them up for parsing.
     let string1 = inputData.toLowerCase().replace(/\W/g, '');
     let string2 = inputMetaData.toLowerCase().replace(/\W/g, '');
