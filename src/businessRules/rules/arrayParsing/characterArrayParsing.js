@@ -51,7 +51,7 @@ function replaceCharacterWithCharacter(inputData, inputMetaData) {
   let returnData;
   if (!inputData && !inputMetaData) {
     returnData = false;
-  } else if (typeof inputData === wrd.cstring && typeof inputMetaData[0] === wrd.cstring && typeof inputMetaData[1] === wrd.cstring) {
+  } else if (typeof inputData === wrd.cstring) {
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.cconfigurationInitialized) === true) {
       returnData = ruleParsing.processRulesInternal([inputData, inputMetaData], [biz.cutilitiesReplaceCharacterWithCharacter]);
     } else {

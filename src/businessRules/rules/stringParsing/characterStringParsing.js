@@ -47,9 +47,7 @@ function singleQuoteSwapAfterEquals(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  if (!inputData) {
-    returnData = false;
-  } else {
+  if (inputData && typeof inputData === wrd.cstring) {
     if (inputData.includes(bas.cSingleQuote) === true) {
       // First replace all the quotes in the string with double quotes.
       returnData = inputData.replace(/'/g, bas.cDoubleQuote);
@@ -63,6 +61,8 @@ function singleQuoteSwapAfterEquals(inputData, inputMetaData) {
     } else {
       returnData = inputData;
     }
+  } else {
+    returnData = false;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -90,10 +90,10 @@ function swapForwardSlashToBackSlash(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  if (!inputData) {
-    returnData = false;
-  } else {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = ruleParsing.processRulesInternal([inputData, [/\//g, bas.cBackSlash]], [biz.creplaceCharacterWithCharacter]);
+  } else {
+    returnData = false;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -121,14 +121,14 @@ function swapBackSlashToForwardSlash(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  if (!inputData) {
-    returnData = false;
-  } else {
+  if (inputData && typeof inputData === wrd.cstring) {
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.cconfigurationInitialized) === true) {
       returnData = ruleParsing.processRulesInternal([inputData, [/\\/g, bas.cForwardSlash]], [biz.creplaceCharacterWithCharacter]);
     } else {
       returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, [/\\/g, bas.cForwardSlash]);
     }
+  } else {
+    returnData = false;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -156,14 +156,14 @@ function swapDoubleForwardSlashToSingleForwardSlash(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  if (!inputData) {
-    returnData = false;
-  } else {
+  if (inputData && typeof inputData === wrd.cstring) {
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.cconfigurationInitialized) === true) {
       returnData = ruleParsing.processRulesInternal([inputData, [/\/\//g, bas.cForwardSlash]], [biz.creplaceCharacterWithCharacter]);
     } else {
       returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, [/\/\//g, bas.cForwardSlash]);
     }
+  } else {
+    returnData = false;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -191,10 +191,10 @@ function swapDoubleBackSlashToSingleBackSlash(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  if (!inputData) {
-    returnData = false;
-  } else {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = ruleParsing.processRulesInternal([inputData, [/\\\\/g, bas.cBackSlash]], [biz.creplaceCharacterWithCharacter]);
+  } else {
+    returnData = false;
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -218,7 +218,7 @@ function replaceSpacesWithPlus(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     // returnData = inputData.replace(/ /g, bas.cPlus);
     returnData = ruleParsing.processRulesInternal([inputData, [/ /g, bas.cPlus]], [biz.creplaceCharacterWithCharacter]);
   }
@@ -242,7 +242,7 @@ function replaceColonWithUnderscore(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     // returnData = inputData.replace(/:/g, bas.cUnderscore);
     returnData = ruleParsing.processRulesInternal([inputData, [/:/g, bas.cUnderscore]], [biz.creplaceCharacterWithCharacter]);
   }
@@ -266,7 +266,7 @@ function cleanCarriageReturnFromString(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.cconfigurationInitialized) === true) {
       // returnData = inputData.replace(/\s+/g, bas.cSpace);
       returnData = ruleParsing.processRulesInternal([inputData, [/\s+/g, bas.cSpace]], [biz.creplaceCharacterWithCharacter]).trim();
@@ -294,7 +294,7 @@ function convertStringToLowerCase(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = inputData.toLowerCase();
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -317,7 +317,7 @@ function convertStringToUpperCase(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = inputData.toUpperCase();
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -341,7 +341,7 @@ function doesStringContainUpperCaseCharacter(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     for (let i = 1; i < inputData.length; i++) {
       if (gen.cUpperCaseEnglishAlphabet.includes(inputData.charAt(i))) {
         returnData = true;
@@ -370,7 +370,7 @@ function doesStringContainLowerCaseCharacter(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     for (let i = 1; i < inputData.length; i++) {
       if (gen.cLowerCaseEnglishAlphabet.includes(inputData.charAt(i))) {
         returnData = true;
@@ -398,7 +398,9 @@ function isFirstCharacterLowerCase(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  returnData = gen.cLowerCaseEnglishAlphabet.includes(inputData.charAt(0));
+  if (inputData && typeof inputData === wrd.cstring) {
+    returnData = gen.cLowerCaseEnglishAlphabet.includes(inputData.charAt(0));
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -419,7 +421,7 @@ function isFirstCharacterUpperCase(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = gen.cUpperCaseEnglishAlphabet.includes(inputData.charAt(0));
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -452,7 +454,7 @@ function replaceCharacterAtIndexOfString(inputData, inputMetaData) {
   if (inputData && inputMetaData) {
     let originalString = inputData[0];
     let index = inputData[1];
-    if (originalString != '' && index >= 0 && inputMetaData != '') {
+    if (originalString != '' && typeof originalString === wrd.cstring && index >= 0 && inputMetaData != '') {
       returnData = originalString.substr(0, index) + inputMetaData + originalString.substr(index + inputMetaData.length);
     }
   } // End-if (inputData && inputMetaData)
