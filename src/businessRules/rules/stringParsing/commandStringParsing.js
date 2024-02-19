@@ -39,7 +39,7 @@ function cleanCommandInput(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = ruleParsing.processRulesInternal([inputData, [/--/g, '']], [biz.creplaceCharacterWithCharacter]);
     returnData = ruleParsing.processRulesInternal([returnData, [/\[/g, '']], [biz.creplaceCharacterWithCharacter]);
     returnData = ruleParsing.processRulesInternal([returnData, [/\]/g, '']], [biz.creplaceCharacterWithCharacter]);
@@ -67,7 +67,7 @@ function isValidCommandNameString(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     // NOTE: The below call to convert the string to a camel-case array doesn't guarantee that the string is actually camel-case.
     // It could actually be a single word, but of course we want to make sure it's more than 3 characters long.
     // Less than that, shouldn't really be considered a valid word, but could be appropriate as a command alias/abbreviation.
