@@ -38,7 +38,7 @@ function getAttributeName(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let attributeArray = inputData.split(bas.cColon);
     // attributeArray is:
     loggers.consoleLog(namespacePrefix + functionName, msg.cattributeArrayIs + JSON.stringify(attributeArray));
@@ -67,14 +67,16 @@ function getAttributeValue(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let attributeArray = inputData.split(bas.cColon);
     // attributeArray is:
     loggers.consoleLog(namespacePrefix + functionName, msg.cattributeArrayIs + attributeArray);
     // attributeArray[0] is:
     loggers.consoleLog(namespacePrefix + functionName, msg.cattributeArray1Is + attributeArray[1]);
-    returnData = ruleParsing.processRulesInternal([attributeArray[1], [/"/g, '']], [biz.creplaceCharacterWithCharacter]);
-    returnData = returnData.trim();
+    if (attributeArray[1]) {
+      returnData = ruleParsing.processRulesInternal([attributeArray[1], [/"/g, '']], [biz.creplaceCharacterWithCharacter]);
+      returnData = returnData.trim();
+    }
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -96,11 +98,12 @@ function getValueFromAssignmentOperationString(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let parsedString = inputData.split(bas.cEqual);
     loggers.consoleLog(namespacePrefix + functionName, msg.cparsedStringSpaceTerm + bas.cSpace + num.c1 + msg.cSpaceIsColonSpace + parsedString[0]);
     loggers.consoleLog(namespacePrefix + functionName, msg.cparsedStringSpaceTerm + bas.cSpace + num.c2 + msg.cSpaceIsColonSpace + parsedString[1]);
-    returnData = parsedString[1].replace(/['"]+/g, '');
+    if (parsedString[1])  
+      returnData = parsedString[1].replace(/['"]+/g, '');
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -122,7 +125,7 @@ function getDataCategoryFromDataContextName(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let dataCategory = inputData.split(bas.cUnderscore);
     returnData = dataCategory[0];
     // Data Category should be:
@@ -149,7 +152,7 @@ function getDataCategoryDetailNameFromDataContextName(inputData, inputMetaData) 
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let dataCategoryDetailName = inputData.split(bas.cUnderscore);
     returnData = dataCategoryDetailName[1];
     // Data Category Detail Name should be:
@@ -176,7 +179,7 @@ function getKeywordNameFromDataContextName(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let dataCategoryKeywordName = inputData.split(bas.cUnderscore);
     returnData = dataCategoryKeywordName[2];
     // Keyword Name should be:
@@ -205,7 +208,7 @@ function loadDataFile(inputData, inputMetaData) {
   if (!inputData) {
     // WARNING: No data to load, please specify a valid path & filename!
     loggers.consoleLog(namespacePrefix + functionName, msg.cLoadDataFileMessage1 + msg.cloadDataFileMessage2);
-  } else { // Else-clause if (!inputData)
+  } else if (typeof inputData === wrd.cstring) { // Else-clause if (!inputData)
     let loadedData = {};
     if (inputData.includes(gen.cDotxml) || inputData.includes(gen.cDotXml) || inputData.includes(gen.cDotXML)) {
       // Attempting to load XML data!
@@ -253,7 +256,7 @@ function saveDataFile(inputData, inputMetaData) {
   if (!inputData) {
     // WARNING: No data to save, please specify a valid path & filename!
     loggers.consoleLog(namespacePrefix + functionName, msg.csaveDataFileMessage1 + msg.cloadDataFileMessage2);
-  } else {
+  } else if (typeof inputData === wrd.cstring) {
     let supportedFileFormats = ruleParsing.processRulesInternal(['', ''], [biz.csupportedFileFormatsAre]);
     if (inputData.includes(gen.cDotxml) || inputData.includes(gen.cDotXml) || inputData.includes(gen.cDotXML)) {
       // WARNING: Invalid file format, file formats supported are:
@@ -288,7 +291,7 @@ function getUserNameFromEmail(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     loggers.consoleLog(namespacePrefix + functionName, msg.cIndexOfTheSpace + bas.cAt +
       sys.cSpaceIsColonSpace + inputData.indexOf(bas.cAt));
     returnData = inputData.substr(0, inputData.indexOf(bas.cAt));
