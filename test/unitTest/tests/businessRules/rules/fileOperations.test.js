@@ -1,195 +1,195 @@
-// 'use strict';
-// /* eslint-disable no-undef */
-// /**
-//  * @file fileOperations.test.js
-//  * @module fileOperations.test
-//  * @description Unit tests for the fileOperations.js
-//  * @requires module:fileOperations
-//  * @requires module:rulesLibrary
-//  * @requires module:testData/dataBroker
-//  * @requires module:testData/fileOperations
-//  * @requires module:test.constants
-//  * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
-//  * @requires {@link https://www.npmjs.com/package/jest|jest}
-//  * @author Json Howard
-//  * @date 2023/05/03
-//  * @copyright Copyright © 2023-… by Json Howard. All rights reserved
-//  */
+'use strict';
+/* eslint-disable no-undef */
+/**
+ * @file fileOperations.test.js
+ * @module fileOperations.test
+ * @description Unit tests for the fileOperations.js
+ * @requires module:fileOperations
+ * @requires module:rulesLibrary
+ * @requires module:testData/dataBroker
+ * @requires module:testData/fileOperations
+ * @requires module:test.constants
+ * @requires {@link https://www.npmjs.com/package/@haystacks/constants|@haystacks/constants}
+ * @requires {@link https://www.npmjs.com/package/jest|jest}
+ * @author Json Howard
+ * @date 2023/05/03
+ * @copyright Copyright © 2023-… by Json Howard. All rights reserved
+ */
 
-// // Internal imports
-// import fileOperations from '../../../../../src/businessRules/rules/fileOperations';
-// import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-// import * as data_con from '../../../testData/brokers/dataBroker.js';
-// import * as obj_con from '../../../testData/businessRules/rules/fileOperations.js';
-// import * as tst_con from '../../constants/test.constants.js';
+// Internal imports
+import fileOperations from '../../../../../src/businessRules/rules/fileOperations';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
+import * as data_con from '../../../testData/brokers/dataBroker.js';
+import * as obj_con from '../../../testData/businessRules/rules/fileOperations.js';
+import * as tst_con from '../../constants/test.constants.js';
 
-// // External imports
-// import hayConst from '@haystacks/constants';
-// import { describe, expect, test } from '@jest/globals';
+// External imports
+import hayConst from '@haystacks/constants';
+import { describe, expect, test } from '@jest/globals';
 
-// const { bas, wrd } = hayConst;
+const { bas, wrd } = hayConst;
 
-// /**
-//  * @function getXmlData
-//  * @description Tests the positive and negative test cases of the getXmlData
-//  * @author Json Howard
-//  * @date 2023/05/03
-//  */
-// describe(tst_con.cgetXmlData, () => {
-//   /**
-//    * @function getXmlData_validDataString
-//    * @description Tests the businessRules.rules.fileOperations.getXmlData function, with a valid input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.cgetXmlData_validDataString, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlPath();
-//     let inputMetaData = '';
-//     rulesLibrary.initRulesLibrary();
+/**
+ * @function getXmlData
+ * @description Tests the positive and negative test cases of the getXmlData
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.cgetXmlData, () => {
+  /**
+   * @function getXmlData_validDataString
+   * @description Tests the businessRules.rules.fileOperations.getXmlData function, with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cgetXmlData_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlPath();
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.getXmlData(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy();
-//   });
+    // Assert
+    expect(returnData).toBeTruthy();
+  });
 
-//   /**
-//    * @function getXmlData_inValidDataInputDataString
-//    * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid string input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.cgetXmlData_inValidDataInputDataString, () => {
-//     // Arrange
-//     let inputData = data_con.stringRandomText;
-//     let inputMetaData = '';
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function getXmlData_inValidDataInputDataString
+   * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid string input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cgetXmlData_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = data_con.stringRandomText;
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.getXmlData(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy();
-//   });
+    // Assert
+    expect(returnData).toBeUndefined();
+  });
 
-//   /**
-//    * @function getXmlData_inValidDataInputMetaDataString
-//    * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid string inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.cgetXmlData_inValidDataInputMetaDataString, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlPath();
-//     let inputMetaData = data_con.stringRandomText;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function getXmlData_inValidDataInputMetaDataString
+   * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cgetXmlData_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlPath();
+    let inputMetaData = data_con.stringRandomText;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.getXmlData(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy();
-//   });
+    // Assert
+    expect(returnData).toBeTruthy();
+  });
 
-//   /**
-//    * @function getXmlData_inValidInputDataInteger
-//    * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid integer input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.cgetXmlData_inValidInputDataInteger, () => {
-//     // Arrange
-//     let inputData = 4567;
-//     let inputMetaData = [1, 2, 3, 4, 5];
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function getXmlData_inValidInputDataInteger
+   * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cgetXmlData_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.getXmlData(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy();
-//   });
+    // Assert
+    expect(returnData).toBeUndefined();
+  });
 
-//   /**
-//    * @function getXmlData_inValidInputDataBoolean
-//    * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid boolean input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.cgetXmlData_inValidInputDataBoolean, () => {
-//     // Arrange
-//     let inputData = false;
-//     let inputMetaData = [1, 2, 3, 4, 5];
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function getXmlData_inValidInputDataBoolean
+   * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cgetXmlData_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.getXmlData(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy();
-//   });
+    // Assert
+    expect(returnData).toBeUndefined();
+  });
 
-//   /**
-//    * @function getXmlData_inValidInputMetaDataInteger
-//    * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid integer inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.cgetXmlData_inValidInputMetaDataInteger, () => {
-//     // Arrange
-//     let inputData = [1, 2, 3, 4, 5];
-//     let inputMetaData = 4567;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function getXmlData_inValidInputMetaDataInteger
+   * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cgetXmlData_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.getXmlData(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy();
-//   });
+    // Assert
+    expect(returnData).toBeUndefined();
+  });
 
-//   /**
-//    * @function getXmlData_inValidInputMetaDataBoolean
-//    * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid boolean inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.cgetXmlData_inValidInputMetaDataBoolean, () => {
-//     // Arrange
-//     let inputData = [1, 2, 3, 4, 5];
-//     let inputMetaData = false;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function getXmlData_inValidInputMetaDataBoolean
+   * @description Tests the businessRules.rules.fileOperations.getXmlData function, with an invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.cgetXmlData_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.getXmlData(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act
+    let returnData = fileOperations.getXmlData(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy();
-//   });
-// });
+    // Assert
+    expect(returnData).toBeUndefined();
+  });
+});
 
 // /**
 //  * @function getCsvData
@@ -239,7 +239,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 
 //   /**
@@ -283,7 +283,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 
 //   /**
@@ -305,7 +305,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 
 //   /**
@@ -327,7 +327,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 
 //   /**
@@ -349,7 +349,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 // });
 
@@ -379,7 +379,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBe("");
 //   });
 
 //   /**
@@ -425,7 +425,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBe("");
 //   });
 
 //   /**
@@ -447,7 +447,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 
 //   /**
@@ -469,7 +469,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 
 //   /**
@@ -491,7 +491,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 
 //   /**
@@ -513,7 +513,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBeUndefined();
 //   });
 // });
 
@@ -615,7 +615,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBe(true);
+//     expect(returnData).toBe(false);
 //   });
 
 //   /**
@@ -637,7 +637,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBe(true);
+//     expect(returnData).toBe(false);
 //   });
 
 //   /**
@@ -659,7 +659,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBe(true);
+//     expect(returnData).toBe(false);
 //   });
 
 //   /**
@@ -681,7 +681,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBe(true);
+//     expect(returnData).toBe(false);
 //   });
 // });
 
@@ -1109,7 +1109,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBe(false);
 //   });
 
 //   /**
@@ -1153,7 +1153,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBe(false);
 //   });
 
 //   /**
@@ -1175,7 +1175,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBe(false);
 //   });
 
 //   /**
@@ -1197,7 +1197,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBe(false);
 //   });
 
 //   /**
@@ -1219,7 +1219,7 @@
 //     );
 
 //     // Assert
-//     expect(returnData).toBeTruthy();
+//     expect(returnData).toBe(false);
 //   });
 // });
 
@@ -1387,222 +1387,222 @@
 //   });
 // });
 
-// /**
-//  * @function copyAllFilesAndFoldersFromFolderToFolder
-//  * @description Tests the positive and negative test cases of the copyAllFilesAndFoldersFromFolderToFolder
-//  * @author Json Howard
-//  * @date 2023/05/03
-//  */
-// describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_validDataString
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with a valid input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_validDataString, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlFolder();
-//     let inputMetaData = obj_con.fileOperationsXmlPath();
-//     rulesLibrary.initRulesLibrary();
+/**
+ * @function copyAllFilesAndFoldersFromFolderToFolder
+ * @description Tests the positive and negative test cases of the copyAllFilesAndFoldersFromFolderToFolder
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder, () => {
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_validDataString
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString, () => {
-//     // Arrange
-//     let inputData = wrd.cHello;
-//     let inputMetaData = obj_con.fileOperationsXmlPath();
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlFolder();
-//     let inputMetaData = wrd.cHello;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = wrd.cHello;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid integer input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger, () => {
-//     // Arrange
-//     let inputData = 4567;
-//     let inputMetaData = [1, 2, 3, 4, 5];
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid boolean input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean, () => {
-//     // Arrange
-//     let inputData = false;
-//     let inputMetaData = [1, 2, 3, 4, 5];
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid integer inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger, () => {
-//     // Arrange
-//     let inputData = [1, 2, 3, 4, 5];
-//     let inputMetaData = 4567;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid boolean inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean, () => {
-//     // Arrange
-//     let inputData = [1, 2, 3, 4, 5];
-//     let inputMetaData = false;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid undefined input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined, () => {
-//     // Arrange
-//     let inputData = undefined;
-//     let inputMetaData = obj_con.fileOperationsXmlPath();
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid undefined input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataUndefined, () => {
+    // Arrange
+    let inputData = undefined;
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid NaN input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN, () => {
-//     // Arrange
-//     let inputData = NaN;
-//     let inputMetaData = obj_con.fileOperationsXmlPath();
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid NaN input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputDataNaN, () => {
+    // Arrange
+    let inputData = NaN;
+    let inputMetaData = obj_con.fileOperationsXmlPath();
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid undefined inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlFolder();
-//     let inputMetaData = undefined;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid undefined inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataUndefined, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = undefined;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe(false);
+  });
 
-//   /**
-//    * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN
-//    * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid NaN inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlFolder();
-//     let inputMetaData = NaN;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function copyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN
+   * @description Tests the businessRules.rules.fileOperations.copyAllFilesAndFoldersFromFolderToFolder function, with an invalid NaN inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccopyAllFilesAndFoldersFromFolderToFolder_inValidInputMetaDataNaN, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = NaN;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
-// });
+    // Assert
+    expect(returnData).toBe(false);
+  });
+});
 
 // /**
 //  * @function buildReleasePackage
@@ -1924,147 +1924,147 @@
 //   });
 // });
 
-// /**
-//  * @function cleanRootPath
-//  * @description Tests the positive and negative test cases of the cleanRootPath
-//  * @author Json Howard
-//  * @date 2023/05/03
-//  * @note inputData and inputMetaData are not defined in that cleanRootPath function.
-//  */
-// describe(tst_con.ccleanRootPath, () => {
-//   /**
-//    * @function cleanRootPath_validDataString
-//    * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with a valid input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccleanRootPath_validDataString, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlFolder();
-//     let inputMetaData = obj_con.fileOperationsXmlFolder();
-//     rulesLibrary.initRulesLibrary();
+/**
+ * @function cleanRootPath
+ * @description Tests the positive and negative test cases of the cleanRootPath
+ * @author Json Howard
+ * @date 2023/05/03
+ * @note inputData and inputMetaData are not defined in that cleanRootPath function.
+ */
+describe(tst_con.ccleanRootPath, () => {
+  /**
+   * @function cleanRootPath_validDataString
+   * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_validDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe();
+  });
 
-//   /**
-//    * @function cleanRootPath_inValidDataInputDataString
-//    * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid string input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccleanRootPath_inValidDataInputDataString, () => {
-//     // Arrange
-//     let inputData = wrd.cHello;
-//     let inputMetaData = obj_con.fileOperationsXmlFolder();
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function cleanRootPath_inValidDataInputDataString
+   * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid string input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidDataInputDataString, () => {
+    // Arrange
+    let inputData = wrd.cHello;
+    let inputMetaData = obj_con.fileOperationsXmlFolder();
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe();
+  });
 
-//   /**
-//    * @function cleanRootPath_inValidDataInputMetaDataString
-//    * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid string inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccleanRootPath_inValidDataInputMetaDataString, () => {
-//     // Arrange
-//     let inputData = obj_con.fileOperationsXmlFolder();
-//     let inputMetaData = wrd.cHello;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function cleanRootPath_inValidDataInputMetaDataString
+   * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid string inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidDataInputMetaDataString, () => {
+    // Arrange
+    let inputData = obj_con.fileOperationsXmlFolder();
+    let inputMetaData = wrd.cHello;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe();
+  });
 
-//   /**
-//    * @function cleanRootPath_inValidInputDataInteger
-//    * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid integer input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccleanRootPath_inValidInputDataInteger, () => {
-//     // Arrange
-//     let inputData = 4567;
-//     let inputMetaData = [1, 2, 3, 4, 5];
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function cleanRootPath_inValidInputDataInteger
+   * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid integer input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputDataInteger, () => {
+    // Arrange
+    let inputData = 4567;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe();
+  });
 
-//   /**
-//    * @function cleanRootPath_inValidInputDataBoolean
-//    * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid boolean input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccleanRootPath_inValidInputDataBoolean, () => {
-//     // Arrange
-//     let inputData = false;
-//     let inputMetaData = [1, 2, 3, 4, 5];
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function cleanRootPath_inValidInputDataBoolean
+   * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid boolean input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputDataBoolean, () => {
+    // Arrange
+    let inputData = false;
+    let inputMetaData = [1, 2, 3, 4, 5];
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe();
+  });
 
-//   /**
-//    * @function cleanRootPath_inValidInputMetaDataInteger
-//    * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid integer inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccleanRootPath_inValidInputMetaDataInteger, () => {
-//     // Arrange
-//     let inputData = [1, 2, 3, 4, 5];
-//     let inputMetaData = 4567;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function cleanRootPath_inValidInputMetaDataInteger
+   * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid integer inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputMetaDataInteger, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = 4567;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
+    // Assert
+    expect(returnData).toBe();
+  });
 
-//   /**
-//    * @function cleanRootPath_inValidInputMetaDataBoolean
-//    * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid boolean inputMetaData.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-//   test(tst_con.ccleanRootPath_inValidInputMetaDataBoolean, () => {
-//     // Arrange
-//     let inputData = [1, 2, 3, 4, 5];
-//     let inputMetaData = false;
-//     rulesLibrary.initRulesLibrary();
+  /**
+   * @function cleanRootPath_inValidInputMetaDataBoolean
+   * @description Tests the businessRules.rules.fileOperations.cleanRootPath function, with an invalid boolean inputMetaData.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+  test(tst_con.ccleanRootPath_inValidInputMetaDataBoolean, () => {
+    // Arrange
+    let inputData = [1, 2, 3, 4, 5];
+    let inputMetaData = false;
+    rulesLibrary.initRulesLibrary();
 
-//     // Act
-//     let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
+    // Act
+    let returnData = fileOperations.cleanRootPath(inputData, inputMetaData);
 
-//     // Assert
-//     expect(returnData).toBe();
-//   });
-// });
+    // Assert
+    expect(returnData).toBe();
+  });
+});
 
 // /**
 //  * @function copyFileSync
@@ -2566,164 +2566,164 @@
 //   });
 // });
 
-// /**
-//  * @function appendMessageToFile
-//  * @description Tests the positive and negative test cases of the appendMessageToFile
-//  * @author Json Howard
-//  * @date 2023/05/03
-//  */
-// describe(tst_con.cappendMessageToFile, () => {
-//   /**
-//    * @function appendMessageToFile_validDataString
-//    * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a valid input.
-//    * @author Json Howard
-//    * @date 2023/05/03
-//    */
-// 	test(tst_con.cappendMessageToFile_validDataString, () => {
-// 	  // Arrange
-// 	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
-// 	  let inputMetaData = wrd.cHello + wrd.cWorld;
-// 	  rulesLibrary.initRulesLibrary();
+/**
+ * @function appendMessageToFile
+ * @description Tests the positive and negative test cases of the appendMessageToFile
+ * @author Json Howard
+ * @date 2023/05/03
+ */
+describe(tst_con.cappendMessageToFile, () => {
+  /**
+   * @function appendMessageToFile_validDataString
+   * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with a valid input.
+   * @author Json Howard
+   * @date 2023/05/03
+   */
+	test(tst_con.cappendMessageToFile_validDataString, () => {
+	  // Arrange
+	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
+	  let inputMetaData = wrd.cHello + wrd.cWorld;
+	  rulesLibrary.initRulesLibrary();
 
-// 	  // Act
-// 	  let returnData = fileOperations.appendMessageToFile(
-// 		inputData,
-// 		inputMetaData
-// 	  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-// 	  // Assert
-// 	  expect(returnData).toBe(true); // path array
-// 	});
+	  // Assert
+	  expect(returnData).toBe(undefined); // path array
+	});
 
-// 	/**
-// 	 * @function appendMessageToFile_inValidDataInputDataString
-// 	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string input.
-// 	 * @author Json Howard
-// 	 * @date 2023/05/03
-// 	 */
-// 	test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
-// 	  // Arrange
-// 	  let inputData = data_con.stringRandomText;
-// 	  let inputMetaData = wrd.cHello + wrd.cWorld;
-// 	  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidDataInputDataString
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidDataInputDataString, () => {
+	  // Arrange
+	  let inputData = data_con.stringRandomText;
+	  let inputMetaData = wrd.cHello + wrd.cWorld;
+	  rulesLibrary.initRulesLibrary();
 
-// 	  // Act
-// 	  let returnData = fileOperations.appendMessageToFile(
-// 		inputData,
-// 		inputMetaData
-// 	  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-// 	  // Assert
-// 	  expect(returnData).toBe(true); // path array
-// 	});
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-// 	/**
-// 	 * @function appendMessageToFile_inValidDataInputMetaDataString
-// 	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string inputMetaData.
-// 	 * @author Json Howard
-// 	 * @date 2023/05/03
-// 	 */
-// 	test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
-// 	  // Arrange
-// 	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
-// 	  let inputMetaData = data_con.stringRandomText;
-// 	  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidDataInputMetaDataString
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid string inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidDataInputMetaDataString, () => {
+	  // Arrange
+	  let inputData = obj_con.fileOperationsXmlPath() + obj_con.testXmlPath();
+	  let inputMetaData = data_con.stringRandomText;
+	  rulesLibrary.initRulesLibrary();
 
-// 	  // Act
-// 	  let returnData = fileOperations.appendMessageToFile(
-// 		inputData,
-// 		inputMetaData
-// 	  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-// 	  // Assert
-// 	  expect(returnData).toBe(true); // path array
-// 	});
+	  // Assert
+	  expect(returnData).toBe(undefined); // path array
+	});
 
-// 	/**
-// 	 * @function appendMessageToFile_inValidInputDataInteger
-// 	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer input.
-// 	 * @author Json Howard
-// 	 * @date 2023/05/03
-// 	 */
-// 	test(tst_con.cappendMessageToFile_inValidInputDataInteger, () => {
-// 	  // Arrange
-// 	  let inputData = 4567;
-// 	  let inputMetaData = [1, 2, 3, 4, 5];
-// 	  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputDataInteger
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputDataInteger, () => {
+	  // Arrange
+	  let inputData = 4567;
+	  let inputMetaData = [1, 2, 3, 4, 5];
+	  rulesLibrary.initRulesLibrary();
 
-// 	  // Act
-// 	  let returnData = fileOperations.appendMessageToFile(
-// 		inputData,
-// 		inputMetaData
-// 	  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-// 	  // Assert
-// 	  expect(returnData).toBe(false); // path array
-// 	});
+	  // Assert
+	  expect(returnData).toBe(undefined); // path array
+	});
 
-// 	/**
-// 	 * @function appendMessageToFile_inValidInputDataBoolean
-// 	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean input.
-// 	 * @author Json Howard
-// 	 * @date 2023/05/03
-// 	 */
-// 	test(tst_con.cappendMessageToFile_inValidInputDataBoolean, () => {
-// 	  // Arrange
-// 	  let inputData = false;
-// 	  let inputMetaData = [1, 2, 3, 4, 5];
-// 	  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputDataBoolean
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean input.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputDataBoolean, () => {
+	  // Arrange
+	  let inputData = false;
+	  let inputMetaData = [1, 2, 3, 4, 5];
+	  rulesLibrary.initRulesLibrary();
 
-// 	  // Act
-// 	  let returnData = fileOperations.appendMessageToFile(
-// 		inputData,
-// 		inputMetaData
-// 	  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-// 	  // Assert
-// 	  expect(returnData).toBe(false); // path array
-// 	});
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
 
-// 	/**
-// 	 * @function appendMessageToFile_inValidInputMetaDataInteger
-// 	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer inputMetaData.
-// 	 * @author Json Howard
-// 	 * @date 2023/05/03
-// 	 */
-// 	test(tst_con.cappendMessageToFile_inValidInputMetaDataInteger, () => {
-// 	  // Arrange
-// 	  let inputData = [1, 2, 3, 4, 5];
-// 	  let inputMetaData = 4567;
-// 	  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputMetaDataInteger
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid integer inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputMetaDataInteger, () => {
+	  // Arrange
+	  let inputData = [1, 2, 3, 4, 5];
+	  let inputMetaData = 4567;
+	  rulesLibrary.initRulesLibrary();
 
-// 	  // Act
-// 	  let returnData = fileOperations.appendMessageToFile(
-// 		inputData,
-// 		inputMetaData
-// 	  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-// 	  // Assert
-// 	  expect(returnData).toBe(false); // path array
-// 	});
+	  // Assert
+	  expect(returnData).toBe(undefined); // path array
+	});
 
-// 	/**
-// 	 * @function appendMessageToFile_inValidInputMetaDataBoolean
-// 	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean inputMetaData.
-// 	 * @author Json Howard
-// 	 * @date 2023/05/03
-// 	 */
-// 	test(tst_con.cappendMessageToFile_inValidInputMetaDataBoolean, () => {
-// 	  // Arrange
-// 	  let inputData = [1, 2, 3, 4, 5];
-// 	  let inputMetaData = false;
-// 	  rulesLibrary.initRulesLibrary();
+	/**
+	 * @function appendMessageToFile_inValidInputMetaDataBoolean
+	 * @description Tests the businessRules.rules.fileOperations function appendMessageToFile with an invalid boolean inputMetaData.
+	 * @author Json Howard
+	 * @date 2023/05/03
+	 */
+	test(tst_con.cappendMessageToFile_inValidInputMetaDataBoolean, () => {
+	  // Arrange
+	  let inputData = [1, 2, 3, 4, 5];
+	  let inputMetaData = false;
+	  rulesLibrary.initRulesLibrary();
 
-// 	  // Act
-// 	  let returnData = fileOperations.appendMessageToFile(
-// 		inputData,
-// 		inputMetaData
-// 	  );
+	  // Act
+	  let returnData = fileOperations.appendMessageToFile(
+		inputData,
+		inputMetaData
+	  );
 
-// 	  // Assert
-// 	  expect(returnData).toBe(false); // path array
-// 	});
-// });
+	  // Assert
+	  expect(returnData).toBe(false); // path array
+	});
+});

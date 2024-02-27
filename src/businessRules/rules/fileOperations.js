@@ -64,21 +64,27 @@ function getXmlData(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  let pathAndFilename = path.resolve(inputData);
-  let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
-  let xml;
-  xml2js.parseString(data,
-    function (err, result) {
-      if (err) {
-        // ERROR:
-        returnData = console.log(sys.cERROR_Colon + err);
-        loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
-        loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
-        return returnData;
-      } // End-if (err)
-      xml = result;
-    });
-  returnData = xml;
+  if (inputData && typeof inputData === wrd.cstring) {
+    let pathAndFilename = path.resolve(inputData);
+    try {
+      let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
+      let xml;
+      xml2js.parseString(data,
+        function (err, result) {
+          if (err) {
+            // ERROR:
+            returnData = console.log(sys.cERROR_Colon + err);
+            loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
+            loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+            return returnData;
+          } // End-if (err)
+          xml = result;
+        });
+      returnData = xml;
+    } catch (err) {
+      returnData = undefined;
+    }
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -102,17 +108,23 @@ function getCsvData(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  let pathAndFilename = path.resolve(inputData);
-  let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
-  returnData = papa.parse(data, {
-    delimiter: ',',
-    newline: '/n',
-    header: true,
-    skipEmptyLines: true,
-    encoding: gen.cUTF8
-  });
-  // DONE loading data from:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cDoneLoadingDataFrom + pathAndFilename);
+  if (inputData && typeof inputData === wrd.cstring) {
+    let pathAndFilename = path.resolve(inputData);
+    try {
+      let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
+      returnData = papa.parse(data, {
+        delimiter: ',',
+        newline: '/n',
+        header: true,
+        skipEmptyLines: true,
+        encoding: gen.cUTF8
+      });
+      // DONE loading data from:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cDoneLoadingDataFrom + pathAndFilename);
+    } catch (err) {
+      returnData = undefined;
+    }
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -264,27 +276,31 @@ function scanDirectoryContents(inputData, inputMetaData) {
   // Path that should be scanned is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cPathThatShouldBeScannedIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
-  let enableLimit = inputMetaData[0];
-  let filesLimit = inputMetaData[1];
-  // enableLimit is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cenableLimitIs + enableLimit);
-  // filesLimit is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesLimitIs + filesLimit);
   let filesFound = [];
-  let directory = '';
-  directory = path.resolve(inputData);
-  enableFilesListLimit = enableLimit;
-  filesListLimit = filesLimit;
-  readDirectorySynchronously(directory, '');
-  filesFound = filesCollection; // Copy the data into a local variable first.
-  filesCollection = undefined; // Make sure to clear it so we don't have a chance of it corrupting any other file operations.
-  filesCollection = [];
-  enableFilesListLimit = false;
-  filesListLimit = -1;
-  hitFileLimit = false;
-  // files found are:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesFoundAre + JSON.stringify(filesFound));
-  loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  if (Array.isArray(inputMetaData) && inputMetaData[0] && inputMetaData[1]) {
+    let enableLimit = inputMetaData[0];
+    let filesLimit = inputMetaData[1];
+    // enableLimit is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cenableLimitIs + enableLimit);
+    // filesLimit is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cfilesLimitIs + filesLimit);
+    let directory = '';
+    if (inputData && typeof inputData === wrd.cstring) {
+      directory = path.resolve(inputData);
+      enableFilesListLimit = enableLimit;
+      filesListLimit = filesLimit;
+      readDirectorySynchronously(directory, '');
+      filesFound = filesCollection; // Copy the data into a local variable first.
+      filesCollection = undefined; // Make sure to clear it so we don't have a chance of it corrupting any other file operations.
+      filesCollection = [];
+      enableFilesListLimit = false;
+      filesListLimit = -1;
+      hitFileLimit = false;
+      // files found are:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cfilesFoundAre + JSON.stringify(filesFound));
+    }
+    loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  }
   return filesFound;
 }
 
@@ -304,9 +320,13 @@ function getDirectoryList(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = false;
   if (inputData) {
-    returnData = fs.readdirSync(inputData, { withFileTypes: true })
-      .filter((item) => item.isDirectory())
-      .map((item) => item.name);
+    try {
+      returnData = fs.readdirSync(inputData, { withFileTypes: true })
+        .filter((item) => item.isDirectory())
+        .map((item) => item.name);
+    } catch (err) {
+      console.log('file load error.');
+    }
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -331,7 +351,7 @@ function readDirectorySynchronously(inputData, inputMetaData) {
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
   // console.log(`inputData is: ${inputData}`);
   // console.log(`inputMetaData is: ${inputMetaData}`);
-  if (hitFileLimit === false) {
+  if (hitFileLimit === false ) {
     let directory = path.resolve(inputData); // Make sure to resolve the path on the local system.
     let currentDirectoryPath = directory;
     let currentDirectory = '';
@@ -411,7 +431,8 @@ function copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = false;
-  returnData = copyFolderRecursiveSync(inputData, inputMetaData);
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring && Array.isArray(inputMetaData))
+    returnData = copyFolderRecursiveSync(inputData, inputMetaData);
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
