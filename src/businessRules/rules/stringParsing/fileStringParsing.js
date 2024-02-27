@@ -38,7 +38,7 @@ function getFileNameFromPath(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     // Clean the path string for any double slashes.
     if (inputData.includes(bas.cDoubleForwardSlash)) {
       inputData = ruleParsing.processRulesInternal([inputData, ''], [biz.cswapDoubleForwardSlashToSingleForwardSlash]);
@@ -71,7 +71,7 @@ function getFileExtension(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = path.extname(inputData);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -95,7 +95,7 @@ function removeDotFromFileExtension(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = inputData.substring(1);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -119,7 +119,7 @@ function removeFileExtensionFromFileName(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     returnData = inputData.replace(/\.[^/.]+$/, '');
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -142,7 +142,7 @@ function ascertainMatchingFilenames(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && inputMetaData) {
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring && typeof inputMetaData === wrd.cstring) {
     if (path.basename(inputData) === path.basename(inputMetaData)) {
       // Filenames match
       loggers.consoleLog(namespacePrefix + functionName, msg.cFilenamesMatch);
@@ -254,7 +254,7 @@ function getFirstTopLevelFolderFromPath(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let pathArray;
     if (inputData.includes(bas.cForwardSlash) === true) {
       pathArray = inputData.split(bas.cForwardSlash);
