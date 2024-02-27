@@ -50,7 +50,7 @@ function isStringCamelCase(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let foundFirstCapitalLetter = false;
     // First make sure the string meets the basic qualifications of a camel case string.
     // 1. Does not contain underscore or dash word separators.
@@ -131,7 +131,7 @@ function simplifyAndConsolidateString(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     // returnData = inputData.toLowerCase().replace(/[\W]/g, '');
     returnData = ruleParsing.processRulesInternal([inputData.toLowerCase().trim(), [/[^\w\s]/g, '']], [biz.cutilitiesReplaceCharacterWithCharacter]);
     returnData = ruleParsing.processRulesInternal([returnData, [/[\0-9]/g, '']], [biz.cutilitiesReplaceCharacterWithCharacter]);
@@ -156,7 +156,7 @@ function compareSimplifiedAndConsolidatedStrings(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData && inputMetaData) {
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring && typeof inputMetaData === wrd.cstring) {
     returnData = simplifyAndConsolidateString(inputData, '') === simplifyAndConsolidateString(inputMetaData, '');
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -183,7 +183,7 @@ function countCamelCaseWords(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = 0;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let caps = [];
     for (let i = 1; i < inputData.length; i++) {
       if (gen.cUpperCaseEnglishAlphabet.includes(inputData.charAt(i))) { caps.push(i); }
@@ -212,7 +212,7 @@ function doesStringContainAcronym(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   let lastCharacterWasUpperCase = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     for (let i = 1; i < inputData.length; i++) {
       // if the last character was upper case and the current character is upper case,
       // then we have found an acronym and we can exit the loop.
@@ -247,7 +247,7 @@ function determineWordDelimiter(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let camelCaseWordCount = countCamelCaseWords(inputData, '');
     loggers.consoleLog(namespacePrefix + functionName, msg.ccamelCaseWordCountIs + camelCaseWordCount);
     let containsAcronym = doesStringContainAcronym(inputData, '');
@@ -323,7 +323,7 @@ function countDelimiterInString(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = 0;
-  if (inputData && inputMetaData) {
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring && typeof inputMetaData === wrd.cstring) {
     returnData = (inputData.split(inputMetaData).length - 1);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
@@ -382,7 +382,7 @@ function isStringList(inputData, inputMetaData) {
   // console.log(msg.cinputMetaDataIs + inputMetaData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let primaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.cprimaryCommandDelimiter);
     let secondaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter);
     let tertiaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.ctertiaryCommandDelimiter);
