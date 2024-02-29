@@ -79,7 +79,7 @@ function printDataHive(inputData, inputMetaData) {
       loggers.printMessageToFile(logFilePathAndName, inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(leafDataHiveElement));
     }
     returnData[1] = leafDataHiveElement;
-  } else {
+  } else if (inputData) {
     if (inputData[1]) {
       if (D[inputData[1]] !== undefined) {
         // contents are:
@@ -220,7 +220,7 @@ function clearDataStorage(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = [true, {}];
-  if (inputData[1] !== undefined) {
+  if (inputData && inputData[1] !== undefined) {
     dataBroker.clearData(inputData[1]);
     returnData[1] = true;
   } else {
