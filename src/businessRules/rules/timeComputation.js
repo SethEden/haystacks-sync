@@ -42,7 +42,8 @@ function getNowMoment(inputData, inputMetaData) {
   // console.log(`inputData is: ${inputData}`);
   // console.log(`inputMetaData is: ${inputMetaData}`);
   let returnData = '';
-  returnData = moment().format(inputData);
+  if (typeof inputData === wrd.cstring)
+    returnData = moment().format(inputData);
   // console.log(`returnData is: ${returnData}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return returnData;
@@ -63,9 +64,11 @@ function computeDeltaTime(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = 0;
-  let startTime = moment(inputData, gen.cYYYYMMDD_HHmmss_SSS);
-  let endTime = moment(inputMetaData, gen.cYYYYMMDD_HHmmss_SSS);
-  returnData = endTime.diff(startTime); // Should work in milliseconds out of the box!
+  if (typeof inputData === wrd.cstring && typeof inputMetaData === wrd.cstring) {
+    let startTime = moment(inputData, gen.cYYYYMMDD_HHmmss_SSS);
+    let endTime = moment(inputMetaData, gen.cYYYYMMDD_HHmmss_SSS);
+    returnData = endTime.diff(startTime); // Should work in milliseconds out of the box!
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -86,7 +89,7 @@ function reformatDeltaTime(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (Number.isInteger(inputData)) {
+  if (typeof inputData === wrd.cinteger && typeof inputMetaData === wrd.cstring) {
     returnData = moment.duration(inputData).format(inputMetaData);
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
