@@ -43,8 +43,10 @@ function getNamedThemes() {
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   let themesNames = [];
   let frameworkThemesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkThemesPath);
-  frameworkThemesPath = path.resolve(frameworkThemesPath);
-  themesNames = ruleBroker.processRules([frameworkThemesPath, ''], [biz.cgetDirectoryList]);
+  if (typeof frameworkThemesPath === wrd.cstring) {
+    frameworkThemesPath = path.resolve(frameworkThemesPath);
+    themesNames = ruleBroker.processRules([frameworkThemesPath, ''], [biz.cgetDirectoryList]);
+  }
   // themesNames is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cthemesNamesIs + JSON.stringify(themesNames));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);

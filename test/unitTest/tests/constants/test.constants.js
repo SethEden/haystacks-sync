@@ -2328,6 +2328,8 @@ export const cchangeDebugConfigurationTheme_inValidInputDataUndefined = cchangeD
 export const cchangeDebugConfigurationTheme_inValidInputDataNaN = cchangeDebugConfigurationTheme + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN; // changeDebugConfigurationTheme_inValidInputDataNaN
 
 export const csaveConfiguration_validDataString = csaveConfiguration + wrd.cvalid + wrd.cData + wrd.cString; // saveConfiguration_validDataString
+export const csaveConfiguration_inValidInputMetaDataUndefined = csaveConfiguration + wrd.cinvalid + wrd.cInput + wrd.cMetaData + wrd.cUndefined;
+export const csaveConfiguration_inValidInputMetaDataNaN = csaveConfiguration + wrd.cinvalid + wrd.cInput + wrd.cMetaData + wrd.cNaN;
 
 export const clistConfigurationThemes_validDataString = clistConfigurationThemes + wrd.cvalid + wrd.cData + wrd.cString; // listConfigurationThemes_validDataString
 
