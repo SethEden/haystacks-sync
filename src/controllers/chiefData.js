@@ -188,13 +188,15 @@ function setupAllXmlData(dataPathConfigurationName, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   let loadedAndMergedDataAllFiles = {};
   let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
-  dataPath = path.resolve(dataPath);
-  // dataPath is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
-  let filesToLoad = dataBroker.scanDataPath(dataPath);
-  // filesToLoad is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
-  loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
+  if (dataPath && typeof dataPath === wrd.cstring) {
+    dataPath = path.resolve(dataPath);
+    // dataPath is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
+    let filesToLoad = dataBroker.scanDataPath(dataPath);
+    // filesToLoad is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
+    loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
+  }
   // loadedAndMergedDataAllFiles is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
