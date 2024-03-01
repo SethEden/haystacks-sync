@@ -321,7 +321,7 @@ function workflowHelp(inputData, inputMetaData) {
   let errorMessage = '';
   // The old way of printing out all the workflows, when it was a flat data structure.
   // loggers.consoleTableLog(baseFileName + bas.cDot + functionName, D[sys.cCommandWorkflows][wrd.cWorkflows], [wrd.cName]);
-  if (inputData.length > 1) {
+  if (Array.isArray(inputData) && inputData.length > 1) {
     // calling getWorkflowNamespaceDataObject() function,
     // because the user entered some namespace we should look for!
     loggers.consoleLog(namespacePrefix + functionName, msg.cworkfowHelpMessage01 + msg.cworkfowHelpMessage02);

@@ -159,7 +159,8 @@ function getAllWorkflows(workflowDataStructure) {
   if (workflowDataStructure === undefined && D[sys.cCommandWorkflows]) {
     internalWorkflowDataStructure = JSON.parse(JSON.stringify(D[sys.cCommandWorkflows]));
   } else {
-    internalWorkflowDataStructure = JSON.parse(JSON.stringify(workflowDataStructure));
+    if (workflowDataStructure)
+      internalWorkflowDataStructure = JSON.parse(JSON.stringify(workflowDataStructure));
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.cinternalWorkflowDataStructureIs + JSON.stringify(internalWorkflowDataStructure));
   if (typeof internalWorkflowDataStructure === wrd.cobject) {
