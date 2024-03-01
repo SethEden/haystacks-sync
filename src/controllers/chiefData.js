@@ -48,16 +48,18 @@ function searchForUniversalDebugConfigSetting(appConfigPathName, frameworkConfig
   let universalDebugConfigSetting = false;
   let appConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, appConfigPathName);
   let frameworkConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, frameworkConfigPathName);
-  appConfigDataPath = path.resolve(appConfigDataPath);
-  frameworkConfigDataPath = path.resolve(frameworkConfigDataPath);
-  let appConfigFilesToLoad = dataBroker.scanDataPath(appConfigDataPath);
-  let frameworkConfigFilesToLoad = dataBroker.scanDataPath(frameworkConfigDataPath);
-  configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigFiles, appConfigFilesToLoad);
-  configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkConfigFiles, frameworkConfigFilesToLoad);
-  universalDebugConfigSetting = dataBroker.findUniversalDebugConfigSetting(
-    appConfigFilesToLoad, frameworkConfigFilesToLoad
-  );
-  configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, universalDebugConfigSetting);
+  if (appConfigDataPath && frameworkConfigDataPath && typeof appConfigDataPath === wrd.cstring && typeof frameworkConfigPathName === wrd.cstring) {
+    appConfigDataPath = path.resolve(appConfigDataPath);
+    frameworkConfigDataPath = path.resolve(frameworkConfigDataPath);
+    let appConfigFilesToLoad = dataBroker.scanDataPath(appConfigDataPath);
+    let frameworkConfigFilesToLoad = dataBroker.scanDataPath(frameworkConfigDataPath);
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigFiles, appConfigFilesToLoad);
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkConfigFiles, frameworkConfigFilesToLoad);
+    universalDebugConfigSetting = dataBroker.findUniversalDebugConfigSetting(
+      appConfigFilesToLoad, frameworkConfigFilesToLoad
+    );
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, universalDebugConfigSetting);
+  }
   // console.log(`universalDebugConfigSetting is: ${universalDebugConfigSetting}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return universalDebugConfigSetting;
