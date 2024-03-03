@@ -93,6 +93,7 @@ function initFrameworkSchema(configData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.capplicationMetaDataPathAndFilenameIs + applicationMetaDataPathAndFilename);
   loggers.consoleLog(namespacePrefix + functionName, msg.cframeworkMetaDataPathAndFilenameIs + frameworkMetaDataPathAndFilename);
   let applicationMetaData = ruleBroker.processRules([applicationMetaDataPathAndFilename, ''], getJsonRule);
+  console.log(applicationMetaData);
   let frameworkMetaData = ruleBroker.processRules([frameworkMetaDataPathAndFilename, ''], getJsonRule);
   loggers.consoleLog(namespacePrefix + functionName, msg.capplicationMetaDataIs + JSON.stringify(applicationMetaData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cframeworkMetaDataIs + JSON.stringify(frameworkMetaData));
@@ -233,11 +234,14 @@ function loadCommandAliases(commandAliasesPathConfigName) {
   let resolvedSystemCommandsAliasesPath;
   let resolvedClientCommandsAliasesPath;
   let resolvedCustomCommandsAliasesPath;
-  if (commandAliasesPathConfigName) {
-    resolvedCustomCommandsAliasesPath = path.resolve(configurator.getConfigurationSetting(wrd.csystem, commandAliasesPathConfigName));
-    // resolvedCustomCommandsAliasesPath is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomCommandsAliasesPathIs + resolvedCustomCommandsAliasesPath);
-    chiefCommander.loadCommandAliasesFromPath(commandAliasesPathConfigName, wrd.cPlugin);
+  if (commandAliasesPathConfigName && typeof commandAliasesPathConfigName === wrd.cstring) {
+    resolvedCustomCommandsAliasesPath = configurator.getConfigurationSetting(wrd.csystem, commandAliasesPathConfigName);
+    if (typeof resolvedCustomCommandsAliasesPath === wrd.cstring) {
+      resolvedCustomCommandsAliasesPath = path.resolve(resolvedCustomCommandsAliasesPath);
+      // resolvedCustomCommandsAliasesPath is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomCommandsAliasesPathIs + resolvedCustomCommandsAliasesPath);
+      chiefCommander.loadCommandAliasesFromPath(commandAliasesPathConfigName, wrd.cPlugin);
+    }
   } else {
     resolvedSystemCommandsAliasesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkCommandAliasesPath);
     resolvedClientCommandsAliasesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cclientCommandAliasesPath);
@@ -271,10 +275,13 @@ function loadCommandWorkflows(workflowPathConfigName) {
   let resolvedClientWorkflowsPath;
   let resolvedCustomWorkflowsPath;
   if (workflowPathConfigName) {
-    resolvedCustomWorkflowsPath = path.resolve(configurator.getConfigurationSetting(wrd.csystem, workflowPathConfigName));
-    // resolvedCustomWorkflowsPath is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomWorkflowsPathIs + resolvedCustomWorkflowsPath);
-    chiefWorkflow.loadCommandWorkflowsFromPath(workflowPathConfigName, wrd.cPlugin);
+    resolvedCustomWorkflowsPath = configurator.getConfigurationSetting(wrd.csystem, workflowPathConfigName);
+    if (typeof resolvedCustomWorkflowsPath === wrd.cstring) {
+      resolvedCustomWorkflowsPath = path.resolve(resolvedCustomWorkflowsPath);
+      // resolvedCustomWorkflowsPath is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomWorkflowsPathIs + resolvedCustomWorkflowsPath);
+      chiefWorkflow.loadCommandWorkflowsFromPath(workflowPathConfigName, wrd.cPlugin);
+    }
   } else {
     resolvedSystemWorkflowsPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath);
     resolvedClientWorkflowsPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cclientWorkflowsPath);
