@@ -3058,13 +3058,13 @@ export const testConstantsValidation = [
 
     // queue words
     { Name: 'cinitQueue_validDataString', Actual: tst_con.cinitQueue_validDataString, Expected: 'initQueue_validDataString'},
-    { Name: 'cinitQueue_inValidDataQueueNameSpaceString', Actual: tst_con.cinitQueue_inValidDataQueueNameSpaceString, Expected: 'initQueue_inValidDataQueueNameSpaceString'},
-    { Name: 'cinitQueue_inValidQueueNameSpaceInteger', Actual: tst_con.cinitQueue_inValidQueueNameSpaceInteger, Expected: 'initQueue_inValidQueueNameSpaceInteger'},
-    { Name: 'cinitQueue_inValidQueueNameSpaceBoolean', Actual: tst_con.cinitQueue_inValidQueueNameSpaceBoolean, Expected: 'initQueue_inValidQueueNameSpaceBoolean'},
-    { Name: 'cinitQueue_inValidQueueNameSpaceUndefined', Actual: tst_con.cinitQueue_inValidQueueNameSpaceUndefined, Expected: 'initQueue_inValidQueueNameSpaceUndefined'},
-    { Name: 'cinitQueue_inValidQueueNameSpaceNaN', Actual: tst_con.cinitQueue_inValidQueueNameSpaceNaN, Expected: 'initQueue_inValidQueueNameSpaceNaN'},
+    { Name: 'cdequeue_inValidDataQueueNameSpaceString', Actual: tst_con.cdequeue_inValidDataQueueNameSpaceString, Expected: 'dequeue_inValidDataQueueNameSpaceString'},
+    { Name: 'cdequeue_inValidQueueNameSpaceInteger', Actual: tst_con.cdequeue_inValidQueueNameSpaceInteger, Expected: 'dequeue_inValidQueueNameSpaceInteger'},
+    { Name: 'cdequeue_inValidQueueNameSpaceBoolean', Actual: tst_con.cdequeue_inValidQueueNameSpaceBoolean, Expected: 'dequeue_inValidQueueNameSpaceBoolean'},
+    { Name: 'cdequeue_inValidQueueNameSpaceUndefined', Actual: tst_con.cdequeue_inValidQueueNameSpaceUndefined, Expected: 'dequeue_inValidQueueNameSpaceUndefined'},
+    { Name: 'cdequeue_inValidQueueNameSpaceNaN', Actual: tst_con.cdequeue_inValidQueueNameSpaceNaN, Expected: 'dequeue_inValidQueueNameSpaceNaN'},
 
-    { Name: 'cdequeue_validDataStringcinitQueue', Actual: tst_con.cdequeue_validDataStringcinitQueue, Expected: 'dequeue_validDataStringcinitQueue'},
+    { Name: 'cdequeue_validDataString', Actual: tst_con.cdequeue_validDataString, Expected: 'dequeue_validDataString'},
     { Name: 'cdequeue_inValidDataQueueNameSpaceStringcinitQueue', Actual: tst_con.cdequeue_inValidDataQueueNameSpaceStringcinitQueue, Expected: 'dequeue_inValidDataQueueNameSpaceStringcinitQueue'},
     { Name: 'cdequeue_inValidQueueNameSpaceIntegercinitQueue', Actual: tst_con.cdequeue_inValidQueueNameSpaceIntegercinitQueue, Expected: 'dequeue_inValidQueueNameSpaceIntegercinitQueue'},
     { Name: 'cdequeue_inValidQueueNameSpaceBooleancinitQueue', Actual: tst_con.cdequeue_inValidQueueNameSpaceBooleancinitQueue, Expected: 'dequeue_inValidQueueNameSpaceBooleancinitQueue'},
