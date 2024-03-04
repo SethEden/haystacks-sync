@@ -83,7 +83,7 @@ function doesArrayContainCharacter(inputData, inputMetaData) {
   if (inputData && inputMetaData && Array.isArray(inputMetaData)) {
     for (const element of inputMetaData) {
       let arrayElement = element;
-      if (arrayElement.includes(inputData) === true) {
+      if (arrayElement && typeof arrayElement === wrd.cstring && arrayElement.includes(inputData) === true) {
         returnData = true;
         break;
       }
