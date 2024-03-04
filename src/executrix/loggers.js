@@ -356,7 +356,7 @@ function printMessageToFile(file, message) {
   // console.log(`file is: ${file}`);
   // console.log(`message is: ${message}`);
   let dateTimeStamp = '';
-  if (!file.includes('undefined')) { // NOTE: This usage of the string undefined, must be hard-coded here.
+  if (typeof file === wrd.cstring && !file.includes('undefined')) { // NOTE: This usage of the string undefined, must be hard-coded here.
     // '!file.includes(undefined)'
     // console.log(msg.cprintMessageToFile01);
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.clogFileEnabled) === true) {
