@@ -17,12 +17,12 @@
  */
 
 // Internal imports
-import stringParsingUtilities from '../../../../../src/businessRules/rules/stringParsingUtilities';
+import stringParsingUtilities from '../../../../../src/businessRules/rules/stringParsingUtilities.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
 import * as tst_con from '../../constants/test.constants.js';
-import { basePath } from '../../utilities/utilities';
+import { basePath } from '../../utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
@@ -2122,7 +2122,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe(utl_con.stringRandomText2);
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2144,7 +2144,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe(undefined);
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2208,7 +2208,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe(undefined);
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2230,7 +2230,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe(undefined);
+    expect(returnData).toBe('');
   });
 });
 

@@ -21,11 +21,11 @@
 
 // Internal imports
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import configuration from '../../../../../src/commandsBlob/commands/configuration';
+import configuration from '../../../../../src/commandsBlob/commands/configuration.js';
 import configurator from '../../../../../src/executrix/configurator.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
-import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
+import * as obj_con from '../../../testData/commandsBlob/commands/configuration.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports

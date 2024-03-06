@@ -18,7 +18,7 @@
  */
 
 // Internal imports
-import lexicalAnalyzer from '../../../../../src/businessRules/rules/lexicalAnalyzer';
+import lexicalAnalyzer from '../../../../../src/businessRules/rules/lexicalAnalyzer.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as lex_con from '../../../testData/businessRules/rules/lexicalAnalyzer.js';

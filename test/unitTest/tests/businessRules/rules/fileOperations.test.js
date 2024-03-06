@@ -17,7 +17,7 @@
  */
 
 // Internal imports
-import fileOperations from '../../../../../src/businessRules/rules/fileOperations';
+import fileOperations from '../../../../../src/businessRules/rules/fileOperations.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../testData/businessRules/rules/fileOperations.js';

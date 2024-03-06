@@ -609,7 +609,7 @@ describe(tst_con.cpreprocessJsonFile, () => {
     */
     test(tst_con.cpreprocessJsonFile_validData, () => {
         // Arrange
-        let fileToLoad = [obj_con.dataBrokerJsonPath()];
+        let fileToLoad = obj_con.dataBrokerJsonPath();
         rulesLibrary.initRulesLibrary();
 
         // Act

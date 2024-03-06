@@ -354,7 +354,7 @@ function replaceDoublePercentWithMessage(inputData, inputMetaData) {
   // console.log(`inputData is: ${JSON.stringify(inputData)}`);
   // console.log(`inputMetaData is: ${JSON.stringify(inputMetaData)}`);
   let returnData = '';
-  if (inputData && typeof inputData === wrd.cstring) {
+  if (inputData && typeof inputData === wrd.cstring && typeof inputMetaData === wrd.cstring) {
     returnData = utilitiesReplaceCharacterWithCharacter(inputData, [bas.cDoublePercent, inputMetaData]);
   }
   // console.log(`returnData is: ${JSON.stringify(returnData)}`);
@@ -381,7 +381,7 @@ function utilitiesReplaceCharacterWithCharacter(inputData, inputMetaData) {
   // console.log(`inputData is: ${JSON.stringify(inputData)}`);
   // console.log(`inputMetaData is: ${JSON.stringify(inputMetaData)}`);
   let returnData;
-  if (Array.isArray(inputMetaData) && inputMetaData[0] && inputMetaData[1]) {
+  if (Array.isArray(inputMetaData) && inputMetaData.length >= 2) {
     let character2Find = inputMetaData[0];
     let character2Replace = inputMetaData[1];
     if (!inputData && !character2Find && !character2Replace) {
@@ -395,7 +395,7 @@ function utilitiesReplaceCharacterWithCharacter(inputData, inputMetaData) {
       if (Array.isArray(inputData) === true) {
         inputData = inputData[0];
       }
-      if (typeof inputData === wrd.cstring)
+      if (typeof inputData === wrd.cstring) 
         returnData = inputData.replaceAll(character2Find, character2Replace);
     }
   }

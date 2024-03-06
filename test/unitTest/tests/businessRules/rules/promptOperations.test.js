@@ -15,7 +15,7 @@
  */
 
 // Internal imports
-import promptOperations from '../../../../../src/businessRules/rules/promptOperations';
+import promptOperations from '../../../../../src/businessRules/rules/promptOperations.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as tst_con from '../../constants/test.constants.js';
 

@@ -22,8 +22,8 @@
 
 // Internal imports
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import advanced from '../../../../../src/commandsBlob/commands/advanced';
-import commandsLibrary from '../../../../../src/commandsBlob/commandsLibrary';
+import advanced from '../../../../../src/commandsBlob/commands/advanced.js';
+import commandsLibrary from '../../../../../src/commandsBlob/commandsLibrary.js';
 import configurator from '../../../../../src/executrix/configurator.js';
 import D from '../../../../../src/structures/data.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';

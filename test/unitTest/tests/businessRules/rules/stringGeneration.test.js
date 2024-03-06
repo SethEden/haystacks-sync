@@ -17,7 +17,7 @@
  */
 
 // Internal imports
-import stringGeneration from '../../../../../src/businessRules/rules/stringGeneration';
+import stringGeneration from '../../../../../src/businessRules/rules/stringGeneration.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as str_con from '../../../testData/businessRules/rules/stringGeneration.js';

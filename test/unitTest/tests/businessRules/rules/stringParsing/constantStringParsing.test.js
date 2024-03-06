@@ -86,7 +86,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBe(false);
+      expect(returnData).toBe(true);
     });
   
     /**

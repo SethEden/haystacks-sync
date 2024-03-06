@@ -3200,7 +3200,7 @@ export const cprint_inValidStackNameSpaceUndefined = cprint + wrd.cinvalid + wrd
 export const cprint_inValidStackNameSpaceNaN = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
 
 /* main */
-export const cinitFramework_validDataString = cinitFramework + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitFramework_validDataObject = cinitFramework + wrd.cvalid + wrd.cData + wrd.cObject;
 export const cinitFramework_inValidDataClientConfigurationString = cinitFramework + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cConfiguration + wrd.cString;
 export const cinitFramework_inValidClientConfigurationInteger = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cInteger;
 export const cinitFramework_inValidClientConfigurationBoolean = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cBoolean;

@@ -19,7 +19,7 @@
  */
 
 // Internal imports
-import timeComputation from '../../../../../src/businessRules/rules/timeComputation';
+import timeComputation from '../../../../../src/businessRules/rules/timeComputation.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';

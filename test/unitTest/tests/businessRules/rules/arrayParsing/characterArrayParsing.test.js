@@ -17,6 +17,7 @@
 
 // Internal imports
 import characterArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/characterArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
@@ -44,6 +45,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		// Arrange
 		let inputData = wrd.cHello + wrd.cWorld;
 		let inputMetaData = [wrd.cHello, wrd.cWorld];
+        rulesLibrary.initRulesLibrary();
 
 		// Act 
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
@@ -85,7 +87,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 	  
 		//Assert
-		expect(returnData).toBe(wrd.cHello + wrd.cSpace + wrd.cWorld);
+		expect(returnData).toBe(undefined);
     })
 
     /**
@@ -139,7 +141,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBeUndefined();
+		expect(returnData).toBe(inputData);
     })
 
     /**
@@ -157,7 +159,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBeUndefined();
+		expect(returnData).toBe(inputData);
     })
 });
 

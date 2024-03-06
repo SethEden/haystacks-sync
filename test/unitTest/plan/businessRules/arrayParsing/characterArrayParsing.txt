@@ -7,12 +7,12 @@ input inputData: string (A string that may or may not contain the specified char
 input inputMetaData: array<string,string> (An array of data that contains 2 additional string parameters and the character specified for replacement from the input data)
 output: string (The same as the input string but with specified characters converted to the other specified character)
 
-testName: replaceCharacterWithCharacter_validDataInputDataString
+testName: replaceCharacterWithCharacter_invalidDataInputDataString
 input inputData: string (dfxg24346dfg)
 input inputMetaData: array<string,string> (An array of data that contains 2 additional string parameters and the character specified for replacement from the input data) (testDataString)
 output: ?
 
-testName: replaceCharacterWithCharacter_validDataInputMetaDataString
+testName: replaceCharacterWithCharacter_invalidDataInputMetaDataString
 input inputData: string (A string that may or may not contain the specified characters that is converted to another specified character) (testDataString)
 input inputMetaData: string (dfxg24346dfg)
 output: ?

@@ -21,7 +21,7 @@
  */
 
 // Internal imports
-import constant from '../../../../../src/commandsBlob/commands/constant';
+import constant from '../../../../../src/commandsBlob/commands/constant.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as tst_con from '../../constants/test.constants.js';
 
