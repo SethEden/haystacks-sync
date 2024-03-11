@@ -115,8 +115,7 @@ function consoleTableLog(classPath, tableData, columnNames) {
   // console.log(`classPath is: ${classPath}`);
   // console.log(`tableData is: ${JSON.stringify(tableData)}`);
   // console.log(`columnNames is: ${JSON.stringify(columnNames)}`);
-  if (Array.isArray(tableData) && Array.isArray(columnNames))
-    console.table(tableData, columnNames);
+  console.table(tableData, columnNames);
   // console.log(`END ${namespacePrefix}${functionName} function`);
 }
 

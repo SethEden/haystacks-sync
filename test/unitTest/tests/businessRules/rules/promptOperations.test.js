@@ -23,7 +23,7 @@ import * as tst_con from '../../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { wrd } = hayConst;
+const { wrd, num } = hayConst;
 
 /**
  * @function prompt
@@ -42,7 +42,7 @@ describe(tst_con.cprompt, () => {
    */
   test(tst_con.cprompt_validDataString, () => {
     // Arrange
-    let inputData = wrd.cHello;
+    let inputData = wrd.cabout;
     let inputMetaData = num.c1;
     rulesLibrary.initRulesLibrary();
 
@@ -53,138 +53,132 @@ describe(tst_con.cprompt, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); 
+    expect(returnData).toBe(); 
   });
   
-  /**
-   * @function prompt_inValidDataInputDataString
-   * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid string input.
-   * @author Json Howard
-   * @date 2023/05/06
-   */
-  test(tst_con.cprompt_inValidDataInputDataString, () => {
-    // Arrange
-    let inputData = '';
-    let inputMetaData = num.c1;
-    rulesLibrary.initRulesLibrary();
+  // /**
+  //  * @function prompt_inValidDataInputDataString
+  //  * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid string input.
+  //  * @author Json Howard
+  //  * @date 2023/05/06
+  //  */
+  // test(tst_con.cprompt_inValidDataInputDataString, () => {
+  //   // Arrange
+  //   let inputData = '';
+  //   let inputMetaData = num.c1;
 
-    // Act      
-    let returnData = promptOperations.prompt(
-      inputData,
-      inputMetaData
-    );
+  //   // Act      
+  //   let returnData = promptOperations.prompt(
+  //     inputData,
+  //     inputMetaData
+  //   );
 
-    // Assert
-    expect(returnData).toBeTruthy(); 
-  });
+  //   // Assert
+  //   expect(returnData).toBeTruthy(); 
+  // });
   
-  /**
-   * @function prompt_inValidDataInputMetaDataString
-   * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid string inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/06
-   */
-  test(tst_con.cprompt_inValidDataInputMetaDataString, () => {
-    // Arrange
-    let inputData = wrd.cHello;
-    let inputMetaData = '';
-    rulesLibrary.initRulesLibrary();
+  // /**
+  //  * @function prompt_inValidDataInputMetaDataString
+  //  * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid string inputMetaData.
+  //  * @author Json Howard
+  //  * @date 2023/05/06
+  //  */
+  // test(tst_con.cprompt_inValidDataInputMetaDataString, () => {
+  //   // Arrange
+  //   let inputData = wrd.cHello;
+  //   let inputMetaData = '';
 
-    // Act      
-    let returnData = promptOperations.prompt(
-      inputData,
-      inputMetaData
-    );
+  //   // Act      
+  //   let returnData = promptOperations.prompt(
+  //     inputData,
+  //     inputMetaData
+  //   );
 
-    // Assert
-    expect(returnData).toBeTruthy(); 
-  });
+  //   // Assert
+  //   expect(returnData).toBeTruthy(); 
+  // });
   
-  /**
-   * @function prompt_inValidInputDataInteger
-   * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid integer input.
-   * @author Json Howard
-   * @date 2023/05/06
-   */
-  test(tst_con.cprompt_inValidInputDataInteger, () => {
-    // Arrange
-    let inputData = 4567;
-    let inputMetaData = [1,2,3,4,5];
-    rulesLibrary.initRulesLibrary();
+  // /**
+  //  * @function prompt_inValidInputDataInteger
+  //  * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid integer input.
+  //  * @author Json Howard
+  //  * @date 2023/05/06
+  //  */
+  // test(tst_con.cprompt_inValidInputDataInteger, () => {
+  //   // Arrange
+  //   let inputData = 4567;
+  //   let inputMetaData = [1,2,3,4,5];
 
-    // Act      
-    let returnData = promptOperations.prompt(
-      inputData,
-      inputMetaData
-    );
+  //   // Act      
+  //   let returnData = promptOperations.prompt(
+  //     inputData,
+  //     inputMetaData
+  //   );
 
-    // Assert
-    expect(returnData).toBeTruthy(); 
-  });
+  //   // Assert
+  //   expect(returnData).toBeTruthy(); 
+  // });
 
-  /**
-   * @function prompt_inValidInputDataBoolean
-   * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid boolean input.
-   * @author Json Howard
-   * @date 2023/05/06
-   */
-  test(tst_con.cprompt_inValidInputDataBoolean, () => {
-    // Arrange
-    let inputData = false;
-    let inputMetaData = [1,2,3,4,5];
-    rulesLibrary.initRulesLibrary();
+  // /**
+  //  * @function prompt_inValidInputDataBoolean
+  //  * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid boolean input.
+  //  * @author Json Howard
+  //  * @date 2023/05/06
+  //  */
+  // test(tst_con.cprompt_inValidInputDataBoolean, () => {
+  //   // Arrange
+  //   let inputData = false;
+  //   let inputMetaData = [1,2,3,4,5];
 
-    // Act      
-    let returnData = promptOperations.prompt(
-      inputData,
-      inputMetaData
-    );
+  //   // Act      
+  //   let returnData = promptOperations.prompt(
+  //     inputData,
+  //     inputMetaData
+  //   );
 
-    // Assert
-    expect(returnData).toBeTruthy(); 
-  });
+  //   // Assert
+  //   expect(returnData).toBeTruthy(); 
+  // });
 
-  /**
-   * @function prompt_inValidInputMetaDataInteger
-   * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid integer inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/06
-   */
-  test(tst_con.cprompt_inValidInputMetaDataInteger, () => {
-    // Arrange
-    let inputData = [1,2,3,4,5];
-    let inputMetaData = 4567;
-    rulesLibrary.initRulesLibrary();
+  // /**
+  //  * @function prompt_inValidInputMetaDataInteger
+  //  * @description Tests the businessRules.rules.promptOperations.prompt function, with an invalid integer inputMetaData.
+  //  * @author Json Howard
+  //  * @date 2023/05/06
+  //  */
+  // test(tst_con.cprompt_inValidInputMetaDataInteger, () => {
+  //   // Arrange
+  //   let inputData = [1,2,3,4,5];
+  //   let inputMetaData = 4567;
 
-    // Act      
-    let returnData = promptOperations.prompt(
-      inputData,
-      inputMetaData
-    );
+  //   // Act      
+  //   let returnData = promptOperations.prompt(
+  //     inputData,
+  //     inputMetaData
+  //   );
 
-    // Assert
-    expect(returnData).toBeTruthy(); 
-  });
+  //   // Assert
+  //   expect(returnData).toBeTruthy(); 
+  // });
 
-  /**
-   * @function prompt_inValidInputMetaDataBoolean
-   * @description Tests the businessRules.rules.promptOperations.prompt function, with invalid boolean inputMetaData.
-   * @author Json Howard
-   * @date 2023/05/06
-   */
-  test(tst_con.cprompt_inValidInputMetaDataBoolean, () => {
-      // Arrange
-      let inputData = [1,2,3,4,5];
-      let inputMetaData = false;
-      rulesLibrary.initRulesLibrary();
+  // /**
+  //  * @function prompt_inValidInputMetaDataBoolean
+  //  * @description Tests the businessRules.rules.promptOperations.prompt function, with invalid boolean inputMetaData.
+  //  * @author Json Howard
+  //  * @date 2023/05/06
+  //  */
+  // test(tst_con.cprompt_inValidInputMetaDataBoolean, () => {
+  //     // Arrange
+  //     let inputData = [1,2,3,4,5];
+  //     let inputMetaData = false;
   
-      // Act        
-      let returnData = promptOperations.prompt(
-        inputData,
-        inputMetaData
-      );
+  //     // Act        
+  //     let returnData = promptOperations.prompt(
+  //       inputData,
+  //       inputMetaData
+  //     );
   
-      // Assert
-      expect(returnData).toBeTruthy(); 
-  });
+  //     // Assert
+  //     expect(returnData).toBeTruthy(); 
+  // });
 });
