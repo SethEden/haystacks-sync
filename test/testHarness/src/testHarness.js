@@ -127,7 +127,6 @@ function bootstrapApplication() {
 async function application() {
   let functionName = application.name;
   haystacks.consoleLog(namespacePrefix, functionName, msg.cBEGIN_Function);
-  console.log("asdf");
   let argumentDrivenInterface = false;
   let commandInput;
   let commandResult;
