@@ -48,7 +48,6 @@ function bootStrapCommands() {
   let functionName = bootStrapCommands.name;
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   commandsLibrary.initCommandsLibrary();
-  console.log("commandsLibrary initiate")
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
 }
 
