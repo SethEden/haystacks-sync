@@ -228,14 +228,16 @@ function validateConstantsDataValidationLineItemName(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = false;
   if (inputData && inputMetaData) {
-    for (const element of D[sys.cConstantsValidationData][inputMetaData]) {
-      let validationLineItem = element;
-      if (validationLineItem) {
-        if (inputData === validationLineItem.Name) {
-          returnData = true;
-          break;
-        } // End-if (inputData === validationLineItem.Name)
-      } // End-if (validationLineItem)
+    if (typeof D[sys.cConstantsValidationData][inputMetaData][Symbol.iterator] === wrd.cfunction) {
+      for (const element of D[sys.cConstantsValidationData][inputMetaData]) {
+        let validationLineItem = element;
+        if (validationLineItem) {
+          if (inputData === validationLineItem.Name) {
+            returnData = true;
+            break;
+          } // End-if (inputData === validationLineItem.Name)
+        } // End-if (validationLineItem)
+      }
     } // End-for (const element of D[sys.cConstantsValidationData][inputMetaData])
   } // End-if (inputData && inputMetaData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);

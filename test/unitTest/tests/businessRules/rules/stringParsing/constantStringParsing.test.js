@@ -48,9 +48,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
     test(tst_con.cvalidateConstantsDataValidation_validDataString, () => {
       // Arrange
       let inputData = './test/unitTest/tests/constants/test.constants.js';
-      let inputMetaData = 'constantsValidation.testData';    
+      let inputMetaData = 'constantsValidation';    
       D[sys.cConstantsValidationData] = [];
-      D[sys.cConstantsValidationData][inputMetaData] = wrd.cUndefined;
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
       rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
@@ -75,7 +75,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       let inputData = data_con.stringRandomText;
       let inputMetaData = 'constantsValidation.testData';   
       D[sys.cConstantsValidationData] = [];
-      D[sys.cConstantsValidationData][inputMetaData] = wrd.cUndefined;
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
       rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
@@ -100,7 +100,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       let inputData = './test/unitTest/tests/constants/test.constants.js';
       let inputMetaData = data_con.stringRandomText;  
       D[sys.cConstantsValidationData] = [];
-      D[sys.cConstantsValidationData][inputMetaData] = wrd.cUndefined;
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
       rulesLibrary.initRulesLibrary();  
       dataBroker.setupDataStorage(false);
 
@@ -125,7 +125,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];    
       D[sys.cConstantsValidationData] = [];
-      D[sys.cConstantsValidationData][inputMetaData] = wrd.cUndefined;
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
       rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
@@ -150,7 +150,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];    
       D[sys.cConstantsValidationData] = [];
-      D[sys.cConstantsValidationData][inputMetaData] = wrd.cUndefined;
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
       rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
@@ -175,7 +175,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;    
       D[sys.cConstantsValidationData] = [];
-      D[sys.cConstantsValidationData][inputMetaData] = wrd.cUndefined;
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
       rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
@@ -200,7 +200,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;    
       D[sys.cConstantsValidationData] = [];
-      D[sys.cConstantsValidationData][inputMetaData] = wrd.cUndefined;
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
       rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 

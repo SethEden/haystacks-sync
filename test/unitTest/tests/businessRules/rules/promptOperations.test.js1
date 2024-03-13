@@ -34,7 +34,7 @@ const { wrd, num } = hayConst;
  * @NOTE can't integrate unitTest for prompt function cuz of user input
  * @note inputMetaData is not defined in prompt function.
  */
-// describe(tst_con.cprompt, () => {
+describe(tst_con.cprompt, () => {
 //   /**
 //    * @function prompt_validDataString
 //    * @description Tests the businessRules.rules.promptOperations.prompt function, with a valid string input.
@@ -182,4 +182,4 @@ const { wrd, num } = hayConst;
 //   //     // Assert
 //   //     expect(returnData).toBeTruthy(); 
 //   // });
-// });
+});
