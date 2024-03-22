@@ -115,7 +115,7 @@ function consoleTableLog(classPath, tableData, columnNames) {
   // console.log(`classPath is: ${classPath}`);
   // console.log(`tableData is: ${JSON.stringify(tableData)}`);
   // console.log(`columnNames is: ${JSON.stringify(columnNames)}`);
-  if (typeof tableData === wrd.cobject && tableData && typeof columnNames === wrd.cobject && columnNames)
+  if ((typeof tableData === wrd.cobject || Array.isArray(tableData))&& (typeof columnNames === wrd.cobject || Array.isArray(tableData)))
     console.table(tableData, columnNames);
   // console.log(`END ${namespacePrefix}${functionName} function`);
 }
