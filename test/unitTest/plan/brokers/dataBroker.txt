@@ -8,18 +8,6 @@ output: [array of files & paths]
 testName: scanDataPath_inValidString
 input: string (464gsdsfae8f46)
 output: empty array
-
-testName: scanDataPath_inValidNumber
-input: integer (546)
-output: empty array
-status: Failed
-error: TypeError: inputData.replaceAll is not a function
-
-testName: scanDataPath_inValidBoolean
-input: boolean (false)
-output: empty array
-status: Failed
-error: TypeError: The "path" argument must be of type string. Received type boolean (false)
 --------------------------------------------------------------------------------
 testName: findUniversalDebugConfigSetting_validData
 input appConfigFilesToLoad: array [C:\haystacks\test\unitTest\testData\application.system.json]

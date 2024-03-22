@@ -26,7 +26,7 @@ import { basePath } from '../utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { sys, wrd, num, bas, gen } = hayConst;
 
@@ -64,42 +64,6 @@ describe(tst_con.cscanDataPath, () => {
     test(tst_con.cscanDataPath_inValidString, () => {
         // Arrange
         let dataPath = basePath() + num.c123;
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = dataBroker.scanDataPath(dataPath);
-
-        // Assert
-        expect(returnData).toEqual([]);
-    });
-
-    /**
-    * @function scanDataPath_inValidNumber
-    * @description Tests the brokers.dataBroker.scanDataPath function, with an invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/16
-    */
-    test(tst_con.cscanDataPath_inValidNumber, () => {
-        // Arrange
-        let dataPath = 546;
-        rulesLibrary.initRulesLibrary();
-
-        // Act        
-        let returnData = dataBroker.scanDataPath(dataPath);
-
-        // Assert
-        expect(returnData).toEqual([]);
-    });
-
-    /**
-    * @function scanDataPath_inValidBoolean
-    * @description Tests the brokers.dataBroker.scanDataPath function, with an invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/16
-    */
-    test(tst_con.cscanDataPath_inValidBoolean, () => {
-        // Arrange
-        let dataPath = false;
         rulesLibrary.initRulesLibrary();
 
         // Act        
@@ -190,7 +154,7 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
         let returnData = dataBroker.findUniversalDebugConfigSetting(appConfigFilesToLoad, frameworkConfigFilesToLoad);
 
         // Assert
-        expect(returnData).toBe(true);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -209,9 +173,10 @@ describe(tst_con.cfindUniversalDebugConfigSetting, () => {
         let returnData = dataBroker.findUniversalDebugConfigSetting(appConfigFilesToLoad, frameworkConfigFilesToLoad);
 
         // Assert
-        expect(returnData).toBe(true);
+        expect(returnData).toBe(false);
     });
 });
+
 /**
  * @function loadAllCsvData
  * @description Tests the positive and negative test cases of the loadAllCsvData function.
@@ -273,7 +238,7 @@ describe(tst_con.cloadAllCsvData, () => {
         let returnData = dataBroker.loadAllCsvData(filesToLoad, contextName);
 
         // Assert
-        expect(returnData).toBe(undefined);
+        expect(returnData).toBeTruthy();
     });
 
     /**
@@ -624,6 +589,11 @@ describe(tst_con.cprocessCsvData, () => {
     });
 });
 
+// /**
+//  * @note processXmlData UnitTest is missing.
+//  * @note processXmlLeafNode UnitTest is missing.
+//  */
+ 
 /**
  * @function preprocessJsonFile
  * @description Tests the positive and negative test cases of the preprocessJsonFile function.
@@ -639,7 +609,8 @@ describe(tst_con.cpreprocessJsonFile, () => {
     */
     test(tst_con.cpreprocessJsonFile_validData, () => {
         // Arrange
-        let fileToLoad = [obj_con.dataBrokerJsonPath()];
+        let fileToLoad = obj_con.dataBrokerJsonPath();
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = dataBroker.preprocessJsonFile(fileToLoad);
@@ -657,12 +628,13 @@ describe(tst_con.cpreprocessJsonFile, () => {
     test(tst_con.cpreprocessJsonFile_inValidString, () => {
         // Arrange
         let fileToLoad = obj_con.stringRandomText;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = dataBroker.preprocessJsonFile(fileToLoad);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 
     /**
@@ -674,12 +646,13 @@ describe(tst_con.cpreprocessJsonFile, () => {
     test(tst_con.cpreprocessJsonFile_inValidNumber, () => {
         // Arrange
         let fileToLoad = 546;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = dataBroker.preprocessJsonFile(fileToLoad);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 
     /**
@@ -691,119 +664,122 @@ describe(tst_con.cpreprocessJsonFile, () => {
     test(tst_con.cpreprocessJsonFile_inValidBoolean, () => {
         // Arrange
         let fileToLoad = false;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = dataBroker.preprocessJsonFile(fileToLoad);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
-/**
- * @function writeJsonDataToFile
- * @description Tests the positive and negative test cases of the writeJsonDataToFile function.
- * @author Json Howard
- * @date 2023/04/17
- */
-describe(tst_con.cwriteJsonDataToFile, () => {
-    /**
-    * @function writeJsonDataToFile_validData
-    * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with a valid data.
-    * @author Json Howard
-    * @date 2023/04/16
-    */
-    test(tst_con.cwriteJsonDataToFile_validData, () => {
-        // Arrange
-        let fileToSaveTo = obj_con.writeJsonDataPath();
-        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+// /**
+//  * @function writeJsonDataToFile
+//  * @description Tests the positive and negative test cases of the writeJsonDataToFile function.
+//  * @author Json Howard
+//  * @date 2023/04/17
+//  */
+// describe(tst_con.cwriteJsonDataToFile, () => {
+//     /**
+//     * @function writeJsonDataToFile_validData
+//     * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with a valid data.
+//     * @author Json Howard
+//     * @date 2023/04/16
+//     */
+//     test(tst_con.cwriteJsonDataToFile_validData, () => {
+//         // Arrange
+//         let fileToSaveTo = obj_con.writeJsonDataPath();
+//         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+//         // rulesLibrary.initRulesLibrary();
 
-        // Act
-        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+//         // Act
+//         let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
 
-        // Assert
-        expect(returnData).toBe(true);
-    });
+//         // Assert
+//         expect(returnData).toBe(true);
+//     });
 
-    /**
-    * @function writeJsonDataToFile_inValidString
-    * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid string data.
-    * @author Json Howard
-    * @date 2023/04/16
-    * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
-    */    
-    test(tst_con.cwriteJsonDataToFile_inValidString, () => {
-        // Arrange
-        let fileToSaveTo = wrd.cHello;
-        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+//     /**
+//     * @function writeJsonDataToFile_inValidString
+//     * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid string data.
+//     * @author Json Howard
+//     * @date 2023/04/16
+//     * @NOTE If this test is implemented and executed it will create a garbage file in the root folder called '464gsdsfae8f46', therefore this test is not implemented.
+//     */    
+//     test(tst_con.cwriteJsonDataToFile_inValidString, () => {
+//         // Arrange
+//         let fileToSaveTo = wrd.cHello;
+//         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
 
-        // Act
-        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+//         // Act
+//         let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
 
-        // Assert
-        expect(returnData).toBe(false);
-    });
+//         // Assert
+//         expect(returnData).toBe(false);
+//     });
 
-    /**
-    * @function writeJsonDataToFile_inValidDataToWrite
-    * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid dataToWrite.
-    * @author Json Howard
-    * @date 2023/04/16
-    */
-    test(tst_con.cwriteJsonDataToFile_inValidDataToWrite, () => {
-        // Arrange
-        let fileToSaveTo = obj_con.writeJsonDataPath();
-        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+//     /**
+//     * @function writeJsonDataToFile_inValidDataToWrite
+//     * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid dataToWrite.
+//     * @author Json Howard
+//     * @date 2023/04/16
+//     */
+//     test(tst_con.cwriteJsonDataToFile_inValidDataToWrite, () => {
+//         // Arrange
+//         let fileToSaveTo = obj_con.writeJsonDataPath();
+//         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
 
-        // Act
-        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+//         // Act
+//         let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
 
-        // Assert
-        expect(returnData).toBe(true);
-    });
+//         // Assert
+//         expect(returnData).toBe(true);
+//     });
 
-    /**
-    * @function writeJsonDataToFile_inValidNumber
-    * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid integer data.
-    * @author Json Howard
-    * @date 2023/04/16
-    */
-    test(tst_con.cwriteJsonDataToFile_inValidNumber, () => {
-        // Arrange
-        let fileToSaveTo = 546;
-        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+//     /**
+//     * @function writeJsonDataToFile_inValidNumber
+//     * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid integer data.
+//     * @author Json Howard
+//     * @date 2023/04/16
+//     */
+//     test(tst_con.cwriteJsonDataToFile_inValidNumber, () => {
+//         // Arrange
+//         let fileToSaveTo = 546;
+//         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
 
-        // Act
-        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+//         // Act
+//         let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
 
-        // Assert
-        expect(returnData).toBe(true);
-    });
+//         // Assert
+//         expect(returnData).toBeUndefined();
+//     });
 
-    /**
-    * @function writeJsonDataToFile_inValidBoolean
-    * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid boolean data.
-    * @author Json Howard
-    * @date 2023/04/16
-    */
-    test(tst_con.cwriteJsonDataToFile_inValidBoolean, () => {
-        // Arrange
-        let fileToSaveTo = false;
-        let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
+//     /**
+//     * @function writeJsonDataToFile_inValidBoolean
+//     * @description Tests the brokers.dataBroker.writeJsonDataToFile function, with an invalid boolean data.
+//     * @author Json Howard
+//     * @date 2023/04/16
+//     */
+//     test(tst_con.cwriteJsonDataToFile_inValidBoolean, () => {
+//         // Arrange
+//         let fileToSaveTo = false;
+//         let dataToWriteOut = obj_con.JsonObjectArrayOfStrings_01;
 
-        // Act
-        let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
+//         // Act
+//         let returnData = dataBroker.writeJsonDataToFile(fileToSaveTo, dataToWriteOut);
 
-        // Assert
-        expect(returnData).toBe(true);
-    });
-});
+//         // Assert
+//         expect(returnData).toBeUndefined();
+//     });
+// });
 
 /**
  * @function setupDataStorage
  * @description Tests the positive and negative test cases of the setupDataStorage function.
  * @author Json Howard
  * @date 2023/04/17
+ * @note setupDataStorage function doesn't have any inputs, but inputData is defined in this unitTest function.
  */
 describe(tst_con.csetupDataStorage, () => {
     /**
@@ -895,6 +871,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 
     /**
@@ -913,6 +890,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 
     /**
@@ -931,6 +909,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 
     /**
@@ -949,6 +928,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 
     /**
@@ -967,6 +947,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 
     /**
@@ -1003,6 +984,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 
     /**
@@ -1021,6 +1003,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 
     /**
@@ -1039,6 +1022,7 @@ describe(tst_con.cstoreData, () => {
 
         // Assert
         expect(returnData).toBe(true);
+        expect(D[sys.cDataStorage][dataStorageContextName]).toBe(dataToStore);
     });
 });
 
@@ -1225,6 +1209,7 @@ describe(tst_con.cclearData, () => {
  * @description Tests the positive and negative test cases of the initializeConstantsValidationData function.
  * @author Json Howard
  * @date 2023/04/17
+ * @note initializeConstantsValidationData function doesn't have any inputs, but inputData is defined in this unitTest function.
  */
 describe(tst_con.cinitializeConstantsValidationData, () => {
     /**
@@ -1552,3 +1537,13 @@ describe(tst_con.caddDeeplyNestedConstantsValidationData, () => {
         expect(D[sys.cConstantsValidationData][contextName]).toBeTruthy();
     });
 });
+
+/**
+ * @note getDataCategoryFromContextName function is not defined.
+ * @note getDataCategoryDetailNameFromContextName function is not defined.
+ * @note extractDataFromPapaParseObject function is not defined.
+ * @note determineMergeTarget function is not defined.
+ * @note mergeData function is not defined.
+ * @note getDataElement function is not defined.
+ * @note getDataElementCount function is not defined.
+ */

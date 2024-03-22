@@ -30,27 +30,27 @@ import loggers from '../executrix/loggers.js';
 // import D from '../structures/data.js';
 // External imports
 import hayConst from '@haystacks/constants';
-import path from 'path';
+import path, { resolve } from 'path';
 
-const {bas, biz, cfg, gen, msg, sys, wrd} = hayConst;
+const { bas, biz, cfg, gen, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // controllers.warden.
 const namespacePrefix = wrd.ccontrollers + bas.cDot + baseFileName + bas.cDot;
 
- /**
- * @function processRootPath
- * @description Processes the root path of the application using business rules.
- * @NOTE: By calling path.resolve(__dirname); This does not return the true root path of the application.
- * It returns the path to the currently executing file, or the file that was executed first.
- * which is: C:/Calculator2/Application/Calculator2/
- * But what we really need for the root path is just C:/Calculator2/
- * @param {string} inputPath The path for the entry point to the framework, ie: main.js
- * @param {string} actualFrameworkName The name of the framework that the application is expecting to use.
- * @return {string} the true root path of the application.
- * @author Seth Hollingsead
- * @date 2021/10/12
- * @NOTE Cannot use the loggers here, because dependency data will have never been loaded.
- */
+/**
+* @function processRootPath
+* @description Processes the root path of the application using business rules.
+* @NOTE: By calling path.resolve(__dirname); This does not return the true root path of the application.
+* It returns the path to the currently executing file, or the file that was executed first.
+* which is: C:/Calculator2/Application/Calculator2/
+* But what we really need for the root path is just C:/Calculator2/
+* @param {string} inputPath The path for the entry point to the framework, ie: main.js
+* @param {string} actualFrameworkName The name of the framework that the application is expecting to use.
+* @return {string} the true root path of the application.
+* @author Seth Hollingsead
+* @date 2021/10/12
+* @NOTE Cannot use the loggers here, because dependency data will have never been loaded.
+*/
 function processRootPath(inputPath, actualFrameworkName) {
   // let functionName = processRootPath.name;
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
@@ -59,7 +59,8 @@ function processRootPath(inputPath, actualFrameworkName) {
   chiefCommander.bootStrapCommands();
   let resolvedPath = ruleBroker.processRules([inputPath, actualFrameworkName], [biz.cparseSystemRootPath]);
   dataBroker.setupDataStorage();
-  let rootPath = path.resolve(resolvedPath);
+  let rootPath = '';
+  rootPath = path.resolve(resolvedPath);
   // console.log(`rootPath is: ${rootPath}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return rootPath;
@@ -232,11 +233,14 @@ function loadCommandAliases(commandAliasesPathConfigName) {
   let resolvedSystemCommandsAliasesPath;
   let resolvedClientCommandsAliasesPath;
   let resolvedCustomCommandsAliasesPath;
-  if (commandAliasesPathConfigName) {
-    resolvedCustomCommandsAliasesPath = path.resolve(configurator.getConfigurationSetting(wrd.csystem, commandAliasesPathConfigName));
-    // resolvedCustomCommandsAliasesPath is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomCommandsAliasesPathIs + resolvedCustomCommandsAliasesPath);
-    chiefCommander.loadCommandAliasesFromPath(commandAliasesPathConfigName, wrd.cPlugin);
+  if (commandAliasesPathConfigName && typeof commandAliasesPathConfigName === wrd.cstring) {
+    resolvedCustomCommandsAliasesPath = configurator.getConfigurationSetting(wrd.csystem, commandAliasesPathConfigName);
+    if (typeof resolvedCustomCommandsAliasesPath === wrd.cstring) {
+      resolvedCustomCommandsAliasesPath = path.resolve(resolvedCustomCommandsAliasesPath);
+      // resolvedCustomCommandsAliasesPath is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomCommandsAliasesPathIs + resolvedCustomCommandsAliasesPath);
+      chiefCommander.loadCommandAliasesFromPath(commandAliasesPathConfigName, wrd.cPlugin);
+    }
   } else {
     resolvedSystemCommandsAliasesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkCommandAliasesPath);
     resolvedClientCommandsAliasesPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cclientCommandAliasesPath);
@@ -270,10 +274,13 @@ function loadCommandWorkflows(workflowPathConfigName) {
   let resolvedClientWorkflowsPath;
   let resolvedCustomWorkflowsPath;
   if (workflowPathConfigName) {
-    resolvedCustomWorkflowsPath = path.resolve(configurator.getConfigurationSetting(wrd.csystem, workflowPathConfigName));
-    // resolvedCustomWorkflowsPath is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomWorkflowsPathIs + resolvedCustomWorkflowsPath);
-    chiefWorkflow.loadCommandWorkflowsFromPath(workflowPathConfigName, wrd.cPlugin);
+    resolvedCustomWorkflowsPath = configurator.getConfigurationSetting(wrd.csystem, workflowPathConfigName);
+    if (typeof resolvedCustomWorkflowsPath === wrd.cstring) {
+      resolvedCustomWorkflowsPath = path.resolve(resolvedCustomWorkflowsPath);
+      // resolvedCustomWorkflowsPath is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cresolvedCustomWorkflowsPathIs + resolvedCustomWorkflowsPath);
+      chiefWorkflow.loadCommandWorkflowsFromPath(workflowPathConfigName, wrd.cPlugin);
+    }
   } else {
     resolvedSystemWorkflowsPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cframeworkWorkflowsPath);
     resolvedClientWorkflowsPath = configurator.getConfigurationSetting(wrd.csystem, cfg.cclientWorkflowsPath);

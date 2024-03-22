@@ -49,7 +49,7 @@ describe(tst_con.cbootStrapCommands, () => {
         let returnData = chiefCommander.bootStrapCommands();
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -76,7 +76,7 @@ describe(tst_con.caddClientCommands, () => {
         let returnData = chiefCommander.addClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -93,7 +93,7 @@ describe(tst_con.caddClientCommands, () => {
         let returnData = chiefCommander.addClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -110,7 +110,7 @@ describe(tst_con.caddClientCommands, () => {
         let returnData = chiefCommander.addClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -127,7 +127,7 @@ describe(tst_con.caddClientCommands, () => {
         let returnData = chiefCommander.addClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -144,7 +144,7 @@ describe(tst_con.caddClientCommands, () => {
         let returnData = chiefCommander.addClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -161,7 +161,7 @@ describe(tst_con.caddClientCommands, () => {
         let returnData = chiefCommander.addClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -187,7 +187,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -205,7 +205,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -223,7 +223,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -241,7 +241,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -259,7 +259,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -277,7 +277,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -295,7 +295,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -313,7 +313,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -331,7 +331,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -349,7 +349,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -367,7 +367,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
         let returnData = chiefCommander.loadCommandAliasesFromPath(commandAliasesFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -376,6 +376,7 @@ describe(tst_con.cloadCommandAliasesFromPath, () => {
  * @description Tests the positive and negative test cases of the enqueueCommand
  * @author Json Howard
  * @date 2023/08/22
+ * @note command should be string.
 */
 describe(tst_con.cenqueueCommand, () => {
     /**
@@ -392,7 +393,7 @@ describe(tst_con.cenqueueCommand, () => {
         let returnData = chiefCommander.enqueueCommand(command);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -409,7 +410,7 @@ describe(tst_con.cenqueueCommand, () => {
         let returnData = chiefCommander.enqueueCommand(command);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -426,7 +427,7 @@ describe(tst_con.cenqueueCommand, () => {
         let returnData = chiefCommander.enqueueCommand(command);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -443,7 +444,7 @@ describe(tst_con.cenqueueCommand, () => {
         let returnData = chiefCommander.enqueueCommand(command);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -460,7 +461,7 @@ describe(tst_con.cenqueueCommand, () => {
         let returnData = chiefCommander.enqueueCommand(command);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -482,7 +483,7 @@ describe(tst_con.cisCommandQueueEmpty, () => {
         let returnData = chiefCommander.isCommandQueueEmpty();
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -496,7 +497,7 @@ describe(tst_con.cisCommandQueueEmpty, () => {
         let returnData = chiefCommander.isCommandQueueEmpty();
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
 });
 

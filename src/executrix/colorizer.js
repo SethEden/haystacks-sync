@@ -222,7 +222,7 @@ function colorizeMessage(message, className, callerFunctionName, debugFilesSetti
   aggregateMessageFontBackgroundColorSetting = aggregateStyleSetting(debugFilesMessageFontBackgroundColorSetting, debugFunctionsMessageFontBackgroundColorSetting, [0, 0, 0], false);
   aggregateDataFontBackgroundColorSetting = aggregateStyleSetting(debugFilesDataFontBackgroundColorSetting, debugFunctionsDataFontBackgroundColorSetting, [0, 0, 0], false);
 
-  if (message.includes(bas.cColon) === true) {
+  if (typeof message === wrd.cstring && message.includes(bas.cColon) === true) {
     messageBrokenDown = message.split(/:(.+)/); // Use regular expression to split on the first instance of ":" ONLY!
     messageContent = messageBrokenDown[0];
     messageData = messageBrokenDown[1];
@@ -377,38 +377,40 @@ function getFontStyleSettingsFromSetting(settingValue) {
   // console.log(`settingValue is: ${settingValue}`);
   let fontStyles = [false, false];
   let aggregateUnderlineBoldArray = [];
-  if (settingValue.includes(bas.cPipe) === true) {
+  if (typeof settingValue === wrd.cstring) {
     if (settingValue.includes(bas.cPipe) === true) {
-      aggregateUnderlineBoldArray = settingValue.split(bas.cPipe);
-      // console.log('aggregateUnderlineBoldArray is: ' + JSON.stringify(aggregateUnderlineBoldArray));
-      // console.log('aggregateUnderlineBoldArray[0] is: ' + aggregateUnderlineBoldArray[0]);
-      // console.log('aggregateUnderlineBoldArray[1] is: ' + aggregateUnderlineBoldArray[1]);
-      if (aggregateUnderlineBoldArray[0] === wrd.cUnderline && aggregateUnderlineBoldArray[1] === wrd.cBold) {
-        // aggregateModuleFontStyleUnderline = true;
-        // aggregateModuleFontStyleBold = true;
-        fontStyles = [true, true];
-      } else if (aggregateUnderlineBoldArray[0] === wrd.cBold && aggregateUnderlineBoldArray[1] === wrd.cUnderline) {
-        // aggregateModuleFontStyleUnderline = true;
-        // aggregateModuleFontStyleBold = true;
-        fontStyles = [true, true];
-      } else if (aggregateUnderlineBoldArray[0] === wrd.cUnderline && aggregateUnderlineBoldArray[1] !== wrd.cBold) {
+      if (settingValue.includes(bas.cPipe) === true) {
+        aggregateUnderlineBoldArray = settingValue.split(bas.cPipe);
+        // console.log('aggregateUnderlineBoldArray is: ' + JSON.stringify(aggregateUnderlineBoldArray));
+        // console.log('aggregateUnderlineBoldArray[0] is: ' + aggregateUnderlineBoldArray[0]);
+        // console.log('aggregateUnderlineBoldArray[1] is: ' + aggregateUnderlineBoldArray[1]);
+        if (aggregateUnderlineBoldArray[0] === wrd.cUnderline && aggregateUnderlineBoldArray[1] === wrd.cBold) {
+          // aggregateModuleFontStyleUnderline = true;
+          // aggregateModuleFontStyleBold = true;
+          fontStyles = [true, true];
+        } else if (aggregateUnderlineBoldArray[0] === wrd.cBold && aggregateUnderlineBoldArray[1] === wrd.cUnderline) {
+          // aggregateModuleFontStyleUnderline = true;
+          // aggregateModuleFontStyleBold = true;
+          fontStyles = [true, true];
+        } else if (aggregateUnderlineBoldArray[0] === wrd.cUnderline && aggregateUnderlineBoldArray[1] !== wrd.cBold) {
+          // aggregateModuleFontStyleUnderline = true;
+          fontStyles = [true, false];
+        } else if (aggregateUnderlineBoldArray[0] === wrd.cBold && aggregateUnderlineBoldArray[1] !== wrd.cUnderline) {
+          // aggregateModuleFontStyleBold = true;
+          fontStyles = [false, true];
+        } else {
+          // ERROR: Did not find any matching style logic pattern!
+          console.log(msg.cDidNotFindAnyMatchingStyleLogicPattern);
+        }
+      } else if (settingValue === wrd.cUnderline) {
         // aggregateModuleFontStyleUnderline = true;
         fontStyles = [true, false];
-      } else if (aggregateUnderlineBoldArray[0] === wrd.cBold && aggregateUnderlineBoldArray[1] !== wrd.cUnderline) {
+      } else if (settingValue === wrd.cBold) {
         // aggregateModuleFontStyleBold = true;
         fontStyles = [false, true];
-      } else {
-        // ERROR: Did not find any matching style logic pattern!
-        console.log(msg.cDidNotFindAnyMatchingStyleLogicPattern);
       }
-    } else if (settingValue === wrd.cUnderline) {
-      // aggregateModuleFontStyleUnderline = true;
-      fontStyles = [true, false];
-    } else if (settingValue === wrd.cBold) {
-      // aggregateModuleFontStyleBold = true;
-      fontStyles = [false, true];
-    }
-  } // End-if (settingValue.includes(bas.cPipe) === true)
+    } // End-if (settingValue.includes(bas.cPipe) === true)
+  }
   // console.log('fontStyles is: ' + JSON.stringify(fontStyles));
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return fontStyles;
@@ -429,7 +431,7 @@ function getColorStyleSettingFromSetting(settingValue, defaultColorArray) {
   // console.log(`settingValue is: ${settingValue}`);
   let colorStyle = {Red: 0, Green: 0, Blue: 0};
   let aggregateColorArray = [];
-  if (settingValue !== undefined) {
+  if (settingValue !== undefined && typeof settingValue === wrd.cstring) {
     if (settingValue.includes(bas.cComa) === true) {
       aggregateColorArray = settingValue.split(bas.cComa);
       colorStyle[clr.cRed] = aggregateColorArray[0];

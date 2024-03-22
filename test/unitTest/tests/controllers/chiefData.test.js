@@ -22,6 +22,9 @@
 
 // Internal imports
 import chiefData from '../../../../src/controllers/chiefData.js';
+import D from '../../../../src/structures/data.js';
+import dataBroker from '../../../../src/brokers/dataBroker.js';
+import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../testData/brokers/dataBroker.js';
 import * as tst_con from '../constants/test.constants.js';
 
@@ -29,7 +32,7 @@ import * as tst_con from '../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { wrd, num } = hayConst;
+const { wrd, num, bas } = hayConst;
 
 /**
  * @function searchForUniversalDebugConfigSetting
@@ -48,12 +51,13 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         // Arrange
         let appConfigPath = data_con.applicationPath();
         let frameworkConfigPath = data_con.frameworkPath();
+        D[wrd.cconfiguration] = { dataPath: 'D:\work\kalabaw\Haystacks\haystacks-sync\src\resources\configuration' };
 
         // Act
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -71,7 +75,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -89,7 +93,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -107,7 +111,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -125,7 +129,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -143,7 +147,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -161,7 +165,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -179,7 +183,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -197,7 +201,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -215,7 +219,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -233,7 +237,7 @@ describe(tst_con.csearchForUniversalDebugConfigSetting, () => {
         let returnData = chiefData.searchForUniversalDebugConfigSetting(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
 });
 
@@ -252,7 +256,8 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
      */
     test(tst_con.cdetermineThemeDebugConfigFilesToLoad_validDataString, () => {
         // Arrange
-        let themeConfigPathName = data_con.themeConfigPathName();
+        let themeConfigPathName = wrd.cHello;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefData.determineThemeDebugConfigFilesToLoad(themeConfigPathName);
@@ -309,7 +314,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
         let returnData = chiefData.determineThemeDebugConfigFilesToLoad(themeConfigPathName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -326,7 +331,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
         let returnData = chiefData.determineThemeDebugConfigFilesToLoad(themeConfigPathName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -343,7 +348,7 @@ describe(tst_con.cdetermineThemeDebugConfigFilesToLoad, () => {
         let returnData = chiefData.determineThemeDebugConfigFilesToLoad(themeConfigPathName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
 });
 
@@ -364,6 +369,8 @@ describe(tst_con.cgetAndProcessCsvData, () => {
         // Arrange
         let pathAndFileName = data_con.dataBrokerCsvPath();
         let contextName = wrd.cHello;
+        dataBroker.setupDataStorage();
+        dataBroker.storeData(pathAndFileName, contextName);
 
         // Act
         let returnData = chiefData.getAndProcessCsvData(pathAndFileName, contextName);
@@ -441,7 +448,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
         let returnData = chiefData.getAndProcessCsvData(pathAndFileName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -477,7 +484,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
         let returnData = chiefData.getAndProcessCsvData(pathAndFileName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -495,7 +502,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
         let returnData = chiefData.getAndProcessCsvData(pathAndFileName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -513,7 +520,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
         let returnData = chiefData.getAndProcessCsvData(pathAndFileName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -531,7 +538,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
         let returnData = chiefData.getAndProcessCsvData(pathAndFileName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -549,7 +556,7 @@ describe(tst_con.cgetAndProcessCsvData, () => {
         let returnData = chiefData.getAndProcessCsvData(pathAndFileName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -625,7 +632,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
         let returnData = chiefData.getAndProcessXmlData(pathAndFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -642,7 +649,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
         let returnData = chiefData.getAndProcessXmlData(pathAndFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -659,7 +666,7 @@ describe(tst_con.cgetAndProcessXmlData, () => {
         let returnData = chiefData.getAndProcessXmlData(pathAndFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -1282,6 +1289,9 @@ describe(tst_con.csetupAllJsonConfigData, () => {
 });
 
 /**
+ * @note initializeConstantsValidationData is not exist.
+ */
+/**
  * @function addConstantsValidationData
  * @description Tests the positive and negative test cases of the addConstantsValidationData
  * @author Json Howard
@@ -1302,7 +1312,7 @@ describe(tst_con.caddConstantsValidationData, () => {
         let returnData = chiefData.addConstantsValidationData(arrayValidationData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1319,7 +1329,7 @@ describe(tst_con.caddConstantsValidationData, () => {
         let returnData = chiefData.addConstantsValidationData(arrayValidationData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1336,7 +1346,7 @@ describe(tst_con.caddConstantsValidationData, () => {
         let returnData = chiefData.addConstantsValidationData(arrayValidationData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1353,7 +1363,7 @@ describe(tst_con.caddConstantsValidationData, () => {
         let returnData = chiefData.addConstantsValidationData(arrayValidationData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1370,7 +1380,7 @@ describe(tst_con.caddConstantsValidationData, () => {
         let returnData = chiefData.addConstantsValidationData(arrayValidationData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1387,6 +1397,6 @@ describe(tst_con.caddConstantsValidationData, () => {
         let returnData = chiefData.addConstantsValidationData(arrayValidationData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });

@@ -54,7 +54,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -73,7 +73,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -92,7 +92,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -111,7 +111,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 
     /**
@@ -130,7 +130,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -149,7 +149,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -168,7 +168,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -187,7 +187,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -206,7 +206,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -225,7 +225,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -244,7 +244,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -263,7 +263,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -282,7 +282,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -301,7 +301,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -320,7 +320,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -339,7 +339,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -358,7 +358,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -377,7 +377,7 @@ describe(tst_con.csetConfigurationSetting, () => {
         let returnData = configurator.setConfigurationSetting(configurationNamespace, configurationName, configurationValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -399,6 +399,8 @@ describe(tst_con.cgetConfigurationSetting, () => {
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = wrd.cHello;
 
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
+
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
@@ -416,6 +418,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = wrd.cHello;
         let configurationName = wrd.cHello;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
@@ -434,12 +437,13 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = "";
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -452,6 +456,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = num.c123;
         let configurationName = wrd.cHello;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
@@ -470,12 +475,13 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = false;
         let configurationName = wrd.cHello;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -488,6 +494,7 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = num.c123;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
@@ -506,12 +513,13 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = false;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -524,12 +532,13 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = undefined;
         let configurationName = wrd.cHello;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -542,12 +551,13 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = NaN;
         let configurationName = wrd.cHello;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -560,12 +570,13 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = undefined;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -578,12 +589,13 @@ describe(tst_con.cgetConfigurationSetting, () => {
         // Arrange
         let configurationNamespace = data_con.dataBrokerJsonPath();
         let configurationName = NaN;
+        configurator.setConfigurationSetting(configurationNamespace, configurationName, 123);
 
         // Act
         let returnData = configurator.getConfigurationSetting(configurationNamespace, configurationName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -625,7 +637,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -659,7 +671,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -676,7 +688,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -693,7 +705,7 @@ describe(tst_con.cprocessConfigurationNameRules, () => {
         let returnData = configurator.processConfigurationNameRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -718,7 +730,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -735,7 +747,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -752,7 +764,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -769,7 +781,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -786,7 +798,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -803,7 +815,7 @@ describe(tst_con.cprocessConfigurationNamespaceRules, () => {
         let returnData = configurator.processConfigurationNamespaceRules(fullyQualifiedName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -865,7 +877,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -937,7 +949,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -991,7 +1003,7 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1009,6 +1021,11 @@ describe(tst_con.cprocessConfigurationValueRules, () => {
         let returnData = configurator.processConfigurationValueRules(name, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
 });
+
+/**
+ * @note getParentConfigurationNamespaceObject is not exist.
+ * @note getConfigurationNamespaceObject is not exist.
+ */

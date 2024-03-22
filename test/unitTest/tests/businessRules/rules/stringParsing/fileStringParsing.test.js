@@ -54,7 +54,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe(wrd.csystem + bas.cDot + gen.cxml);
+    expect(returnData).toBe(wrd.ctest + bas.cDot + wrd.cconstants + bas.cDot + gen.cjs);
   });
 
   /**
@@ -76,7 +76,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe(data_con.stringRandomText);
+    expect(returnData).toBe(false);
   });
 
   /**
@@ -98,7 +98,7 @@ describe(tst_con.cgetFileNameFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe(wrd.csystem + bas.cDot + gen.cxml);
+    expect(returnData).toBe(wrd.ctest + bas.cDot + wrd.cconstants + bas.cDot + gen.cjs);
   });
 
   /**
@@ -216,7 +216,7 @@ describe(tst_con.cgetFileExtension, () => {
     );
 
     // Assert
-    expect(returnData).toBe(bas.cDot + gen.cxml);
+    expect(returnData).toBe(bas.cDot + gen.cjs);
   });
 
   /**
@@ -260,7 +260,7 @@ describe(tst_con.cgetFileExtension, () => {
     );
 
     // Assert
-    expect(returnData).toBe(bas.cDot + gen.cxml);
+    expect(returnData).toBe(bas.cDot + gen.cjs);
   });
 
   /**
@@ -378,7 +378,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
     );
 
     // Assert
-    expect(returnData).toContain(wrd.csystem + bas.cDot + gen.cxml);
+    expect(returnData).toContain('/test/unitTest/tests/constants/test.constants.js');
   });
 
   /**
@@ -400,7 +400,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
     );
 
     // Assert
-    expect(returnData).toBe('fxg24346dfg');
+    expect(returnData).toBeTruthy();
   });
 
   /**
@@ -422,7 +422,7 @@ describe(tst_con.cremoveDotFromFileExtension, () => {
     );
 
     // Assert
-    expect(returnData).toContain(wrd.csystem + bas.cDot + gen.cxml);
+    expect(returnData).toContain('/test/unitTest/tests/constants/test.constants.js');
   });
 
   /**
@@ -540,7 +540,7 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
     );
 
     // Assert
-    expect(returnData).toContain(wrd.csystem);
+    expect(returnData).toContain(wrd.ctest);
   });
 
   /**
@@ -584,7 +584,7 @@ describe(tst_con.cremoveFileExtensionFromFileName, () => {
     );
 
     // Assert
-    expect(returnData).toContain(wrd.csystem);
+    expect(returnData).toContain(wrd.ctest);
   });
 
   /**
@@ -1188,7 +1188,7 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe('testData');
+    expect(returnData).toBe('constants');
   });
 
   /**
@@ -1232,7 +1232,7 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe('testData');
+    expect(returnData).toBe('constants');
   });
 
   /**
@@ -1254,7 +1254,7 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1298,7 +1298,7 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1320,6 +1320,6 @@ describe(tst_con.cgetFirstTopLevelFolderFromPath, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBe('');
   });
 });

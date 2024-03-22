@@ -17,7 +17,7 @@
  */
 
 // Internal imports
-import mathOperations from '../../../../../src/businessRules/rules/mathOperations';
+import mathOperations from '../../../../../src/businessRules/rules/mathOperations.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as math_con from '../../../testData/businessRules/rules/mathOperations.js';
@@ -208,7 +208,7 @@ describe(tst_con.chex2rgbConversion, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[0, 0, 1]
+    expect(returnData).toBe(false); //[0, 0, 1]
   });
 
   /**
@@ -230,7 +230,7 @@ describe(tst_con.chex2rgbConversion, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //[0, 0, 1]
+    expect(returnData).toBe(false); //[0, 0, 1]
   });
 });
 

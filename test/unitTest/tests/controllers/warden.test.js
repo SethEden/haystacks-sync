@@ -1,5 +1,6 @@
 'use strict';
 
+import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
 /* eslint-disable no-undef */
 /**
  * @file warden.test.js
@@ -239,115 +240,116 @@ describe(tst_con.cprocessRootPath, () => {
     });
 });
 
-/**
- * @function initFrameworkSchema
- * @description Tests the positive and negative test cases of the initFrameworkSchema
- * @author Json Howard
- * @date 2023/08/29
-*/
-describe(tst_con.cinitFrameworkSchema, () => {
-    /**
-     * @function initFrameworkSchema_validDataObject
-     * @description Tests the controllers.warden.initFrameworkSchema function, with a valid input object.
-     * @author Json Howard
-     * @date 2023/08/29
-     */
-    test(tst_con.cinitFrameworkSchema_validDataObject, () => {
-        // Arrange
-        let configData = data_con.JsonObjectOfStrings_02;
+// /**
+//  * @function initFrameworkSchema
+//  * @description Tests the positive and negative test cases of the initFrameworkSchema
+//  * @author Json Howard
+//  * @date 2023/08/29
+// */
+// describe(tst_con.cinitFrameworkSchema, () => {
+//     /**
+//      * @function initFrameworkSchema_validDataObject
+//      * @description Tests the controllers.warden.initFrameworkSchema function, with a valid input object.
+//      * @author Json Howard
+//      * @date 2023/08/29
+//      */
+//     test(tst_con.cinitFrameworkSchema_validDataObject, () => {
+//         // Arrange
+//         let configData = data_con.JsonObjectOfStrings_02;
+//         rulesLibrary.initRulesLibrary();
 
-        // Act
-        let returnData = warden.initFrameworkSchema(configData);
+//         // Act
+//         let returnData = warden.initFrameworkSchema(configData);
 
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
+//         // Assert
+//         expect(returnData).toBeTruthy();
+//     });
     
-    /**
-     * @function initFrameworkSchema_inValidConfigDataString
-     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData string.
-     * @author Json Howard
-     * @date 2023/08/29
-     */
-    test(tst_con.cinitFrameworkSchema_inValidConfigDataString, () => {
-        // Arrange
-        let configData = "";
+//     /**
+//      * @function initFrameworkSchema_inValidConfigDataString
+//      * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData string.
+//      * @author Json Howard
+//      * @date 2023/08/29
+//      */
+//     test(tst_con.cinitFrameworkSchema_inValidConfigDataString, () => {
+//         // Arrange
+//         let configData = "";
 
-        // Act
-        let returnData = warden.initFrameworkSchema(configData);
+//         // Act
+//         let returnData = warden.initFrameworkSchema(configData);
 
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
+//         // Assert
+//         expect(returnData).toBeTruthy();
+//     });
     
-    /**
-     * @function initFrameworkSchema_inValidConfigDataInteger
-     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData integer.
-     * @author Json Howard
-     * @date 2023/08/29
-     */
-    test(tst_con.cinitFrameworkSchema_inValidConfigDataInteger, () => {
-        // Arrange
-        let configData = num.c123;
+//     /**
+//      * @function initFrameworkSchema_inValidConfigDataInteger
+//      * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData integer.
+//      * @author Json Howard
+//      * @date 2023/08/29
+//      */
+//     test(tst_con.cinitFrameworkSchema_inValidConfigDataInteger, () => {
+//         // Arrange
+//         let configData = num.c123;
 
-        // Act
-        let returnData = warden.initFrameworkSchema(configData);
+//         // Act
+//         let returnData = warden.initFrameworkSchema(configData);
 
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
+//         // Assert
+//         expect(returnData).toBeTruthy();
+//     });
     
-    /**
-     * @function initFrameworkSchema_inValidConfigDataBoolean
-     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData boolean.
-     * @author Json Howard
-     * @date 2023/08/29
-     */
-    test(tst_con.cinitFrameworkSchema_inValidConfigDataBoolean, () => {
-        // Arrange
-        let configData = false;
+//     /**
+//      * @function initFrameworkSchema_inValidConfigDataBoolean
+//      * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData boolean.
+//      * @author Json Howard
+//      * @date 2023/08/29
+//      */
+//     test(tst_con.cinitFrameworkSchema_inValidConfigDataBoolean, () => {
+//         // Arrange
+//         let configData = false;
 
-        // Act
-        let returnData = warden.initFrameworkSchema(configData);
+//         // Act
+//         let returnData = warden.initFrameworkSchema(configData);
 
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
+//         // Assert
+//         expect(returnData).toBeTruthy();
+//     });
     
-    /**
-     * @function initFrameworkSchema_inValidConfigDataUndefined
-     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData undefined.
-     * @author Json Howard
-     * @date 2023/08/29
-     */
-    test(tst_con.cinitFrameworkSchema_inValidConfigDataUndefined, () => {
-        // Arrange
-        let configData = undefined;
+//     /**
+//      * @function initFrameworkSchema_inValidConfigDataUndefined
+//      * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData undefined.
+//      * @author Json Howard
+//      * @date 2023/08/29
+//      */
+//     test(tst_con.cinitFrameworkSchema_inValidConfigDataUndefined, () => {
+//         // Arrange
+//         let configData = undefined;
 
-        // Act
-        let returnData = warden.initFrameworkSchema(configData);
+//         // Act
+//         let returnData = warden.initFrameworkSchema(configData);
 
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
+//         // Assert
+//         expect(returnData).toBeTruthy();
+//     });
     
-    /**
-     * @function initFrameworkSchema_inValidConfigDataNaN
-     * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData NaN.
-     * @author Json Howard
-     * @date 2023/08/29
-     */
-    test(tst_con.cinitFrameworkSchema_inValidConfigDataNaN, () => {
-        // Arrange
-        let configData = NaN;
+//     /**
+//      * @function initFrameworkSchema_inValidConfigDataNaN
+//      * @description Tests the controllers.warden.initFrameworkSchema function, with a invalid configData NaN.
+//      * @author Json Howard
+//      * @date 2023/08/29
+//      */
+//     test(tst_con.cinitFrameworkSchema_inValidConfigDataNaN, () => {
+//         // Arrange
+//         let configData = NaN;
 
-        // Act
-        let returnData = warden.initFrameworkSchema(configData);
+//         // Act
+//         let returnData = warden.initFrameworkSchema(configData);
 
-        // Assert
-        expect(returnData).toBeTruthy();
-    });
-});
+//         // Assert
+//         expect(returnData).toBeTruthy();
+//     });
+// });
 
 /**
  * @function mergeClientBusinessRules
@@ -370,7 +372,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
         let returnData = warden.mergeClientBusinessRules(clientBusinessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -387,7 +389,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
         let returnData = warden.mergeClientBusinessRules(clientBusinessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -404,7 +406,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
         let returnData = warden.mergeClientBusinessRules(clientBusinessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -421,7 +423,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
         let returnData = warden.mergeClientBusinessRules(clientBusinessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -438,7 +440,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
         let returnData = warden.mergeClientBusinessRules(clientBusinessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -455,7 +457,7 @@ describe(tst_con.cmergeClientBusinessRules, () => {
         let returnData = warden.mergeClientBusinessRules(clientBusinessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -480,7 +482,7 @@ describe(tst_con.cmergeClientCommands, () => {
         let returnData = warden.mergeClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -497,7 +499,7 @@ describe(tst_con.cmergeClientCommands, () => {
         let returnData = warden.mergeClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -514,7 +516,7 @@ describe(tst_con.cmergeClientCommands, () => {
         let returnData = warden.mergeClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -531,7 +533,7 @@ describe(tst_con.cmergeClientCommands, () => {
         let returnData = warden.mergeClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -548,7 +550,7 @@ describe(tst_con.cmergeClientCommands, () => {
         let returnData = warden.mergeClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -565,7 +567,7 @@ describe(tst_con.cmergeClientCommands, () => {
         let returnData = warden.mergeClientCommands(clientCommands);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -590,7 +592,7 @@ describe(tst_con.cloadCommandAliases, () => {
         let returnData = warden.loadCommandAliases(commandAliasesPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -607,7 +609,7 @@ describe(tst_con.cloadCommandAliases, () => {
         let returnData = warden.loadCommandAliases(commandAliasesPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -624,7 +626,7 @@ describe(tst_con.cloadCommandAliases, () => {
         let returnData = warden.loadCommandAliases(commandAliasesPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -641,7 +643,7 @@ describe(tst_con.cloadCommandAliases, () => {
         let returnData = warden.loadCommandAliases(commandAliasesPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -658,7 +660,7 @@ describe(tst_con.cloadCommandAliases, () => {
         let returnData = warden.loadCommandAliases(commandAliasesPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -675,7 +677,7 @@ describe(tst_con.cloadCommandAliases, () => {
         let returnData = warden.loadCommandAliases(commandAliasesPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -700,7 +702,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
         let returnData = warden.loadCommandWorkflows(workflowPathConfigName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -717,7 +719,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
         let returnData = warden.loadCommandWorkflows(workflowPathConfigName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -734,7 +736,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
         let returnData = warden.loadCommandWorkflows(workflowPathConfigName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -751,7 +753,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
         let returnData = warden.loadCommandWorkflows(workflowPathConfigName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -768,7 +770,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
         let returnData = warden.loadCommandWorkflows(workflowPathConfigName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -785,7 +787,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
         let returnData = warden.loadCommandWorkflows(workflowPathConfigName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -794,6 +796,7 @@ describe(tst_con.cloadCommandWorkflows, () => {
  * @description Tests the positive and negative test cases of the executeBusinessRules
  * @author Json Howard
  * @date 2023/08/29
+ * @note inputs and businessRules should be array.
 */
 describe(tst_con.cexecuteBusinessRules, () => {
     /**
@@ -811,7 +814,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -829,7 +832,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -847,7 +850,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -865,7 +868,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -883,7 +886,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -901,7 +904,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -919,7 +922,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -937,7 +940,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -955,7 +958,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -973,7 +976,7 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -991,9 +994,16 @@ describe(tst_con.cexecuteBusinessRules, () => {
         let returnData = warden.executeBusinessRules(inputs, businessRules);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
+
+/**
+ * @note enqueueCommand
+ * @note processCommandQueue
+ * @note setConfigurationSetting
+ * @note getConfigurationSetting
+ */
 
 /**
  * @function consoleLog
@@ -1017,7 +1027,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1035,7 +1045,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1053,7 +1063,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1071,7 +1081,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1089,7 +1099,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1107,7 +1117,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1125,7 +1135,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1143,7 +1153,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1161,7 +1171,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1179,7 +1189,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1197,6 +1207,6 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = warden.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });

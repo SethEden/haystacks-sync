@@ -19,13 +19,13 @@
 // Internal imports
 import wordArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/wordArrayParsing.js';
 import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/wordArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { bas, wrd, num } = hayConst;
 
@@ -586,7 +586,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
         let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe();
+        expect(returnData).toBeTruthy();
     });
 
     /**
@@ -604,7 +604,7 @@ describe(tst_con.cconvertArrayToCamelCaseString, () => {
         let returnData = wordArrayParsing.convertArrayToCamelCaseString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe();
+        expect(returnData).toBeTruthy();
     });
 
     /**
@@ -756,7 +756,7 @@ describe(tst_con.cdoesArrayContainLowerCaseConsolidatedString, () => {
         let returnData = wordArrayParsing.doesArrayContainLowerCaseConsolidatedString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(undefined);
+        expect(returnData).toBe(true);
     });
 
     /**
@@ -826,7 +826,8 @@ describe(tst_con.cascertainMatchingElements, () => {
     * @description Tests the businessRules.rules.arrayParsing.wordArrayParsing.ascertainMatchingElements function, with a valid data.
     * @author Json Howard
     * @date 2023/04/21
-    */    test(tst_con.cascertainMatchingElements_validDataString, () => {
+    */    
+   test(tst_con.cascertainMatchingElements_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = obj_con.StringsArray_01;

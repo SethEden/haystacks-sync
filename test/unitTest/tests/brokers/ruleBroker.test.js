@@ -23,7 +23,7 @@ import * as tst_con from '../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { sys, wrd, biz } = hayConst;
 
@@ -32,6 +32,7 @@ const { sys, wrd, biz } = hayConst;
  * @description Tests the positive and negative test cases of the bootStrapBusinessRules function.
  * @author Json Howard
  * @date 2023/04/17
+ * @note bootStrapBusinessRules doesn't have any inputs, but inputData is defined in this unitTest function.
  */
 describe(tst_con.cbootStrapBusinessRules, () => {
     /**
@@ -45,7 +46,8 @@ describe(tst_con.cbootStrapBusinessRules, () => {
         ruleBroker.bootStrapBusinessRules();
 
         // Assert
-        expect(D[sys.cbusinessRules]).toBeTruthy();
+        expect(D[sys.cbusinessRules][biz.cecho]).toBeTruthy();
+        expect(D[sys.cbusinessRules][biz.cparseColorRangeInputs]).toBeTruthy();
     });
 
     /**
@@ -121,7 +123,7 @@ describe(tst_con.caddClientRules, () => {
         ruleBroker.addClientRules(clientRules);
 
         // Assert
-        expect(D[sys.cbusinessRules]).toBeTruthy();
+        expect(D[sys.cbusinessRules]['data']).toBeTruthy();
     });
     
     /**
@@ -217,7 +219,7 @@ describe(tst_con.cprocessRules, () => {
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -235,7 +237,7 @@ describe(tst_con.cprocessRules, () => {
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -289,7 +291,7 @@ describe(tst_con.cprocessRules, () => {
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBe(undefined);
     });
     
     /**
@@ -307,7 +309,7 @@ describe(tst_con.cprocessRules, () => {
         let returnData = ruleBroker.processRules(inputs, rulesToExecute);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBe(undefined);
     });
     
     /**

@@ -35,6 +35,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the colorizeMessageSimple
  * @author Json Howard
  * @date 2023/08/29
+ * @note colorArray should be array<integers>
 */
 
 describe(tst_con.ccolorizeMessageSimple, () => {
@@ -73,7 +74,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
         let returnData = colorizer.colorizeMessageSimple(message, colorArray, isForeground);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -149,7 +150,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
         let returnData = colorizer.colorizeMessageSimple(message, colorArray, isForeground);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -168,7 +169,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
         let returnData = colorizer.colorizeMessageSimple(message, colorArray, isForeground);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -187,7 +188,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
         let returnData = colorizer.colorizeMessageSimple(message, colorArray, isForeground);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
     
     /**
@@ -358,7 +359,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
         let returnData = colorizer.colorizeMessageSimple(message, colorArray, isForeground);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -377,7 +378,7 @@ describe(tst_con.ccolorizeMessageSimple, () => {
         let returnData = colorizer.colorizeMessageSimple(message, colorArray, isForeground);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
   
 });
@@ -870,7 +871,7 @@ describe(tst_con.ccolorizeMessage, () => {
         let returnData = colorizer.colorizeMessage(message, className, functionName, debugFilesSetting, debugFunctionsSetting, flatMessageLog);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -892,7 +893,7 @@ describe(tst_con.ccolorizeMessage, () => {
         let returnData = colorizer.colorizeMessage(message, className, functionName, debugFilesSetting, debugFunctionsSetting, flatMessageLog);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
 });
 
@@ -901,6 +902,7 @@ describe(tst_con.ccolorizeMessage, () => {
  * @description Tests the positive and negative test cases of the aggregateStyleSetting
  * @author Json Howard
  * @date 2023/08/29
+ * @note defaultColorArray should be array<integer>
 */
 describe(tst_con.caggregateStyleSetting, () => {
     /**
@@ -1340,7 +1342,7 @@ describe(tst_con.caggregateStyleSetting, () => {
         let returnData = colorizer.aggregateStyleSetting(settingValue1, settingValue2, defaultColorArray, processAsFontSetting);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
 });
 
@@ -1350,7 +1352,6 @@ describe(tst_con.caggregateStyleSetting, () => {
  * @author Json Howard
  * @date 2023/08/29
 */
-
 describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
     /**
      * @function getFontStyleSettingsFromSetting_validDataString
@@ -1460,6 +1461,7 @@ describe(tst_con.cgetFontStyleSettingsFromSetting, () => {
  * @description Tests the positive and negative test cases of the getColorStyleSettingFromSetting
  * @author Json Howard
  * @date 2023/08/29
+ * @note defaultColorArray should be array<integer>
 */
 describe(tst_con.cgetColorStyleSettingFromSetting, () => {
     /**
@@ -1549,7 +1551,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
         let returnData = colorizer.getColorStyleSettingFromSetting(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -1585,7 +1587,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
         let returnData = colorizer.getColorStyleSettingFromSetting(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -1603,7 +1605,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
         let returnData = colorizer.getColorStyleSettingFromSetting(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -1621,7 +1623,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
         let returnData = colorizer.getColorStyleSettingFromSetting(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -1639,7 +1641,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
         let returnData = colorizer.getColorStyleSettingFromSetting(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1657,7 +1659,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
         let returnData = colorizer.getColorStyleSettingFromSetting(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
 });
 
@@ -1666,6 +1668,7 @@ describe(tst_con.cgetColorStyleSettingFromSetting, () => {
  * @description Tests the positive and negative test cases of the getNamedColorData
  * @author Json Howard
  * @date 2023/08/29
+ * @note defaultColorArray should be array<integer>
 */
 describe(tst_con.cgetNamedColorData, () => {
     /**
@@ -1791,7 +1794,7 @@ describe(tst_con.cgetNamedColorData, () => {
         let returnData = colorizer.getNamedColorData(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -1845,7 +1848,7 @@ describe(tst_con.cgetNamedColorData, () => {
         let returnData = colorizer.getNamedColorData(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1863,7 +1866,7 @@ describe(tst_con.cgetNamedColorData, () => {
         let returnData = colorizer.getNamedColorData(colorName, defaultColorArray);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
 });
 
@@ -1907,7 +1910,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
         let returnData = colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting(messageComponent, underlineSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -1961,7 +1964,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
         let returnData = colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting(messageComponent, underlineSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -2015,7 +2018,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
         let returnData = colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting(messageComponent, underlineSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -2033,7 +2036,7 @@ describe(tst_con.csetUnderlineFontStyleOnMessageComponentAccordingToSetting, () 
         let returnData = colorizer.setUnderlineFontStyleOnMessageComponentAccordingToSetting(messageComponent, underlineSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
     
     /**
@@ -2113,7 +2116,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
         let returnData = colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting(messageComponent, boldSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -2167,7 +2170,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
         let returnData = colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting(messageComponent, boldSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -2221,7 +2224,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
         let returnData = colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting(messageComponent, boldSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -2239,7 +2242,7 @@ describe(tst_con.csetBoldFontStyleOnMessageComponentAccordingToSetting, () => {
         let returnData = colorizer.setBoldFontStyleOnMessageComponentAccordingToSetting(messageComponent, boldSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
     
     /**
@@ -2319,7 +2322,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
         let returnData = colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting(messageComponent, colorSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -2373,7 +2376,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
         let returnData = colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting(messageComponent, colorSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -2427,7 +2430,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
         let returnData = colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting(messageComponent, colorSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -2445,7 +2448,7 @@ describe(tst_con.csetFontForegroundColorOnMessageComponentAccordingToSetting, ()
         let returnData = colorizer.setFontForegroundColorOnMessageComponentAccordingToSetting(messageComponent, colorSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
     
     /**
@@ -2525,7 +2528,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
         let returnData = colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting(messageComponent, colorSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -2579,7 +2582,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
         let returnData = colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting(messageComponent, colorSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
     
     /**
@@ -2633,7 +2636,7 @@ describe(tst_con.csetFontBackgroundColorOnMessageComponentAccordingToSetting, ()
         let returnData = colorizer.setFontBackgroundColorOnMessageComponentAccordingToSetting(messageComponent, colorSettingValue);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -2729,7 +2732,7 @@ describe(tst_con.cremoveFontStyles, () => {
         let returnData = colorizer.removeFontStyles(message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -2763,7 +2766,7 @@ describe(tst_con.cremoveFontStyles, () => {
         let returnData = colorizer.removeFontStyles(message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -2780,7 +2783,7 @@ describe(tst_con.cremoveFontStyles, () => {
         let returnData = colorizer.removeFontStyles(message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
     
     /**
@@ -2797,6 +2800,6 @@ describe(tst_con.cremoveFontStyles, () => {
         let returnData = colorizer.removeFontStyles(message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe("");
     });
 });

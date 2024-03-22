@@ -261,7 +261,7 @@ function randomlyGenerateSpecialCharacter(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
   // NOTE Cannot have a "." as part of a variable name in a {set}
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     let inputDataLength = inputData.length.toString();
     let number = randomlyGenerateNumberInRange(num.c1, [inputDataLength, gen.cTrue, gen.cTrue]);
     // NOTE: The String.length() above is a 1-base count, the String.substring is zero-based.
@@ -291,7 +291,7 @@ function randomlyGenerateNumberInRange(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
-  if (inputData && inputMetaData) {
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring) {
     let minimum = parseInt(inputData);
     let maximum = parseInt(inputMetaData[0]);
     let addOne = ruleParsing.processRulesInternal([inputMetaData[1], ''], [biz.cstringToBoolean]);

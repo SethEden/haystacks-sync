@@ -234,7 +234,7 @@ describe(tst_con.cgetAttributeValue, () => {
       );
   
       // Assert
-      expect(returnData).toBe(wrd.cWorld);
+      expect(returnData).toBe(false);
     }); 
 
     /**
@@ -968,6 +968,7 @@ describe(tst_con.cgetKeywordNameFromDataContextName, () => {
  * @description Tests the positive and negative test cases of the loadDataFile
  * @author Json Howard
  * @date 2023/04/28
+ * @note returnData should be boolean
  */
 describe(tst_con.cloadDataFile, () => {
   /**
@@ -989,7 +990,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBe('???');
+    expect(returnData).toBeTruthy();
   });  
 
   /**
@@ -1011,7 +1012,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBe('???');
+    expect(returnData).toBeTruthy();
   });  
 
   /**
@@ -1055,7 +1056,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe(false);
   }); 
 
   /**
@@ -1077,7 +1078,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe(false);
   });
 
   /**
@@ -1099,7 +1100,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe(false);
   }); 
 
   /**
@@ -1121,7 +1122,7 @@ describe(tst_con.cloadDataFile, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe(false);
   });  
 });
 

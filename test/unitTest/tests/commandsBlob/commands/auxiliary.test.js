@@ -17,7 +17,7 @@
 
 // Internal imports
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import auxiliary from '../../../../../src/commandsBlob/commands/auxiliary';
+import auxiliary from '../../../../../src/commandsBlob/commands/auxiliary.js';
 import D from '../../../../../src/structures/data.js';
 import * as tst_con from '../../constants/test.constants.js';
 

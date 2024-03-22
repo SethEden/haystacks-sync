@@ -1,4 +1,6 @@
 'use strict';
+import ruleBroker from '../../../../../src/brokers/ruleBroker.js';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 /* eslint-disable no-undef */
 /**
  * @file system.test.js
@@ -22,13 +24,16 @@
 
 // Internal imports
 import system from '../../../../../src/commandsBlob/commands/system.js';
+import D from '../../../../../src/structures/data.js';
+import chiefWorkflow from '../../../../../bin/controllers/chiefWorkflow.js';
 import * as tst_con from '../../constants/test.constants.js';
+import { basePath } from '../../utilities/utilities.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { wrd, num } = hayConst;
+const { wrd, num, sys, bas, gen } = hayConst;
 
 /**
  * @function echoCommand
@@ -241,6 +246,7 @@ describe(tst_con.cechoCommand, () => {
  * @description Tests the positive and negative test cases of the exit
  * @author Json Howard
  * @date 2023/08/22
+ * @note inputData is not used for this function
 */
 describe(tst_con.cexit, () => {
     /**
@@ -1066,6 +1072,7 @@ describe(tst_con.cname, () => {
  * @author Seth Hollingsead
  * @date 2023/09/19
  * @NOTE Unsure how to test this?!
+ * @note inputData and inputMetaData are not used for this function.
  */
 describe(tst_con.cclearScreen, () => {
     /**
@@ -1105,6 +1112,8 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1123,6 +1132,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = wrd.cHello;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1141,6 +1151,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = wrd.cHello;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1159,6 +1170,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = num.c123;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1177,6 +1189,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = false;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1195,6 +1208,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = num.c123;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1213,6 +1227,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = false;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1231,6 +1246,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = undefined;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1249,6 +1265,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = NaN;
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1267,6 +1284,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = undefined;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);
@@ -1285,6 +1303,7 @@ describe(tst_con.chelp, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = NaN;
+        D[sys.cCommandsAliases] = {};
 
         // Act
         let returnData = system.help(inputData, inputMetaData);

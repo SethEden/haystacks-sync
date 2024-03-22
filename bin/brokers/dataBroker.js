@@ -1044,6 +1044,7 @@ export default {
   loadAllXmlData,
   loadAllJsonData,
   processCsvData,
+  processXmlData,
   preprocessJsonFile,
   writeJsonDataToFile,
   setupDataStorage,

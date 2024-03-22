@@ -25,7 +25,7 @@ import * as tst_con from '../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { bas, sys, wrd, cfg } = hayConst;
 
@@ -34,6 +34,7 @@ const { bas, sys, wrd, cfg } = hayConst;
  * @description Tests the positive and negative test cases of the getNamedThemes function.
  * @author Json Howard
  * @date 2023/04/17
+ * @note getNamedThemes doesn't have any inputs, but inputData is defined in this unitTest function.
  */
 describe(tst_con.cgetNamedThemes, () => {
     /**

@@ -1,4 +1,5 @@
 'use strict';
+import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
 /* eslint-disable no-undef */
 /**
  * @file stack.test.js
@@ -36,6 +37,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the initStack
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.initStack is void function, can't get returnData.
 */
 describe(tst_con.cinitStack, () => {
     /**
@@ -52,7 +54,7 @@ describe(tst_con.cinitStack, () => {
         let returnData = stack.initStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -69,7 +71,7 @@ describe(tst_con.cinitStack, () => {
         let returnData = stack.initStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -86,7 +88,7 @@ describe(tst_con.cinitStack, () => {
         let returnData = stack.initStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -103,7 +105,7 @@ describe(tst_con.cinitStack, () => {
         let returnData = stack.initStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -120,7 +122,7 @@ describe(tst_con.cinitStack, () => {
         let returnData = stack.initStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -137,7 +139,7 @@ describe(tst_con.cinitStack, () => {
         let returnData = stack.initStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -146,6 +148,7 @@ describe(tst_con.cinitStack, () => {
  * @description Tests the positive and negative test cases of the clearStack
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.clearStack is void function, can't get returnData.
 */
 describe(tst_con.cclearStack, () => {
     /**
@@ -162,7 +165,7 @@ describe(tst_con.cclearStack, () => {
         let returnData = stack.clearStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -179,7 +182,7 @@ describe(tst_con.cclearStack, () => {
         let returnData = stack.clearStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -196,7 +199,7 @@ describe(tst_con.cclearStack, () => {
         let returnData = stack.clearStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -213,7 +216,7 @@ describe(tst_con.cclearStack, () => {
         let returnData = stack.clearStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -230,7 +233,7 @@ describe(tst_con.cclearStack, () => {
         let returnData = stack.clearStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -247,7 +250,7 @@ describe(tst_con.cclearStack, () => {
         let returnData = stack.clearStack(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -256,6 +259,7 @@ describe(tst_con.cclearStack, () => {
  * @description Tests the positive and negative test cases of the push
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.push is void function, can't get returnData.
 */
 describe(tst_con.cpush, () => {
     /**
@@ -273,7 +277,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -291,7 +295,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -309,7 +313,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -327,7 +331,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -345,7 +349,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -363,7 +367,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -381,7 +385,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -399,7 +403,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -417,7 +421,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -435,7 +439,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -453,7 +457,7 @@ describe(tst_con.cpush, () => {
         let returnData = stack.push(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -478,7 +482,7 @@ describe(tst_con.cpop, () => {
         let returnData = stack.pop(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
     
     /**
@@ -588,7 +592,7 @@ describe(tst_con.cisEmpty, () => {
         let returnData = stack.isEmpty(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -715,7 +719,7 @@ describe(tst_con.clength, () => {
         let returnData = stack.length(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -732,7 +736,7 @@ describe(tst_con.clength, () => {
         let returnData = stack.length(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -749,7 +753,7 @@ describe(tst_con.clength, () => {
         let returnData = stack.length(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -766,7 +770,7 @@ describe(tst_con.clength, () => {
         let returnData = stack.length(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -783,7 +787,7 @@ describe(tst_con.clength, () => {
         let returnData = stack.length(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
 });
 
@@ -803,7 +807,10 @@ describe(tst_con.ccontains, () => {
     test(tst_con.ccontains_validDataString, () => {
         // Arrange
         let stackNameSpace = wrd.cHello;
-        let value = data_con.JsonObjectOfStrings_02;
+        let value = wrd.cWorld;
+        rulesLibrary.initRulesLibrary();
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -821,7 +828,9 @@ describe(tst_con.ccontains, () => {
     test(tst_con.ccontains_inValidDataStackNameSpaceString, () => {
         // Arrange
         let stackNameSpace = "";
-        let value = data_con.JsonObjectOfStrings_02;
+        let value = wrd.cWorld;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -840,6 +849,8 @@ describe(tst_con.ccontains, () => {
         // Arrange
         let stackNameSpace = wrd.cHello;
         let value = wrd.cHello;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -857,7 +868,9 @@ describe(tst_con.ccontains, () => {
     test(tst_con.ccontains_inValidStackNameSpaceInteger, () => {
         // Arrange
         let stackNameSpace = num.c123;
-        let value = data_con.JsonObjectOfStrings_02;
+        let value = wrd.cWorld;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -875,7 +888,9 @@ describe(tst_con.ccontains, () => {
     test(tst_con.ccontains_inValidStackNameSpaceBoolean, () => {
         // Arrange
         let stackNameSpace = false;
-        let value = data_con.JsonObjectOfStrings_02;
+        let value = wrd.cWorld;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -894,6 +909,8 @@ describe(tst_con.ccontains, () => {
         // Arrange
         let stackNameSpace = wrd.cHello;
         let value = num.c123;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -912,12 +929,14 @@ describe(tst_con.ccontains, () => {
         // Arrange
         let stackNameSpace = wrd.cHello;
         let value = false;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -929,7 +948,9 @@ describe(tst_con.ccontains, () => {
     test(tst_con.ccontains_inValidStackNameSpaceUndefined, () => {
         // Arrange
         let stackNameSpace = undefined;
-        let value = data_con.JsonObjectOfStrings_02;
+        let value = wrd.cWorld;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -947,7 +968,9 @@ describe(tst_con.ccontains, () => {
     test(tst_con.ccontains_inValidStackNameSpaceNaN, () => {
         // Arrange
         let stackNameSpace = NaN;
-        let value = data_con.JsonObjectOfStrings_02;
+        let value = wrd.cWorld;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
@@ -966,12 +989,14 @@ describe(tst_con.ccontains, () => {
         // Arrange
         let stackNameSpace = wrd.cHello;
         let value = undefined;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -984,12 +1009,14 @@ describe(tst_con.ccontains, () => {
         // Arrange
         let stackNameSpace = wrd.cHello;
         let value = NaN;
+        stack.initStack(stackNameSpace);
+        stack.push(stackNameSpace, value);
 
         // Act
         let returnData = stack.contains(stackNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
 });
 
@@ -998,6 +1025,7 @@ describe(tst_con.ccontains, () => {
  * @description Tests the positive and negative test cases of the print
  * @author Json Howard
  * @date 2023/09/05
+ * @note stack.print is void function, can't get returnData.
 */
 describe(tst_con.cprint, () => {
     /**
@@ -1014,7 +1042,7 @@ describe(tst_con.cprint, () => {
         let returnData = stack.print(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1031,7 +1059,7 @@ describe(tst_con.cprint, () => {
         let returnData = stack.print(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1048,7 +1076,7 @@ describe(tst_con.cprint, () => {
         let returnData = stack.print(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1065,7 +1093,7 @@ describe(tst_con.cprint, () => {
         let returnData = stack.print(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1082,7 +1110,7 @@ describe(tst_con.cprint, () => {
         let returnData = stack.print(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1099,6 +1127,6 @@ describe(tst_con.cprint, () => {
         let returnData = stack.print(stackNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });

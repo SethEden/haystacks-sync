@@ -51,7 +51,7 @@ function replaceCharacterWithCharacter(inputData, inputMetaData) {
   let returnData;
   if (!inputData && !inputMetaData) {
     returnData = false;
-  } else {
+  } else if (typeof inputData === wrd.cstring) {
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.cconfigurationInitialized) === true) {
       returnData = ruleParsing.processRulesInternal([inputData, inputMetaData], [biz.cutilitiesReplaceCharacterWithCharacter]);
     } else {
@@ -80,10 +80,10 @@ function doesArrayContainCharacter(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = false;
-  if (inputData && inputMetaData) {
+  if (inputData && inputMetaData && Array.isArray(inputMetaData)) {
     for (const element of inputMetaData) {
       let arrayElement = element;
-      if (arrayElement.includes(inputData) === true) {
+      if (arrayElement && typeof arrayElement === wrd.cstring && arrayElement.includes(inputData) === true) {
         returnData = true;
         break;
       }
@@ -110,9 +110,9 @@ function removeCharacterFromArray(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = false;
-  if (inputData && inputMetaData) {
+  if ((inputData === false || inputData) && Array.isArray(inputMetaData)) {
     for (let i = 0; i < inputMetaData.length; i++) {
-      let arrayElement = inputMetaData[i];
+      let arrayElement = [inputMetaData[i]];
       if (arrayElement.includes(inputData) === true) {
         inputMetaData[i] = replaceCharacterWithCharacter(arrayElement, [RegExp('\\' + inputData, bas.cg), '']);
       }

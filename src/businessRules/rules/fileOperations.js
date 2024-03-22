@@ -32,7 +32,7 @@ import papa from 'papaparse';
 import xml2js from 'xml2js';
 import path from 'path';
 
-const {bas, biz, cfg, gen, msg, sys, wrd} = hayConst;
+const { bas, biz, cfg, gen, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // businessRules.rules.fileOperations.
 const namespacePrefix = sys.cbusinessRules + bas.cDot + wrd.crules + bas.cDot + baseFileName + bas.cDot;
@@ -64,21 +64,27 @@ function getXmlData(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  let pathAndFilename = path.resolve(inputData);
-  let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
-  let xml;
-  xml2js.parseString(data,
-  function(err, result) {
-    if (err) {
-      // ERROR:
-      returnData = console.log(sys.cERROR_Colon + err);
-      loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
-      loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
-      return returnData;
-    } // End-if (err)
-    xml = result;
-  });
-  returnData = xml;
+  if (inputData && typeof inputData === wrd.cstring) {
+    let pathAndFilename = path.resolve(inputData);
+    try {
+      let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
+      let xml;
+      xml2js.parseString(data,
+        function (err, result) {
+          if (err) {
+            // ERROR:
+            returnData = console.log(sys.cERROR_Colon + err);
+            loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
+            loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+            return returnData;
+          } // End-if (err)
+          xml = result;
+        });
+      returnData = xml;
+    } catch (err) {
+      returnData = undefined;
+    }
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -102,17 +108,23 @@ function getCsvData(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData;
-  let pathAndFilename = path.resolve(inputData);
-  let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
-  returnData = papa.parse(data, {
-    delimiter: ',',
-    newline: '/n',
-    header: true,
-    skipEmptyLines: true,
-    encoding: gen.cUTF8
-  });
-  // DONE loading data from:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cDoneLoadingDataFrom + pathAndFilename);
+  if (inputData && typeof inputData === wrd.cstring) {
+    let pathAndFilename = path.resolve(inputData);
+    try {
+      let data = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
+      returnData = papa.parse(data, {
+        delimiter: ',',
+        newline: '/n',
+        header: true,
+        skipEmptyLines: true,
+        encoding: gen.cUTF8
+      });
+      // DONE loading data from:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cDoneLoadingDataFrom + pathAndFilename);
+    } catch (err) {
+      returnData = undefined;
+    }
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -137,9 +149,17 @@ function getJsonData(inputData, inputMetaData) {
   // console.log(`inputMetaData is: ${inputMetaData}`);
   // Make sure to resolve the path on the local system,
   // just in case there are issues with the OS that the code is running on.
-  let pathAndFilename = path.resolve(inputData);
-  let rawData = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
-  let returnData = JSON.parse(rawData);
+  let returnData;
+  if (typeof inputData === wrd.cstring) {
+    let pathAndFilename = path.resolve(inputData);
+    let rawData = {};
+    try {
+      rawData = fs.readFileSync(pathAndFilename, { encoding: gen.cUTF8 });
+      returnData = JSON.parse(rawData);
+    } catch(e) {
+      console.log('file load error!');
+    }
+  }
   // console.log(`DONE loading data from: ${inputData}`);
   // console.log(msg.creturnDataIs + JSON.stringify(returnData));
   // console.log(`END ${namespacePrefix}${functionName} function`);
@@ -222,9 +242,11 @@ function readDirectoryContents(inputData, inputMetaData) {
   let returnData = [];
   // Make sure to resolve the path on the local system,
   // just in case there are issues with the OS that the code is running on.
-  let directory = path.resolve(inputData);
-  readDirectorySynchronously(directory);
-  returnData = filesCollection; // Copy the data into a local variable first.
+  if (typeof inputData === wrd.cstring) {
+    let directory = path.resolve(inputData);
+    readDirectorySynchronously(directory);
+    returnData = filesCollection; // Copy the data into a local variable first.
+  }
   filesCollection = undefined; // Make sure to clear it so we don't have a chance of it corrupting any other file operations.
   filesCollection = [];
   // console.log(`DONE loading data from: ${inputData}`);
@@ -254,26 +276,31 @@ function scanDirectoryContents(inputData, inputMetaData) {
   // Path that should be scanned is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cPathThatShouldBeScannedIs + inputData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
-  let enableLimit = inputMetaData[0];
-  let filesLimit = inputMetaData[1];
-  // enableLimit is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cenableLimitIs + enableLimit);
-  // filesLimit is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesLimitIs + filesLimit);
   let filesFound = [];
-  let directory = path.resolve(inputData);
-  enableFilesListLimit = enableLimit;
-  filesListLimit = filesLimit;
-  readDirectorySynchronously(directory, '');
-  filesFound = filesCollection; // Copy the data into a local variable first.
-  filesCollection = undefined; // Make sure to clear it so we don't have a chance of it corrupting any other file operations.
-  filesCollection = [];
-  enableFilesListLimit = false;
-  filesListLimit = -1;
-  hitFileLimit = false;
-  // files found are:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesFoundAre + JSON.stringify(filesFound));
-  loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  if (Array.isArray(inputMetaData) && inputMetaData[0] && inputMetaData[1]) {
+    let enableLimit = inputMetaData[0];
+    let filesLimit = inputMetaData[1];
+    // enableLimit is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cenableLimitIs + enableLimit);
+    // filesLimit is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cfilesLimitIs + filesLimit);
+    let directory = '';
+    if (inputData && typeof inputData === wrd.cstring) {
+      directory = path.resolve(inputData);
+      enableFilesListLimit = enableLimit;
+      filesListLimit = filesLimit;
+      readDirectorySynchronously(directory, '');
+      filesFound = filesCollection; // Copy the data into a local variable first.
+      filesCollection = undefined; // Make sure to clear it so we don't have a chance of it corrupting any other file operations.
+      filesCollection = [];
+      enableFilesListLimit = false;
+      filesListLimit = -1;
+      hitFileLimit = false;
+      // files found are:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cfilesFoundAre + JSON.stringify(filesFound));
+    }
+    loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  }
   return filesFound;
 }
 
@@ -293,9 +320,13 @@ function getDirectoryList(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = false;
   if (inputData) {
-    returnData = fs.readdirSync(inputData, { withFileTypes: true })
-      .filter((item) => item.isDirectory())
-      .map((item) => item.name);
+    try {
+      returnData = fs.readdirSync(inputData, { withFileTypes: true })
+        .filter((item) => item.isDirectory())
+        .map((item) => item.name);
+    } catch (err) {
+      console.log('file load error.');
+    }
   } // End-if (inputData)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -320,7 +351,7 @@ function readDirectorySynchronously(inputData, inputMetaData) {
   // console.log(`BEGIN ${namespacePrefix}${functionName} function`);
   // console.log(`inputData is: ${inputData}`);
   // console.log(`inputMetaData is: ${inputMetaData}`);
-  if (hitFileLimit === false) {
+  if (hitFileLimit === false ) {
     let directory = path.resolve(inputData); // Make sure to resolve the path on the local system.
     let currentDirectoryPath = directory;
     let currentDirectory = '';
@@ -328,42 +359,48 @@ function readDirectorySynchronously(inputData, inputMetaData) {
       currentDirectory = fs.readdirSync(currentDirectoryPath, gen.cUTF8);
     } catch (err) {
       console.log(msg.cERROR + err.message);
-      fs.mkdirSync(currentDirectoryPath);
-      currentDirectory = fs.readdirSync(currentDirectoryPath, gen.cUTF8);
-    }
-    currentDirectory.forEach(file => {
-      let filesShouldBeSkipped = directoriesToSkip.indexOf(file) > -1;
-      let pathOfCurrentItem = directory + bas.cForwardSlash + file;
       try {
-        if (!filesShouldBeSkipped && fs.statSync(pathOfCurrentItem).isFile()) {
-          if (enableFilesListLimit === true && filesListLimit > 0) {
-            if (filesCollection.length <= filesListLimit) {
-              // console.log('Did not hit the file limit yet!');
-              filesCollection.push(pathOfCurrentItem);
-              // console.log('filesCollection is: ' + JSON.stringify(filesCollection));
-            } else {
-              // console.log('Hit the file limit!!');
-              hitFileLimit = true;
-              return;
-            }
-          } else {
-            // console.log('adding the file the old fashioned way.');
-            filesCollection.push(pathOfCurrentItem);
-          }
-        } else if (!filesShouldBeSkipped) {
-          // NOTE: There is a difference in how paths are handled in Windows VS Mac/Linux.
-          // So far now I'm putting this code here like this to handle both situations.
-          // The ideal solution would be to detect which OS the code is being run on.
-          // Then handle each case appropriately.
-          let directoryPath = '';
-          directoryPath = path.resolve(directory + bas.cForwardSlash + file);
-          // console.log(`directoryPath is ${directoryPath}`);
-          readDirectorySynchronously(directoryPath, '');
-        } // End-else-if (!filesShouldBeSkipped)
-      } catch (err) { // Catch the error in the hopes that we can continue scanning the file system.
-        console.log(msg.cErrorInvalidAccessTo + pathOfCurrentItem);
+        fs.mkdirSync(currentDirectoryPath);
+        currentDirectory = fs.readdirSync(currentDirectoryPath, gen.cUTF8);
+      } catch (err) {
+        console.log(msg.cERROR + err.message);
       }
-    }); // End-currentDirectory.forEach(file => {
+    }
+    if (Array.isArray(currentDirectory)) {
+      currentDirectory.forEach(file => {
+        let filesShouldBeSkipped = directoriesToSkip.indexOf(file) > -1;
+        let pathOfCurrentItem = directory + bas.cForwardSlash + file;
+        try {
+          if (!filesShouldBeSkipped && fs.statSync(pathOfCurrentItem).isFile()) {
+            if (enableFilesListLimit === true && filesListLimit > 0) {
+              if (filesCollection.length <= filesListLimit) {
+                // console.log('Did not hit the file limit yet!');
+                filesCollection.push(pathOfCurrentItem);
+                // console.log('filesCollection is: ' + JSON.stringify(filesCollection));
+              } else {
+                // console.log('Hit the file limit!!');
+                hitFileLimit = true;
+                return;
+              }
+            } else {
+              // console.log('adding the file the old fashioned way.');
+              filesCollection.push(pathOfCurrentItem);
+            }
+          } else if (!filesShouldBeSkipped) {
+            // NOTE: There is a difference in how paths are handled in Windows VS Mac/Linux.
+            // So far now I'm putting this code here like this to handle both situations.
+            // The ideal solution would be to detect which OS the code is being run on.
+            // Then handle each case appropriately.
+            let directoryPath = '';
+            directoryPath = path.resolve(directory + bas.cForwardSlash + file);
+            // console.log(`directoryPath is ${directoryPath}`);
+            readDirectorySynchronously(directoryPath, '');
+          } // End-else-if (!filesShouldBeSkipped)
+        } catch (err) { // Catch the error in the hopes that we can continue scanning the file system.
+          console.log(msg.cErrorInvalidAccessTo + pathOfCurrentItem);
+        }
+      }); // End-currentDirectory.forEach(file => {
+    }
     // console.log(`END ${namespacePrefix}${functionName} function`);
   } // End-if (hitFileLimit === false)
 }
@@ -394,7 +431,8 @@ function copyAllFilesAndFoldersFromFolderToFolder(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + JSON.stringify(inputMetaData));
   let returnData = false;
-  returnData = copyFolderRecursiveSync(inputData, inputMetaData);
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring && Array.isArray(inputMetaData))
+    returnData = copyFolderRecursiveSync(inputData, inputMetaData);
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -503,11 +541,11 @@ function createZipArchive(inputData, inputMetaData) {
   let returnData = false;
   let zip = new admZip();
   try {
-      zip.addLocalFolder(inputData);
-      zip.writeZip(inputMetaData);
-      // Done writing the zip file:
-      loggers.consoleLog(namespacePrefix + functionName, msg.cDoneWritingTheZipFile + inputMetaData);
-      returnData = true;
+    zip.addLocalFolder(inputData);
+    zip.writeZip(inputMetaData);
+    // Done writing the zip file:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cDoneWritingTheZipFile + inputMetaData);
+    returnData = true;
   } catch (err) {
     // ERROR: Zip package release failed
     console.log(msg.cErrorZipPackageReleaseFailed);
@@ -704,7 +742,7 @@ function copyFolderRecursiveSync(inputData, inputMetaData) {
   try {
     if (fs.lstatSync(source).isDirectory()) {
       files = fs.readdirSync(source);
-      files.forEach(function(file) {
+      files.forEach(function (file) {
         let currentSource = path.join(source, file);
         if (fs.lstatSync(currentSource).isDirectory()) {
           successfulCopy = copyFolderRecursiveSync([currentSource, targetFolder], inputMetaData);

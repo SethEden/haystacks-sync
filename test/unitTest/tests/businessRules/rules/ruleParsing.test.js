@@ -16,7 +16,7 @@
  */
 
 // Internal imports
-import ruleParsing from '../../../../../src/businessRules/rules/ruleParsing';
+import ruleParsing from '../../../../../src/businessRules/rules/ruleParsing.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as tst_con from '../../constants/test.constants.js';
@@ -693,7 +693,7 @@ describe(tst_con.cprocessRulesInternal, () => {
     );
 
     // Assert
-    expect(returnData).toBe(biz.creplaceCharacterWithCharacter);
+    expect(returnData).toBeUndefined();
   });
 
   /**

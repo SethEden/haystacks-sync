@@ -77,7 +77,7 @@ function getFileAndPathListForPath(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = '';
   let enableFilesListLimit, filesListLimit;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     if (inputMetaData) {
       enableFilesListLimit = configurator.getConfigurationSetting(wrd.csystem, cfg.cEnableFilesListLimit);
       filesListLimit = inputMetaData;

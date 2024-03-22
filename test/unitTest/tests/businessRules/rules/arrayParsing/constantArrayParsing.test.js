@@ -21,13 +21,13 @@
 import dataBroker from '../../../../../../src/brokers/dataBroker.js';
 import constantArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/constantArrayParsing.js';
 import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/constantArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { wrd } = hayConst;
 
@@ -319,7 +319,7 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBeTruthy();
     });
 
     /**
@@ -338,7 +338,7 @@ describe(tst_con.csearchForPatternsInStringArray, () => {
         let returnData = constantArrayParsing.searchForPatternsInStringArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBeTruthy();
     });
     
     /**
@@ -392,7 +392,8 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
     * @description Tests the businessRules.rules.arrayParsing.constantArrayParsing.validatePatternsThatNeedImplementation function, with a valid data.
     * @author Json Howard
     * @date 2023/04/19
-    */    test(tst_con.cvalidatePatternsThatNeedImplementation_validDataString, () => {
+    */    
+   test(tst_con.cvalidatePatternsThatNeedImplementation_validDataString, () => {
         // Arrange
         let inputData = obj_con.StringsArray_01;
         let inputMetaData = '';
@@ -421,7 +422,7 @@ describe(tst_con.cvalidatePatternsThatNeedImplementation, () => {
         let returnData = constantArrayParsing.validatePatternsThatNeedImplementation(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe('');
     });
     
     /**

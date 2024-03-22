@@ -21,7 +21,7 @@ import loggers from '../executrix/loggers.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, cfg, msg, sys, wrd} = hayConst;
+const { bas, cfg, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // controllers.chiefData.
 const namespacePrefix = wrd.ccontrollers + bas.cDot + baseFileName + bas.cDot;
@@ -48,16 +48,18 @@ function searchForUniversalDebugConfigSetting(appConfigPathName, frameworkConfig
   let universalDebugConfigSetting = false;
   let appConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, appConfigPathName);
   let frameworkConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, frameworkConfigPathName);
-  appConfigDataPath = path.resolve(appConfigDataPath);
-  frameworkConfigDataPath = path.resolve(frameworkConfigDataPath);
-  let appConfigFilesToLoad = dataBroker.scanDataPath(appConfigDataPath);
-  let frameworkConfigFilesToLoad = dataBroker.scanDataPath(frameworkConfigDataPath);
-  configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigFiles, appConfigFilesToLoad);
-  configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkConfigFiles, frameworkConfigFilesToLoad);
-  universalDebugConfigSetting = dataBroker.findUniversalDebugConfigSetting(
-    appConfigFilesToLoad, frameworkConfigFilesToLoad
-  );
-  configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, universalDebugConfigSetting);
+  if (appConfigDataPath && frameworkConfigDataPath && typeof appConfigDataPath === wrd.cstring && typeof frameworkConfigPathName === wrd.cstring) {
+    appConfigDataPath = path.resolve(appConfigDataPath);
+    frameworkConfigDataPath = path.resolve(frameworkConfigDataPath);
+    let appConfigFilesToLoad = dataBroker.scanDataPath(appConfigDataPath);
+    let frameworkConfigFilesToLoad = dataBroker.scanDataPath(frameworkConfigDataPath);
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigFiles, appConfigFilesToLoad);
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cframeworkConfigFiles, frameworkConfigFilesToLoad);
+    universalDebugConfigSetting = dataBroker.findUniversalDebugConfigSetting(
+      appConfigFilesToLoad, frameworkConfigFilesToLoad
+    );
+    configurator.setConfigurationSetting(wrd.csystem, cfg.cdebugSettings, universalDebugConfigSetting);
+  }
   // console.log(`universalDebugConfigSetting is: ${universalDebugConfigSetting}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return universalDebugConfigSetting;
@@ -81,7 +83,8 @@ function determineThemeDebugConfigFilesToLoad(themeConfigPathName) {
   let themeConfigFilesToLoad = false;
   if (themeConfigPathName) {
     let themeConfigDataPath = configurator.getConfigurationSetting(wrd.csystem, themeConfigPathName);
-    themeConfigDataPath = path.resolve(themeConfigDataPath);
+    if (typeof themeConfigDataPath === wrd.cstring)
+      themeConfigDataPath = path.resolve(themeConfigDataPath);
     themeConfigFilesToLoad = dataBroker.scanDataPath(themeConfigDataPath);
     configurator.setConfigurationSetting(wrd.csystem, cfg.cthemeConfigFiles, themeConfigFilesToLoad);
   } // End-if (themeConfigPathName)
@@ -107,10 +110,13 @@ function getAndProcessCsvData(pathAndFilename, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cpathAndFilenameIs + pathAndFilename);
   // contextName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
-  pathAndFilename =path.resolve(pathAndFilename);
-  let loadedData = dataBroker.getCsvData(pathAndFilename);
-  // Now pre-process the data into a usable format, string-numbers to actual numbers, string-booleans to actual booleans, etc...
-  let allLoadedData = dataBroker.getAndProcessCsvData(loadedData, contextName);
+  let allLoadedData;
+  if (typeof pathAndFilename === wrd.cstring && typeof contextName === wrd.cstring) {
+    pathAndFilename = path.resolve(pathAndFilename);
+    let loadedData = dataBroker.getData(pathAndFilename);
+    // Now pre-process the data into a usable format, string-numbers to actual numbers, string-booleans to actual booleans, etc...
+    allLoadedData= dataBroker.processCsvData(loadedData, contextName);
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return allLoadedData;
 }
@@ -128,12 +134,15 @@ function getAndProcessXmlData(pathAndFilename) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   // pathAndFilename is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cpathAndFilenameIs + pathAndFilename);
-  pathAndFilename = path.resolve(pathAndFilename);
-  let allLoadedXmlData = dataBroker.getXmlData(pathAndFilename);
-  // Now pre-process the data into a usable format, string-numbers to actual numbers, string-booleans to actual booleans, etc...
-  let allXmlData = dataBroker.processXmlData(allLoadedXmlData);
-  // allXmlData is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.callXmlDataIs + JSON.stringify(allXmlData));
+  let allXmlData;
+  if (typeof pathAndFilename === wrd.cstring) {
+    pathAndFilename = path.resolve(pathAndFilename);
+    let allLoadedXmlData = dataBroker.getData(pathAndFilename);
+    // Now pre-process the data into a usable format, string-numbers to actual numbers, string-booleans to actual booleans, etc...
+    allXmlData = dataBroker.processXmlData(allLoadedXmlData);
+    // allXmlData is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.callXmlDataIs + JSON.stringify(allXmlData));
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return allXmlData;
 }
@@ -155,16 +164,20 @@ function setupAllCsvData(dataPathConfigurationName, contextName) {
   // contextName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   let loadedAndMergedDataAllFiles = {};
-  let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
-  dataPath = path.resolve(dataPath);
-  // dataPath is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
-  let filesToLoad = dataBroker.scanDataPath(dataPath);
-  // filesToLoad is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
-  loadedAndMergedDataAllFiles = dataBroker.loadAllCsvData(filesToLoad, contextName);
-  // loadedAndMergedDataAllFiles is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
+  if (typeof dataPathConfigurationName === wrd.cstring && typeof contextName === wrd.cstring) {
+    let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
+    if (typeof dataPath === wrd.cstring) {
+      dataPath = path.resolve(dataPath);
+      // dataPath is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
+      let filesToLoad = dataBroker.scanDataPath(dataPath);
+      // filesToLoad is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
+      loadedAndMergedDataAllFiles = dataBroker.loadAllCsvData(filesToLoad, contextName);
+      // loadedAndMergedDataAllFiles is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
+    }
+  }
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return loadedAndMergedDataAllFiles;
 }
@@ -187,13 +200,15 @@ function setupAllXmlData(dataPathConfigurationName, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   let loadedAndMergedDataAllFiles = {};
   let dataPath = configurator.getConfigurationSetting(wrd.csystem, dataPathConfigurationName);
-  dataPath = path.resolve(dataPath);
-  // dataPath is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
-  let filesToLoad = dataBroker.scanDataPath(dataPath);
-  // filesToLoad is:
-  loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
-  loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
+  if (dataPath && typeof dataPath === wrd.cstring) {
+    dataPath = path.resolve(dataPath);
+    // dataPath is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cdataPathIs + dataPath);
+    let filesToLoad = dataBroker.scanDataPath(dataPath);
+    // filesToLoad is:
+    loggers.consoleLog(namespacePrefix + functionName, msg.cfilesToLoadIs + JSON.stringify(filesToLoad));
+    loadedAndMergedDataAllFiles = dataBroker.loadAllXmlData(filesToLoad, contextName);
+  }
   // loadedAndMergedDataAllFiles is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cloadedAndMergedDataAllFilesIs + JSON.stringify(loadedAndMergedDataAllFiles));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -257,7 +272,8 @@ function addConstantsValidationData(arrayValidationData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
   // arrayValidationData is:
   loggers.consoleLog(namespacePrefix + functionName, msg.carrayValidationDataIs + JSON.stringify(arrayValidationData));
-  dataBroker.addConstantsValidationData(arrayValidationData);
+  if (arrayValidationData && Array.isArray(arrayValidationData))
+    dataBroker.addConstantsValidationData(arrayValidationData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
 }
 

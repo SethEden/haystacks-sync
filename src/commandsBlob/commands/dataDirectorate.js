@@ -79,21 +79,23 @@ function printDataHive(inputData, inputMetaData) {
       loggers.printMessageToFile(logFilePathAndName, inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(leafDataHiveElement));
     }
     returnData[1] = leafDataHiveElement;
-  } else {
-    if (D[inputData[1]] !== undefined) {
-      // contents are:
-      console.log(inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
-      if (printDataHiveToLogFileConfigSetting === true) {
-        loggers.printMessageToFile(logFilePathAndName, inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
+  } else if (inputData) {
+    if (inputData[1]) {
+      if (D[inputData[1]] !== undefined) {
+        // contents are:
+        console.log(inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
+        if (printDataHiveToLogFileConfigSetting === true) {
+          loggers.printMessageToFile(logFilePathAndName, inputData[1] + bas.cSpace + msg.ccontentsAre + JSON.stringify(D[inputData[1]]));
+        }
+        returnData[1] = D[inputData[1]];
+      } else {
+        // contents of D are:
+        console.log(msg.ccontentsOfDare + JSON.stringify(D));
+        if (printDataHiveToLogFileConfigSetting === true) {
+          loggers.printMessageToFile(logFilePathAndName, msg.ccontentsOfDare + JSON.stringify(D));
+        }
+        returnData[1] = D;
       }
-      returnData[1] = D[inputData[1]];
-    } else {
-      // contents of D are:
-      console.log(msg.ccontentsOfDare + JSON.stringify(D));
-      if (printDataHiveToLogFileConfigSetting === true) {
-        loggers.printMessageToFile(logFilePathAndName, msg.ccontentsOfDare + JSON.stringify(D));
-      }
-      returnData[1] = D;
     }
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
@@ -218,7 +220,7 @@ function clearDataStorage(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = [true, {}];
-  if (inputData[1] !== undefined) {
+  if (inputData && inputData[1] !== undefined) {
     dataBroker.clearData(inputData[1]);
     returnData[1] = true;
   } else {

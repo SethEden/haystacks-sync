@@ -23,18 +23,22 @@
 // Internal imports
 import dataDirectorate from '../../../../../src/commandsBlob/commands/dataDirectorate.js';
 import * as tst_con from '../../constants/test.constants.js';
+import D from '../../../../../src/structures/data.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
+import dataBroker from '../../../../../src/brokers/dataBroker.js';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 
-const { wrd, num } = hayConst;
+const { wrd, num, sys } = hayConst;
 
 /**
  * @function printDataHive
  * @description Tests the positive and negative test cases of the printDataHive
  * @author Json Howard
  * @date 2023/08/18
+ * @note inputData type should be array<boolean|string|integer>
 */
 describe(tst_con.cprintDataHive, () => {
     /**
@@ -459,6 +463,8 @@ describe(tst_con.cclearDataStorage, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = "";
+        dataBroker.setupDataStorage();
+        dataBroker.storeData(wrd.cWorld, wrd.cHello);
 
         // Act
         let returnData = dataDirectorate.clearDataStorage(inputData, inputMetaData);
@@ -621,6 +627,7 @@ describe(tst_con.cclearDataStorage, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = undefined;
+        dataBroker.setupDataStorage();
 
         // Act
         let returnData = dataDirectorate.clearDataStorage(inputData, inputMetaData);
@@ -665,6 +672,7 @@ describe(tst_con.cchangeSetting, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = "";
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = dataDirectorate.changeSetting(inputData, inputMetaData);

@@ -23,6 +23,7 @@
 // Internal imports
 import integrationTests from '../../../../../src/commandsBlob/commands/integrationTests.js';
 import D from '../../../../../src/structures/data.js';
+import chiefWorkflow from '../../../../../src/controllers/chiefWorkflow.js';
 import * as int_con from '../../../testData/commandsBlob/commands/integrationTests.js';
 import * as tst_con from '../../constants/test.constants.js';
 import { basePath } from '../../utilities/utilities.js';
@@ -31,7 +32,7 @@ import { basePath } from '../../utilities/utilities.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { sys, wrd } = hayConst;
+const { sys, wrd, bas, gen } = hayConst;
 
 /**
  * @function validateConstants
@@ -50,6 +51,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = basePath();
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "Test Constants Phase 1 Validation";
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "Test Constants Phase 2 Validation";
@@ -71,6 +73,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = wrd.cHello;
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "Test Constants Phase 1 Validation";
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "Test Constants Phase 2 Validation";
@@ -92,6 +95,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = undefined;
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "Test Constants Phase 1 Validation";
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "Test Constants Phase 2 Validation";
@@ -113,6 +117,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = basePath();
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = undefined;
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "Test Constants Phase 2 Validation";
@@ -134,6 +139,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = basePath();
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "Test Constants Phase 1 Validation";
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = undefined;
@@ -155,6 +161,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = NaN;
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "Test Constants Phase 1 Validation";
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "Test Constants Phase 2 Validation";
@@ -176,6 +183,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = basePath();
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = NaN;
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = "Test Constants Phase 2 Validation";
@@ -197,6 +205,7 @@ describe(tst_con.cvalidateConstants, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cConstantsValidationData] = {};
         D[sys.cConstantsValidationData][sys.cConstantsFilePaths] = basePath();
         D[sys.cConstantsValidationData][sys.cConstantsPhase1ValidationMessages] = "Test Constants Phase 1 Validation";
         D[sys.cConstantsValidationData][sys.cConstantsPhase2ValidationMessages] = NaN;
@@ -226,6 +235,8 @@ describe(tst_con.cvalidateCommandAliases, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = [];
+        D[sys.cCommandsAliases][wrd.cFramework] = [];
         D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = int_con.validValidateCommandAliasesArray;
 
         // Act
@@ -245,6 +256,8 @@ describe(tst_con.cvalidateCommandAliases, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = [];
+        D[sys.cCommandsAliases][wrd.cFramework] = [];
         D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = int_con.duplicatedValidateCommandAliasesArray;
         
         // Act
@@ -264,6 +277,8 @@ describe(tst_con.cvalidateCommandAliases, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = [];
+        D[sys.cCommandsAliases][wrd.cFramework] = [];
         D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = undefined;
         
         // Act
@@ -283,6 +298,8 @@ describe(tst_con.cvalidateCommandAliases, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
+        D[sys.cCommandsAliases] = [];
+        D[sys.cCommandsAliases][wrd.cFramework] = [];
         D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = NaN;
         
         // Act
@@ -310,7 +327,8 @@ describe(tst_con.cvalidateWorkflows, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
-        D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = int_con.validValidateWorkflowsArray;
+        D[sys.cCommandWorkflows] = int_con.validValidateWorkflowsArray;
+        chiefWorkflow.loadCommandWorkflowsFromPath(basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml);
 
         // Act
         let returnData = integrationTests.validateWorkflows(inputData, inputMetaData);
@@ -329,7 +347,8 @@ describe(tst_con.cvalidateWorkflows, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
-        D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = int_con.duplicatedValidateWorkflowsArray;
+        D[sys.cCommandWorkflows] = int_con.duplicatedValidateWorkflowsArray;
+        chiefWorkflow.loadCommandWorkflowsFromPath(basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml);
 
         // Act
         let returnData = integrationTests.validateWorkflows(inputData, inputMetaData);
@@ -348,7 +367,8 @@ describe(tst_con.cvalidateWorkflows, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
-        D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = undefined;
+        D[sys.cCommandWorkflows] = undefined;
+        chiefWorkflow.loadCommandWorkflowsFromPath(basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml);
 
         // Act
         let returnData = integrationTests.validateWorkflows(inputData, inputMetaData);
@@ -367,7 +387,8 @@ describe(tst_con.cvalidateWorkflows, () => {
         // Arrange
         let inputData = "";
         let inputMetaData = "";
-        D[sys.cCommandsAliases][wrd.cFramework][wrd.cTest] = NaN;
+        D[sys.cCommandWorkflows] = NaN;
+        chiefWorkflow.loadCommandWorkflowsFromPath(basePath() + bas.cForwardSlash + wrd.ctestData + bas.cForwardSlash + wrd.csystem + bas.cDot + gen.cxml);
 
         // Act
         let returnData = integrationTests.validateWorkflows(inputData, inputMetaData);

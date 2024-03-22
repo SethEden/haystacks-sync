@@ -25,11 +25,11 @@ import D from '../structures/data.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, biz, clr, cfg, gen, msg, wrd} = hayConst;
+const { bas, biz, clr, cfg, gen, msg, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // executrix.loggers.
 // eslint-disable-next-line no-unused-vars
-const namespacePrefix =  wrd.cexecutrix + bas.cDot + baseFileName + bas.cDot;
+const namespacePrefix = wrd.cexecutrix + bas.cDot + baseFileName + bas.cDot;
 
 /**
  * @function consoleLog
@@ -115,7 +115,8 @@ function consoleTableLog(classPath, tableData, columnNames) {
   // console.log(`classPath is: ${classPath}`);
   // console.log(`tableData is: ${JSON.stringify(tableData)}`);
   // console.log(`columnNames is: ${JSON.stringify(columnNames)}`);
-  console.table(tableData, columnNames);
+  if ((typeof tableData === wrd.cobject || Array.isArray(tableData))&& (typeof columnNames === wrd.cobject || Array.isArray(tableData)))
+    console.table(tableData, columnNames);
   // console.log(`END ${namespacePrefix}${functionName} function`);
 }
 
@@ -134,9 +135,9 @@ function constantsValidationSummaryLog(message, passFail) {
   // console.log(`message is: ${message}`);
   // console.log(`passFail is: ${passFail}`);
   let outputMessage = '';
-  let blackColorArray = colorizer.getNamedColorData(clr.cBlack, [0,0,0]);
-  let greenColorArray = colorizer.getNamedColorData(clr.cGreen, [0,255,0]);
-  let redColorArray = colorizer.getNamedColorData(clr.cRed, [255,0,0]);
+  let blackColorArray = colorizer.getNamedColorData(clr.cBlack, [0, 0, 0]);
+  let greenColorArray = colorizer.getNamedColorData(clr.cGreen, [0, 255, 0]);
+  let redColorArray = colorizer.getNamedColorData(clr.cRed, [255, 0, 0]);
 
   if (passFail === true) {
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.cdisplaySummaryConstantsValidationPassMessages) === true) {
@@ -298,9 +299,9 @@ function parseClassPath(logFile, classPath, message) {
     // console.log('setting the returnData to the message: ' + message);
     returnData = message;
   } else if ((debugFunctionsSetting === undefined && debugFilesSetting === undefined) ||
-  (debugFunctionsSetting === undefined && debugFilesSetting === false) ||
-  (debugFunctionsSetting === false && debugFilesSetting === undefined) ||
-  (debugFunctionsSetting === false && debugFilesSetting === false)) {
+    (debugFunctionsSetting === undefined && debugFilesSetting === false) ||
+    (debugFunctionsSetting === false && debugFilesSetting === undefined) ||
+    (debugFunctionsSetting === false && debugFilesSetting === false)) {
     // console.log('Something is undefined && false or some combination of both, return false');
     returnData = false;
   } else {
@@ -355,7 +356,7 @@ function printMessageToFile(file, message) {
   // console.log(`file is: ${file}`);
   // console.log(`message is: ${message}`);
   let dateTimeStamp = '';
-  if (!file.includes('undefined')) { // NOTE: This usage of the string undefined, must be hard-coded here.
+  if (typeof file === wrd.cstring && !file.includes('undefined')) { // NOTE: This usage of the string undefined, must be hard-coded here.
     // '!file.includes(undefined)'
     // console.log(msg.cprintMessageToFile01);
     if (configurator.getConfigurationSetting(wrd.csystem, cfg.clogFileEnabled) === true) {

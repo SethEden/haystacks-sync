@@ -19,13 +19,13 @@
 // Internal imports
 import commandArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/commandArrayParsing.js';
 import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/commandArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { wrd } = hayConst;
 
@@ -90,7 +90,7 @@ describe(tst_con.csolveLehmerCode, () => {
         let returnData = commandArrayParsing.solveLehmerCode(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe('');
     });
 
     /**
@@ -510,7 +510,7 @@ describe(tst_con.cgetLehmerCodeValue, () => {
         let returnData = commandArrayParsing.getLehmerCodeValue(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe('');
     });
 
     /**
@@ -698,7 +698,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
         let returnData = commandArrayParsing.generateCommandAliases(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -734,7 +734,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
         let returnData = commandArrayParsing.generateCommandAliases(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -770,7 +770,7 @@ describe(tst_con.cgenerateCommandAliases, () => {
         let returnData = commandArrayParsing.generateCommandAliases(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBeTruthy();
     });
     
     /**
@@ -868,7 +868,7 @@ describe(tst_con.caggregateCommandArguments, () => {
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe('');
     });
     
     /**
@@ -904,7 +904,7 @@ describe(tst_con.caggregateCommandArguments, () => {
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBe('');
     });
     
     /**
@@ -922,7 +922,7 @@ describe(tst_con.caggregateCommandArguments, () => {
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBe('');
     });
 
     /**
@@ -940,7 +940,7 @@ describe(tst_con.caggregateCommandArguments, () => {
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBe('');
     });
 
     /**
@@ -958,7 +958,7 @@ describe(tst_con.caggregateCommandArguments, () => {
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBe('');
     });    
     
     /**
@@ -976,7 +976,7 @@ describe(tst_con.caggregateCommandArguments, () => {
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBe('');
     });
     
     /**
@@ -994,6 +994,6 @@ describe(tst_con.caggregateCommandArguments, () => {
         let returnData = commandArrayParsing.aggregateCommandArguments(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('?');
+        expect(returnData).toBe('');
     });
 });

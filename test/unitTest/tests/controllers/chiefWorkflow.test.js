@@ -53,7 +53,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -71,7 +71,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -89,7 +89,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -107,7 +107,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -125,7 +125,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -143,7 +143,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -161,7 +161,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -179,7 +179,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -197,7 +197,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -215,7 +215,7 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -233,6 +233,6 @@ describe(tst_con.cloadCommandWorkflowsFromPath, () => {
         let returnData = chiefWorkflow.loadCommandWorkflowsFromPath(commandWorkflowFilePathConfigurationName, contextName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });

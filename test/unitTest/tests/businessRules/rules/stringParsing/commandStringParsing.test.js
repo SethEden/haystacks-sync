@@ -281,7 +281,7 @@ describe(tst_con.cisValidCommandNameString, () => {
         let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('');
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -300,6 +300,6 @@ describe(tst_con.cisValidCommandNameString, () => {
         let returnData = commandStringParsing.isValidCommandNameString(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe('');
+        expect(returnData).toBe(false);
     });
 });

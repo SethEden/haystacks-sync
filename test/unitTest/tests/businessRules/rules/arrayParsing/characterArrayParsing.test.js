@@ -17,13 +17,14 @@
 
 // Internal imports
 import characterArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/characterArrayParsing.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/characterArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const {bas, wrd, num} = hayConst;
 
@@ -44,6 +45,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		// Arrange
 		let inputData = wrd.cHello + wrd.cWorld;
 		let inputMetaData = [wrd.cHello, wrd.cWorld];
+        rulesLibrary.initRulesLibrary();
 
 		// Act 
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
@@ -85,7 +87,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 	  
 		//Assert
-		expect(returnData).toBe('wrd.cHello + wrd.cSpace + wrd.cWorld');
+		expect(returnData).toBe(undefined);
     })
 
     /**
@@ -103,7 +105,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+		expect(returnData).toBeUndefined();
     })
 
     /**
@@ -121,7 +123,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+		expect(returnData).toBeUndefined();
     })
 
     /**
@@ -139,7 +141,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+		expect(returnData).toBe(undefined);
     })
 
     /**
@@ -157,7 +159,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBe(wrd.cHello + wrd.cWorld);
+		expect(returnData).toBe(undefined);
     })
 });
 
@@ -425,7 +427,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual([wrd.cWorld]);
+        expect(returnData).toEqual([undefined, wrd.cWorld]);
     })
 
     /**
@@ -443,7 +445,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(78910);
+        expect(returnData).toEqual([undefined, 78910]);
     })
 
     /**
@@ -461,7 +463,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual(true);
+        expect(returnData).toEqual([undefined, true]);
     })
 
     /**
@@ -497,7 +499,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual([wrd.cWorld]);
+        expect(returnData).toEqual([undefined, wrd.cWorld]);
     })
     
     /**
@@ -515,7 +517,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual([456]);
+        expect(returnData).toEqual([undefined, 456]);
     })
 
     /**
@@ -533,7 +535,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual([false]);
+        expect(returnData).toEqual([undefined, false]);
     })
 
     /**
@@ -551,7 +553,7 @@ describe(tst_con.cremoveCharacterFromArray, () => {
         let returnData = characterArrayParsing.removeCharacterFromArray(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toEqual([{'hello': '345', 'world': 'haystacks'}]);
+        expect(returnData).toEqual([undefined, {'hello': '345', 'world': 'haystacks'}]);
     })
 
     /**

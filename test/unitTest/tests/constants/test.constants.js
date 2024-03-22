@@ -2328,6 +2328,8 @@ export const cchangeDebugConfigurationTheme_inValidInputDataUndefined = cchangeD
 export const cchangeDebugConfigurationTheme_inValidInputDataNaN = cchangeDebugConfigurationTheme + wrd.cinvalid + wrd.cInput + wrd.cData + cNaN; // changeDebugConfigurationTheme_inValidInputDataNaN
 
 export const csaveConfiguration_validDataString = csaveConfiguration + wrd.cvalid + wrd.cData + wrd.cString; // saveConfiguration_validDataString
+export const csaveConfiguration_inValidInputMetaDataUndefined = csaveConfiguration + wrd.cinvalid + wrd.cInput + wrd.cMetaData + wrd.cUndefined;
+export const csaveConfiguration_inValidInputMetaDataNaN = csaveConfiguration + wrd.cinvalid + wrd.cInput + wrd.cMetaData + wrd.cNaN;
 
 export const clistConfigurationThemes_validDataString = clistConfigurationThemes + wrd.cvalid + wrd.cData + wrd.cString; // listConfigurationThemes_validDataString
 
@@ -3058,12 +3060,19 @@ export const cinitQueue_inValidQueueNameSpaceBoolean = cinitQueue + wrd.cinvalid
 export const cinitQueue_inValidQueueNameSpaceUndefined = cinitQueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
 export const cinitQueue_inValidQueueNameSpaceNaN = cinitQueue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
 
-export const cdequeue_validDataStringcinitQueue = cdequeue + wrd.cvalid + wrd.cData + wrd.cString;
-export const cdequeue_inValidDataQueueNameSpaceStringcinitQueue = cdequeue + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
-export const cdequeue_inValidQueueNameSpaceIntegercinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
-export const cdequeue_inValidQueueNameSpaceBooleancinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
-export const cdequeue_inValidQueueNameSpaceUndefinedcinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
-export const cdequeue_inValidQueueNameSpaceNaNcinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+export const cdequeue_validDataString = cdequeue + wrd.cvalid + wrd.cData + wrd.cString;
+export const cdequeue_inValidDataQueueNameSpaceString = cdequeue + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+export const cdequeue_inValidQueueNameSpaceInteger = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+export const cdequeue_inValidQueueNameSpaceBoolean = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+export const cdequeue_inValidQueueNameSpaceUndefined = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+export const cdequeue_inValidQueueNameSpaceNaN = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
+
+// export const cdequeue_validDataStringcinitQueue = cdequeue + wrd.cvalid + wrd.cData + wrd.cString;
+// export const cdequeue_inValidDataQueueNameSpaceStringcinitQueue = cdequeue + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
+// export const cdequeue_inValidQueueNameSpaceIntegercinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cInteger;
+// export const cdequeue_inValidQueueNameSpaceBooleancinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cBoolean;
+// export const cdequeue_inValidQueueNameSpaceUndefinedcinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cUndefined;
+// export const cdequeue_inValidQueueNameSpaceNaNcinitQueue = cdequeue + wrd.cinvalid + wrd.cQueue + wrd.cName + wrd.cSpace + cNaN;
 
 export const cenqueue_validDataString = cenqueue + wrd.cvalid + wrd.cData + wrd.cString;
 export const cenqueue_inValidDataQueueNameSpaceString = cenqueue + wrd.cinvalid + wrd.cData + wrd.cQueue + wrd.cName + wrd.cSpace + wrd.cString;
@@ -3191,7 +3200,7 @@ export const cprint_inValidStackNameSpaceUndefined = cprint + wrd.cinvalid + wrd
 export const cprint_inValidStackNameSpaceNaN = cprint + wrd.cinvalid + wrd.cStack + wrd.cName + wrd.cSpace + cNaN;
 
 /* main */
-export const cinitFramework_validDataString = cinitFramework + wrd.cvalid + wrd.cData + wrd.cString;
+export const cinitFramework_validDataObject = cinitFramework + wrd.cvalid + wrd.cData + wrd.cObject;
 export const cinitFramework_inValidDataClientConfigurationString = cinitFramework + wrd.cinvalid + wrd.cData + wrd.cClient + wrd.cConfiguration + wrd.cString;
 export const cinitFramework_inValidClientConfigurationInteger = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cInteger;
 export const cinitFramework_inValidClientConfigurationBoolean = cinitFramework + wrd.cinvalid + wrd.cClient + wrd.cConfiguration + wrd.cBoolean;

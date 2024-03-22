@@ -479,17 +479,19 @@ function setNamespacedDataObject(inputData, inputMetaData) {
     for (let i = 0; i < inputData.length - 1; i++) {
       namespaceDataObject = namespaceDataObject[inputData[i]];
 
-      if (i === inputData.length - 2) {
-        // namespaceDataObject is:
-        loggers.consoleLog(namespacePrefix + functionName, msg.cnamespaceDataObjectIs + JSON.stringify(namespaceDataObject));
-        let fullyQualifiedKey = namespaceDataObject.join(bas.cDot);
-        if (ruleParsing.processRulesInternal([[namespaceDataObject, cfg.cdebugSetting], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === true) {
-          namespaceDataObject[fullyQualifiedKey] = inputMetaData;
-        } else {
-          namespaceDataObject[inputData[i + 1]] = inputMetaData;
-        }
-        returnData = true;
-      } // End-if (i === inputData.length - 2)
+      if (Array.isArray(namespaceDataObject)) {
+        if (i === inputData.length - 2) {
+          // namespaceDataObject is:
+          loggers.consoleLog(namespacePrefix + functionName, msg.cnamespaceDataObjectIs + JSON.stringify(namespaceDataObject));
+          let fullyQualifiedKey = namespaceDataObject.join(bas.cDot);
+          if (ruleParsing.processRulesInternal([[namespaceDataObject, cfg.cdebugSetting], ruleParsing.getRule(biz.cascertainMatchingElements)], [biz.cdoesArrayContainValue]) === true) {
+            namespaceDataObject[fullyQualifiedKey] = inputMetaData;
+          } else {
+            namespaceDataObject[inputData[i + 1]] = inputMetaData;
+          }
+          returnData = true;
+        } // End-if (i === inputData.length - 2)
+      }
     } // End-for (let i = 0; i < inputData.length - 1; i++)
   } // End-if (inputData && inputData.length > 0)
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);

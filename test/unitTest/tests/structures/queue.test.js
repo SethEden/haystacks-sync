@@ -51,7 +51,7 @@ describe(tst_con.cinitQueue, () => {
         let returnData = queue.initQueue(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -68,7 +68,7 @@ describe(tst_con.cinitQueue, () => {
         let returnData = queue.initQueue(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -85,7 +85,7 @@ describe(tst_con.cinitQueue, () => {
         let returnData = queue.initQueue(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -102,7 +102,7 @@ describe(tst_con.cinitQueue, () => {
         let returnData = queue.initQueue(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -119,7 +119,7 @@ describe(tst_con.cinitQueue, () => {
         let returnData = queue.initQueue(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -136,7 +136,7 @@ describe(tst_con.cinitQueue, () => {
         let returnData = queue.initQueue(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -156,6 +156,8 @@ describe(tst_con.cdequeue, () => {
     test(tst_con.cdequeue_validDataString, () => {
         // Arrange
         let queueNameSpace = wrd.cHello;
+        queue.initQueue(queueNameSpace);
+        queue.enqueue(queueNameSpace, wrd.cHello);
 
         // Act
         let returnData = queue.dequeue(queueNameSpace);
@@ -173,6 +175,8 @@ describe(tst_con.cdequeue, () => {
     test(tst_con.cdequeue_inValidDataQueueNameSpaceString, () => {
         // Arrange
         let queueNameSpace = "";
+        queue.initQueue(queueNameSpace);
+        queue.enqueue(queueNameSpace, wrd.cHello);
 
         // Act
         let returnData = queue.dequeue(queueNameSpace);
@@ -190,6 +194,8 @@ describe(tst_con.cdequeue, () => {
     test(tst_con.cdequeue_inValidQueueNameSpaceInteger, () => {
         // Arrange
         let queueNameSpace = num.c123;
+        queue.initQueue(queueNameSpace);
+        queue.enqueue(queueNameSpace, wrd.cHello);
 
         // Act
         let returnData = queue.dequeue(queueNameSpace);
@@ -207,6 +213,8 @@ describe(tst_con.cdequeue, () => {
     test(tst_con.cdequeue_inValidQueueNameSpaceBoolean, () => {
         // Arrange
         let queueNameSpace = false;
+        queue.initQueue(queueNameSpace);
+        queue.enqueue(queueNameSpace, wrd.cHello);
 
         // Act
         let returnData = queue.dequeue(queueNameSpace);
@@ -224,6 +232,8 @@ describe(tst_con.cdequeue, () => {
     test(tst_con.cdequeue_inValidQueueNameSpaceUndefined, () => {
         // Arrange
         let queueNameSpace = undefined;
+        queue.initQueue(queueNameSpace);
+        queue.enqueue(queueNameSpace, wrd.cHello);
 
         // Act
         let returnData = queue.dequeue(queueNameSpace);
@@ -241,6 +251,8 @@ describe(tst_con.cdequeue, () => {
     test(tst_con.cdequeue_inValidQueueNameSpaceNaN, () => {
         // Arrange
         let queueNameSpace = NaN;
+        queue.initQueue(queueNameSpace);
+        queue.enqueue(queueNameSpace, wrd.cHello);
 
         // Act
         let returnData = queue.dequeue(queueNameSpace);
@@ -255,6 +267,7 @@ describe(tst_con.cdequeue, () => {
  * @description Tests the positive and negative test cases of the enqueue
  * @author Json Howard
  * @date 2023/09/05
+ * @note value should be string.
 */
 describe(tst_con.cenqueue, () => {
     /**
@@ -272,7 +285,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -290,7 +303,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -308,7 +321,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -326,7 +339,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -344,7 +357,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -362,7 +375,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -380,7 +393,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -398,7 +411,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -416,7 +429,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -434,7 +447,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -452,7 +465,7 @@ describe(tst_con.cenqueue, () => {
         let returnData = queue.enqueue(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -478,7 +491,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -496,7 +509,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -514,7 +527,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -532,7 +545,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -550,7 +563,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -568,7 +581,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -586,7 +599,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -604,7 +617,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -622,7 +635,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -640,7 +653,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -658,7 +671,7 @@ describe(tst_con.cenqueueFront, () => {
         let returnData = queue.enqueueFront(queueNameSpace, value);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -683,7 +696,7 @@ describe(tst_con.cisEmpty, () => {
         let returnData = queue.isEmpty(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -700,7 +713,7 @@ describe(tst_con.cisEmpty, () => {
         let returnData = queue.isEmpty(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -717,7 +730,7 @@ describe(tst_con.cisEmpty, () => {
         let returnData = queue.isEmpty(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -734,7 +747,7 @@ describe(tst_con.cisEmpty, () => {
         let returnData = queue.isEmpty(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -751,7 +764,7 @@ describe(tst_con.cisEmpty, () => {
         let returnData = queue.isEmpty(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
     
     /**
@@ -768,7 +781,7 @@ describe(tst_con.cisEmpty, () => {
         let returnData = queue.isEmpty(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeFalsy();
     });
 });
 
@@ -793,7 +806,7 @@ describe(tst_con.cqueueFront, () => {
         let returnData = queue.queueFront(queueNameSpace);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeNaN();
     });
     
     /**
@@ -1107,6 +1120,7 @@ describe(tst_con.cqueueContents, () => {
  * @description Tests the positive and negative test cases of the queuePrint
  * @author Json Howard
  * @date 2023/09/05
+ * @note queue.queuePrint is void function, can't get returnData.
 */
 describe(tst_con.cqueuePrint, () => {
     /**

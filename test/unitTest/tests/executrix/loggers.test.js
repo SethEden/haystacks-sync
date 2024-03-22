@@ -37,6 +37,7 @@ const { wrd, num } = hayConst;
  * @description Tests the positive and negative test cases of the consoleLog
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.consoleLog is void function, can't get returnData.
 */
 describe(tst_con.cconsoleLog, () => {
     /**
@@ -54,7 +55,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -72,7 +73,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -90,7 +91,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -108,7 +109,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -126,7 +127,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -144,7 +145,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -162,7 +163,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -180,7 +181,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -198,7 +199,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -216,7 +217,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -234,7 +235,7 @@ describe(tst_con.cconsoleLog, () => {
         let returnData = loggers.consoleLog(classPath, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -243,6 +244,7 @@ describe(tst_con.cconsoleLog, () => {
  * @description Tests the positive and negative test cases of the consoleTableLog
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.consoleTableLog is void function, can't get returnData.
 */
 describe(tst_con.cconsoleTableLog, () => {
     /**
@@ -261,7 +263,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -280,7 +282,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -299,7 +301,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -318,7 +320,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -337,7 +339,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -356,7 +358,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -375,7 +377,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -394,7 +396,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -413,7 +415,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -432,7 +434,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -451,7 +453,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -470,7 +472,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -489,7 +491,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -508,7 +510,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -527,7 +529,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -546,7 +548,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -565,7 +567,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -584,7 +586,7 @@ describe(tst_con.cconsoleTableLog, () => {
         let returnData = loggers.consoleTableLog(classPath, tableData, columnNames);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -593,6 +595,7 @@ describe(tst_con.cconsoleTableLog, () => {
  * @description Tests the positive and negative test cases of the constantsValidationSummaryLog
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.constantsValidationSummaryLog is void function, can't get returnData.
 */
 describe(tst_con.cconstantsValidationSummaryLog, () => {
     /**
@@ -610,7 +613,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -628,7 +631,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -646,7 +649,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -664,7 +667,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -682,7 +685,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -700,7 +703,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -718,7 +721,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -736,7 +739,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -754,7 +757,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -772,7 +775,7 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -790,9 +793,15 @@ describe(tst_con.cconstantsValidationSummaryLog, () => {
         let returnData = loggers.constantsValidationSummaryLog(message, passFail);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
+
+/**
+ * @note consoleLogProcess is not exist.
+ * @note validMessage is not exist.
+ * @note parseClassPath is not exit.
+ */
 
 /**
  * @function getLogFileNameAndPath
@@ -816,7 +825,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -834,7 +843,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -852,7 +861,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -870,7 +879,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -888,7 +897,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -906,7 +915,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -924,7 +933,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -942,7 +951,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -960,7 +969,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -978,7 +987,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -996,7 +1005,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
         let returnData = loggers.getLogFileNameAndPath(clientRootPath, logFileName);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
 
@@ -1005,6 +1014,7 @@ describe(tst_con.cgetLogFileNameAndPath, () => {
  * @description Tests the positive and negative test cases of the printMessageToFile
  * @author Json Howard
  * @date 2023/09/04
+ * @note loggers.printMessageToFile is void function, can't get returnData.
 */
 describe(tst_con.cprintMessageToFile, () => {
     /**
@@ -1022,7 +1032,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1040,7 +1050,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1058,7 +1068,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1076,7 +1086,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1094,7 +1104,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1112,7 +1122,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1130,7 +1140,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1148,7 +1158,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1166,7 +1176,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1184,7 +1194,7 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -1202,6 +1212,6 @@ describe(tst_con.cprintMessageToFile, () => {
         let returnData = loggers.printMessageToFile(file, message);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });

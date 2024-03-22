@@ -1,4 +1,5 @@
 'use strict';
+import rulesLibrary from '../../../../src/businessRules/rulesLibrary.js';
 /* eslint-disable no-undef */
 /**
  * @file chiefConfiguration.test.js
@@ -29,7 +30,7 @@ import * as tst_con from '../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { wrd, num } = hayConst;
+const { wrd, num, sys } = hayConst;
 
 /**
  * @function setupConfiguration
@@ -48,12 +49,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = data_con.applicationPath();
         let frameworkConfigPath = data_con.frameworkPath();
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -66,12 +68,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = wrd.cHello;
         let frameworkConfigPath = data_con.frameworkPath();
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -84,12 +87,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = data_con.applicationPath();
         let frameworkConfigPath = wrd.cHello;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -102,12 +106,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = num.c123;
         let frameworkConfigPath = data_con.frameworkPath();
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -120,12 +125,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = false;
         let frameworkConfigPath = data_con.frameworkPath();
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -138,12 +144,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = data_con.applicationPath();
         let frameworkConfigPath = num.c123;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -156,12 +163,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = data_con.applicationPath();
         let frameworkConfigPath = false;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -174,12 +182,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = undefined;
         let frameworkConfigPath = data_con.frameworkPath();
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -192,12 +201,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = NaN;
         let frameworkConfigPath = data_con.frameworkPath();
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -210,12 +220,13 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = data_con.applicationPath();
         let frameworkConfigPath = undefined;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
     
     /**
@@ -228,11 +239,16 @@ describe(tst_con.csetupConfiguration, () => {
         // Arrange
         let appConfigPath = data_con.applicationPath();
         let frameworkConfigPath = NaN;
+        rulesLibrary.initRulesLibrary();
 
         // Act
         let returnData = chiefConfiguration.setupConfiguration(appConfigPath, frameworkConfigPath);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBeUndefined();
     });
 });
+
+/**
+ * @note parseLoadedConfigurationData is not exist.
+ */

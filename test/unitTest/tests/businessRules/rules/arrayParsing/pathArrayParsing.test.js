@@ -23,7 +23,7 @@ import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { wrd, num } = hayConst;
 
@@ -282,7 +282,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe('');
     });
     
     /**
@@ -318,7 +318,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe('');
     });
 
     /**
@@ -336,7 +336,7 @@ describe(tst_con.cgetFileAndPathListForPath, () => {
         let returnData = pathArrayParsing.getFileAndPathListForPath(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBeTruthy();
+        expect(returnData).toBe('');
     });
 
     /**

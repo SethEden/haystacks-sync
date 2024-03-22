@@ -105,24 +105,26 @@ function findIndividualDebugConfigSetting(filesToLoad) {
   let multiMergedData = {};
   let systemDotDebugSettings = wrd.csystem + bas.cDot + cfg.cdebugSettings;
 
-  for (const element of filesToLoad) {
-    let fileToLoad = element;
-    // console.log('fileToLoad is: ' + fileToLoad);
-    if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName)) {
-      let dataFile = preprocessJsonFile(fileToLoad);
-      multiMergedData[wrd.csystem] = {};
-      multiMergedData[wrd.csystem] = dataFile;
-      foundSystemData = true;
-    } // End-if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName))
-    if (foundSystemData === true) {
-      break;
-    }
-  } // End-for (const element of filesToLoad)
-  if (multiMergedData[wrd.csystem]) {
-    if (multiMergedData[wrd.csystem][systemDotDebugSettings]) {
-      individualDebugConfigSetting = true;
-    }
-  } // End-if (multiMergedData[wrd.csystem])
+  if (Array.isArray(filesToLoad)) {
+    for (const element of filesToLoad) {
+      let fileToLoad = element;
+      // console.log('fileToLoad is: ' + fileToLoad);
+      if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName)) {
+        let dataFile = preprocessJsonFile(fileToLoad);
+        multiMergedData[wrd.csystem] = {};
+        multiMergedData[wrd.csystem] = dataFile;
+        foundSystemData = true;
+      } // End-if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName))
+      if (foundSystemData === true) {
+        break;
+      }
+    } // End-for (const element of filesToLoad)
+    if (multiMergedData[wrd.csystem]) {
+      if (multiMergedData[wrd.csystem][systemDotDebugSettings]) {
+        individualDebugConfigSetting = true;
+      }
+    } // End-if (multiMergedData[wrd.csystem])
+  }
   // console.log(`individualDebugConfigSetting is: ${individualDebugConfigSetting}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);
   return individualDebugConfigSetting;
@@ -147,30 +149,32 @@ function loadAllCsvData(filesToLoad, contextName) {
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   // let rules = [biz.cgetFileNameFromPath, biz.cremoveFileExtensionFromFileName];
   let parsedDataFile;
-  for (const element of filesToLoad) {
-    let fileToLoad = element;
-    // File to load is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cFileToLoadIs + fileToLoad);
-    // NOTE: We still need a filename to use as a context for the page data that we just loaded.
-    // A context name will be composed of the input context name with the file name we are processing
-    // which tells us where we will put the data in the D[contextName] sub-structure.
-    let fileExtension = ruleBroker.processRules([fileToLoad, ''], [biz.cgetFileExtension, biz.cremoveDotFromFileExtension]);
-    // fileExtension is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cfileExtensionIs + fileExtension);
-    if (fileExtension === gen.ccsv || fileExtension === gen.cCsv || fileExtension === gen.cCSV) {
-      // execute business rules:
-      // loggers.consoleLog(namespacePrefix + functionName, msg.cexecuteBusinessRulesColon + JSON.stringify(rules));
-      // This next line is commented out because it was resulting in colors_colors, which didn't make any sense.
-      // contextName = contextName + bas.cUnderscore + ruleBroker.processRules([fileToLoad, ''], rules);
+  if (Array.isArray(filesToLoad)) {
+    for (const element of filesToLoad) {
+      let fileToLoad = element;
+      // File to load is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cFileToLoadIs + fileToLoad);
+      // NOTE: We still need a filename to use as a context for the page data that we just loaded.
+      // A context name will be composed of the input context name with the file name we are processing
+      // which tells us where we will put the data in the D[contextName] sub-structure.
+      let fileExtension = ruleBroker.processRules([fileToLoad, ''], [biz.cgetFileExtension, biz.cremoveDotFromFileExtension]);
+      // fileExtension is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cfileExtensionIs + fileExtension);
+      if (fileExtension === gen.ccsv || fileExtension === gen.cCsv || fileExtension === gen.cCSV) {
+        // execute business rules:
+        // loggers.consoleLog(namespacePrefix + functionName, msg.cexecuteBusinessRulesColon + JSON.stringify(rules));
+        // This next line is commented out because it was resulting in colors_colors, which didn't make any sense.
+        // contextName = contextName + bas.cUnderscore + ruleBroker.processRules([fileToLoad, ''], rules);
 
-      // contextName is:
-      loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
-      let dataFile = ruleBroker.processRules([fileToLoad, ''], [biz.cgetCsvData]);
-      // loaded file data is:
-      loggers.consoleLog(namespacePrefix + functionName , msg.cloadedFileDataIs + JSON.stringify(dataFile));
-      parsedDataFile = processCsvData(dataFile, contextName);
-    } // End-if (fileExtension === gen.ccsv || fileExtension === gen.cCsv || fileExtension === gen.cCSV)
-  } // End-for (const element of filesToLoad)
+        // contextName is:
+        loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
+        let dataFile = ruleBroker.processRules([fileToLoad, ''], [biz.cgetCsvData]);
+        // loaded file data is:
+        loggers.consoleLog(namespacePrefix + functionName , msg.cloadedFileDataIs + JSON.stringify(dataFile));
+        parsedDataFile = processCsvData(dataFile, contextName);
+      } // End-if (fileExtension === gen.ccsv || fileExtension === gen.cCsv || fileExtension === gen.cCSV)
+    } // End-for (const element of filesToLoad)
+  }
   // parsedDataFile is:
   loggers.consoleLog(namespacePrefix + functionName, msg.cparsedDataFileIs + JSON.stringify(parsedDataFile));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -280,30 +284,32 @@ function loadAllJsonData(filesToLoad, contextName) {
 
   // Before we load all configuration data we need to FIRST load all the system configuration settings.
   // There will be a system configuration setting that will tell us if we need to load the debug settings or not.
-  for (const element1 of filesToLoad) {
-    let fileToLoad = element1;
-    // console.log('fileToLoad is: ' + fileToLoad);
-    if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName)) {
-      let dataFile = preprocessJsonFile(fileToLoad);
+  if (Array.isArray(filesToLoad)) {
+    for (const element1 of filesToLoad) {
+      let fileToLoad = element1;
+      // console.log('fileToLoad is: ' + fileToLoad);
+      if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName)) {
+        let dataFile = preprocessJsonFile(fileToLoad);
 
-      // NOTE: In this case we have just loaded either the framework configuration data or the application configuration data,
-      // and nothing else. So we can just assign the data to the multiMergedData.
-      // We will need to merge all the other files,
-      // but there will be a setting here we should examine to determine if the rest of the data should even be load or not.
-      // We will have a new setting that determines if all the extra debug settings should be loaded or not.
-      // This way the application performance can be seriously optimized to greater levels of lean performance.
-      // Adding all that extra debugging configuration settings can affect load times, and application performance to a much lesser degree.
-      multiMergedData[wrd.csystem] = {};
-      multiMergedData[wrd.csystem] = dataFile;
-      foundSystemData = true;
-    } // End-if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName))
-    if (foundSystemData === true) {
-      break;
-    }
-  } // End-for (const element of filesToLoad)
+        // NOTE: In this case we have just loaded either the framework configuration data or the application configuration data,
+        // and nothing else. So we can just assign the data to the multiMergedData.
+        // We will need to merge all the other files,
+        // but there will be a setting here we should examine to determine if the rest of the data should even be load or not.
+        // We will have a new setting that determines if all the extra debug settings should be loaded or not.
+        // This way the application performance can be seriously optimized to greater levels of lean performance.
+        // Adding all that extra debugging configuration settings can affect load times, and application performance to a much lesser degree.
+        multiMergedData[wrd.csystem] = {};
+        multiMergedData[wrd.csystem] = dataFile;
+        foundSystemData = true;
+      } // End-if (fileToLoad.includes(systemConfigFileName) || fileToLoad.includes(applicationConfigFileName))
+      if (foundSystemData === true) {
+        break;
+      }
+    } // End-for (const element of filesToLoad)
+  }
 
   // Now we need to determine if we should load the rest of the data.
-  if (configurator.getConfigurationSetting(wrd.csystem, cfg.cdebugSettings) === true) {
+  if (configurator.getConfigurationSetting(wrd.csystem, cfg.cdebugSettings) === true && Array.isArray(filesToLoad)) {
     for (const element2 of filesToLoad) {
       let fileToLoad = element2;
       if (!fileToLoad.includes(systemConfigFileName) && !fileToLoad.includes(applicationConfigFileName)
@@ -537,7 +543,9 @@ function writeJsonDataToFile(fileToSaveTo, dataToWriteOut) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cfileToSaveToIs + fileToSaveTo);
   loggers.consoleLog(namespacePrefix + functionName, msg.cdataToWriteOutIs + JSON.stringify(dataToWriteOut));
   let fileWriteRules = [biz.cwriteJsonData];
-  let returnData = ruleBroker.processRules([path.resolve(fileToSaveTo), dataToWriteOut], fileWriteRules);
+  let returnData;
+  if (typeof fileToSaveTo === wrd.cstring)
+    returnData = ruleBroker.processRules([path.resolve(fileToSaveTo), dataToWriteOut], fileWriteRules);
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
   return returnData;
@@ -772,44 +780,46 @@ function extractDataFromPapaParseObject(data, contextName) {
   // contextName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccontextNameIs + contextName);
   tempData[contextName] = {};
-  let highLevelDataCount = Object.keys(data[wrd.cdata]).length;
-  for (let i = 0; i <= highLevelDataCount; i++) {
-    validDataAdded = false;
-    let lowLevelTempData = {};
-    if (contextName === sys.cColorData) {
-      let colorName = '';
-      for (let key1 in data[wrd.cdata][i]) {
-        validDataAdded = true;
-        let newKey = ruleBroker.processRules([key1, ''], cleanKeysRules);
-        if (key1 === sys.cColorName) {
-          colorName = data[wrd.cdata][i][key1];
-        }
-        lowLevelTempData[newKey] = ruleBroker.processRules([data[wrd.cdata][i][key1], ''], cleanKeysRules);
-      } // End-for (let key1 in data[wrd.cdata][i])
-      if (validDataAdded === true) {
-        tempData[contextName][colorName] = {};
-        if (i === 0) {
-          tempData[contextName][colorName] = lowLevelTempData;
-        } else {
-          Object.assign(tempData[contextName][colorName], lowLevelTempData);
-        }
-      } // End-if (validDataAdded === true)
-    } else { // Else-clause (contextName === sys.cColorData)
-      for (let key2 in data[wrd.cdata][i]) {
-        validDataAdded = true;
-        let newKey = ruleBroker.processRules([key2, ''], cleanKeysRules);
-        lowLevelTempData[newKey] = ruleBroker.processRules([data[wrd.cdata][i][key2], ''], cleanKeysRules);
-      } // End-for (let key2 in data[wrd.cdata][i])
-      if (validDataAdded === true) {
-        tempData[contextName][i] = {};
-        if (i === 0) {
-          tempData[contextName][i] = lowLevelTempData;
-        } else {
-          Object.assign(tempData[contextName][i], lowLevelTempData);
-        }
-      } // End-if (validDataAdded === true)
-    } // End-else
-  } // End-for (let i = 0; i <= highLevelDataCount; i++)
+  if (typeof data[wrd.cdata] === wrd.cobject) {
+    let highLevelDataCount = Object.keys(data[wrd.cdata]).length;
+    for (let i = 0; i <= highLevelDataCount; i++) {
+      validDataAdded = false;
+      let lowLevelTempData = {};
+      if (contextName === sys.cColorData) {
+        let colorName = '';
+        for (let key1 in data[wrd.cdata][i]) {
+          validDataAdded = true;
+          let newKey = ruleBroker.processRules([key1, ''], cleanKeysRules);
+          if (key1 === sys.cColorName) {
+            colorName = data[wrd.cdata][i][key1];
+          }
+          lowLevelTempData[newKey] = ruleBroker.processRules([data[wrd.cdata][i][key1], ''], cleanKeysRules);
+        } // End-for (let key1 in data[wrd.cdata][i])
+        if (validDataAdded === true) {
+          tempData[contextName][colorName] = {};
+          if (i === 0) {
+            tempData[contextName][colorName] = lowLevelTempData;
+          } else {
+            Object.assign(tempData[contextName][colorName], lowLevelTempData);
+          }
+        } // End-if (validDataAdded === true)
+      } else { // Else-clause (contextName === sys.cColorData)
+        for (let key2 in data[wrd.cdata][i]) {
+          validDataAdded = true;
+          let newKey = ruleBroker.processRules([key2, ''], cleanKeysRules);
+          lowLevelTempData[newKey] = ruleBroker.processRules([data[wrd.cdata][i][key2], ''], cleanKeysRules);
+        } // End-for (let key2 in data[wrd.cdata][i])
+        if (validDataAdded === true) {
+          tempData[contextName][i] = {};
+          if (i === 0) {
+            tempData[contextName][i] = lowLevelTempData;
+          } else {
+            Object.assign(tempData[contextName][i], lowLevelTempData);
+          }
+        } // End-if (validDataAdded === true)
+      } // End-else
+    } // End-for (let i = 0; i <= highLevelDataCount; i++)
+  }
   // tempData is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ctempDataIs + JSON.stringify(tempData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -1044,6 +1054,7 @@ export default {
   loadAllXmlData,
   loadAllJsonData,
   processCsvData,
+  processXmlData,
   preprocessJsonFile,
   writeJsonDataToFile,
   setupDataStorage,

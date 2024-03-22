@@ -21,12 +21,14 @@
  */
 
 // Internal imports
-import constant from '../../../../../src/commandsBlob/commands/constant';
+import constant from '../../../../../src/commandsBlob/commands/constant.js';
+import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
+import dataBroker from '../../../../../src/brokers/dataBroker.js';
 
 const { wrd, num } = hayConst;
 
@@ -665,6 +667,8 @@ describe(tst_con.cevaluateConstant, () => {
         // Arrange
         let inputData = [wrd.cHello, wrd.cWorld];
         let inputMetaData = "";
+        rulesLibrary.initRulesLibrary();
+        dataBroker.initializeConstantsValidationData();
 
         // Act
         let returnData = constant.evaluateConstant(inputData, inputMetaData);

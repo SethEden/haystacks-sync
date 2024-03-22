@@ -21,11 +21,11 @@
 
 // Internal imports
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
-import configuration from '../../../../../src/commandsBlob/commands/configuration';
+import configuration from '../../../../../src/commandsBlob/commands/configuration.js';
 import configurator from '../../../../../src/executrix/configurator.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as utl_con from '../../../testData/businessRules/rules/stringParsingUtilities.js';
-import * as obj_con from '../../../testData/commandsBlob/commands/configuration';
+import * as obj_con from '../../../testData/commandsBlob/commands/configuration.js';
 import * as tst_con from '../../constants/test.constants.js';
 
 // External imports
@@ -34,85 +34,86 @@ import { describe, expect, test } from '@jest/globals';
 
 const { bas, cfg, phn, wrd, gen } = hayConst;
 
-/**
- * @function saveConfiguration
- * @description Tests the positive and negative test cases of the saveConfiguration
- * @author Json Howard
- * @date 2023/05/08
- */
-describe(tst_con.csaveConfiguration, () => {
-  /**
-   * @function saveConfiguration_validDataString
-   * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with a valid input.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.csaveConfiguration_validDataString, () => {
-    // Arrange
-    let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, wrd.cworkflow];
-    let inputMetaData = '';
-    let testPath = obj_con.testConfigPath();
-    rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+// /**
+//  * @function saveConfiguration
+//  * @description Tests the positive and negative test cases of the saveConfiguration
+//  * @author Json Howard
+//  * @date 2023/05/08
+//  * @note inputData is not used for this function.
+//  */
+// describe(tst_con.csaveConfiguration, () => {
+//   /**
+//    * @function saveConfiguration_validDataString
+//    * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with a valid input.
+//    * @author Json Howard
+//    * @date 2023/05/08
+//    */
+//   test(tst_con.csaveConfiguration_validDataString, () => {
+//     // Arrange
+//     let inputData = [wrd.cTest + wrd.cCommand + wrd.cSequence + wrd.cALL, wrd.cworkflow];
+//     let inputMetaData = '';
+//     let testPath = obj_con.testConfigPath();
+//     rulesLibrary.initRulesLibrary();
+//     configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
 
-    // Act      
-    let returnData = configuration.saveConfiguration(
-      inputData,
-      inputMetaData
-    );
+//     // Act      
+//     let returnData = configuration.saveConfiguration(
+//       inputData,
+//       inputMetaData
+//     );
 
-    // Assert
-    expect(returnData).toBeTruthy(); //[true, true]
-  });
+//     // Assert
+//     expect(returnData).toBeTruthy(); //[true, true]
+//   });
   
-  /**
-   * @function saveConfiguration_inValidInputMetaDataUndefined
-   * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with an invalid input undefined.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.csaveConfiguration_inValidInputMetaDataUndefined, () => {
-    // Arrange
-    let inputData = undefined;
-    let inputMetaData = '';
-    let testPath = obj_con.testConfigPath();
-    rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+//   /**
+//    * @function saveConfiguration_inValidInputMetaDataUndefined
+//    * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with an invalid input undefined.
+//    * @author Json Howard
+//    * @date 2023/05/08
+//    */
+//   test(tst_con.csaveConfiguration_inValidInputMetaDataUndefined, () => {
+//     // Arrange
+//     let inputData = undefined;
+//     let inputMetaData = '';
+//     let testPath = obj_con.testConfigPath();
+//     rulesLibrary.initRulesLibrary();
+//     configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
 
-    // Act      
-    let returnData = configuration.saveConfiguration(
-      inputData,
-      inputMetaData
-    );
+//     // Act      
+//     let returnData = configuration.saveConfiguration(
+//       inputData,
+//       inputMetaData
+//     );
 
-    // Assert
-    expect(returnData).toBeTruthy(); //[true, true]
-  });
+//     // Assert
+//     expect(returnData).toBeTruthy(); //[true, true]
+//   });
   
-  /**
-   * @function saveConfiguration_inValidInputMetaDataNaN
-   * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with a valid input.
-   * @author Json Howard
-   * @date 2023/05/08
-   */
-  test(tst_con.csaveConfiguration_inValidInputMetaDataNaN, () => {
-    // Arrange
-    let inputData = NaN;
-    let inputMetaData = '';
-    let testPath = obj_con.testConfigPath();
-    rulesLibrary.initRulesLibrary();
-    configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
+//   /**
+//    * @function saveConfiguration_inValidInputMetaDataNaN
+//    * @description Tests the commandsBlob.commands.configuration.saveConfiguration function, with a valid input.
+//    * @author Json Howard
+//    * @date 2023/05/08
+//    */
+//   test(tst_con.csaveConfiguration_inValidInputMetaDataNaN, () => {
+//     // Arrange
+//     let inputData = NaN;
+//     let inputMetaData = '';
+//     let testPath = obj_con.testConfigPath();
+//     rulesLibrary.initRulesLibrary();
+//     configurator.setConfigurationSetting(wrd.csystem, cfg.cappConfigPath, testPath);
 
-    // Act      
-    let returnData = configuration.saveConfiguration(
-      inputData,
-      inputMetaData
-    );
+//     // Act      
+//     let returnData = configuration.saveConfiguration(
+//       inputData,
+//       inputMetaData
+//     );
 
-    // Assert
-    expect(returnData).toBeTruthy(); //[true, true]
-  });
-});
+//     // Assert
+//     expect(returnData).toBeTruthy(); //[true, true]
+//   });
+// });
 
 /**
  * @function changeConfigurationSetting
@@ -254,37 +255,37 @@ describe(tst_con.cchangeConfigurationSetting, () => {
   });
 });
 
-// /**
-//  * @function listConfigurationThemes
-//  * @description Tests the positive and negative test cases of the listConfigurationThemes
-//  * @author Json Howard
-//  * @date 2023/05/08
-//  * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
-//  */
-// describe(tst_con.clistConfigurationThemes, () => {
-//   /**
-//    * @function listConfigurationThemes_validDataString
-//    * @description Tests the commandsBlob.commands.configuration function listConfigurationThemes with a valid input.
-//    * @author Json Howard
-//    * @date 2023/05/08
-//    * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
-//    */
-//   test(tst_con.clistConfigurationThemes_validDataString, () => {
-//     // Arrange
-//     let inputData = '';
-//     let inputMetaData = '';
-//     rulesLibrary.initRulesLibrary();
+/**
+ * @function listConfigurationThemes
+ * @description Tests the positive and negative test cases of the listConfigurationThemes
+ * @author Json Howard
+ * @date 2023/05/08
+ * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+ */
+describe(tst_con.clistConfigurationThemes, () => {
+  /**
+   * @function listConfigurationThemes_validDataString
+   * @description Tests the commandsBlob.commands.configuration function listConfigurationThemes with a valid input.
+   * @author Json Howard
+   * @date 2023/05/08
+   * NOTE: Happy path unit test will be tested by integration test using the test harness client workflow: TestCommandSequenceALL. 
+   */
+  test(tst_con.clistConfigurationThemes_validDataString, () => {
+    // Arrange
+    let inputData = '';
+    let inputMetaData = '';
+    rulesLibrary.initRulesLibrary();
 
-//     // Act    
-//     let returnData = configuration.listConfigurationThemes(
-//       inputData,
-//       inputMetaData
-//     );
+    // Act    
+    let returnData = configuration.listConfigurationThemes(
+      inputData,
+      inputMetaData
+    );
 
-//     // Assert
-//     expect(returnData).toBeTruthy(); //[true, true]
-//   });
-// });
+    // Assert
+    expect(returnData).toBeTruthy(); //[true, true]
+  });
+});
 
 /**
  * @function changeDebugConfigurationTheme

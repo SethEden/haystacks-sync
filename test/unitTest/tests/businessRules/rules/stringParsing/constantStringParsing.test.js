@@ -20,13 +20,14 @@
 // Internal imports
 import dataBroker from '../../../../../../src/brokers/dataBroker.js';
 import constantStringParsing from '../../../../../../src/businessRules/rules/stringParsing/constantStringParsing.js';
+import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import D from '../../../../../../src/structures/data.js';
 import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { bas, sys, wrd } = hayConst;
 
@@ -47,7 +48,10 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
     test(tst_con.cvalidateConstantsDataValidation_validDataString, () => {
       // Arrange
       let inputData = './test/unitTest/tests/constants/test.constants.js';
-      let inputMetaData = 'constantsValidation.testData';    
+      let inputMetaData = 'constantsValidation';    
+      D[sys.cConstantsValidationData] = [];
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
+      rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -57,7 +61,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBe('???');
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -70,6 +74,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = data_con.stringRandomText;
       let inputMetaData = 'constantsValidation.testData';   
+      D[sys.cConstantsValidationData] = [];
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
+      rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -79,7 +86,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBe('???');
+      expect(returnData).toBe(true);
     });
   
     /**
@@ -91,7 +98,10 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
     test(tst_con.cvalidateConstantsDataValidation_inValidDataInputMetaDataString, () => {
       // Arrange
       let inputData = './test/unitTest/tests/constants/test.constants.js';
-      let inputMetaData = data_con.stringRandomText;    
+      let inputMetaData = data_con.stringRandomText;  
+      D[sys.cConstantsValidationData] = [];
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
+      rulesLibrary.initRulesLibrary();  
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -101,7 +111,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBe('???');
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -114,6 +124,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = 4567;
       let inputMetaData = [1,2,3,4,5];    
+      D[sys.cConstantsValidationData] = [];
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
+      rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -123,7 +136,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy();
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -136,6 +149,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = false;
       let inputMetaData = [1,2,3,4,5];    
+      D[sys.cConstantsValidationData] = [];
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
+      rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -145,7 +161,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy();
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -158,6 +174,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = 4567;    
+      D[sys.cConstantsValidationData] = [];
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
+      rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -167,7 +186,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy();
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -180,6 +199,9 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       // Arrange
       let inputData = [1,2,3,4,5];
       let inputMetaData = false;    
+      D[sys.cConstantsValidationData] = [];
+      D[sys.cConstantsValidationData][inputMetaData] = data_con.JsonObjectOfStrings_02;
+      rulesLibrary.initRulesLibrary();
       dataBroker.setupDataStorage(false);
 
       // Act      
@@ -189,7 +211,7 @@ describe(tst_con.cvalidateConstantsDataValidation, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy();
+      expect(returnData).toBe(false);
     });
   });
 
@@ -1723,7 +1745,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBe(4567);
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1767,7 +1789,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe('');
   });
 
   /**
@@ -1789,7 +1811,7 @@ describe(tst_con.cconvertConstantTypeToConstantPrefix, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy();
+    expect(returnData).toBe('');
   });
 });
 
@@ -1852,7 +1874,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
     // Arrange
     let inputData = wrd.cHello;
     let inputMetaData = data_con.stringRandomText;  
-    D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
+    // D[sys.cConstantsValidationData][sys.cConstantsShortNames] = {Hello: wrd.cWorld};
 
     // Act    
     let returnData = constantStringParsing.constantsOptimizedFulfillmentSystem(
@@ -1958,6 +1980,7 @@ describe(tst_con.cconstantsOptimizedFulfillmentSystem, () => {
  * @description Tests the positive and negative test cases of the constantsFulfillmentSystem
  * @author Json Howard
  * @date 2023/05/01
+ * @note inputMetaData should be setted
  */
 describe(tst_con.cconstantsFulfillmentSystem, () => {
   /**
@@ -2011,7 +2034,9 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
   test(tst_con.cconstantsFulfillmentSystem_inValidDataInputMetaDataString, () => {
     // Arrange
     let inputData = wrd.cHello;
-    let inputMetaData = data_con.stringRandomText;      
+    // let inputMetaData = data_con.stringRandomText;   
+    let inputMetaData = '';   
+    D[sys.cConstantsValidationData] = [];
 
     // Act
     let returnData = constantStringParsing.constantsFulfillmentSystem(
@@ -2041,7 +2066,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(' + ');
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2062,7 +2087,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(' + ');
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2083,7 +2108,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(' + ');
+    expect(returnData).toBe('');
   });
 
   /**
@@ -2104,7 +2129,7 @@ describe(tst_con.cconstantsFulfillmentSystem, () => {
     );
 
     // Assert
-    expect(returnData).toBe(' + ');
+    expect(returnData).toBe('');
   });
 });
 

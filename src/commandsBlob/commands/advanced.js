@@ -31,7 +31,7 @@ import stack from '../../structures/stack.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, biz, cfg, gen, msg, sys, wrd} = hayConst;
+const { bas, biz, cfg, gen, msg, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // commandsBlob.commands.advanced.
 const namespacePrefix = sys.ccommandsBlob + bas.cDot + wrd.ccommands + bas.cDot + baseFileName + bas.cDot;
@@ -63,41 +63,43 @@ function commandSequencer(inputData, inputMetaData) {
   // Initialize a temporary command queue that can be used to aggregate all of the commands that will be added to the official command queue.
   // Once all of the commands are aggregated then we will enqueue the new temporary command queue to the front of the official command queue.
   queue.initQueue(sys.cCommandQueue + wrd.cTemp);
-  for (let i = 1; i < inputData.length; i++) {
-    let commandString = inputData[i];
-    let primaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.cprimaryCommandDelimiter);
-    loggers.consoleLog(namespacePrefix + functionName, msg.cprimaryCommandDelimiterIs + primaryCommandDelimiter);
-    if (primaryCommandDelimiter === null || primaryCommandDelimiter !== primaryCommandDelimiter || primaryCommandDelimiter === undefined) {
-      primaryCommandDelimiter = bas.cSpace;
-    }
-    let secondaryCommandArgsDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter);
-    loggers.consoleLog(namespacePrefix + functionName, msg.csecondaryCommandDelimiterIs + secondaryCommandArgsDelimiter);
-    let tertiaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.ctertiaryCommandDelimiter);
-    loggers.consoleLog(namespacePrefix + functionName, msg.ctertiaryCommandDelimiterIs + tertiaryCommandDelimiter);
-    // Replace 2nd & rd level delimiters and down-increment them so we are dealing with command strings that can actually be executed.
-    const regEx1 = new RegExp(secondaryCommandArgsDelimiter, bas.cg);
-    commandString = commandString.replace(regEx1, primaryCommandDelimiter);
-    if (commandString.includes(tertiaryCommandDelimiter)) {
-      const regEx2 = new RegExp(tertiaryCommandDelimiter, bas.cg);
-      commandString = commandString.replace(regEx2, secondaryCommandArgsDelimiter);
-    }
-    let currentCommand = commandBroker.getValidCommand(commandString, primaryCommandDelimiter);
-    let commandArgs = commandBroker.getCommandArgs(commandString, primaryCommandDelimiter);
-    // We need to recompose the command arguments for the current command using the sys.cPrimaryCommandDelimiter.
-    if (currentCommand !== false) {
-      for (let j = 1; j < commandArgs.length; j++) {
-        currentCommand = currentCommand + primaryCommandDelimiter + commandArgs[j];
-      } // End-for (let j = 1; j < commandArgs.length; j++)
-      loggers.consoleLog(namespacePrefix + functionName, msg.ccommandSequencerCommandToEnqueueIs + currentCommand);
-      queue.enqueue(sys.cCommandQueue + wrd.cTemp, currentCommand);
-    } else { // End-if (currentCommand !== false)
-      // WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. <commandString>
-      let errorMessage = msg.ccommandSequencerMessage1 + msg.ccommandSequencerMessage2 + bas.cSpace + commandString;
-      // console.log(errorMessage);
-      returnData[1] = errorMessage;
-      commandSuccess = false;
-    }
-  } // End-for (let i = 1; i < inputData.length; i++)
+  if (Array.isArray(inputData)) {
+    for (let i = 1; i < inputData.length; i++) {
+      let commandString = inputData[i];
+      let primaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.cprimaryCommandDelimiter);
+      loggers.consoleLog(namespacePrefix + functionName, msg.cprimaryCommandDelimiterIs + primaryCommandDelimiter);
+      if (primaryCommandDelimiter === null || primaryCommandDelimiter !== primaryCommandDelimiter || primaryCommandDelimiter === undefined) {
+        primaryCommandDelimiter = bas.cSpace;
+      }
+      let secondaryCommandArgsDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter);
+      loggers.consoleLog(namespacePrefix + functionName, msg.csecondaryCommandDelimiterIs + secondaryCommandArgsDelimiter);
+      let tertiaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.ctertiaryCommandDelimiter);
+      loggers.consoleLog(namespacePrefix + functionName, msg.ctertiaryCommandDelimiterIs + tertiaryCommandDelimiter);
+      // Replace 2nd & rd level delimiters and down-increment them so we are dealing with command strings that can actually be executed.
+      const regEx1 = new RegExp(secondaryCommandArgsDelimiter, bas.cg);
+      commandString = commandString.replace(regEx1, primaryCommandDelimiter);
+      if (commandString.includes(tertiaryCommandDelimiter)) {
+        const regEx2 = new RegExp(tertiaryCommandDelimiter, bas.cg);
+        commandString = commandString.replace(regEx2, secondaryCommandArgsDelimiter);
+      }
+      let currentCommand = commandBroker.getValidCommand(commandString, primaryCommandDelimiter);
+      let commandArgs = commandBroker.getCommandArgs(commandString, primaryCommandDelimiter);
+      // We need to recompose the command arguments for the current command using the sys.cPrimaryCommandDelimiter.
+      if (currentCommand !== false) {
+        for (let j = 1; j < commandArgs.length; j++) {
+          currentCommand = currentCommand + primaryCommandDelimiter + commandArgs[j];
+        } // End-for (let j = 1; j < commandArgs.length; j++)
+        loggers.consoleLog(namespacePrefix + functionName, msg.ccommandSequencerCommandToEnqueueIs + currentCommand);
+        queue.enqueue(sys.cCommandQueue + wrd.cTemp, currentCommand);
+      } else { // End-if (currentCommand !== false)
+        // WARNING: advanced.commandSequencer: The specified command was not found, please enter a valid command and try again. <commandString>
+        let errorMessage = msg.ccommandSequencerMessage1 + msg.ccommandSequencerMessage2 + bas.cSpace + commandString;
+        // console.log(errorMessage);
+        returnData[1] = errorMessage;
+        commandSuccess = false;
+      }
+    } // End-for (let i = 1; i < inputData.length; i++)
+  }
   // Now migrate the temporary command queue to the primary command queue,
   // pushing all command entities to the front of the command queue.
   queue.enqueueFront(sys.cCommandQueue, queue.queueContents(sys.cCommandQueue + wrd.cTemp));
@@ -131,18 +133,20 @@ function workflow(inputData, inputMetaData) {
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputDataIs + JSON.stringify(inputData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cinputMetaDataIs + inputMetaData);
   let returnData = [true, {}];
-  let workflowName = inputData[1];
-  let workflowValue = workflowBroker.getWorkflow(workflowName);
-  if (workflowValue !== false && typeof workflowValue != wrd.cobject) {
-    queue.enqueueFront(sys.cCommandQueue, workflowValue);
-    returnData[1] = true;
-  } else {
-    // WARNING: advanced.workflow: The specified workflow:
-    // was not found in either the system defined workflows, or client defined workflows.
-    // Please enter a valid workflow name and try again.
-    let errorMessage = msg.cworkflowMessage1 + workflowName + bas.cComa + msg.cworkflowMessage2 + msg.cworkflowMessage3;
-    // console.log(errorMessage);
-    returnData[1] = errorMessage;
+  if (Array.isArray(inputData) && inputData.length > 0) {
+    let workflowName = inputData[1];
+    let workflowValue = workflowBroker.getWorkflow(workflowName);
+    if (workflowValue !== false && typeof workflowValue != wrd.cobject) {
+      queue.enqueueFront(sys.cCommandQueue, workflowValue);
+      returnData[1] = true;
+    } else {
+      // WARNING: advanced.workflow: The specified workflow:
+      // was not found in either the system defined workflows, or client defined workflows.
+      // Please enter a valid workflow name and try again.
+      let errorMessage = msg.cworkflowMessage1 + workflowName + bas.cComa + msg.cworkflowMessage2 + msg.cworkflowMessage3;
+      // console.log(errorMessage);
+      returnData[1] = errorMessage;
+    }
   }
   loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + JSON.stringify(returnData));
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
@@ -192,36 +196,38 @@ function businessRule(inputData, inputMetaData) {
 
   // First go through each rule that should be executed and determine if
   // there are any inputs that need to be passed into the business rule.
-  for (let i = 1; i < inputData.length; i++) {
-    // Begin the i-th iteration fo the inputData array. i is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_theIthIterationOfInputDataArray + i);
-    let currentRuleArg = inputData[i]; // Check to see if this rule has inputs separate from the rule name.
-    // currentRule is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.ccurrentRuleIs + JSON.stringify(currentRuleArg));
-    if (i === 1) {
-      // rules = lexical.parseBusinessRuleArgument(currentRuleArg, i);
-      rules = ruleBroker.processRules([currentRuleArg, i], [biz.cparseBusinessRuleArgument]);
-    } else if (i === 2) {
-      // ruleInputData = lexical.parseBusinessRuleArgument(currentRuleArg, i);
-      ruleInputData = ruleBroker.processRules([currentRuleArg, i], [biz.cparseBusinessRuleArgument]);
-    } else if (i === 3 && inputData.length <= 4) {
-      // ruleInputMetaData = lexical.parseBusinessRuleArgument(currentRuleArg, i);
-      ruleInputMetaData = ruleBroker.processRules([currentRuleArg, i], [biz.cparseBusinessRuleArgument]);
-    } else if (i === 3 && inputData.length > 4) {
-      // // In this case all of the arguments will have been combined into a single array and added to the ruleInputData.
-      ruleInputMetaData = [];
-      for (let j = 3; j <= inputData.length - 1; j++) {
-        let currentRuleArrayArg = inputData[j];
-        // let tempArg = lexical.parseBusinessRuleArgument(currentRuleArrayArg, j);
-        let tempArg = ruleBroker.processRules([currentRuleArrayArg, j], [biz.cparseBusinessRuleArgument]);
-        // console.log('tempArg is: ' + tempArg);
-        if (tempArg) {
-          ruleInputMetaData.push(tempArg);
-        }
-      } // End-for (let j = 3; j <= inputData.length - 1; j++)
-      break;
-    } // End-Else-if (i === 3 && inputData.length > 4)
-  } // End-for (let i = 1; i < inputData.length; i++)
+  if (Array.isArray(inputData)) {
+    for (let i = 1; i < inputData.length; i++) {
+      // Begin the i-th iteration fo the inputData array. i is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_theIthIterationOfInputDataArray + i);
+      let currentRuleArg = inputData[i]; // Check to see if this rule has inputs separate from the rule name.
+      // currentRule is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.ccurrentRuleIs + JSON.stringify(currentRuleArg));
+      if (i === 1) {
+        // rules = lexical.parseBusinessRuleArgument(currentRuleArg, i);
+        rules = ruleBroker.processRules([currentRuleArg, i], [biz.cparseBusinessRuleArgument]);
+      } else if (i === 2) {
+        // ruleInputData = lexical.parseBusinessRuleArgument(currentRuleArg, i);
+        ruleInputData = ruleBroker.processRules([currentRuleArg, i], [biz.cparseBusinessRuleArgument]);
+      } else if (i === 3 && inputData.length <= 4) {
+        // ruleInputMetaData = lexical.parseBusinessRuleArgument(currentRuleArg, i);
+        ruleInputMetaData = ruleBroker.processRules([currentRuleArg, i], [biz.cparseBusinessRuleArgument]);
+      } else if (i === 3 && inputData.length > 4) {
+        // // In this case all of the arguments will have been combined into a single array and added to the ruleInputData.
+        ruleInputMetaData = [];
+        for (let j = 3; j <= inputData.length - 1; j++) {
+          let currentRuleArrayArg = inputData[j];
+          // let tempArg = lexical.parseBusinessRuleArgument(currentRuleArrayArg, j);
+          let tempArg = ruleBroker.processRules([currentRuleArrayArg, j], [biz.cparseBusinessRuleArgument]);
+          // console.log('tempArg is: ' + tempArg);
+          if (tempArg) {
+            ruleInputMetaData.push(tempArg);
+          }
+        } // End-for (let j = 3; j <= inputData.length - 1; j++)
+        break;
+      } // End-Else-if (i === 3 && inputData.length > 4)
+    } // End-for (let i = 1; i < inputData.length; i++)
+  }
   // rules is:
   loggers.consoleLog(namespacePrefix + functionName, msg.crulesIs + JSON.stringify(rules));
   // ruleInputData is:
@@ -254,7 +260,7 @@ function businessRule(inputData, inputMetaData) {
     if (D[cfg.cbusinessRulesNamesPerformanceTrackingStack] === undefined) {
       stack.initStack(cfg.cbusinessRulesNamesPerformanceTrackingStack);
     }
-    performanceTrackingObject = {Name: rules[0], RunTime: businessRuleDeltaTime};
+    performanceTrackingObject = { Name: rules[0], RunTime: businessRuleDeltaTime };
     if (stack.contains(cfg.cbusinessRulesNamesPerformanceTrackingStack, rules[0]) === false) {
       stack.push(cfg.cbusinessRulesNamesPerformanceTrackingStack, rules[0]);
     }
@@ -303,16 +309,18 @@ function commandGenerator(inputData, inputMetaData) {
   let secondaryCommandArgsDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.csecondaryCommandDelimiter);
   let tertiaryCommandDelimiter = configurator.getConfigurationSetting(wrd.csystem, cfg.ctertiaryCommandDelimiter);
   let commandString = '';
-  if (inputData.length === 3) {
-    commandString = inputData[1];
-  } else if (inputData.length >= 4) {
-    for (let i = 1; i < inputData.length - 1; i++) {
-      if (i === 1) {
-        commandString = inputData[1];
-      } else {
-        commandString = commandString + bas.cBackTickQuote + inputData[i].trim() + bas.cBackTickQuote;
-      }
-    } // End-for (let i = 1; i < inputData.length - 1; i++)
+  if (Array.isArray(inputData)) {
+    if (inputData.length === 3) {
+      commandString = inputData[1];
+    } else if (inputData.length >= 4) {
+      for (let i = 1; i < inputData.length - 1; i++) {
+        if (i === 1) {
+          commandString = inputData[1];
+        } else {
+          commandString = commandString + bas.cBackTickQuote + inputData[i].trim() + bas.cBackTickQuote;
+        }
+      } // End-for (let i = 1; i < inputData.length - 1; i++)
+    }
   }
 
   // NOTE: the str.replace only replaces the first instance of a string value, not all values.
@@ -340,7 +348,7 @@ function commandGenerator(inputData, inputMetaData) {
   let commandArgs = commandBroker.getCommandArgs(commandString, primaryCommandDelimiter);
   loggers.consoleLog(namespacePrefix + functionName, msg.ccurrentCommandIs + currentCommand);
   loggers.consoleLog(namespacePrefix + functionName, msg.ccommandArgsIs + JSON.stringify(commandArgs));
-  if (currentCommand !== false) {
+  if (currentCommand !== false && Array.isArray(inputData)) {
     if (inputData.length >= 3) {
       for (let j = 2; j <= inputData.length - 1; j++) {
         if (isNaN(inputData[j].trim()) === false) {
@@ -419,69 +427,70 @@ function commandAliasGenerator(inputData, inputMetaData) {
   // console.log(msg.ccommandAliasGeneratorMessage1);
   // EXAMPLE: {"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}
   // console.log(msg.ccommandAliasGeneratorMessage2);
+  if (Array.isArray(inputData)) {
+    if (inputData.length === 0) {
+      while (validCommandName === false) {
+        console.log(msg.cCommandNamePrompt1);
+        console.log(msg.cCommandNamePrompt2);
+        console.log(msg.cCommandNamePrompt3);
+        console.log(msg.cCommandNamePrompt4);
+        console.log(msg.cCommandNamePrompt5);
+        commandName = ruleBroker.processRules([bas.cGreaterThan, ''], [biz.cprompt]);
+        validCommandName = ruleBroker.processRules([commandName, ''], [biz.cisValidCommandNameString]);
+        if (validCommandName === false) {
+          // INVALID INPUT: Please enter a valid camel-case command name.
+          console.log(msg.ccommandAliasGeneratorMessage3);
+        } // End-if (validCommandName === false)
+      } // End-while (validCommandName === false)
 
-  if (inputData.length === 0) {
-    while (validCommandName === false) {
-      console.log(msg.cCommandNamePrompt1);
-      console.log(msg.cCommandNamePrompt2);
-      console.log(msg.cCommandNamePrompt3);
-      console.log(msg.cCommandNamePrompt4);
-      console.log(msg.cCommandNamePrompt5);
-      commandName = ruleBroker.processRules([bas.cGreaterThan, ''], [biz.cprompt]);
-      validCommandName = ruleBroker.processRules([commandName, ''], [biz.cisValidCommandNameString]);
-      if (validCommandName === false) {
-        // INVALID INPUT: Please enter a valid camel-case command name.
-        console.log(msg.ccommandAliasGeneratorMessage3);
-      } // End-if (validCommandName === false)
-    } // End-while (validCommandName === false)
+      let camelCaseCommandNameArray = ruleBroker.processRules([commandName, ''], [biz.cconvertCamelCaseStringToArray]);
+      // camelCaseCommandNameArray is:
+      loggers.consoleLog(namespacePrefix + functionName, msg.ccamelCaseCommandNameArrayIs + JSON.stringify(camelCaseCommandNameArray));
 
-    let camelCaseCommandNameArray = ruleBroker.processRules([commandName, ''], [biz.cconvertCamelCaseStringToArray]);
-    // camelCaseCommandNameArray is:
-    loggers.consoleLog(namespacePrefix + functionName, msg.ccamelCaseCommandNameArrayIs + JSON.stringify(camelCaseCommandNameArray));
-
-    for (const element of camelCaseCommandNameArray) {
-      let commandWord = element;
-      // current commandWord is:
-      console.log(msg.ccurrentCommandWordIs + commandWord);
-      validCommandWordAliasList = false;
-      if (commandWord !== '') {
-        commandAliasDataStructure[commandWord] = {};
-        while (validCommandWordAliasList === false) {
-          console.log(msg.cCommandWordAliasPrompt1);
-          console.log(msg.cCommandWordAliasPrompt2);
-          console.log(msg.cCommandWordAliasPrompt3 + bas.cSpace + commandWord);
-          commandWordAliasList = ruleBroker.processRules([bas.cGreaterThan, ''], [biz.cprompt]);
-          validCommandWordAliasList = ruleBroker.processRules([commandWordAliasList, ''], [biz.cisStringList]);
-          if (validCommandWordAliasList === false) {
-            // INVALID INPUT: Please enter a valid command word alias list.
-            console.log(msg.ccommandAliasGeneratorMessage4);
-          } else if (commandWordAliasList !== '') { // As long as the user entered something we should be able to proceed!
-            validCommandWordAliasList = true;
-          }
-        } // End-while (validCommandWordAliasList === false)
-        commandAliasDataStructure[commandWord] = commandWordAliasList;
+      for (const element of camelCaseCommandNameArray) {
+        let commandWord = element;
+        // current commandWord is:
+        console.log(msg.ccurrentCommandWordIs + commandWord);
+        validCommandWordAliasList = false;
+        if (commandWord !== '') {
+          commandAliasDataStructure[commandWord] = {};
+          while (validCommandWordAliasList === false) {
+            console.log(msg.cCommandWordAliasPrompt1);
+            console.log(msg.cCommandWordAliasPrompt2);
+            console.log(msg.cCommandWordAliasPrompt3 + bas.cSpace + commandWord);
+            commandWordAliasList = ruleBroker.processRules([bas.cGreaterThan, ''], [biz.cprompt]);
+            validCommandWordAliasList = ruleBroker.processRules([commandWordAliasList, ''], [biz.cisStringList]);
+            if (validCommandWordAliasList === false) {
+              // INVALID INPUT: Please enter a valid command word alias list.
+              console.log(msg.ccommandAliasGeneratorMessage4);
+            } else if (commandWordAliasList !== '') { // As long as the user entered something we should be able to proceed!
+              validCommandWordAliasList = true;
+            }
+          } // End-while (validCommandWordAliasList === false)
+          commandAliasDataStructure[commandWord] = commandWordAliasList;
+          validCommandInput = true;
+        } // End-if (commandWord !== '')
+      } // End-for (const element of camelCaseCommandNameArray)
+    } else if (inputData.length === 2) {
+      try {
+        commandAliasDataStructure = JSON.parse(inputData[1]);
         validCommandInput = true;
-      } // End-if (commandWord !== '')
-    } // End-for (const element of camelCaseCommandNameArray)
-  } else if (inputData.length === 2) {
-    try {
-      commandAliasDataStructure = JSON.parse(inputData[1]);
-      validCommandInput = true;
-    } catch (err) {
-      // PARSER ERROR:
-      console.log(msg.cPARSER_ERROR + err.message);
+      } catch (err) {
+        // PARSER ERROR:
+        console.log(msg.cPARSER_ERROR + err.message);
+        // INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.
+        console.log(msg.ccommandAliasGeneratorMessage5);
+        returnData[1] = msg.ccommandAliasGeneratorMessage5;
+        // EXAMPLE: {"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}
+        console.log(msg.ccommandAliasGeneratorMessage2);
+      }
+    } else {
       // INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.
-      console.log(msg.ccommandAliasGeneratorMessage5);
+      // console.log(msg.ccommandAliasGeneratorMessage5);
       returnData[1] = msg.ccommandAliasGeneratorMessage5;
       // EXAMPLE: {"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}
-      console.log(msg.ccommandAliasGeneratorMessage2);
+      // console.log(msg.ccommandAliasGeneratorMessage2);
     }
-  } else {
-    // INVALID COMMAND INPUT: Please enter valid command data when trying to call with parameters.
-    // console.log(msg.ccommandAliasGeneratorMessage5);
-    returnData[1] = msg.ccommandAliasGeneratorMessage5;
-    // EXAMPLE: {"constants":"c,const","Generator":"g,gen,genrtr","List":"l,lst"}
-    // console.log(msg.ccommandAliasGeneratorMessage2);
   }
 
   if (validCommandInput === true) {

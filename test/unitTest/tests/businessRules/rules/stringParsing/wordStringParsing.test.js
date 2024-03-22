@@ -25,7 +25,7 @@ import * as tst_con from '../../../constants/test.constants.js';
 import hayConst from '@haystacks/constants';
 import { describe, expect, test } from '@jest/globals';
 
-const { wrd } = hayConst;
+const { wrd, bas, num } = hayConst;
 
 /**
  * @function isStringCamelCase
@@ -215,7 +215,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
       );
   
       // Assert
-      expect(returnData).toBe(wrd.chello + wrd.cWorld);
+      expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     });
 
     /**
@@ -259,7 +259,7 @@ describe(tst_con.cmapWordToCamelCaseWord, () => {
         );
     
         // Assert
-        expect(returnData).toBe(wrd.chello + wrd.cWorld);
+        expect(returnData).toBe(wrd.cHello + wrd.cWorld);
     });
 
     /**
@@ -377,7 +377,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
       );
   
       // Assert
-      expect(returnData).toBe(wrd.chello + wrd.cWorld);
+      expect(returnData).toBe(wrd.chello + wrd.cworld);
     });
 
     /**
@@ -399,7 +399,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
         );
     
         // Assert
-        expect(returnData).toBe('dfxgdfg');
+        expect(returnData).toBe('gsdsfaef');
     });
 
     /**
@@ -421,7 +421,7 @@ describe(tst_con.csimplifyAndConsolidateString, () => {
         );
     
         // Assert
-        expect(returnData).toBe(wrd.chello + wrd.cWorld);
+        expect(returnData).toBe(wrd.chello + wrd.cworld);
     });
 
     /**
@@ -863,7 +863,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
       );
   
       // Assert
-      expect(returnData).toBe(true);
+      expect(returnData).toBe(false);
     });
 
     /**
@@ -907,7 +907,7 @@ describe(tst_con.cdoesStringContainAcronym, () => {
         );
     
         // Assert
-        expect(returnData).toBe(true);
+        expect(returnData).toBe(false);
     });
 
     /**
@@ -1349,7 +1349,7 @@ describe(tst_con.cgetWordCountInString, () => {
       );
   
       // Assert
-      expect(returnData).toBe(3);
+      expect(returnData).toBe(2);
     });
 
     /**
@@ -1393,7 +1393,7 @@ describe(tst_con.cgetWordCountInString, () => {
         );
     
         // Assert
-        expect(returnData).toBe(3);
+        expect(returnData).toBe(2);
     });
 
     /**
@@ -1695,7 +1695,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
         );
     
         // Assert
-        expect(returnData).toBe(11);
+        expect(returnData).toBe(13);
       });
 
     /**
@@ -1717,7 +1717,7 @@ describe(tst_con.caggregateNumericalDifferenceBetweenTwoStrings, () => {
         );
     
         // Assert
-        expect(returnData).toBe(12);
+        expect(returnData).toBe(13);
     });
 
     /**

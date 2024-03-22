@@ -28,7 +28,7 @@ import stack from '../structures/stack.js';
 import hayConst from '@haystacks/constants';
 import path from 'path';
 
-const {bas, biz, cfg, gen, msg, num, sys, wrd} = hayConst;
+const { bas, biz, cfg, gen, msg, num, sys, wrd } = hayConst;
 const baseFileName = path.basename(import.meta.url, path.extname(import.meta.url));
 // brokers.commandBroker.
 const namespacePrefix = wrd.cbrokers + bas.cDot + baseFileName + bas.cDot;
@@ -54,7 +54,7 @@ function bootStrapCommands() {
 /**
  * @function addClientCommands
  * @description Merges client defined commands with the system defined commands.
- * @param {array<object>} clientCommands The client rules that should be merged with the system rules.
+ * @param {object} clientCommands The client rules that should be merged with the system rules.
  * @return {void}
  * @author Seth Hollingsead
  * @date 2022/02/02
@@ -62,13 +62,20 @@ function bootStrapCommands() {
 function addClientCommands(clientCommands) {
   let functionName = addClientCommands.name;
   loggers.consoleLog(namespacePrefix + functionName, msg.cBEGIN_Function);
+  loggers.consoleLog(namespacePrefix + functionName, msg.cclientCommandsAre + JSON.stringify(clientCommands));
+  let returnData = false;
   // Object.assign(D[wrd.cCommands], clientCommands);
   // D[wrd.cCommands] = {...D[wrd.cCommands], Object.keys(clientCommands): clientCommands[Object.keys(clientCommands)]};
-  for (const [key, value] of Object.entries(clientCommands)) {
-    // console.log('%%%%%%%%%%%%%%%%%% ---- >>>>>>>>> key is: ' + key);
-    D[wrd.cCommands] = {...D[wrd.cCommands], [`${key}`]: value};
-  } // End-for (const [key, value] of Object.entries(clientCommands))
+  if (typeof clientCommands === wrd.cobject) {
+    for (const [key, value] of Object.entries(clientCommands)) {
+      // console.log('%%%%%%%%%%%%%%%%%% ---- >>>>>>>>> key is: ' + key);
+      D[wrd.cCommands] = { ...D[wrd.cCommands], [`${key}`]: value };
+    } // End-for (const [key, value] of Object.entries(clientCommands))
+    returnData = true;
+  }
+  loggers.consoleLog(namespacePrefix + functionName, msg.creturnDataIs + returnData);
   loggers.consoleLog(namespacePrefix + functionName, msg.cEND_Function);
+  return returnData;
 }
 
 /**
@@ -96,7 +103,7 @@ function getValidCommand(commandString, commandDelimiter) {
   if (commandDelimiter === null || commandDelimiter !== commandDelimiter || commandDelimiter === undefined) {
     commandArgsDelimiter = bas.cSpace;
   }
-  if (commandString && commandString.includes(commandArgsDelimiter) === true) {
+  if (commandString && typeof commandString === wrd.cstring && commandString.includes(commandArgsDelimiter) === true) {
     commandArgs = commandString.split(commandArgsDelimiter);
     commandToExecute = commandArgs[0];
   } else {
@@ -124,9 +131,9 @@ function getValidCommand(commandString, commandDelimiter) {
       // Check if we found a valid command and return it if we did,
       // or pop a message to indicate the command was not found.
       if (foundValidCommand === false) {
-            // WARNING: The specified command:
-            // does not exist, please try again!
-            // console.log(msg.cWarningTheSpecifiedCommand + commandToExecute + msg.cdoesNotExistPleaseTryAgain + bas.cSpace + num.c1);
+        // WARNING: The specified command:
+        // does not exist, please try again!
+        // console.log(msg.cWarningTheSpecifiedCommand + commandToExecute + msg.cdoesNotExistPleaseTryAgain + bas.cSpace + num.c1);
       } else {
         returnData = foundValidCommand[wrd.cName];
       }
@@ -160,7 +167,7 @@ function countMatchingCommandAlias(commandAliasData, commandAliasName) {
   // commandAliasName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasNameIs + commandAliasName);
   let commandAliasCount = 0;
-  if (typeof commandAliasData === wrd.cobject) {
+  if (typeof commandAliasData === wrd.cobject && typeof commandAliasName === wrd.cstring ) {
     for (let commandAliasEntity in commandAliasData) {
       // commandAliasEntity is:
       loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasEntityIs + JSON.stringify(commandAliasEntity));
@@ -226,7 +233,7 @@ function searchCommandAlias(commandAliasData, commandAliasName) {
   // commandAliasName is:
   loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasNameIs + commandAliasName);
   let commandAliasObject = false;
-  if (typeof commandAliasData === wrd.cobject) {
+  if (typeof commandAliasData === wrd.cobject && typeof commandAliasName === wrd.cstring) {
     for (let commandAliasEntity in commandAliasData) {
       // commandAliasEntity is:
       loggers.consoleLog(namespacePrefix + functionName, msg.ccommandAliasEntityIs + JSON.stringify(commandAliasEntity));
@@ -239,20 +246,20 @@ function searchCommandAlias(commandAliasData, commandAliasName) {
           for (const element of arrayOfAliases) {
             let currentAlias = element;
             if (commandAliasName === currentAlias ||
-            commandAliasName === bas.cDash + currentAlias ||
-            commandAliasName === bas.cDoubleDash + currentAlias ||
-            commandAliasName === bas.cForwardSlash + currentAlias ||
-            commandAliasName === bas.cBackSlash + currentAlias ||
-            commandAliasName.toUpperCase() === currentAlias.toUpperCase() ||
-            commandAliasName.toUpperCase() === bas.cDash + currentAlias.toUpperCase() ||
-            commandAliasName.toUpperCase() === bas.cDoubleDash + currentAlias.toUpperCase() ||
-            commandAliasName.toUpperCase() === bas.cForwardSlash + currentAlias.toUpperCase() ||
-            commandAliasName.toUpperCase() === bas.cBackSlash + currentAlias.toUpperCase() ||
-            commandAliasName.toLowerCase() === currentAlias.toLowerCase() ||
-            commandAliasName.toLowerCase() === bas.cDash + currentAlias.toLowerCase() ||
-            commandAliasName.toLowerCase() === bas.cDoubleDash + currentAlias.toLowerCase() ||
-            commandAliasName.toLowerCase() === bas.cForwardSlash + currentAlias.toLowerCase() ||
-            commandAliasName.toLowerCase() === bas.cBackSlash + currentAlias.toLowerCase()) {
+              commandAliasName === bas.cDash + currentAlias ||
+              commandAliasName === bas.cDoubleDash + currentAlias ||
+              commandAliasName === bas.cForwardSlash + currentAlias ||
+              commandAliasName === bas.cBackSlash + currentAlias ||
+              commandAliasName.toUpperCase() === currentAlias.toUpperCase() ||
+              commandAliasName.toUpperCase() === bas.cDash + currentAlias.toUpperCase() ||
+              commandAliasName.toUpperCase() === bas.cDoubleDash + currentAlias.toUpperCase() ||
+              commandAliasName.toUpperCase() === bas.cForwardSlash + currentAlias.toUpperCase() ||
+              commandAliasName.toUpperCase() === bas.cBackSlash + currentAlias.toUpperCase() ||
+              commandAliasName.toLowerCase() === currentAlias.toLowerCase() ||
+              commandAliasName.toLowerCase() === bas.cDash + currentAlias.toLowerCase() ||
+              commandAliasName.toLowerCase() === bas.cDoubleDash + currentAlias.toLowerCase() ||
+              commandAliasName.toLowerCase() === bas.cForwardSlash + currentAlias.toLowerCase() ||
+              commandAliasName.toLowerCase() === bas.cBackSlash + currentAlias.toLowerCase()) {
               // Found a matching alias entry!
               loggers.consoleLog(namespacePrefix + functionName, msg.cFoundMatchingAliasEntry1);
               commandAliasObject = commandAliasData[commandAliasEntity];
@@ -323,7 +330,8 @@ function getAllCommandAliasData(commandAliasDataStructure) {
         if (allCommandAliasesTemp === false) {
           // The recursive call returned false, so push the current entity to the output array!
           loggers.consoleLog(namespacePrefix + functionName, msg.cgetAllCommandAliasDataMessage02);
-          allCommandsData.push(internalCommandAliasDataStructure);
+          if (Array.isArray(allCommandsData))
+            allCommandsData.push(internalCommandAliasDataStructure);
           // allCommandsData after pushing to the array is:
           loggers.consoleLog(namespacePrefix + functionName, msg.callCommandsDataAfterPushingToTheArrayIs + JSON.stringify(allCommandsData));
           break;
@@ -414,7 +422,7 @@ function getCommandArgs(commandString, commandDelimiter) {
   if (commandDelimiter === null || commandDelimiter !== commandDelimiter || commandDelimiter === undefined) {
     commandArgsDelimiter = bas.cSpace;
   }
-  if (commandString.includes(commandArgsDelimiter) === true) {
+  if (typeof commandString === wrd.cstring && commandString.includes(commandArgsDelimiter) === true) {
     // NOTE: All commands that enqueue or execute commands need to pass through this function.
     // There is a case where the user might pass a string with spaces or other code/syntax.
     // So we need to split first by single character string delimiters and parse the
@@ -608,7 +616,7 @@ function executeCommand(commandString) {
     if (D[cfg.ccommandNamesPerformanceTrackingStack] === undefined) {
       stack.initStack(cfg.ccommandNamesPerformanceTrackingStack);
     }
-    performanceTrackingObject = {Name: commandToExecute, RunTime: commandDeltaTime};
+    performanceTrackingObject = { Name: commandToExecute, RunTime: commandDeltaTime };
     if (stack.contains(cfg.ccommandNamesPerformanceTrackingStack, commandToExecute) === false) {
       stack.push(cfg.ccommandNamesPerformanceTrackingStack, commandToExecute);
     }

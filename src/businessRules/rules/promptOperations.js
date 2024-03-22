@@ -43,13 +43,13 @@ function prompt(inputData, inputMetaData) {
   if (inputData) {
     process.stdout.write(inputData);
   }
-
+ 
   let buffer = Buffer.alloc(1024),
     // eslint-disable-next-line no-unused-vars
     fd = process.platform === gen.cwin32 ? process.stdin.fd : fs.openSync(sys.cdevtty, bas.cr),
     // readSize = fs.readSync(fd, buffer, 0, 1024);
     readSize = fs.readSync(0, buffer, 0, 1024);
-
+  
   loggers.consoleLog(namespacePrefix + functionName, msg.cINPUT + buffer.toString(gen.cUTF8, 0, readSize));
   returnData = buffer.toString(gen.cUTF8, 0, readSize);
   if (returnData.includes(String.fromCharCode(term))) {

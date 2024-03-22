@@ -18,16 +18,17 @@
  */
 
 // Internal imports
+import dataBroker from '../../../../../../src/brokers/dataBroker.js';
 import dataArrayParsing from '../../../../../../src/businessRules/rules/arrayParsing/dataArrayParsing.js';
 import rulesLibrary from '../../../../../../src/businessRules/rulesLibrary.js';
 import D from '../../../../../../src/structures/data.js';
-import * as data_con from '../../testData/brokers/dataBroker.js';
+import * as data_con from '../../../../testData/brokers/dataBroker.js';
 import * as obj_con from '../../../../testData/businessRules/rules/arrayParsing/dataArrayParsing.js';
 import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { describe, expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const { sys, wrd } = hayConst;
 
@@ -271,7 +272,7 @@ describe(tst_con.cstoreData, () => {
     */
     test(tst_con.cstoreData_inValidDataInputDataString, () => {
         // Arrange
-        let inputData = date_con.stringRandomText;
+        let inputData = data_con.stringRandomText;
         let inputMetaData = wrd.cWorld;
         D[sys.cDataStorage] = {};
 
@@ -279,7 +280,7 @@ describe(tst_con.cstoreData, () => {
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBe(true);
     });
 
     /**
@@ -291,14 +292,14 @@ describe(tst_con.cstoreData, () => {
     test(tst_con.cstoreData_inValidDataInputMetaDataString, () => {
         // Arrange
         let inputData = wrd.cHello;
-        let inputMetaData = date_con.stringRandomText;
+        let inputMetaData = data_con.stringRandomText;
         D[sys.cDataStorage] = {};
 
         // Act        
         let returnData = dataArrayParsing.storeData(inputData, inputMetaData);
 
         // Assert
-        expect(returnData).toBe(false);
+        expect(returnData).toBe(true);
     });
 
     /**
@@ -2160,14 +2161,16 @@ describe(tst_con.cgetNamespacedDataObject, () => {
         let inputData = undefined;
         let inputMetaData = false;
         let temp_D = D;
-        for (let i = 0; i < inputData.length - 1; i++) {
-            if (i < inputData.length - 2) {
-                temp_D[inputData[i]] = {};
+        if (Array.isArray(inputData)) {
+            for (let i = 0; i < inputData.length - 1; i++) {
+                if (i < inputData.length - 2) {
+                    temp_D[inputData[i]] = {};
+                }
+                else {
+                    temp_D[inputData[i]] = inputData[inputData.length - 1];
+                }
+                temp_D = temp_D[inputData[i]];
             }
-            else {
-                temp_D[inputData[i]] = inputData[inputData.length - 1];
-            }
-            temp_D = temp_D[inputData[i]];
         }
         rulesLibrary.initRulesLibrary();
         dataArrayParsing.setNamespacedDataObject(inputData, obj_con.StringsObject_01);
@@ -2460,14 +2463,16 @@ describe(tst_con.csetNamespacedDataObject, () => {
         let inputData = undefined;
         let inputMetaData = obj_con.StringsArray_01;
         let temp_D = D;
-        for (let i = 0; i < inputData.length - 1; i++) {
-            if (i < inputData.length - 2) {
-                temp_D[inputData[i]] = {};
+        if (Array.isArray(inputData)) {
+            for (let i = 0; i < inputData.length - 1; i++) {
+                if (i < inputData.length - 2) {
+                    temp_D[inputData[i]] = {};
+                }
+                else {
+                    temp_D[inputData[i]] = inputData[inputData.length - 1];
+                }
+                temp_D = temp_D[inputData[i]];
             }
-            else {
-                temp_D[inputData[i]] = inputData[inputData.length - 1];
-            }
-            temp_D = temp_D[inputData[i]];
         }
         rulesLibrary.initRulesLibrary();
 

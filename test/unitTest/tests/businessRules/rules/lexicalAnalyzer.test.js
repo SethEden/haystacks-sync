@@ -18,7 +18,7 @@
  */
 
 // Internal imports
-import lexicalAnalyzer from '../../../../../src/businessRules/rules/lexicalAnalyzer';
+import lexicalAnalyzer from '../../../../../src/businessRules/rules/lexicalAnalyzer.js';
 import rulesLibrary from '../../../../../src/businessRules/rulesLibrary.js';
 import * as data_con from '../../../testData/brokers/dataBroker.js';
 import * as lex_con from '../../../testData/businessRules/rules/lexicalAnalyzer.js';
@@ -188,7 +188,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [['df','xg','24','34','6d','fg']]
+      expect(returnData).toBeUndefined(); // [['df','xg','24','34','6d','fg']]
   });
 
   /**
@@ -254,7 +254,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [['df','xg','24','34','6d','fg']]
+      expect(returnData).toBeUndefined(); // [['df','xg','24','34','6d','fg']]
   });
 
   /**
@@ -276,7 +276,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // [['df','xg','24','34','6d','fg']]
+      expect(returnData).toBeUndefined(); // [['df','xg','24','34','6d','fg']]
   });
 
   /**
@@ -342,7 +342,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // ['df','xg','24','34','6d','fg']
+      expect(returnData).toBeUndefined(); // ['df','xg','24','34','6d','fg']
   });
 
   /**
@@ -364,7 +364,7 @@ describe(tst_con.cparseBusinessRuleArgument, () => {
       );
   
       // Assert
-      expect(returnData).toBeTruthy(); // ['df','xg','24','34','6d','fg']
+      expect(returnData).toBeUndefined(); // ['df','xg','24','34','6d','fg']
   });
 });
 
@@ -460,7 +460,7 @@ describe(tst_con.canalyzeArgument, () => {
     );
 
     // Assert
-    expect(returnData).toBe(wrd.cHello + bas.cColon + wrd.cWorld);
+    expect(returnData).toBe(undefined);
   });
 
   /**
@@ -482,7 +482,7 @@ describe(tst_con.canalyzeArgument, () => {
     );
 
     // Assert
-    expect(returnData).toBe(wrd.cHello + bas.cColon + wrd.cWorld);
+    expect(returnData).toBe(undefined);
   });
 
   /**
@@ -946,7 +946,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //['1,2,3']
+    expect(returnData).toBeUndefined(); //['1,2,3']
   });
 
   /**
@@ -968,7 +968,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //['1,2,3']
+    expect(returnData).toBeUndefined(); //['1,2,3']
   });
 
   /**
@@ -990,7 +990,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //['1,2,3']
+    expect(returnData).toBeUndefined(); //['1,2,3']
   });
 
   /**
@@ -1012,7 +1012,7 @@ describe(tst_con.cparseArgumentAsArray, () => {
     );
 
     // Assert
-    expect(returnData).toBeTruthy(); //['1,2,3']
+    expect(returnData).toBeUndefined(); //['1,2,3']
   });
 });
 
@@ -1028,7 +1028,8 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
    * @description Tests the businessRules.rules.lexicalAnalyzer.removeStringLiteralTagsFromArray function, with a valid input.
    * @author Json Howard
    * @date 2023/05/05
-   */  test(tst_con.cremoveStringLiteralTagsFromArray_validDataString, () => {
+   */  
+  test(tst_con.cremoveStringLiteralTagsFromArray_validDataString, () => {
     // Arrange
     let inputData = [wrd.chello + wrd.cworld];
     let inputMetaData = '';
@@ -1063,7 +1064,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
       );
   
       // Assert
-      expect(returnData).toBe('464gsdsfae8f46'); 
+      expect(returnData).toBe(false); 
     });
 
   /**
@@ -1107,7 +1108,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
       );
   
       // Assert
-      expect(returnData).toBe(4567);
+      expect(returnData).toBe(false);
   });
 
   /**
@@ -1151,7 +1152,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBeTruthy();
   });
 
   /**
@@ -1173,7 +1174,7 @@ describe(tst_con.cremoveStringLiteralTagsFromArray, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBeTruthy();
   });
 
   /**

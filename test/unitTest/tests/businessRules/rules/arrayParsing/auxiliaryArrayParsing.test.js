@@ -21,7 +21,7 @@ import * as tst_con from '../../../constants/test.constants.js';
 
 // External imports
 import hayConst from '@haystacks/constants';
-import { expect } from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 
 const {num} = hayConst;
 
@@ -115,13 +115,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, 10));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(undefined, 10);
 
       // Assert 
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
 
   /**
@@ -135,13 +133,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(undefined, num.c10));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(undefined, num.c10);
 
       // Assert 
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
   
 
@@ -156,13 +152,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, 10));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(NaN, 10);
 
       // Assert
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
 
   /**
@@ -176,13 +170,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(NaN, num.c10));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(NaN, num.c10);
 
       // Assert
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
 
   /**
@@ -196,13 +188,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(0, undefined));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(0, undefined);
 
       // Assert
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
 
   /**
@@ -216,13 +206,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(num.c10, undefined));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(num.c10, undefined);
 
       // Assert
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
 
   /**
@@ -236,13 +224,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(10, NaN));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(10, NaN);
 
       // Assert
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
 
   /**
@@ -256,13 +242,11 @@ describe(tst_con.cparseColorRangeInputs, () => {
       let returnData = [];
 
       // Act
-      returnData.push(auxiliaryArrayParsing.parseColorRangeInputs(num.c10, NaN));
+      returnData = auxiliaryArrayParsing.parseColorRangeInputs(num.c10, NaN);
 
       // Assert
-      expect(returnData[0][0]).toBe(0);
-      expect(returnData[0][1]).toBe(0);
-      expect(returnData[1][0]).toBe(0);
-      expect(returnData[1][1]).toBe(0);
+      expect(returnData[0]).toBe(0);
+      expect(returnData[1]).toBe(0);
   });
 });
 
