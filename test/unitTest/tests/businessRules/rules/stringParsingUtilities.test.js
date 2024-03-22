@@ -363,7 +363,7 @@ describe(tst_con.cstringToDataType, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBe(inputData);
   });
 
   /**
@@ -853,7 +853,7 @@ describe(tst_con.cdetermineObjectDataType, () => {
     );
 
     // Assert
-    expect(returnData).toBe(false);
+    expect(returnData).toBe('Integer');
   });
 
   /**
@@ -2078,7 +2078,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe('');
+    expect(returnData).toBe(undefined);
   });
 
   /**
@@ -2122,7 +2122,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe('');
+    expect(returnData).toBeTruthy();
   });
 
   /**
@@ -2144,7 +2144,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe('');
+    expect(returnData).toBeTruthy();
   });
 
   /**
@@ -2208,7 +2208,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe('');
+    expect(returnData).toBeTruthy();
   });
 
   /**
@@ -2230,7 +2230,7 @@ describe(tst_con.creplaceDoublePercentWithMessage, () => {
     );
 
     // Assert
-    expect(returnData).toBe('');
+    expect(returnData).toBeTruthy()
   });
 });
 

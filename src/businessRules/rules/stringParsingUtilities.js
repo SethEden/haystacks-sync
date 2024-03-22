@@ -44,7 +44,7 @@ function parseSystemRootPath(inputData, inputMetaData) {
   // console.log(`inputData is: ${JSON.stringify(inputData)}`);
   // console.log(`inputMetaData is: ${JSON.stringify(inputMetaData)}`);
   let returnData = '';
-  if (inputData && inputMetaData) {
+  if (inputData && inputMetaData && typeof inputData === wrd.cstring && typeof inputMetaData === wrd.cstring) {
     let applicationName;
     if (inputMetaData.includes(bas.cForwardSlash)) {
       let applicationNameArray = inputMetaData.split(bas.cForwardSlash);
@@ -148,17 +148,19 @@ function stringToBoolean(inputData, inputMetaData) {
     if (typeof inputData === wrd.cboolean) {
       returnData = inputData;
     } else {
-      switch (inputData.toLowerCase().trim()) {
-        case gen.ctrue: case bas.ct: case bas.cy: case gen.cyes: case bas.con:
-          returnData = true;
-          break;
-        case gen.cfalse: case bas.cf: case bas.cn: case bas.cno: case gen.coff:
-          returnData = false;
-          break;
-        default:
-          returnData = false;
-          break;
-      } // End-switch (inputData.toLowerCase().trim())
+      if (typeof inputData === wrd.cstring) {
+        switch (inputData.toLowerCase().trim()) {
+          case gen.ctrue: case bas.ct: case bas.cy: case gen.cyes: case bas.con:
+            returnData = true;
+            break;
+          case gen.cfalse: case bas.cf: case bas.cn: case bas.cno: case gen.coff:
+            returnData = false;
+            break;
+          default:
+            returnData = false;
+            break;
+        } // End-switch (inputData.toLowerCase().trim())
+      }
     }
  } // End-if (inputData)
  // console.log(`returnData is: ${JSON.stringify(returnData)}`);
@@ -226,12 +228,14 @@ function isBoolean(inputData, inputMetaData) {
     if (typeof inputData === 'boolean') {
       returnData = true;
     } else {
-      inputData = inputData.toLowerCase().trim();
-      if (inputData === gen.ctrue || inputData === bas.ct || inputData === bas.cy || inputData === gen.cyes || inputData === bas.con ||
-      inputData === gen.cfalse || inputData === bas.cf || inputData === bas.cn || inputData === bas.cno || inputData === gen.coff) {
-        returnData = true;
-      } else {
-        returnData = false;
+      if (typeof inputData === wrd.cstring) {
+        inputData = inputData.toLowerCase().trim();
+        if (inputData === gen.ctrue || inputData === bas.ct || inputData === bas.cy || inputData === gen.cyes || inputData === bas.con ||
+        inputData === gen.cfalse || inputData === bas.cf || inputData === bas.cn || inputData === bas.cno || inputData === gen.coff) {
+          returnData = true;
+        } else {
+          returnData = false;
+        }
       }
     }
   } // End-if (inputData)
@@ -291,7 +295,7 @@ function isFloat(inputData, inputMetaData) {
   // console.log(`inputData is: ${JSON.stringify(inputData)}`);
   // console.log(`inputMetaData is: ${JSON.stringify(inputMetaData)}`);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     if (!isNaN(inputData) && inputData.indexOf(bas.cDot) !== -1) {
       returnData = true;
     } else { // Else clause is redundant, but kept here for code completeness.
@@ -322,7 +326,7 @@ function isString(inputData, inputMetaData) {
   // console.log(`inputData is: ${JSON.stringify(inputData)}`);
   // console.log(`inputMetaData is: ${JSON.stringify(inputMetaData)}`);
   let returnData = false;
-  if (inputData) {
+  if (inputData && typeof inputData === wrd.cstring) {
     if (isBoolean(inputData, '') === false && isInteger(inputData, '') === false && isFloat(inputData, '') === false &&
     (typeof inputData === wrd.cstring || inputData instanceof String)) {
       returnData = true; // If it's not a Boolean, and not an Integer, and not a Float, then it must be a string,
@@ -381,20 +385,22 @@ function utilitiesReplaceCharacterWithCharacter(inputData, inputMetaData) {
   // console.log(`inputData is: ${JSON.stringify(inputData)}`);
   // console.log(`inputMetaData is: ${JSON.stringify(inputMetaData)}`);
   let returnData;
-  let character2Find = inputMetaData[0];
-  let character2Replace = inputMetaData[1];
-  if (!inputData && !character2Find && !character2Replace) {
-    // console.log('Either inputData, character2Find or character2Replace are undefined');
-    // console.log(`character2Find is: ${JSON.stringify(character2Find)}`);
-    // console.log(`character2Replace is: ${JSON.stringify(character2Replace)}`);
-    returnData = false;
-  } else {
-    // console.log(`character2Find is: ${JSON.stringify(character2Find)}`);
-    // console.log(`character2Replace is: ${JSON.stringify(character2Replace)}`);
-    if (Array.isArray(inputData) === true) {
-      inputData = inputData[0];
+  if (Array.isArray(inputMetaData) && typeof inputData === wrd.cstring && inputMetaData[0] && inputMetaData[0]) {
+    let character2Find = inputMetaData[0];
+    let character2Replace = inputMetaData[1];
+    if (!inputData && !character2Find && !character2Replace) {
+      // console.log('Either inputData, character2Find or character2Replace are undefined');
+      // console.log(`character2Find is: ${JSON.stringify(character2Find)}`);
+      // console.log(`character2Replace is: ${JSON.stringify(character2Replace)}`);
+      returnData = false;
+    } else {
+      // console.log(`character2Find is: ${JSON.stringify(character2Find)}`);
+      // console.log(`character2Replace is: ${JSON.stringify(character2Replace)}`);
+      if (Array.isArray(inputData) === true) {
+        inputData = inputData[0];
+      }
+      returnData = inputData.replaceAll(character2Find, character2Replace);
     }
-    returnData = inputData.replaceAll(character2Find, character2Replace);
   }
   // console.log(`returnData is: ${JSON.stringify(returnData)}`);
   // console.log(`END ${namespacePrefix}${functionName} function`);

@@ -141,7 +141,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBe(inputData);
+		expect(returnData).toBe(undefined);
     })
 
     /**
@@ -159,7 +159,7 @@ describe(tst_con.creplaceCharacterWithCharacter, () => {
 		let returnData = characterArrayParsing.replaceCharacterWithCharacter(inputData, inputMetaData);
 
 		// Assert
-		expect(returnData).toBe(inputData);
+		expect(returnData).toBe(undefined);
     })
 });
 
